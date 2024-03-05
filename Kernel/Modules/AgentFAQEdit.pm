@@ -687,7 +687,7 @@ sub Run {
         }
 
         # remove all form data
-        $Kernel::OM->Get('Kernel::System::Web::FormCache')->FormIDRemove( FormID => $Self->{FormID} );
+        $Kernel::OM->Get('Kernel::System::Web::FormCache')->FormIDRemove( FormID => $FormID );
 
         # Set dynamic fields.
         DYNAMICFIELD:
