@@ -35,11 +35,30 @@ sub new {
     $Self->{Config} = $Kernel::OM->Get('Kernel::Config')->Get("FAQ::Frontend::$Self->{Action}") || '';
 
     # Get the dynamic fields for this screen.
-    $Self->{DynamicField} = $Kernel::OM->Get('Kernel::System::DynamicField')->DynamicFieldListGet(
+    my $DynamicFieldList = $Kernel::OM->Get('Kernel::System::DynamicField')->DynamicFieldListGet(
         Valid       => 1,
         ObjectType  => 'FAQ',
         FieldFilter => $Self->{Config}->{DynamicField} || {},
     );
+
+    $Self->{DynamicField}   = {};
+
+    # create dynamic field hash and definition
+    DYNAMICFIELD:
+    for my $DynamicFieldConfig ( @{ $DynamicFieldList // [] } ) {
+        next DYNAMICFIELD unless IsHashRefWithData($DynamicFieldConfig);
+
+        push $Self->{MaskDefinition}->@*, {
+            DF        => $DynamicFieldConfig->{Name},
+            Mandatory => $Self->{Config}->{DynamicField}{ $DynamicFieldConfig->{Name} } == 2 ? 1 : 0,
+        };
+
+        if ( $Self->{Config}->{DynamicField}{ $DynamicFieldConfig->{Name} } == 2 ) {
+            $DynamicFieldConfig->{Mandatory} = 1;
+        }
+
+        $Self->{DynamicField}{ $DynamicFieldConfig->{Name} } = $DynamicFieldConfig;
+    }
 
     return $Self;
 }
@@ -110,7 +129,7 @@ sub Run {
     my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
 
     DYNAMICFIELD:
-    for my $DynamicFieldConfig ( @{ $Self->{DynamicField} } ) {
+    for my $DynamicFieldConfig ( values $Self->{DynamicField}->%* ) {
         next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
 
         # Extract the dynamic field value form the web request.
@@ -217,26 +236,8 @@ sub Run {
             }{Action=AgentFAQZoom;Subaction=DownloadAttachment;}gxms;
         }
 
-        # Create HTML strings for all dynamic fields.
-        my %DynamicFieldHTML;
-        DYNAMICFIELD:
-        for my $DynamicFieldConfig ( @{ $Self->{DynamicField} } ) {
-            next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
-
-            # To store dynamic field value from database (or undefined).
-            my $Value = $FAQData{ 'DynamicField_' . $DynamicFieldConfig->{Name} };
-
-            # Get field HTML.
-            $DynamicFieldHTML{ $DynamicFieldConfig->{Name} } =
-                $DynamicFieldBackendObject->EditFieldRender(
-                    DynamicFieldConfig => $DynamicFieldConfig,
-                    Value              => $Value,
-                    Mandatory          =>
-                    $Self->{Config}->{DynamicField}->{ $DynamicFieldConfig->{Name} } == 2,
-                    LayoutObject => $LayoutObject,
-                    ParamObject  => $ParamObject,
-                );
-        }
+        # separate dynamic field data to pass to mask routine
+        my %FAQDataDynamicFieldValues = map { $FAQData{ "DynamicField_$_" } ? ( $_ => $FAQData{ "DynamicField_$_" } ) : () } keys $Self->{DynamicField}->%*;
 
         if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
 
@@ -263,7 +264,7 @@ sub Run {
             Attachments      => \@Attachments,
             ScreenType       => $ScreenType,
             FormID           => $FormID,
-            DynamicFieldHTML => \%DynamicFieldHTML,
+            DynamicField     => \%FAQDataDynamicFieldValues,
         );
 
         if ( $ScreenType eq 'Popup' ) {
@@ -373,10 +374,11 @@ sub Run {
         #     );
         # }
 
-        # Create HTML strings for all dynamic fields.
-        my %DynamicFieldHTML;
+        # store dynamic field validation results
+        my %DynamicFieldValidationResult;
+
         DYNAMICFIELD:
-        for my $DynamicFieldConfig ( @{ $Self->{DynamicField} } ) {
+        for my $DynamicFieldConfig ( values $Self->{DynamicField}->%* ) {
             next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
 
             my $ValidationResult = $DynamicFieldBackendObject->EditFieldValueValidate(
@@ -399,19 +401,8 @@ sub Run {
             # Propagate validation error to the Error variable to be detected by the frontend.
             if ( $ValidationResult->{ServerError} ) {
                 $Error{ $DynamicFieldConfig->{Name} } = ' ServerError';
+                $DynamicFieldValidationResult{ $DynamicFieldConfig->{Name} } = $ValidationResult;
             }
-
-            # Get field HTML.
-            $DynamicFieldHTML{ $DynamicFieldConfig->{Name} } =
-                $DynamicFieldBackendObject->EditFieldRender(
-                    DynamicFieldConfig => $DynamicFieldConfig,
-                    Mandatory          =>
-                    $Self->{Config}->{DynamicField}->{ $DynamicFieldConfig->{Name} } == 2,
-                    ServerError  => $ValidationResult->{ServerError}  || '',
-                    ErrorMessage => $ValidationResult->{ErrorMessage} || '',
-                    LayoutObject => $LayoutObject,
-                    ParamObject  => $ParamObject,
-                );
         }
 
         # Send server error if any required parameter is missing
@@ -426,7 +417,6 @@ sub Run {
             # get all attachments meta data
             my @Attachments = $UploadCacheObject->FormIDGetAllFilesMeta(
                 FormID           => $FormID,
-                DynamicFieldHTML => \%DynamicFieldHTML,
             );
 
             if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
@@ -456,7 +446,8 @@ sub Run {
                 %Error,
                 ScreenType       => $ScreenType,
                 FormID           => $FormID,
-                DynamicFieldHTML => \%DynamicFieldHTML,
+                DynamicField     => \%DynamicFieldValues,
+                DFErrors         => \%DynamicFieldValidationResult,
             );
 
             if ( $ScreenType eq 'Popup' ) {
@@ -691,7 +682,7 @@ sub Run {
 
         # Set dynamic fields.
         DYNAMICFIELD:
-        for my $DynamicFieldConfig ( @{ $Self->{DynamicField} } ) {
+        for my $DynamicFieldConfig ( values $Self->{DynamicField}->%* ) {
             next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
 
             # Set the value.
@@ -984,39 +975,19 @@ sub _MaskNew {
         UserID          => $Self->{UserID},
     );
 
-    # Dynamic fields.
-    DYNAMICFIELD:
-    for my $DynamicFieldConfig ( @{ $Self->{DynamicField} } ) {
-
-        next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
-
-        # Skip fields that HTML could not be retrieved.
-        next DYNAMICFIELD if !IsHashRefWithData(
-            $Param{DynamicFieldHTML}->{ $DynamicFieldConfig->{Name} }
-        );
-
-        # Get the HTML strings form $Param
-        my $DynamicFieldHTML = $Param{DynamicFieldHTML}->{ $DynamicFieldConfig->{Name} };
-
-        $LayoutObject->Block(
-            Name => 'DynamicField',
-            Data => {
-                Name  => $DynamicFieldConfig->{Name},
-                Label => $DynamicFieldHTML->{Label},
-                Field => $DynamicFieldHTML->{Field},
-            },
-        );
-
-        # Example of dynamic fields order customization.
-        $LayoutObject->Block(
-            Name => 'DynamicField_' . $DynamicFieldConfig->{Name},
-            Data => {
-                Name  => $DynamicFieldConfig->{Name},
-                Label => $DynamicFieldHTML->{Label},
-                Field => $DynamicFieldHTML->{Field},
-            },
-        );
-    }
+    # render dynamic fields
+    $Param{DynamicFieldHTML} = $Kernel::OM->Get('Kernel::Output::HTML::DynamicField::Mask')->EditSectionRender(
+        Content              => $Self->{MaskDefinition},
+        DynamicFields        => $Self->{DynamicField},
+        LayoutObject         => $LayoutObject,
+        ParamObject          => $Kernel::OM->Get('Kernel::System::Web::Request'),
+        DynamicFieldValues   => $Param{DynamicField},
+        Errors               => $Param{DFErrors},
+        Object               => {
+            UserID         => $Self->{UserID},
+            $Param{DynamicField}->%*,
+        },
+    );
 
     if ( $ScreenType ne 'Popup' ) {
         $LayoutObject->Block(
