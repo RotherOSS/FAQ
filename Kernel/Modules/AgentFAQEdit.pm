@@ -123,10 +123,11 @@ sub Run {
 
     my $UploadCacheObject = $Kernel::OM->Get('Kernel::System::Web::UploadCache');
 
-    my $FormID = $ParamObject->GetParam( Param => 'FormID' );
-    if ( !$FormID ) {
-        $FormID = $UploadCacheObject->FormIDCreate();
-    }
+    # get form id
+    my $FormID = $Kernel::OM->Get('Kernel::System::Web::FormCache')->PrepareFormID(
+        ParamObject  => $ParamObject,
+        LayoutObject => $LayoutObject,
+    );
 
     # Get screen type.
     my $ScreenType = $ParamObject->GetParam( Param => 'ScreenType' ) || '';
@@ -685,8 +686,8 @@ sub Run {
             }
         }
 
-        # Delete the upload cache.
-        $UploadCacheObject->FormIDRemove( FormID => $FormID );
+        # remove all form data
+        $Kernel::OM->Get('Kernel::System::Web::FormCache')->FormIDRemove( FormID => $Self->{FormID} );
 
         # Set dynamic fields.
         DYNAMICFIELD:

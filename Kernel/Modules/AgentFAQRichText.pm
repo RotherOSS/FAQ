@@ -95,10 +95,11 @@ sub Run {
 
     my $UploadCacheObject = $Kernel::OM->Get('Kernel::System::Web::UploadCache');
 
-    my $FormID = $ParamObject->GetParam( Param => 'FormID' );
-    if ( !$FormID ) {
-        $FormID = $UploadCacheObject->FormIDCreate();
-    }
+    # get form id
+    my $FormID = $Kernel::OM->Get('Kernel::System::Web::FormCache')->PrepareFormID(
+        ParamObject  => $ParamObject,
+        LayoutObject => $LayoutObject,
+    );
 
     FIELD:
     for my $Field ( 1 .. 6 ) {
