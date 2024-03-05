@@ -483,8 +483,6 @@
         <File Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.Customer.Default.css" Permission="644" />
         <File Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.Customer.Detail.css" Permission="644" />
         <File Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.RelatedArticles.css" Permission="644" />
-        <File Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.Widget.css" Permission="644" />
-        <File Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.FAQZoom.css" Permission="644" />
         <File Location="var/httpd/htdocs/skins/Customer/default/img/faq.svg" Permission="644" />
         <File Location="var/packagesetup/FAQ.pm" Permission="644" />
         <File Location="var/stats/FAQ-FAQAccess.xml" Permission="644" />
