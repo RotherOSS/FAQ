@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -14,13 +14,13 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 # --
 
-## no critic (Modules::RequireExplicitPackage)
 use strict;
 use warnings;
 
 use List::Util qw();
-use vars qw($Self);
 use var::packagesetup::FAQ;
+
+our $Self;
 
 my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
@@ -131,7 +131,7 @@ my $GetConfig = sub {
     my $SettingName = shift;
 
     my $Config = $Source;
-    my @Keys   = split '###', $SettingName;
+    my @Keys   = split /###/, $SettingName;
     while ( my $Key = shift @Keys ) {
         $Config = $Config->{$Key};
     }
@@ -173,7 +173,7 @@ for my $Test (@Tests) {
 
     # Check if it was restored to the old config.
     my $OldConfig = $Test->{OldConfig};
-    local *var::packagesetup::FAQ::_GetOTOBO5ConfigBackup = sub {    ## no critic
+    local *var::packagesetup::FAQ::_GetOTOBO5ConfigBackup = sub {
         return $OldConfig;
     };
 
@@ -210,7 +210,7 @@ for my $Test (@Tests) {
         if ( $SettingOldConfig->{NavBar} || $SettingOldDefaults->{NavBar} ) {
 
             # Check for navigation permissions.
-            my ( undef, $Frontend ) = split '###', $SettingName;
+            my ( undef, $Frontend ) = split /###/, $SettingName;
 
             # Get the old navigation.
             my $OldNavigation = $SettingOldConfig->{NavBar} // $SettingOldDefaults->{NavBar};

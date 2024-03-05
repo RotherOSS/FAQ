@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -50,6 +50,7 @@ our @ObjectDependencies = (
     'Kernel::System::Type',
     'Kernel::System::User',
     'Kernel::System::Valid',
+    'Kernel::System::Web::Request',
     'Kernel::System::Ticket::Article',
 );
 
@@ -339,13 +340,14 @@ sub FAQGet {
         my %ValidList = $Kernel::OM->Get('Kernel::System::Valid')->ValidList();
         $Data{Valid} = $ValidList{ $Data{ValidID} };
 # FAQ Service
+
         # get related services
         my $ServicesRelated = $Self->FAQServiceGet(
-                ItemID => $Param{ItemID},
+            ItemID => $Param{ItemID},
         );
-        if ( $ServicesRelated ) {
-            for my $Service ( @$ServicesRelated ) {
-                $Data{ServiceList}->{ $Service->{'ServiceID'} } = $Service->{ 'Name' };
+        if ($ServicesRelated) {
+            for my $Service (@$ServicesRelated) {
+                $Data{ServiceList}->{ $Service->{'ServiceID'} } = $Service->{'Name'};
             }
         }
 # eo FAQ Service
@@ -604,9 +606,9 @@ sub FAQAdd {
             \$Param{Number},     \$Param{Name},    \$Param{LanguageID}, \$Param{Title},
             \$Param{CategoryID}, \$Param{StateID}, \$Param{Keywords},   \$Param{Approved},
             \$Param{ValidID},    \$Param{ContentType},
-            \$Param{Field1}, \$Param{Field2}, \$Param{Field3},
-            \$Param{Field4}, \$Param{Field5}, \$Param{Field6},
-            \$Param{UserID}, \$Param{UserID},
+            \$Param{Field1},     \$Param{Field2}, \$Param{Field3},
+            \$Param{Field4},     \$Param{Field5}, \$Param{Field6},
+            \$Param{UserID},     \$Param{UserID},
         ],
     );
 
@@ -688,13 +690,12 @@ sub FAQAdd {
         ItemID => $ID,
         UserID => $Param{UserID},
     );
-
-## FAQ Service
+# FAQ Service
 
     # add services
 
     if ( $Param{ServiceID} ) {
-        for my $ServiceID ( @{$Param{ServiceID}} ) {
+        for my $ServiceID ( @{ $Param{ServiceID} } ) {
             my $AddSuccess = $Self->FAQServiceAdd(
                 ItemID    => $ID,
                 ServiceID => $ServiceID,
@@ -702,8 +703,7 @@ sub FAQAdd {
             );
         }
     }
-
-## eo FAQ Service
+# eo FAQ Service
 
     # check if approval feature is enabled
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') && !$Param{Approved} ) {
@@ -792,7 +792,6 @@ sub FAQUpdate {
     if ( !defined $Param{ValidID} ) {
         $Param{ValidID} = $FAQData{ValidID};
     }
-
 # FAQ Services
 
     my $ServicesInDB = $Self->FAQServiceGet(
@@ -800,14 +799,14 @@ sub FAQUpdate {
     );
 
     my %ServicesInDB;
-    map { $ServicesInDB{$_->{ServiceID}}++ } @{$ServicesInDB};
+    map { $ServicesInDB{ $_->{ServiceID} }++ } @{$ServicesInDB};
 
     my $ServicesChanged = 0;
     if ( $Param{ServiceID} ) {
-        SERVICEID: for my $ServiceID ( @{$Param{ServiceID}} ) {
+        SERVICEID: for my $ServiceID ( @{ $Param{ServiceID} } ) {
             if ( exists $ServicesInDB{$ServiceID} ) {
-               delete $ServicesInDB{$ServiceID};
-               next SERVICEID;
+                delete $ServicesInDB{$ServiceID};
+                next SERVICEID;
             }
             else {
                 my $AddSuccess = $Self->FAQServiceAdd(
@@ -828,10 +827,9 @@ sub FAQUpdate {
     }
 
     # delete cache
-    if ( $ServicesChanged ) {
+    if ($ServicesChanged) {
         $Self->_DeleteFromFAQCache(%Param);
     }
-
 # eo FAQ Services
 
     return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
@@ -1025,7 +1023,7 @@ sub AttachmentAdd {
             . 'AND created_by = ? AND changed_by = ?',
         Bind => [
             \$Param{ItemID}, \$Param{Filename}, \$Param{ContentType}, \$Param{Filesize},
-            \$Param{Inline}, \$Param{UserID}, \$Param{UserID},
+            \$Param{Inline}, \$Param{UserID},   \$Param{UserID},
         ],
         Limit => 1,
     );
@@ -1427,8 +1425,8 @@ sub FAQDelete {
         ItemID => $Param{ItemID},
         UserID => $Param{UserID},
     );
-
 # FAQ Service
+
     # delete all related services
     my $ServiceDataArrayRef = $Self->FAQServiceGet(
         ItemID => $Param{ItemID},
@@ -1442,7 +1440,6 @@ sub FAQDelete {
 
         return if !$DeleteSuccess;
     }
-
 # eo FAQ Service
 
     # delete article
@@ -1456,8 +1453,7 @@ sub FAQDelete {
 
     return 1;
 }
-
-## FAQ Service
+# FAQ Service
 
 =head2 FAQServiceAdd()
 
@@ -1547,7 +1543,8 @@ sub FAQServiceGet {
             ORDER BY name, service_id',
         Bind => [ \$Param{ItemID} ],
     );
-# $GetParam{ServiceList}         = \%ServiceList;
+
+    # $GetParam{ServiceList}         = \%ServiceList;
 
     my @Data;
     while ( my @Row = $DBObject->FetchrowArray() ) {
@@ -1605,7 +1602,7 @@ sub FAQServiceArticlesGet {
             FROM faq_service
             WHERE service_id = ?
             ORDER BY item_id',
-        Bind => [ \$Param{ServiceID} ],
+        Bind  => [ \$Param{ServiceID} ],
         Limit => $Limit,
     );
 
@@ -1617,7 +1614,6 @@ sub FAQServiceArticlesGet {
     return \@Data;
 
 }
-
 
 =head2 FAQServiceDelete()
 
@@ -1654,8 +1650,7 @@ sub FAQServiceDelete {
 
     return 1;
 }
-
-## eo FAQ Service
+# eo FAQ Service
 
 =head2 FAQHistoryAdd()
 
@@ -2108,7 +2103,7 @@ sub FAQKeywordArticleList {
     if (@LanguageIDs) {
         $FAQSearchParameter{LanguageIDs} = \@LanguageIDs;
     }
-    
+
     # Get the relevant FAQ article for the current customer user.
     my @FAQArticleIDs = $Self->FAQSearch(
         %FAQSearchParameter,
@@ -2118,7 +2113,7 @@ sub FAQKeywordArticleList {
         Limit            => $SearchLimit,
         UserID           => 1,
 # FAQ Service TODO
-        ServiceID        => $Param{ServiceID},
+        ServiceID => $Param{ServiceID},
 # eo FAQ Service
     );
 
@@ -2902,7 +2897,7 @@ sub _FAQApprovalTicketCreate {
         Title    => $Subject,
         Queue    => $ConfigObject->Get('FAQ::ApprovalQueue') || 'Raw',
         Lock     => 'unlock',
-        Priority => $ConfigObject->Get('FAQ::ApprovalTicketPriority') || '3 normal',
+        Priority => $ConfigObject->Get('FAQ::ApprovalTicketPriority')     || '3 normal',
         State    => $ConfigObject->Get('FAQ::ApprovalTicketDefaultState') || 'new',
         Type     => $TicketType,
         OwnerID  => 1,
@@ -2977,7 +2972,7 @@ sub _FAQApprovalTicketCreate {
             Body                 => $Body,
             ContentType          => 'text/plain; charset=utf-8',
             UserID               => $Param{UserID},
-            HistoryType =>
+            HistoryType          =>
                 $ConfigObject->Get('Ticket::Frontend::AgentTicketNote')->{HistoryType}
                 || 'AddNote',
             HistoryComment =>

@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -115,8 +115,8 @@ sub RelatedCustomerArticleList {
         UserID       => 1,
     );
 }
-
 # FAQ Service
+
 =head2 RelatedCustomerServiceArticleList()
 
 Get the service related faq article list for the given subject and body.
@@ -174,6 +174,7 @@ sub RelatedCustomerServiceArticleList {
             ItemID => $FAQArticleID,
             UserID => $Param{UserID},
         );
+
         # $FAQArticleData{Votes}
         $LookupRelatedFAQArticles{$FAQArticleID} = {
             %FAQArticleData,
@@ -186,7 +187,6 @@ sub RelatedCustomerServiceArticleList {
 
     return @RelatedFAQArticleList;
 }
-
 # eo FAQ Service
 
 =head1 PRIVATE FUNCTIONS
