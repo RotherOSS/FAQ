@@ -41,7 +41,7 @@ sub new {
         FieldFilter => $Self->{Config}->{DynamicField} || {},
     );
 
-    $Self->{DynamicField}   = {};
+    $Self->{DynamicField} = {};
 
     # create dynamic field hash and definition
     DYNAMICFIELD:
@@ -237,7 +237,7 @@ sub Run {
         }
 
         # separate dynamic field data to pass to mask routine
-        my %FAQDataDynamicFieldValues = map { $FAQData{ "DynamicField_$_" } ? ( $_ => $FAQData{ "DynamicField_$_" } ) : () } keys $Self->{DynamicField}->%*;
+        my %FAQDataDynamicFieldValues = map { $FAQData{"DynamicField_$_"} ? ( $_ => $FAQData{"DynamicField_$_"} ) : () } keys $Self->{DynamicField}->%*;
 
         if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
 
@@ -261,10 +261,10 @@ sub Run {
 
         $Output .= $Self->_MaskNew(
             %FAQData,
-            Attachments      => \@Attachments,
-            ScreenType       => $ScreenType,
-            FormID           => $FormID,
-            DynamicField     => \%FAQDataDynamicFieldValues,
+            Attachments  => \@Attachments,
+            ScreenType   => $ScreenType,
+            FormID       => $FormID,
+            DynamicField => \%FAQDataDynamicFieldValues,
         );
 
         if ( $ScreenType eq 'Popup' ) {
@@ -400,7 +400,7 @@ sub Run {
 
             # Propagate validation error to the Error variable to be detected by the frontend.
             if ( $ValidationResult->{ServerError} ) {
-                $Error{ $DynamicFieldConfig->{Name} } = ' ServerError';
+                $Error{ $DynamicFieldConfig->{Name} }                        = ' ServerError';
                 $DynamicFieldValidationResult{ $DynamicFieldConfig->{Name} } = $ValidationResult;
             }
         }
@@ -416,7 +416,7 @@ sub Run {
 
             # get all attachments meta data
             my @Attachments = $UploadCacheObject->FormIDGetAllFilesMeta(
-                FormID           => $FormID,
+                FormID => $FormID,
             );
 
             if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
@@ -444,10 +444,10 @@ sub Run {
                 Attachments => \@Attachments,
                 %GetParam,
                 %Error,
-                ScreenType       => $ScreenType,
-                FormID           => $FormID,
-                DynamicField     => \%DynamicFieldValues,
-                DFErrors         => \%DynamicFieldValidationResult,
+                ScreenType   => $ScreenType,
+                FormID       => $FormID,
+                DynamicField => \%DynamicFieldValues,
+                DFErrors     => \%DynamicFieldValidationResult,
             );
 
             if ( $ScreenType eq 'Popup' ) {
@@ -847,6 +847,21 @@ sub _MaskNew {
         push @{ $Param{AttachmentList} }, $Attachment;
     }
 
+    # render dynamic fields
+    $Param{DynamicFieldHTML} = $Kernel::OM->Get('Kernel::Output::HTML::DynamicField::Mask')->EditSectionRender(
+        Content            => $Self->{MaskDefinition},
+        DynamicFields      => $Self->{DynamicField},
+        LayoutObject       => $LayoutObject,
+        ParamObject        => $Kernel::OM->Get('Kernel::System::Web::Request'),
+        DynamicFieldValues => $Param{DynamicField},
+        Errors             => $Param{DFErrors},
+        Object             => {
+            UserID => $Self->{UserID},
+            $Param{DynamicField}->%*,
+        },
+        AJAXUpdate => 0,
+    );
+
     $LayoutObject->Block(
         Name => 'FAQEdit',
         Data => {
@@ -973,20 +988,6 @@ sub _MaskNew {
         InterfaceStates => $InterfaceStates,
         FAQData         => {%Param},
         UserID          => $Self->{UserID},
-    );
-
-    # render dynamic fields
-    $Param{DynamicFieldHTML} = $Kernel::OM->Get('Kernel::Output::HTML::DynamicField::Mask')->EditSectionRender(
-        Content              => $Self->{MaskDefinition},
-        DynamicFields        => $Self->{DynamicField},
-        LayoutObject         => $LayoutObject,
-        ParamObject          => $Kernel::OM->Get('Kernel::System::Web::Request'),
-        DynamicFieldValues   => $Param{DynamicField},
-        Errors               => $Param{DFErrors},
-        Object               => {
-            UserID         => $Self->{UserID},
-            $Param{DynamicField}->%*,
-        },
     );
 
     if ( $ScreenType ne 'Popup' ) {
