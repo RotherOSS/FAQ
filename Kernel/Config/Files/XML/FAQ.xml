@@ -2823,4 +2823,46 @@ Your OTOBO Notification Master
         </Value>
     </Setting>
     <!-- End dynamic field FAQ Reference -->
+
+    <Setting Name="DynamicFields::Driver###Lens" Required="0" Valid="1">
+        <Description Translatable="1">DynamicField backend registration.</Description>
+        <Navigation>Core::DynamicFields::DriverRegistration</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="DisplayName" Translatable="1">Lens</Item>
+                <Item Key="Module">Kernel::System::DynamicField::Driver::Lens</Item>
+                <Item Key="ConfigDialog">AdminDynamicFieldLens</Item>
+                <Item Key="ObjectTypes">
+                    <Array>
+                        <Item>Article</Item>
+                        <Item>CustomerCompany</Item>
+                        <Item>CustomerUser</Item>
+                        <Item>ITSMConfigItem</Item>
+                        <Item>Ticket</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+
+    <Setting Name="DynamicFields::Driver###ScriptTemplateToolkit" Required="0" Valid="1">
+        <Description Translatable="1">DynamicField backend registration.</Description>
+        <Navigation>Core::DynamicFields::DriverRegistration</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="DisplayName" Translatable="1">Script (Template Toolkit)</Item>
+                <Item Key="Module">Kernel::System::DynamicField::Driver::ScriptTemplateToolkit</Item>
+                <Item Key="ConfigDialog">AdminDynamicFieldScript</Item>
+                <Item Key="ObjectTypes">
+                    <Array>
+                        <Item>Article</Item>
+                        <Item>CustomerCompany</Item>
+                        <Item>CustomerUser</Item>
+                        <Item>ITSMConfigItem</Item>
+                        <Item>Ticket</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
 </otobo_config>
