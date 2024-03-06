@@ -237,7 +237,7 @@ sub Run {
         }
 
         # separate dynamic field data to pass to mask routine
-        my %FAQDataDynamicFieldValues = map { $FAQData{"DynamicField_$_"} ? ( $_ => $FAQData{"DynamicField_$_"} ) : () } keys $Self->{DynamicField}->%*;
+        my %FAQDataDynamicFieldValues = map { $FAQData{"DynamicField_$_"} ? ( "DynamicField_$_" => $FAQData{"DynamicField_$_"} ) : () } keys $Self->{DynamicField}->%*;
 
         if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
 
