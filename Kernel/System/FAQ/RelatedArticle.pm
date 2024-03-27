@@ -115,6 +115,7 @@ sub RelatedCustomerArticleList {
         UserID       => 1,
     );
 }
+
 # FAQ Service
 
 =head2 RelatedCustomerServiceArticleList()
@@ -187,6 +188,7 @@ sub RelatedCustomerServiceArticleList {
 
     return @RelatedFAQArticleList;
 }
+
 # eo FAQ Service
 
 =head1 PRIVATE FUNCTIONS
