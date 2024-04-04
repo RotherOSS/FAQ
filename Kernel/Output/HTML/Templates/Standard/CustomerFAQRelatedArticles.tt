@@ -28,7 +28,7 @@
         [% FOREACH FAQArticle IN Data.RelatedFAQArticleList %]
             <li>
                 <hr>
-                <a class='ooo12 oool' href="[% Env("Baselink") %]Action=CustomerFAQZoom;ItemID=[% FAQArticle.ItemID | uri %]" target="_blank" title="[% FAQArticle.Title | html %] ([% FAQArticle.CategoryName | html %])">
+                <a class='RelatedFAQArticleList oool' href="[% Env("Baselink") %]Action=CustomerFAQZoom;ItemID=[% FAQArticle.ItemID | uri %]" target="_blank" title="[% FAQArticle.Title | html %] ([% FAQArticle.CategoryName | html %])">
                     [% FAQArticle.Title | html %]
                 </a>
 #            [% IF FAQArticle.Votes && Data.VoteStarsVisible && FAQArticle.StarCounter >= Data.VoteStarsVisible %]
