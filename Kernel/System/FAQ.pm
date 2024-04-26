@@ -107,10 +107,12 @@ sub new {
 get an FAQ item
 
     my %FAQ = $FAQObject->FAQGet(
-        ItemID     => 123,
-        ItemFields => 0,        # Optional, default 0. To include the item field content for this
-                                #   FAQ item on the return structure.
-        UserID     => 1,
+        ItemID        => 123,
+        ItemFields    => 0,        # Optional, default 0. To include the item field content for this
+                                   #   FAQ item on the return structure.
+        DynamicFields => 0,        # Optional, default 0. To include the dynamic fields for this
+                                   #   FAQ item on the return structure.
+        UserID        => 1,
     );
 
 Returns:
@@ -148,9 +150,10 @@ Returns:
     );
 
     my %FAQ = $FAQObject->FAQGet(
-        ItemID     => 123,
-        ItemFields => 1,
-        UserID     => 1,
+        ItemID        => 123,
+        ItemFields    => 1,
+        DynamicFields => 0,
+        UserID        => 1,
     );
 
 Returns:
