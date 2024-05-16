@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2021 Rother OSS GmbH, https://otobo.de/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -24,575 +24,431 @@ sub Data {
     my $Self = shift;
 
     # Template: AgentFAQAdd
-    $Self->{Translation}->{'Add FAQ Article'}         = 'FAQ-Artikel hinzufügen';
-    $Self->{Translation}->{'Keywords'}                = 'Schlüsselwörter';
-    $Self->{Translation}->{'A category is required.'} = 'Eine Kategorie ist erforderlich.';
-    $Self->{Translation}->{'Approval'}                = 'Freigabe';
+    $Self->{Translation}->{'Add FAQ Article'} = '';
+    $Self->{Translation}->{'Keywords'} = '';
+    $Self->{Translation}->{'A category is required.'} = '';
+    $Self->{Translation}->{'Approval'} = '';
 
     # Template: AgentFAQCategory
-    $Self->{Translation}->{'FAQ Category Management'}                      = 'FAQ-Kategorienverwaltung';
-    $Self->{Translation}->{'Add FAQ Category'}                             = 'FAQ-Kategorie hinzufügen';
-    $Self->{Translation}->{'Edit FAQ Category'}                            = 'FAQ-Kategorie bearbeiten';
-    $Self->{Translation}->{'Add category'}                                 = 'Kategorie hinzufügen';
-    $Self->{Translation}->{'Add Category'}                                 = 'Kategorie hinzufügen';
-    $Self->{Translation}->{'Edit Category'}                                = 'Kategorie bearbeiten';
-    $Self->{Translation}->{'Subcategory of'}                               = 'Unterkategorie von';
-    $Self->{Translation}->{'Please select at least one permission group.'} = 'Wählen Sie mindestens eine Berechtigungsgruppe.';
-    $Self->{Translation}->{'Agent groups that can access articles in this category.'}
-        = 'Agenten-Gruppen, die berechtigt sind, auf FAQ-Artikel in dieser Kategorie zuzugreifen.';
-    $Self->{Translation}->{'Will be shown as comment in Explorer.'}       = 'Wird im Explorer als Kommentar angezeigt.';
-    $Self->{Translation}->{'Do you really want to delete this category?'} = 'Wollen Sie diese Kategorie wirklich löschen?';
+    $Self->{Translation}->{'FAQ Category Management'} = '';
+    $Self->{Translation}->{'Add FAQ Category'} = '';
+    $Self->{Translation}->{'Edit FAQ Category'} = '';
+    $Self->{Translation}->{'Add category'} = '';
+    $Self->{Translation}->{'Add Category'} = '';
+    $Self->{Translation}->{'Edit Category'} = '';
+    $Self->{Translation}->{'Subcategory of'} = '';
+    $Self->{Translation}->{'Please select at least one permission group.'} = '';
+    $Self->{Translation}->{'Agent groups that can access articles in this category.'} = '';
+    $Self->{Translation}->{'Will be shown as comment in Explorer.'} = '';
+    $Self->{Translation}->{'Do you really want to delete this category?'} = '';
     $Self->{Translation}->{'You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category'} =
-        'Sie können diese Kategorie nicht löschen. Sie wird in mindestens einem FAQ-Artikel verwendet!';
-    $Self->{Translation}->{'This category is used in the following FAQ article(s)'}  = 'Diese Kategorie wird in den folgenden FAQ-Artikeln verwendet';
-    $Self->{Translation}->{'This category is parent of the following subcategories'} = 'Diese Kategorie ist eine Unterkategorie für folgende Kategorien';
+        '';
+    $Self->{Translation}->{'This category is used in the following FAQ article(s)'} = '';
+    $Self->{Translation}->{'This category is parent of the following subcategories'} = '';
 
     # Template: AgentFAQDelete
-    $Self->{Translation}->{'Do you really want to delete this FAQ article?'} = 'Wollen Sie diesen FAQ-Artikel wirklich löschen?';
+    $Self->{Translation}->{'Do you really want to delete this FAQ article?'} = '';
 
     # Template: AgentFAQEdit
-    $Self->{Translation}->{'FAQ'} = 'FAQ';
+    $Self->{Translation}->{'FAQ'} = '';
 
     # Template: AgentFAQExplorer
-    $Self->{Translation}->{'FAQ Explorer'}            = 'FAQ-Explorer';
-    $Self->{Translation}->{'Quick Search'}            = 'Schnellsuche';
-    $Self->{Translation}->{'Wildcards are allowed.'}  = 'Wildcards sind erlaubt.';
-    $Self->{Translation}->{'Advanced Search'}         = 'Erweiterte Suche';
-    $Self->{Translation}->{'Subcategories'}           = 'Unterkategorien';
-    $Self->{Translation}->{'FAQ Articles'}            = 'FAQ-Artikel';
-    $Self->{Translation}->{'No subcategories found.'} = 'Keine Unterkategorien gefunden.';
+    $Self->{Translation}->{'FAQ Explorer'} = '';
+    $Self->{Translation}->{'Quick Search'} = '';
+    $Self->{Translation}->{'Wildcards are allowed.'} = '';
+    $Self->{Translation}->{'Advanced Search'} = '';
+    $Self->{Translation}->{'Subcategories'} = '';
+    $Self->{Translation}->{'FAQ Articles'} = '';
+    $Self->{Translation}->{'No subcategories found.'} = '';
 
     # Template: AgentFAQHistory
-    $Self->{Translation}->{'History of'}      = 'Änderungsverlauf von';
-    $Self->{Translation}->{'History Content'} = 'Änderungsverlauf';
-    $Self->{Translation}->{'Createtime'}      = 'Erstellt am';
+    $Self->{Translation}->{'History of'} = '';
+    $Self->{Translation}->{'History Content'} = '';
+    $Self->{Translation}->{'Createtime'} = '';
 
     # Template: AgentFAQJournalOverviewSmall
-    $Self->{Translation}->{'No FAQ Journal data found.'} = 'Keine FAQ-Journaldaten gefunden.';
+    $Self->{Translation}->{'No FAQ Journal data found.'} = '';
 
     # Template: AgentFAQLanguage
-    $Self->{Translation}->{'FAQ Language Management'} = 'FAQ-Sprachenverwaltung';
-    $Self->{Translation}->{'Add FAQ Language'}        = 'FAQ-Sprache hinzufügen';
-    $Self->{Translation}->{'Edit FAQ Language'}       = 'FAQ-Sprache bearbeiten';
+    $Self->{Translation}->{'FAQ Language Management'} = '';
+    $Self->{Translation}->{'Add FAQ Language'} = '';
+    $Self->{Translation}->{'Edit FAQ Language'} = '';
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
-        'Verwenden Sie diese Funktion, wenn Sie mit mehreren Sprachen arbeiten wollen.';
-    $Self->{Translation}->{'Add language'}                                = 'Sprache hinzufügen';
-    $Self->{Translation}->{'Add Language'}                                = 'Sprache hinzufügen';
-    $Self->{Translation}->{'Edit Language'}                               = 'Sprache bearbeiten';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Wollen Sie diese Sprache wirklich löschen?';
+        '';
+    $Self->{Translation}->{'Add language'} = '';
+    $Self->{Translation}->{'Add Language'} = '';
+    $Self->{Translation}->{'Edit Language'} = '';
+    $Self->{Translation}->{'Do you really want to delete this language?'} = '';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
-        'Sie können diese Sprache nicht löschen. Sie wird in mindestens einem FAQ-Artikel verwendet!';
-    $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Diese Sprache wird in den folgenden FAQ-Artikeln verwendet';
+        '';
+    $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = '';
 
     # Template: AgentFAQOverviewNavBar
-    $Self->{Translation}->{'Context Settings'}      = 'Kontext-Einstellungen';
-    $Self->{Translation}->{'FAQ articles per page'} = 'FAQ-Artikel pro Seite';
+    $Self->{Translation}->{'Context Settings'} = '';
+    $Self->{Translation}->{'FAQ articles per page'} = '';
 
     # Template: AgentFAQOverviewSmall
-    $Self->{Translation}->{'No FAQ data found.'} = 'Keine FAQ-Daten gefunden.';
+    $Self->{Translation}->{'No FAQ data found.'} = '';
 
     # Template: AgentFAQRelatedArticles
-    $Self->{Translation}->{'out of 5'} = 'von 5';
+    $Self->{Translation}->{'out of 5'} = '';
 
     # Template: AgentFAQSearch
-    $Self->{Translation}->{'Keyword'}                                    = 'Schlüsselwort';
-    $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'}   = 'Abstimmung (Zum Beispiel: =10 oder >60)';
-    $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = 'Anteil (Zum Beispiel: =25% oder >75%)';
-    $Self->{Translation}->{'Approved'}                                   = 'Genehmigt';
-    $Self->{Translation}->{'Last changed by'}                            = 'Letzte Änderung von:';
-    $Self->{Translation}->{'FAQ Article Create Time (before/after)'}     = 'Erstellzeit des FAQ-Artikel (davor/danach)';
-    $Self->{Translation}->{'FAQ Article Create Time (between)'}          = 'Erstellzeit des FAQ-Artikel (zwischen)';
-    $Self->{Translation}->{'FAQ Article Change Time (before/after)'}     = 'Letzte Änderung des FAQ-Artikel (davor/danach)';
-    $Self->{Translation}->{'FAQ Article Change Time (between)'}          = 'Letzte Änderung des FAQ-Artikel (zwischen)';
+    $Self->{Translation}->{'Keyword'} = '';
+    $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = '';
+    $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = '';
+    $Self->{Translation}->{'Approved'} = '';
+    $Self->{Translation}->{'Last changed by'} = '';
+    $Self->{Translation}->{'FAQ Article Create Time (before/after)'} = '';
+    $Self->{Translation}->{'FAQ Article Create Time (between)'} = '';
+    $Self->{Translation}->{'FAQ Article Change Time (before/after)'} = '';
+    $Self->{Translation}->{'FAQ Article Change Time (between)'} = '';
 
     # Template: AgentFAQSearchOpenSearchDescriptionFulltext
-    $Self->{Translation}->{'FAQFulltext'} = 'FAQ-Volltext';
+    $Self->{Translation}->{'FAQFulltext'} = '';
 
     # Template: AgentFAQSearchSmall
-    $Self->{Translation}->{'FAQ Search'}                          = 'FAQ Suche';
-    $Self->{Translation}->{'Profile Selection'}                   = 'Profilauswahl';
-    $Self->{Translation}->{'Vote'}                                = 'Abstimmen';
-    $Self->{Translation}->{'No vote settings'}                    = 'Keine Einstellung für Abstimmung';
-    $Self->{Translation}->{'Specific votes'}                      = 'spezifische Abstimmung';
-    $Self->{Translation}->{'e. g. Equals 10 or GreaterThan 60'}   = 'Zum Beispiel: =10 oder >60';
-    $Self->{Translation}->{'Rate'}                                = 'Anteil';
-    $Self->{Translation}->{'No rate settings'}                    = 'Keine Einstellungen für Anteil';
-    $Self->{Translation}->{'Specific rate'}                       = 'bestimmter Anteil';
-    $Self->{Translation}->{'e. g. Equals 25% or GreaterThan 75%'} = 'Zum Beispiel: =25% oder >75%';
-    $Self->{Translation}->{'FAQ Article Create Time'}             = 'Erstellzeit des FAQ-Artikel';
-    $Self->{Translation}->{'FAQ Article Change Time'}             = 'Letzte Änderung des FAQ-Artikel';
+    $Self->{Translation}->{'FAQ Search'} = '';
+    $Self->{Translation}->{'Profile Selection'} = '';
+    $Self->{Translation}->{'Vote'} = '';
+    $Self->{Translation}->{'No vote settings'} = '';
+    $Self->{Translation}->{'Specific votes'} = '';
+    $Self->{Translation}->{'e. g. Equals 10 or GreaterThan 60'} = '';
+    $Self->{Translation}->{'Rate'} = '';
+    $Self->{Translation}->{'No rate settings'} = '';
+    $Self->{Translation}->{'Specific rate'} = '';
+    $Self->{Translation}->{'e. g. Equals 25% or GreaterThan 75%'} = '';
+    $Self->{Translation}->{'FAQ Article Create Time'} = '';
+    $Self->{Translation}->{'FAQ Article Change Time'} = '';
 
     # Template: AgentFAQZoom
-    $Self->{Translation}->{'FAQ Information'} = 'FAQ-Information';
-    $Self->{Translation}->{'Rating'}          = 'Bewertung';
-    $Self->{Translation}->{'Votes'}           = 'Bewertungen';
-    $Self->{Translation}->{'No votes found!'} = 'Keine Bewertungen gefunden!';
-    $Self->{Translation}->{'No votes found! Be the first one to rate this FAQ article.'}
-        = 'Keine Bewertungen gefunden! Seien Sie der erste der diesen FAQ-Artikel bewertet.';
-    $Self->{Translation}->{'Download Attachment'} = 'Anhang herunterladen';
-    $Self->{Translation}->{
-        'To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS).'
-        }
-        =
-        'Um die Links im folgenden Beitrag zu öffnen, kann es notwendig sein Strg oder Shift zu drücken, während auf den Link geklickt wird (abhängig vom verwendeten Browser und Betriebssystem).';
+    $Self->{Translation}->{'FAQ Information'} = '';
+    $Self->{Translation}->{'Rating'} = '';
+    $Self->{Translation}->{'Votes'} = '';
+    $Self->{Translation}->{'No votes found!'} = '';
+    $Self->{Translation}->{'No votes found! Be the first one to rate this FAQ article.'} = '';
+    $Self->{Translation}->{'Download Attachment'} = '';
+    $Self->{Translation}->{'To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS).'} =
+        '';
     $Self->{Translation}->{'How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!'} =
-        'Wie hilfreich war dieser Artikel? Bitte geben Sie Ihre Bewertung ab und helfen Sie mit die Qualität der FAQ-Datenbank zu verbessern. Vielen Dank!';
-    $Self->{Translation}->{'not helpful'}  = 'nicht hilfreich';
-    $Self->{Translation}->{'very helpful'} = 'sehr hilfreich';
+        '';
+    $Self->{Translation}->{'not helpful'} = '';
+    $Self->{Translation}->{'very helpful'} = '';
 
     # Template: AgentFAQZoomSmall
-    $Self->{Translation}->{'Add FAQ title to article subject'} = 'FAQ-Titel als Artikelbetreff hinzufügen';
-    $Self->{Translation}->{'Insert FAQ Text'}                  = 'FAQ-Text einfügen';
-    $Self->{Translation}->{'Insert Full FAQ'}                  = 'Vollständige FAQ einfügen';
-    $Self->{Translation}->{'Insert FAQ Link'}                  = 'FAQ-Link einfügen';
-    $Self->{Translation}->{'Insert FAQ Text & Link'}           = 'FAQ-Text & Link einfügen';
-    $Self->{Translation}->{'Insert Full FAQ & Link'}           = 'Vollständige FAQ & Link einfügen';
+    $Self->{Translation}->{'Add FAQ title to article subject'} = '';
+    $Self->{Translation}->{'Insert FAQ Text'} = '';
+    $Self->{Translation}->{'Insert Full FAQ'} = '';
+    $Self->{Translation}->{'Insert FAQ Link'} = '';
+    $Self->{Translation}->{'Insert FAQ Text & Link'} = '';
+    $Self->{Translation}->{'Insert Full FAQ & Link'} = '';
 
     # Template: CustomerFAQExplorer
-    $Self->{Translation}->{'No FAQ articles found.'} = 'Keine FAQ-Artikel gefunden.';
+    $Self->{Translation}->{'Latest updated FAQ articles'} = '';
+    $Self->{Translation}->{'No FAQ articles found.'} = '';
 
     # Template: CustomerFAQRelatedArticles
-    $Self->{Translation}->{'This might be helpful'}                                = 'Hilfreiche Artikel';
-    $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = 'Leider wurden keine passenden Artikel gefunden.';
-    $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'}
-        = 'Nach dem Eintippen eines Betreffs oder Textes werden hier passende Artikel angezeigt.';
+    $Self->{Translation}->{'This might be helpful'} = '';
+    $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = '';
+    $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '';
 
     # Template: CustomerFAQSearch
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Volltext-Suche in FAQ-Artikeln (z. B. "John*n" or "Will*")';
-    $Self->{Translation}->{'Vote restrictions'}                                           = 'Wahleinschränkungen';
-    $Self->{Translation}->{'Only FAQ articles with votes...'}                             = 'Nur FAQ-Artikel mit Abstimmungen';
-    $Self->{Translation}->{'Rate restrictions'}                                           = 'Anteilsbeschränkungen';
-    $Self->{Translation}->{'Only FAQ articles with rate...'}                              = 'Nur FAQ-Artikel mit einem Anteil von...';
-    $Self->{Translation}->{'Time restrictions'}                                           = 'Zeitbeschränkungen';
-    $Self->{Translation}->{'Only FAQ articles created'}                                   = 'Nur FAQ-Artikel erstellt';
-    $Self->{Translation}->{'Only FAQ articles created between'}                           = 'Nur Tickets, die erstellt wurden zwischen';
-    $Self->{Translation}->{'Search-Profile as Template?'}                                 = 'Suchprofil als Vorlage?';
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = '';
+    $Self->{Translation}->{'Vote restrictions'} = '';
+    $Self->{Translation}->{'Only FAQ articles with votes...'} = '';
+    $Self->{Translation}->{'Rate restrictions'} = '';
+    $Self->{Translation}->{'Only FAQ articles with rate...'} = '';
+    $Self->{Translation}->{'Time restrictions'} = '';
+    $Self->{Translation}->{'Only FAQ articles created'} = '';
+    $Self->{Translation}->{'Only FAQ articles created between'} = '';
+    $Self->{Translation}->{'Search-Profile as Template?'} = '';
 
     # Template: CustomerFAQZoom
-    $Self->{Translation}->{'Article Number'}                   = 'Artikelnummer';
-    $Self->{Translation}->{'Search for articles with keyword'} = 'Suche nach Artikeln mit Schlüsselwörtern';
+    $Self->{Translation}->{'Article Number'} = '';
+    $Self->{Translation}->{'Search for articles with keyword'} = '';
 
     # Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
-    $Self->{Translation}->{'Public'} = 'Öffentlich';
+    $Self->{Translation}->{'Public'} = '';
 
     # Template: PublicFAQSearchResultShort
-    $Self->{Translation}->{'Back to FAQ Explorer'} = 'Zurück zum FAQ-Explorer';
+    $Self->{Translation}->{'Back to FAQ Explorer'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQAdd.pm
-    $Self->{Translation}->{'You need rw permission!'} = 'Sie benötigen Lese- und Schreibrechte!';
-    $Self->{Translation}->{'No categories found where user has read/write permissions!'}
-        = 'Keine Kategorien gefunden, in denen der Benutzer Lese-/Schreibrechte besitzt!';
-    $Self->{Translation}->{'No default language found and can\'t create a new one.'}
-        = 'Standardsprache wurde nicht gefunden. Neue Standardsprache konnte nicht erstellt werden.';
+    $Self->{Translation}->{'You need rw permission!'} = '';
+    $Self->{Translation}->{'No categories found where user has read/write permissions!'} = '';
+    $Self->{Translation}->{'No default language found and can\'t create a new one.'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQCategory.pm
-    $Self->{Translation}->{'Need CategoryID!'}                        = 'Benötige Kategorie-ID!';
-    $Self->{Translation}->{'A category should have a name!'}          = 'Eine Kategorie benötigt einen Namen!';
-    $Self->{Translation}->{'This category already exists'}            = 'Diese Kategorie existiert bereits!';
-    $Self->{Translation}->{'This category already exists!'}           = 'Diese Kategorie existiert bereits!';
-    $Self->{Translation}->{'No CategoryID is given!'}                 = 'Es wurde keine Kategorie-ID vergeben!';
-    $Self->{Translation}->{'Was not able to delete the category %s!'} = 'Kategorie %s konnte nicht gelöscht werden!';
-    $Self->{Translation}->{'FAQ category updated!'}                   = 'FAQ-Kategorie aktualisiert!';
-    $Self->{Translation}->{'FAQ category added!'}                     = 'FAQ-Kategorie hinzugefügt!';
-    $Self->{Translation}->{'Delete Category'}                         = 'Kategorie löschen';
+    $Self->{Translation}->{'Need CategoryID!'} = '';
+    $Self->{Translation}->{'A category should have a name!'} = '';
+    $Self->{Translation}->{'This category already exists'} = '';
+    $Self->{Translation}->{'This category already exists!'} = '';
+    $Self->{Translation}->{'No CategoryID is given!'} = '';
+    $Self->{Translation}->{'Was not able to delete the category %s!'} = '';
+    $Self->{Translation}->{'FAQ category updated!'} = '';
+    $Self->{Translation}->{'FAQ category added!'} = '';
+    $Self->{Translation}->{'Delete Category'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQDelete.pm
-    $Self->{Translation}->{'No ItemID is given!'}                        = 'Es wurde keine Eintrag-ID vergeben!';
-    $Self->{Translation}->{'You have no permission for this category!'}  = 'Sie besitzen keine Berechtigung für diese Kategorie!';
-    $Self->{Translation}->{'Was not able to delete the FAQ article %s!'} = 'FAQ Artikel %s konnte nicht gelöscht werden!';
+    $Self->{Translation}->{'No ItemID is given!'} = '';
+    $Self->{Translation}->{'You have no permission for this category!'} = '';
+    $Self->{Translation}->{'Was not able to delete the FAQ article %s!'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQExplorer.pm
-    $Self->{Translation}->{'The CategoryID %s is invalid.'} = 'Die Kategorie-ID %s ist ungültig.';
+    $Self->{Translation}->{'The CategoryID %s is invalid.'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQHistory.pm
-    $Self->{Translation}->{'Can\'t show history, as no ItemID is given!'} = 'Kann History nicht anzeigen, keine Eintrag-ID übermittelt!';
-    $Self->{Translation}->{'FAQ History'}                                 = 'FAQ Historie';
+    $Self->{Translation}->{'Can\'t show history, as no ItemID is given!'} = '';
+    $Self->{Translation}->{'FAQ History'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQJournal.pm
-    $Self->{Translation}->{'FAQ Journal'}                                = 'FAQ Journal';
-    $Self->{Translation}->{'Need config option FAQ::Frontend::Overview'} = 'Konfigurationsoption FAQ::Frontend::Overview wird benötigt';
+    $Self->{Translation}->{'FAQ Journal'} = '';
+    $Self->{Translation}->{'Need config option FAQ::Frontend::Overview'} = '';
     $Self->{Translation}->{'Config option FAQ::Frontend::Overview needs to be a HASH ref!'} =
-        'Konfigurationsoption FAQ::Frontend::Overview muss eine HASH Referenz sein!';
-    $Self->{Translation}->{'No config option found for the view "%s"!'} = 'Keine Konfigurationsoption für die Ansicht "%s" gefunden!';
+        '';
+    $Self->{Translation}->{'No config option found for the view "%s"!'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQLanguage.pm
-    $Self->{Translation}->{'No LanguageID is given!'}                 = 'Keine LanguageID übermittelt!';
-    $Self->{Translation}->{'The name is required!'}                   = 'Der Name ist erforderlich!';
-    $Self->{Translation}->{'This language already exists!'}           = 'Diese Sprache existiert bereits!';
-    $Self->{Translation}->{'Was not able to delete the language %s!'} = 'Sprache %s konnte nicht gelöscht werden!';
-    $Self->{Translation}->{'FAQ language updated!'}                   = 'FAQ-Sprache aktualisiert!';
-    $Self->{Translation}->{'FAQ language added!'}                     = 'FAQ-Sprache hinzugefügt!';
-    $Self->{Translation}->{'Delete Language %s'}                      = 'Sprache Löschen %s';
+    $Self->{Translation}->{'No LanguageID is given!'} = '';
+    $Self->{Translation}->{'The name is required!'} = '';
+    $Self->{Translation}->{'This language already exists!'} = '';
+    $Self->{Translation}->{'Was not able to delete the language %s!'} = '';
+    $Self->{Translation}->{'FAQ language updated!'} = '';
+    $Self->{Translation}->{'FAQ language added!'} = '';
+    $Self->{Translation}->{'Delete Language %s'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQPrint.pm
-    $Self->{Translation}->{'Result'}             = 'Ergebnis';
-    $Self->{Translation}->{'Last update'}        = 'Letzte Aktualisierung';
-    $Self->{Translation}->{'FAQ Dynamic Fields'} = 'FAQ Dynamische Felder';
+    $Self->{Translation}->{'Result'} = '';
+    $Self->{Translation}->{'Last update'} = '';
+    $Self->{Translation}->{'FAQ Dynamic Fields'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQRichText.pm
-    $Self->{Translation}->{'No %s is given!'}             = 'Kein(e) %s übermittelt!';
-    $Self->{Translation}->{'Can\'t load LanguageObject!'} = 'LanguageObject kann nicht geladen werden!';
+    $Self->{Translation}->{'No %s is given!'} = '';
+    $Self->{Translation}->{'Can\'t load LanguageObject!'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQSearch.pm
-    $Self->{Translation}->{'No Result!'}                          = 'Kein Ergebnis!';
-    $Self->{Translation}->{'FAQ Number'}                          = 'FAQ-Nummer';
-    $Self->{Translation}->{'Last Changed by'}                     = 'Letzte Änderung von';
-    $Self->{Translation}->{'FAQ Item Create Time (before/after)'} = 'FAQ-Artikel Erstellzeit (vor/nach)';
-    $Self->{Translation}->{'FAQ Item Create Time (between)'}      = 'FAQ-Artikel Erstellzeit (zwischen)';
-    $Self->{Translation}->{'FAQ Item Change Time (before/after)'} = 'FAQ-Artikel Änderungszeit (vor/nach)';
-    $Self->{Translation}->{'FAQ Item Change Time (between)'}      = 'FAQ-Artikel Änderungszeit (zwischen)';
-    $Self->{Translation}->{'Equals'}                              = 'ist gleich';
-    $Self->{Translation}->{'Greater than'}                        = 'Größer als';
-    $Self->{Translation}->{'Greater than equals'}                 = 'ist größer/gleich';
-    $Self->{Translation}->{'Smaller than'}                        = 'Kleiner als';
-    $Self->{Translation}->{'Smaller than equals'}                 = 'Kleiner/gleich';
+    $Self->{Translation}->{'No Result!'} = '';
+    $Self->{Translation}->{'FAQ Number'} = '';
+    $Self->{Translation}->{'Last Changed by'} = '';
+    $Self->{Translation}->{'FAQ Item Create Time (before/after)'} = '';
+    $Self->{Translation}->{'FAQ Item Create Time (between)'} = '';
+    $Self->{Translation}->{'FAQ Item Change Time (before/after)'} = '';
+    $Self->{Translation}->{'FAQ Item Change Time (between)'} = '';
+    $Self->{Translation}->{'Equals'} = '';
+    $Self->{Translation}->{'Greater than'} = '';
+    $Self->{Translation}->{'Greater than equals'} = '';
+    $Self->{Translation}->{'Smaller than'} = '';
+    $Self->{Translation}->{'Smaller than equals'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQZoom.pm
-    $Self->{Translation}->{'Need FileID!'}                         = 'Benötige Datei-ID';
-    $Self->{Translation}->{'Thanks for your vote!'}                = 'Vielen Dank für Ihre Bewertung!';
-    $Self->{Translation}->{'You have already voted!'}              = 'Sie haben bereits abgestimmt!';
-    $Self->{Translation}->{'No rate selected!'}                    = 'Keine Bewertung ausgewählt!';
-    $Self->{Translation}->{'The voting mechanism is not enabled!'} = 'Abstimmungsfunktion ist nicht aktiviert.';
-    $Self->{Translation}->{'The vote rate is not defined!'}        = 'Die Abstimmungsrate ist nicht definiert!';
+    $Self->{Translation}->{'Need FileID!'} = '';
+    $Self->{Translation}->{'Thanks for your vote!'} = '';
+    $Self->{Translation}->{'You have already voted!'} = '';
+    $Self->{Translation}->{'No rate selected!'} = '';
+    $Self->{Translation}->{'The voting mechanism is not enabled!'} = '';
+    $Self->{Translation}->{'The vote rate is not defined!'} = '';
 
     # Perl Module: Kernel/Modules/CustomerFAQPrint.pm
-    $Self->{Translation}->{'FAQ Article Print'} = 'FAQ-Artikel-Ausdruck';
+    $Self->{Translation}->{'FAQ Article Print'} = '';
 
     # Perl Module: Kernel/Modules/CustomerFAQSearch.pm
-    $Self->{Translation}->{'Created between'} = 'Erstellt zwischen';
+    $Self->{Translation}->{'Created between'} = '';
 
     # Perl Module: Kernel/Modules/CustomerFAQZoom.pm
-    $Self->{Translation}->{'Need ItemID!'} = 'ItemID benötigt!';
+    $Self->{Translation}->{'Need ItemID!'} = '';
 
     # Perl Module: Kernel/Modules/PublicFAQExplorer.pm
-    $Self->{Translation}->{'FAQ Articles (new created)'}      = 'FAQ-Artikel (neu erstellte)';
-    $Self->{Translation}->{'FAQ Articles (recently changed)'} = 'FAQ-Artikel (aktualisierte)';
-    $Self->{Translation}->{'FAQ Articles (Top 10)'}           = 'FAQ-Artikel (Top 10)';
+    $Self->{Translation}->{'FAQ Articles (new created)'} = '';
+    $Self->{Translation}->{'FAQ Articles (recently changed)'} = '';
+    $Self->{Translation}->{'FAQ Articles (Top 10)'} = '';
 
     # Perl Module: Kernel/Modules/PublicFAQRSS.pm
-    $Self->{Translation}->{'No Type is given!'}                                      = 'Kein Typ ist definiert!';
-    $Self->{Translation}->{'Type must be either LastCreate or LastChange or Top10!'} = 'Typ muss entweder LastCreate oder LastChange oder Top10 sein!';
-    $Self->{Translation}->{'Can\'t create RSS file!'}                                = 'RSS Datei kann nicht erstellt werden!';
+    $Self->{Translation}->{'No Type is given!'} = '';
+    $Self->{Translation}->{'Type must be either LastCreate or LastChange or Top10!'} = '';
+    $Self->{Translation}->{'Can\'t create RSS file!'} = '';
 
     # Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
-    $Self->{Translation}->{'%s (FAQFulltext)'} = '%s (FAQ Volltext)';
+    $Self->{Translation}->{'%s (FAQFulltext)'} = '';
 
     # Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
-    $Self->{Translation}->{'%s - Customer (%s)'}          = '%s - Kunde (%s)';
-    $Self->{Translation}->{'%s - Customer (FAQFulltext)'} = '%s - Kunden (FAQ Volltext)';
+    $Self->{Translation}->{'%s - Customer (%s)'} = '';
+    $Self->{Translation}->{'%s - Customer (FAQFulltext)'} = '';
 
     # Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
-    $Self->{Translation}->{'%s - Public (%s)'}          = '%s - Öffentlich (%s)';
-    $Self->{Translation}->{'%s - Public (FAQFulltext)'} = '%s - Öffentlich (FAQ Volltext)';
+    $Self->{Translation}->{'%s - Public (%s)'} = '';
+    $Self->{Translation}->{'%s - Public (FAQFulltext)'} = '';
 
     # Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
-    $Self->{Translation}->{'Need rate!'}                  = 'Bewertung benötigt!';
-    $Self->{Translation}->{'This article is empty!'}      = 'Dieser Artikel ist leer!';
-    $Self->{Translation}->{'Latest created FAQ articles'} = 'Zuletzt erstellte FAQ-Artikel';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Zuletzt geänderte FAQ-Artikel';
-    $Self->{Translation}->{'Top 10 FAQ articles'}         = 'Top 10 FAQ-Artikel';
+    $Self->{Translation}->{'Need rate!'} = '';
+    $Self->{Translation}->{'This article is empty!'} = '';
+    $Self->{Translation}->{'Latest created FAQ articles'} = '';
+    $Self->{Translation}->{'Top 10 FAQ articles'} = '';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
-    $Self->{Translation}->{'Content Type'} = 'Inhaltstyp';
+    $Self->{Translation}->{'Content Type'} = '';
+
+    # Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
+    $Self->{Translation}->{'Attribute which will be searched on autocomplete'} = '';
+    $Self->{Translation}->{'Select the attribute which tickets will be searched by'} = '';
+    $Self->{Translation}->{'Attribute which is displayed for values'} = '';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Database XML Definition: FAQ.sopm
-    $Self->{Translation}->{'internal'} = 'intern';
-    $Self->{Translation}->{'external'} = 'extern';
-    $Self->{Translation}->{'public'}   = 'öffentlich';
+    $Self->{Translation}->{'internal'} = '';
+    $Self->{Translation}->{'external'} = '';
+    $Self->{Translation}->{'public'} = '';
 
     # JS File: FAQ.Agent.ConfirmationDialog
-    $Self->{Translation}->{'Ok'} = 'Ok';
+    $Self->{Translation}->{'Ok'} = '';
 
     # SysConfig
-    $Self->{Translation}->{
-        'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image.'
-        }
-        =
-        'Ein Filter zur automatischen Generierung von FAQ-Links, wenn ein Hinweis auf einen FAQ-Artikel identifiziert wird. Das Element Image erlaubt zwei Eingabeformen: Erstens der Name eines Icons (z. B. faq.png). In diesem Fall wird auf das Grafik-Verzeichnis des OTOBO zugegriffen. Als zweite Möglichkeit kann man aber auch den direkten Link zur Grafik angeben (z. B. http://otobo.org/faq.png).';
-    $Self->{Translation}->{'Add FAQ article'}                                            = 'FAQ-Artikel hinzufügen';
-    $Self->{Translation}->{'CSS color for the voting result.'}                           = 'CSS-Farbe für das Bewertungs-Ergebnis.';
-    $Self->{Translation}->{'Cache Time To Leave for FAQ items.'}                         = 'Cachezeit für FAQ-Artikel.';
-    $Self->{Translation}->{'Category Management'}                                        = 'Kategorienverwaltung';
-    $Self->{Translation}->{'Category Management.'}                                       = 'Kategorien-Verwaltung';
-    $Self->{Translation}->{'Customer FAQ Print.'}                                        = 'Kunden-FAQ Drucken.';
-    $Self->{Translation}->{'Customer FAQ Related Articles'}                              = 'Kunden-FAQ-bezogene Artikel';
-    $Self->{Translation}->{'Customer FAQ Related Articles.'}                             = 'Kunden-FAQ-bezogene Artikel.';
-    $Self->{Translation}->{'Customer FAQ Zoom.'}                                         = 'Kunden FAQ Detailansicht.';
-    $Self->{Translation}->{'Customer FAQ search.'}                                       = 'Kunden-FAQ Suchen.';
-    $Self->{Translation}->{'Customer FAQ.'}                                              = 'Kunden-FAQ.';
-    $Self->{Translation}->{'Decimal places of the voting result.'}                       = 'Dezimalstellen des Ergebnisses der Artikelbewertung.';
-    $Self->{Translation}->{'Default category name.'}                                     = 'Root-Kategorie-Name.';
-    $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'Standard-Sprache für FAQ-Artikel im Einzel-Sprach-Modus.';
-    $Self->{Translation}->{'Default maximum size of the titles in a FAQ article to be shown.'} =
-        'Standardmäßig maximal angezeigte Zeichen in den Titeln der FAQ-Artikel.';
-    $Self->{Translation}->{'Default priority of tickets for the approval of FAQ articles.'} =
-        'Standard-Priorität von Tickets für die Freigabe von FAQ-Artikeln.';
-    $Self->{Translation}->{'Default state for FAQ entry.'}                               = 'Standard Status eines FAQ-Eintrags.';
-    $Self->{Translation}->{'Default state of tickets for the approval of FAQ articles.'} = 'Standard-Status von Tickets für die Freigabe von FAQ-Artikeln.';
-    $Self->{Translation}->{'Default type of tickets for the approval of FAQ articles.'}  = 'Standard Tickettyp für die Genehmigung von FAQ-Artikeln';
-    $Self->{Translation}->{'Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system.'} =
-        'Standardwert des Action-Parameters für den öffentlichen FAQ-Bereich. Der Action-Parameter wird von den Skripten des Systems benutzt.';
-    $Self->{Translation}->{
-        'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'
-        }
-        =
-        'Definieren Sie Actions, in denen im Verknüpfte-Objekte-Widget ein Einstellungen-Knopf verfügbar sein soll (LinkObject::ViewMode = "complex"). Bitte beachten Sie, dass für diese Actions die folgenden JS- und CSS-Dateien registriert sein müssen:  Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js und Core.Agent.LinkObject.js.';
-    $Self->{Translation}->{'Define if the FAQ title should be concatenated to article subject.'} =
-        'Definiert ob der FAQ-Titel mit dem Artikelbetreff verkettet werden soll.';
-    $Self->{Translation}->{
-        'Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = "complex"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns.'
-        }
-        =
+    $Self->{Translation}->{'A precentage value of the minimal translation progress per language, to be usable for documentations.'} =
         '';
-    $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ journal.'} =
-        'Definiert ein Übersichts-Modul um die Small-Ansicht im FAQ-Journal anzuzeigen.';
-    $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ list.'} =
-        'Definiert ein Übersichts-Modul um die Small-Ansicht einer FAQ-Liste anzuzeigen.';
-    $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface.'} =
-        'Definiert das Standard-FAQ-Attribut für die Sortierung der FAQ-Suche im Agenten-Interface.';
-    $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface.'} =
-        'Definiert das Standard-FAQ-Attribut für die Sortierung des FAQ-Suche im Kunden-Interface.';
-    $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface.'} =
-        'Definiert das Standard-FAQ-Attribut für die Sortierung des FAQ-Suche im Public-Interface.';
-    $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface.'} =
-        'Definiert das Standard-FAQ-Attribut für die Sortierung des FAQ-Explorer im Agenten-Interface.';
-    $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface.'} =
-        'Definiert das Standard-FAQ-Attribut für die Sortierung des FAQ-Explorer im Kunden-Interface.';
-    $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface.'} =
-        'Definiert das Standard-FAQ-Attribut für die Sortierung des FAQ-Explorer im Public-Interface.';
-    $Self->{Translation}->{'Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top.'} =
-        'Definiert die Standard-Sortierung des FAQ-Explorer im Agenten-Interface. Auf: Ältester FAQ-Artikel oben. Ab: Neuester FAQ-Artikel oben.';
-    $Self->{Translation}->{'Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top.'} =
-        'Definiert die Standard-Sortierung des FAQ-Explorer im Kunden-Interface. Auf: Ältester FAQ-Artikel oben. Ab: Neuester FAQ-Artikel oben.';
-    $Self->{Translation}->{'Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top.'} =
-        'Definiert die Standard-Sortierung des FAQ-Explorers im Public-Interface. Auf: Ältester FAQ-Artikel oben. Ab: Neuester FAQ-Artikel oben.';
-    $Self->{Translation}->{'Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top.'} =
-        'Definiert die Standard-Sortierung der FAQ-Suche im Agenten-Interface. Auf: Ältester FAQ-Artikel oben. Ab: Neuester FAQ-Artikel oben.';
-    $Self->{Translation}->{'Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top.'} =
-        'Definiert die Standard-Sortierung der FAQ-Suche im Kunden-Interface. Auf: Ältester FAQ-Artikel oben. Ab: Neuester FAQ-Artikel oben.';
-    $Self->{Translation}->{'Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top.'} =
-        'Definiert die Standard-Sortierung der FAQ-Suche im Public-Interface. Auf: Ältester FAQ-Artikel oben. Ab: Neuester FAQ-Artikel oben.';
-    $Self->{Translation}->{'Defines the default shown FAQ search attribute for FAQ search screen.'} =
-        'Definiert die Standardattribute für die Suche in den Häufig-gestellten-Fragen im Häufig-gestellte-Fragen Suchdialog.';
-    $Self->{Translation}->{'Defines the information to be inserted in a FAQ based Ticket. "Full FAQ" includes text, attachments and inline images.'} =
-        'Definiert die Informationen, welche in ein FAQ-basierendes Ticket eingegeben werden. "Komplette FAQ" beinhaltet den Text, Anhänge und Inline-Bilder.';
-    $Self->{Translation}->{
-        'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'
-        }
-        =
-        'Definiert die Parameter für das Übersichtsseiten-Backend. "Limit" definiert die Anzahl der Einträge, die standardmäßig angezeigt werden. "Group" wird verwendet, um den Zugriff auf das Plugin zu begrenzen (bspw. Group: admin;group1;group2;). "Default" steuert, ob das Plugin standardmäßig aktiviert ist oder ob der User es manuell aktivieren muss.';
-    $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
-        'Definert die angezeigten Spalten im FAQ-Explorer. Diese Option hat keine Auswirkung auf die Position der Spalten.';
-    $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
-        'Definert die angezeigten Spalten im FAQ-Journal. Diese Option hat keine Auswirkung auf die Position der Spalten.';
-    $Self->{Translation}->{'Defines the shown columns in the FAQ search. This option has no effect on the position of the column.'} =
-        'Definert die angezeigten Spalten in der FAQ-Suche. Diese Option hat keine Auswirkung auf die Position der Spalten.';
-    $Self->{Translation}->{'Defines where the \'Insert FAQ\' link will be displayed.'} = 'Definiert wo der Link aus \'FAQ einfügen\' angezeigt wird.';
-    $Self->{Translation}->{'Definition of FAQ item free text field.'}                  = 'Definition der freien Textfelder.';
-    $Self->{Translation}->{'Delete this FAQ'}                                          = 'Diese FAQ löschen!';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ add screen of the agent interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Erstell-Bildschirm des Agentenbereichs.';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ edit screen of the agent interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Bearbeitungs-Bildschirm des Agentenbereichs.';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ overview screen of the customer interface.'} =
-        'Angezeigte Dynamische Felder in der FAQ Übersicht des Kundenbereichs.';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ overview screen of the public interface.'} =
-        'Angezeigte Dynamische Felder in der FAQ Übersicht des öffentlichen Bereichs.';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ print screen of the agent interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Druck-Bildschirm des Agentenbereichs. ';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ print screen of the customer interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Druck-Bildschirm des Kundenbereichs. ';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ print screen of the public interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Druck-Bildschirm des öffentlichen Bereichs. ';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ search screen of the agent interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Such-Bildschirm des Agentenbereichs. ';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ search screen of the customer interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Such-Bildschirm des Kundenbereichs. ';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ search screen of the public interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Such-Bildschirm des öffentlichen Bereichs. ';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ small format overview screen of the agent interface.'} =
-        'Angezeigte dynamische Felder in der Kleinansicht von FAQ-Artikeln im Agentenbereich.';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the agent interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Zoom-Bildschirm des Agentenbereichs. ';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the customer interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Zoom-Bildschirm des Kundenbereichs. ';
-    $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
-        'Angezeigte Dynamische Felder im FAQ Zoom-Bildschirm des öffentlichen Bereichs. ';
-    $Self->{Translation}->{'Edit this FAQ'}                            = 'FAQ bearbeiten';
-    $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Multiple Sprachen im FAQ-Modul aktivieren.';
-    $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
-        'Aktivieren Sie die zugehörige Artikelfunktion für das Kunden-Frontend.';
-    $Self->{Translation}->{'Enable voting mechanism on FAQ module.'}                = 'Bewertungs-Mechanismus im FAQ-Modul aktivieren.';
-    $Self->{Translation}->{'Explorer'}                                              = 'Ansicht nach Kategorien';
-    $Self->{Translation}->{'FAQ AJAX Responder'}                                    = 'FAQ AJAX Responder';
-    $Self->{Translation}->{'FAQ AJAX Responder for Richtext.'}                      = 'FAQ AJAX Responder für Richtext.';
-    $Self->{Translation}->{'FAQ Area'}                                              = 'FAQ-Bereich';
-    $Self->{Translation}->{'FAQ Area.'}                                             = 'FAQ-Bereich.';
-    $Self->{Translation}->{'FAQ Delete.'}                                           = 'FAQ Löschen.';
-    $Self->{Translation}->{'FAQ Edit.'}                                             = 'FAQ Bearbeiten.';
-    $Self->{Translation}->{'FAQ History.'}                                          = 'FAQ Historie.';
-    $Self->{Translation}->{'FAQ Journal Overview "Small" Limit'}                    = 'FAQ-Journal Anzeige-Limit für die Small-Ansicht';
-    $Self->{Translation}->{'FAQ Overview "Small" Limit'}                            = 'FAQ-Übersicht "kleines" Limit';
-    $Self->{Translation}->{'FAQ Print.'}                                            = 'FAQ Drucken.';
-    $Self->{Translation}->{'FAQ search backend router of the agent interface.'}     = 'Such-Backend-Router für die FAQ-Suche im Agenten-Interface.';
-    $Self->{Translation}->{'Field4'}                                                = 'Feld4';
-    $Self->{Translation}->{'Field5'}                                                = 'Feld5';
-    $Self->{Translation}->{'Full FAQ'}                                              = 'Vollständiges FAQ';
-    $Self->{Translation}->{'Group for the approval of FAQ articles.'}               = 'Gruppe für die Freigabe von FAQ-Artikeln.';
-    $Self->{Translation}->{'History of this FAQ'}                                   = 'FAQ-Historie';
-    $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'}        = 'Interne FAQ-Felder in einem FAQ-basiertenTicket verwenden.';
-    $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'Den Namen jedes FAQ-Feldes einem FAQ-basierten Ticket verwenden.';
-    $Self->{Translation}->{'Interfaces where the quick search should be shown.'}    = 'Oberfläche auf der die Schnellsuche angezeigt werden soll';
-    $Self->{Translation}->{'Journal'}                                               = 'Journal';
-    $Self->{Translation}->{'Language Management'}                                   = 'Sprachenverwaltung';
-    $Self->{Translation}->{'Language Management.'}                                  = 'Sprachenverwaltung.';
-    $Self->{Translation}->{'Limit for the search to build the keyword FAQ article list.'}
-        = 'Limit für die Suche beim Erstellen der Schlüsselwort-FAQ-Artikel-Liste.';
-    $Self->{Translation}->{'Link another object to this FAQ item'} = 'Diese FAQ mit einem anderen Objekt verknüpfen';
-    $Self->{Translation}->{'List of queue names for which the related article feature is enabled.'} =
-        'Liste der Queue-Namen für welche die zugehörigen Artikel-Feature aktiviert wurden.';
-    $Self->{Translation}->{'List of state types which can be used in the agent interface.'} =
-        'Liste der Statustypen, die in der Agentenoberfläche genutzt werden können.';
-    $Self->{Translation}->{'List of state types which can be used in the customer interface.'} =
-        'Liste der Statustypen, die in der Kundenoberfläche genutzt werden können.';
-    $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
-        'Liste der Statustypen, die in der öffentlichen Oberfläche genutzt werden können.';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Lade-Modulregistrierung für das öffentliche Interface.';
-    $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die im FAQ-Explorerl im Agenten-Interface angezeigt werden.';
-    $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die in der FAQ-Explorer im Kunden-Interface angezeigt werden.';
-    $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die in der FAQ-Explorer im Public-Interface angezeigt werden.';
-    $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die im FAQ-Journal im Agenten-Interface angezeigt werden.';
-    $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the result of a search in the agent interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die in der FAQ-Suche im Agenten-Interface angezeigt werden.';
-    $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the result of a search in the customer interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die in der FAQ-Suche im Kunden-Interface angezeigt werden.';
-    $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the result of a search in the public interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die in der FAQ-Suche im Public-Interface angezeigt werden.';
-    $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface.'} =
-        'Maximale Größe von Titeln in Häufig-gestellten-Fragen-Beiträgen welche im Häufig-gestellte-Fragen-Explorer der Agentenübersicht angezeigt werden.';
-    $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface.'} =
-        'Maximale Größe von Titeln in Häufig-gestellten-Fragen-Beiträgen welche im Häufig-gestellte-Fragen-Explorer der Kundenübersicht angezeigt werden.';
-    $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface.'} =
-        'Maximale Größe von Titeln in Häufig-gestellten-Fragen-Beiträgen welche im Häufig-gestellte-Fragen-Explorer der öffentlichen Übersicht angezeigt werden.';
-    $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface.'} =
-        'Maximale Größe von Titeln in Häufig-gestellten-Fragen-Beiträgen welche in der Häufig-gestellte-Fragen-Suche der Agentenübersicht angezeigt werden.';
-    $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface.'} =
-        'Maximale Größe von Titeln in Häufig-gestellten-Fragen-Beiträgen welche in der Häufig-gestellte-Fragen-Suche der Kundenübersicht angezeigt werden.';
-    $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface.'} =
-        'Maximale Größe von Titeln in Häufig-gestellten-Fragen-Beiträgen welche in der Häufig-gestellte-Fragen-Suche der öffentlichen Übersicht angezeigt werden.';
-    $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface.'} =
-        'Maximale Größe von Titeln in Häufig-gestellten-Fragen-Beiträgen welche in FAQ-Berichten in der Agentenübersicht angezeigt werden.';
-    $Self->{Translation}->{'Module to generate HTML OpenSearch profile for short FAQ search in the customer interface.'} =
-        'Modul zum Erzeugen des HTML OpenSearch-Profils für die kurze FAQ-Suche im Kunden-Interface.';
-    $Self->{Translation}->{'Module to generate HTML OpenSearch profile for short FAQ search in the public interface.'} =
-        'Modul zum Generieren des HTML "OpenSearch" Profils zur FAQ-Suche in der öffentlichen Oberfläche.';
-    $Self->{Translation}->{'Module to generate html OpenSearch profile for short FAQ search.'} =
-        'Modul zum Generieren des HTML "OpenSearch"-Profils zur FAQ-Suche über das Browser-Suchfeld.';
-    $Self->{Translation}->{'New FAQ Article.'}                                          = 'Neuer FAQ-Artikel.';
-    $Self->{Translation}->{'New FAQ articles need approval before they get published.'} = 'Neue FAQ-Artikel benötigen eine Freigabe vor der Veröffentlichung.';
-    $Self->{Translation}->{'Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die im FAQ-Explorer im Kunden-Interface angezeigt werden.';
-    $Self->{Translation}->{'Number of FAQ articles to be displayed in the FAQ Explorer of the public interface.'} =
-        'Maximale Anzahl von FAQ-Artikeln die im FAQ-Explorer in der öffentlichen Oberfläche angezeigt werden.';
-    $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the customer interface.'} =
-        'Setzt in Suchergebnissen die Anzahl von FAQ-Artikeln pro Seite in der Kundenoberfläche.';
-    $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
-        'Setzt in Suchergebnissen die Anzahl von FAQ-Artikeln pro Seite in der öffentlichen Oberfläche.';
-    $Self->{Translation}->{'Number of shown items in last changes.'}       = 'Anzahl der zu anzeigenden Artikel in letzten Änderungen.';
-    $Self->{Translation}->{'Number of shown items in last created.'}       = 'Anzahl der anzuzeigenden Artikel in zuletzt erstellte Artikel.';
-    $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Anzahl der anzuzeigenden Artikel im Top 10 Feature.';
-    $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
-        'Ausgabefilter zum Hinzufügen von JavaScript zur Kunden-Ticket-Ansicht.';
-    $Self->{Translation}->{'Output limit for the related FAQ articles.'} = 'Ausgabe-Limit der zugehörigen FAQ-Artikel.';
-    $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview.'} =
-        'Parameter für die Seiten (in denen FAQ-Artikel angezeigt werden) für die Small-Ansicht des FAQ-Journals.';
-    $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
-        'Parameter für die Seiten (in denen FAQ-Artikel angezeigt werden) für die Small-Ansicht des FAQ-Overiews.';
-    $Self->{Translation}->{'Print this FAQ'}                            = 'FAQ drucken';
-    $Self->{Translation}->{'Public FAQ Print.'}                         = 'Öffentliches FAQ Drucken.';
-    $Self->{Translation}->{'Public FAQ Zoom.'}                          = 'Öffentliche FAQ Detailansicht.';
-    $Self->{Translation}->{'Public FAQ search.'}                        = 'Öffentliches FAQ Suchen.';
-    $Self->{Translation}->{'Public FAQ.'}                               = 'Öffentliches FAQ.';
-    $Self->{Translation}->{'Queue for the approval of FAQ articles.'}   = 'Queue für die Freigabe von FAQ-Artikeln.';
-    $Self->{Translation}->{'Rates for voting. Key must be in percent.'} = 'Gewichtung für die Bewertung. Der Key muss in Prozent angegeben werden.';
-    $Self->{Translation}->{'S'}                                         = 'S';
-    $Self->{Translation}->{'Search FAQ'}                                = 'FAQ durchsuchen';
-    $Self->{Translation}->{'Search FAQ Small.'}                         = 'FAQ durchsuchen "Klein".';
-    $Self->{Translation}->{'Search FAQ.'}                               = 'FAQ durchsuchen.';
-    $Self->{Translation}->{'Select how many items should be shown in Journal Overview "Small" by default.'} =
-        'Auswahl, wie viele FAQ-Artikel in der Journal-Übersicht "Klein" standardmäßig angezeigt werden sollen.';
-    $Self->{Translation}->{'Select how many items should be shown in Overview "Small" by default.'} =
-        'Auswahl, wie viele FAQ-Artikel in der Übersicht "Klein" standardmäßig angezeigt werden sollen.';
-    $Self->{Translation}->{'Set the default height (in pixels) of inline HTML fields in AgentFAQZoom.'} =
-        'Setzt die maximale Höhe (in Pixeln) von Inline-HTML-Felder in AgentFAQZoom.';
-    $Self->{Translation}->{'Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom).'} =
-        'Setzt die maximale Höhe (in Pixeln) von Inline-HTML-Felder in CustomerFAQZoom (und PublicFAQZoom).';
-    $Self->{Translation}->{'Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom.'} =
-        'Setzt die maximale Höhe (in Pixeln) von Inline-HTML-Felder in AgentFAQZoom.';
-    $Self->{Translation}->{'Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom).'} =
-        'Setzt die maximale Höhe (in Pixeln) von Inline-HTML-Felder in CustomerFAQZoom (und PublicFAQZoom).';
-    $Self->{Translation}->{'Show "Insert FAQ Link" Button in AgentFAQZoomSmall for public FAQ Articles.'} =
-        'Zeigt die Schaltfläche "FAQ-Link einfügen" in AgentFAQZoomSmall für öffentliche FAQ-Artikel an.';
-    $Self->{Translation}->{'Show "Insert FAQ Text & Link" / "Insert Full FAQ & Link" Button in AgentFAQZoomSmall for public FAQ Articles.'} =
-        'Zeigt die Schaltfläche "FAQ-Text & Link einfügen / Komplette FAQ & Link einfügen" in AgentFAQZoomSmall für öffentliche FAQ-Artikel an.';
-    $Self->{Translation}->{'Show "Insert FAQ Text" / "Insert Full FAQ" Button in AgentFAQZoomSmall.'} =
-        'Zeigt die Schaltfläche "FAQ-Text einfügen / Komplette FAQ einfügen" in AgentFAQZoomSmall an.';
-    $Self->{Translation}->{'Show FAQ Article with HTML.'} = 'HTML Darstellung der FAQ-Artikel einschalten.';
-    $Self->{Translation}->{'Show FAQ path yes/no.'}       = 'FAQ Pfad anzeigen ja/nein.';
-    $Self->{Translation}->{'Show invalid items in the FAQ Explorer result of the agent interface.'} =
-        'Zeige ungültige Einträge im FAQ-Explorer-Ergebnis der Agenten-Oberfläche.';
-    $Self->{Translation}->{'Show items of subcategories.'}                   = 'Artikel aus Subkategorien anzeigen ja/nein.';
-    $Self->{Translation}->{'Show last change items in defined interfaces.'}  = 'Interfaces in denen das LastChange Feature angezeigt werden soll.';
-    $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Interfaces in denen das LastCreate Feature angezeigt werden soll.';
-    $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
-        'Zeigt die Sterne für die Artikel mit einer Bewertung gleich oder größer wie der definierte Wert an (Setzen Sie den Wert auf \'0\' zum Deaktivieren der Ausgabe).';
-    $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Interfaces in denen das Top 10 Feature angezeigt werden soll.';
-    $Self->{Translation}->{'Show voting in defined interfaces.'}       = 'Interfaces in denen das Voting Feature angezeigt werden soll.';
-    $Self->{Translation}->{'Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface.'} =
-        'Zeigt einen Link in der Menu-Leiste in der Zoom-Ansicht im Agenten-Interface an, der es ermöglicht einen FAQ-Artikel mit anderen Objekten zu verknüpfen.';
-    $Self->{Translation}->{'Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface.'} =
-        'Zeigt einen Link in der Menu-Leiste in der Zoom-Ansicht im Agenten-Interface an, der es ermöglicht einen FAQ-Artikel zu löschen.';
-    $Self->{Translation}->{'Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface.'} =
-        'Zeigt einen Link in der Menu-Leiste in der Zoom-Ansicht im Agenten-Interface an, um die Historie eines FAQ-Artikels anzuzeigen.';
-    $Self->{Translation}->{'Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface.'} =
-        'Zeigt einen Link in der Menu-Leiste in der Zoom-Ansicht im Agenten-Interface an, der es ermöglicht einen FAQ-Artikel zu bearbeiten.';
-    $Self->{Translation}->{'Shows a link in the menu to go back in the FAQ zoom view of the agent interface.'} =
-        'Zeigt einen Link in der Menu-Leiste in der Zoom-Ansicht im Agenten-Interface an, der es ermöglicht zur vorherigen Seite zurück zu gehen.';
-    $Self->{Translation}->{'Shows a link in the menu to print a FAQ in the its zoom view of the agent interface.'} =
-        'Zeigt einen Link in der Menu-Leiste in der Zoom-Ansicht im Agenten-Interface an, der es ermöglicht einen FAQ-Artikel zu drucken.';
-    $Self->{Translation}->{'Solution'}                                            = 'Lösung';
-    $Self->{Translation}->{'Symptom'}                                             = 'Symptom';
-    $Self->{Translation}->{'Text Only'}                                           = 'Nur Text';
-    $Self->{Translation}->{'The default languages for the related FAQ articles.'} = 'Standard-Sprache für passende FAQ-Artikel.';
-    $Self->{Translation}->{'The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#.'} =
-        'Der Identifikator für einen FAQ-Artikel, z. B. FAQ#, KB#, MyFAQ#. Der Standardwert ist FAQ#.';
-    $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'FAQ\' objects using the \'Normal\' link type.'} =
-        'Definiert, dass ein \'FAQ\'-Objekte mit dem Linktyp \'Normal\' mit anderen \'FAQ\'-Objekten verlinkt werden kann.';
-    $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'FAQ\' objects using the \'ParentChild\' link type.'} =
-        'Definiert, dass ein \'FAQ\'-Objekte mit dem Linktyp \'ParentChild\' mit anderen \'FAQ\'-Objekten verlinkt werden kann.';
-    $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'Normal\' link type.'} =
-        'Definiert, dass ein \'FAQ\'-Objekte mit dem Linktyp \'Normal\' mit anderen \'Ticket\'-Objekten verlinkt werden kann.';
-    $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
-        'Definiert, dass ein \'FAQ\'-Objekte mit dem Linktyp \'ParentChild\' mit anderen \'Ticket\'-Objekten verlinkt werden kann.';
-    $Self->{Translation}->{'Ticket body for approval of FAQ article.'}    = 'Body des Tickets zur Freigabe eines FAQ-Artikels.';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article.'} = 'Betreff des Tickets zur Freigabe eines FAQ-Artikels.';
-    $Self->{Translation}->{'Toolbar Item for a shortcut.'}                = 'Werkzeugleisteneintrag für den Schnellzugriff.';
-    $Self->{Translation}->{'external (customer)'}                         = 'extern (Kunde)';
-    $Self->{Translation}->{'internal (agent)'}                            = 'intern (Agent)';
-    $Self->{Translation}->{'public (all)'}                                = 'öffentlich (Alle)';
-    $Self->{Translation}->{'public (public)'}                             = 'öffentlich (öffentlich)';
+    $Self->{Translation}->{'Access repos via http or https.'} = '';
+    $Self->{Translation}->{'Autoloading of Znuny4OTRSRepo extensions.'} = '';
+    $Self->{Translation}->{'Backend module registration for the config conflict check module.'} =
+        '';
+    $Self->{Translation}->{'Backend module registration for the file conflict check module.'} =
+        '';
+    $Self->{Translation}->{'Backend module registration for the function redefine check module.'} =
+        '';
+    $Self->{Translation}->{'Backend module registration for the manual set module.'} = '';
+    $Self->{Translation}->{'Block hooks to be created for BS ad removal.'} = '';
+    $Self->{Translation}->{'Block hooks to be created for package manager output filter.'} =
+        '';
+    $Self->{Translation}->{'Branch View commit limit'} = 'Commit-Limit der Zweigansicht';
+    $Self->{Translation}->{'CodePolicy'} = '';
+    $Self->{Translation}->{'Commit limit per page for Branch view screen'} = 'Commit-Limit pro Seite für die Zweigansicht.';
+    $Self->{Translation}->{'Create analysis file'} = 'Erstelle Analysedatei';
+    $Self->{Translation}->{'Creates a analysis file from this ticket and sends to Znuny.'} =
+        'Erstellt einen Analysedatei von diesem Ticket und sendet ihn an Znuny.';
+    $Self->{Translation}->{'Creates a analysis file from this ticket.'} = 'Erstellt einen Analysedatei von diesem Ticket.';
+    $Self->{Translation}->{'Define private addon repos.'} = '';
+    $Self->{Translation}->{'Defines the filter that processes the HTML templates.'} = '';
+    $Self->{Translation}->{'Defines the test module for checking code policy.'} = '';
+    $Self->{Translation}->{'Definition of GIT clone/push URL Prefix.'} = 'Definition des GIT clone/push URL Präfix';
+    $Self->{Translation}->{'Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
+        'Definition eines dynamischen Feldes: Group => Gruppe mit Zugriff zu den dynamischen Feldern; AlwaysVisible => Feld kann entfernt werden (0|1); InformationAreaName => Name des Widgets; InformationAreaSize => Größe und Position des Widgets (Large|Small); Name => Der Name des zu benutzenden dynamischen Feldes; Priority => Sortierung des dynamischen Feldes; State => Status des Feldes (0 = deaktiviert, 1 = aktiviert, 2 = zwingend erforderlich), FilterRelease => Regulärer Ausdruck welcher den Repository Namen beschreibt, der angezeigt werden soll; FilterPackage => Regulärer Ausdruck welcher den Paketnamen beschreibt das angezeigt werden soll; FilterBranch => Regulärer Ausdruck welcher den Namen des Zweigs (Branch) beschreibt, der angezeigt werden soll; FilterRelease => Regulärer Ausdruck den Versions-String eines Releases beschreibt, das angezeigt werden soll.';
+    $Self->{Translation}->{'Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
+        'Definition eines dynamischen Felds: Group => Gruppe mit Zugriff auf das dynamische Feld; AlwaysVisible => Feld kann entfernt werden (0|1); InformationAreaName => Name des Widgets (Informationsbereich); InformationAreaSize => Größe und Position des Widgets (Large|Small); Name => Name des zu verwendeten dynamischen Feldes; Priority => Anordnung der dynamischen Felder; State => Status der dynamischen Felder (0 = deaktiviert, 1 = aktiviert, 2 = Pflichtfeld), FilterRepository => Regex der den Repository-Namen matchen muss um angezeigt zu werden, FilterPackage => Regex der den Packen-Namen matchen muss um angezeigt zu werden, FilterBranch => Regex der den Branch-Namen matchen muss um angezeigt zu werden, FilterRelease => Regex der den Release Version-String matchen muss um angezeigt zu werden.';
+    $Self->{Translation}->{'Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date).'} =
+        'Definition externer MD5 Summen (key => MD5, Value => Hersteller, Paketname, Version, Datum).';
+    $Self->{Translation}->{'Definition of mappings between public repository requests and internal OPMS repositories.'} =
+        'Definition von Mappings zwischen öffentlichen Repository Anfragen und internen OPMS Repositories.';
+    $Self->{Translation}->{'Definition of package states.'} = 'Definition der Paket Status.';
+    $Self->{Translation}->{'Definition of renamed OPMS packages.'} = 'Definition umbenannter OPMS Pakete.';
+    $Self->{Translation}->{'Directory, which is used by Git to cache repositories.'} = '';
+    $Self->{Translation}->{'Directory, which is used by Git to store temporary data.'} = '';
+    $Self->{Translation}->{'Directory, which is used by Git to store working copies.'} = '';
+    $Self->{Translation}->{'Disable online repositories.'} = '';
+    $Self->{Translation}->{'Do not log git ssh connection authorization results for these users. Useful for automated stuff.'} =
+        'Für diese Benutzer werden keine Authorisierungen von Verbindungen geloggt. Nützlich für automatisierte Anfragen.';
+    $Self->{Translation}->{'Dynamic Fields Screens'} = 'Dynamische Felder Oberflächen';
+    $Self->{Translation}->{'DynamicFieldScreen'} = '';
+    $Self->{Translation}->{'Export all available public keys to authorized_keys file.'} = 'Exportiert alle verfügbaren öffentlichen Schlüssel in die Datei "authorized_keys".';
+    $Self->{Translation}->{'Export all relevant releases to ftp server.'} = 'Alle relevanten Releases auf den FTP-Server exportieren.';
+    $Self->{Translation}->{'Frontend module registration for the OPMS object in the agent interface.'} =
+        'Frontendmodul-Registration für das OPMS-Objekt im Agent-Interface.';
+    $Self->{Translation}->{'Frontend module registration for the PublicOPMSRepository object in the public interface.'} =
+        'Frontendmodul-Registration des PublicOPMSRepository-Objekts im Public-Interface.';
+    $Self->{Translation}->{'Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface.'} =
+        'Frontendmodul-Registration für das PublicOPMSRepositoryLookup Objekt im Public-Interface.';
+    $Self->{Translation}->{'Frontend module registration for the PublicOPMSTestBuild object in the public interface.'} =
+        'Frontendmodul-Registration des PublicOPMSTestBuild-Objekts im Public-Interface.';
+    $Self->{Translation}->{'Frontend module registration for the PublicPackageVerification object in the public interface.'} =
+        'Frontendmodul-Registration für das PublicPackageVerification Objekt im Public-Interface.';
+    $Self->{Translation}->{'Frontend module registration for the admin interface.'} = '';
+    $Self->{Translation}->{'GIT Author registration.'} = 'Registrierung der GIT Verfasser';
+    $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
+        '';
+    $Self->{Translation}->{'Generate documentations once per night.'} = '';
+    $Self->{Translation}->{'Git'} = 'Git';
+    $Self->{Translation}->{'Git Management'} = 'Git-Verwaltung';
+    $Self->{Translation}->{'Git Repository'} = '';
+    $Self->{Translation}->{'Group, whose members have delete admin permissions in OPMS.'} = 'Gruppe, dessen Mitglieder Delete-Admin-Rechte in OPMS haben.';
+    $Self->{Translation}->{'Group, whose members have repository admin permissions in OPMS.'} =
+        'Gruppe, dessen Mitglieder Repository-Admin-Rechte in OPMS haben.';
+    $Self->{Translation}->{'Group, whose members will see CI test result information in OPMS screens.'} =
+        '';
+    $Self->{Translation}->{'Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface.'} =
+        'Gruppen denen ein authentifizierter Benutzer (durch Benutzernamen und Passwort) angehören muss, um Testpakete über das Public-Interface zu erzeugen.';
+    $Self->{Translation}->{'Groups which will be set during git project creation processes while adding OPMS repositories.'} =
+        'Gruppen welche automatisch durch das Anlegen von GIT-Projekten gesetzt werden, während OPMS Repositories angelegt werden.';
+    $Self->{Translation}->{'Manage dynamic field in screens.'} = 'Verwaltung von dynamischen Feldern in Oberflächen.';
+    $Self->{Translation}->{'Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key.'} =
+        'Verwalten Sie hier Ihre öffentlichen SSH-Schlüssel für den Git-Zugang. Achten Sie darauf, diese Einstellung zu speichern, wenn Sie einen neuen Schlüssel hinzufügen.';
+    $Self->{Translation}->{'Module to generate statistics about the added code lines.'} = 'Modul zur Erstellung von Statistiken über die hinzugefügten Code-Zeilen.';
+    $Self->{Translation}->{'Module to generate statistics about the growth of code.'} = 'Modul zur Generierung von Statistiken über das Wachstum von Code.';
+    $Self->{Translation}->{'Module to generate statistics about the number of git commits.'} =
+        'Modul zur Erstellung von Statistiken über die Anzahl der Git-Commits.';
+    $Self->{Translation}->{'Module to generate statistics about the removed code lines.'} = 'Modul zur Erstellung von Statistiken über die gelöschten Code-Zeilen.';
+    $Self->{Translation}->{'OPMS'} = 'OPMS';
+    $Self->{Translation}->{'Only users who have rw permissions in one of these groups may access git.'} =
+        'Nur Benutzer, die über rw-Berechtigungen in einer dieser Gruppen verfügen, können auf Git zugreifen.';
+    $Self->{Translation}->{'Option to set a package compatibility manually.'} = '';
+    $Self->{Translation}->{'Parameters for the pages in the BranchView screen.'} = 'Parameter für die Seiten in der BranchView-Ansicht.';
+    $Self->{Translation}->{'Pre-Definition of the \'GITProjectName\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
+        'Vor-Definition des dynamischen Feldes \'GITProjectName\': Group => Gruppe mit Zugriff auf das dynamische Feld; AlwaysVisible => Feld kann entfernt werden (0|1); InformationAreaName => Name des Widgets (Informationsbereich); InformationAreaSize => Größe und Position des Widgets (Large|Small); Name => Name des zu verwendeten dynamischen Feldes; Priority => Anordnung der dynamischen Felder; State => Status der dynamischen Felder (0 = deaktiviert, 1 = aktiviert, 2 = Pflichtfeld), FilterRepository => Regex der den Repository-Namen matchen muss um angezeigt zu werden, FilterPackage => Regex der den Packen-Namen matchen muss um angezeigt zu werden, FilterBranch => Regex der den Branch-Namen matchen muss um angezeigt zu werden, FilterRelease => Regex der den Release Version-String matchen muss um angezeigt zu werden.';
+    $Self->{Translation}->{'Pre-Definition of the \'GITRepositoryName\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
+        'Vor-Definition des dynamischen Feldes \'GITRepositoryName\': Group => Gruppe mit Zugriff auf das dynamische Feld; AlwaysVisible => Feld kann entfernt werden (0|1); InformationAreaName => Name des Widgets (Informationsbereich); InformationAreaSize => Größe und Position des Widgets (Large|Small); Name => Name des zu verwendeten dynamischen Feldes; Priority => Anordnung der dynamischen Felder; State => Status der dynamischen Felder (0 = deaktiviert, 1 = aktiviert, 2 = Pflichtfeld), FilterRepository => Regex der den Repository-Namen matchen muss um angezeigt zu werden, FilterPackage => Regex der den Packen-Namen matchen muss um angezeigt zu werden, FilterBranch => Regex der den Branch-Namen matchen muss um angezeigt zu werden, FilterRelease => Regex der den Release Version-String matchen muss um angezeigt zu werden.';
+    $Self->{Translation}->{'Pre-Definition of the \'PackageDeprecated\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
+        'Vor-Definition des dynamischen Feldes \'PackageDeprecated\': Group => Gruppe mit Zugriff auf das dynamische Feld; AlwaysVisible => Feld kann entfernt werden (0|1); InformationAreaName => Name des Widgets (Informationsbereich); InformationAreaSize => Größe und Position des Widgets (Large|Small); Name => Name des zu verwendeten dynamischen Feldes; Priority => Anordnung der dynamischen Felder; State => Status der dynamischen Felder (0 = deaktiviert, 1 = aktiviert, 2 = Pflichtfeld), FilterRepository => Regex der den Repository-Namen matchen muss um angezeigt zu werden, FilterPackage => Regex der den Packen-Namen matchen muss um angezeigt zu werden, FilterBranch => Regex der den Branch-Namen matchen muss um angezeigt zu werden, FilterRelease => Regex der den Release Version-String matchen muss um angezeigt zu werden.';
+    $Self->{Translation}->{'Recipients that will be informed by email in case of errors.'} =
+        '';
+    $Self->{Translation}->{'SSH Keys for Git Access'} = 'SSH-Schlüssel für den Git-Zugang';
+    $Self->{Translation}->{'Send analysis file'} = 'Sende Analysedatei';
+    $Self->{Translation}->{'Sets the git clone address to be used in repository listings.'} =
+        'Legt die Git-Clone-Adresse fest, die in Repository-Listen verwendet werden soll.';
+    $Self->{Translation}->{'Sets the home directory for git repositories.'} = 'Legt das Home-Verzeichnis für Git-Repositorys fest.';
+    $Self->{Translation}->{'Sets the path for the BugzillaAddComment post receive script location.'} =
+        'Legt den Pfad zums BugzillaAddComment post receive Skript fest.';
+    $Self->{Translation}->{'Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron.'} =
+        '';
+    $Self->{Translation}->{'Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron.'} =
+        'Legt den Pfad zum OTRSCodePolicy pre-receive Skript fest. Es wird empfohlen, einen separaten Klon des OTRSCodePolicy-Moduls zu verwenden, der über Cron aktualisiert wird.';
+    $Self->{Translation}->{'Show latest commits in git repositories.'} = '';
+    $Self->{Translation}->{'Shows a link in the menu to go create a unit test from the current ticket.'} =
+        '';
+    $Self->{Translation}->{'Synchronize OPMS tables with a remote database.'} = 'Synchronisiert OPMS Tabellen mit einer entfernten Datenbank.';
+    $Self->{Translation}->{'The minimum version of the sphinx library.'} = '';
+    $Self->{Translation}->{'The name of the sphinx theme to be used.'} = '';
+    $Self->{Translation}->{'The path to the OTRS CSS file (relative below the static path).'} =
+        '';
+    $Self->{Translation}->{'The path to the OTRS logo (relative below the static path).'} = '';
+    $Self->{Translation}->{'The path to the static folder, containing images and css files.'} =
+        '';
+    $Self->{Translation}->{'The path to the theme folder, containing the sphinx themes.'} = '';
+    $Self->{Translation}->{'This configuration defines all possible screens to enable or disable default columns.'} =
+        'Diese Konfiguration definiert alle möglichen Oberflächen in denen dynamische Felder als DefaultColumns aktiviert/deaktiviert werden können.';
+    $Self->{Translation}->{'This configuration defines all possible screens to enable or disable dynamic fields.'} =
+        'Diese Konfiguration definiert alle möglichen Oberflächen in denen dynamische Felder als DynamicFields aktiviert/deaktiviert werden können.';
+    $Self->{Translation}->{'This configuration defines if only valids or all (invalids) dynamic fields should be shown.'} =
+        'Diese Konfiguration definiert ob nur gültige oder alle (ungültige) dynamischen Felder angezeigt werden sollen.';
+    $Self->{Translation}->{'This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It\'s still recommended to use only verified packages.'} =
+        '';
+    $Self->{Translation}->{'This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig \'Znuny4OTRSRepoType\'.'} =
+        '';
+    $Self->{Translation}->{'This configuration registers a Output post-filter to extend package verification.'} =
+        '';
+    $Self->{Translation}->{'This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements.'} =
+        '';
+    $Self->{Translation}->{'This configuration registers an output filter to hide online repository selection in package manager.'} =
+        '';
+    $Self->{Translation}->{'Tidy unprocessed release that not passed test pomules checks for a long time.'} =
+        '';
+    $Self->{Translation}->{'Users who have rw permissions in one of these groups are permitted to execute force pushes \'git push --force\'.'} =
+        'Benutzer, die rw-Berechtigungen in einer dieser Gruppen haben, dürfen Force-Pushes \'git push --force\' ausführen.';
+    $Self->{Translation}->{'Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management.'} =
+        'Benutzer die über rw-Berechtigungen in einer dieser Gruppen verfügen, können Projekte verwalten. Zusätzlich haben die Mitglieder Administrationsberechtigungen für die Git-Verwaltung.';
+
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
-        'No',
-        'Ok',
-        'Settings',
-        'Submit',
-        'This might be helpful',
-        'Yes',
+    'No',
+    'Ok',
+    'Settings',
+    'Submit',
+    'This might be helpful',
+    'Yes',
     );
 
 }
