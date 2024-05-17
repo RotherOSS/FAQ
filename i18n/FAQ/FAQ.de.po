@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-17 06:42+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -107,31 +107,31 @@ msgstr "FAQ Explorer"
 
 #. Template: AgentFAQExplorer
 msgid "Quick Search"
-msgstr ""
+msgstr "Schnelle Suche"
 
 #. Template: AgentFAQExplorer
 msgid "Wildcards are allowed."
-msgstr ""
+msgstr "Wildcards sind erlaubt."
 
 #. Template: AgentFAQExplorer
 msgid "Advanced Search"
-msgstr ""
+msgstr "Erweiterte Suche"
 
 #. Template: AgentFAQExplorer
 msgid "Subcategories"
-msgstr ""
+msgstr "Unterkategorien"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Articles"
-msgstr ""
+msgstr "FAQ-Artikel"
 
 #. Template: AgentFAQExplorer
 msgid "No subcategories found."
-msgstr ""
+msgstr "Keine Unterkategorien gefunden."
 
 #. Template: AgentFAQHistory
 msgid "History of"
-msgstr ""
+msgstr "Geschichte der"
 
 #. Template: AgentFAQHistory
 msgid "History Content"
