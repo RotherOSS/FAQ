@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-17 06:52+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -243,11 +243,11 @@ msgstr ""
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Search"
-msgstr ""
+msgstr "FAQ-Suche"
 
 #. Template: AgentFAQSearchSmall
 msgid "Profile Selection"
-msgstr ""
+msgstr "Profilauswahl"
 
 #. Template: AgentFAQSearchSmall
 msgid "Vote"
@@ -255,15 +255,15 @@ msgstr "Abstimmen"
 
 #. Template: AgentFAQSearchSmall
 msgid "No vote settings"
-msgstr ""
+msgstr "Keine Abstimmungseinstellungen"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific votes"
-msgstr ""
+msgstr "Besondere Abstimmungen"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 10 or GreaterThan 60"
-msgstr ""
+msgstr "z. B. Gleich 10 oder Größer als 60"
 
 #. Template: AgentFAQSearchSmall
 msgid "Rate"
