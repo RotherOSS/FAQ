@@ -3,7 +3,8 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-17 06:48+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -215,7 +216,7 @@ msgstr "Satz (z.B. gleich 25% oder größer als 75%)"
 
 #. Template: AgentFAQSearch
 msgid "Approved"
-msgstr ""
+msgstr "genehmigt"
 
 #. Template: AgentFAQSearch
 msgid "Last changed by"
