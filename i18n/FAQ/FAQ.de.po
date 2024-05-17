@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-17 06:48+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -207,7 +207,7 @@ msgstr "Schlüsselwort"
 
 #. Template: AgentFAQSearch
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
-msgstr "Vote (z. B. Gleich 10 oder Größer als 60)"
+msgstr "Vote (z.B. gleich 10 oder größer als 60)"
 
 #. Template: AgentFAQSearch
 msgid "Rate (e. g. Equals 25% or GreaterThan 75%)"
