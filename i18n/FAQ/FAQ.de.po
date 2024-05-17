@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-17 06:54+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -308,6 +308,7 @@ msgstr "Keine Abstimmungen gefunden!"
 #. Template: AgentFAQZoom
 msgid "No votes found! Be the first one to rate this FAQ article."
 msgstr ""
+"Keine Stimmen gefunden! Seien Sie der Erste, der diesen FAQ-Artikel bewertet."
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
