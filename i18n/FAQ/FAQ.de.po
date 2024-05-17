@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-17 06:39+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -72,15 +72,18 @@ msgstr "Agentengruppen, die auf Artikel in dieser Kategorie zugreifen können."
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
-msgstr ""
+msgstr "Wird im Explorer als Kommentar angezeigt."
 
 #. Template: AgentFAQCategory
 msgid "Do you really want to delete this category?"
-msgstr ""
+msgstr "Wollen Sie diese Kategorie wirklich löschen?"
 
 #. Template: AgentFAQCategory
 msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
 msgstr ""
+"Sie können diese Kategorie nicht löschen. Sie wird in mindestens einem FAQ-"
+"Artikel verwendet und/oder ist Elternteil von mindestens einer anderen "
+"Kategorie"
 
 #. Template: AgentFAQCategory
 msgid "This category is used in the following FAQ article(s)"
