@@ -2,69 +2,73 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-05-17 06:39+0000\n"
+"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
+">\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
-msgstr ""
+msgstr "FAQ Artikel hinzufügen"
 
 #. Template: AgentFAQAdd
 msgid "All fields marked with an asterisk (*) are mandatory."
 msgstr ""
+"Alle mit einem Sternchen (*) gekennzeichneten Felder sind Pflichtfelder."
 
 #. Template: AgentFAQAdd
 msgid "Keywords"
-msgstr ""
+msgstr "Schlagwörter"
 
 #. Template: AgentFAQAdd
 msgid "A category is required."
-msgstr ""
+msgstr "Eine Kategorie ist erforderlich."
 
 #. Template: AgentFAQAdd
 msgid "Approval"
-msgstr ""
+msgstr "Genehmigung"
 
 #. Template: AgentFAQCategory
 msgid "FAQ Category Management"
-msgstr ""
+msgstr "FAQ Kategorieverwaltung"
 
 #. Template: AgentFAQCategory
 msgid "Add FAQ Category"
-msgstr ""
+msgstr "FAQ-Kategorie hinzufügen"
 
 #. Template: AgentFAQCategory
 msgid "Edit FAQ Category"
-msgstr ""
+msgstr "FAQ-Kategorie bearbeiten"
 
 #. Template: AgentFAQCategory
 msgid "Add category"
-msgstr ""
+msgstr "Kategorie hinzufügen"
 
 #. Template: AgentFAQCategory
 msgid "Add Category"
-msgstr ""
+msgstr "Kategorie hinzufügen"
 
 #. Template: AgentFAQCategory
 msgid "Edit Category"
-msgstr ""
+msgstr "Kategorie bearbeiten"
 
 #. Template: AgentFAQCategory
 msgid "Subcategory of"
-msgstr ""
+msgstr "Unterkategorie von"
 
 #. Template: AgentFAQCategory
 msgid "Please select at least one permission group."
-msgstr ""
+msgstr "Bitte wählen Sie mindestens eine Berechtigungsgruppe aus."
 
 #. Template: AgentFAQCategory
 msgid "Agent groups that can access articles in this category."
-msgstr ""
+msgstr "Agentengruppen, die auf Artikel in dieser Kategorie zugreifen können."
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
@@ -1813,4 +1817,3 @@ msgstr "Benutzer, die rw-Berechtigungen in einer dieser Gruppen haben, dürfen F
 #. SysConfig
 msgid "Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management."
 msgstr "Benutzer die über rw-Berechtigungen in einer dieser Gruppen verfügen, können Projekte verwalten. Zusätzlich haben die Mitglieder Administrationsberechtigungen für die Git-Verwaltung."
-
