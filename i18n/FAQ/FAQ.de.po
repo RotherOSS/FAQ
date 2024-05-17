@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-17 06:43+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -143,15 +143,15 @@ msgstr "Erstellt am"
 
 #. Template: AgentFAQJournalOverviewSmall
 msgid "No FAQ Journal data found."
-msgstr ""
+msgstr "Keine FAQ-Journal-Daten gefunden."
 
 #. Template: AgentFAQLanguage
 msgid "FAQ Language Management"
-msgstr ""
+msgstr "FAQ Sprachmanagement"
 
 #. Template: AgentFAQLanguage
 msgid "Add FAQ Language"
-msgstr ""
+msgstr "FAQ Sprache hinzufügen"
 
 #. Template: AgentFAQLanguage
 msgid "Edit FAQ Language"
