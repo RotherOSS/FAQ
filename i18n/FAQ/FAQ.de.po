@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
-"PO-Revision-Date: 2024-05-17 08:13+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"PO-Revision-Date: 2024-05-18 00:51+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -239,7 +239,7 @@ msgstr "FAQ-Artikel-Änderungszeitpunkt (zwischen)"
 
 #. Template: AgentFAQSearchOpenSearchDescriptionFulltext
 msgid "FAQFulltext"
-msgstr ""
+msgstr "FAQVolltext"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Search"
@@ -271,7 +271,7 @@ msgstr ""
 
 #. Template: AgentFAQSearchSmall
 msgid "No rate settings"
-msgstr ""
+msgstr "Keine Tarifeinstellungen"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific rate"
