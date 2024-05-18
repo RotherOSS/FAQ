@@ -1601,6 +1601,7 @@ msgstr "Beim Autocomplete durchsuchtes Attribut"
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Select the attribute which tickets will be searched by"
 msgstr ""
+"Wählen Sie aus, nach welchem Attribut die Tickets gesucht werden sollen"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Attribute which is displayed for values"
@@ -1624,7 +1625,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Access repos via http or https."
-msgstr ""
+msgstr "Zugriff auf die Repositories über http oder https."
 
 #. SysConfig
 msgid "Autoloading of Znuny4OTRSRepo extensions."
@@ -1645,14 +1646,15 @@ msgstr ""
 #. SysConfig
 msgid "Backend module registration for the function redefine check module."
 msgstr ""
+"Registrierung des Backend-Moduls für die Funktion \"redefine check module\"."
 
 #. SysConfig
 msgid "Backend module registration for the manual set module."
-msgstr ""
+msgstr "Backend-Modulregistrierung für das Modul \"manual set module\"."
 
 #. SysConfig
 msgid "Block hooks to be created for BS ad removal."
-msgstr ""
+msgstr "Block hooks für die Entfernung von BS ad erstellen."
 
 #. SysConfig
 msgid "Block hooks to be created for package manager output filter."
