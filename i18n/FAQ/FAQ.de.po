@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
-"PO-Revision-Date: 2024-05-18 00:51+0000\n"
+"PO-Revision-Date: 2024-05-18 01:14+0000\n"
 "Last-Translator: Stefan Rother <sr@rother-oss.com>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
@@ -271,11 +271,11 @@ msgstr "Bewerten"
 
 #. Template: AgentFAQSearchSmall
 msgid "No rate settings"
-msgstr "Keine Tarifeinstellungen"
+msgstr "Keine Bewertungseinstellungen"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific rate"
-msgstr ""
+msgstr "Spezifische Bewertung"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 25% or GreaterThan 75%"
@@ -322,6 +322,8 @@ msgstr ""
 #. Template: AgentFAQZoom
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
 msgstr ""
+"Wie hilfreich war dieser Artikel? Bitte geben Sie uns Ihre Bewertung und "
+"helfen Sie uns, die FAQ zu verbessern. Wir danken Ihnen!"
 
 #. Template: AgentFAQZoom
 msgid "not helpful"
@@ -369,11 +371,13 @@ msgstr ""
 
 #. Template: CustomerFAQRelatedArticles
 msgid "Found no helpful resources for the subject and text."
-msgstr ""
+msgstr "Keine hilfreichen FAQ-Artikel für das Thema und den Text gefunden."
 
 #. Template: CustomerFAQRelatedArticles
 msgid "Type a subject or text to get a list of helpful resources."
 msgstr ""
+"Geben Sie ein Thema oder einen Text ein, um eine Liste mit hilfreichen FAQ-"
+"Artikeln zu erhalten."
 
 #. Template: CustomerFAQSearch
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
@@ -389,7 +393,7 @@ msgstr ""
 
 #. Template: CustomerFAQSearch
 msgid "Rate restrictions"
-msgstr ""
+msgstr "Abstimmungseinschränkungen"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with rate..."
@@ -413,7 +417,7 @@ msgstr ""
 
 #. Template: CustomerFAQZoom
 msgid "Article Number"
-msgstr ""
+msgstr "Artikelnummer"
 
 #. Template: CustomerFAQZoom
 msgid "Search for articles with keyword"
@@ -425,11 +429,11 @@ msgstr ""
 
 #. Template: PublicFAQSearchResultShort
 msgid "Back to FAQ Explorer"
-msgstr ""
+msgstr "Zurück zum FAQ Explorer"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "You need rw permission!"
-msgstr ""
+msgstr "Sie brauchen Lese-/Schreibrechte!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No categories found where user has read/write permissions!"
@@ -441,7 +445,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Need CategoryID!"
-msgstr ""
+msgstr "Benötige CategoryID!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
@@ -457,7 +461,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "No CategoryID is given!"
-msgstr ""
+msgstr "Keine CategoryID übergeben!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Was not able to delete the category %s!"
@@ -473,15 +477,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Delete Category"
-msgstr ""
+msgstr "FAQ-Kategorie löschen"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
-msgstr ""
+msgstr "Keine ItemID übergeben!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "You have no permission for this category!"
-msgstr ""
+msgstr "Sie haben keine Berechtigung für diese Kategorie!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "Was not able to delete the FAQ article %s!"
@@ -489,7 +493,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
-msgstr ""
+msgstr "Die CategoryID %s ist ungültig."
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
@@ -497,7 +501,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "FAQ History"
-msgstr ""
+msgstr "FAQ Historie"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
@@ -505,7 +509,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
-msgstr ""
+msgstr "Benötige Konfigurationsoption FAQ::Frontend::Overview"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
@@ -517,7 +521,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
-msgstr ""
+msgstr "Keine LanguageID übergeben!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
@@ -577,19 +581,19 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
-msgstr ""
+msgstr "FAQ-Artikel Erstellungszeit (vorher/nachher)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (between)"
-msgstr ""
+msgstr "FAQ-Artikel Erstellungszeit (zwischen)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (before/after)"
-msgstr ""
+msgstr "FAQ-Artikel Änderungszeit (vorher/nachher)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (between)"
-msgstr ""
+msgstr "FAQ-Artikel Änderungszeit (zwischen)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Equals"
@@ -621,11 +625,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "You have already voted!"
-msgstr ""
+msgstr "Sie haben bereits abgestimmt!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "No rate selected!"
-msgstr ""
+msgstr "Keine Bewertung ausgewählt!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
@@ -661,7 +665,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
-msgstr ""
+msgstr "Es ist kein Typ angegeben!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Type must be either LastCreate or LastChange or Top10!"
@@ -693,7 +697,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Need rate!"
-msgstr ""
+msgstr "Benötige Bewertung!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
@@ -709,7 +713,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
-msgstr ""
+msgstr "Inhalts-Typ"
 
 #. Database XML Definition: FAQ.sopm
 msgid "internal"
