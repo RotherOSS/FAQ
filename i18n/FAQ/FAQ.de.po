@@ -3,7 +3,8 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-18 01:14+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -313,11 +314,14 @@ msgstr ""
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
-msgstr ""
+msgstr "Anhang herunterladen"
 
 #. Template: AgentFAQZoom
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
 msgstr ""
+"Um die Links im folgenden Beitrag zu öffnen, kann es notwendig sein Strg "
+"oder Shift zu drücken, während auf den Link geklickt wird (abhängig vom "
+"verwendeten Browser und Betriebssystem)."
 
 #. Template: AgentFAQZoom
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
@@ -522,7 +526,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
+msgstr "Keine Konfigurationsoption für die Ansicht \"%s\" gefunden!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
@@ -1446,7 +1450,7 @@ msgstr ""
 
 #. Template: AgentFAQLanguage
 msgid "Do you really want to delete this language?"
-msgstr ""
+msgstr "Möchten Sie diese Sprache wirklich löschen?"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Attribute which will be searched on autocomplete"
