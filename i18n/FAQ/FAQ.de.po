@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2024-05-18 01:14+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -401,7 +401,7 @@ msgstr "Nur FAQ-Artikel mit Bewertung..."
 
 #. Template: CustomerFAQSearch
 msgid "Time restrictions"
-msgstr ""
+msgstr "Zeitbeschränkungen"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created"
@@ -582,7 +582,7 @@ msgstr "FAQ-Nummer"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
-msgstr ""
+msgstr "Zuletzt geändert von"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
