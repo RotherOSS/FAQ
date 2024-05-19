@@ -288,10 +288,10 @@ sub Data {
     $Self->{Translation}->{'Content Type'} = 'Inhalts-Typ';
 
     # Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-    $Self->{Translation}->{'Attribute which will be searched on autocomplete'} = '';
-    $Self->{Translation}->{'Select the attribute which tickets will be searched by'} = '';
-    $Self->{Translation}->{'Attribute which is displayed for values'} = '';
-    $Self->{Translation}->{'Select the type of display'} = '';
+    $Self->{Translation}->{'Attribute which will be searched on autocomplete'} = 'Beim Autocomplete durchsuchtes Attribut';
+    $Self->{Translation}->{'Select the attribute which tickets will be searched by'} = 'Wählen Sie aus, nach welchem Attribut die Tickets gesucht werden sollen';
+    $Self->{Translation}->{'Attribute which is displayed for values'} = 'Für die Werte angezeigtes Attribut';
+    $Self->{Translation}->{'Select the type of display'} = 'Wählen Sie die Anzeigeart aus';
 
     # Database XML Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'intern';
@@ -299,21 +299,21 @@ sub Data {
     $Self->{Translation}->{'public'} = 'öffentlich';
 
     # JS File: FAQ.Agent.ConfirmationDialog
-    $Self->{Translation}->{'Ok'} = '';
+    $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
     $Self->{Translation}->{'A precentage value of the minimal translation progress per language, to be usable for documentations.'} =
         'Ein prozentualer Wert des minimalen Übersetzungsfortschritts pro Sprache, der für Dokumentationen verwendet werden kann.';
-    $Self->{Translation}->{'Access repos via http or https.'} = '';
-    $Self->{Translation}->{'Autoloading of Znuny4OTRSRepo extensions.'} = '';
+    $Self->{Translation}->{'Access repos via http or https.'} = 'Zugriff auf die Repositories über http oder https.';
+    $Self->{Translation}->{'Autoloading of Znuny4OTRSRepo extensions.'} = 'Autoloading von Znuny4OTRSRepo-Erweiterungen.';
     $Self->{Translation}->{'Backend module registration for the config conflict check module.'} =
         'Registrierung des Backend-Moduls für das Modul zur Prüfung von Konfigurationskonflikten.';
     $Self->{Translation}->{'Backend module registration for the file conflict check module.'} =
         'Registrierung des Backend-Moduls für das Modul zur Prüfung von Dateikonflikten.';
     $Self->{Translation}->{'Backend module registration for the function redefine check module.'} =
-        '';
-    $Self->{Translation}->{'Backend module registration for the manual set module.'} = '';
-    $Self->{Translation}->{'Block hooks to be created for BS ad removal.'} = '';
+        'Registrierung des Backend-Moduls für die Funktion "redefine check module".';
+    $Self->{Translation}->{'Backend module registration for the manual set module.'} = 'Backend-Modulregistrierung für das Modul "manual set module".';
+    $Self->{Translation}->{'Block hooks to be created for BS ad removal.'} = 'Block hooks für die Entfernung von BS ad erstellen.';
     $Self->{Translation}->{'Block hooks to be created for package manager output filter.'} =
         '';
     $Self->{Translation}->{'Branch View commit limit'} = 'Commit-Limit der Zweigansicht';
