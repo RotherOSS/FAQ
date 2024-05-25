@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2024-05-25 02:06+0000\n"
+"POT-Creation-Date: 2024-05-25 04:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@otobo.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12,6 +12,10 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
+msgstr ""
+
+#. Template: AgentFAQAdd
+msgid "All fields marked with an asterisk (*) are mandatory."
 msgstr ""
 
 #. Template: AgentFAQAdd
@@ -698,15 +702,15 @@ msgstr ""
 msgid "Content Type"
 msgstr ""
 
-#. Database XML Definition: FAQ.sopm
+#. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
 msgstr ""
 
-#. Database XML Definition: FAQ.sopm
+#. Database XML / SOPM Definition: FAQ.sopm
 msgid "external"
 msgstr ""
 
-#. Database XML Definition: FAQ.sopm
+#. Database XML / SOPM Definition: FAQ.sopm
 msgid "public"
 msgstr ""
 
@@ -715,370 +719,734 @@ msgid "Ok"
 msgstr ""
 
 #. SysConfig
-msgid "A precentage value of the minimal translation progress per language, to be usable for documentations."
+msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
 msgstr ""
 
 #. SysConfig
-msgid "Access repos via http or https."
+msgid "Add FAQ article"
 msgstr ""
 
 #. SysConfig
-msgid "Autoloading of Znuny4OTRSRepo extensions."
+msgid "CSS color for the voting result."
 msgstr ""
 
 #. SysConfig
-msgid "Backend module registration for the config conflict check module."
+msgid "Cache Time To Leave for FAQ items."
 msgstr ""
 
 #. SysConfig
-msgid "Backend module registration for the file conflict check module."
+msgid "Category Management"
 msgstr ""
 
 #. SysConfig
-msgid "Backend module registration for the function redefine check module."
+msgid "Category Management."
 msgstr ""
 
 #. SysConfig
-msgid "Backend module registration for the manual set module."
+msgid "Customer FAQ Print."
 msgstr ""
 
 #. SysConfig
-msgid "Block hooks to be created for BS ad removal."
+msgid "Customer FAQ Related Articles"
 msgstr ""
 
 #. SysConfig
-msgid "Block hooks to be created for package manager output filter."
+msgid "Customer FAQ Related Articles."
 msgstr ""
 
 #. SysConfig
-msgid "Branch View commit limit"
+msgid "Customer FAQ Zoom."
 msgstr ""
 
 #. SysConfig
-msgid "CodePolicy"
+msgid "Customer FAQ search."
 msgstr ""
 
 #. SysConfig
-msgid "Commit limit per page for Branch view screen"
+msgid "Customer FAQ."
 msgstr ""
 
 #. SysConfig
-msgid "Create analysis file"
+msgid "Decimal places of the voting result."
 msgstr ""
 
 #. SysConfig
-msgid "Creates a analysis file from this ticket and sends to Znuny."
+msgid "Default category name."
 msgstr ""
 
 #. SysConfig
-msgid "Creates a analysis file from this ticket."
+msgid "Default language for FAQ articles on single language mode."
 msgstr ""
 
 #. SysConfig
-msgid "Define private addon repos."
+msgid "Default maximum size of the titles in a FAQ article to be shown."
 msgstr ""
 
 #. SysConfig
-msgid "Defines the filter that processes the HTML templates."
+msgid "Default priority of tickets for the approval of FAQ articles."
 msgstr ""
 
 #. SysConfig
-msgid "Defines the test module for checking code policy."
+msgid "Default state for FAQ entry."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of GIT clone/push URL Prefix."
+msgid "Default state of tickets for the approval of FAQ articles."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Default type of tickets for the approval of FAQ articles."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date)."
+msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of mappings between public repository requests and internal OPMS repositories."
+msgid "Define if the FAQ title should be concatenated to article subject."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of package states."
+msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of renamed OPMS packages."
+msgid "Defines an overview module to show the small view of a FAQ journal."
 msgstr ""
 
 #. SysConfig
-msgid "Directory, which is used by Git to cache repositories."
+msgid "Defines an overview module to show the small view of a FAQ list."
 msgstr ""
 
 #. SysConfig
-msgid "Directory, which is used by Git to store temporary data."
+msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Directory, which is used by Git to store working copies."
+msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
 msgstr ""
 
 #. SysConfig
-msgid "Disable online repositories."
+msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
 msgstr ""
 
 #. SysConfig
-msgid "Do not log git ssh connection authorization results for these users. Useful for automated stuff."
+msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Dynamic Fields Screens"
+msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
 msgstr ""
 
 #. SysConfig
-msgid "DynamicFieldScreen"
+msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
 msgstr ""
 
 #. SysConfig
-msgid "Export all available public keys to authorized_keys file."
+msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
 #. SysConfig
-msgid "Export all relevant releases to ftp server."
+msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the OPMS object in the agent interface."
+msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the PublicOPMSRepository object in the public interface."
+msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface."
+msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the PublicOPMSTestBuild object in the public interface."
+msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the PublicPackageVerification object in the public interface."
+msgid "Defines the default frontend (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.otobo.org/."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the admin interface."
+msgid "Defines the default frontend language. All the possible values are determined by the available language files on the system. These values are listed as the keys in the setting 'DefaultUsedLanguages'."
 msgstr ""
 
 #. SysConfig
-msgid "GIT Author registration."
+msgid "Defines the default shown FAQ search attribute for FAQ search screen."
 msgstr ""
 
 #. SysConfig
-msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
+msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
 msgstr ""
 
 #. SysConfig
-msgid "Generate documentations once per night."
+msgid "Defines the parameters for the dashboard backend. \"Cmd\" is used to specify command with parameters. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTL\" indicates the cache expiration period in minutes for the plugin. \"Mandatory\" determines if the plugin is always shown and can not be removed by agents. Only works if DashboardBackend::AllowCmdOutput is enabled in Config.pm."
 msgstr ""
 
 #. SysConfig
-msgid "Git"
+msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
 msgstr ""
 
 #. SysConfig
-msgid "Git Management"
+msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
 msgstr ""
 
 #. SysConfig
-msgid "Git Repository"
+msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
 msgstr ""
 
 #. SysConfig
-msgid "Group, whose members have delete admin permissions in OPMS."
+msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
 msgstr ""
 
 #. SysConfig
-msgid "Group, whose members have repository admin permissions in OPMS."
+msgid "Defines where the 'Insert FAQ' link will be displayed."
 msgstr ""
 
 #. SysConfig
-msgid "Group, whose members will see CI test result information in OPMS screens."
+msgid "Definition of FAQ item free text field."
 msgstr ""
 
 #. SysConfig
-msgid "Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface."
+msgid "Delete this FAQ"
 msgstr ""
 
 #. SysConfig
-msgid "Groups which will be set during git project creation processes while adding OPMS repositories."
+msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Manage dynamic field in screens."
+msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key."
+msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
 msgstr ""
 
 #. SysConfig
-msgid "Module to generate statistics about the added code lines."
+msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
 
 #. SysConfig
-msgid "Module to generate statistics about the growth of code."
+msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Module to generate statistics about the number of git commits."
+msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
 msgstr ""
 
 #. SysConfig
-msgid "Module to generate statistics about the removed code lines."
+msgid "Dynamic fields shown in the FAQ print screen of the public interface."
 msgstr ""
 
 #. SysConfig
-msgid "OPMS"
+msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Only users who have rw permissions in one of these groups may access git."
+msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
 msgstr ""
 
 #. SysConfig
-msgid "Option to set a package compatibility manually."
+msgid "Dynamic fields shown in the FAQ search screen of the public interface."
 msgstr ""
 
 #. SysConfig
-msgid "Parameters for the pages in the BranchView screen."
+msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Pre-Definition of the 'GITProjectName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Pre-Definition of the 'GITRepositoryName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
 msgstr ""
 
 #. SysConfig
-msgid "Pre-Definition of the 'PackageDeprecated' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
 msgstr ""
 
 #. SysConfig
-msgid "Recipients that will be informed by email in case of errors."
+msgid "Edit this FAQ"
 msgstr ""
 
 #. SysConfig
-msgid "SSH Keys for Git Access"
+msgid "Enable multiple languages on FAQ module."
 msgstr ""
 
 #. SysConfig
-msgid "Send analysis file"
+msgid "Enable service assignment for FAQs."
 msgstr ""
 
 #. SysConfig
-msgid "Sets the git clone address to be used in repository listings."
+msgid "Enable the related article feature for the customer frontend."
 msgstr ""
 
 #. SysConfig
-msgid "Sets the home directory for git repositories."
+msgid "Enable voting mechanism on FAQ module."
 msgstr ""
 
 #. SysConfig
-msgid "Sets the path for the BugzillaAddComment post receive script location."
+msgid "Explorer"
 msgstr ""
 
 #. SysConfig
-msgid "Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
+msgid "FAQ AJAX Responder"
 msgstr ""
 
 #. SysConfig
-msgid "Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
+msgid "FAQ AJAX Responder for Richtext."
 msgstr ""
 
 #. SysConfig
-msgid "Show latest commits in git repositories."
+msgid "FAQ Area"
 msgstr ""
 
 #. SysConfig
-msgid "Shows a link in the menu to go create a unit test from the current ticket."
+msgid "FAQ Area."
 msgstr ""
 
 #. SysConfig
-msgid "Synchronize OPMS tables with a remote database."
+msgid "FAQ Delete."
 msgstr ""
 
 #. SysConfig
-msgid "The minimum version of the sphinx library."
+msgid "FAQ Edit."
 msgstr ""
 
 #. SysConfig
-msgid "The name of the sphinx theme to be used."
+msgid "FAQ History."
 msgstr ""
 
 #. SysConfig
-msgid "The path to the OTRS CSS file (relative below the static path)."
+msgid "FAQ Journal Overview \"Small\" Limit"
 msgstr ""
 
 #. SysConfig
-msgid "The path to the OTRS logo (relative below the static path)."
+msgid "FAQ Overview \"Small\" Limit"
 msgstr ""
 
 #. SysConfig
-msgid "The path to the static folder, containing images and css files."
+msgid "FAQ Print."
 msgstr ""
 
 #. SysConfig
-msgid "The path to the theme folder, containing the sphinx themes."
+msgid "FAQ search backend router of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines all possible screens to enable or disable default columns."
+msgid "Field4"
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines all possible screens to enable or disable dynamic fields."
+msgid "Field5"
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines if only valids or all (invalids) dynamic fields should be shown."
+msgid "Full FAQ"
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It's still recommended to use only verified packages."
+msgid "Group for the approval of FAQ articles."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig 'Znuny4OTRSRepoType'."
+msgid "History of this FAQ"
 msgstr ""
 
 #. SysConfig
-msgid "This configuration registers a Output post-filter to extend package verification."
+msgid "If \"LDAP\" was selected for Customer::AuthModule and you wish to use TLS security to communicate with the LDAP server, the \"verify\" parameter can be specified here. See Net::LDAP::start_tls for more information about the parameter."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements."
+msgid "Ignores not ticket related attributes."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration registers an output filter to hide online repository selection in package manager."
+msgid "Include internal fields on a FAQ based Ticket."
 msgstr ""
 
 #. SysConfig
-msgid "Tidy unprocessed release that not passed test pomules checks for a long time."
+msgid "Include the name of each field in a FAQ based Ticket."
 msgstr ""
 
 #. SysConfig
-msgid "Users who have rw permissions in one of these groups are permitted to execute force pushes 'git push --force'."
+msgid "Interfaces where the quick search should be shown."
 msgstr ""
 
 #. SysConfig
-msgid "Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management."
+msgid "Journal"
+msgstr ""
+
+#. SysConfig
+msgid "Language Management"
+msgstr ""
+
+#. SysConfig
+msgid "Language Management."
+msgstr ""
+
+#. SysConfig
+msgid "Limit for the search to build the keyword FAQ article list."
+msgstr ""
+
+#. SysConfig
+msgid "Link another object to this FAQ item"
+msgstr ""
+
+#. SysConfig
+msgid "List of queue names for which the related article feature is enabled."
+msgstr ""
+
+#. SysConfig
+msgid "List of state types which can be used in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "List of state types which can be used in the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "List of state types which can be used in the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Loader module registration for the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum number of FAQ articles to be displayed in the result of a search in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum number of FAQ articles to be displayed in the result of a search in the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum number of FAQ articles to be displayed in the result of a search in the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Module to generate html OpenSearch profile for short FAQ search."
+msgstr ""
+
+#. SysConfig
+msgid "New FAQ Article."
+msgstr ""
+
+#. SysConfig
+msgid "New FAQ articles need approval before they get published."
+msgstr ""
+
+#. SysConfig
+msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
+msgstr ""
+
+#. SysConfig
+msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Number of shown items in last changes."
+msgstr ""
+
+#. SysConfig
+msgid "Number of shown items in last created."
+msgstr ""
+
+#. SysConfig
+msgid "Number of shown items in the top 10 feature."
+msgstr ""
+
+#. SysConfig
+msgid "Output filter to add Java-script to CustomerTicketMessage screen."
+msgstr ""
+
+#. SysConfig
+msgid "Output limit for the related FAQ articles."
+msgstr ""
+
+#. SysConfig
+msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
+msgstr ""
+
+#. SysConfig
+msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
+msgstr ""
+
+#. SysConfig
+msgid "Print this FAQ"
+msgstr ""
+
+#. SysConfig
+msgid "Public FAQ Print."
+msgstr ""
+
+#. SysConfig
+msgid "Public FAQ Zoom."
+msgstr ""
+
+#. SysConfig
+msgid "Public FAQ search."
+msgstr ""
+
+#. SysConfig
+msgid "Public FAQ."
+msgstr ""
+
+#. SysConfig
+msgid "Queue for the approval of FAQ articles."
+msgstr ""
+
+#. SysConfig
+msgid "Rates for voting. Key must be in percent."
+msgstr ""
+
+#. SysConfig
+msgid "S"
+msgstr ""
+
+#. SysConfig
+msgid "Search FAQ"
+msgstr ""
+
+#. SysConfig
+msgid "Search FAQ Small."
+msgstr ""
+
+#. SysConfig
+msgid "Search FAQ."
+msgstr ""
+
+#. SysConfig
+msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
+msgstr ""
+
+#. SysConfig
+msgid "Select how many items should be shown in Overview \"Small\" by default."
+msgstr ""
+
+#. SysConfig
+msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
+msgstr ""
+
+#. SysConfig
+msgid "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
+msgstr ""
+
+#. SysConfig
+msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
+msgstr ""
+
+#. SysConfig
+msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
+msgstr ""
+
+#. SysConfig
+msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
+msgstr ""
+
+#. SysConfig
+msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
+msgstr ""
+
+#. SysConfig
+msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
+msgstr ""
+
+#. SysConfig
+msgid "Show FAQ Article with HTML."
+msgstr ""
+
+#. SysConfig
+msgid "Show FAQ path yes/no."
+msgstr ""
+
+#. SysConfig
+msgid "Show invalid items in the FAQ Explorer result of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Show items of subcategories."
+msgstr ""
+
+#. SysConfig
+msgid "Show last change items in defined interfaces."
+msgstr ""
+
+#. SysConfig
+msgid "Show last created items in defined interfaces."
+msgstr ""
+
+#. SysConfig
+msgid "Show related articles on service change even with empty subject and body."
+msgstr ""
+
+#. SysConfig
+msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
+msgstr ""
+
+#. SysConfig
+msgid "Show top 10 items in defined interfaces."
+msgstr ""
+
+#. SysConfig
+msgid "Show voting in defined interfaces."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Solution"
+msgstr ""
+
+#. SysConfig
+msgid "Symptom"
+msgstr ""
+
+#. SysConfig
+msgid "Text Only"
+msgstr ""
+
+#. SysConfig
+msgid "The default languages for the related FAQ articles."
+msgstr ""
+
+#. SysConfig
+msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
+msgstr ""
+
+#. SysConfig
+msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
+msgstr ""
+
+#. SysConfig
+msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
+msgstr ""
+
+#. SysConfig
+msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
+msgstr ""
+
+#. SysConfig
+msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
+msgstr ""
+
+#. SysConfig
+msgid "Ticket body for approval of FAQ article."
+msgstr ""
+
+#. SysConfig
+msgid "Ticket subject for approval of FAQ article."
+msgstr ""
+
+#. SysConfig
+msgid "Toolbar Item for a shortcut."
+msgstr ""
+
+#. SysConfig
+msgid "external (customer)"
+msgstr ""
+
+#. SysConfig
+msgid "internal (agent)"
+msgstr ""
+
+#. SysConfig
+msgid "public (all)"
+msgstr ""
+
+#. SysConfig
+msgid "public (public)"
 msgstr ""
 
