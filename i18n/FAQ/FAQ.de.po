@@ -700,15 +700,15 @@ msgstr "Die 10 wichtigsten FAQ-Artikel"
 msgid "Content Type"
 msgstr "Inhalts-Typ"
 
-#. Database XML Definition: FAQ.sopm
+#. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
 msgstr "intern"
 
-#. Database XML Definition: FAQ.sopm
+#. Database XML / SOPM Definition: FAQ.sopm
 msgid "external"
 msgstr "extern"
 
-#. Database XML Definition: FAQ.sopm
+#. Database XML / SOPM Definition: FAQ.sopm
 msgid "public"
 msgstr "öffentlich"
 
