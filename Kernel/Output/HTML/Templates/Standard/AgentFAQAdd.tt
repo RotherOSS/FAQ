@@ -29,7 +29,7 @@
                 <input type="hidden" name="Subaction" value="Save"/>
                 <input type="hidden" name="FormID" value="[% Data.FormID | html %]"/>
 
-                <fieldset class="TableLike">
+                <fieldset class="TableLike FAQEditMask">
 
                     <label class="Mandatory" for="Title"><span class="Marker">* </span>[% Translate("Title") | html %]:</label>
                     <div class="Field">

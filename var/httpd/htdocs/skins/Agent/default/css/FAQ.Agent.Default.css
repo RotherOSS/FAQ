@@ -120,4 +120,49 @@ fieldset.TableSmall > div.FAQDivider {
     overflow: hidden;
 }
 
+/* Increased space for FAQ TextEditors */
+
+fieldset.FAQEditMask {
+
+    .Field {
+        margin-left: 10% !important;
+    }
+    
+    > label {
+        width: 10% !important
+    }
+
+    .RichTextField {
+        width: 80%;
+        width: max(80%, 620px);
+        max-width: unset;
+        min-width: 620px;
+        margin-left: 10%;
+    }
+
+    > label:not(.ck-label),
+    > .Row > label:not(.ck-label),
+    .Row > .FieldCell label:not(.ck-label) {
+        width: 10%;
+    }
+
+    > .Field,
+    > .Row > .Field,
+    .Row > .FieldCell > .Field
+    .RichTextField  {
+        margin-left: 10%;
+    }
+}
+
+.RTL fieldset.FAQEditMask {
+    
+    > .Field,
+    > .Row > .Field,
+    > .Row > .FieldCell > .Field,
+    .RichTextField {
+        margin-right: 10%;
+    }
+
+}
+
 }

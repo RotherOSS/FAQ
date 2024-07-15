@@ -44,7 +44,7 @@
                     <input type="hidden" name="ItemID" value="[% Data.ItemID | html %]"/>
                     <input type="hidden" name="ScreenType" value="[% Data.ScreenType | html %]"/>
 
-                    <fieldset class="TableLike [% Data.FieldsetClass | html %]">
+                    <fieldset class="TableLike FAQEditMask [% Data.FieldsetClass | html %]">
 
                         <label class="Mandatory" for="Title"><span class="Marker">* </span>[% Translate("Title") | html %]:</label>
                         <div class="Field">
