@@ -2,7 +2,7 @@
 // OTOBO is a web-based ticketing system for service organisations.
 // --
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+// Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -77,7 +77,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
 
                 if ((!QueuesEnabled.length || !SelectedQueueName || $.inArray(SelectedQueueName, QueuesEnabled) > -1)) {
 
-                    if ($('#Subject').val() || CKEDITOR.instances['RichText'].getData()) {
+                    if ($('#Subject').val() || CKEditorInstances['RichText'].getData()) {
                         $('#Subject').trigger('change');
                     }
                 }
@@ -113,7 +113,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
                     Data = {
                         Action: 'AgentFAQRelatedArticles',
                         Subject: $('#Subject').val(),
-                        Body: CKEDITOR.instances['RichText'].getData()
+                        Body: CKEditorInstances['RichText'].getData()
                     };
 
                     if (!LastData || LastData.Subject != Data.Subject || LastData.Body != Data.Body) {
@@ -219,13 +219,13 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
                 var Value = $('#Subject').val();
 
                 // trigger only the change event for the subject, if space or enter was pressed
-                if ((Event.type === 'keydown' && (Event.which == 32 || Event.which == 13) && (Value.length > 10 || CKEDITOR.instances['RichText'].getData())) || Event.type !== 'keydown') {
+                if ((Event.type === 'keydown' && (Event.which == 32 || Event.which == 13) && (Value.length > 10 || CKEditorInstances['RichText'].getData())) || Event.type !== 'keydown') {
                     $('#Subject').trigger('change');
                 }
             });
 
             // The "change" event is fired whenever a change is made in the editor.
-            CKEDITOR.instances['RichText'].on('key', function (Event) {
+            CKEditorInstances['RichText'].on('key', function (Event) {
 
                 // trigger only the change event for the subject, if space or enter was pressed
                 if (Event.data.keyCode == 32 || Event.data.keyCode == 13) {
@@ -234,14 +234,14 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
             });
 
             // The "paste" event is fired whenever a paste is made in the editor.
-            CKEDITOR.instances['RichText'].on('paste', function () {
+            CKEditorInstances['RichText'].on('paste', function () {
 
                 // trigger only the change event for the subject
                 $('#Subject').trigger('change');
             });
 
             // The "blur" event is fired whenever a blur is made in the editor.
-            CKEDITOR.instances['RichText'].on('blur', function () {
+            CKEditorInstances['RichText'].on('blur', function () {
 
                 // trigger only the change event for the subject
                 $('#Subject').trigger('change');
@@ -251,7 +251,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
             //  that the queue is already selected at the page load or show the widget always if the queue selection is disabled.
             if (!$('#Dest').length) {
 
-                if ($('#Subject').val() || CKEDITOR.instances['RichText'].getData()) {
+                if ($('#Subject').val() || CKEditorInstances['RichText'].getData()) {
                     $('#Subject').trigger('change');
                 }
             }

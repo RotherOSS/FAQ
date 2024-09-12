@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -256,10 +256,10 @@ $Selenium->RunTest(
                 "return typeof(\$) === 'function' && \$('body.cke_editable', \$('.cke_wysiwyg_frame').contents()).length === 4;"
         );
 
-        $Selenium->execute_script("CKEDITOR.instances.Field1.setData('$Field1HTML');");
+        $Selenium->execute_script("CKEditorInstances.Field1.setData('$Field1HTML');");
         $Selenium->WaitFor(
             JavaScript =>
-                "return CKEDITOR.instances.Field1.getData().indexOf('FormID=$FormID;ContentID=$ContentID') > -1;"
+                "return CKEditorInstances.Field1.getData().indexOf('FormID=$FormID;ContentID=$ContentID') > -1;"
         );
 
         $Selenium->InputFieldValueSet(

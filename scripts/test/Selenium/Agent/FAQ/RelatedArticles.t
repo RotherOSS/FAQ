@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -141,8 +141,8 @@ $Selenium->RunTest(
 
         # Set body text and add a whitespace at the end to trigger the AJAX request for the related faq article.
         sleep 1;
-        $Selenium->execute_script("CKEDITOR.instances.RichText.setData('$FAQArticles[1]->{Keyword}');");
-        $Selenium->WaitFor( JavaScript => 'return CKEDITOR.instances.RichText.getData()' );
+        $Selenium->execute_script("CKEditorInstances.RichText.setData('$FAQArticles[1]->{Keyword}');");
+        $Selenium->WaitFor( JavaScript => 'return CKEditorInstances.RichText.getData()' );
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");
         $Selenium->find_element( "#Subject", 'css' )->send_keys( $FAQArticles[1]->{Keyword} );
         $Selenium->find_element( "#Subject", 'css' )->send_keys("\N{U+E004}");
@@ -176,7 +176,7 @@ $Selenium->RunTest(
 
         # Change the body, to have a text which should not return some related faq article.
         sleep 1;
-        $Selenium->execute_script('CKEDITOR.instances.RichText.setData();');
+        $Selenium->execute_script('CKEditorInstances.RichText.setData();');
         $Selenium->find_element( "#Subject", 'css' )->send_keys('Nothing');
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");
         $Selenium->find_element( "#Subject", 'css' )->send_keys("\N{U+E004}");
@@ -207,7 +207,7 @@ $Selenium->RunTest(
         # Set subject + body text.
         sleep 1;
         $Selenium->find_element( "#Subject", 'css' )->send_keys($SubjectRandom);
-        $Selenium->execute_script("CKEDITOR.instances.RichText.setData('$FAQArticles[1]->{Keyword}');");
+        $Selenium->execute_script("CKEditorInstances.RichText.setData('$FAQArticles[1]->{Keyword}');");
 
         # Add a whitespace at the end to trigger the AJAX request.
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");

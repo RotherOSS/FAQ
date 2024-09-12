@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -132,7 +132,7 @@ sub Run {
 var QueuesEnabled = [ $QueuesEnabledStrg ],
 LastData;
 
-Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
+Core.App.Subscribe('Event.UI.RichTextEditor.InstanceCreated', function() {
 \$('#Dest').on('change.RelatedFAQArticle', function () {
     var SelectedQueue = \$(this).val(),
         SelectedQueueName = SelectedQueue.replace(/\\d*\\|\\|-?/, '');
@@ -145,7 +145,7 @@ Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
             \$('#FAQRelatedArticles').removeClass('Hidden');
         }
 
-        if (\$('#Subject').val() || CKEDITOR.instances['RichText'].getData()) {
+        if (\$('#Subject').val() || CKEditorInstances['RichText'].getData()) {
             \$('#Subject').trigger('change');
         }
     }
@@ -175,7 +175,7 @@ Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
             Action: 'CustomerFAQRelatedArticles',
             Subject: \$('#Subject').val(),
             ServiceID: \$('#ServiceID').val(), // FAQ Service
-            Body: CKEDITOR.instances['RichText'].getData(),
+            Body: CKEditorInstances['RichText'].getData(),
         };
 
         if ( !LastData || LastData.Subject != Data.Subject || LastData.Body != Data.Body || LastData.ServiceID != Data.ServiceID ) {
@@ -221,13 +221,13 @@ Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
     var Value = \$('#Subject').val();
 
     // trigger only the change event for the subject, if space or enter was pressed
-    if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 ) && ( Value.length > 10 || CKEDITOR.instances['RichText'].getData())) || Event.type !== 'keydown') {
+    if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 ) && ( Value.length > 10 || CKEditorInstances['RichText'].getData())) || Event.type !== 'keydown') {
         \$('#Subject').trigger('change');
     }
 });
 
 // The "change" event is fired whenever a change is made in the editor.
-CKEDITOR.instances['RichText'].on( 'key', function (Event) {
+CKEditorInstances['RichText'].on( 'key', function (Event) {
 
     // trigger only the change event for the subject, if space or enter was pressed
     if ( Event.data.keyCode == 32 || Event.data.keyCode == 13) {
@@ -236,14 +236,14 @@ CKEDITOR.instances['RichText'].on( 'key', function (Event) {
 });
 
 // The "paste" event is fired whenever a paste is made in the editor.
-CKEDITOR.instances['RichText'].on( 'paste', function (Event) {
+CKEditorInstances['RichText'].on( 'paste', function (Event) {
 
     // trigger only the change event for the subject
     \$('#Subject').trigger('change');
 });
 
 // The "blur" event is fired whenever a blur is made in the editor.
-CKEDITOR.instances['RichText'].on( 'blur', function (Event) {
+CKEditorInstances['RichText'].on( 'blur', function (Event) {
 
     // trigger only the change event for the subject
     \$('#Subject').trigger('change');
@@ -254,7 +254,7 @@ CKEDITOR.instances['RichText'].on( 'blur', function (Event) {
 if ( !\$('#Dest').length ) {
      \$('#FAQRelatedArticles').removeClass('Hidden');
 
-    if (\$('#Subject').val() || CKEDITOR.instances['RichText'].getData()) {
+    if (\$('#Subject').val() || CKEditorInstances['RichText'].getData()) {
         \$('#Subject').trigger('change');
     }
 }
