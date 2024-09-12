@@ -2,7 +2,7 @@
 // OTOBO is a web-based ticketing system for service organisations.
 // --
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+// Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -73,23 +73,24 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
         }
 
         // Register RTE events for saving the cursor position
-        if (typeof CKEDITOR !== 'undefined' && CKEDITOR && CKEDITOR.instances.RichText) {
+        if (typeof CKEditorInstances !== 'undefined' && CKEditorInstances[InstanceName]) {
+
             // Get last cursor position and save it (on focus we come back to this position)
-            CKEDITOR.instances[InstanceName].on('contentDom', function() {
-                CKEDITOR.instances[InstanceName].document.on('click', function () {
+            CKEditorInstances[InstanceName].on('contentDom', function() {
+                CKEditorInstances[InstanceName].document.on('click', function () {
                     if (EditorGotFocus) {
-                        $('#' + InstanceName).data('RTECursor', CKEDITOR.instances[InstanceName].getSelection().getRanges());
+                        $('#' + InstanceName).data('RTECursor', CKEditorInstances[InstanceName].getSelection().getRanges());
                     }
                 });
-                CKEDITOR.instances[InstanceName].document.on('keyup', function () {
+                CKEditorInstances[InstanceName].document.on('keyup', function () {
                     if (EditorGotFocus) {
-                        $('#' + InstanceName).data('RTECursor', CKEDITOR.instances[InstanceName].getSelection().getRanges());
+                        $('#' + InstanceName).data('RTECursor', CKEditorInstances[InstanceName].getSelection().getRanges());
                     }
                 });
             });
 
             // needed for client-side validation and inserting data into RTE
-            CKEDITOR.instances[InstanceName].on('focus', function () {
+            CKEditorInstances[InstanceName].on('focus', function () {
                 // if a saved cursor position exists, set this position now
                 var RTECursorRange = $('#' + InstanceName).data('RTECursor'),
                     Selection;
@@ -97,7 +98,7 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
                 EditorGotFocus = true;
 
                 if (RTECursorRange) {
-                    Selection = new CKEDITOR.dom.selection(CKEDITOR.instances[InstanceName].document);
+                    Selection = new CKEDITOR.dom.selection(CKEditorInstances[InstanceName].document);
                     Selection.selectRanges(RTECursorRange);
                     // delete saved cursor position (to not keep old stuff)
                     $('#' + InstanceName).data('RTECursor', undefined);
@@ -149,13 +150,13 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
             }
 
             // add FAQ text and/or link to WYSIWYG editor in parent window
-            if (parent.CKEDITOR && parent.CKEDITOR.instances.RichText) {
-                parent.CKEDITOR.instances.RichText.focus();
+            if ( parent.CKEditorInstances && parent.CKEditorInstances['RichText'] ) {
+                parent.CKEditorInstances['RichText'].focus();
                 window.setTimeout(function () {
                     // In some circumstances, this command throws an error (although inserting the HTML works)
                     // Because the intended functionality also works, we just wrap it in a try-catch-statement
                     try {
-                        parent.CKEDITOR.instances.RichText.insertHtml(FAQHTMLContent);
+                        parent.CKEditorInstances['RichText'].setData(FAQHTMLContent);
                     }
                     catch (Error) {
                         $.noop();
