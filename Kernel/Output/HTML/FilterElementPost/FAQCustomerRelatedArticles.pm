@@ -100,9 +100,9 @@ sub Run {
         Data         => {},
     );
 
-    my $Search = '(<div id="RichTextServerError"[^>]*>.*?<\/div>)(\s*<div class="Clear"><\/div>\s*<\/div>)';
+    my $Search = '(<textarea id="RichText")';
     ${ $Param{Data} }
-        =~ s{$Search}{$1<div id="FAQRelatedArticles" class="Hidden">$CustomerRelatedFAQArticlesHTMLString</div>$2}msg;
+        =~ s{$Search}{<div id="FAQRelatedArticles" class="Hidden">$CustomerRelatedFAQArticlesHTMLString</div>$1}msg;
 
     my $FrontendCustomerTicketMessageConfig      = $ConfigObject->Get("Ticket::Frontend::CustomerTicketMessage");
     my $FrontendCustomerFAQRelatedArticlesConfig = $ConfigObject->Get("FAQ::Frontend::CustomerFAQRelatedArticles");
