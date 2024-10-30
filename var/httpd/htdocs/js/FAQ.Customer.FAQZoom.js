@@ -43,7 +43,7 @@ FAQ.Customer.FAQZoom = (function (TargetNS) {
             // this prevents a double horizontal scrollbar (from iframe and surrounding div)
             $Iframe.width($Iframe.width() - 2);
 
-            NewHeight = $Iframe.contents().find('body').height();
+            NewHeight = $Iframe.contents().find('html').height();
 
             // if the iFrames height is 0, we collapse the widget
             if (NewHeight === 0) {
