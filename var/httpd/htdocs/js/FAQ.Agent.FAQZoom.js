@@ -36,14 +36,18 @@ FAQ.Agent.FAQZoom = (function (TargetNS) {
      *      Set iframe height automatically based on real content height and default config setting.
      */
     TargetNS.IframeAutoHeight = function ($Iframe) {
-        var NewHeight;
+
+        var NewHeight,
+            IframeBodyHeight,
+            ArticleHeightMax = Core.Config.Get('FAQ::Frontend::AgentHTMLFieldHeightMax');
 
         if (isJQueryObject($Iframe)) {
             // slightly change the width of the iframe to not be exactly 100% width anymore
             // this prevents a double horizontal scrollbar (from iframe and surrounding div)
             $Iframe.width($Iframe.width() - 2);
 
-            NewHeight = $Iframe.contents().find('html').height();
+            IframeBodyHeight = $Iframe.contents().find('body').height();
+            NewHeight = $Iframe.contents().height();
 
             // if the iFrames height is 0, we collapse the widget
             if (NewHeight === 0) {
@@ -52,8 +56,12 @@ FAQ.Agent.FAQZoom = (function (TargetNS) {
                 NewHeight = Core.Config.Get('FAQ::Frontend::AgentHTMLFieldHeightDefault');
             }
             else {
-                if (NewHeight > Core.Config.Get('FAQ::Frontend::AgentHTMLFieldHeightMax')) {
-                    NewHeight = Core.Config.Get('FAQ::Frontend::AgentHTMLFieldHeightMax');
+                if (IframeBodyHeight > ArticleHeightMax
+                    || NewHeight > ArticleHeightMax) {
+                    NewHeight = ArticleHeightMax;
+                }
+                else if (IframeBodyHeight > NewHeight) {
+                    NewHeight = IframeBodyHeight;
                 }
             }
 
@@ -61,6 +69,7 @@ FAQ.Agent.FAQZoom = (function (TargetNS) {
             if (NewHeight > 0) {
                 NewHeight = parseInt(NewHeight, 10) + 25;
             }
+
             $Iframe.height(NewHeight + 'px');
         }
     };
