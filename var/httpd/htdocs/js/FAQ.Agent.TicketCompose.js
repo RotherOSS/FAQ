@@ -151,16 +151,17 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
 
             // add FAQ text and/or link to WYSIWYG editor in parent window
             if ( parent.CKEditorInstances && parent.CKEditorInstances['RichText'] ) {
-                parent.CKEditorInstances['RichText'].focus();
+                let editor = parent.CKEditorInstances['RichText'];
+                editor.focus();
                 window.setTimeout(function () {
-                    // In some circumstances, this command throws an error (although inserting the HTML works)
-                    // Because the intended functionality also works, we just wrap it in a try-catch-statement
-                    try {
-                        parent.CKEditorInstances['RichText'].setData(FAQHTMLContent);
-                    }
-                    catch (Error) {
-                        $.noop();
-                    }
+                    
+                    // html string has to be converted to modelfragment for ckeditor insertion
+                    // might pose problems for some special html
+                    let ViewFragment = editor.data.processor.toView( FAQHTMLContent );
+                    let ModelFragment = editor.data.toModel( ViewFragment );
+                    
+                    editor.model.insertContent( ModelFragment );
+
                     window.setTimeout(function () {
                         parent.Core.UI.Dialog.CloseDialog($('.Dialog', parent.document));
                     }, 50);
