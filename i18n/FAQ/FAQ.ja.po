@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
-"PO-Revision-Date: 2024-11-26 02:34+0000\n"
+"PO-Revision-Date: 2024-11-26 04:34+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://weblate.otobo.org/projects/opm-packages/faq/"
 "ja/>\n"
@@ -150,27 +150,27 @@ msgstr "FAQ 言語管理"
 
 #. Template: AgentFAQLanguage
 msgid "Add FAQ Language"
-msgstr ""
+msgstr "FAQ言語を追加"
 
 #. Template: AgentFAQLanguage
 msgid "Edit FAQ Language"
-msgstr ""
+msgstr "FAQ言語を編集"
 
 #. Template: AgentFAQLanguage
 msgid "Use this feature if you want to work with multiple languages."
-msgstr ""
+msgstr "複数の言語で作業する場合は、この機能を使用します。"
 
 #. Template: AgentFAQLanguage
 msgid "Add language"
-msgstr ""
+msgstr "言語を追加"
 
 #. Template: AgentFAQLanguage
 msgid "Add Language"
-msgstr ""
+msgstr "言語を追加"
 
 #. Template: AgentFAQLanguage
 msgid "Edit Language"
-msgstr ""
+msgstr "言語を編集"
 
 #. Template: AgentFAQLanguage
 msgid "You can not delete this language. It is used in at least one FAQ article!"
@@ -182,7 +182,7 @@ msgstr "この言語は次のFAQ記事で使用されています"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "Context Settings"
-msgstr ""
+msgstr "コンテキスト設定"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "FAQ articles per page"
@@ -190,31 +190,31 @@ msgstr "1ページあたりのFAQ記事数"
 
 #. Template: AgentFAQOverviewSmall
 msgid "No FAQ data found."
-msgstr ""
+msgstr "FAQデータが見つかりません。"
 
 #. Template: AgentFAQRelatedArticles
 msgid "out of 5"
-msgstr ""
+msgstr "5点満点中"
 
 #. Template: AgentFAQSearch
 msgid "Keyword"
-msgstr ""
+msgstr "キーワード"
 
 #. Template: AgentFAQSearch
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
-msgstr ""
+msgstr "投票（例：10または60以上）"
 
 #. Template: AgentFAQSearch
 msgid "Rate (e. g. Equals 25% or GreaterThan 75%)"
-msgstr ""
+msgstr "投票（例：25%または75%以上）"
 
 #. Template: AgentFAQSearch
 msgid "Approved"
-msgstr ""
+msgstr "承認済"
 
 #. Template: AgentFAQSearch
 msgid "Last changed by"
-msgstr ""
+msgstr "最終更新者"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (before/after)"
@@ -234,47 +234,47 @@ msgstr "FAQ記事の変更時間（間）"
 
 #. Template: AgentFAQSearchOpenSearchDescriptionFulltext
 msgid "FAQFulltext"
-msgstr ""
+msgstr "FAQ全文"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Search"
-msgstr ""
+msgstr "FAQ検索"
 
 #. Template: AgentFAQSearchSmall
 msgid "Profile Selection"
-msgstr ""
+msgstr "プロフィールの選択"
 
 #. Template: AgentFAQSearchSmall
 msgid "Vote"
-msgstr ""
+msgstr "投票"
 
 #. Template: AgentFAQSearchSmall
 msgid "No vote settings"
-msgstr ""
+msgstr "投票設定なし"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific votes"
-msgstr ""
+msgstr "特定の投票"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 10 or GreaterThan 60"
-msgstr ""
+msgstr "例: 10 に等しい、または 60 より大きい"
 
 #. Template: AgentFAQSearchSmall
 msgid "Rate"
-msgstr ""
+msgstr "レート"
 
 #. Template: AgentFAQSearchSmall
 msgid "No rate settings"
-msgstr ""
+msgstr "レート設定なし"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific rate"
-msgstr ""
+msgstr "特定のレート"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 25% or GreaterThan 75%"
-msgstr ""
+msgstr "例: 25% に等しい、または 75% より大きい"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Create Time"
@@ -286,19 +286,19 @@ msgstr "FAQ記事変更時間"
 
 #. Template: AgentFAQZoom
 msgid "FAQ Information"
-msgstr ""
+msgstr "FAQ情報"
 
 #. Template: AgentFAQZoom
 msgid "Rating"
-msgstr ""
+msgstr "評価"
 
 #. Template: AgentFAQZoom
 msgid "Votes"
-msgstr ""
+msgstr "投票"
 
 #. Template: AgentFAQZoom
 msgid "No votes found!"
-msgstr ""
+msgstr "投票が見つかりません!"
 
 #. Template: AgentFAQZoom
 msgid "No votes found! Be the first one to rate this FAQ article."
@@ -306,11 +306,14 @@ msgstr "投票が見つかりませんでした。この FAQ 記事を評価す�
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
-msgstr ""
+msgstr "添付ファイルをダウンロード"
 
 #. Template: AgentFAQZoom
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
 msgstr ""
+"次の説明ブロック内のリンクを開くには、リンクをクリックするときに Ctrl キー、"
+"Cmd キー、または Shift キーを押す必要がある場合があります (ブラウザと OS "
+"によって異なります)。"
 
 #. Template: AgentFAQZoom
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
@@ -319,11 +322,11 @@ msgstr "この記事はどれくらい役に立ちましたか? 評価して、F
 
 #. Template: AgentFAQZoom
 msgid "not helpful"
-msgstr ""
+msgstr "役に立たない"
 
 #. Template: AgentFAQZoom
 msgid "very helpful"
-msgstr ""
+msgstr "とても役に立ちました"
 
 #. Template: AgentFAQZoomSmall
 msgid "Add FAQ title to article subject"
@@ -331,23 +334,23 @@ msgstr "記事の件名にFAQのタイトルを追加する"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text"
-msgstr ""
+msgstr "FAQテキストを挿入"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ"
-msgstr ""
+msgstr "全てのFAQを挿入"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Link"
-msgstr ""
+msgstr "FAQリンクを挿入"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text & Link"
-msgstr ""
+msgstr "FAQテキストとリンクを挿入"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ & Link"
-msgstr ""
+msgstr "全てのFAQとリンクを挿入"
 
 #. Template: CustomerFAQExplorer
 msgid "Latest updated FAQ articles"
@@ -359,63 +362,63 @@ msgstr "FAQ記事が見つかりません。"
 
 #. Template: CustomerFAQRelatedArticles
 msgid "This might be helpful"
-msgstr ""
+msgstr "これは役に立つかもしれない"
 
 #. Template: CustomerFAQRelatedArticles
 msgid "Found no helpful resources for the subject and text."
-msgstr ""
+msgstr "件名とテキストに役立つリソースが見つかりませんでした。"
 
 #. Template: CustomerFAQRelatedArticles
 msgid "Type a subject or text to get a list of helpful resources."
-msgstr ""
+msgstr "件名またはテキストを入力すると、役立つリソースのリストが表示されます。"
 
 #. Template: CustomerFAQSearch
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
-msgstr ""
+msgstr "FAQ 記事の全文検索 (例: 「John*n」または「Will*」)"
 
 #. Template: CustomerFAQSearch
 msgid "Vote restrictions"
-msgstr ""
+msgstr "投票制限"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with votes..."
-msgstr ""
+msgstr "投票のある FAQ 記事のみ..."
 
 #. Template: CustomerFAQSearch
 msgid "Rate restrictions"
-msgstr ""
+msgstr "レート制限"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with rate..."
-msgstr ""
+msgstr "評価のある FAQ 記事のみ..."
 
 #. Template: CustomerFAQSearch
 msgid "Time restrictions"
-msgstr ""
+msgstr "時間制限"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created"
-msgstr ""
+msgstr "FAQ記事のみ作成"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created between"
-msgstr ""
+msgstr "作成されたFAQ記事のみ"
 
 #. Template: CustomerFAQSearch
 msgid "Search-Profile as Template?"
-msgstr ""
+msgstr "検索プロファイルをテンプレートとして使用しますか?"
 
 #. Template: CustomerFAQZoom
 msgid "Article Number"
-msgstr ""
+msgstr "記事番号"
 
 #. Template: CustomerFAQZoom
 msgid "Search for articles with keyword"
-msgstr ""
+msgstr "キーワードで記事を検索"
 
 #. Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
 msgid "Public"
-msgstr ""
+msgstr "一般"
 
 #. Template: PublicFAQSearchResultShort
 msgid "Back to FAQ Explorer"
