@@ -2,145 +2,151 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-11-26 02:34+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Language-Team: Japanese <http://weblate.otobo.org/projects/opm-packages/faq/"
+"ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
-msgstr ""
+msgstr "FAQ記事を作成"
 
 #. Template: AgentFAQAdd
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "アスタリスク（*）の付いたフィールドはすべて必須です。"
 
 #. Template: AgentFAQAdd
 msgid "Keywords"
-msgstr ""
+msgstr "キーワード"
 
 #. Template: AgentFAQAdd
 msgid "A category is required."
-msgstr ""
+msgstr "カテゴリは必須です。"
 
 #. Template: AgentFAQAdd
 msgid "Approval"
-msgstr ""
+msgstr "承認"
 
 #. Template: AgentFAQCategory
 msgid "FAQ Category Management"
-msgstr ""
+msgstr "FAQカテゴリー管理"
 
 #. Template: AgentFAQCategory
 msgid "Add FAQ Category"
-msgstr ""
+msgstr "FAQカテゴリを追加"
 
 #. Template: AgentFAQCategory
 msgid "Edit FAQ Category"
-msgstr ""
+msgstr "FAQカテゴリを編集"
 
 #. Template: AgentFAQCategory
 msgid "Add category"
-msgstr ""
+msgstr "カテゴリを追加"
 
 #. Template: AgentFAQCategory
 msgid "Add Category"
-msgstr ""
+msgstr "カテゴリを追加"
 
 #. Template: AgentFAQCategory
 msgid "Edit Category"
-msgstr ""
+msgstr "カテゴリを編集"
 
 #. Template: AgentFAQCategory
 msgid "Subcategory of"
-msgstr ""
+msgstr "サブカテゴリ"
 
 #. Template: AgentFAQCategory
 msgid "Please select at least one permission group."
-msgstr ""
+msgstr "少なくとも 1 つの権限グループを選択してください。"
 
 #. Template: AgentFAQCategory
 msgid "Agent groups that can access articles in this category."
-msgstr ""
+msgstr "このカテゴリの記事にアクセスできる担当者 グループ。"
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
-msgstr ""
+msgstr "一覧にコメントとして表示されます。"
 
 #. Template: AgentFAQCategory
 msgid "Do you really want to delete this category?"
-msgstr ""
+msgstr "このカテゴリを本当に削除しますか?"
 
 #. Template: AgentFAQCategory
 msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
 msgstr ""
+"このカテゴリは削除できません。このカテゴリは少なくとも 1 つの FAQ "
+"記事で使用されているか、少なくとも 1 "
+"つの他のカテゴリの親カテゴリになっています"
 
 #. Template: AgentFAQCategory
 msgid "This category is used in the following FAQ article(s)"
-msgstr ""
+msgstr "このカテゴリは次のFAQ記事で使用されています"
 
 #. Template: AgentFAQCategory
 msgid "This category is parent of the following subcategories"
-msgstr ""
+msgstr "このカテゴリは次のサブカテゴリの親です"
 
 #. Template: AgentFAQDelete
 msgid "Do you really want to delete this FAQ article?"
-msgstr ""
+msgstr "この FAQ 記事を本当に削除しますか?"
 
 #. Template: AgentFAQEdit
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Explorer"
-msgstr ""
+msgstr "FAQ一覧"
 
 #. Template: AgentFAQExplorer
 msgid "Quick Search"
-msgstr ""
+msgstr "クイック検索"
 
 #. Template: AgentFAQExplorer
 msgid "Wildcards are allowed."
-msgstr ""
+msgstr "ワイルドカードが許可されます。"
 
 #. Template: AgentFAQExplorer
 msgid "Advanced Search"
-msgstr ""
+msgstr "詳細検索"
 
 #. Template: AgentFAQExplorer
 msgid "Subcategories"
-msgstr ""
+msgstr "サブカテゴリ"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Articles"
-msgstr ""
+msgstr "FAQ記事"
 
 #. Template: AgentFAQExplorer
 msgid "No subcategories found."
-msgstr ""
+msgstr "サブカテゴリが見つかりません。"
 
 #. Template: AgentFAQHistory
 msgid "History of"
-msgstr ""
+msgstr "履歴"
 
 #. Template: AgentFAQHistory
 msgid "History Content"
-msgstr ""
+msgstr "コメント履歴"
 
 #. Template: AgentFAQHistory
 msgid "Createtime"
-msgstr ""
+msgstr "作成時間"
 
 #. Template: AgentFAQJournalOverviewSmall
 msgid "No FAQ Journal data found."
-msgstr ""
+msgstr "FAQ ジャーナルのデータが見つかりません。"
 
 #. Template: AgentFAQLanguage
 msgid "FAQ Language Management"
-msgstr ""
+msgstr "FAQ 言語管理"
 
 #. Template: AgentFAQLanguage
 msgid "Add FAQ Language"
@@ -168,11 +174,11 @@ msgstr ""
 
 #. Template: AgentFAQLanguage
 msgid "You can not delete this language. It is used in at least one FAQ article!"
-msgstr ""
+msgstr "この言語は削除できません。少なくとも 1 つの FAQ 記事で使用されています！"
 
 #. Template: AgentFAQLanguage
 msgid "This language is used in the following FAQ Article(s)"
-msgstr ""
+msgstr "この言語は次のFAQ記事で使用されています"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "Context Settings"
@@ -180,7 +186,7 @@ msgstr ""
 
 #. Template: AgentFAQOverviewNavBar
 msgid "FAQ articles per page"
-msgstr ""
+msgstr "1ページあたりのFAQ記事数"
 
 #. Template: AgentFAQOverviewSmall
 msgid "No FAQ data found."
@@ -212,19 +218,19 @@ msgstr ""
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (before/after)"
-msgstr ""
+msgstr "FAQ記事作成時間（前/後）"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (between)"
-msgstr ""
+msgstr "FAQ記事作成時間（前/後）"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Change Time (before/after)"
-msgstr ""
+msgstr "FAQ記事変更時間（前/後）"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Change Time (between)"
-msgstr ""
+msgstr "FAQ記事の変更時間（間）"
 
 #. Template: AgentFAQSearchOpenSearchDescriptionFulltext
 msgid "FAQFulltext"
@@ -272,11 +278,11 @@ msgstr ""
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Create Time"
-msgstr ""
+msgstr "FAQ記事作成時間"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Change Time"
-msgstr ""
+msgstr "FAQ記事変更時間"
 
 #. Template: AgentFAQZoom
 msgid "FAQ Information"
@@ -296,7 +302,7 @@ msgstr ""
 
 #. Template: AgentFAQZoom
 msgid "No votes found! Be the first one to rate this FAQ article."
-msgstr ""
+msgstr "投票が見つかりませんでした。この FAQ 記事を評価する最初の人になりましょう。"
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
@@ -308,7 +314,8 @@ msgstr ""
 
 #. Template: AgentFAQZoom
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
-msgstr ""
+msgstr "この記事はどれくらい役に立ちましたか? 評価して、FAQ "
+"データベースの改善にご協力ください。 ありがとうございます!"
 
 #. Template: AgentFAQZoom
 msgid "not helpful"
@@ -320,7 +327,7 @@ msgstr ""
 
 #. Template: AgentFAQZoomSmall
 msgid "Add FAQ title to article subject"
-msgstr ""
+msgstr "記事の件名にFAQのタイトルを追加する"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text"
@@ -344,11 +351,11 @@ msgstr ""
 
 #. Template: CustomerFAQExplorer
 msgid "Latest updated FAQ articles"
-msgstr ""
+msgstr "最新のFAQ記事"
 
 #. Template: CustomerFAQExplorer
 msgid "No FAQ articles found."
-msgstr ""
+msgstr "FAQ記事が見つかりません。"
 
 #. Template: CustomerFAQRelatedArticles
 msgid "This might be helpful"
@@ -1829,4 +1836,3 @@ msgstr ""
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
-
