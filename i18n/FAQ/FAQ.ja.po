@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
-"PO-Revision-Date: 2024-11-26 04:34+0000\n"
+"PO-Revision-Date: 2024-11-28 07:34+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://weblate.otobo.org/projects/opm-packages/faq/"
 "ja/>\n"
@@ -422,311 +422,315 @@ msgstr "一般"
 
 #. Template: PublicFAQSearchResultShort
 msgid "Back to FAQ Explorer"
-msgstr ""
+msgstr "FAQ一覧に戻る"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "You need rw permission!"
-msgstr ""
+msgstr "rw 許可が必要です!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No categories found where user has read/write permissions!"
-msgstr ""
+msgstr "ユーザーが読み取り/書き込み権限を持つカテゴリが見つかりません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No default language found and can't create a new one."
-msgstr ""
+msgstr "デフォルトの言語が見つからないため、新しい言語を作成できません。"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Need CategoryID!"
-msgstr ""
+msgstr "カテゴリIDが必要です!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
-msgstr ""
+msgstr "カテゴリーには名前が必要です！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists"
-msgstr ""
+msgstr "このカテゴリはすでに存在します"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
-msgstr ""
+msgstr "このカテゴリはすでに存在します！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "No CategoryID is given!"
-msgstr ""
+msgstr "CategoryIDが指定されていません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Was not able to delete the category %s!"
-msgstr ""
+msgstr "カテゴリ %s を削除できませんでした！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
-msgstr ""
+msgstr "FAQカテゴリーを更新しました！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category added!"
-msgstr ""
+msgstr "FAQカテゴリーを追加しました！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Delete Category"
-msgstr ""
+msgstr "カテゴリを削除"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
-msgstr ""
+msgstr "アイテムIDが指定されていません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "You have no permission for this category!"
-msgstr ""
+msgstr "このカテゴリに対する権限がありません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "Was not able to delete the FAQ article %s!"
-msgstr ""
+msgstr "FAQ 記事 %s を削除できませんでした！"
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
-msgstr ""
+msgstr "カテゴリID %s が無効です。"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
-msgstr ""
+msgstr "ItemID が指定されていないため、履歴を表示できません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "FAQ History"
-msgstr ""
+msgstr "FAQ履歴"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
-msgstr ""
+msgstr "FAQジャーナル"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
-msgstr ""
+msgstr "FAQ::Frontend::Overview設定オプションが必要です"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
-msgstr ""
+msgstr "設定オプション FAQ::Frontend::Overview はハッシュ参照である必要があります！"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
+msgstr "ビュー \"%s\" の設定オプションが見つかりません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
-msgstr ""
+msgstr "LanguageIDが指定されていません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
-msgstr ""
+msgstr "名前は必須です!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "This language already exists!"
-msgstr ""
+msgstr "この言語はすでに存在します!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
-msgstr ""
+msgstr "言語 %s を削除できませんでした。"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
-msgstr ""
+msgstr "FAQの言語が更新されました!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language added!"
-msgstr ""
+msgstr "FAQ言語が追加されました！"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Delete Language %s"
-msgstr ""
+msgstr "言語 %s を削除"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
-msgstr ""
+msgstr "結果"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
-msgstr ""
+msgstr "最終更新"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "FAQ Dynamic Fields"
-msgstr ""
+msgstr "FAQ ダイナミックフィールド"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "No %s is given!"
-msgstr ""
+msgstr "%s が指定されていません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "Can't load LanguageObject!"
-msgstr ""
+msgstr "LanguageObject を読み込めません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
-msgstr ""
+msgstr "結果なし!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Number"
-msgstr ""
+msgstr "FAQ番号"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
-msgstr ""
+msgstr "最終更新者"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
-msgstr ""
+msgstr "FAQアイテム作成時間（前/後）"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (between)"
-msgstr ""
+msgstr "FAQアイテム作成時間（間）"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (before/after)"
-msgstr ""
+msgstr "FAQ 項目変更時間（前/後）"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (between)"
-msgstr ""
+msgstr "FAQ項目変更時間（間）"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Equals"
-msgstr ""
+msgstr "等しい"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than"
-msgstr ""
+msgstr "より大きい"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than equals"
-msgstr ""
+msgstr "より大きい"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than"
-msgstr ""
+msgstr "より小さい"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than equals"
-msgstr ""
+msgstr "等しいより小さい"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Need FileID!"
-msgstr ""
+msgstr "ファイルIDが必要です!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
-msgstr ""
+msgstr "投票ありがとうございます！"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "You have already voted!"
-msgstr ""
+msgstr "すでに投票しました!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "No rate selected!"
-msgstr ""
+msgstr "レートが選択されていません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
-msgstr ""
+msgstr "投票メカニズムが有効になっていません！"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The vote rate is not defined!"
-msgstr ""
+msgstr "投票率は定義されていません!"
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
-msgstr ""
+msgstr "FAQ記事の印刷"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
-msgstr ""
+msgstr "作成日"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
-msgstr ""
+msgstr "アイテムIDが必要です!"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
-msgstr ""
+msgstr "FAQ 記事 (新規作成)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (recently changed)"
-msgstr ""
+msgstr "FAQ記事（最近変更された記事）"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (Top 10)"
-msgstr ""
+msgstr "FAQ記事（トップ10）"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
-msgstr ""
+msgstr "タイプが指定されていません！"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Type must be either LastCreate or LastChange or Top10!"
-msgstr ""
+msgstr "タイプは LastCreate、LastChange、Top10 のいずれかである必要があります！"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Can't create RSS file!"
-msgstr ""
+msgstr "RSS ファイルを作成できません！"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
 msgid "%s (FAQFulltext)"
-msgstr ""
+msgstr "%s (FAQ全文)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (%s)"
-msgstr ""
+msgstr "%s (FAQ全文)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (FAQFulltext)"
-msgstr ""
+msgstr "%s - 顧客 (FAQ全文)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (%s)"
-msgstr ""
+msgstr "%s - 一般 (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (FAQFulltext)"
-msgstr ""
+msgstr "%s - 一般 (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Need rate!"
-msgstr ""
+msgstr "レートが必要です!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
-msgstr ""
+msgstr "この記事は空です!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
-msgstr ""
+msgstr "最近作成されたFAQ記事"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Top 10 FAQ articles"
-msgstr ""
+msgstr "FAQトップ10記事"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
-msgstr ""
+msgstr "コンテンツタイプ"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
-msgstr ""
+msgstr "内部"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "external"
-msgstr ""
+msgstr "外部"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "public"
-msgstr ""
+msgstr "一般"
 
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
 msgstr ""
+"定義された文字列の後ろにリンクを追加するための HTML 出力のフィルター。要素 "
+"Image では 2 種類の入力が可能です。1 つ目は画像の名前 (例: faq."
+"png)。この場合、OTOBO 画像パスが使用されます。2 "
+"つ目は画像へのリンクを挿入することです。"
 
 #. SysConfig
 msgid "Add FAQ article"
-msgstr ""
+msgstr "FAQ記事を追加"
 
 #. SysConfig
 msgid "CSS color for the voting result."
