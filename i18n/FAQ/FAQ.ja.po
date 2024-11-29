@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
-"PO-Revision-Date: 2024-11-28 07:34+0000\n"
+"PO-Revision-Date: 2024-11-29 01:34+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://weblate.otobo.org/projects/opm-packages/faq/"
 "ja/>\n"
@@ -734,391 +734,436 @@ msgstr "FAQ記事を追加"
 
 #. SysConfig
 msgid "CSS color for the voting result."
-msgstr ""
+msgstr "投票結果の CSS カラー。"
 
 #. SysConfig
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "FAQ 項目の「Cache Time To Leave」。"
 
 #. SysConfig
 msgid "Category Management"
-msgstr ""
+msgstr "カテゴリー管理"
 
 #. SysConfig
 msgid "Category Management."
-msgstr ""
+msgstr "カテゴリー管理。"
 
 #. SysConfig
 msgid "Customer FAQ Print."
-msgstr ""
+msgstr "顧客FAQ印刷。"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "お客様FAQ関連記事"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "顧客FAQ関連記事。"
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
-msgstr ""
+msgstr "顧客FAQズーム。"
 
 #. SysConfig
 msgid "Customer FAQ search."
-msgstr ""
+msgstr "顧客FAQ検索。"
 
 #. SysConfig
 msgid "Customer FAQ."
-msgstr ""
+msgstr "顧客向けFAQ。"
 
 #. SysConfig
 msgid "Decimal places of the voting result."
-msgstr ""
+msgstr "投票結果の小数点以下の桁数。"
 
 #. SysConfig
 msgid "Default category name."
-msgstr ""
+msgstr "デフォルトのカテゴリ名。"
 
 #. SysConfig
 msgid "Default language for FAQ articles on single language mode."
-msgstr ""
+msgstr "単一言語モードでの FAQ 記事のデフォルト言語。"
 
 #. SysConfig
 msgid "Default maximum size of the titles in a FAQ article to be shown."
-msgstr ""
+msgstr "FAQ 記事に表示されるタイトルのデフォルトの最大サイズ。"
 
 #. SysConfig
 msgid "Default priority of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "FAQ 記事の承認に対するチケットのデフォルトの優先度。"
 
 #. SysConfig
 msgid "Default state for FAQ entry."
-msgstr ""
+msgstr "FAQ エントリのデフォルトステータス。"
 
 #. SysConfig
 msgid "Default state of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "FAQ 記事の承認のためのチケットのデフォルトステータス。"
 
 #. SysConfig
 msgid "Default type of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "FAQ 記事の承認のためのチケットのデフォルトのタイプ。"
 
 #. SysConfig
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
-msgstr ""
+msgstr "一般一般フロントエンドの Action パラメータのデフォルト値。Action "
+"パラメータはシステムのスクリプトで使用されます。"
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"リンクされたオブジェクト ウィジェット (LinkObject::ViewMode = \"complex\") "
+"で設定ボタンが使用できるアクションを定義します。これらのアクションには、Core."
+"AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core."
+"Agent.TableFilters.js、および Core.Agent.LinkObject.js の JS および CSS "
+"ファイルが登録されている必要があることに注意してください。"
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
-msgstr ""
+msgstr "FAQ のタイトルを記事の件名に連結するかどうかを定義します。"
 
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"リンクされた FAQ ウィジェットに表示される列を定義します (LinkObject::"
+"ViewMode = \"complex\")。注: DefaultColumns では、FAQ "
+"属性とダイナミックフィールド (DynamicField_NameX) のみが許可されます。"
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
-msgstr ""
+msgstr "FAQ ジャーナルの小さなビューを表示するための概要モジュールを定義します。"
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ list."
-msgstr ""
+msgstr "FAQ リストの小さなビューを表示するための概要モジュールを定義します。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ 検索における FAQ "
+"の並べ替えに使用するデフォルトの FAQ 属性を定義します。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
-msgstr ""
+msgstr "顧客Webインターフェイスの FAQ 検索における FAQ "
+"の並べ替えに使用するデフォルトの FAQ 属性を定義します。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
-msgstr ""
+msgstr "一般Webインターフェイスの FAQ 検索における FAQ "
+"の並べ替えに使用するデフォルトの FAQ 属性を定義します。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ エクスプローラーで FAQ "
+"を並べ替えるためのデフォルトの FAQ 属性を定義します。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "顧客Webインターフェイスの FAQ エクスプローラーで FAQ "
+"を並べ替えるためのデフォルトの FAQ 属性を定義します。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ エクスプローラーで FAQ "
+"を並べ替えるためのデフォルトの FAQ 属性を定義します。"
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"担当者Webインターフェイスの FAQ エクスプローラー結果におけるデフォルトの FAQ "
+"順序を定義します。上: 古いものが上に表示されます。下: "
+"最新のものが上に表示されます。"
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"顧客Webインターフェイスの FAQ エクスプローラー結果におけるデフォルトの FAQ "
+"順序を定義します。上: 古いものが上に表示されます。下: "
+"最新のものが上に表示されます。"
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"一般インターフェイスの FAQ エクスプローラー結果におけるデフォルトの FAQ "
+"順序を定義します。上: 古いものが上に表示されます。下: "
+"最新のものが上に表示されます。"
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"担当者Webインターフェイスでの検索結果のデフォルトの FAQ 順序を定義します。上:"
+" 古いものが上に表示されます。下: 最新のものが上に表示されます。"
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"顧客インターフェイスでの検索結果のデフォルトの FAQ 順序を定義します。上: "
+"古いものが上に表示されます。下: 最新のものが上に表示されます。"
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"パブリック インターフェースでの検索結果のデフォルトの FAQ "
+"順序を定義します。上: 古いものが上に表示されます。下: "
+"最新のものが上に表示されます。"
 
 #. SysConfig
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
-msgstr ""
+msgstr "FAQ 検索画面に表示されるデフォルトの FAQ 検索属性を定義します。"
 
 #. SysConfig
 msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
-msgstr ""
+msgstr "FAQ ベースのチケットに挿入する情報を定義します。「完全な "
+"FAQ」には、テキスト、添付ファイル、インライン画像が含まれます。"
 
 #. SysConfig
 msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
 msgstr ""
+"ダッシュボード バックエンドのパラメータを定義します。「制限」は、デフォルトで"
+"表示されるエントリの数を定義します。「グループ」は、"
+"プラグインへのアクセスを制限するために使用されます (例: グループ: admin;group"
+"1;group2;)。「デフォルト」は、プラグインがデフォルトで有効になっているか、ユ"
+"ーザーが手動で有効にする必要があるかを示します。"
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
-msgstr ""
+msgstr "FAQ エクスプローラーに表示される列を定義します。このオプションは列の位置には"
+"影響しません。"
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
-msgstr ""
+msgstr "FAQ ジャーナルに表示される列を定義します。このオプションは列の位置には影響し"
+"ません。"
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
-msgstr ""
+msgstr "FAQ "
+"検索で表示される列を定義します。このオプションは列の位置には影響しません。"
 
 #. SysConfig
 msgid "Defines where the 'Insert FAQ' link will be displayed."
-msgstr ""
+msgstr "「FAQ を挿入」リンクが表示される場所を定義します。"
 
 #. SysConfig
 msgid "Definition of FAQ item free text field."
-msgstr ""
+msgstr "FAQ 項目のフリーテキスト フィールドの定義。"
 
 #. SysConfig
 msgid "Delete this FAQ"
-msgstr ""
+msgstr "このFAQを削除する"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ 追加画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ 編集画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
-msgstr ""
+msgstr "顧客Webインターフェースの FAQ 概要画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
-msgstr ""
+msgstr "一般Webインターフェースの FAQ 概要画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ 印刷画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
-msgstr ""
+msgstr "顧客Webインターフェイスの FAQ 印刷画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
-msgstr ""
+msgstr "一般Webインターフェイスの FAQ 印刷画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ 検索画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
-msgstr ""
+msgstr "顧客Webインターフェースの FAQ 検索画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
-msgstr ""
+msgstr "一般Webインターフェースの FAQ 検索画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ "
+"の小さな形式の概要画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ "
+"ズーム画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
-msgstr ""
+msgstr "顧客Webインターフェースの FAQ ズーム画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
-msgstr ""
+msgstr "一般Webインターフェースの FAQ ズーム画面に表示されるダイナミックフィールド。"
 
 #. SysConfig
 msgid "Edit this FAQ"
-msgstr ""
+msgstr "このFAQを編集する"
 
 #. SysConfig
 msgid "Enable multiple languages on FAQ module."
-msgstr ""
+msgstr "FAQ モジュールで複数の言語を有効にします。"
 
 #. SysConfig
 msgid "Enable service assignment for FAQs."
-msgstr ""
+msgstr "FAQ のサービス割り当てを有効にします。"
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
-msgstr ""
+msgstr "顧客フロントエンドの関連記事機能を有効にします。"
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
-msgstr ""
+msgstr "FAQ モジュールで投票メカニズムを有効にします。"
 
 #. SysConfig
 msgid "Explorer"
-msgstr ""
+msgstr "一覧"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
-msgstr ""
+msgstr "FAQ AJAX レスポンダー"
 
 #. SysConfig
 msgid "FAQ AJAX Responder for Richtext."
-msgstr ""
+msgstr "リッチテキスト用の FAQ AJAX レスポンダー。"
 
 #. SysConfig
 msgid "FAQ Area"
-msgstr ""
+msgstr "FAQエリア"
 
 #. SysConfig
 msgid "FAQ Area."
-msgstr ""
+msgstr "FAQエリア。"
 
 #. SysConfig
 msgid "FAQ Delete."
-msgstr ""
+msgstr "FAQ 削除。"
 
 #. SysConfig
 msgid "FAQ Edit."
-msgstr ""
+msgstr "FAQ編集。"
 
 #. SysConfig
 msgid "FAQ History."
-msgstr ""
+msgstr "FAQ 履歴。"
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
-msgstr ""
+msgstr "FAQ ジャーナルの概要「小さな」制限"
 
 #. SysConfig
 msgid "FAQ Overview \"Small\" Limit"
-msgstr ""
+msgstr "FAQ一覧「小」制限"
 
 #. SysConfig
 msgid "FAQ Print."
-msgstr ""
+msgstr "FAQ 印刷。"
 
 #. SysConfig
 msgid "FAQ search backend router of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ 検索バックエンド ルーター。"
 
 #. SysConfig
 msgid "Field4"
-msgstr ""
+msgstr "フィールド4"
 
 #. SysConfig
 msgid "Field5"
-msgstr ""
+msgstr "フィールド5"
 
 #. SysConfig
 msgid "Full FAQ"
-msgstr ""
+msgstr "全てのFAQ"
 
 #. SysConfig
 msgid "Group for the approval of FAQ articles."
-msgstr ""
+msgstr "FAQ 記事の承認のためのグループ。"
 
 #. SysConfig
 msgid "History of this FAQ"
-msgstr ""
+msgstr "このFAQの履歴"
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
-msgstr ""
+msgstr "FAQ ベースのチケットに内部フィールドを含めます。"
 
 #. SysConfig
 msgid "Include the name of each field in a FAQ based Ticket."
-msgstr ""
+msgstr "FAQ ベースのチケットに各フィールドの名前を含めます。"
 
 #. SysConfig
 msgid "Interfaces where the quick search should be shown."
-msgstr ""
+msgstr "クイック検索を表示するインターフェース。"
 
 #. SysConfig
 msgid "Journal"
-msgstr ""
+msgstr "ジャーナル"
 
 #. SysConfig
 msgid "Language Management"
-msgstr ""
+msgstr "言語管理"
 
 #. SysConfig
 msgid "Language Management."
-msgstr ""
+msgstr "言語管理。"
 
 #. SysConfig
 msgid "Limit for the search to build the keyword FAQ article list."
-msgstr ""
+msgstr "キーワード FAQ 記事リストを構築するための検索の制限。"
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
-msgstr ""
+msgstr "この FAQ 項目に別のオブジェクトをリンクする"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
-msgstr ""
+msgstr "関連記事機能が有効になっているキュー名のリスト。"
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスで使用できるステータス・タイプのリスト。"
 
 #. SysConfig
 msgid "List of state types which can be used in the customer interface."
-msgstr ""
+msgstr "顧客Webインターフェースで使用できるステータス・タイプのリスト。"
 
 #. SysConfig
 msgid "List of state types which can be used in the public interface."
-msgstr ""
+msgstr "一般Webインターフェイスで使用できるステータス・タイプのリスト。"
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "一般Webインターフェイスのローダー モジュールの登録。"
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイスの FAQ エクスプローラーの結果に表示される FAQ "
+"記事の最大数。"
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
-msgstr ""
+msgstr "顧客Webインターフェイスの FAQ エクスプローラー結果に表示される FAQ "
+"記事の最大数。"
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
-msgstr ""
+msgstr "一般Webインターフェイスの FAQ エクスプローラーの結果に表示される FAQ "
+"記事の最大数。"
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
