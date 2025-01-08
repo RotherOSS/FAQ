@@ -105,24 +105,24 @@ sub Run {
     my $HTMLUtilsObject = $Kernel::OM->Get('Kernel::System::HTMLUtils');
 
     # ---------------------------------------------------------- #
-    # HTMLView Sub-action
+    # HTMLView Subaction
     # ---------------------------------------------------------- #
     if ( $Self->{Subaction} eq 'HTMLView' ) {
 
-        # gGet parameters from web request.
+        # get params
         my $Field = $ParamObject->GetParam( Param => "Field" );
 
         for my $Needed (qw( ItemID Field )) {
             if ( !$Needed ) {
                 $Kernel::OM->Get('Kernel::System::Log')->Log(
-                    Message  => "Needed Param: $Needed!",
                     Priority => 'error',
+                    Message  => "Needed Param: $Needed!",
                 );
                 return;
             }
         }
 
-        # Get the Field content.
+        # get the Field content
         my $FieldContent = $FAQObject->ItemFieldGet(
             ItemID => $GetParam{ItemID},
             Field  => $Field,
@@ -134,7 +134,7 @@ sub Run {
             Action=AgentFAQ [&](amp;)? Subaction=Download [&](amp;)?
         }{Action=AgentFAQZoom;Subaction=DownloadAttachment;}gxms;
 
-        # Build base URL for in-line images.
+        # build base URL for inline images
         my $SessionID = '';
         if ( $Self->{SessionID} && !$Self->{SessionIDCookie} ) {
             $SessionID = ';' . $Self->{SessionName} . '=' . $Self->{SessionID};
@@ -167,13 +167,13 @@ sub Run {
             TargetAdd => 1,
         );
 
-        # Add needed HTML headers.
+        # add needed HTML headers
         $FieldContent = $HTMLUtilsObject->DocumentComplete(
             String  => $FieldContent,
             Charset => 'utf-8',
         );
 
-        # Return complete HTML as an attachment.
+        # return complete HTML as an attachment
         return $LayoutObject->Attachment(
             Type        => 'inline',
             ContentType => 'text/html',
