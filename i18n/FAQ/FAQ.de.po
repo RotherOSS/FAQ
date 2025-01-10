@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
 "PO-Revision-Date: 2025-01-10 11:21+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
 ">\n"
 "Language: de\n"
@@ -591,7 +591,7 @@ msgstr "Größer als"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than equals"
-msgstr ""
+msgstr "Größer gleich"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than"
@@ -599,7 +599,7 @@ msgstr "Kleiner als"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than equals"
-msgstr ""
+msgstr "Kleiner gleich"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Need FileID!"
@@ -716,6 +716,11 @@ msgstr "öffentlich"
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
 msgstr ""
+"Ein Filter für die HTML-Ausgabe zum Hinzufügen von Links hinter einer "
+"definierten Zeichenkette. Das Element Image erlaubt zwei Eingabearten. Zum "
+"einen den Namen eines Bildes (z.B. faq.png). In diesem Fall wird der OTOBO-"
+"Bildpfad verwendet. Die zweite Möglichkeit besteht darin, den Link zum Bild "
+"einzufügen."
 
 #. SysConfig
 msgid "Add FAQ article"
