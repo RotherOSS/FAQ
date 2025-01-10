@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:29+0200\n"
-"PO-Revision-Date: 2025-01-10 10:21+0000\n"
+"PO-Revision-Date: 2025-01-10 11:21+0000\n"
 "Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/manual-faq/master/"
 "de/>\n"
@@ -27,7 +27,7 @@ msgstr "Sacrifice to Sphinx"
 
 #: ../../content/index.rst:19
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../content/index.rst:20
 msgid "The FAQ/knowledge base."
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../content/index.rst:26
 msgid "Framework"
-msgstr ""
+msgstr "Framework"
 
 #: ../../content/index.rst:27
 msgid "OTOBO 11.0.x"
@@ -1888,11 +1888,11 @@ msgstr ""
 
 #: ../../content/index.rst:1078
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: ../../content/index.rst:1081
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: ../../content/index.rst:1082
 msgid "Rother OSS GmbH"
@@ -1904,7 +1904,7 @@ msgstr ""
 
 #: ../../content/index.rst:1084
 msgid "Web: https://otobo.de"
-msgstr ""
+msgstr "Web: https://otobo.de"
 
 #: ../../content/index.rst:1087
 msgid "Version"
