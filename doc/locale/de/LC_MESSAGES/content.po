@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:29+0200\n"
-"PO-Revision-Date: 2025-01-13 10:21+0000\n"
+"PO-Revision-Date: 2025-01-13 11:21+0000\n"
 "Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/manual-faq/master/"
 "de/>\n"
@@ -1908,7 +1908,7 @@ msgstr "Web: https://otobo.de"
 
 #: ../../content/index.rst:1087
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: ../../content/index.rst:1088
 msgid ""
