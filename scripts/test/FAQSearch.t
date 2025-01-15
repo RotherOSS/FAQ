@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -956,7 +956,7 @@ $Self->True(
         StateID    => 1,
         LanguageID => 1,
         Keywords   => "$Keywords{Keyword1},$Keywords{Keyword2},$Keywords{Keyword3},$Keywords{Keyword4}",
-        ,
+
         UserID      => 1,
         ContentType => 'text/html',
     );
@@ -975,7 +975,7 @@ $Self->True(
         StateID    => 1,
         LanguageID => 1,
         Keywords   => "$Keywords{Keyword1};$Keywords{Keyword2};$Keywords{Keyword3};$Keywords{Keyword4}",
-        ,
+
         UserID      => 1,
         ContentType => 'text/html',
     );
@@ -1130,7 +1130,7 @@ $Self->True(
             Name   => 'Title',
             Config => {
                 Title => 'tITLe' . $RandomID,
-                ,
+
                 What    => 'l',
                 OrderBy => ['Created'],
             },

@@ -2,7 +2,7 @@
 // OTOBO is a web-based ticketing system for service organisations.
 // --
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
+// Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -154,12 +154,12 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
                 let editor = parent.CKEditorInstances['RichText'];
                 editor.focus();
                 window.setTimeout(function () {
-                    
+
                     // html string has to be converted to modelfragment for ckeditor insertion
                     // might pose problems for some special html
                     let ViewFragment = editor.data.processor.toView( FAQHTMLContent );
                     let ModelFragment = editor.data.toModel( ViewFragment );
-                    
+
                     editor.model.insertContent( ModelFragment );
 
                     window.setTimeout(function () {
