@@ -56,7 +56,7 @@
             <div class="oooSubBox">
 # no whitespace/newline results in no whitespace between display: inline-block; elements
 [% RenderBlockStart("OverviewResultRow") %]<a class="oooSub" href="[% Env("Baselink") %]Action=[% Env("Action") %];CategoryID=[% Data.CategoryID | uri %]">
-                    <h3>[% Data.Name | html %]</h3>
+                    <h3>[% Translate(Data.Name) | html %]</h3>
                     [% IF Data.SubCategoryCount %]
                     <p class="oooSubCount">[% Data.SubCategoryCount | html %]</p>
                     [% END %]
