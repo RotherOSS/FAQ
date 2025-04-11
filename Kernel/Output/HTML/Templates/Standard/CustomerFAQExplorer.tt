@@ -60,7 +60,7 @@
                     [% IF Data.SubCategoryCount %]
                     <p class="oooSubCount">[% Data.SubCategoryCount | html %]</p>
                     [% END %]
-                    <p class="ooog oooComment">[% Data.Comment | html %]</p>
+                    <p class="ooog oooComment">[% Translate(Data.Comment) | html %]</p>
                 </a>[% RenderBlockEnd("OverviewResultRow") %]
 # RenderBlockEnd("OverviewResultRow")
             </div>

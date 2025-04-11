@@ -124,8 +124,8 @@
 [% RenderBlockEnd("NoDataFoundMsg") %]
 [% RenderBlockStart("OverviewResultRow") %]
                                 <tr class="MasterAction">
-                                    <td><a class="AsBlock MasterActionLink" href="[% Env("Baselink") %]Action=[% Env("Action") %];CategoryID=[% Data.CategoryID | uri %];Nav=[% Data.Nav | uri %]">[% Data.Name | html %]</a></td>
-                                    <td>[% Data.Comment | html %]</td>
+                                    <td><a class="AsBlock MasterActionLink" href="[% Env("Baselink") %]Action=[% Env("Action") %];CategoryID=[% Data.CategoryID | uri %];Nav=[% Data.Nav | uri %]">[% Translate(Data.Name) | html %]</a></td>
+                                    <td>[% Translate(Data.Comment) | html %]</td>
                                     <td>[% Data.SubCategoryCount | html %]</td>
                                     <td>[% Data.ArticleCount | html %]</td>
                                 </tr>
