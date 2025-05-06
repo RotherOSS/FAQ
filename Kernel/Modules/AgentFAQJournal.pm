@@ -144,7 +144,7 @@ sub _FAQJournalShow {
 
     # Get personal page shown count.
     my $PageShownPreferencesKey = 'UserFAQJournalOverview' . $View . 'PageShown';
-    my $PageShown               = $Self->{$PageShownPreferencesKey} || 10;
+    my $PageShown               = $Self->{Session}{$PageShownPreferencesKey} || 10;
     my $Group                   = 'FAQJournalOverview' . $View . 'PageShown';
 
     # Check start option, if higher then elements available, set it to the last overview page
