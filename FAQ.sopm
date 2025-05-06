@@ -9,7 +9,7 @@
     <Description Lang="en">The FAQ/knowledge base.</Description>
     <Description Lang="de">Die FAQ-/Wissensdatenbank.</Description>
     <Description Lang="hu">A GyIK/tudásbázis csomag.</Description>
-    <Framework>10.0.x</Framework>
+    <Framework Minimum="10.0.24">10.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
         &lt;br/&gt;
         &lt;strong&gt;WELCOME&lt;/strong&gt;
