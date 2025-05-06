@@ -179,7 +179,7 @@ sub Run {
             DynamicField            => \%DynamicFieldValues,
 
             # Last viewed category from session (written by FAQ explorer).
-            CategoryID  => $Self->{LastViewedCategory},
+            CategoryID  => $Self->{Session}{LastViewedCategory},
             ContentType => $ContentType,
         );
 
