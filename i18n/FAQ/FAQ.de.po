@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:29+0000\n"
-"PO-Revision-Date: 2025-01-10 11:21+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
-"Language-Team: German <http://weblate.otobo.org/projects/opm-packages/faq/de/"
-">\n"
+"PO-Revision-Date: 2025-07-01 13:25+0000\n"
+"Last-Translator: Grit Rother <mr@otobo.de>\n"
+"Language-Team: German <http://translate.otobo.org/projects/opm-packages/faq/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -724,43 +724,45 @@ msgstr ""
 
 #. SysConfig
 msgid "Add FAQ article"
-msgstr ""
+msgstr "FAQ-Artikel hinzufügen"
 
 #. SysConfig
 msgid "CSS color for the voting result."
-msgstr ""
+msgstr "CSS-Farbe Abstimmungsergebnis."
 
 #. SysConfig
+#, fuzzy
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "Cache-Zeit für FAQ-Artikel."
 
 #. SysConfig
 msgid "Category Management"
-msgstr ""
+msgstr "Kategorie-Management"
 
 #. SysConfig
 msgid "Category Management."
-msgstr ""
+msgstr "Kategorieverwaltung."
 
 #. SysConfig
 msgid "Customer FAQ Print."
-msgstr ""
+msgstr "Druckausgabe Kunden-FAQ."
 
 #. SysConfig
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "Verknüpfte Kunden-FAQ-Artikel"
 
 #. SysConfig
+#, fuzzy
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "Verknüpfte Kunden-FAQ-Artikel."
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
-msgstr ""
+msgstr "FAQ-Ansicht im Kundenbereich."
 
 #. SysConfig
 msgid "Customer FAQ search."
-msgstr ""
+msgstr "FAQ-Suche im Kundenbereich."
 
 #. SysConfig
 msgid "Customer FAQ."
