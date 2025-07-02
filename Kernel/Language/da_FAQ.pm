@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,10 +25,9 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = '';
-    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = '';
     $Self->{Translation}->{'A category is required.'} = '';
-    $Self->{Translation}->{'Approval'} = '';
+    $Self->{Translation}->{'Approval'} = 'Godkendt';
 
     # Template: AgentFAQCategory
     $Self->{Translation}->{'FAQ Category Management'} = '';
@@ -37,10 +36,10 @@ sub Data {
     $Self->{Translation}->{'Add category'} = '';
     $Self->{Translation}->{'Add Category'} = '';
     $Self->{Translation}->{'Edit Category'} = '';
-    $Self->{Translation}->{'Subcategory of'} = '';
+    $Self->{Translation}->{'Subcategory of'} = 'Underkategori af';
     $Self->{Translation}->{'Please select at least one permission group.'} = '';
     $Self->{Translation}->{'Agent groups that can access articles in this category.'} = '';
-    $Self->{Translation}->{'Will be shown as comment in Explorer.'} = '';
+    $Self->{Translation}->{'Will be shown as comment in Explorer.'} = 'Vil blive vist som kommentar i Explore.';
     $Self->{Translation}->{'Do you really want to delete this category?'} = '';
     $Self->{Translation}->{'You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category'} =
         '';
@@ -63,9 +62,9 @@ sub Data {
     $Self->{Translation}->{'No subcategories found.'} = '';
 
     # Template: AgentFAQHistory
-    $Self->{Translation}->{'History of'} = '';
-    $Self->{Translation}->{'History Content'} = '';
-    $Self->{Translation}->{'Createtime'} = '';
+    $Self->{Translation}->{'History of'} = 'Historik af';
+    $Self->{Translation}->{'History Content'} = 'Historik';
+    $Self->{Translation}->{'Createtime'} = 'Oprettelsestid';
 
     # Template: AgentFAQJournalOverviewSmall
     $Self->{Translation}->{'No FAQ Journal data found.'} = '';
@@ -79,6 +78,7 @@ sub Data {
     $Self->{Translation}->{'Add language'} = '';
     $Self->{Translation}->{'Add Language'} = '';
     $Self->{Translation}->{'Edit Language'} = '';
+    $Self->{Translation}->{'Do you really want to delete this language?'} = '';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         '';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = '';
@@ -98,7 +98,7 @@ sub Data {
     $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = '';
     $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = '';
     $Self->{Translation}->{'Approved'} = '';
-    $Self->{Translation}->{'Last changed by'} = '';
+    $Self->{Translation}->{'Last changed by'} = 'Sidst ændret af';
     $Self->{Translation}->{'FAQ Article Create Time (before/after)'} = '';
     $Self->{Translation}->{'FAQ Article Create Time (between)'} = '';
     $Self->{Translation}->{'FAQ Article Change Time (before/after)'} = '';
@@ -124,7 +124,7 @@ sub Data {
     # Template: AgentFAQZoom
     $Self->{Translation}->{'FAQ Information'} = '';
     $Self->{Translation}->{'Rating'} = '';
-    $Self->{Translation}->{'Votes'} = '';
+    $Self->{Translation}->{'Votes'} = 'Stemmer';
     $Self->{Translation}->{'No votes found!'} = '';
     $Self->{Translation}->{'No votes found! Be the first one to rate this FAQ article.'} = '';
     $Self->{Translation}->{'Download Attachment'} = '';
@@ -144,7 +144,6 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = '';
 
     # Template: CustomerFAQExplorer
-    $Self->{Translation}->{'Latest updated FAQ articles'} = '';
     $Self->{Translation}->{'No FAQ articles found.'} = '';
 
     # Template: CustomerFAQRelatedArticles
@@ -158,7 +157,7 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles with votes...'} = '';
     $Self->{Translation}->{'Rate restrictions'} = '';
     $Self->{Translation}->{'Only FAQ articles with rate...'} = '';
-    $Self->{Translation}->{'Time restrictions'} = '';
+    $Self->{Translation}->{'Time restrictions'} = 'Tidsbegrænsninger';
     $Self->{Translation}->{'Only FAQ articles created'} = '';
     $Self->{Translation}->{'Only FAQ articles created between'} = '';
     $Self->{Translation}->{'Search-Profile as Template?'} = '';
@@ -218,7 +217,7 @@ sub Data {
     $Self->{Translation}->{'Delete Language %s'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQPrint.pm
-    $Self->{Translation}->{'Result'} = '';
+    $Self->{Translation}->{'Result'} = 'Resultat';
     $Self->{Translation}->{'Last update'} = '';
     $Self->{Translation}->{'FAQ Dynamic Fields'} = '';
 
@@ -228,7 +227,7 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQSearch.pm
     $Self->{Translation}->{'No Result!'} = '';
-    $Self->{Translation}->{'FAQ Number'} = '';
+    $Self->{Translation}->{'FAQ Number'} = 'FAQ Nummer';
     $Self->{Translation}->{'Last Changed by'} = '';
     $Self->{Translation}->{'FAQ Item Create Time (before/after)'} = '';
     $Self->{Translation}->{'FAQ Item Create Time (between)'} = '';
@@ -242,9 +241,9 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQZoom.pm
     $Self->{Translation}->{'Need FileID!'} = '';
-    $Self->{Translation}->{'Thanks for your vote!'} = '';
-    $Self->{Translation}->{'You have already voted!'} = '';
-    $Self->{Translation}->{'No rate selected!'} = '';
+    $Self->{Translation}->{'Thanks for your vote!'} = 'Tak for din stemme!';
+    $Self->{Translation}->{'You have already voted!'} = 'Du har allerede stemt!';
+    $Self->{Translation}->{'No rate selected!'} = 'Ingen rate valgt!';
     $Self->{Translation}->{'The voting mechanism is not enabled!'} = '';
     $Self->{Translation}->{'The vote rate is not defined!'} = '';
 
@@ -281,19 +280,20 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = '';
-    $Self->{Translation}->{'Latest created FAQ articles'} = '';
-    $Self->{Translation}->{'Top 10 FAQ articles'} = '';
+    $Self->{Translation}->{'Latest created FAQ articles'} = 'Nyeste artikler';
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Sidst ændrede artikler';
+    $Self->{Translation}->{'Top 10 FAQ articles'} = 'Top 10 artikler';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML / SOPM Definition: FAQ.sopm
-    $Self->{Translation}->{'internal'} = '';
-    $Self->{Translation}->{'external'} = '';
-    $Self->{Translation}->{'public'} = '';
+    # Database XML Definition: FAQ.sopm
+    $Self->{Translation}->{'internal'} = 'intern';
+    $Self->{Translation}->{'external'} = 'ekstern';
+    $Self->{Translation}->{'public'} = 'offentlig';
 
     # JS File: FAQ.Agent.ConfirmationDialog
-    $Self->{Translation}->{'Ok'} = '';
+    $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image.'} =
@@ -355,15 +355,9 @@ sub Data {
         '';
     $Self->{Translation}->{'Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top.'} =
         '';
-    $Self->{Translation}->{'Defines the default frontend (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.otobo.org/.'} =
-        '';
-    $Self->{Translation}->{'Defines the default frontend language. All the possible values are determined by the available language files on the system. These values are listed as the keys in the setting \'DefaultUsedLanguages\'.'} =
-        '';
     $Self->{Translation}->{'Defines the default shown FAQ search attribute for FAQ search screen.'} =
         '';
     $Self->{Translation}->{'Defines the information to be inserted in a FAQ based Ticket. "Full FAQ" includes text, attachments and inline images.'} =
-        '';
-    $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Cmd" is used to specify command with parameters. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTL" indicates the cache expiration period in minutes for the plugin. "Mandatory" determines if the plugin is always shown and can not be removed by agents. Only works if DashboardBackend::AllowCmdOutput is enabled in Config.pm.'} =
         '';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         '';
@@ -406,7 +400,6 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '';
-    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = '';
@@ -427,9 +420,6 @@ sub Data {
     $Self->{Translation}->{'Full FAQ'} = '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = '';
     $Self->{Translation}->{'History of this FAQ'} = '';
-    $Self->{Translation}->{'If "LDAP" was selected for Customer::AuthModule and you wish to use TLS security to communicate with the LDAP server, the "verify" parameter can be specified here. See Net::LDAP::start_tls for more information about the parameter.'} =
-        '';
-    $Self->{Translation}->{'Ignores not ticket related attributes.'} = '';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = '';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = '';
     $Self->{Translation}->{'Interfaces where the quick search should be shown.'} = '';
@@ -537,8 +527,6 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = '';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '';
-    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
-        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = '';
@@ -572,9 +560,9 @@ sub Data {
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = '';
     $Self->{Translation}->{'Ticket subject for approval of FAQ article.'} = '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = '';
-    $Self->{Translation}->{'external (customer)'} = '';
-    $Self->{Translation}->{'internal (agent)'} = '';
-    $Self->{Translation}->{'public (all)'} = '';
+    $Self->{Translation}->{'external (customer)'} = 'ekstern (kunde)';
+    $Self->{Translation}->{'internal (agent)'} = 'intern (agent)';
+    $Self->{Translation}->{'public (all)'} = 'offentlig (alle)';
     $Self->{Translation}->{'public (public)'} = '';
 
 
