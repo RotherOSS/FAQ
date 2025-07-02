@@ -25,10 +25,9 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = '';
-    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = '';
     $Self->{Translation}->{'A category is required.'} = '';
-    $Self->{Translation}->{'Approval'} = '';
+    $Self->{Translation}->{'Approval'} = 'تایید';
 
     # Template: AgentFAQCategory
     $Self->{Translation}->{'FAQ Category Management'} = '';
@@ -37,10 +36,10 @@ sub Data {
     $Self->{Translation}->{'Add category'} = '';
     $Self->{Translation}->{'Add Category'} = '';
     $Self->{Translation}->{'Edit Category'} = '';
-    $Self->{Translation}->{'Subcategory of'} = '';
+    $Self->{Translation}->{'Subcategory of'} = 'زیر مجموعه‌ی';
     $Self->{Translation}->{'Please select at least one permission group.'} = '';
     $Self->{Translation}->{'Agent groups that can access articles in this category.'} = '';
-    $Self->{Translation}->{'Will be shown as comment in Explorer.'} = '';
+    $Self->{Translation}->{'Will be shown as comment in Explorer.'} = 'در Explorer به صورت یک متن توضیحی نمایش داده خواهند شد.';
     $Self->{Translation}->{'Do you really want to delete this category?'} = '';
     $Self->{Translation}->{'You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category'} =
         '';
@@ -63,9 +62,9 @@ sub Data {
     $Self->{Translation}->{'No subcategories found.'} = '';
 
     # Template: AgentFAQHistory
-    $Self->{Translation}->{'History of'} = '';
-    $Self->{Translation}->{'History Content'} = '';
-    $Self->{Translation}->{'Createtime'} = '';
+    $Self->{Translation}->{'History of'} = 'سوابق';
+    $Self->{Translation}->{'History Content'} = 'محتوای سابقه';
+    $Self->{Translation}->{'Createtime'} = 'زمان ایجاد ';
 
     # Template: AgentFAQJournalOverviewSmall
     $Self->{Translation}->{'No FAQ Journal data found.'} = '';
@@ -79,12 +78,13 @@ sub Data {
     $Self->{Translation}->{'Add language'} = '';
     $Self->{Translation}->{'Add Language'} = '';
     $Self->{Translation}->{'Edit Language'} = '';
+    $Self->{Translation}->{'Do you really want to delete this language?'} = '';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         '';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = '';
 
     # Template: AgentFAQOverviewNavBar
-    $Self->{Translation}->{'Context Settings'} = '';
+    $Self->{Translation}->{'Context Settings'} = 'تنظیمات مفاد';
     $Self->{Translation}->{'FAQ articles per page'} = '';
 
     # Template: AgentFAQOverviewSmall
@@ -98,7 +98,7 @@ sub Data {
     $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = '';
     $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = '';
     $Self->{Translation}->{'Approved'} = '';
-    $Self->{Translation}->{'Last changed by'} = '';
+    $Self->{Translation}->{'Last changed by'} = 'آخرین تغییر به وسیله';
     $Self->{Translation}->{'FAQ Article Create Time (before/after)'} = '';
     $Self->{Translation}->{'FAQ Article Create Time (between)'} = '';
     $Self->{Translation}->{'FAQ Article Change Time (before/after)'} = '';
@@ -124,10 +124,10 @@ sub Data {
     # Template: AgentFAQZoom
     $Self->{Translation}->{'FAQ Information'} = '';
     $Self->{Translation}->{'Rating'} = '';
-    $Self->{Translation}->{'Votes'} = '';
+    $Self->{Translation}->{'Votes'} = 'آرا';
     $Self->{Translation}->{'No votes found!'} = '';
     $Self->{Translation}->{'No votes found! Be the first one to rate this FAQ article.'} = '';
-    $Self->{Translation}->{'Download Attachment'} = '';
+    $Self->{Translation}->{'Download Attachment'} = 'دریافت پیوست';
     $Self->{Translation}->{'To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS).'} =
         '';
     $Self->{Translation}->{'How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!'} =
@@ -144,7 +144,6 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = '';
 
     # Template: CustomerFAQExplorer
-    $Self->{Translation}->{'Latest updated FAQ articles'} = '';
     $Self->{Translation}->{'No FAQ articles found.'} = '';
 
     # Template: CustomerFAQRelatedArticles
@@ -158,7 +157,7 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles with votes...'} = '';
     $Self->{Translation}->{'Rate restrictions'} = '';
     $Self->{Translation}->{'Only FAQ articles with rate...'} = '';
-    $Self->{Translation}->{'Time restrictions'} = '';
+    $Self->{Translation}->{'Time restrictions'} = 'محدودیت‌های زمان';
     $Self->{Translation}->{'Only FAQ articles created'} = '';
     $Self->{Translation}->{'Only FAQ articles created between'} = '';
     $Self->{Translation}->{'Search-Profile as Template?'} = '';
@@ -218,7 +217,7 @@ sub Data {
     $Self->{Translation}->{'Delete Language %s'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQPrint.pm
-    $Self->{Translation}->{'Result'} = '';
+    $Self->{Translation}->{'Result'} = 'نتیجه';
     $Self->{Translation}->{'Last update'} = '';
     $Self->{Translation}->{'FAQ Dynamic Fields'} = '';
 
@@ -242,9 +241,9 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQZoom.pm
     $Self->{Translation}->{'Need FileID!'} = '';
-    $Self->{Translation}->{'Thanks for your vote!'} = '';
-    $Self->{Translation}->{'You have already voted!'} = '';
-    $Self->{Translation}->{'No rate selected!'} = '';
+    $Self->{Translation}->{'Thanks for your vote!'} = 'از رای شما سپاسگزاریم!';
+    $Self->{Translation}->{'You have already voted!'} = 'شما قبلا رای داده‌اید!';
+    $Self->{Translation}->{'No rate selected!'} = 'امتیاز را انتخاب نکرده‌اید!';
     $Self->{Translation}->{'The voting mechanism is not enabled!'} = '';
     $Self->{Translation}->{'The vote rate is not defined!'} = '';
 
@@ -258,9 +257,9 @@ sub Data {
     $Self->{Translation}->{'Need ItemID!'} = '';
 
     # Perl Module: Kernel/Modules/PublicFAQExplorer.pm
-    $Self->{Translation}->{'FAQ Articles (new created)'} = '';
-    $Self->{Translation}->{'FAQ Articles (recently changed)'} = '';
-    $Self->{Translation}->{'FAQ Articles (Top 10)'} = '';
+    $Self->{Translation}->{'FAQ Articles (new created)'} = 'اخبار FAQ (جدیدا ایجاد شده)';
+    $Self->{Translation}->{'FAQ Articles (recently changed)'} = 'اخبار FAQ (جدیدا تغییر یافته)';
+    $Self->{Translation}->{'FAQ Articles (Top 10)'} = 'اخبار FAQ (۱۰ تای برتر)';
 
     # Perl Module: Kernel/Modules/PublicFAQRSS.pm
     $Self->{Translation}->{'No Type is given!'} = '';
@@ -281,16 +280,20 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = '';
-    $Self->{Translation}->{'Latest created FAQ articles'} = '';
-    $Self->{Translation}->{'Top 10 FAQ articles'} = '';
+    $Self->{Translation}->{'Latest created FAQ articles'} = 'آخرین اقلام ایجاد شده';
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'آخرین اقلام تعریف شده';
+    $Self->{Translation}->{'Top 10 FAQ articles'} = 'بالاترین ۱۰ قلم';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML / SOPM Definition: FAQ.sopm
+    # Database XML Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = '';
     $Self->{Translation}->{'external'} = '';
     $Self->{Translation}->{'public'} = '';
+
+    # JS File: FAQ.Agent.ConfirmationDialog
+    $Self->{Translation}->{'Ok'} = 'تایید';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image.'} =
@@ -356,8 +359,6 @@ sub Data {
         '';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
         '';
-    $Self->{Translation}->{'Defines the information to be inserted in a FAQ based Ticket. "Full FAQ" includes text, attachments and inline images.'} =
-        '';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
@@ -399,7 +400,6 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '';
-    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = '';
@@ -527,8 +527,6 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = '';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '';
-    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
-        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = '';
