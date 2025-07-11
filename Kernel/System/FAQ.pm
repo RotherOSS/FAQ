@@ -2862,12 +2862,32 @@ sub _FAQApprovalTicketCreate {
     }
 
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
-
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+
+    # Check if faq article state needs approval
+    my $ApprovalStates = $ConfigObject->Get('FAQ::Approval::StateTypes') || [];
+    my %ApprovalStateIDs     = $Self->StateList(
+        Types  => $ApprovalStates,
+        UserID => 1,
+    );   
+
+    my $ApprovalNeeded = 0; 
+    APPSTATE:
+    for my $ApprovalStateID ( sort keys %ApprovalStateIDs ) {
+        if ( $Param{StateID} == $ApprovalStateID ) {
+            $ApprovalNeeded = 1; 
+            last APPSTATE;
+        }    
+    }    
+    return 1 if $ApprovalNeeded != 1;
 
     # get subject
     my $Subject = $ConfigObject->Get('FAQ::ApprovalTicketSubject');
-    $Subject =~ s{ <OTOBO_FAQ_NUMBER> }{$Param{FAQNumber}}xms;
+    $Subject =~ s{ <OTOBO_FAQ_NUMBER>     }{$Param{FAQNumber}}xms;
+    $Subject =~ s{ <OTOBO_FAQ_CATEGORYID> }{$Param{CategoryID}}xms;
+    $Subject =~ s{ <OTOBO_FAQ_ITEMID>     }{$Param{ItemID}}xms;
+    $Subject =~ s{ <OTOBO_FAQ_TITLE>      }{$Param{Title}}xms;
+    $Subject =~ s{ <OTOBO_FAQ_STATEID>    }{$Param{StateID}}xms;
 
     # check if we can find existing open approval tickets for this FAQ article
     my @TicketIDs = $TicketObject->TicketSearch(
