@@ -930,31 +930,26 @@ sub _MaskNew {
     # Show approval field.
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
 
-        # Check if faq article state needs approval
-        my $ApprovalStates = $ConfigObject->Get('FAQ::Approval::StateTypes') || [];
+        my $ApprovalRequired = 1;
+        my $ApprovalStates   = $ConfigObject->Get('FAQ::Approval::StateTypes');
 
-        my %ApprovalStateIDs = $FAQObject->StateList(
-            Types  => $ApprovalStates,
-            UserID => 1,
-        );   
+        if ( $ApprovalStates ) {
+            my %ApprovalStateIDs = $FAQObject->StateList(
+                Types  => $ApprovalStates,
+                UserID => 1,
+            );
 
-        my $ApprovalNeeded = 0; 
-        APPSTATE:
-        for my $ApprovalStateID ( sort keys %ApprovalStateIDs ) {
-            if ( $Param{StateID} == $ApprovalStateID ) {
-                $ApprovalNeeded = 1; 
-                last APPSTATE;
-            }    
-        }    
+            $ApprovalRequired = $ApprovalStates{ $Param{StateID} };
+        }
 
-        if ( $ApprovalNeeded == 1 ) {
+        if ( $ApprovalRequired ) {
 
             # Check permission.
             my %Groups = reverse $Kernel::OM->Get('Kernel::System::Group')->GroupMemberList(
                 UserID => $Self->{UserID},
                 Type   => 'ro',
                 Result => 'HASH',
-            );   
+            );
 
             # Get the FAQ approval group from config.
             my $ApprovalGroup = $ConfigObject->Get('FAQ::ApprovalGroup') || '';
@@ -964,10 +959,10 @@ sub _MaskNew {
 
                 $Data{ApprovalOption} = $LayoutObject->BuildSelection(
                     Name => 'Approved',
-                    Data => { 
+                    Data => {
                         0 => 'No',
                         1 => 'Yes',
-                    },   
+                    },
                     SelectedID => $Param{Approved} || 0,
                     Class      => 'Modernize',
                 );

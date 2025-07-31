@@ -711,21 +711,35 @@ sub FAQAdd {
     # check if approval feature is enabled
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') && !$Param{Approved} ) {
 
-        # create new approval ticket
-        my $Success = $Self->_FAQApprovalTicketCreate(
-            ItemID     => $ID,
-            CategoryID => $Param{CategoryID},
-            LanguageID => $Param{LanguageID},
-            FAQNumber  => $Number,
-            Title      => $Param{Title},
-            StateID    => $Param{StateID},
-            UserID     => $Param{UserID},
-        );
-        if ( !$Success ) {
-            $LogObject->Log(
-                Priority => 'error',
-                Message  => 'Could not create approval ticket!',
+        my $ApprovalRequired = 1;
+        my $ApprovalStates   = $ConfigObject->Get('FAQ::Approval::StateTypes');
+
+        if ( $ApprovalStates ) {
+            my %ApprovalStateIDs = $Self->StateList(
+                Types  => $ApprovalStates,
+                UserID => 1,
             );
+
+            $ApprovalRequired = $ApprovalStateIDs{ $Param{StateID} };
+        }
+
+        # create new approval ticket
+        if ( $ApprovalRequired ) {
+            my $Success = $Self->_FAQApprovalTicketCreate(
+                ItemID     => $ID,
+                CategoryID => $Param{CategoryID},
+                LanguageID => $Param{LanguageID},
+                FAQNumber  => $Number,
+                Title      => $Param{Title},
+                StateID    => $Param{StateID},
+                UserID     => $Param{UserID},
+            );
+            if ( !$Success ) {
+                $LogObject->Log(
+                    Priority => 'error',
+                    Message  => 'Could not create approval ticket!',
+                );
+            }
         }
     }
 
@@ -2863,23 +2877,6 @@ sub _FAQApprovalTicketCreate {
 
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
-
-    # Check if faq article state needs approval
-    my $ApprovalStates = $ConfigObject->Get('FAQ::Approval::StateTypes') || [];
-    my %ApprovalStateIDs     = $Self->StateList(
-        Types  => $ApprovalStates,
-        UserID => 1,
-    );   
-
-    my $ApprovalNeeded = 0; 
-    APPSTATE:
-    for my $ApprovalStateID ( sort keys %ApprovalStateIDs ) {
-        if ( $Param{StateID} == $ApprovalStateID ) {
-            $ApprovalNeeded = 1; 
-            last APPSTATE;
-        }    
-    }    
-    return 1 if $ApprovalNeeded != 1;
 
     # get subject
     my $Subject = $ConfigObject->Get('FAQ::ApprovalTicketSubject');
