@@ -648,34 +648,51 @@ sub _MaskNew {
     # Show approval field.
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
 
-        # Check permission.
-        my %Groups = reverse $Kernel::OM->Get('Kernel::System::Group')->GroupMemberList(
-            UserID => $Self->{UserID},
-            Type   => 'ro',
-            Result => 'HASH',
-        );
+        my $ApprovalRequired        = 1;
+        my $ApprovalIncludeInternal = $ConfigObject->Get('FAQ::Approval::IncludeInternal');
 
-        # Get the FAQ approval group from config.
-        my $ApprovalGroup = $ConfigObject->Get('FAQ::ApprovalGroup') || '';
-
-        # Build the approval selection if user is in the approval group.
-        if ( $Groups{$ApprovalGroup} ) {
-
-            $Data{ApprovalOption} = $LayoutObject->BuildSelection(
-                Name => 'Approved',
-                Data => {
-                    0 => Translatable('No'),
-                    1 => Translatable('Yes'),
-                },
-                SelectedID => $Param{Approved} || 0,
-                Class      => 'Modernize',
+        if ( !$ApprovalIncludeInternal ) {
+            my %InternalState = $Self->StateList(
+                Types  => ['internal'],
+                UserID => 1,
             );
-            $LayoutObject->Block(
-                Name => 'Approval',
-                Data => {
-                    %Data,
-                },
+
+            if ( $InternalState{ $Param{StateID} } ) {
+                $ApprovalRequired = 0;
+            }
+        }
+
+        if ( $ApprovalRequired ) {
+
+            # Check permission.
+            my %Groups = reverse $Kernel::OM->Get('Kernel::System::Group')->GroupMemberList(
+                UserID => $Self->{UserID},
+                Type   => 'ro',
+                Result => 'HASH',
             );
+
+            # Get the FAQ approval group from config.
+            my $ApprovalGroup = $ConfigObject->Get('FAQ::ApprovalGroup') || '';
+
+            # Build the approval selection if user is in the approval group.
+            if ( $Groups{$ApprovalGroup} ) {
+
+                $Data{ApprovalOption} = $LayoutObject->BuildSelection(
+                    Name => 'Approved',
+                    Data => {
+                        0 => Translatable('No'),
+                        1 => Translatable('Yes'),
+                    },
+                    SelectedID => $Param{Approved} || 0,
+                    Class      => 'Modernize',
+                );
+                $LayoutObject->Block(
+                    Name => 'Approval',
+                    Data => {
+                        %Data,
+                    },
+                );
+            }
         }
     }
 

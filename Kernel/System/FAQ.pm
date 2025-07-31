@@ -571,42 +571,23 @@ sub FAQAdd {
     # check if approval feature is used
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
 
-        my $ApprovalRequired         = 1;
-        my $ApprovalForInternalState = $ConfigObject->Get('FAQ::Approval::ForInternalState') || 1;
+        # check permission
+        my %Groups = reverse $Kernel::OM->Get('Kernel::System::Group')->GroupMemberList(
+            UserID => $Param{UserID},
+            Type   => 'ro',
+            Result => 'HASH',
+        );
 
-        if ( $ApprovalForInternalState ) {
-            my %InternalState = $Self->StateList(
-                Types  => ['internal'],
-                UserID => 1,
-            );
+        # get the approval group
+        my $ApprovalGroup = $ConfigObject->Get('FAQ::ApprovalGroup');
 
-            if ( !$InternalState{ $Param{StateID} } ) {
-                $ApprovalRequired = 0;
-            }
-        }
-
-        if ( $ApprovalRequired ) {
-            # check permission
-            my %Groups = reverse $Kernel::OM->Get('Kernel::System::Group')->GroupMemberList(
-                UserID => $Param{UserID},
-                Type   => 'ro',
-                Result => 'HASH',
-            );
-
-            # get the approval group
-            my $ApprovalGroup = $ConfigObject->Get('FAQ::ApprovalGroup');
-
-            # set default to 0 if approved param is not given
-            # or if user does not have the rights to approve
-            if ( !defined $Param{Approved} || !$Groups{$ApprovalGroup} ) {
-                $Param{Approved} = 0;
-            }
-        }
-        # if approval feature is not activated, a new FAQ item is always approved
-        else {
-            $Param{Approved} = 1;
+        # set default to 0 if approved param is not given
+        # or if user does not have the rights to approve
+        if ( !defined $Param{Approved} || !$Groups{$ApprovalGroup} ) {
+            $Param{Approved} = 0;
         }
     }
+
     # if approval feature is not activated, a new FAQ item is always approved
     else {
         $Param{Approved} = 1;
@@ -730,16 +711,16 @@ sub FAQAdd {
     # check if approval feature is enabled
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') && !$Param{Approved} ) {
 
-        my $ApprovalRequired         = 1;
-        my $ApprovalForInternalState = $ConfigObject->Get('FAQ::Approval::ForInternalState') || 1;
+        my $ApprovalRequired        = 1;
+        my $ApprovalIncludeInternal = $ConfigObject->Get('FAQ::Approval::IncludeInternal');
 
-        if ( $ApprovalForInternalState ) {
+        if ( !$ApprovalIncludeInternal ) {
             my %InternalState = $Self->StateList(
                 Types  => ['internal'],
                 UserID => 1,
             );
 
-            if ( !$InternalState{ $Param{StateID} } ) {
+            if ( $InternalState{ $Param{StateID} } ) {
                 $ApprovalRequired = 0;
             }
         }
@@ -2845,21 +2826,37 @@ sub _FAQApprovalUpdate {
             UserID     => $Param{UserID},
         );
 
-        # create new approval ticket
-        my $Success = $Self->_FAQApprovalTicketCreate(
-            ItemID     => $Param{ItemID},
-            CategoryID => $FAQData{CategoryID},
-            LanguageID => $FAQData{LanguageID},
-            FAQNumber  => $FAQData{Number},
-            Title      => $FAQData{Title},
-            StateID    => $FAQData{StateID},
-            UserID     => $Param{UserID},
-        );
-        if ( !$Success ) {
-            $LogObject->Log(
-                Priority => 'error',
-                Message  => 'Could not create approval ticket!',
+        my $ApprovalRequired        = 1;
+        my $ApprovalIncludeInternal = $Kernel::OM->Get('Kernel::Config')->Get('FAQ::Approval::IncludeInternal');
+
+        if ( !$ApprovalIncludeInternal ) {
+            my %InternalState = $Self->StateList(
+                Types  => ['internal'],
+                UserID => 1,
             );
+
+            if ( $InternalState{ $FAQData{StateID} } ) {
+                $ApprovalRequired = 0;
+            }
+        }
+
+        if ( $ApprovalRequired ) {
+            # create new approval ticket
+            my $Success = $Self->_FAQApprovalTicketCreate(
+                ItemID     => $Param{ItemID},
+                CategoryID => $FAQData{CategoryID},
+                LanguageID => $FAQData{LanguageID},
+                FAQNumber  => $FAQData{Number},
+                Title      => $FAQData{Title},
+                StateID    => $FAQData{StateID},
+                UserID     => $Param{UserID},
+            );
+            if ( !$Success ) {
+                $LogObject->Log(
+                    Priority => 'error',
+                    Message  => 'Could not create approval ticket!',
+                );
+            }
         }
     }
 

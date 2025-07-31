@@ -930,16 +930,18 @@ sub _MaskNew {
     # Show approval field.
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
 
-        my $ApprovalRequired = 1;
-        my $ApprovalStates   = $ConfigObject->Get('FAQ::Approval::StateTypes');
+        my $ApprovalRequired        = 1;
+        my $ApprovalIncludeInternal = $ConfigObject->Get('FAQ::Approval::IncludeInternal');
 
-        if ( $ApprovalStates ) {
-            my %ApprovalStateIDs = $FAQObject->StateList(
-                Types  => $ApprovalStates,
+        if ( !$ApprovalIncludeInternal ) {
+            my %InternalState = $Self->StateList(
+                Types  => ['internal'],
                 UserID => 1,
             );
 
-            $ApprovalRequired = $ApprovalStates{ $Param{StateID} };
+            if ( $InternalState{ $Param{StateID} } ) {
+                $ApprovalRequired = 0;
+            }
         }
 
         if ( $ApprovalRequired ) {
@@ -960,15 +962,17 @@ sub _MaskNew {
                 $Data{ApprovalOption} = $LayoutObject->BuildSelection(
                     Name => 'Approved',
                     Data => {
-                        0 => 'No',
-                        1 => 'Yes',
+                        0 => Translatable('No'),
+                        1 => Translatable('Yes'),
                     },
                     SelectedID => $Param{Approved} || 0,
                     Class      => 'Modernize',
                 );
                 $LayoutObject->Block(
                     Name => 'Approval',
-                    Data => {%Data},
+                    Data => {
+                        %Data,
+                    },
                 );
             }
         }

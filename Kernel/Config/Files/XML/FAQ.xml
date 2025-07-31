@@ -30,7 +30,7 @@
             </Array>
         </Value>
     </Setting>
-    <Setting Name="FAQ::Approval::ForInternalState" Required="1" Valid="1">
+    <Setting Name="FAQ::Approval::IncludeInternal" Required="0" Valid="1">
         <Description Translatable="1">If activated, FAQ articles of status type internal are also taken into account for the approval process.</Description>
         <Navigation>Core::FAQ::Approval</Navigation>
         <Value>
