@@ -934,7 +934,7 @@ sub _MaskNew {
         my $ApprovalIncludeInternal = $ConfigObject->Get('FAQ::Approval::IncludeInternal');
 
         if ( !$ApprovalIncludeInternal ) {
-            my %InternalState = $Self->StateList(
+            my %InternalState = $FAQObject->StateList(
                 Types  => ['internal'],
                 UserID => 1,
             );
