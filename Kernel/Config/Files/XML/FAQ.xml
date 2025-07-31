@@ -30,14 +30,11 @@
             </Array>
         </Value>
     </Setting>
-    <Setting Name="FAQ::Approval::StateTypes" Required="0" Valid="0">
-        <Description Translatable="1">List of statetypes to be considered for an approval.</Description>
+    <Setting Name="FAQ::Approval::ForInternalState" Required="1" Valid="1">
+        <Description Translatable="1">If activated, FAQ articles of status type internal are also taken into account for the approval process.</Description>
         <Navigation>Core::FAQ::Approval</Navigation>
         <Value>
-            <Array>
-                <Item>external</Item>
-                <Item>public</Item>
-            </Array>
+            <Item ValueType="Checkbox">1</Item>
         </Value>
     </Setting>
     <Setting Name="FAQ::Default::RootCategoryName" Required="1" Valid="1">

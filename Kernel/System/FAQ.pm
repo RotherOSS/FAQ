@@ -571,23 +571,42 @@ sub FAQAdd {
     # check if approval feature is used
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') ) {
 
-        # check permission
-        my %Groups = reverse $Kernel::OM->Get('Kernel::System::Group')->GroupMemberList(
-            UserID => $Param{UserID},
-            Type   => 'ro',
-            Result => 'HASH',
-        );
+        my $ApprovalRequired         = 1;
+        my $ApprovalForInternalState = $ConfigObject->Get('FAQ::Approval::ForInternalState') || 1;
 
-        # get the approval group
-        my $ApprovalGroup = $ConfigObject->Get('FAQ::ApprovalGroup');
+        if ( $ApprovalForInternalState ) {
+            my %InternalState = $Self->StateList(
+                Types  => ['internal'],
+                UserID => 1,
+            );
 
-        # set default to 0 if approved param is not given
-        # or if user does not have the rights to approve
-        if ( !defined $Param{Approved} || !$Groups{$ApprovalGroup} ) {
-            $Param{Approved} = 0;
+            if ( !$InternalState{ $Param{StateID} } ) {
+                $ApprovalRequired = 0;
+            }
+        }
+
+        if ( $ApprovalRequired ) {
+            # check permission
+            my %Groups = reverse $Kernel::OM->Get('Kernel::System::Group')->GroupMemberList(
+                UserID => $Param{UserID},
+                Type   => 'ro',
+                Result => 'HASH',
+            );
+
+            # get the approval group
+            my $ApprovalGroup = $ConfigObject->Get('FAQ::ApprovalGroup');
+
+            # set default to 0 if approved param is not given
+            # or if user does not have the rights to approve
+            if ( !defined $Param{Approved} || !$Groups{$ApprovalGroup} ) {
+                $Param{Approved} = 0;
+            }
+        }
+        # if approval feature is not activated, a new FAQ item is always approved
+        else {
+            $Param{Approved} = 1;
         }
     }
-
     # if approval feature is not activated, a new FAQ item is always approved
     else {
         $Param{Approved} = 1;
@@ -706,21 +725,23 @@ sub FAQAdd {
             );
         }
     }
-# eo FAQ Service
+# EO FAQ Service
 
     # check if approval feature is enabled
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') && !$Param{Approved} ) {
 
-        my $ApprovalRequired = 1;
-        my $ApprovalStates   = $ConfigObject->Get('FAQ::Approval::StateTypes');
+        my $ApprovalRequired         = 1;
+        my $ApprovalForInternalState = $ConfigObject->Get('FAQ::Approval::ForInternalState') || 1;
 
-        if ( $ApprovalStates ) {
-            my %ApprovalStateIDs = $Self->StateList(
-                Types  => $ApprovalStates,
+        if ( $ApprovalForInternalState ) {
+            my %InternalState = $Self->StateList(
+                Types  => ['internal'],
                 UserID => 1,
             );
 
-            $ApprovalRequired = $ApprovalStateIDs{ $Param{StateID} };
+            if ( !$InternalState{ $Param{StateID} } ) {
+                $ApprovalRequired = 0;
+            }
         }
 
         # create new approval ticket
