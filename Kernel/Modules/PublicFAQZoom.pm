@@ -160,6 +160,8 @@ sub Run {
         $FieldContent = $HTMLUtilsObject->DocumentComplete(
             String  => $FieldContent,
             Charset => 'utf-8',
+            CustomerInterface => 1,
+            CustomerUIStyles => 1,
         );
 
         # build base URL for inline images
