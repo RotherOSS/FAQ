@@ -1910,6 +1910,11 @@ Your OTOBO Notification Master
         <Navigation>Frontend::Agent::ModuleRegistration::Loader</Navigation>
         <Value>
             <Hash>
+                <Item Key="JavaScript">
+                    <Array>
+                        <Item>FAQ.Agent.FAQ.js</Item>
+                    </Array>
+                </Item>
             </Hash>
         </Value>
     </Setting>
