@@ -124,7 +124,8 @@ fieldset.TableSmall > div.FAQDivider {
 
 fieldset.FAQEditMask {
 
-    .Field {
+    .Field,
+    .RichTextField {
         margin-left: 10% !important;
     }
     
@@ -137,8 +138,7 @@ fieldset.FAQEditMask {
         width: max(80%, 620px);
         max-width: unset;
         min-width: 620px;
-        margin-left: 10%;
-    }
+    } 
 
     > label:not(.ck-label),
     > .Row > label:not(.ck-label),
