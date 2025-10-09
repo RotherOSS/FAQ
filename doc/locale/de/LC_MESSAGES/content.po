@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:29+0200\n"
-"PO-Revision-Date: 2025-01-13 14:21+0000\n"
-"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
+"PO-Revision-Date: 2025-10-09 13:05+0000\n"
+"Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/manual-faq/master/"
 "de/>\n"
 "Language: de\n"
@@ -31,7 +31,7 @@ msgstr "Beschreibung"
 
 #: ../../content/index.rst:20
 msgid "The FAQ/knowledge base."
-msgstr ""
+msgstr "Die FAQ/Wissensdatenbank."
 
 #: ../../content/index.rst:23
 msgid "System requirements"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../content/index.rst:66
 msgid "DynamicField object registration."
-msgstr ""
+msgstr "Dynamische Felder Objektregistrierung."
 
 #: ../../content/index.rst:69
 msgid "Core::FAQ"
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../content/index.rst:73 ../../content/index.rst:77
 msgid "Default category name."
-msgstr ""
+msgstr "Standard-Kategorienname."
 
 #: ../../content/index.rst:76
 msgid "FAQ::Default::RootCategoryName"
@@ -125,6 +125,8 @@ msgstr ""
 #: ../../content/index.rst:81
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
 msgstr ""
+"Der Identifikator für eine FAQ, bspw. FAQ#, KB#, MyFAQ#. Der Standard ist "
+"FAQ#."
 
 #: ../../content/index.rst:84
 msgid "FAQ::TitleSize"
@@ -132,7 +134,7 @@ msgstr ""
 
 #: ../../content/index.rst:85
 msgid "Default maximum size of the titles in a FAQ article to be shown."
-msgstr ""
+msgstr "Standard Maximalgröße der Titel, die im FAQ-Artikel angezeigt werden."
 
 #: ../../content/index.rst:88
 msgid "FAQ::Default::State"
@@ -140,7 +142,7 @@ msgstr ""
 
 #: ../../content/index.rst:89
 msgid "Default state for FAQ entry."
-msgstr ""
+msgstr "Standard-Status für einen FAQ-Eintrag."
 
 #: ../../content/index.rst:92
 msgid "FAQ::MultiLanguage"
@@ -148,7 +150,7 @@ msgstr ""
 
 #: ../../content/index.rst:93
 msgid "Enable multiple languages on FAQ module."
-msgstr ""
+msgstr "Mehrere Sprachen für das FAQ-Modul aktivieren."
 
 #: ../../content/index.rst:96
 msgid "FAQ::Default::Language"
@@ -156,7 +158,7 @@ msgstr ""
 
 #: ../../content/index.rst:97
 msgid "Default language for FAQ articles on single language mode."
-msgstr ""
+msgstr "Standardsprache für FAQ-Artikel im Ein-Sprachen-Modus."
 
 #: ../../content/index.rst:100
 msgid "FAQ::Voting"
@@ -164,7 +166,7 @@ msgstr ""
 
 #: ../../content/index.rst:101
 msgid "Enable voting mechanism on FAQ module."
-msgstr ""
+msgstr "Abstimmungs-Mechnismus im FAQ-Modul aktivieren."
 
 #: ../../content/index.rst:104
 msgid "FAQ::CacheTTL"
