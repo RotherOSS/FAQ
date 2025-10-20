@@ -202,10 +202,10 @@ sub Run {
 
         # add needed HTML headers
         $FieldContent = $HTMLUtilsObject->DocumentComplete(
-            String  => $FieldContent,
-            Charset => 'utf-8',
-            CustomerInterface => 1,
-            CustomerUIStyles => 1,
+            String              => $FieldContent,
+            Charset             => 'utf-8',
+            CustomerInterface   => 1,
+            CustomerUIStyles    => 1,
         );
 
         # return complete HTML as an attachment
