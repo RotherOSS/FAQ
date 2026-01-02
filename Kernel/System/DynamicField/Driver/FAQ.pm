@@ -111,7 +111,7 @@ sub GetFieldTypeSettings {
         {
             ConfigParamName => 'SearchAttribute',
             Label           => Translatable('Attribute which will be searched on autocomplete'),
-            Explanation     => Translatable('Select the attribute which tickets will be searched by'),
+            Explanation     => Translatable('Select the attribute which FAQs will be searched by'),
             InputType       => 'Selection',
             SelectionData   => {
                 'Number' => 'Number',
@@ -193,7 +193,7 @@ Return
 
     %Description = (
         Normal => "FAQ# 1234455",
-        Long   => "FAQ# 1234455: Need a sample ticket title",
+        Long   => "FAQ# 1234455: Need a sample FAQ title",
     );
 
 =cut
@@ -216,7 +216,7 @@ sub ObjectDescriptionGet {
     # TODO: Discuss security considerations - not much is shown though
     my $UserID = 1;
 
-    # get ticket
+    # get FAQ item
     my %FAQ = $Kernel::OM->Get('Kernel::System::FAQ')->FAQGet(
         FAQID         => $Param{ObjectID},
         UserID        => $UserID,
@@ -372,8 +372,8 @@ sub SearchObjects {
                     }
                     else {
 
-                        # match standard ticket attribute names with edit mask attribute names
-                        my @ParamNames = $Param{ParamObject}->GetParamNames();
+                        # match standard FAQ attribute names with edit mask attribute names
+                        my @ParamNames = $Param{ParamObject}->GetParamNames;
 
                         # check if attribute name itself is in params
                         # NOTE trying attribute itself is crucially important in case of QueueID
@@ -440,7 +440,7 @@ sub SearchObjects {
             elsif ( $FilterItem->{EqualsString} ) {
 
                 # config item attribute
-                # TODO check if this has to be adapted for ticket search
+                # TODO check if this has to be adapted for FAQ search
                 if ( $FilterItem->{ReferenceObjectAttribute} =~ m{^Con}i ) {
                     $SearchParams{$AttributeName} = $FilterItem->{EqualsString};
                 }
@@ -460,7 +460,7 @@ sub SearchObjects {
         }
     }
 
-    # return a list of ticket IDs
+    # return a list of FAQ IDs
     return $Kernel::OM->Get('Kernel::System::FAQ')->FAQSearch(
         Limit            => $Param{MaxResults},
         Result           => 'ARRAY',
