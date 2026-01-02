@@ -92,7 +92,6 @@
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt" />
