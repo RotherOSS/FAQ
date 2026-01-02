@@ -48,7 +48,7 @@ Kernel::System::DynamicField::Driver::FAQ - backend for the Reference dynamic fi
 
 =head1 DESCRIPTION
 
-FAQ plugin for the Reference dynamic field.
+FAQ backend for the Reference dynamic field.
 
 =head1 PUBLIC INTERFACE
 
@@ -95,7 +95,8 @@ sub new {
 
 =head2 GetFieldTypeSettings()
 
-Get field type settings that are specific to the referenced object type FAQ.
+Get the field type settings for the referenced object type C<FAQ>.
+The generic settings for all referenced object types are included as well.
 
 =cut
 
@@ -341,7 +342,7 @@ sub SearchObjects {
         FILTERITEM:
         for my $FilterItem ( $DynamicFieldConfig->{Config}{ReferenceFilterList}->@* ) {
 
-            # map ID to IDs if neccessary
+            # map ID to IDs if necessary
             my $AttributeName = $FilterItem->{ReferenceObjectAttribute};
             if ( any { $_ eq $AttributeName } qw(QueueID TypeID StateID PriorityID ServiceID SLAID OwnerID ResponsibleID ) ) {
                 $AttributeName .= 's';
