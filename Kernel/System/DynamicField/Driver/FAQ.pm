@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -103,6 +103,7 @@ The generic settings for all referenced object types are included as well.
 sub GetFieldTypeSettings {
     my ( $Self, %Param ) = @_;
 
+    # First fetch the generic settings.
     my @FieldTypeSettings = $Self->SUPER::GetFieldTypeSettings(
         %Param,
     );
@@ -117,6 +118,29 @@ sub GetFieldTypeSettings {
             SelectionData   => {
                 'Number' => 'Number',
                 'Title'  => 'Title',
+            },
+            PossibleNone => 1,
+            Multiple     => 0,
+        };
+
+    my $DynamicFieldsList = $Kernel::OM->Get('Kernel::System::DynamicField')->DynamicFieldList(
+        ObjectType => ['FAQ'],
+        Valid      => 1,
+        ResultType => 'HASH',
+    );
+    my %DFSelectionData = map { ( "DynamicField_$_" => "DynamicField_$_" ) } values $DynamicFieldsList->%*;
+
+    # Support configurable import search attribute
+    push @FieldTypeSettings,
+        {
+            ConfigParamName => 'ImportSearchAttribute',
+            Label           => Translatable('External-source key'),
+            Explanation     => Translatable('When set via an external source (e.g. web service or import / export), the value will be interpreted as this attribute.'),
+            InputType       => 'Selection',
+            SelectionData   => {
+                'Number' => 'Number',
+                'Title'  => 'Title',
+                %DFSelectionData,
             },
             PossibleNone => 1,
             Multiple     => 0,
@@ -292,17 +316,24 @@ sub SearchObjects {
 
     $Param{Term} //= '';
 
-    my $DynamicFieldConfig = $Param{DynamicFieldConfig};
+    my $DFDetails = $Param{DynamicFieldConfig}{Config} // {};
 
     my %SearchParams;
 
     if ( $Param{ObjectID} ) {
         $SearchParams{Number} = $Param{ObjectID};
     }
+    elsif ( $Param{ExternalSource} ) {
+
+        # include configured search param if present
+        my $SearchAttribute = $DFDetails->{ImportSearchAttribute} || 'Number';
+
+        $SearchParams{$SearchAttribute} = "$Param{Term}";
+    }
     else {
 
         # include configured search param if present
-        my $SearchAttribute = $DynamicFieldConfig->{Config}{SearchAttribute} || 'What';
+        my $SearchAttribute = $DFDetails->{SearchAttribute} || 'What';
 
         $SearchParams{$SearchAttribute} = "*$Param{Term}*";
     }
@@ -338,9 +369,9 @@ sub SearchObjects {
     );
 
     # incorporate referencefilterlist into search params
-    if ( IsArrayRefWithData( $DynamicFieldConfig->{Config}{ReferenceFilterList} ) ) {
+    if ( IsArrayRefWithData( $DFDetails->{ReferenceFilterList} ) && !$Param{ExternalSource} ) {
         FILTERITEM:
-        for my $FilterItem ( $DynamicFieldConfig->{Config}{ReferenceFilterList}->@* ) {
+        for my $FilterItem ( $DFDetails->{ReferenceFilterList}->@* ) {
 
             # map ID to IDs if necessary
             my $AttributeName = $FilterItem->{ReferenceObjectAttribute};
