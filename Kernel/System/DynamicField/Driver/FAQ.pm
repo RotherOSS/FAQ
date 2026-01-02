@@ -315,7 +315,7 @@ sub SearchObjects {
             'From',
 
             # AgentTicketPhone
-            'To',
+            'SelectedCustomerUser',
         ],
         ResponsibleID => [
             'NewResponsibleID',
