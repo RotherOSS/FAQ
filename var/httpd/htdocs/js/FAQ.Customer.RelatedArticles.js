@@ -125,23 +125,23 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
             });
 
             // The "change" event is fired whenever a change is made in the editor.
-            CKEditorInstances['RichText'].on( 'key', function (Event) {
+            CKEditorInstances['RichText'].editing.view.document.on( 'keydown', function (_Event, data) {
 
                 // trigger only the change event for the subject, if space or enter was pressed
-                if ( Event.data.keyCode == 32 || Event.data.keyCode == 13) {
+                if ( data.keyCode == 32 || data.keyCode == 13) {
                     $('#Subject').trigger('change');
                 }
             });
 
             // The "paste" event is fired whenever a paste is made in the editor.
-            CKEditorInstances['RichText'].on( 'paste', function (Event) {
+            CKEditorInstances['RichText'].editing.view.document.on( 'paste', function () {
 
                 // trigger only the change event for the subject
                 $('#Subject').trigger('change');
             });
 
             // The "blur" event is fired whenever a blur is made in the editor.
-            CKEditorInstances['RichText'].on( 'blur', function (Event) {
+            CKEditorInstances['RichText'].editing.view.document.on( 'blur', function () {
 
                 // trigger only the change event for the subject
                 $('#Subject').trigger('change');
