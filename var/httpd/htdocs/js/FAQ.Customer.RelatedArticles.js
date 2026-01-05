@@ -53,12 +53,12 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
             });
 
             // FAQ Service
-            $('#ServiceID').on('change', function (Event) {
+            $('#ServiceID').on('change', function () {
                 $('#Subject').trigger('change');
             });
             // eo FAQ Service
 
-            $('#Subject').on('change', function (Event) {
+            $('#Subject').on('change', function () {
                 var SelectedQueue = $('#Dest').val(),
                     SelectedQueueName,
                     Data;
@@ -147,7 +147,7 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
                 $('#Subject').trigger('change');
             });
 
-            // Trigger the 'RelatedFAQArticle' change event to hide/show the relatd faq article widget for the case
+            // Trigger the 'RelatedFAQArticle' change event to hide/show the related faq article widget for the case
             //  that the queue is already selected at the page load or show the widget always if the queue selection is disabled.
             if ( !$('#Dest').length ) {
                 $('#FAQRelatedArticles').removeClass('Hidden');
