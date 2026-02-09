@@ -311,12 +311,12 @@
             <Column Default="1" Name="valid_id" Required="true" Type="SMALLINT"></Column>
             <Column Default="text/html" Name="content_type" Required="true" Size="250" Type="VARCHAR"></Column>
             <Column Name="f_keywords" Required="false" Size="400" Type="VARCHAR"></Column>
-            <Column Name="f_field1" Required="false" Size="20000" Type="VARCHAR"></Column>
-            <Column Name="f_field2" Required="false" Size="20000" Type="VARCHAR"></Column>
-            <Column Name="f_field3" Required="false" Size="20000" Type="VARCHAR"></Column>
-            <Column Name="f_field4" Required="false" Size="20000" Type="VARCHAR"></Column>
-            <Column Name="f_field5" Required="false" Size="20000" Type="VARCHAR"></Column>
-            <Column Name="f_field6" Required="false" Size="20000" Type="VARCHAR"></Column>
+            <Column Name="f_field1" Required="false" Size="65536" Type="VARCHAR"></Column>
+            <Column Name="f_field2" Required="false" Size="65536" Type="VARCHAR"></Column>
+            <Column Name="f_field3" Required="false" Size="65536" Type="VARCHAR"></Column>
+            <Column Name="f_field4" Required="false" Size="65536" Type="VARCHAR"></Column>
+            <Column Name="f_field5" Required="false" Size="65536" Type="VARCHAR"></Column>
+            <Column Name="f_field6" Required="false" Size="65536" Type="VARCHAR"></Column>
             <Column Name="created" Required="true" Type="DATE"></Column>
             <Column Name="created_by" Required="true" Type="INTEGER"></Column>
             <Column Name="changed" Required="true" Type="DATE"></Column>
