@@ -406,6 +406,16 @@
             </Index>
         </TableCreate>
     </DatabaseUpgrade>
+    <DatabaseUpgrade Type="post">
+        <TableAlter Name="faq_item" Version="11.1.0">
+            <ColumnChange NameOld="f_field1" NameNew="f_field1" Required="false" Size="65536" Type="VARCHAR"></ColumnChange>
+            <ColumnChange NameOld="f_field2" NameNew="f_field2" Required="false" Size="65536" Type="VARCHAR"></ColumnChange>
+            <ColumnChange NameOld="f_field3" NameNew="f_field3" Required="false" Size="65536" Type="VARCHAR"></ColumnChange>
+            <ColumnChange NameOld="f_field4" NameNew="f_field4" Required="false" Size="65536" Type="VARCHAR"></ColumnChange>
+            <ColumnChange NameOld="f_field5" NameNew="f_field5" Required="false" Size="65536" Type="VARCHAR"></ColumnChange>
+            <ColumnChange NameOld="f_field6" NameNew="f_field6" Required="false" Size="65536" Type="VARCHAR"></ColumnChange>
+        </TableAlter>
+    </DatabaseUpgrade>
     <DatabaseUninstall Type="pre">
         <TableDrop Name="faq_history">
         </TableDrop>
