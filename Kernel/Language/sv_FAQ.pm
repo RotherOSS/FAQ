@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'Skapa FAQ artikel';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'Nyckelord';
     $Self->{Translation}->{'A category is required.'} = 'En kategori krävs.';
     $Self->{Translation}->{'Approval'} = 'Godkännande';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Lägg till språk';
     $Self->{Translation}->{'Add Language'} = 'Lägg till språk';
     $Self->{Translation}->{'Edit Language'} = 'Redigera språk';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Vill du verkligen ta bort detta språk?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Du kan inte ta bort detta språk. Det används i minst en FAQ-artikel!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Detta språk används av följande FAQ-artiklar';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Klistra in fullständig FAQ & länk';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Senast uppdaterade FAQ-artiklar';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Inga FAQ artiklar funna.';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = 'Den här artikeln är tom!';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Senast skapade FAQ-artiklar';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Senast uppdaterade FAQ-artiklar';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Topp 10 FAQ-artiklar';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'intern';
     $Self->{Translation}->{'external'} = 'extern';
     $Self->{Translation}->{'public'} = 'offentlig';
@@ -400,6 +400,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'Redigera FAQ';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = '';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = '';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = '';

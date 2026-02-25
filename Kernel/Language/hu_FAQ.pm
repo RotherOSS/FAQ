@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'GyIK bejegyzés hozzáadása';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'Kulcsszavak';
     $Self->{Translation}->{'A category is required.'} = 'Egy kategória kötelező.';
     $Self->{Translation}->{'Approval'} = 'Jóváhagyás';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Nyelv hozzáadása';
     $Self->{Translation}->{'Add Language'} = 'Nyelv hozzáadása';
     $Self->{Translation}->{'Edit Language'} = 'Nyelv szerkesztése';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Valóban törölni szeretné ezt a nyelvet?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Nem törölheti ezt a nyelvet. Legalább egy GyIK bejegyzésben használják!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Ezt a nyelvet a következő GyIK bejegyzéseknél használják';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Teljes GyIK és hivatkozás beszúrása';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Legutóbb frissített GyIK bejegyzések';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Nem találhatók GyIK bejegyzések.';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = 'Értékelés szükséges!';
     $Self->{Translation}->{'This article is empty!'} = 'Ez a bejegyzés üres!';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Legutóbb létrehozott GyIK bejegyzések';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Legutóbb frissített GyIK bejegyzések';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Legjobb 10 GyIK bejegyzés';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'Tartalomtípus';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'belső';
     $Self->{Translation}->{'external'} = 'külső';
     $Self->{Translation}->{'public'} = 'nyilvános';
@@ -400,6 +400,7 @@ sub Data {
         'A nyilvános felület GyIK nagyítása képernyőjén megjelenített dinamikus mezők.';
     $Self->{Translation}->{'Edit this FAQ'} = 'A GyIK szerkesztése';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Több nyelv engedélyezése a GyIK modulban.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'A kapcsolódó bejegyzések funkció engedélyezése az ügyfél előtétprogramhoz.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Szavazási mechanizmus engedélyezése a GyIK modulban.';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'Alkategóriák elemeinek megjelenítése.';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Az utoljára módosított elemek megjelenítése a meghatározott felületeken.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Az utoljára létrehozott elemek megjelenítése a meghatározott felületeken.';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Csillagok megjelenítése a meghatározott értékkel egyenlő vagy annál jobb értékeléssel rendelkező bejegyzéseknél (állítsa az értéket „0”-ra a kimenet kikapcsolásához).';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'A legjobb 10 elem megjelenítése a meghatározott felületeken.';

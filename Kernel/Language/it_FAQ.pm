@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'Aggiungere articolo FAQ';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'Parole chiave';
     $Self->{Translation}->{'A category is required.'} = 'Una categoria è obbligatoria';
     $Self->{Translation}->{'Approval'} = 'Approvazione';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Aggiungi lingua';
     $Self->{Translation}->{'Add Language'} = 'Aggiungi Lingua';
     $Self->{Translation}->{'Edit Language'} = 'Modifica della lingua';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Si desidera veramente eliminare questa lingua?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Non è possibile eliminare questa lingua. E\' utilizzata in almeno un articolo della FAQ!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Questo linguaggio è utilizzato nel(i) seguente(i) articoli della FAQ';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Inserire la FAQ completa e il Link';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Ultimi articoli FAQ aggiornati';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Nessun articolo FAQ trovato.';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = 'Questo articolo è vuoto!';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Ultimi articoli FAQ creati';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Ultimi articoli FAQ aggiornati';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Top 10 articoli FAQ';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'Tipo di contenuto';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'interno';
     $Self->{Translation}->{'external'} = 'esterno';
     $Self->{Translation}->{'public'} = 'pubblico';
@@ -400,6 +400,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'Modifica questa FAQ';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Abilita più lingue nel modulo FAQ.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Abilita meccanismo di voto nel modulo FAQ.';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'Mostra gli elementi delle sottocategorie.';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Mostra i principali 10 nelle interfacce specificate.';

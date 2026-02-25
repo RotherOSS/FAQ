@@ -12,7 +12,7 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
-msgstr ""
+msgstr "Lisää UKK artikkeli"
 
 #. Template: AgentFAQAdd
 msgid "All fields marked with an asterisk (*) are mandatory."
@@ -20,19 +20,19 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Keywords"
-msgstr ""
+msgstr "Hakusanat"
 
 #. Template: AgentFAQAdd
 msgid "A category is required."
-msgstr ""
+msgstr "Kategoria on pakollinen."
 
 #. Template: AgentFAQAdd
 msgid "Approval"
-msgstr ""
+msgstr "Hyväksyntä"
 
 #. Template: AgentFAQCategory
 msgid "FAQ Category Management"
-msgstr ""
+msgstr "UKK kategorioiden hallinta"
 
 #. Template: AgentFAQCategory
 msgid "Add FAQ Category"
@@ -44,63 +44,63 @@ msgstr ""
 
 #. Template: AgentFAQCategory
 msgid "Add category"
-msgstr ""
+msgstr "Lisää kategoria"
 
 #. Template: AgentFAQCategory
 msgid "Add Category"
-msgstr ""
+msgstr "Lisää kategoria"
 
 #. Template: AgentFAQCategory
 msgid "Edit Category"
-msgstr ""
+msgstr "Muokkaa kategoriaa"
 
 #. Template: AgentFAQCategory
 msgid "Subcategory of"
-msgstr ""
+msgstr "Alakategoria"
 
 #. Template: AgentFAQCategory
 msgid "Please select at least one permission group."
-msgstr ""
+msgstr "Valitse ainakin yksi oikeusryhmä."
 
 #. Template: AgentFAQCategory
 msgid "Agent groups that can access articles in this category."
-msgstr ""
+msgstr "Agenttiryhmät, joilla on pääsy artikkeleihin tässä kategoriassa"
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
-msgstr ""
+msgstr "Näytetään kommenttina Selaimessa."
 
 #. Template: AgentFAQCategory
 msgid "Do you really want to delete this category?"
-msgstr ""
+msgstr "Haluatko varmasti poistaa tämän kategorian?"
 
 #. Template: AgentFAQCategory
 msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
-msgstr ""
+msgstr "Et voi poistaa tätä kategoriaa! Se sisältää joko artikkeleita tai se on toisen kategorian isäntäkategoria."
 
 #. Template: AgentFAQCategory
 msgid "This category is used in the following FAQ article(s)"
-msgstr ""
+msgstr "Seuraavat artikkelit kuuluvat tähän kategoriaan"
 
 #. Template: AgentFAQCategory
 msgid "This category is parent of the following subcategories"
-msgstr ""
+msgstr "Nämä kategoriat ovat tämän kategorian alakategorioita"
 
 #. Template: AgentFAQDelete
 msgid "Do you really want to delete this FAQ article?"
-msgstr ""
+msgstr "Haluatko varmasti poistaa tämän artikkelin?"
 
 #. Template: AgentFAQEdit
 msgid "FAQ"
-msgstr ""
+msgstr "UKK"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Explorer"
-msgstr ""
+msgstr "Selain"
 
 #. Template: AgentFAQExplorer
 msgid "Quick Search"
-msgstr ""
+msgstr "Pikahaku"
 
 #. Template: AgentFAQExplorer
 msgid "Wildcards are allowed."
@@ -108,31 +108,31 @@ msgstr ""
 
 #. Template: AgentFAQExplorer
 msgid "Advanced Search"
-msgstr ""
+msgstr "Monipuolinen haku"
 
 #. Template: AgentFAQExplorer
 msgid "Subcategories"
-msgstr ""
+msgstr "Alakategoriat"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Articles"
-msgstr ""
+msgstr "Artikkelit"
 
 #. Template: AgentFAQExplorer
 msgid "No subcategories found."
-msgstr ""
+msgstr "Ei alakategorioita."
 
 #. Template: AgentFAQHistory
 msgid "History of"
-msgstr ""
+msgstr "Historia:"
 
 #. Template: AgentFAQHistory
 msgid "History Content"
-msgstr ""
+msgstr "Tapahtumat"
 
 #. Template: AgentFAQHistory
 msgid "Createtime"
-msgstr ""
+msgstr "Luontiaika"
 
 #. Template: AgentFAQJournalOverviewSmall
 msgid "No FAQ Journal data found."
@@ -140,7 +140,7 @@ msgstr ""
 
 #. Template: AgentFAQLanguage
 msgid "FAQ Language Management"
-msgstr ""
+msgstr "UKK kielten hallinta"
 
 #. Template: AgentFAQLanguage
 msgid "Add FAQ Language"
@@ -156,23 +156,23 @@ msgstr ""
 
 #. Template: AgentFAQLanguage
 msgid "Add language"
-msgstr ""
+msgstr "Lisää kieli"
 
 #. Template: AgentFAQLanguage
 msgid "Add Language"
-msgstr ""
+msgstr "Lisää kieli"
 
 #. Template: AgentFAQLanguage
 msgid "Edit Language"
-msgstr ""
+msgstr "Muokkaa kieltä"
 
 #. Template: AgentFAQLanguage
 msgid "You can not delete this language. It is used in at least one FAQ article!"
-msgstr ""
+msgstr "Et voi poistaa tätä kieltä. Ainakin yksi artikkeli käyttää tätä kieltä!"
 
 #. Template: AgentFAQLanguage
 msgid "This language is used in the following FAQ Article(s)"
-msgstr ""
+msgstr "Seuraavat artikkelit käyttävät tätä kieltä"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "Context Settings"
@@ -180,19 +180,19 @@ msgstr ""
 
 #. Template: AgentFAQOverviewNavBar
 msgid "FAQ articles per page"
-msgstr ""
+msgstr "Artikkeleita per sivu"
 
 #. Template: AgentFAQOverviewSmall
 msgid "No FAQ data found."
-msgstr ""
+msgstr "Yhtään artikkelia ei löytynyt"
 
 #. Template: AgentFAQRelatedArticles
 msgid "out of 5"
-msgstr ""
+msgstr "/ 5"
 
 #. Template: AgentFAQSearch
 msgid "Keyword"
-msgstr ""
+msgstr "Hakusana"
 
 #. Template: AgentFAQSearch
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
@@ -232,7 +232,7 @@ msgstr ""
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Search"
-msgstr ""
+msgstr "UKK haku"
 
 #. Template: AgentFAQSearchSmall
 msgid "Profile Selection"
@@ -280,27 +280,27 @@ msgstr ""
 
 #. Template: AgentFAQZoom
 msgid "FAQ Information"
-msgstr ""
+msgstr "UKK tiedot"
 
 #. Template: AgentFAQZoom
 msgid "Rating"
-msgstr ""
+msgstr "Arvostelut"
 
 #. Template: AgentFAQZoom
 msgid "Votes"
-msgstr ""
+msgstr "Äänestykset"
 
 #. Template: AgentFAQZoom
 msgid "No votes found!"
-msgstr ""
+msgstr "Ei ääniä!"
 
 #. Template: AgentFAQZoom
 msgid "No votes found! Be the first one to rate this FAQ article."
-msgstr ""
+msgstr "Ei annettuja ääniä! Äänestä tätä artikkelia ensimmäisenä."
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
-msgstr ""
+msgstr "Lataa liitetiedosto"
 
 #. Template: AgentFAQZoom
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
@@ -308,15 +308,15 @@ msgstr ""
 
 #. Template: AgentFAQZoom
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
-msgstr ""
+msgstr "Kuinka hyödyllinen tämä artikkeli oli? Arvostele artikkeli, jotta voimme kehittää UKK-tietokantaamme. Kiitos!"
 
 #. Template: AgentFAQZoom
 msgid "not helpful"
-msgstr ""
+msgstr "hyödytön"
 
 #. Template: AgentFAQZoom
 msgid "very helpful"
-msgstr ""
+msgstr "hyödyllinen"
 
 #. Template: AgentFAQZoomSmall
 msgid "Add FAQ title to article subject"
@@ -324,7 +324,7 @@ msgstr ""
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text"
-msgstr ""
+msgstr "Lisää UKK teksti"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ"
@@ -332,11 +332,11 @@ msgstr ""
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Link"
-msgstr ""
+msgstr "Lisää UKK linkki"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text & Link"
-msgstr ""
+msgstr "Lisää UKK teksti ja linkki"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ & Link"
@@ -344,11 +344,11 @@ msgstr ""
 
 #. Template: CustomerFAQExplorer
 msgid "Latest updated FAQ articles"
-msgstr ""
+msgstr "Viimeksi päivitetyt artikkelit"
 
 #. Template: CustomerFAQExplorer
 msgid "No FAQ articles found."
-msgstr ""
+msgstr "Yhtään artikkelia ei löytynyt."
 
 #. Template: CustomerFAQRelatedArticles
 msgid "This might be helpful"
@@ -364,7 +364,7 @@ msgstr ""
 
 #. Template: CustomerFAQSearch
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
-msgstr ""
+msgstr "Hae artikkeleista (esim. \"Matti*\" tai \"Meik*nen\")"
 
 #. Template: CustomerFAQSearch
 msgid "Vote restrictions"
@@ -384,7 +384,7 @@ msgstr ""
 
 #. Template: CustomerFAQSearch
 msgid "Time restrictions"
-msgstr ""
+msgstr "Aikarajoitus"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created"
@@ -404,11 +404,11 @@ msgstr ""
 
 #. Template: CustomerFAQZoom
 msgid "Search for articles with keyword"
-msgstr ""
+msgstr "Etsi artikkeleja hakusanalla"
 
 #. Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
 msgid "Public"
-msgstr ""
+msgstr "Julkinen"
 
 #. Template: PublicFAQSearchResultShort
 msgid "Back to FAQ Explorer"
@@ -432,11 +432,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
-msgstr ""
+msgstr "Kategorialla tulee olla nimi!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists"
-msgstr ""
+msgstr "Tämä kategoria on jo olemassa"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
@@ -452,15 +452,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
-msgstr ""
+msgstr "Kategoria päivitetty!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category added!"
-msgstr ""
+msgstr "Kategoria lisätty!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Delete Category"
-msgstr ""
+msgstr "Poista kategoria"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
@@ -488,7 +488,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
-msgstr ""
+msgstr "UKK aikajärjestys"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
@@ -508,11 +508,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
-msgstr ""
+msgstr "Nimi on pakollinen!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "This language already exists!"
-msgstr ""
+msgstr "Tämä kieli on jo olemassa!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
@@ -520,19 +520,19 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
-msgstr ""
+msgstr "Kieli päivitetty!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language added!"
-msgstr ""
+msgstr "Kieli lisätty"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Delete Language %s"
-msgstr ""
+msgstr "Poista kieli %s"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
-msgstr ""
+msgstr "Vastaus"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
@@ -556,7 +556,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Number"
-msgstr ""
+msgstr "UKK numero"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
@@ -604,15 +604,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
-msgstr ""
+msgstr "Kiitos arvostelustasi!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "You have already voted!"
-msgstr ""
+msgstr "Olet jo arvostellut tämän artikkelin!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "No rate selected!"
-msgstr ""
+msgstr "Ei valittua arviota"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
@@ -624,7 +624,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
-msgstr ""
+msgstr "Tulosta artikkeli"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
@@ -636,15 +636,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
-msgstr ""
+msgstr "Artikkeli (uudet)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (recently changed)"
-msgstr ""
+msgstr "Artikkeli (päivitetty äskettäin)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (Top 10)"
-msgstr ""
+msgstr "Artikkelit (Top 10)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
@@ -688,11 +688,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
-msgstr ""
+msgstr "Viimeksi julkaistut artikkelit"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Top 10 FAQ articles"
-msgstr ""
+msgstr "Top 10 artikkelit"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
@@ -700,19 +700,19 @@ msgstr ""
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
-msgstr ""
+msgstr "sisäinen"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "external"
-msgstr ""
+msgstr "ulkoinen"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "public"
-msgstr ""
+msgstr "julkinen"
 
 #. JS File: FAQ.Agent.ConfirmationDialog
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
@@ -732,7 +732,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Category Management"
-msgstr ""
+msgstr "Kategoriahallinta"
 
 #. SysConfig
 msgid "Category Management."
@@ -980,7 +980,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Explorer"
-msgstr ""
+msgstr "Selain"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
@@ -1060,11 +1060,11 @@ msgstr ""
 
 #. SysConfig
 msgid "Journal"
-msgstr ""
+msgstr "Aikajärjestys"
 
 #. SysConfig
 msgid "Language Management"
-msgstr ""
+msgstr "Kielten hallinta"
 
 #. SysConfig
 msgid "Language Management."
@@ -1220,7 +1220,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Print this FAQ"
-msgstr ""
+msgstr "Tulosta artikkeli"
 
 #. SysConfig
 msgid "Public FAQ Print."
@@ -1364,7 +1364,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Solution"
-msgstr ""
+msgstr "Ratkaisu"
 
 #. SysConfig
 msgid "Symptom"
@@ -1412,15 +1412,15 @@ msgstr ""
 
 #. SysConfig
 msgid "external (customer)"
-msgstr ""
+msgstr "ulkoinen (asiakkaat)"
 
 #. SysConfig
 msgid "internal (agent)"
-msgstr ""
+msgstr "sisäinen (agentit)"
 
 #. SysConfig
 msgid "public (all)"
-msgstr ""
+msgstr "julkinen (kaikki)"
 
 #. SysConfig
 msgid "public (public)"

@@ -12,7 +12,7 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
-msgstr ""
+msgstr "Skapa FAQ artikel"
 
 #. Template: AgentFAQAdd
 msgid "All fields marked with an asterisk (*) are mandatory."
@@ -20,463 +20,463 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Keywords"
-msgstr ""
+msgstr "Nyckelord"
 
 #. Template: AgentFAQAdd
 msgid "A category is required."
-msgstr ""
+msgstr "En kategori krävs."
 
 #. Template: AgentFAQAdd
 msgid "Approval"
-msgstr ""
+msgstr "Godkännande"
 
 #. Template: AgentFAQCategory
 msgid "FAQ Category Management"
-msgstr ""
+msgstr "FAQ kategorihantering"
 
 #. Template: AgentFAQCategory
 msgid "Add FAQ Category"
-msgstr ""
+msgstr "Lägg till FAQ-kategori"
 
 #. Template: AgentFAQCategory
 msgid "Edit FAQ Category"
-msgstr ""
+msgstr "Redigera FAQ-kategori"
 
 #. Template: AgentFAQCategory
 msgid "Add category"
-msgstr ""
+msgstr "Skapa kategori"
 
 #. Template: AgentFAQCategory
 msgid "Add Category"
-msgstr ""
+msgstr "Skapa kategori"
 
 #. Template: AgentFAQCategory
 msgid "Edit Category"
-msgstr ""
+msgstr "Redigera kategori"
 
 #. Template: AgentFAQCategory
 msgid "Subcategory of"
-msgstr ""
+msgstr "Underkategori till"
 
 #. Template: AgentFAQCategory
 msgid "Please select at least one permission group."
-msgstr ""
+msgstr "Vänligen välj minst en rättighetsgrupp"
 
 #. Template: AgentFAQCategory
 msgid "Agent groups that can access articles in this category."
-msgstr ""
+msgstr "Agent-grupper med åtkomst till artiklarna i denna kategori."
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
-msgstr ""
+msgstr "Visas som kommentar i Utforskaren."
 
 #. Template: AgentFAQCategory
 msgid "Do you really want to delete this category?"
-msgstr ""
+msgstr "Vill du verkligen ta bort denna kategori?"
 
 #. Template: AgentFAQCategory
 msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
-msgstr ""
+msgstr "Du kan inte ta bort denna kategorin. Det används av minst en FAQ-artikel!"
 
 #. Template: AgentFAQCategory
 msgid "This category is used in the following FAQ article(s)"
-msgstr ""
+msgstr "Denna kategori används av följande FAQ-artiklar"
 
 #. Template: AgentFAQCategory
 msgid "This category is parent of the following subcategories"
-msgstr ""
+msgstr "Denna kategori är förälder för följande underkategroier"
 
 #. Template: AgentFAQDelete
 msgid "Do you really want to delete this FAQ article?"
-msgstr ""
+msgstr "Vill du verkligen ta bort denna FAQ-artikel?"
 
 #. Template: AgentFAQEdit
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Explorer"
-msgstr ""
+msgstr "FAQ-utforskare"
 
 #. Template: AgentFAQExplorer
 msgid "Quick Search"
-msgstr ""
+msgstr "Snabbsök"
 
 #. Template: AgentFAQExplorer
 msgid "Wildcards are allowed."
-msgstr ""
+msgstr "Jokertecken är tillåtna."
 
 #. Template: AgentFAQExplorer
 msgid "Advanced Search"
-msgstr ""
+msgstr "Avancerad sökning"
 
 #. Template: AgentFAQExplorer
 msgid "Subcategories"
-msgstr ""
+msgstr "Underkategorier"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Articles"
-msgstr ""
+msgstr "FAQ-artiklar"
 
 #. Template: AgentFAQExplorer
 msgid "No subcategories found."
-msgstr ""
+msgstr "Inga underkategorier hittades."
 
 #. Template: AgentFAQHistory
 msgid "History of"
-msgstr ""
+msgstr "Historik för"
 
 #. Template: AgentFAQHistory
 msgid "History Content"
-msgstr ""
+msgstr "Historikinnehåll"
 
 #. Template: AgentFAQHistory
 msgid "Createtime"
-msgstr ""
+msgstr "Tidpunkt för skapande"
 
 #. Template: AgentFAQJournalOverviewSmall
 msgid "No FAQ Journal data found."
-msgstr ""
+msgstr "Det finns ingen data i FAQ-loggboken"
 
 #. Template: AgentFAQLanguage
 msgid "FAQ Language Management"
-msgstr ""
+msgstr "FAQ språkhantering"
 
 #. Template: AgentFAQLanguage
 msgid "Add FAQ Language"
-msgstr ""
+msgstr "Lägg till FAQ-språk"
 
 #. Template: AgentFAQLanguage
 msgid "Edit FAQ Language"
-msgstr ""
+msgstr "Redigera FAQ-språk"
 
 #. Template: AgentFAQLanguage
 msgid "Use this feature if you want to work with multiple languages."
-msgstr ""
+msgstr "Använd den här funktionen om du vill arbeta med flera språk. "
 
 #. Template: AgentFAQLanguage
 msgid "Add language"
-msgstr ""
+msgstr "Lägg till språk"
 
 #. Template: AgentFAQLanguage
 msgid "Add Language"
-msgstr ""
+msgstr "Lägg till språk"
 
 #. Template: AgentFAQLanguage
 msgid "Edit Language"
-msgstr ""
+msgstr "Redigera språk"
 
 #. Template: AgentFAQLanguage
 msgid "You can not delete this language. It is used in at least one FAQ article!"
-msgstr ""
+msgstr "Du kan inte ta bort detta språk. Det används i minst en FAQ-artikel!"
 
 #. Template: AgentFAQLanguage
 msgid "This language is used in the following FAQ Article(s)"
-msgstr ""
+msgstr "Detta språk används av följande FAQ-artiklar"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "Context Settings"
-msgstr ""
+msgstr "Anpassa vy"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "FAQ articles per page"
-msgstr ""
+msgstr "FAQ-artiklar per sida"
 
 #. Template: AgentFAQOverviewSmall
 msgid "No FAQ data found."
-msgstr ""
+msgstr "Ingen FAQ-information hittades."
 
 #. Template: AgentFAQRelatedArticles
 msgid "out of 5"
-msgstr ""
+msgstr "av 5"
 
 #. Template: AgentFAQSearch
 msgid "Keyword"
-msgstr ""
+msgstr "Nyckelord"
 
 #. Template: AgentFAQSearch
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
-msgstr ""
+msgstr "Röster (ex. lika med 10 eller fler än 60)"
 
 #. Template: AgentFAQSearch
 msgid "Rate (e. g. Equals 25% or GreaterThan 75%)"
-msgstr ""
+msgstr "Betyg (ex. lika med 25% eller mer än 75%)"
 
 #. Template: AgentFAQSearch
 msgid "Approved"
-msgstr ""
+msgstr "Godkänd"
 
 #. Template: AgentFAQSearch
 msgid "Last changed by"
-msgstr ""
+msgstr "Senast ändrad av"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (before/after)"
-msgstr ""
+msgstr "FAQ-Artikel Skapad Tid (före/efter)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (between)"
-msgstr ""
+msgstr "FAQ-Artikel Skapad Tid (mellan)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Change Time (before/after)"
-msgstr ""
+msgstr "FAQ Artikel Ändrad Tid (före/efter)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Change Time (between)"
-msgstr ""
+msgstr "FAQ-Artikel Ändrad Tid (mellan)"
 
 #. Template: AgentFAQSearchOpenSearchDescriptionFulltext
 msgid "FAQFulltext"
-msgstr ""
+msgstr "FAQ-Fulltext"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Search"
-msgstr ""
+msgstr "FAQ sök"
 
 #. Template: AgentFAQSearchSmall
 msgid "Profile Selection"
-msgstr ""
+msgstr "Profilval"
 
 #. Template: AgentFAQSearchSmall
 msgid "Vote"
-msgstr ""
+msgstr "Rösta"
 
 #. Template: AgentFAQSearchSmall
 msgid "No vote settings"
-msgstr ""
+msgstr "Inga röstinställningar"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific votes"
-msgstr ""
+msgstr "Specifika röster"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 10 or GreaterThan 60"
-msgstr ""
+msgstr "e.g. Lika med 10 eller StörreÄn 60"
 
 #. Template: AgentFAQSearchSmall
 msgid "Rate"
-msgstr ""
+msgstr "Betygsätt"
 
 #. Template: AgentFAQSearchSmall
 msgid "No rate settings"
-msgstr ""
+msgstr "Inga betygsinställningar"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific rate"
-msgstr ""
+msgstr "Specifikt betyg"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 25% or GreaterThan 75%"
-msgstr ""
+msgstr "e.g. Lika med 25% eller StörreÄn 75%"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Create Time"
-msgstr ""
+msgstr "FAQ-Artikel Skapad Tid"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Change Time"
-msgstr ""
+msgstr "FAQ artikel ändringstidpunkt"
 
 #. Template: AgentFAQZoom
 msgid "FAQ Information"
-msgstr ""
+msgstr "FAQ-Information"
 
 #. Template: AgentFAQZoom
 msgid "Rating"
-msgstr ""
+msgstr "Betyg"
 
 #. Template: AgentFAQZoom
 msgid "Votes"
-msgstr ""
+msgstr "Röster"
 
 #. Template: AgentFAQZoom
 msgid "No votes found!"
-msgstr ""
+msgstr "Inga röster funna!"
 
 #. Template: AgentFAQZoom
 msgid "No votes found! Be the first one to rate this FAQ article."
-msgstr ""
+msgstr "Inga röster funna! Bli den första att betygsätta denna FAQ-artikel."
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
-msgstr ""
+msgstr "Ladda ner bilaga"
 
 #. Template: AgentFAQZoom
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
-msgstr ""
+msgstr "För att öppna länkar i följande beskrivningsblock behöver du kanske trycka <Ctrl> eller <Cmd> eller <Shift> medan du klickar på länken (beroende på vilken webbläsare eller operativsystem du har)."
 
 #. Template: AgentFAQZoom
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
-msgstr ""
+msgstr "Hur hjälpsam var den här artikeln? Vänligen ge oss ditt betyg och hjälp oss förbättra FAQ-databasen. Tack!"
 
 #. Template: AgentFAQZoom
 msgid "not helpful"
-msgstr ""
+msgstr "inte hjälpsam"
 
 #. Template: AgentFAQZoom
 msgid "very helpful"
-msgstr ""
+msgstr "väldigt hjälpsam"
 
 #. Template: AgentFAQZoomSmall
 msgid "Add FAQ title to article subject"
-msgstr ""
+msgstr "Lägg till FAQ-titeln till artikelns ämne"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text"
-msgstr ""
+msgstr "Klistra in FAQ-text"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ"
-msgstr ""
+msgstr "Klistra in fullständig FAQ"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Link"
-msgstr ""
+msgstr "Klistra in länk till FAQ"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text & Link"
-msgstr ""
+msgstr "Klistra in FAQ-text & länk"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ & Link"
-msgstr ""
+msgstr "Klistra in fullständig FAQ & länk"
 
 #. Template: CustomerFAQExplorer
 msgid "Latest updated FAQ articles"
-msgstr ""
+msgstr "Senast uppdaterade FAQ-artiklar"
 
 #. Template: CustomerFAQExplorer
 msgid "No FAQ articles found."
-msgstr ""
+msgstr "Inga FAQ artiklar funna."
 
 #. Template: CustomerFAQRelatedArticles
 msgid "This might be helpful"
-msgstr ""
+msgstr "Dessa artiklar kan vara användbara"
 
 #. Template: CustomerFAQRelatedArticles
 msgid "Found no helpful resources for the subject and text."
-msgstr ""
+msgstr "Hittade inga användbara artiklar för detta ämnet och texten"
 
 #. Template: CustomerFAQRelatedArticles
 msgid "Type a subject or text to get a list of helpful resources."
-msgstr ""
+msgstr "Skriv ett ämne eller text för att få en lista över hjälpfulla artiklar"
 
 #. Template: CustomerFAQSearch
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
-msgstr ""
+msgstr "Fulltext-sök i FAQ-artiklar (e. g. \"John*n\" eller \"Will*\")"
 
 #. Template: CustomerFAQSearch
 msgid "Vote restrictions"
-msgstr ""
+msgstr "Röst-restriktioner"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with votes..."
-msgstr ""
+msgstr "Endast FAQ artiklar med röster..."
 
 #. Template: CustomerFAQSearch
 msgid "Rate restrictions"
-msgstr ""
+msgstr "Betygs-restriktioner"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with rate..."
-msgstr ""
+msgstr "Endast FAQ artiklar med betyg..."
 
 #. Template: CustomerFAQSearch
 msgid "Time restrictions"
-msgstr ""
+msgstr "Tidsrestriktioner"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created"
-msgstr ""
+msgstr "Endast FAQ artiklar skapade"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created between"
-msgstr ""
+msgstr "Endast FAQ artiklar skapade mellan"
 
 #. Template: CustomerFAQSearch
 msgid "Search-Profile as Template?"
-msgstr ""
+msgstr "Sök-profil som mall?"
 
 #. Template: CustomerFAQZoom
 msgid "Article Number"
-msgstr ""
+msgstr "Artikelnummer"
 
 #. Template: CustomerFAQZoom
 msgid "Search for articles with keyword"
-msgstr ""
+msgstr "Sök efter artiklar med nyckelord"
 
 #. Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
 msgid "Public"
-msgstr ""
+msgstr "Offentlig"
 
 #. Template: PublicFAQSearchResultShort
 msgid "Back to FAQ Explorer"
-msgstr ""
+msgstr "Tillbaka till FAQ-utforskaren"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "You need rw permission!"
-msgstr ""
+msgstr "Du behöver rw-behörighet"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No categories found where user has read/write permissions!"
-msgstr ""
+msgstr "Inga kategorier hittades där användaren har läs/skriv-rättigheter"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No default language found and can't create a new one."
-msgstr ""
+msgstr "Standard-språk saknas och nytt kan ej skapas"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Need CategoryID!"
-msgstr ""
+msgstr "Kategori-ID krävs!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
-msgstr ""
+msgstr "En kategori behöver ett namn!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists"
-msgstr ""
+msgstr "Denna kategori finns redan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
-msgstr ""
+msgstr "Denna kategori finns redan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "No CategoryID is given!"
-msgstr ""
+msgstr "Inget ÄrendeID är angivet!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Was not able to delete the category %s!"
-msgstr ""
+msgstr "Systemet kunde inte ta bort kategorin"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
-msgstr ""
+msgstr "FAQ-kategori uppdaterad!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category added!"
-msgstr ""
+msgstr "FAQ-kategori tillagd!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Delete Category"
-msgstr ""
+msgstr "Ta bort kategori"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
-msgstr ""
+msgstr "Inget ItemID är angivet!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "You have no permission for this category!"
-msgstr ""
+msgstr "Du saknar behörighet för den här kategorin!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "Was not able to delete the FAQ article %s!"
-msgstr ""
+msgstr "Kunde inte ta bort FAQ-artikeln %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
-msgstr ""
+msgstr "KategoriID:t %s är ogiltigt."
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
@@ -484,11 +484,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "FAQ History"
-msgstr ""
+msgstr "FAQ-historik"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
-msgstr ""
+msgstr "FAQ-loggboken"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
@@ -508,11 +508,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
-msgstr ""
+msgstr "Namn krävs!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "This language already exists!"
-msgstr ""
+msgstr "Detta språk finns redan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
@@ -520,27 +520,27 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
-msgstr ""
+msgstr "FAQ-språk uppdaterat!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language added!"
-msgstr ""
+msgstr "FAQ-språk skapat!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Delete Language %s"
-msgstr ""
+msgstr "Ta bort språk %s"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
-msgstr ""
+msgstr "Resultat"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
-msgstr ""
+msgstr "Senast uppdaterad"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "FAQ Dynamic Fields"
-msgstr ""
+msgstr "FAQ Dynamiska Fält"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "No %s is given!"
@@ -552,31 +552,31 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
-msgstr ""
+msgstr "Inget resultat!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Number"
-msgstr ""
+msgstr "FAQ-nummer"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
-msgstr ""
+msgstr "Senast ändrad av"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
-msgstr ""
+msgstr "FAQ-Artikel Skapad Tid (före/efter)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (between)"
-msgstr ""
+msgstr "FAQ-Artikel Skapad Tid (mellan)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (before/after)"
-msgstr ""
+msgstr "FAQ Artikel Ändrad Tid (före/efter)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (between)"
-msgstr ""
+msgstr "FAQ-Artikel Ändrad Tid (mellan)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Equals"
@@ -604,15 +604,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
-msgstr ""
+msgstr "Tack för din röst!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "You have already voted!"
-msgstr ""
+msgstr "Du har redan röstat!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "No rate selected!"
-msgstr ""
+msgstr "Inget betyg satt!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
@@ -624,11 +624,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
-msgstr ""
+msgstr "FAQ-artikel utskrift"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
-msgstr ""
+msgstr "Skapat mellan"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
@@ -636,15 +636,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
-msgstr ""
+msgstr "FAQ-artiklar (nyligen skapad)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (recently changed)"
-msgstr ""
+msgstr "FAQ-artiklar (nyligen ändrade)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (Top 10)"
-msgstr ""
+msgstr "FAQ-artiklar (Topp 10)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
@@ -684,15 +684,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
-msgstr ""
+msgstr "Den här artikeln är tom!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
-msgstr ""
+msgstr "Senast skapade FAQ-artiklar"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Top 10 FAQ articles"
-msgstr ""
+msgstr "Topp 10 FAQ-artiklar"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
@@ -700,19 +700,19 @@ msgstr ""
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
-msgstr ""
+msgstr "intern"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "external"
-msgstr ""
+msgstr "extern"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "public"
-msgstr ""
+msgstr "offentlig"
 
 #. JS File: FAQ.Agent.ConfirmationDialog
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
@@ -720,7 +720,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Add FAQ article"
-msgstr ""
+msgstr "Lägg till FAQ-artikel"
 
 #. SysConfig
 msgid "CSS color for the voting result."
@@ -732,7 +732,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Category Management"
-msgstr ""
+msgstr "Kategorihantering"
 
 #. SysConfig
 msgid "Category Management."
@@ -900,7 +900,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Delete this FAQ"
-msgstr ""
+msgstr "Radera denna FAQ"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
@@ -960,7 +960,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Edit this FAQ"
-msgstr ""
+msgstr "Redigera FAQ"
 
 #. SysConfig
 msgid "Enable multiple languages on FAQ module."
@@ -980,7 +980,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Explorer"
-msgstr ""
+msgstr "Utforskare"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
@@ -1044,7 +1044,7 @@ msgstr ""
 
 #. SysConfig
 msgid "History of this FAQ"
-msgstr ""
+msgstr "FAQ-historik"
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
@@ -1060,11 +1060,11 @@ msgstr ""
 
 #. SysConfig
 msgid "Journal"
-msgstr ""
+msgstr "Loggbok"
 
 #. SysConfig
 msgid "Language Management"
-msgstr ""
+msgstr "Språkhantering"
 
 #. SysConfig
 msgid "Language Management."
@@ -1076,7 +1076,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
-msgstr ""
+msgstr "Länka ett annat objekt till denna FAQ-artikel"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
@@ -1220,7 +1220,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Print this FAQ"
-msgstr ""
+msgstr "Skriv ut FAQ"
 
 #. SysConfig
 msgid "Public FAQ Print."
@@ -1240,7 +1240,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Queue for the approval of FAQ articles."
-msgstr ""
+msgstr "Kö för godkännande av FAQ-artiklar."
 
 #. SysConfig
 msgid "Rates for voting. Key must be in percent."
@@ -1252,7 +1252,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Search FAQ"
-msgstr ""
+msgstr "Sök FAQ"
 
 #. SysConfig
 msgid "Search FAQ Small."
@@ -1300,11 +1300,11 @@ msgstr ""
 
 #. SysConfig
 msgid "Show FAQ Article with HTML."
-msgstr ""
+msgstr "Visa FAQ-artikel med HTML."
 
 #. SysConfig
 msgid "Show FAQ path yes/no."
-msgstr ""
+msgstr "Visa FAQ sökväg ja/nej."
 
 #. SysConfig
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
@@ -1364,11 +1364,11 @@ msgstr ""
 
 #. SysConfig
 msgid "Solution"
-msgstr ""
+msgstr "Lösning"
 
 #. SysConfig
 msgid "Symptom"
-msgstr ""
+msgstr "Symptom"
 
 #. SysConfig
 msgid "Text Only"
@@ -1412,15 +1412,15 @@ msgstr ""
 
 #. SysConfig
 msgid "external (customer)"
-msgstr ""
+msgstr "extern (kunder)"
 
 #. SysConfig
 msgid "internal (agent)"
-msgstr ""
+msgstr "intern (agent)"
 
 #. SysConfig
 msgid "public (all)"
-msgstr ""
+msgstr "offentlig (alla)"
 
 #. SysConfig
 msgid "public (public)"

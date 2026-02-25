@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'Добавить статью FAQ';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'Ключевые слова';
     $Self->{Translation}->{'A category is required.'} = 'Нужно выбрать категорию.';
     $Self->{Translation}->{'Approval'} = 'Одобрено';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Добавить язык';
     $Self->{Translation}->{'Add Language'} = 'Добавить язык';
     $Self->{Translation}->{'Edit Language'} = 'Изменить язык';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Подтвердите удаление этого языка!';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Этот язык удалять нельзя. На нём написана как минимум одна статья FAQ!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Этот язык использован в следующих статьях FAQ';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Вставить полностью FAQ и ссылку';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Последние обновления статей FAQ';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Статьи FAQ не найдены.';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = 'Нужна оценка!';
     $Self->{Translation}->{'This article is empty!'} = 'Эта статья пуста!';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Новые статьи FAQ';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Последние обновления статей FAQ';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Top 10 статей FAQ';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'Тип содержимого';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'служебное';
     $Self->{Translation}->{'external'} = 'открытое';
     $Self->{Translation}->{'public'} = 'общедоступное';
@@ -400,6 +400,7 @@ sub Data {
         'Динамические поля, отображаемые в окне подробного просмотра статьи FAQ в общедоступном интерфейсе.';
     $Self->{Translation}->{'Edit this FAQ'} = 'Изменить этот FAQ';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Разрешить многоязычность в модуле FAQ.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'Включить возможность поиска соответствующих контексту статей FAQ в интерфейсе клиента.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Разрешить функцию оценки в модуле FAQ.';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'Показывать содержимое подразделов.';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Показывать последние изменения в указаных интерфейсах.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Показывать новые пункты в указанных интерфейсах.';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Показывать "звезды" для статей с рейтингом равным или больше заданного здесь значения (установите в "0" для отключения показа). ';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Показывать Top 10 в указанных интерфейсах.';

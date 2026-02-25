@@ -28,7 +28,7 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Approval"
-msgstr ""
+msgstr "Godkendt"
 
 #. Template: AgentFAQCategory
 msgid "FAQ Category Management"
@@ -56,7 +56,7 @@ msgstr ""
 
 #. Template: AgentFAQCategory
 msgid "Subcategory of"
-msgstr ""
+msgstr "Underkategori af"
 
 #. Template: AgentFAQCategory
 msgid "Please select at least one permission group."
@@ -68,7 +68,7 @@ msgstr ""
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
-msgstr ""
+msgstr "Vil blive vist som kommentar i Explore."
 
 #. Template: AgentFAQCategory
 msgid "Do you really want to delete this category?"
@@ -124,15 +124,15 @@ msgstr ""
 
 #. Template: AgentFAQHistory
 msgid "History of"
-msgstr ""
+msgstr "Historik af"
 
 #. Template: AgentFAQHistory
 msgid "History Content"
-msgstr ""
+msgstr "Historik"
 
 #. Template: AgentFAQHistory
 msgid "Createtime"
-msgstr ""
+msgstr "Oprettelsestid"
 
 #. Template: AgentFAQJournalOverviewSmall
 msgid "No FAQ Journal data found."
@@ -208,7 +208,7 @@ msgstr ""
 
 #. Template: AgentFAQSearch
 msgid "Last changed by"
-msgstr ""
+msgstr "Sidst ændret af"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (before/after)"
@@ -288,7 +288,7 @@ msgstr ""
 
 #. Template: AgentFAQZoom
 msgid "Votes"
-msgstr ""
+msgstr "Stemmer"
 
 #. Template: AgentFAQZoom
 msgid "No votes found!"
@@ -344,7 +344,7 @@ msgstr ""
 
 #. Template: CustomerFAQExplorer
 msgid "Latest updated FAQ articles"
-msgstr ""
+msgstr "Sidst ændrede artikler"
 
 #. Template: CustomerFAQExplorer
 msgid "No FAQ articles found."
@@ -384,7 +384,7 @@ msgstr ""
 
 #. Template: CustomerFAQSearch
 msgid "Time restrictions"
-msgstr ""
+msgstr "Tidsbegrænsninger"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created"
@@ -532,7 +532,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
-msgstr ""
+msgstr "Resultat"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
@@ -556,7 +556,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Number"
-msgstr ""
+msgstr "FAQ Nummer"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
@@ -604,15 +604,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
-msgstr ""
+msgstr "Tak for din stemme!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "You have already voted!"
-msgstr ""
+msgstr "Du har allerede stemt!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "No rate selected!"
-msgstr ""
+msgstr "Ingen rate valgt!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
@@ -688,11 +688,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
-msgstr ""
+msgstr "Nyeste artikler"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Top 10 FAQ articles"
-msgstr ""
+msgstr "Top 10 artikler"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
@@ -700,19 +700,19 @@ msgstr ""
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
-msgstr ""
+msgstr "intern"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "external"
-msgstr ""
+msgstr "ekstern"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "public"
-msgstr ""
+msgstr "offentlig"
 
 #. JS File: FAQ.Agent.ConfirmationDialog
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
@@ -1412,15 +1412,15 @@ msgstr ""
 
 #. SysConfig
 msgid "external (customer)"
-msgstr ""
+msgstr "ekstern (kunde)"
 
 #. SysConfig
 msgid "internal (agent)"
-msgstr ""
+msgstr "intern (agent)"
 
 #. SysConfig
 msgid "public (all)"
-msgstr ""
+msgstr "offentlig (alle)"
 
 #. SysConfig
 msgid "public (public)"

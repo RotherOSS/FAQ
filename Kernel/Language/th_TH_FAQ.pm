@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'เพิ่มบทความ FAQ';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'คีย์เวิร์ด';
     $Self->{Translation}->{'A category is required.'} = 'ต้องระบุหมวดหมู่';
     $Self->{Translation}->{'Approval'} = 'การอนุมัติ';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'เพิ่มภาษา';
     $Self->{Translation}->{'Add Language'} = 'เพิ่มภาษา';
     $Self->{Translation}->{'Edit Language'} = 'แก้ไขภาษา';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'คุณต้องการลบภาษานี้หรือไม่?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'คุณไม่สามารถลบภาษานี้เพราะภาษานี้กำลังใช้ในอย่างน้อยหนึ่งในบทความ FAQ!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'ภาษานี้ใช้ในบทความ FAQ(s) เหล่านี้';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'ป้อน FAQ ฉบับเต็มและลิงค์';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'บทความ FAQ ที่อัปเดตล่าสุด';
     $Self->{Translation}->{'No FAQ articles found.'} = 'ไม่พบบทความ FAQ ';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = 'บทความนี้ว่างเปล่า';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'บทความ FAQ ที่สร้างล่าสุด';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'บทความ FAQ ที่อัปเดตล่าสุด';
     $Self->{Translation}->{'Top 10 FAQ articles'} = '10 บทความ FAQ ยอดนิยม';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'ภายใน';
     $Self->{Translation}->{'external'} = 'ภายนอก';
     $Self->{Translation}->{'public'} = 'สาธารณะ';
@@ -400,6 +400,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'แก้ไข FAQ นี้';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'เปิดใช้งานหลากหลายภาษา ในโมดูล FAQ.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'เปิดใช้งานกลไกการโหวตในโมดูลFAQ.';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'แสดงรายการของหมวดหมู่ย่อย';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'แสดงรายการการเปลี่ยนแปลงที่ผ่านมาล่าสุดในอินเตอร์เฟซที่กำหนดไว้';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'แสดงรายการที่สร้างล่าสุดในอินเตอร์เฟซที่กำหนดไว้.';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'แสดง10 รายการยอดนิยมในอินเตอร์เฟซที่กำหนดไว้';

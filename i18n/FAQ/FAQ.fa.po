@@ -28,7 +28,7 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Approval"
-msgstr ""
+msgstr "تایید"
 
 #. Template: AgentFAQCategory
 msgid "FAQ Category Management"
@@ -56,7 +56,7 @@ msgstr ""
 
 #. Template: AgentFAQCategory
 msgid "Subcategory of"
-msgstr ""
+msgstr "زیر مجموعه‌ی"
 
 #. Template: AgentFAQCategory
 msgid "Please select at least one permission group."
@@ -68,7 +68,7 @@ msgstr ""
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
-msgstr ""
+msgstr "در Explorer به صورت یک متن توضیحی نمایش داده خواهند شد."
 
 #. Template: AgentFAQCategory
 msgid "Do you really want to delete this category?"
@@ -124,15 +124,15 @@ msgstr ""
 
 #. Template: AgentFAQHistory
 msgid "History of"
-msgstr ""
+msgstr "سوابق"
 
 #. Template: AgentFAQHistory
 msgid "History Content"
-msgstr ""
+msgstr "محتوای سابقه"
 
 #. Template: AgentFAQHistory
 msgid "Createtime"
-msgstr ""
+msgstr "زمان ایجاد "
 
 #. Template: AgentFAQJournalOverviewSmall
 msgid "No FAQ Journal data found."
@@ -176,7 +176,7 @@ msgstr ""
 
 #. Template: AgentFAQOverviewNavBar
 msgid "Context Settings"
-msgstr ""
+msgstr "تنظیمات مفاد"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "FAQ articles per page"
@@ -208,7 +208,7 @@ msgstr ""
 
 #. Template: AgentFAQSearch
 msgid "Last changed by"
-msgstr ""
+msgstr "آخرین تغییر به وسیله"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (before/after)"
@@ -288,7 +288,7 @@ msgstr ""
 
 #. Template: AgentFAQZoom
 msgid "Votes"
-msgstr ""
+msgstr "آرا"
 
 #. Template: AgentFAQZoom
 msgid "No votes found!"
@@ -300,7 +300,7 @@ msgstr ""
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
-msgstr ""
+msgstr "دریافت پیوست"
 
 #. Template: AgentFAQZoom
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
@@ -344,7 +344,7 @@ msgstr ""
 
 #. Template: CustomerFAQExplorer
 msgid "Latest updated FAQ articles"
-msgstr ""
+msgstr "آخرین اقلام تعریف شده"
 
 #. Template: CustomerFAQExplorer
 msgid "No FAQ articles found."
@@ -384,7 +384,7 @@ msgstr ""
 
 #. Template: CustomerFAQSearch
 msgid "Time restrictions"
-msgstr ""
+msgstr "محدودیت‌های زمان"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created"
@@ -532,7 +532,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
-msgstr ""
+msgstr "نتیجه"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
@@ -604,15 +604,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
-msgstr ""
+msgstr "از رای شما سپاسگزاریم!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "You have already voted!"
-msgstr ""
+msgstr "شما قبلا رای داده‌اید!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "No rate selected!"
-msgstr ""
+msgstr "امتیاز را انتخاب نکرده‌اید!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
@@ -636,15 +636,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
-msgstr ""
+msgstr "اخبار FAQ (جدیدا ایجاد شده)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (recently changed)"
-msgstr ""
+msgstr "اخبار FAQ (جدیدا تغییر یافته)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (Top 10)"
-msgstr ""
+msgstr "اخبار FAQ (۱۰ تای برتر)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
@@ -688,11 +688,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
-msgstr ""
+msgstr "آخرین اقلام ایجاد شده"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Top 10 FAQ articles"
-msgstr ""
+msgstr "بالاترین ۱۰ قلم"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
@@ -712,7 +712,7 @@ msgstr ""
 
 #. JS File: FAQ.Agent.ConfirmationDialog
 msgid "Ok"
-msgstr ""
+msgstr "تایید"
 
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."

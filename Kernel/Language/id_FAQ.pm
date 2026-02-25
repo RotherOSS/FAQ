@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'Tambah Artikel FAQ';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'Katakunci';
     $Self->{Translation}->{'A category is required.'} = 'Sebuah kategori dibutuhkan.';
     $Self->{Translation}->{'Approval'} = 'Persetujuan';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Tambah bahasa';
     $Self->{Translation}->{'Add Language'} = 'Tambah Bahasa';
     $Self->{Translation}->{'Edit Language'} = 'Edit Bahasa';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Anda yakin akan menghapus bahasa ini?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Anda tidak dapat menghapus bahasa ini. Bahasa ini digunakan pada salah satu artikel FAQ!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Bahasa ini digunakan pada Artikel-artikel FAQ berikut';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Masukkan Seluruh Link dan FAQ';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Artikel FAQ paling baru';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Tidak ditemukan artikel FAQ';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = 'Artikel ini kosong!';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Artikel FAQ terakhir dibuat';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Artikel FAQ paling baru';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Artikel FAQ 10 teratas';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'internal';
     $Self->{Translation}->{'external'} = 'eksternal';
     $Self->{Translation}->{'public'} = 'umum';
@@ -400,6 +400,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'ubah FAQ ini.';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Aktifkan multibahasa pada modul FAQ.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Aktifkan mekanisme voting pada modul FA';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'Tampilkan item dari subkategori.';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Tampilkan item terakhir yang di ubah pada antarmuka yang di tentukan.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Tampilkan item terakhir yang di ciptakan pada antarmuka yang di tentukan.';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Tampilkan 10 item teratas pada antarmuka yang di tentukan.';

@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = '添加常見問題文章';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = '關鍵字';
     $Self->{Translation}->{'A category is required.'} = '目錄分類為必須的!';
     $Self->{Translation}->{'Approval'} = '審批';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = '添加語言';
     $Self->{Translation}->{'Add Language'} = '添加語言';
     $Self->{Translation}->{'Edit Language'} = '編輯語言';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = '您確定要刪除此語言？';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         '您無法刪除此語言。它被至少一篇常見問題文章使用中。';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = '以下常見問題文章正使用此目錄分類';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = '插入全部常見問題及連結';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = '最近更新常見問題文章';
     $Self->{Translation}->{'No FAQ articles found.'} = '沒有找到常見問題文章。';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = '此文章為空白!';
     $Self->{Translation}->{'Latest created FAQ articles'} = '最近添加的常見問題文章';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = '最近更新常見問題文章';
     $Self->{Translation}->{'Top 10 FAQ articles'} = '首10篇常見問題文章';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = '內部的';
     $Self->{Translation}->{'external'} = '外部的';
     $Self->{Translation}->{'public'} = '公開的';
@@ -400,6 +400,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = '編輯此常見問題';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '啓用常見問題模組多種語言';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = '啓用常見問題模組投票機制';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = '顯示子目錄分類項目';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '顯示指定介面的最近更新項目';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '顯示指定介面的最近創建項目';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = '顯示指定介面的首10個項目';

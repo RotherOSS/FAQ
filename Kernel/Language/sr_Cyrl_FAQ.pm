@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'Додај FAQ чланак';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'Кључне речи';
     $Self->{Translation}->{'A category is required.'} = 'Категорија је обавезна.';
     $Self->{Translation}->{'Approval'} = 'Одобрење';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Додај језик';
     $Self->{Translation}->{'Add Language'} = 'Додај Језик';
     $Self->{Translation}->{'Edit Language'} = 'Уреди Језик';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Да ли заиста желите да избришете овај језик?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Не можете обрисати овај језик. Употребљен је у бар једном FAQ чланку!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Овај језик је употребљен у следећим FAQ чланцима';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Унеси комплетан FAQ и везу';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Последње ажурирани FAQ чланци';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Нису пронађени FAQ чланци.';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = 'Неопходна оцена!';
     $Self->{Translation}->{'This article is empty!'} = 'Чланак је празан!';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Последње креирани FAQ чланци';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Последње ажурирани FAQ чланци';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Најпопуларнијих 10 FAQ чланака';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'Тип садржаја';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'интерно';
     $Self->{Translation}->{'external'} = 'екстерно';
     $Self->{Translation}->{'public'} = 'јавно';
@@ -400,6 +400,7 @@ sub Data {
         'Динамичка поља приказана у детаљном прегледу FAQ у јавном интерфејсу.';
     $Self->{Translation}->{'Edit this FAQ'} = 'Уреди овај FAQ';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Активирање више језика на FAQ модулу.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'Активира функцију сродних чланака за интерфејс клијента.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Активирање механизма за гласање на FAQ модулу.';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'Прикажи ставке субкатегорија.';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Прикажи задње промењене ставке у дефинисаним интерфејсима.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Прикажи задње креиране ставке у дефинисаним интерфејсима.';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Прикажи звездице за чланке са једнаком или бољом оценом од дефинисане вредности (поставите вредност \'0\' за деактивирање приказа).';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Прикажи првих 10 ставки у дефинисаним интерфејсима.';

@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'Ongeza makala ya maswali';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'Maneno makuu';
     $Self->{Translation}->{'A category is required.'} = 'Sehemu inahitajika';
     $Self->{Translation}->{'Approval'} = 'Idhini';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Ongeza lugha';
     $Self->{Translation}->{'Add Language'} = 'Ongeza Lugha';
     $Self->{Translation}->{'Edit Language'} = 'Hariri Lugha';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Je unataka kufuta hii lugha?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Huwezi kufuta lugha hii. Imetumika kwenye makala ya maswali zaidi ya moja.';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Hii lugha imetumika katika makala ya(za) maswali ifuatayo.';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Ingiza maswali yote na link';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Marekebisho mapya ya makala ya maswali';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Hakuna makala ya maswali iliyopatikana';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = '';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Makala mpya ya maswali';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Marekebisho mapya ya makala ya maswali';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Makala 10 bora ya Maswali';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'ndani';
     $Self->{Translation}->{'external'} = 'nje';
     $Self->{Translation}->{'public'} = 'umma';
@@ -400,6 +400,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'Hariri makala hii';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Wezesha Lugha nyingi nyingi katika maswali haya.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Wezesha ';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'Inaonyesha vipengele vya kategori.';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Inaonyesha vipengele vilivyobadilishwa katika kiolesura kilichofafanuliwa.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Inaonyesha vipengele vilivyotengenezwa mwishoni katika kiolesura  kilichofafanuliwa.';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Inaonyesha vipengele  10  bora katika kiolesura kilichofafanuliwa.';

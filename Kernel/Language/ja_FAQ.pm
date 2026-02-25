@@ -1,8 +1,8 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,6 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'FAQの新規追加';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
     $Self->{Translation}->{'Keywords'} = 'キーワード';
     $Self->{Translation}->{'A category is required.'} = 'カテゴリは必須項目です。';
     $Self->{Translation}->{'Approval'} = '承認';
@@ -78,7 +79,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = '言語を追加';
     $Self->{Translation}->{'Add Language'} = '言語を追加';
     $Self->{Translation}->{'Edit Language'} = '言語を編集';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'この言語を削除してよろしいですか？';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'この言語を削除することはできません。一つ以上のFAQで使用されています！';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'この言語は、以下のFAQで使用されています。';
@@ -144,6 +144,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'FAQ全文とリンクを挿入する';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = '最後に更新されたFAQ項目';
     $Self->{Translation}->{'No FAQ articles found.'} = '該当する記事はありません。';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,13 +282,12 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '評価してください。';
     $Self->{Translation}->{'This article is empty!'} = 'この記事は空です!';
     $Self->{Translation}->{'Latest created FAQ articles'} = '最後に作成されたFAQ項目';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = '最後に更新されたFAQ項目';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Top 10 FAQ項目';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'コンテンツタイプ';
 
-    # Database XML Definition: FAQ.sopm
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = '内部向';
     $Self->{Translation}->{'external'} = '外部向';
     $Self->{Translation}->{'public'} = '公開';
@@ -400,6 +400,7 @@ sub Data {
         '公開インターフェイスのFAQズーム画面に表示するダイナミック・フィールド';
     $Self->{Translation}->{'Edit this FAQ'} = 'この記事を編集';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '多言語を有効にする';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = '評価の機能を有効にする';
@@ -527,6 +528,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'サブカテゴリーのトピックを表示する/表示しない';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '最新の変更を表示する画面（担当者用/顧客用/公開）を定義';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '最新の新規作成を表示する画面（担当者用/顧客用/公開）を定義';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'トップ10を表示する画面（担当者用/顧客用/公開）を定義';
