@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2024-08-02 02:07+0000\n"
+"POT-Creation-Date: 2026-02-26 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,10 +12,6 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
-msgstr ""
-
-#. Template: AgentFAQAdd
-msgid "All fields marked with an asterisk (*) are mandatory."
 msgstr ""
 
 #. Template: AgentFAQAdd
@@ -698,6 +694,10 @@ msgstr ""
 msgid "Content Type"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
+msgid "Select the attribute which FAQs will be searched by"
+msgstr ""
+
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
 msgstr ""
@@ -1044,6 +1044,10 @@ msgstr ""
 
 #. SysConfig
 msgid "History of this FAQ"
+msgstr ""
+
+#. SysConfig
+msgid "If activated, FAQ articles of status type internal are also taken into account for the approval process."
 msgstr ""
 
 #. SysConfig
@@ -1403,7 +1407,7 @@ msgid "Ticket body for approval of FAQ article."
 msgstr ""
 
 #. SysConfig
-msgid "Ticket subject for approval of FAQ article."
+msgid "Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
 
 #. SysConfig

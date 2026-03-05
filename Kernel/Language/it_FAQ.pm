@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -78,7 +78,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Aggiungi lingua';
     $Self->{Translation}->{'Add Language'} = 'Aggiungi Lingua';
     $Self->{Translation}->{'Edit Language'} = 'Modifica della lingua';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Si desidera veramente eliminare questa lingua?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Non è possibile eliminare questa lingua. E\' utilizzata in almeno un articolo della FAQ!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Questo linguaggio è utilizzato nel(i) seguente(i) articoli della FAQ';
@@ -144,6 +143,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Inserire la FAQ completa e il Link';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Ultimi articoli FAQ aggiornati';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Nessun articolo FAQ trovato.';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,19 +281,18 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = 'Questo articolo è vuoto!';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Ultimi articoli FAQ creati';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Ultimi articoli FAQ aggiornati';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Top 10 articoli FAQ';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'Tipo di contenuto';
 
-    # Database XML Definition: FAQ.sopm
+    # Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
+    $Self->{Translation}->{'Select the attribute which FAQs will be searched by'} = '';
+
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'interno';
     $Self->{Translation}->{'external'} = 'esterno';
     $Self->{Translation}->{'public'} = 'pubblico';
-
-    # JS File: FAQ.Agent.ConfirmationDialog
-    $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image.'} =
@@ -402,6 +401,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'Modifica questa FAQ';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Abilita più lingue nel modulo FAQ.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Abilita meccanismo di voto nel modulo FAQ.';
@@ -422,6 +422,8 @@ sub Data {
     $Self->{Translation}->{'Full FAQ'} = '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Gruppo per l\'approvazione di articoli FAQ.';
     $Self->{Translation}->{'History of this FAQ'} = 'Storico di questa FAQ';
+    $Self->{Translation}->{'If activated, FAQ articles of status type internal are also taken into account for the approval process.'} =
+        '';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = '';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = '';
     $Self->{Translation}->{'Interfaces where the quick search should be shown.'} = 'Interfacce dove la ricerca rapida dovrebbe essere vista.';
@@ -529,6 +531,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'Mostra gli elementi delle sottocategorie.';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Mostra i principali 10 nelle interfacce specificate.';
@@ -560,7 +564,8 @@ sub Data {
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         '';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'Corpo del ticket per l\'approvazione dell\'articolo delle FAQ.';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article.'} = 'Oggetto del ticket per l\'approvazione dell\'articolo delle FAQ.';
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
+        '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = 'Elemento della barra degli strumenti per una scorciatoia.';
     $Self->{Translation}->{'external (customer)'} = 'esterno (cliente)';
     $Self->{Translation}->{'internal (agent)'} = 'interno (agente)';

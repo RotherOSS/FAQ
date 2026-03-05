@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -78,7 +78,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = '添加語言';
     $Self->{Translation}->{'Add Language'} = '添加語言';
     $Self->{Translation}->{'Edit Language'} = '編輯語言';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = '您確定要刪除此語言？';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         '您無法刪除此語言。它被至少一篇常見問題文章使用中。';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = '以下常見問題文章正使用此目錄分類';
@@ -144,6 +143,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = '插入全部常見問題及連結';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = '最近更新常見問題文章';
     $Self->{Translation}->{'No FAQ articles found.'} = '沒有找到常見問題文章。';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,19 +281,18 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = '此文章為空白!';
     $Self->{Translation}->{'Latest created FAQ articles'} = '最近添加的常見問題文章';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = '最近更新常見問題文章';
     $Self->{Translation}->{'Top 10 FAQ articles'} = '首10篇常見問題文章';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML Definition: FAQ.sopm
+    # Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
+    $Self->{Translation}->{'Select the attribute which FAQs will be searched by'} = '';
+
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = '內部的';
     $Self->{Translation}->{'external'} = '外部的';
     $Self->{Translation}->{'public'} = '公開的';
-
-    # JS File: FAQ.Agent.ConfirmationDialog
-    $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image.'} =
@@ -402,6 +401,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = '編輯此常見問題';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '啓用常見問題模組多種語言';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = '啓用常見問題模組投票機制';
@@ -422,6 +422,8 @@ sub Data {
     $Self->{Translation}->{'Full FAQ'} = '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = '常見問題文章審批用戶組';
     $Self->{Translation}->{'History of this FAQ'} = '此常見問題歷史';
+    $Self->{Translation}->{'If activated, FAQ articles of status type internal are also taken into account for the approval process.'} =
+        '';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = '常見問題為本的工單包含的內部欄位';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = '常見問題為本的工單包含的每一欄位名稱';
     $Self->{Translation}->{'Interfaces where the quick search should be shown.'} = '顯示快速搜尋的介面';
@@ -529,6 +531,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = '顯示子目錄分類項目';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '顯示指定介面的最近更新項目';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '顯示指定介面的最近創建項目';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = '顯示指定介面的首10個項目';
@@ -560,7 +564,8 @@ sub Data {
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         '';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = '';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article.'} = '';
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
+        '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = '';
     $Self->{Translation}->{'external (customer)'} = '外部 (客戶)';
     $Self->{Translation}->{'internal (agent)'} = '內部 (服務員)';

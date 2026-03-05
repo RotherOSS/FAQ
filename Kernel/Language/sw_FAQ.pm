@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -78,7 +78,6 @@ sub Data {
     $Self->{Translation}->{'Add language'} = 'Ongeza lugha';
     $Self->{Translation}->{'Add Language'} = 'Ongeza Lugha';
     $Self->{Translation}->{'Edit Language'} = 'Hariri Lugha';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'Je unataka kufuta hii lugha?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Huwezi kufuta lugha hii. Imetumika kwenye makala ya maswali zaidi ya moja.';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Hii lugha imetumika katika makala ya(za) maswali ifuatayo.';
@@ -144,6 +143,7 @@ sub Data {
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Ingiza maswali yote na link';
 
     # Template: CustomerFAQExplorer
+    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Marekebisho mapya ya makala ya maswali';
     $Self->{Translation}->{'No FAQ articles found.'} = 'Hakuna makala ya maswali iliyopatikana';
 
     # Template: CustomerFAQRelatedArticles
@@ -281,19 +281,18 @@ sub Data {
     $Self->{Translation}->{'Need rate!'} = '';
     $Self->{Translation}->{'This article is empty!'} = '';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'Makala mpya ya maswali';
-    $Self->{Translation}->{'Latest updated FAQ articles'} = 'Marekebisho mapya ya makala ya maswali';
     $Self->{Translation}->{'Top 10 FAQ articles'} = 'Makala 10 bora ya Maswali';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML Definition: FAQ.sopm
+    # Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
+    $Self->{Translation}->{'Select the attribute which FAQs will be searched by'} = '';
+
+    # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'ndani';
     $Self->{Translation}->{'external'} = 'nje';
     $Self->{Translation}->{'public'} = 'umma';
-
-    # JS File: FAQ.Agent.ConfirmationDialog
-    $Self->{Translation}->{'Ok'} = 'Sawa';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image.'} =
@@ -357,6 +356,8 @@ sub Data {
         'Fafanua chaguo-msingi wa maswali yanayoulizwa mara kwa mara ya majibu ya utafutaji katika intafase ya umma. Juu: Kongwe zaidi juu. Chini: Ya sasa hivi juu';
     $Self->{Translation}->{'Defines the default shown FAQ search attribute for FAQ search screen.'} =
         'Inafafana sifa ya utafutaji wa maswali yanayoulizwa mara kwa mara kwa ajili ya skrini ya utafutaji maswali yanayoulizwa mara kwa mara.';
+    $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
+        '';
     $Self->{Translation}->{'Defines the information to be inserted in a FAQ based Ticket. "Full FAQ" includes text, attachments and inline images.'} =
         'Fafanua taarifa itakayoingizwa kwenye maswali yanayoulizwa mara kwa mara kwa misingi ya tiketi. "Maswali yaliyojaa nayayoulizwa mara kwa mara" yanayojumuisha nakala, viambatanishi na taswaira ya mstari wa ndani.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
@@ -400,6 +401,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'Hariri makala hii';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Wezesha Lugha nyingi nyingi katika maswali haya.';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Wezesha ';
@@ -420,6 +422,8 @@ sub Data {
     $Self->{Translation}->{'Full FAQ'} = '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Makundi ya idhini kwa maswali yaliyoulizwa mara kwa mara.';
     $Self->{Translation}->{'History of this FAQ'} = 'Historia ya maswali haya yaliyoulizwa mara kwa mara.';
+    $Self->{Translation}->{'If activated, FAQ articles of status type internal are also taken into account for the approval process.'} =
+        '';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = 'Jumuisha sehemu za ndani za maswali yaliyoulizwa mara kwa mara kulingana na tiketi.';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'Jumuisha jina la kila sehemu ya maswali yaliyoulizwa mara nyingi kulingana na tiketi.';
     $Self->{Translation}->{'Interfaces where the quick search should be shown.'} = 'Kiolesura ambacho utafutaji wa haraka unatakiwa kuonyeshwa.';
@@ -527,6 +531,8 @@ sub Data {
     $Self->{Translation}->{'Show items of subcategories.'} = 'Inaonyesha vipengele vya kategori.';
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Inaonyesha vipengele vilivyobadilishwa katika kiolesura kilichofafanuliwa.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Inaonyesha vipengele vilivyotengenezwa mwishoni katika kiolesura  kilichofafanuliwa.';
+    $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
+        '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Inaonyesha vipengele  10  bora katika kiolesura kilichofafanuliwa.';
@@ -558,7 +564,8 @@ sub Data {
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         'Mpangilio huu unafafanua kwamba kipengele cha maswali yanayoulizwa mara kwa mara kinaweza kuunganishwa na kipengele kingine cha tiketi kwa kutumia aina ya kiunganishi kizazi.';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'Kiini cha tiketi kwa Idhini ya makala ya maswali yanayoulizwa mara kwa mara.';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article.'} = 'Somo la tiketi kwa Idhini ya makala ya maswali yanayoulizwa mara kwa mara.';
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
+        '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = 'Kipengele cha mwambaa zana kwa ajili ya mkato.';
     $Self->{Translation}->{'external (customer)'} = 'nje (mteja)';
     $Self->{Translation}->{'internal (agent)'} = 'ndani (wakala)';
