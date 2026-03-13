@@ -192,6 +192,8 @@ sub Run {
         UserID => $Self->{UserID},
     );
 
+    my $HideEmptyCategories = $Config->{HideEmptyCategories} // 0;
+
     # check if there are subcategories
     if ( $CategoryIDsRef && ref $CategoryIDsRef eq 'ARRAY' && @{$CategoryIDsRef} ) {
 
@@ -205,7 +207,14 @@ sub Run {
             Data => {},
         );
 
+        # get default interface settings
+        my $Interface = $FAQObject->StateTypeGet(
+            Name   => 'external',
+            UserID => $Self->{UserID},
+        );
+
         # show data for each subcategory
+        CATEGORY:
         for my $SubCategoryID ( @{$CategoryIDsRef} ) {
 
             my %SubCategoryData = $FAQObject->CategoryGet(
@@ -220,13 +229,33 @@ sub Run {
             );
 
             # get the number of FAQ articles in this category
-            $SubCategoryData{ArticleCount} = $FAQObject->FAQCount(
-                CategoryIDs  => [$SubCategoryID],
-                ItemStates   => $InterfaceStates,
-                OnlyApproved => 1,
-                Valid        => 1,
-                UserID       => $Self->{UserID},
-            );
+            # if HideEmptyCategories is enabled, only count visible articles for this customer
+            if ($HideEmptyCategories) {
+                my @VisibleItemIDs = $FAQObject->FAQSearch(
+                    CategoryIDs  => [$SubCategoryID],
+                    States       => $InterfaceStates,
+                    Interface    => $Interface,
+                    Approved     => 1,
+                    ValidIDs     => [1],
+                    Limit        => 1,
+                    UserID       => $Self->{UserID},
+                );
+                $SubCategoryData{ArticleCount} = scalar @VisibleItemIDs;
+            }
+            else {
+                $SubCategoryData{ArticleCount} = $FAQObject->FAQCount(
+                    CategoryIDs  => [$SubCategoryID],
+                    ItemStates   => $InterfaceStates,
+                    OnlyApproved => 1,
+                    Valid        => 1,
+                    UserID       => $Self->{UserID},
+                );
+            }
+
+            # skip category if it has no visible articles and HideEmptyCategories is enabled
+            if ( $HideEmptyCategories && !$SubCategoryData{ArticleCount} && !$SubCategoryData{SubCategoryCount} ) {
+                next CATEGORY;
+            }
 
             # output the category data
             $LayoutObject->Block(

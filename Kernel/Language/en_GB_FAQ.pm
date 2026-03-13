@@ -457,6 +457,8 @@ sub Data {
         '';
     $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface.'} =
         '';
+    $Self->{Translation}->{'Hide categories in the FAQ Explorer that have no visible articles for the customer.'} =
+        '';
     $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface.'} =
         '';
     $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface.'} =
