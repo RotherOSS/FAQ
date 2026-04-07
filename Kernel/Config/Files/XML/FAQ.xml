@@ -454,7 +454,7 @@ Your OTOBO Notification Master
                         <Item Key="NavBar">FAQ</Item>
                         <Item Key="Type">Menu</Item>
                         <Item Key="Block">ItemArea</Item>
-                        <Item Key="AccessKey">f</Item>
+                        <Item Key="AccessKey">q</Item>
                         <Item Key="Prio">350</Item>
                     </Hash>
                 </Item>
@@ -551,7 +551,7 @@ Your OTOBO Notification Master
                         <Item Key="NavBar">FAQ</Item>
                         <Item Key="Type">Menu</Item>
                         <Item Key="Block"></Item>
-                        <Item Key="AccessKey"></Item>
+                        <Item Key="AccessKey">q</Item>
                         <Item Key="Prio">700</Item>
                         <Item Key="svgIcon">var/httpd/htdocs/skins/Customer/default/img/faq.svg</Item>
                     </Hash>
