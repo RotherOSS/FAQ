@@ -2,7 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# --
+# $origin: otobo - a41f505f8ce600f8835e9078226026c9589500b9 - Kernel/System/FAQ.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -96,7 +98,7 @@ sub new {
     # currently there are no FAQ event modules but is needed to initialize otherwise errors are
     #     log due to searching undefined setting into ConfigObject.
     $Self->EventHandlerInit(
-        Config => '',
+        Config => 'FAQ::EventModulePost',
     );
 
     return $Self;
@@ -342,7 +344,8 @@ sub FAQGet {
         # get valid list
         my %ValidList = $Kernel::OM->Get('Kernel::System::Valid')->ValidList();
         $Data{Valid} = $ValidList{ $Data{ValidID} };
-# FAQ Service
+
+        # FAQ Service
 
         # get related services
         my $ServicesRelated = $Self->FAQServiceGet(
@@ -353,7 +356,8 @@ sub FAQGet {
                 $Data{ServiceList}->{ $Service->{'ServiceID'} } = $Service->{'Name'};
             }
         }
-# eo FAQ Service
+
+        # eo FAQ Service
 
         # cache result
         $CacheObject->Set(
@@ -693,7 +697,19 @@ sub FAQAdd {
         ItemID => $ID,
         UserID => $Param{UserID},
     );
-# FAQ Service
+
+    # trigger FAQCreate
+    if ($ConfigObject->Get('Elasticsearch::Active')) {
+        $Self->EventHandler(
+            Event => 'FAQCreate',
+            Data  => {
+                ItemID => $ID,
+            },
+            UserID => $Param{UserID},
+        );
+    }
+
+    # FAQ Service
 
     # add services
 
@@ -706,7 +722,8 @@ sub FAQAdd {
             );
         }
     }
-# EO FAQ Service
+
+    # EO FAQ Service
 
     # check if approval feature is enabled
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') && !$Param{Approved} ) {
@@ -726,7 +743,7 @@ sub FAQAdd {
         }
 
         # create new approval ticket
-        if ( $ApprovalRequired ) {
+        if ($ApprovalRequired) {
             my $Success = $Self->_FAQApprovalTicketCreate(
                 ItemID     => $ID,
                 CategoryID => $Param{CategoryID},
@@ -811,7 +828,8 @@ sub FAQUpdate {
     if ( !defined $Param{ValidID} ) {
         $Param{ValidID} = $FAQData{ValidID};
     }
-# FAQ Services
+
+    # FAQ Services
 
     my $ServicesInDB = $Self->FAQServiceGet(
         ItemID => $Param{ItemID},
@@ -849,7 +867,8 @@ sub FAQUpdate {
     if ($ServicesChanged) {
         $Self->_DeleteFromFAQCache(%Param);
     }
-# eo FAQ Services
+
+    # eo FAQ Services
 
     return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
         SQL => '
@@ -877,6 +896,17 @@ sub FAQUpdate {
     $Self->_DeleteFromFAQCache(%Param);
 
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+
+    # trigger FAQUpdate
+    if ($ConfigObject->Get('Elasticsearch::Active')) {
+        $Self->EventHandler(
+            Event => 'FAQUpdate',
+            Data  => {
+                ItemID => $Param{ItemID},
+            },
+            UserID => $Param{UserID},
+        );
+    }
 
     # update approval
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') && !$Param{ApprovalOff} ) {
@@ -1052,6 +1082,24 @@ sub AttachmentAdd {
         $AttachmentID = $Row[0];
     }
 
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+
+    # trigger AttachmentAdd-Event
+    if ($ConfigObject->Get('Elasticsearch::Active')) {
+        $Self->EventHandler(
+            Event => 'FAQAttachmentAddPost',
+            Data  => {
+                Filename    => $Param{Filename},
+                ContentType => $Param{ContentType},
+                Content     => $Param{Content},
+                Filesize    => $Param{Filesize},
+                Inline      => $Param{Inline},
+                ItemID      => $Param{ItemID},
+            },
+            UserID => $Param{UserID},
+        );
+    }
+
     return $AttachmentID;
 }
 
@@ -1149,10 +1197,31 @@ sub AttachmentDelete {
         }
     }
 
+    my %Attachment = $Self->AttachmentGet(
+        ItemID => $Param{ItemID},
+        FileID => $Param{FileID},
+        UserID => $Param{UserID},
+    );
+
     return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
         SQL  => 'DELETE FROM faq_attachment WHERE id = ? AND faq_id = ? ',
         Bind => [ \$Param{FileID}, \$Param{ItemID} ],
     );
+
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+
+    # trigger FAQAttachmentDeletePost-Event
+    if ($ConfigObject->Get('Elasticsearch::Active')) {
+        $Self->EventHandler(
+            Event => 'FAQAttachmentDeletePost',
+            Data  => {
+                ItemID   => $Param{ItemID},
+                Number   => $Param{Number},
+                Filename => $Attachment{Filename},
+            },
+            UserID => $Param{UserID},
+        );
+    }
 
     return 1;
 }
@@ -1444,7 +1513,8 @@ sub FAQDelete {
         ItemID => $Param{ItemID},
         UserID => $Param{UserID},
     );
-# FAQ Service
+
+    # FAQ Service
 
     # delete all related services
     my $ServiceDataArrayRef = $Self->FAQServiceGet(
@@ -1459,7 +1529,8 @@ sub FAQDelete {
 
         return if !$DeleteSuccess;
     }
-# eo FAQ Service
+
+    # eo FAQ Service
 
     # delete article
     return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
@@ -1470,8 +1541,21 @@ sub FAQDelete {
     # delete cache
     $Self->_DeleteFromFAQCache(%Param);
 
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+
+    # trigger FAQDelete
+    if ($ConfigObject->Get('Elasticsearch::Active')) {
+        $Self->EventHandler(
+            Event => 'FAQDelete',
+            Data  => {
+                ItemID => $Param{ItemID},
+            },
+            UserID => $Param{UserID},
+        );
+    }
     return 1;
 }
+
 # FAQ Service
 
 =head2 FAQServiceAdd()
@@ -1669,6 +1753,7 @@ sub FAQServiceDelete {
 
     return 1;
 }
+
 # eo FAQ Service
 
 =head2 FAQHistoryAdd()
@@ -2131,9 +2216,11 @@ sub FAQKeywordArticleList {
         OrderByDirection => ['Down'],
         Limit            => $SearchLimit,
         UserID           => 1,
-# FAQ Service TODO
+
+        # FAQ Service TODO
         ServiceID => $Param{ServiceID},
-# eo FAQ Service
+
+        # eo FAQ Service
     );
 
     my %KeywordArticeList;
@@ -2840,7 +2927,8 @@ sub _FAQApprovalUpdate {
             }
         }
 
-        if ( $ApprovalRequired ) {
+        if ($ApprovalRequired) {
+
             # create new approval ticket
             my $Success = $Self->_FAQApprovalTicketCreate(
                 ItemID     => $Param{ItemID},
