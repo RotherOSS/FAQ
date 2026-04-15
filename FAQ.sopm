@@ -177,6 +177,7 @@
         <File Permission="660" Location="scripts/test/Selenium/Output/HeaderMeta/CustomerFAQSearch.t" />
         <File Permission="660" Location="scripts/test/Selenium/Output/HeaderMeta/PublicFAQSearch.t" />
         <File Permission="660" Location="scripts/test/Selenium/Output/LinkObject/FAQ.t" />
+        <File Permission="660" Location="var/httpd/htdocs/js/Core.UI.RichTextEditor.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.FAQ.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.FAQZoom.js" />
