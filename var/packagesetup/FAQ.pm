@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -29,6 +29,7 @@ our @ObjectDependencies = (
     'Kernel::System::DB',
     'Kernel::System::DynamicField',
     'Kernel::System::DynamicFieldValue',
+    'Kernel::System::Elasticsearch',
     'Kernel::System::FAQ',
     'Kernel::System::Group',
     'Kernel::System::LinkObject',
@@ -286,6 +287,9 @@ sub CodeUninstall {
 
     # delete all links with FAQ articles
     $Self->_LinkDelete();
+
+    # delete FAQ Elasticsearch index if it exists
+    $Self->_DeleteElasticsearchIndex();
 
     return 1;
 }
@@ -1218,6 +1222,17 @@ sub _MigratePermissions {
             Priority => 'error',
         );
     }
+
+    return 1;
+}
+
+sub _DeleteElasticsearchIndex {
+    my %IndexName = (
+        index => 'faq',
+    );
+    $Kernel::OM->Get('Kernel::System::Elasticsearch')->DropIndex(
+        IndexName => \%IndexName,
+    );
 
     return 1;
 }
