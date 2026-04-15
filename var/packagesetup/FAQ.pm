@@ -29,6 +29,7 @@ our @ObjectDependencies = (
     'Kernel::System::DB',
     'Kernel::System::DynamicField',
     'Kernel::System::DynamicFieldValue',
+    'Kernel::System::Elasticsearch',
     'Kernel::System::FAQ',
     'Kernel::System::Group',
     'Kernel::System::LinkObject',
@@ -286,6 +287,9 @@ sub CodeUninstall {
 
     # delete all links with FAQ articles
     $Self->_LinkDelete();
+
+    # delete FAQ Elasticsearch index if it exists
+    $Self->_DeleteElasticsearchIndex();
 
     return 1;
 }
@@ -1222,6 +1226,17 @@ sub _MigratePermissions {
             Priority => 'error',
         );
     }
+
+    return 1;
+}
+
+sub _DeleteElasticsearchIndex {
+    my %IndexName = (
+        index => 'faq',
+    );
+    $Kernel::OM->Get('Kernel::System::Elasticsearch')->DropIndex(
+        IndexName => \%IndexName,
+    );
 
     return 1;
 }
