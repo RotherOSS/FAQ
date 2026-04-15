@@ -484,6 +484,13 @@
 
         $Kernel::OM->Get($CodeModule)->CodeUpgradeFromLowerThan_5_0_92();
     ]]></CodeUpgrade>
+    <CodeUpgrade Type="post" Version="11.1.0"><![CDATA[
+
+        # create the package name
+        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
+
+        $Kernel::OM->Get($CodeModule)->CodeUpgradeFromLowerThan_11_1_0();
+    ]]></CodeUpgrade>
     <CodeUninstall Type="pre"><![CDATA[
 
         # create the package name

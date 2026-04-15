@@ -31,6 +31,7 @@ our @ObjectDependencies = (
     'Kernel::System::DynamicFieldValue',
     'Kernel::System::Elasticsearch',
     'Kernel::System::FAQ',
+    'Kernel::System::GenericInterface::Webservice',
     'Kernel::System::Group',
     'Kernel::System::LinkObject',
     'Kernel::System::Main',
@@ -118,6 +119,26 @@ sub CodeInstall {
         FilePrefix => $Self->{FilePrefix},
         UserID     => 1,
     );
+
+    # add the FAQ management invoker to the Elasticsearch webservice
+    $Self->_UpdateElasticsearchWebService( Action => 'Add' );
+
+    return 1;
+}
+
+=head2 CodeUpgradeFromLowerThan_11_1_0()
+
+This function is only executed if the installed module version is smaller than 11.1.0.
+
+my $Result = $CodeObject->CodeUpgradeFromLowerThan_11_1_0();
+
+=cut
+
+sub CodeUpgradeFromLowerThan_11_1_0 {    ## no critic qw(OTOBO::RequireCamelCase)
+    my ( $Self, %Param ) = @_;
+
+    # add the FAQ management invoker to the Elasticsearch webservice
+    $Self->_UpdateElasticsearchWebService( Action => 'Add' );
 
     return 1;
 }
@@ -290,6 +311,9 @@ sub CodeUninstall {
 
     # delete FAQ Elasticsearch index if it exists
     $Self->_DeleteElasticsearchIndex();
+
+    # remove the FAQ management invoker from the Elasticsearch webservice
+    $Self->_UpdateElasticsearchWebService( Action => 'Remove' );
 
     return 1;
 }
@@ -1233,6 +1257,100 @@ sub _DeleteElasticsearchIndex {
     $Kernel::OM->Get('Kernel::System::Elasticsearch')->DropIndex(
         IndexName => \%IndexName,
     );
+
+    return 1;
+}
+
+sub _UpdateElasticsearchWebService {
+    my ( $Self, %Param ) = @_;
+
+    my $WebserviceObject = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
+    my $Webservice       = $WebserviceObject->WebserviceGet(
+        Name => 'Elasticsearch',
+    );
+
+    if ( !$Webservice ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Did not find the Elasticsearch webservice!",
+        );
+        return;
+    }
+
+    if ( $Param{Action} eq 'Add' ) {
+        $Webservice->{Config}->{Requester}->{Invoker}->{FAQIngestAttachment} = {
+            Description => '',
+            Type        => 'Elasticsearch::FAQManagement',
+        };
+        $Webservice->{Config}->{Requester}->{Invoker}->{FAQManagement} = {
+            Description => '',
+            Type        => 'Elasticsearch::FAQManagement',
+            Events      => [
+                {
+                    Event        => 'FAQCreate',
+                    Asynchronous => '0'
+                },
+                {
+                    Asynchronous => '0',
+                    Event        => 'FAQDelete'
+                },
+                {
+                    Event        => 'FAQUpdate',
+                    Asynchronous => '0'
+                },
+                {
+                    Event        => 'FAQAttachmentAddPost',
+                    Asynchronous => '0'
+                },
+                {
+                    Asynchronous => '0',
+                    Event        => 'FAQAttachmentDeletePost'
+                }
+            ],
+        };
+        $Webservice->{Config}->{Requester}->{Transport}->{Config}->{InvokerControllerMapping}->{FAQIngestAttachment} = {
+            Command    => 'POST',
+            Controller => '/tmpattachments/:docapi/:id?pipeline=:path',
+        };
+        $Webservice->{Config}->{Requester}->{Transport}->{Config}->{InvokerControllerMapping}->{FAQManagement} = {
+            Command    => 'POST',
+            Controller => '/faq/:docapi/:id',
+        };
+    }
+
+    elsif ( $Param{Action} eq 'Remove' ) {
+        delete $Webservice->{Config}{Requester}{Invoker}{FAQIngestAttachment};
+        delete $Webservice->{Config}{Requester}{Invoker}{FAQManagement};
+        delete $Webservice->{Config}{Requester}{Transport}{InvokerControllerMapping}{FAQItemIngestAttachment};
+        delete $Webservice->{Config}{Requester}{Transport}{InvokerControllerMapping}{FAQManagement};
+        my %IndexName = (
+            index => 'faq',
+        );
+        $Kernel::OM->Get('Kernel::System::Elasticsearch')->DropIndex(
+            IndexName => \%IndexName,
+        );
+    }
+
+    else {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "No Action provided!",
+        );
+        return;
+    }
+
+    my $Success = $WebserviceObject->WebserviceUpdate(
+        %{$Webservice},
+        UserID => 1,
+    );
+
+    if ( !$Success ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Could not update the Elasticsearch webservice!",
+        );
+        return;
+    }
 
     return 1;
 }
