@@ -699,15 +699,13 @@ sub FAQAdd {
     );
 
     # trigger FAQCreate
-    if ($ConfigObject->Get('Elasticsearch::Active')) {
-        $Self->EventHandler(
-            Event => 'FAQCreate',
-            Data  => {
-                ItemID => $ID,
-            },
-            UserID => $Param{UserID},
-        );
-    }
+    $Self->EventHandler(
+        Event => 'FAQCreate',
+        Data  => {
+            ItemID => $ID,
+        },
+        UserID => $Param{UserID},
+    );
 
     # FAQ Service
 
@@ -898,15 +896,13 @@ sub FAQUpdate {
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
     # trigger FAQUpdate
-    if ($ConfigObject->Get('Elasticsearch::Active')) {
-        $Self->EventHandler(
-            Event => 'FAQUpdate',
-            Data  => {
-                ItemID => $Param{ItemID},
-            },
-            UserID => $Param{UserID},
-        );
-    }
+    $Self->EventHandler(
+        Event => 'FAQUpdate',
+        Data  => {
+            ItemID => $Param{ItemID},
+        },
+        UserID => $Param{UserID},
+    );
 
     # update approval
     if ( $ConfigObject->Get('FAQ::ApprovalRequired') && !$Param{ApprovalOff} ) {
@@ -1085,20 +1081,18 @@ sub AttachmentAdd {
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
     # trigger AttachmentAdd-Event
-    if ($ConfigObject->Get('Elasticsearch::Active')) {
-        $Self->EventHandler(
-            Event => 'FAQAttachmentAddPost',
-            Data  => {
-                Filename    => $Param{Filename},
-                ContentType => $Param{ContentType},
-                Content     => $Param{Content},
-                Filesize    => $Param{Filesize},
-                Inline      => $Param{Inline},
-                ItemID      => $Param{ItemID},
-            },
-            UserID => $Param{UserID},
-        );
-    }
+    $Self->EventHandler(
+        Event => 'FAQAttachmentAddPost',
+        Data  => {
+            Filename    => $Param{Filename},
+            ContentType => $Param{ContentType},
+            Content     => $Param{Content},
+            Filesize    => $Param{Filesize},
+            Inline      => $Param{Inline},
+            ItemID      => $Param{ItemID},
+        },
+        UserID => $Param{UserID},
+    );
 
     return $AttachmentID;
 }
@@ -1211,17 +1205,15 @@ sub AttachmentDelete {
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
     # trigger FAQAttachmentDeletePost-Event
-    if ($ConfigObject->Get('Elasticsearch::Active')) {
-        $Self->EventHandler(
-            Event => 'FAQAttachmentDeletePost',
-            Data  => {
-                ItemID   => $Param{ItemID},
-                Number   => $Param{Number},
-                Filename => $Attachment{Filename},
-            },
-            UserID => $Param{UserID},
-        );
-    }
+    $Self->EventHandler(
+        Event => 'FAQAttachmentDeletePost',
+        Data  => {
+            ItemID   => $Param{ItemID},
+            Number   => $Param{Number},
+            Filename => $Attachment{Filename},
+        },
+        UserID => $Param{UserID},
+    );
 
     return 1;
 }
@@ -1544,15 +1536,13 @@ sub FAQDelete {
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
     # trigger FAQDelete
-    if ($ConfigObject->Get('Elasticsearch::Active')) {
-        $Self->EventHandler(
-            Event => 'FAQDelete',
-            Data  => {
-                ItemID => $Param{ItemID},
-            },
-            UserID => $Param{UserID},
-        );
-    }
+    $Self->EventHandler(
+        Event => 'FAQDelete',
+        Data  => {
+            ItemID => $Param{ItemID},
+        },
+        UserID => $Param{UserID},
+    );
     return 1;
 }
 
