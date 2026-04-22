@@ -15,6 +15,7 @@
         <File Permission="660" Location="doc/faq-database.png" />
         <File Permission="660" Location="Kernel/Config/Files/XML/FAQ.xml" />
         <File Permission="660" Location="Kernel/cpan-lib/XML/RSS/SimpleGen.pm" />
+        <File Permission="660" Location="Kernel/GenericInterface/Invoker/Elasticsearch/FAQManagement.pm" />
         <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/PublicCategoryList.pm" />
         <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/LanguageList.pm" />
         <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/PublicFAQSearch.pm" />
@@ -72,6 +73,7 @@
         <File Permission="660" Location="Kernel/Modules/PublicFAQSearch.pm" />
         <File Permission="660" Location="Kernel/Modules/PublicFAQZoom.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/Dashboard/FAQ.pm" />
+        <File Permission="660" Location="Kernel/Output/HTML/Elasticsearch/ElasticsearchFAQGeneric.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/FAQJournalOverview/Small.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/FAQMenu/Generic.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/FAQMenu/Delete.pm" />
