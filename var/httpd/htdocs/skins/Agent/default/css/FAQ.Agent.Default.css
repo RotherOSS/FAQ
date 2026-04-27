@@ -122,7 +122,7 @@ fieldset.TableSmall > div.FAQDivider {
 
 /* Increased space for FAQ TextEditors */
 
-fieldset.FAQEditMask {
+fieldset.TableLike.FAQEditMask {
 
     .Field,
     .RichTextField {
