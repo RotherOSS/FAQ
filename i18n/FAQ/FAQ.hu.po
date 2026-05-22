@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2026-02-26 08:57+0000\n"
-"PO-Revision-Date: 2026-05-21 10:00+0000\n"
+"PO-Revision-Date: 2026-05-22 13:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/opm-packages/"
 "faq/hu/>\n"
@@ -203,7 +203,7 @@ msgstr "Értékelés (például Egyenlő 25% vagy Nagyobb mint 75%)"
 
 #. Template: AgentFAQSearch
 msgid "Approved"
-msgstr "Jóváhagyott"
+msgstr "Jóváhagyva"
 
 #. Template: AgentFAQSearch
 msgid "Last changed by"
@@ -559,7 +559,7 @@ msgstr "GyIK szám"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
-msgstr "Utoljára módosította:"
+msgstr "Utoljára módosította"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
@@ -700,6 +700,8 @@ msgstr "Tartalomtípus"
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Select the attribute which FAQs will be searched by"
 msgstr ""
+"Azon attribútum kiválasztása, amely alapján a GyIK bejegyzések keresve "
+"lesznek"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
@@ -808,6 +810,10 @@ msgstr "Meghatározza, hogy a GyIK címét össze kell-e fűzni a bejegyzés tá
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Annak meghatározása, hogy mely oszlopok legyenek láthatók a kapcsolt GyIK-ok "
+"felületi elemen (LinkObject::ViewMode = „összetett”). Megjegyzés: csak GyIK "
+"attribútumok és dinamikus mezők (DynamicField_NévX) engedélyezettek a "
+"DefaultColumns értékeinél."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
@@ -973,7 +979,7 @@ msgstr "Több nyelv engedélyezése a GyIK modulban."
 
 #. SysConfig
 msgid "Enable service assignment for FAQs."
-msgstr ""
+msgstr "Szolgáltatás-hozzárendelés engedélyezése a GyIK-bejegyzésekhez."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
@@ -1054,6 +1060,8 @@ msgstr "A GyIK előzményei"
 #. SysConfig
 msgid "If activated, FAQ articles of status type internal are also taken into account for the approval process."
 msgstr ""
+"Ha aktiválva van, akkor a belső állapottípusú GyIK bejegyzések is figyelembe "
+"lesznek véve a jóváhagyási folyamatnál."
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
@@ -1334,6 +1342,8 @@ msgstr "Az utoljára létrehozott elemek megjelenítése a meghatározott felül
 #. SysConfig
 msgid "Show related articles on service change even with empty subject and body."
 msgstr ""
+"Kapcsolódó bejegyzések megjelenítése a szolgáltatás változtatásakor üres "
+"tárgy és törzs esetén is."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
@@ -1414,6 +1424,9 @@ msgstr "Jegy törzse egy GyIK bejegyzés jóváhagyásához."
 #. SysConfig
 msgid "Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
+"Jegy tárgya egy GyIK bejegyzés jóváhagyásához. A megengedett értesítési "
+"címkék a következők: <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, "
+"<OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> és <OTOBO_FAQ_STATEID>."
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
