@@ -96,7 +96,7 @@ sub Data {
     $Self->{Translation}->{'Keyword'} = 'Kulcsszó';
     $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = 'Szavazás (például Egyenlő 10 vagy Nagyobb mint 60)';
     $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = 'Értékelés (például Egyenlő 25% vagy Nagyobb mint 75%)';
-    $Self->{Translation}->{'Approved'} = 'Jóváhagyott';
+    $Self->{Translation}->{'Approved'} = 'Jóváhagyva';
     $Self->{Translation}->{'Last changed by'} = 'Utoljára módosította';
     $Self->{Translation}->{'FAQ Article Create Time (before/after)'} = 'GyIK bejegyzés létrehozási ideje (előtt/után)';
     $Self->{Translation}->{'FAQ Article Create Time (between)'} = 'GyIK bejegyzés létrehozási ideje (között)';
@@ -228,7 +228,7 @@ sub Data {
     # Perl Module: Kernel/Modules/AgentFAQSearch.pm
     $Self->{Translation}->{'No Result!'} = 'Nincs találat!';
     $Self->{Translation}->{'FAQ Number'} = 'GyIK szám';
-    $Self->{Translation}->{'Last Changed by'} = 'Utoljára módosította:';
+    $Self->{Translation}->{'Last Changed by'} = 'Utoljára módosította';
     $Self->{Translation}->{'FAQ Item Create Time (before/after)'} = 'GyIK elem létrehozási ideje (előtt/után)';
     $Self->{Translation}->{'FAQ Item Create Time (between)'} = 'GyIK elem létrehozási ideje (között)';
     $Self->{Translation}->{'FAQ Item Change Time (before/after)'} = 'GyIK elem módosítási ideje (előtt/után)';
@@ -287,7 +287,9 @@ sub Data {
     $Self->{Translation}->{'Content Type'} = 'Tartalomtípus';
 
     # Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-    $Self->{Translation}->{'Select the attribute which FAQs will be searched by'} = '';
+    $Self->{Translation}->{'Select the attribute which FAQs will be searched by'} = 'Azon attribútum kiválasztása, amely alapján a GyIK bejegyzések keresve lesznek';
+    $Self->{Translation}->{'External-source key'} = '';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'belső';
@@ -325,7 +327,7 @@ sub Data {
     $Self->{Translation}->{'Define if the FAQ title should be concatenated to article subject.'} =
         'Meghatározza, hogy a GyIK címét össze kell-e fűzni a bejegyzés tárgyával.';
     $Self->{Translation}->{'Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = "complex"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns.'} =
-        '';
+        'Annak meghatározása, hogy mely oszlopok legyenek láthatók a kapcsolt GyIK-ok felületi elemen (LinkObject::ViewMode = „összetett”). Megjegyzés: csak GyIK attribútumok és dinamikus mezők (DynamicField_NévX) engedélyezettek a DefaultColumns értékeinél.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ journal.'} =
         'Egy áttekintő modult határoz meg egy GyIK napló kis nézetének megjelenítéséhez.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ list.'} =
@@ -357,7 +359,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default shown FAQ search attribute for FAQ search screen.'} =
         'Meghatározza az alapértelmezetten megjelenített GyIK keresési attribútumot a GyIK keresés képernyőnél.';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
-        '';
+        'Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg.';
     $Self->{Translation}->{'Defines the information to be inserted in a FAQ based Ticket. "Full FAQ" includes text, attachments and inline images.'} =
         'Meghatározza egy GyIK-alapú jegybe beszúrandó információkat. A „Teljes GyIK” szöveget, mellékleteket és beágyazott képeket tartalmaz.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
@@ -401,7 +403,7 @@ sub Data {
         'A nyilvános felület GyIK nagyítása képernyőjén megjelenített dinamikus mezők.';
     $Self->{Translation}->{'Edit this FAQ'} = 'A GyIK szerkesztése';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Több nyelv engedélyezése a GyIK modulban.';
-    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = 'Szolgáltatás-hozzárendelés engedélyezése a GyIK-bejegyzésekhez.';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'A kapcsolódó bejegyzések funkció engedélyezése az ügyfél előtétprogramhoz.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Szavazási mechanizmus engedélyezése a GyIK modulban.';
@@ -423,7 +425,7 @@ sub Data {
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Csoport a GyIK bejegyzések jóváhagyáshoz.';
     $Self->{Translation}->{'History of this FAQ'} = 'A GyIK előzményei';
     $Self->{Translation}->{'If activated, FAQ articles of status type internal are also taken into account for the approval process.'} =
-        '';
+        'Ha aktiválva van, akkor a belső állapottípusú GyIK bejegyzések is figyelembe lesznek véve a jóváhagyási folyamatnál.';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = 'Belső mezők felvétele egy GyIK-alapú jegyen.';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'Minden mező nevének felvétele egy GyIK-alapú jegyben.';
     $Self->{Translation}->{'Interfaces where the quick search should be shown.'} = 'Azok a felületek, ahol a gyors keresésnek meg kell jelennie.';
@@ -532,7 +534,7 @@ sub Data {
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Az utoljára módosított elemek megjelenítése a meghatározott felületeken.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Az utoljára létrehozott elemek megjelenítése a meghatározott felületeken.';
     $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
-        '';
+        'Kapcsolódó bejegyzések megjelenítése a szolgáltatás változtatásakor üres tárgy és törzs esetén is.';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Csillagok megjelenítése a meghatározott értékkel egyenlő vagy annál jobb értékeléssel rendelkező bejegyzéseknél (állítsa az értéket „0”-ra a kimenet kikapcsolásához).';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'A legjobb 10 elem megjelenítése a meghatározott felületeken.';
@@ -565,7 +567,7 @@ sub Data {
         'Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „Jegy” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával.';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'Jegy törzse egy GyIK bejegyzés jóváhagyásához.';
     $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
-        '';
+        'Jegy tárgya egy GyIK bejegyzés jóváhagyásához. A megengedett értesítési címkék a következők: <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> és <OTOBO_FAQ_STATEID>.';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = 'Eszköztárelem egy gyorsbillentyűhöz.';
     $Self->{Translation}->{'external (customer)'} = 'külső (ügyfél)';
     $Self->{Translation}->{'internal (agent)'} = 'belső (ügyintéző)';

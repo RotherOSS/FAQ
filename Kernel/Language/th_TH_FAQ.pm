@@ -288,6 +288,8 @@ sub Data {
 
     # Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
     $Self->{Translation}->{'Select the attribute which FAQs will be searched by'} = '';
+    $Self->{Translation}->{'External-source key'} = '';
+    $Self->{Translation}->{'Select the type of display'} = '';
 
     # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'ภายใน';
