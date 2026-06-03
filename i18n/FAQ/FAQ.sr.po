@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2024-05-16 07:29+0000\n"
+"POT-Creation-Date: 2026-02-26 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,795 +12,795 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
-msgstr ""
-
-#. Template: AgentFAQAdd
-msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Додај FAQ чланак"
 
 #. Template: AgentFAQAdd
 msgid "Keywords"
-msgstr ""
+msgstr "Кључне речи"
 
 #. Template: AgentFAQAdd
 msgid "A category is required."
-msgstr ""
+msgstr "Категорија је обавезна."
 
 #. Template: AgentFAQAdd
 msgid "Approval"
-msgstr ""
+msgstr "Одобрење"
 
 #. Template: AgentFAQCategory
 msgid "FAQ Category Management"
-msgstr ""
+msgstr "Управљање FAQ категоријама"
 
 #. Template: AgentFAQCategory
 msgid "Add FAQ Category"
-msgstr ""
+msgstr "Додај FAQ категорију"
 
 #. Template: AgentFAQCategory
 msgid "Edit FAQ Category"
-msgstr ""
+msgstr "Уреди FAQ категорију"
 
 #. Template: AgentFAQCategory
 msgid "Add category"
-msgstr ""
+msgstr "Додај категорију"
 
 #. Template: AgentFAQCategory
 msgid "Add Category"
-msgstr ""
+msgstr "Додај категорију"
 
 #. Template: AgentFAQCategory
 msgid "Edit Category"
-msgstr ""
+msgstr "Уреди категорију"
 
 #. Template: AgentFAQCategory
 msgid "Subcategory of"
-msgstr ""
+msgstr "Подкатегорија од"
 
 #. Template: AgentFAQCategory
 msgid "Please select at least one permission group."
-msgstr ""
+msgstr "Молимо да изаберете бар једну групу дозвола."
 
 #. Template: AgentFAQCategory
 msgid "Agent groups that can access articles in this category."
-msgstr ""
+msgstr "Групе оператера које могу приступити чланцима у овој категорији."
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
-msgstr ""
+msgstr "Биће приказано као коментар у Истраживачу."
 
 #. Template: AgentFAQCategory
 msgid "Do you really want to delete this category?"
-msgstr ""
+msgstr "Да ли стварно желите да обришете ову категорију?"
 
 #. Template: AgentFAQCategory
 msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
-msgstr ""
+msgstr "Не можете обрисати ову категорију. Употребљена је у бар једном FAQ чланку и/или је надређена најмање једној другој категорији"
 
 #. Template: AgentFAQCategory
 msgid "This category is used in the following FAQ article(s)"
-msgstr ""
+msgstr "Ова категорија је употребљена у следећим FAQ чланцима"
 
 #. Template: AgentFAQCategory
 msgid "This category is parent of the following subcategories"
-msgstr ""
+msgstr "Ова категорија је надређена следећим подкатегоријама"
 
 #. Template: AgentFAQDelete
 msgid "Do you really want to delete this FAQ article?"
-msgstr ""
+msgstr "Да ли стварно желите да обришете овај FAQ чланак?"
 
 #. Template: AgentFAQEdit
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Explorer"
-msgstr ""
+msgstr "FAQ претраживач"
 
 #. Template: AgentFAQExplorer
 msgid "Quick Search"
-msgstr ""
+msgstr "Брзо тражење"
 
 #. Template: AgentFAQExplorer
 msgid "Wildcards are allowed."
-msgstr ""
+msgstr "Џокерски знаци су дозвољени."
 
 #. Template: AgentFAQExplorer
 msgid "Advanced Search"
-msgstr ""
+msgstr "Напредна претрага"
 
 #. Template: AgentFAQExplorer
 msgid "Subcategories"
-msgstr ""
+msgstr "Подкатегорије"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Articles"
-msgstr ""
+msgstr "FAQ чланци"
 
 #. Template: AgentFAQExplorer
 msgid "No subcategories found."
-msgstr ""
+msgstr "Подкатегорије нису пронађене."
 
 #. Template: AgentFAQHistory
 msgid "History of"
-msgstr ""
+msgstr "Историја од"
 
 #. Template: AgentFAQHistory
 msgid "History Content"
-msgstr ""
+msgstr "Садржај историје"
 
 #. Template: AgentFAQHistory
 msgid "Createtime"
-msgstr ""
+msgstr "Време креирања"
 
 #. Template: AgentFAQJournalOverviewSmall
 msgid "No FAQ Journal data found."
-msgstr ""
+msgstr "Нису пронађени подаци FAQ дневника."
 
 #. Template: AgentFAQLanguage
 msgid "FAQ Language Management"
-msgstr ""
+msgstr "Управљање FAQ језицима"
 
 #. Template: AgentFAQLanguage
 msgid "Add FAQ Language"
-msgstr ""
+msgstr "Додај FAQ језик"
 
 #. Template: AgentFAQLanguage
 msgid "Edit FAQ Language"
-msgstr ""
+msgstr "Уреди FAQ језик"
 
 #. Template: AgentFAQLanguage
 msgid "Use this feature if you want to work with multiple languages."
-msgstr ""
+msgstr "Употребите ову функцију ако желите да користите више језика."
 
 #. Template: AgentFAQLanguage
 msgid "Add language"
-msgstr ""
+msgstr "Додај језик"
 
 #. Template: AgentFAQLanguage
 msgid "Add Language"
-msgstr ""
+msgstr "Додај Језик"
 
 #. Template: AgentFAQLanguage
 msgid "Edit Language"
-msgstr ""
+msgstr "Уреди Језик"
 
 #. Template: AgentFAQLanguage
 msgid "You can not delete this language. It is used in at least one FAQ article!"
-msgstr ""
+msgstr "Не можете обрисати овај језик. Употребљен је у бар једном FAQ чланку!"
 
 #. Template: AgentFAQLanguage
 msgid "This language is used in the following FAQ Article(s)"
-msgstr ""
+msgstr "Овај језик је употребљен у следећим FAQ чланцима"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "Context Settings"
-msgstr ""
+msgstr "Подешавање контекста"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "FAQ articles per page"
-msgstr ""
+msgstr "FAQ чланака по страни"
 
 #. Template: AgentFAQOverviewSmall
 msgid "No FAQ data found."
-msgstr ""
+msgstr "Нису пронађени FAQ подаци."
 
 #. Template: AgentFAQRelatedArticles
 msgid "out of 5"
-msgstr ""
+msgstr "од 5"
 
 #. Template: AgentFAQSearch
 msgid "Keyword"
-msgstr ""
+msgstr "Кључна реч"
 
 #. Template: AgentFAQSearch
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
-msgstr ""
+msgstr "Гласај (нпр једнако 10 или веће од 60)"
 
 #. Template: AgentFAQSearch
 msgid "Rate (e. g. Equals 25% or GreaterThan 75%)"
-msgstr ""
+msgstr "Оцени (нпр једнако 25% или веће од 75%)"
 
 #. Template: AgentFAQSearch
 msgid "Approved"
-msgstr ""
+msgstr "Одобрено"
 
 #. Template: AgentFAQSearch
 msgid "Last changed by"
-msgstr ""
+msgstr "Последњи је мењао"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (before/after)"
-msgstr ""
+msgstr "Време креирања FAQ чланка (пре/после)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (between)"
-msgstr ""
+msgstr "Време креирања FAQ чланка (између)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Change Time (before/after)"
-msgstr ""
+msgstr "Време промене FAQ чланка (пре/после)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Change Time (between)"
-msgstr ""
+msgstr "Време промене FAQ чланка (између)"
 
 #. Template: AgentFAQSearchOpenSearchDescriptionFulltext
 msgid "FAQFulltext"
-msgstr ""
+msgstr "FAQ текст"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Search"
-msgstr ""
+msgstr "FAQ претрага"
 
 #. Template: AgentFAQSearchSmall
 msgid "Profile Selection"
-msgstr ""
+msgstr "Избор профила"
 
 #. Template: AgentFAQSearchSmall
 msgid "Vote"
-msgstr ""
+msgstr "Глас"
 
 #. Template: AgentFAQSearchSmall
 msgid "No vote settings"
-msgstr ""
+msgstr "Нема подешавања за гласање"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific votes"
-msgstr ""
+msgstr "Специфични гласови"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 10 or GreaterThan 60"
-msgstr ""
+msgstr "нпр једнако 10 или веће од 60"
 
 #. Template: AgentFAQSearchSmall
 msgid "Rate"
-msgstr ""
+msgstr "Оцена"
 
 #. Template: AgentFAQSearchSmall
 msgid "No rate settings"
-msgstr ""
+msgstr "Нема подешавања за оцењивање"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific rate"
-msgstr ""
+msgstr "Специфична оцена"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 25% or GreaterThan 75%"
-msgstr ""
+msgstr "нпр једнако 25% или веће од 75%"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Create Time"
-msgstr ""
+msgstr "Време креирања FAQ чланка"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Change Time"
-msgstr ""
+msgstr "Време промене FAQ чланка"
 
 #. Template: AgentFAQZoom
 msgid "FAQ Information"
-msgstr ""
+msgstr "FAQ информација"
 
 #. Template: AgentFAQZoom
 msgid "Rating"
-msgstr ""
+msgstr "Оцењивање"
 
 #. Template: AgentFAQZoom
 msgid "Votes"
-msgstr ""
+msgstr "Гласови"
 
 #. Template: AgentFAQZoom
 msgid "No votes found!"
-msgstr ""
+msgstr "Гласови нису пронађени!"
 
 #. Template: AgentFAQZoom
 msgid "No votes found! Be the first one to rate this FAQ article."
-msgstr ""
+msgstr "Гласови нису пронађени! Будите први који ће оценити овај FAQ чланак."
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
-msgstr ""
+msgstr "Преузми прилог"
 
 #. Template: AgentFAQZoom
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
-msgstr ""
+msgstr "Да бисте отворили везе у следећим блоковима описа, можда ћете требати да притиснете „Ctrl” или „Cmd” или „Shift” тастер док истовремено кликнете на везу (зависи од вашег ОС и прегледача)."
 
 #. Template: AgentFAQZoom
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
-msgstr ""
+msgstr "Колико је користан овај чланак? Молимо вас да дате вашу оцену и помогнете подизању квалитата базе често постављаних питања. Хвала Вам! "
 
 #. Template: AgentFAQZoom
 msgid "not helpful"
-msgstr ""
+msgstr "није корисно"
 
 #. Template: AgentFAQZoom
 msgid "very helpful"
-msgstr ""
+msgstr "врло корисно"
 
 #. Template: AgentFAQZoomSmall
 msgid "Add FAQ title to article subject"
-msgstr ""
+msgstr "Додај наслов FAQ чланку"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text"
-msgstr ""
+msgstr "Унеси FAQ текст"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ"
-msgstr ""
+msgstr "Унеси комплетан FAQ"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Link"
-msgstr ""
+msgstr "Унеси FAQ везу"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text & Link"
-msgstr ""
+msgstr "Унеси FAQ текст и везу"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ & Link"
-msgstr ""
+msgstr "Унеси комплетан FAQ и везу"
 
 #. Template: CustomerFAQExplorer
 msgid "Latest updated FAQ articles"
-msgstr ""
+msgstr "Последње ажурирани FAQ чланци"
 
 #. Template: CustomerFAQExplorer
 msgid "No FAQ articles found."
-msgstr ""
+msgstr "Нису пронађени FAQ чланци."
 
 #. Template: CustomerFAQRelatedArticles
 msgid "This might be helpful"
-msgstr ""
+msgstr "Ово може да буде од помоћи"
 
 #. Template: CustomerFAQRelatedArticles
 msgid "Found no helpful resources for the subject and text."
-msgstr ""
+msgstr "Корисни ресурси за унети предмет и текст нису пронађени."
 
 #. Template: CustomerFAQRelatedArticles
 msgid "Type a subject or text to get a list of helpful resources."
-msgstr ""
+msgstr "За листу корисних ресурса, молимо унесите предмет или текст."
 
 #. Template: CustomerFAQSearch
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
-msgstr ""
+msgstr "Потпуна текстуална претрага у FAQ чланцима (нпр. \"John*n\" или \"Will*\")"
 
 #. Template: CustomerFAQSearch
 msgid "Vote restrictions"
-msgstr ""
+msgstr "Ограничења гласања"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with votes..."
-msgstr ""
+msgstr "Само FAQ чланци са гласовима..."
 
 #. Template: CustomerFAQSearch
 msgid "Rate restrictions"
-msgstr ""
+msgstr "Ограничења оцењивања"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with rate..."
-msgstr ""
+msgstr "Само FAQ чланци са оценом..."
 
 #. Template: CustomerFAQSearch
 msgid "Time restrictions"
-msgstr ""
+msgstr "Временска ограничења"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created"
-msgstr ""
+msgstr "Само FAQ чланци креирани"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created between"
-msgstr ""
+msgstr "Само FAQ чланци креирани између"
 
 #. Template: CustomerFAQSearch
 msgid "Search-Profile as Template?"
-msgstr ""
+msgstr "Профил претраге као шаблон?"
 
 #. Template: CustomerFAQZoom
 msgid "Article Number"
-msgstr ""
+msgstr "Број чланка"
 
 #. Template: CustomerFAQZoom
 msgid "Search for articles with keyword"
-msgstr ""
+msgstr "Тражи чланке са кључном речи"
 
 #. Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
 msgid "Public"
-msgstr ""
+msgstr "Јавно"
 
 #. Template: PublicFAQSearchResultShort
 msgid "Back to FAQ Explorer"
-msgstr ""
+msgstr "Назад на FAQ претраживач"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "You need rw permission!"
-msgstr ""
+msgstr "Потребна вам је „rw” дозвола!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No categories found where user has read/write permissions!"
-msgstr ""
+msgstr "Категорије у којој корисник има приступ без ограничења нису пронађене!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No default language found and can't create a new one."
-msgstr ""
+msgstr "Није пронађен подразумевани језик и не може се креирати нов."
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Need CategoryID!"
-msgstr ""
+msgstr "Потребан ИД Категорије!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
-msgstr ""
+msgstr "Категорија треба да има име!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists"
-msgstr ""
+msgstr "Ова категорија већ постоји"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
-msgstr ""
+msgstr "Ова категорија већ постоји!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "No CategoryID is given!"
-msgstr ""
+msgstr "Није дат ИД Категорије!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Was not able to delete the category %s!"
-msgstr ""
+msgstr "Није било могуће обрисати категорију %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
-msgstr ""
+msgstr "FAQ категорија ажурирана!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category added!"
-msgstr ""
+msgstr "FAQ категорија додата!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Delete Category"
-msgstr ""
+msgstr "Обриши категорију"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
-msgstr ""
+msgstr "Није дат ИД Ставке!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "You have no permission for this category!"
-msgstr ""
+msgstr "Немате дозволу за ову категорију!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "Was not able to delete the FAQ article %s!"
-msgstr ""
+msgstr "Није било могуће обрисати FAQ чланак %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
-msgstr ""
+msgstr "ИД Категорије %s је неисправан!"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
-msgstr ""
+msgstr "Не може се приказати историјат, јер није дат ИД Ставке!"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "FAQ History"
-msgstr ""
+msgstr "FAQ историјат"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
-msgstr ""
+msgstr "FAQ дневник"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
-msgstr ""
+msgstr "Потребна конфигурациона опција FAQ::Frontend::Overview"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
-msgstr ""
+msgstr "Конфигурациона опција FAQ::Frontend::Overview мора да буде HASH референца!"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
+msgstr "Није пронађена конфигурациона ставка за преглед \"%s\"!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
-msgstr ""
+msgstr "Није дат ИД Језика!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
-msgstr ""
+msgstr "Име је обавезно!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "This language already exists!"
-msgstr ""
+msgstr "Овај језик већ постоји!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
-msgstr ""
+msgstr "Није било могуће обрисати језик %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
-msgstr ""
+msgstr "Ажуриран FAQ језик!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language added!"
-msgstr ""
+msgstr "Додат FAQ језик!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Delete Language %s"
-msgstr ""
+msgstr "Обриши језик %s"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
-msgstr ""
+msgstr "Резултат"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
-msgstr ""
+msgstr "Последње ажурирање"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "FAQ Dynamic Fields"
-msgstr ""
+msgstr "FAQ динамичка поља"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "No %s is given!"
-msgstr ""
+msgstr "Није дат %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "Can't load LanguageObject!"
-msgstr ""
+msgstr "Језички објект се не може учитати!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
-msgstr ""
+msgstr "Нема резултата!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Number"
-msgstr ""
+msgstr "FAQ број"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
-msgstr ""
+msgstr "Последњи је мењао"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
-msgstr ""
+msgstr "Време креирања FAQ ставке (пре/после)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (between)"
-msgstr ""
+msgstr "Време креирања FAQ ставке (између)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (before/after)"
-msgstr ""
+msgstr "Време измене FAQ ставке (пре/после)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (between)"
-msgstr ""
+msgstr "Време измене FAQ ставке (између)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Equals"
-msgstr ""
+msgstr "Једнако"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than"
-msgstr ""
+msgstr "Веће од"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than equals"
-msgstr ""
+msgstr "Једнако или веће од"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than"
-msgstr ""
+msgstr "Мање од"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than equals"
-msgstr ""
+msgstr "Једнако или мање од"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Need FileID!"
-msgstr ""
+msgstr "Потребан ИД Поља!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
-msgstr ""
+msgstr "Хвала на вашем гласу!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "You have already voted!"
-msgstr ""
+msgstr "Већ сте гласали!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "No rate selected!"
-msgstr ""
+msgstr "Није изабрана ни једна оцена!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
-msgstr ""
+msgstr "Механизам за гласање није активиран!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The vote rate is not defined!"
-msgstr ""
+msgstr "Оцењивање гласања није дефинисано!"
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
-msgstr ""
+msgstr "Штампа FAQ чланка"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
-msgstr ""
+msgstr "Креиран између"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
-msgstr ""
+msgstr "Потребан ИД Ставке!"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
-msgstr ""
+msgstr "FAQ чланци (ново креирани)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (recently changed)"
-msgstr ""
+msgstr "FAQ чланци (недавно мењани)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (Top 10)"
-msgstr ""
+msgstr "FAQ чланци (првих 10)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
-msgstr ""
+msgstr "Није дат Тип!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Type must be either LastCreate or LastChange or Top10!"
-msgstr ""
+msgstr "Type мора бити LastCreate, LastChange или Top10!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Can't create RSS file!"
-msgstr ""
+msgstr "RSS датотека не моће бити снимљена!"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
 msgid "%s (FAQFulltext)"
-msgstr ""
+msgstr "%s (FAQ текст)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (%s)"
-msgstr ""
+msgstr "%s - Клијент (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (FAQFulltext)"
-msgstr ""
+msgstr "%s - Клијент (FAQ текст)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (%s)"
-msgstr ""
+msgstr "%s - Јавно (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (FAQFulltext)"
-msgstr ""
+msgstr "%s - Јавно (FAQ текст)"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Need rate!"
-msgstr ""
+msgstr "Неопходна оцена!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
-msgstr ""
+msgstr "Чланак је празан!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
-msgstr ""
+msgstr "Последње креирани FAQ чланци"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Top 10 FAQ articles"
-msgstr ""
+msgstr "Најпопуларнијих 10 FAQ чланака"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
+msgstr "Тип садржаја"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
+msgid "Select the attribute which FAQs will be searched by"
 msgstr ""
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
-msgstr ""
+msgstr "интерно"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "external"
-msgstr ""
+msgstr "екстерно"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "public"
-msgstr ""
+msgstr "јавно"
 
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
-msgstr ""
+msgstr "Филтер за „HTML” излаз за додавање везе иза дефинисаног низа знакова. Елемент Слика дозвољава два начина уноса. Први је назив слике (нпр faq.png). у овом случају биће коришћена „OTOBO” путања до слике.  Друга могућност је унос везе до слике."
 
 #. SysConfig
 msgid "Add FAQ article"
-msgstr ""
+msgstr "Додај FAQ чланак"
 
 #. SysConfig
 msgid "CSS color for the voting result."
-msgstr ""
+msgstr "„CSS” боја за резултат гласања."
 
 #. SysConfig
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "Време ослобађања кеша за FAQ ставке."
 
 #. SysConfig
 msgid "Category Management"
-msgstr ""
+msgstr "Управљање категоријама"
 
 #. SysConfig
 msgid "Category Management."
-msgstr ""
+msgstr "Управљање категоријама."
 
 #. SysConfig
 msgid "Customer FAQ Print."
-msgstr ""
+msgstr "Штампање клијентског FAQ."
 
 #. SysConfig
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "Сродни FAQ чланци у интерфејсу клијента"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "Сродни FAQ чланци у интерфејсу клијента."
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
-msgstr ""
+msgstr "Детаљи клијентског FAQ."
 
 #. SysConfig
 msgid "Customer FAQ search."
-msgstr ""
+msgstr "Претрага клијентског FAQ."
 
 #. SysConfig
 msgid "Customer FAQ."
-msgstr ""
+msgstr "Клијентски FAQ."
 
 #. SysConfig
 msgid "Decimal places of the voting result."
-msgstr ""
+msgstr "Број децимала у резултату гласања."
 
 #. SysConfig
 msgid "Default category name."
-msgstr ""
+msgstr "Назив подразумеване категорије."
 
 #. SysConfig
 msgid "Default language for FAQ articles on single language mode."
-msgstr ""
+msgstr "Подразумевани језик FAQ чланака у једнојезичком начину рада."
 
 #. SysConfig
 msgid "Default maximum size of the titles in a FAQ article to be shown."
-msgstr ""
+msgstr "Подразумевана максимална дужина наслова FAQ чланка која ће бити приказана."
 
 #. SysConfig
 msgid "Default priority of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Подразумевани приоритет тикета за одобравање FAQ чланака."
 
 #. SysConfig
 msgid "Default state for FAQ entry."
-msgstr ""
+msgstr "Подразумевано стање FAQ уноса."
 
 #. SysConfig
 msgid "Default state of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Подразумевано стање тикета за одобравање FAQ чланака."
 
 #. SysConfig
 msgid "Default type of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Подразумевани тип тикета за одобравање FAQ чланака."
 
 #. SysConfig
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
-msgstr ""
+msgstr "Подразумевана вредност за „Action” параметар у јавном фронтенду. Овај параметар користе скрипте система. "
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
-msgstr ""
+msgstr "Дефинише Акције где је дугме поставки доступно у повезаном графичком елементу објекта (LinkObject::ViewMode = \"complex\"). Молимо да имате на уму да ове Акције морају да буду регистроване у следећим JS и CSS датотекама: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js и Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
-msgstr ""
+msgstr "Одређује да ли наслов FAQ треба да буде додат на тему чланка."
 
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
@@ -808,159 +808,163 @@ msgstr ""
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
-msgstr ""
+msgstr "Дефинише модул прегледа за мали приказ FAQ дневника. "
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ list."
-msgstr ""
+msgstr "Дефинише модул прегледа за мали приказ FAQ листе. "
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
-msgstr ""
+msgstr "Дефинише подразумевани атрибут за сортирање FAQ претрази FAQ  у интерфејсу  оператера."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
-msgstr ""
+msgstr "Дефинише подразумевани атрибут за сортирање FAQ у претрази FAQ  у интерфејсу клијента."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
-msgstr ""
+msgstr "Дефинише подразумевани атрибут за сортирање FAQ у претрази FAQ  у јавном интерфејсу."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
-msgstr ""
+msgstr "Дефинише подразумевани атрибут за сортирање FAQ у FAQ претраживачу у интерфејсу оператера."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "Дефинише подразумевани атрибут за сортирање FAQ у FAQ претраживачу у интерфејсу клијента."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
-msgstr ""
+msgstr "Дефинише подразумевани атрибут за сортирање FAQ у FAQ претраживачу у јавном интерфејсу."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Дефинише подразумевани редослед FAQ у резултатима FAQ претраживача у интерфејсу опрератера. Горе: најстарији на врху. Доле: најновије на врху."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Дефинише подразумевани редослед FAQ у резултатима FAQ претраживача у интерфејсу клијента. Горе: најстарији на врху. Доле: најновије на врху."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Дефинише подразумевани редослед FAQ резултатима FAQ претраживача у јавном интерфејсу. Горе: најстарији на врху. Доле: најновије на врху."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Дефинише подразумевани редослед FAQ у резултатима претраге у интерфејсу опрератера. Горе: најстарији на врху. Доле: најновије на врху."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Дефинише подразумевани редослед FAQ у резултатима претраге у интерфејсу клијента. Горе: најстарији на врху. Доле: најновије на врху."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Дефинише подразумевани редослед FAQ у резултатима претраге у јавном интерфејсу. Горе: најстарији на врху. Доле: најновије на врху."
 
 #. SysConfig
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
+msgstr "Дефинише подразумевани приказани FAQ атрибут претраге за FAQ прозор за претрагу. "
+
+#. SysConfig
+msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
 
 #. SysConfig
 msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
-msgstr ""
+msgstr "Одређује информације које ће бити убачене у FAQ базирани тикет. \"Комплетан FAQ\" укључује текст, прилоге и уметнуте слике."
 
 #. SysConfig
 msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
-msgstr ""
+msgstr "Дефинише позадинске параметре за контролну таблу. \"Лимит\" дефинише број подрезумевано приказаних уноса. \"Група\" се користи да ограничи приступ додатку (нпр. Група: admin;group1;group2;).\"Подразумевано\" указује на то да ли је додатак подразумевано активиран или да је потребно да га корисник мануелно активира."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
-msgstr ""
+msgstr "Дефинише приказане колоне у FAQ претраживачу. Ова опција нема утицај на позиције колона."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
-msgstr ""
+msgstr "Дефинише приказане колоне у FAQ дневнику. Ова опција нема утицај на позиције колона."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
-msgstr ""
+msgstr "Дефинише приказане колоне у FAQ претрази. Ова опција нема утицај на позиције колона."
 
 #. SysConfig
 msgid "Defines where the 'Insert FAQ' link will be displayed."
-msgstr ""
+msgstr "Дефинише где ће \"Убаци FAQ\" веза бити приказана."
 
 #. SysConfig
 msgid "Definition of FAQ item free text field."
-msgstr ""
+msgstr "Дефиниција поља слободног текста за FAQ ставку."
 
 #. SysConfig
 msgid "Delete this FAQ"
-msgstr ""
+msgstr "Обриши овај FAQ"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
-msgstr ""
+msgstr "Динамичка поља прикатана у екрану додавања FAQ у интерфејсу оператера."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
-msgstr ""
+msgstr "Динамичка поља приказана у екрану измене FAQ у интерфејсу оператера."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
-msgstr ""
+msgstr "Динамичка поља приказана у прегледу FAQ у интерфејсу клијента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
-msgstr ""
+msgstr "Динамичка поља приказана у прегледу FAQ у јавном интерфејсу."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
-msgstr ""
+msgstr "Динамичка поља приказана у екрану штампе FAQ у интерфејсу оператера."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
-msgstr ""
+msgstr "Динамичка поља приказана у екрану штампе FAQ у интерфејсу клијента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
-msgstr ""
+msgstr "Динамичка поља приказана у екрану штампе FAQ у јавном интерфејсу."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
-msgstr ""
+msgstr "Динамичка поља приказана у екрану претраге FAQ у интерфејсу оператера."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
-msgstr ""
+msgstr "Динамичка поља приказана у екрану претраге FAQ у интерфејсу клијента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
-msgstr ""
+msgstr "Динамичка поља приказана у екрану претраге FAQ у јавном интерфејсу."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
-msgstr ""
+msgstr "Динамичка поља приказана у прегледу FAQ малог формата у интерфејсу оператера."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
-msgstr ""
+msgstr "Динамичка поља приказана у детаљном прегледу FAQ у интерфејсу оператера."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
-msgstr ""
+msgstr "Динамичка поља приказана у детаљном прегледу FAQ у интерфејсу клијента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
-msgstr ""
+msgstr "Динамичка поља приказана у детаљном прегледу FAQ у јавном интерфејсу."
 
 #. SysConfig
 msgid "Edit this FAQ"
-msgstr ""
+msgstr "Уреди овај FAQ"
 
 #. SysConfig
 msgid "Enable multiple languages on FAQ module."
-msgstr ""
+msgstr "Активирање више језика на FAQ модулу."
 
 #. SysConfig
 msgid "Enable service assignment for FAQs."
@@ -968,355 +972,359 @@ msgstr ""
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
-msgstr ""
+msgstr "Активира функцију сродних чланака за интерфејс клијента."
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
-msgstr ""
+msgstr "Активирање механизма за гласање на FAQ модулу."
 
 #. SysConfig
 msgid "Explorer"
-msgstr ""
+msgstr "Истраживач"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
-msgstr ""
+msgstr "FAQ AJAX одговарач"
 
 #. SysConfig
 msgid "FAQ AJAX Responder for Richtext."
-msgstr ""
+msgstr "FAQ AJAX одговарач за FAQ."
 
 #. SysConfig
 msgid "FAQ Area"
-msgstr ""
+msgstr "FAQ простор"
 
 #. SysConfig
 msgid "FAQ Area."
-msgstr ""
+msgstr "FAQ простор."
 
 #. SysConfig
 msgid "FAQ Delete."
-msgstr ""
+msgstr "Обриши FAQ."
 
 #. SysConfig
 msgid "FAQ Edit."
-msgstr ""
+msgstr "Уреди FAQ."
 
 #. SysConfig
 msgid "FAQ History."
-msgstr ""
+msgstr "Историјат FAQ."
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
-msgstr ""
+msgstr "Ограничење прегледа FAQ дневника \"мало\""
 
 #. SysConfig
 msgid "FAQ Overview \"Small\" Limit"
-msgstr ""
+msgstr "Ограничење прегледа FAQ \"мало\""
 
 #. SysConfig
 msgid "FAQ Print."
-msgstr ""
+msgstr "Штампај FAQ."
 
 #. SysConfig
 msgid "FAQ search backend router of the agent interface."
-msgstr ""
+msgstr "Модул рутера FAQ претраге у интерфејсу оператера."
 
 #. SysConfig
 msgid "Field4"
-msgstr ""
+msgstr "Поље4"
 
 #. SysConfig
 msgid "Field5"
-msgstr ""
+msgstr "Поље5"
 
 #. SysConfig
 msgid "Full FAQ"
-msgstr ""
+msgstr "Kомплетан FAQ"
 
 #. SysConfig
 msgid "Group for the approval of FAQ articles."
-msgstr ""
+msgstr "Група за одобравање FAQ чланака."
 
 #. SysConfig
 msgid "History of this FAQ"
+msgstr "Историјат овог FAQ"
+
+#. SysConfig
+msgid "If activated, FAQ articles of status type internal are also taken into account for the approval process."
 msgstr ""
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
-msgstr ""
+msgstr "Укључи интерна поља у FAQ базиран тикет."
 
 #. SysConfig
 msgid "Include the name of each field in a FAQ based Ticket."
-msgstr ""
+msgstr "Укључи назив сваког поља у FAQ базиран тикет."
 
 #. SysConfig
 msgid "Interfaces where the quick search should be shown."
-msgstr ""
+msgstr "Интерфејс на ком треба приказати брзу претрагу."
 
 #. SysConfig
 msgid "Journal"
-msgstr ""
+msgstr "Дневник"
 
 #. SysConfig
 msgid "Language Management"
-msgstr ""
+msgstr "Управљање језицима"
 
 #. SysConfig
 msgid "Language Management."
-msgstr ""
+msgstr "Управљање језицима."
 
 #. SysConfig
 msgid "Limit for the search to build the keyword FAQ article list."
-msgstr ""
+msgstr "Ограничење претраге за генерисање листе кључних речи FAQ чланака."
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
-msgstr ""
+msgstr "Повежи други објекат са овом ставком FAQ"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
-msgstr ""
+msgstr "Листа имена редова за које је фунција сродних чланака активирана."
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
-msgstr ""
+msgstr "Листа типова стања који се могу користити у интерфејсу оператера."
 
 #. SysConfig
 msgid "List of state types which can be used in the customer interface."
-msgstr ""
+msgstr "Листа типова стања који се могу користити у интерфејсу клијента."
 
 #. SysConfig
 msgid "List of state types which can be used in the public interface."
-msgstr ""
+msgstr "Листа типова стања који се могу користити у јавном интерфејсу."
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "Регистрација модула за учитавање за јавни интерфејс."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
-msgstr ""
+msgstr "Максимални број FAQ чланака који ће бити приказани у резултату FAQ претраживача у интерфејсу оператера."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
-msgstr ""
+msgstr "Максимални број FAQ чланака који ће бити приказани у резултату FAQ претраживача у интерфејсу клијента."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
-msgstr ""
+msgstr "Максимални број FAQ чланака који ће бити приказани у резултату FAQ претраживача у јавном интерфејсу."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
-msgstr ""
+msgstr "Максимални број FAQ чланака који ће бити приказани у FAQ дневнику у интерфејсу оператера."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the agent interface."
-msgstr ""
+msgstr "Максимални број FAQ чланака који ће бити приказани у резултату претраге у интерфејсу оператера."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the customer interface."
-msgstr ""
+msgstr "Максимални број FAQ чланака који ће бити приказани у резултату претраге у интерфејсу клијента."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the public interface."
-msgstr ""
+msgstr "Максимални број FAQ чланака који ће бити приказани у резултату претраге у јавном интерфејсу."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
-msgstr ""
+msgstr "Максимална дужина наслова у FAQ чланку који ће бити приказани у FAQ претраживачу у интерфејсу оператера."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
-msgstr ""
+msgstr "Максимална дужина наслова у FAQ чланку који ће бити приказани у FAQ претраживачу у интерфејсу клијента."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
-msgstr ""
+msgstr "Максимална дужина наслова у FAQ чланку који ће бити приказани у FAQ истраживачу у јавном интерфејсу."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
-msgstr ""
+msgstr "Максимална дужина наслова у FAQ чланку који ће бити приказани у FAQ претрази у интерфејсу оператера."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
-msgstr ""
+msgstr "Максимална дужина наслова у FAQ чланку који ће бити приказани у FAQ претрази у интерфејсу клијента."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
-msgstr ""
+msgstr "Максимална дужина наслова у FAQ чланку који ће бити приказани у FAQ претрази у јавном интерфејсу."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
-msgstr ""
+msgstr "Максимална дужина наслова у FAQ чланку који ће бити приказани у FAQ дневнику у интерфејсу оператера."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
-msgstr ""
+msgstr "Модул за генерисање HTML OpenSearch профила за кратку FAQ претрагу у интерфејсу клијента."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
-msgstr ""
+msgstr "Модул за генерисање HTML OpenSearch профила за кратку FAQ претрагу у јавном профилу."
 
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
-msgstr ""
+msgstr "Модул за генерисање HTML OpenSearch профила за кратку FAQ претрагу."
 
 #. SysConfig
 msgid "New FAQ Article."
-msgstr ""
+msgstr "Нови FAQ чланак."
 
 #. SysConfig
 msgid "New FAQ articles need approval before they get published."
-msgstr ""
+msgstr "Нови FAQ чланци требају бити одобрени пре објављивања."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "Број FAQ чланака који ће бити приказани у FAQ претраживачу у интерфејсу клијента."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
-msgstr ""
+msgstr "Број FAQ чланака који ће бити приказани у FAQ претраживачу у јавном интерфејсу."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
-msgstr ""
+msgstr "Број FAQ чланака који ће бити приказани на свакој страни резултата претраге у интерфејсу клијента."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
-msgstr ""
+msgstr "Број FAQ чланака који ће бити приказани на свакој страни резултата претраге у јавном интерфејсу."
 
 #. SysConfig
 msgid "Number of shown items in last changes."
-msgstr ""
+msgstr "Број приказаних ставки у последњим изменама."
 
 #. SysConfig
 msgid "Number of shown items in last created."
-msgstr ""
+msgstr "Број приказаних ставки у последње креираним."
 
 #. SysConfig
 msgid "Number of shown items in the top 10 feature."
-msgstr ""
+msgstr "Број приказаних ставки у \"првих 10\" ."
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
-msgstr ""
+msgstr "Излазни филтер за убацивање JavaScript у CustomerTicketMessage екран."
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
-msgstr ""
+msgstr "Ограничење броја приказаних сродних FAQ чланака."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
-msgstr ""
+msgstr "Параметри страница (на којима су FAQ ставке приказане) на малом приказу прегледа FAQ дневника."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
-msgstr ""
+msgstr "Параметри страница (на којима су видљиве FAQ ставке) смањеног прегледа FAQ."
 
 #. SysConfig
 msgid "Print this FAQ"
-msgstr ""
+msgstr "Штампај овај FAQ"
 
 #. SysConfig
 msgid "Public FAQ Print."
-msgstr ""
+msgstr "Штампање јавних FAQ."
 
 #. SysConfig
 msgid "Public FAQ Zoom."
-msgstr ""
+msgstr "Детаљи јавних FAQ."
 
 #. SysConfig
 msgid "Public FAQ search."
-msgstr ""
+msgstr "Претрага јавних FAQ."
 
 #. SysConfig
 msgid "Public FAQ."
-msgstr ""
+msgstr "Јавни FAQ."
 
 #. SysConfig
 msgid "Queue for the approval of FAQ articles."
-msgstr ""
+msgstr "Ред за одобравање FAQ чланака."
 
 #. SysConfig
 msgid "Rates for voting. Key must be in percent."
-msgstr ""
+msgstr "Оцене за гласање. Кључ мора бити у процентима."
 
 #. SysConfig
 msgid "S"
-msgstr ""
+msgstr "С"
 
 #. SysConfig
 msgid "Search FAQ"
-msgstr ""
+msgstr "Претражи FAQ"
 
 #. SysConfig
 msgid "Search FAQ Small."
-msgstr ""
+msgstr "Мала FAQ претрага."
 
 #. SysConfig
 msgid "Search FAQ."
-msgstr ""
+msgstr "Претрага FAQ."
 
 #. SysConfig
 msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
-msgstr ""
+msgstr "Изаберите колико ће ставки бити подразумевано приказано у прегледу дневника малог формата."
 
 #. SysConfig
 msgid "Select how many items should be shown in Overview \"Small\" by default."
-msgstr ""
+msgstr "Изаберите колико ће ставки бити подразумевано приказано у прегледу малог формата."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
+msgstr "Подеси подразумевану висину (у пикселима) инлине HTML поља у AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
-msgstr ""
+msgstr "Подеси подразумевану висину (у пикселима) инлине HTML поља у CustomerFAQZoom (и PublicFAQZoom)."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
+msgstr "Подеси максималну висину (у пикселима) инлине HTML поља у AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
-msgstr ""
+msgstr "Подеси максималну висину (у пикселима) инлине HTML поља у CustomerFAQZoom (и PublicFAQZoom)."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
-msgstr ""
+msgstr "Прикажи \"Убаци FAQ везу\" дугме у AgentFAQZoomSmall за јавне FAQ артикле."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
-msgstr ""
+msgstr "Прикажи \"Убаци FAQ текст и везу\" / \"Убаци цео FAQ и везу дугме у AgentFAQZoomSmall за јавне FAQ артикле."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
-msgstr ""
+msgstr "Прикажи \"Убаци FAQ текст\" / \"Убаци цео FAQ\" дугме у AgentFAQZoomSmall."
 
 #. SysConfig
 msgid "Show FAQ Article with HTML."
-msgstr ""
+msgstr "Приказ FAQ чланка као HTML."
 
 #. SysConfig
 msgid "Show FAQ path yes/no."
-msgstr ""
+msgstr "Прикажи путању до FAQ да/не."
 
 #. SysConfig
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
-msgstr ""
+msgstr "Приказ неиспрвних ставки у резултатима FAQ претраживача у интерфејсу оператера."
 
 #. SysConfig
 msgid "Show items of subcategories."
-msgstr ""
+msgstr "Прикажи ставке субкатегорија."
 
 #. SysConfig
 msgid "Show last change items in defined interfaces."
-msgstr ""
+msgstr "Прикажи задње промењене ставке у дефинисаним интерфејсима."
 
 #. SysConfig
 msgid "Show last created items in defined interfaces."
-msgstr ""
+msgstr "Прикажи задње креиране ставке у дефинисаним интерфејсима."
 
 #. SysConfig
 msgid "Show related articles on service change even with empty subject and body."
@@ -1324,509 +1332,101 @@ msgstr ""
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
-msgstr ""
+msgstr "Прикажи звездице за чланке са једнаком или бољом оценом од дефинисане вредности (поставите вредност '0' за деактивирање приказа)."
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
-msgstr ""
+msgstr "Прикажи првих 10 ставки у дефинисаним интерфејсима."
 
 #. SysConfig
 msgid "Show voting in defined interfaces."
-msgstr ""
+msgstr "Прикажи гласање у дефинисаним интерфејсима."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
-msgstr ""
+msgstr "У менију приказује везу која омогућава повезивање FAQ са другим објектом у детаљном приказу тог FAQ у интерфејсу оператера."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
-msgstr ""
+msgstr "У менију приказује везу која омогућава брисање FAQ у детаљном приказу у интерфејсу оператера."
 
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
-msgstr ""
+msgstr "У менију приказује везу за приступ FAQ историјату у детаљном приказу у интерфејсу оператера."
 
 #. SysConfig
 msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
-msgstr ""
+msgstr "У менију приказује везу за измену FAQ у детаљном приказу у интерфејсу оператера."
 
 #. SysConfig
 msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
-msgstr ""
+msgstr "У менију приказује везу за повратак у детаљни приказ FAQ у  интерфејсу оператера."
 
 #. SysConfig
 msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
-msgstr ""
+msgstr "У менију приказује везу за штампање FAQ у детаљном приказу у интерфејсу оператера."
 
 #. SysConfig
 msgid "Solution"
-msgstr ""
+msgstr "Решење"
 
 #. SysConfig
 msgid "Symptom"
-msgstr ""
+msgstr "Симптом"
 
 #. SysConfig
 msgid "Text Only"
-msgstr ""
+msgstr "Само текст"
 
 #. SysConfig
 msgid "The default languages for the related FAQ articles."
-msgstr ""
+msgstr "Подразумевани језици за сродне FAQ чланке."
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
-msgstr ""
+msgstr "Идентификатор за FAQ, нпр. FAQ#, KB#, MyFAQ#. Подразумевано је FAQ#."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
-msgstr ""
+msgstr "Ово подешавање дефинише да FAQ објект може да се повеже са другим FAQ објектима користећи везу типа 'Normal'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
-msgstr ""
+msgstr "Ово подешавање дефинише да FAQ објекaт може да се повеже са другим FAQ објектима користећи везу типа 'ParentChild'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
-msgstr ""
+msgstr "Ово подешавање дефинише да FAQ објект може да се повеже са другим тикет објектима користећи везу типа 'Normal'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
-msgstr ""
+msgstr "Ово подешавање дефинише да FAQ објект може да се повеже са другим тикет објектима користећи везу типа 'ParentChild'."
 
 #. SysConfig
 msgid "Ticket body for approval of FAQ article."
-msgstr ""
+msgstr "Садржај тикета за одобравање FAQ чланака."
 
 #. SysConfig
-msgid "Ticket subject for approval of FAQ article."
+msgid "Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
-msgstr ""
+msgstr "Ставка алатне линије за скраћеницу."
 
 #. SysConfig
 msgid "external (customer)"
-msgstr ""
+msgstr "екстерно (клијент)"
 
 #. SysConfig
 msgid "internal (agent)"
-msgstr ""
+msgstr "интерно (оператер)"
 
 #. SysConfig
 msgid "public (all)"
-msgstr ""
+msgstr "јавно (све)"
 
 #. SysConfig
 msgid "public (public)"
-msgstr ""
-
-#. Template: AgentFAQLanguage
-msgid "Do you really want to delete this language?"
-msgstr ""
-
-#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-msgid "Attribute which will be searched on autocomplete"
-msgstr ""
-
-#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-msgid "Select the attribute which tickets will be searched by"
-msgstr ""
-
-#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-msgid "Attribute which is displayed for values"
-msgstr ""
-
-#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-msgid "Select the type of display"
-msgstr ""
-
-#. JS File: FAQ.Agent.ConfirmationDialog
-msgid "Ok"
-msgstr ""
-
-#. SysConfig
-msgid "A precentage value of the minimal translation progress per language, to be usable for documentations."
-msgstr ""
-
-#. SysConfig
-msgid "Access repos via http or https."
-msgstr ""
-
-#. SysConfig
-msgid "Autoloading of Znuny4OTRSRepo extensions."
-msgstr ""
-
-#. SysConfig
-msgid "Backend module registration for the config conflict check module."
-msgstr ""
-
-#. SysConfig
-msgid "Backend module registration for the file conflict check module."
-msgstr ""
-
-#. SysConfig
-msgid "Backend module registration for the function redefine check module."
-msgstr ""
-
-#. SysConfig
-msgid "Backend module registration for the manual set module."
-msgstr ""
-
-#. SysConfig
-msgid "Block hooks to be created for BS ad removal."
-msgstr ""
-
-#. SysConfig
-msgid "Block hooks to be created for package manager output filter."
-msgstr ""
-
-#. SysConfig
-msgid "Branch View commit limit"
-msgstr "Ograničenje broja komitova u prikazu grane"
-
-#. SysConfig
-msgid "CodePolicy"
-msgstr ""
-
-#. SysConfig
-msgid "Commit limit per page for Branch view screen"
-msgstr "Ograničenje broja komitova po strani u ekranu prikaza grane"
-
-#. SysConfig
-msgid "Create analysis file"
-msgstr ""
-
-#. SysConfig
-msgid "Creates a analysis file from this ticket and sends to Znuny."
-msgstr ""
-
-#. SysConfig
-msgid "Creates a analysis file from this ticket."
-msgstr ""
-
-#. SysConfig
-msgid "Define private addon repos."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the filter that processes the HTML templates."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the test module for checking code policy."
-msgstr ""
-
-#. SysConfig
-msgid "Definition of GIT clone/push URL Prefix."
-msgstr "Definicija adresnog prefiksa za GIT kloniranje i slanje."
-
-#. SysConfig
-msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr "Definicija dinamičkog polja: Group => grupa za pristup dinamičkim poljima; AlwaysVisible => polje može biti uklonjeno (0|1); InformationAreaName => naslov dodataka; InformationAreaSize => veličina i pozicija dodataka (Large|Small); Name => naziv dinamičkog polja; Priority => redosled dinamičkih polja; State => status polja (0 = onemogućeno, 1 = omogućeno, 2 = obavezno); FilterRepository => regularni izraz koji naziv skladišta mora da zadovoljava da bi polje bilo prikazano; FilterPackage => regularni izraz koje naziv paketa mora da zadovoljava da bi polje bilo prikazano; FilterBranch => regularni izraz koji naziv grane mora da zadovoljava da bi polje bilo prikazano; FilterRelease => regularni izraz koji verzija izdanja mora da zadovoljava da bi polje bilo prikazano."
-
-#. SysConfig
-msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr "Definicija dinamičkog polja: Group => grupa za pristup dinamičkim poljima; AlwaysVisible => polje može biti uklonjeno (0|1); InformationAreaName => naslov dodataka; InformationAreaSize => veličina i pozicija dodataka (Large|Small); Name => naziv dinamičkog polja; Priority => redosled dinamičkih polja; State => status polja (0 = onemogućeno, 1 = omogućeno, 2 = obavezno); FilterRepository => regularni izraz koji naziv skladišta mora da zadovoljava da bi polje bilo prikazano; FilterPackage => regularni izraz koje naziv paketa mora da zadovoljava da bi polje bilo prikazano; FilterBranch => regularni izraz koji naziv grane mora da zadovoljava da bi polje bilo prikazano; FilterRelease => regularni izraz koji verzija izdanja mora da zadovoljava da bi polje bilo prikazano."
-
-#. SysConfig
-msgid "Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date)."
-msgstr "Definicija eksternih MD5 vrednosti (ključ => MD5, vrednost => Vendor, PackageName, Version, Date)."
-
-#. SysConfig
-msgid "Definition of mappings between public repository requests and internal OPMS repositories."
-msgstr "Mapiranje skladišta u javnim zahtevima sa internim OPMS skladištima."
-
-#. SysConfig
-msgid "Definition of package states."
-msgstr "Definicija stanja paketa."
-
-#. SysConfig
-msgid "Definition of renamed OPMS packages."
-msgstr "Definicija OPMS paketa sa promenjenim imenom."
-
-#. SysConfig
-msgid "Directory, which is used by Git to cache repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Directory, which is used by Git to store temporary data."
-msgstr ""
-
-#. SysConfig
-msgid "Directory, which is used by Git to store working copies."
-msgstr ""
-
-#. SysConfig
-msgid "Disable online repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Do not log git ssh connection authorization results for these users. Useful for automated stuff."
-msgstr "Isključi beleženje autorizacija prilikom ostvarivanja Git SSH konekcija za ove korisnike. Korisno za automatizaciju."
-
-#. SysConfig
-msgid "Dynamic Fields Screens"
-msgstr ""
-
-#. SysConfig
-msgid "DynamicFieldScreen"
-msgstr ""
-
-#. SysConfig
-msgid "Export all available public keys to authorized_keys file."
-msgstr "Izvezi sve dostupne javne ključeve u datoteku authorized_keys."
-
-#. SysConfig
-msgid "Export all relevant releases to ftp server."
-msgstr "Izvoz svih relevantnih izdanja na FTP server."
-
-#. SysConfig
-msgid "Frontend module registration for the OPMS object in the agent interface."
-msgstr "Modul registracije za OPMS objekat u interfejsu operatera."
-
-#. SysConfig
-msgid "Frontend module registration for the PublicOPMSRepository object in the public interface."
-msgstr "Modul registracije za PublicOPMSRepository objekat u javnom interfejsu."
-
-#. SysConfig
-msgid "Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface."
-msgstr "Modul registracije za PublicOPMSRepositoryLookup objekat u javnom interfejsu."
-
-#. SysConfig
-msgid "Frontend module registration for the PublicOPMSTestBuild object in the public interface."
-msgstr "Modul registracije za PublicOPMSTestBuild objekat u javnom interfejsu."
-
-#. SysConfig
-msgid "Frontend module registration for the PublicPackageVerification object in the public interface."
-msgstr "Modul registracije za PublicPackageVerification objekat u javnom interfejsu."
-
-#. SysConfig
-msgid "Frontend module registration for the admin interface."
-msgstr ""
-
-#. SysConfig
-msgid "GIT Author registration."
-msgstr "Registracija Git autora."
-
-#. SysConfig
-msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
-msgstr ""
-
-#. SysConfig
-msgid "Generate documentations once per night."
-msgstr ""
-
-#. SysConfig
-msgid "Git"
-msgstr "Git"
-
-#. SysConfig
-msgid "Git Management"
-msgstr "Git upravljanje"
-
-#. SysConfig
-msgid "Git Repository"
-msgstr ""
-
-#. SysConfig
-msgid "Group, whose members have delete admin permissions in OPMS."
-msgstr "Grupa čiji članovi imaju dozvolu za brisanje u OPMS."
-
-#. SysConfig
-msgid "Group, whose members have repository admin permissions in OPMS."
-msgstr "Grupa čiji članovi imaju administratorske dozvole u OPMS."
-
-#. SysConfig
-msgid "Group, whose members will see CI test result information in OPMS screens."
-msgstr ""
-
-#. SysConfig
-msgid "Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface."
-msgstr "Grupe u kojima registrovani korisnik (po korisničkom imenu i lozinci) mora biti član da bi imao dozvolu za kreiranje test izdanja paketa u javnom interfejsu."
-
-#. SysConfig
-msgid "Groups which will be set during git project creation processes while adding OPMS repositories."
-msgstr "Grupe koje će biti podešene prilikom kreiranja GIT projekta u slučaju dodavanja OPMS skladišta."
-
-#. SysConfig
-msgid "Manage dynamic field in screens."
-msgstr ""
-
-#. SysConfig
-msgid "Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key."
-msgstr "Uredite svoje javne SSH ključeve za Git pristup. Obratite pažnju da morate sačuvati ovo podešavanje prilikom dodavanja novog ključa."
-
-#. SysConfig
-msgid "Module to generate statistics about the added code lines."
-msgstr "Modul za generisanje statistika o broju dodatih linija koda."
-
-#. SysConfig
-msgid "Module to generate statistics about the growth of code."
-msgstr "Modul za generisanje statistika o uvećanju koda."
-
-#. SysConfig
-msgid "Module to generate statistics about the number of git commits."
-msgstr "Modul za generisanje statistika o broju Git komitova."
-
-#. SysConfig
-msgid "Module to generate statistics about the removed code lines."
-msgstr "Modul za generisanje statistika o broju uklonjenih linija koda."
-
-#. SysConfig
-msgid "OPMS"
-msgstr "OPMS"
-
-#. SysConfig
-msgid "Only users who have rw permissions in one of these groups may access git."
-msgstr "Samo korisnici koji imaju rw dozvolu u jednoj od ovih grupa imaće Git pristup."
-
-#. SysConfig
-msgid "Option to set a package compatibility manually."
-msgstr ""
-
-#. SysConfig
-msgid "Parameters for the pages in the BranchView screen."
-msgstr "Parametri za stranice u ekranu prikaza grane."
-
-#. SysConfig
-msgid "Pre-Definition of the 'GITProjectName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr "Predefinisanje dinamičkog polja 'GITProjectName': Group => grupa za pristup dinamičkim poljima; AlwaysVisible => polje može biti uklonjeno (0|1); InformationAreaName => naslov dodataka; InformationAreaSize => veličina i pozicija dodataka (Large|Small); Name => naziv dinamičkog polja; Priority => redosled dinamičkih polja; State => status polja (0 = onemogućeno, 1 = omogućeno, 2 = obavezno); FilterRepository => regularni izraz koji naziv skladišta mora da zadovoljava da bi polje bilo prikazano; FilterPackage => regularni izraz koje naziv paketa mora da zadovoljava da bi polje bilo prikazano; FilterBranch => regularni izraz koji naziv grane mora da zadovoljava da bi polje bilo prikazano; FilterRelease => regularni izraz koji verzija izdanja mora da zadovoljava da bi polje bilo prikazano."
-
-#. SysConfig
-msgid "Pre-Definition of the 'GITRepositoryName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr "Predefinisanje dinamičkog polja 'GITRepositoryName': Group => grupa za pristup dinamičkim poljima; AlwaysVisible => polje može biti uklonjeno (0|1); InformationAreaName => naslov dodataka; InformationAreaSize => veličina i pozicija dodataka (Large|Small); Name => naziv dinamičkog polja; Priority => redosled dinamičkih polja; State => status polja (0 = onemogućeno, 1 = omogućeno, 2 = obavezno); FilterRepository => regularni izraz koji naziv skladišta mora da zadovoljava da bi polje bilo prikazano; FilterPackage => regularni izraz koje naziv paketa mora da zadovoljava da bi polje bilo prikazano; FilterBranch => regularni izraz koji naziv grane mora da zadovoljava da bi polje bilo prikazano; FilterRelease => regularni izraz koji verzija izdanja mora da zadovoljava da bi polje bilo prikazano."
-
-#. SysConfig
-msgid "Pre-Definition of the 'PackageDeprecated' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr "Predefinisanje dinamičkog polja 'PackageDeprecated': Group => grupa za pristup dinamičkim poljima; AlwaysVisible => polje može biti uklonjeno (0|1); InformationAreaName => naslov dodataka; InformationAreaSize => veličina i pozicija dodataka (Large|Small); Name => naziv dinamičkog polja; Priority => redosled dinamičkih polja; State => status polja (0 = onemogućeno, 1 = omogućeno, 2 = obavezno); FilterRepository => regularni izraz koji naziv skladišta mora da zadovoljava da bi polje bilo prikazano; FilterPackage => regularni izraz koje naziv paketa mora da zadovoljava da bi polje bilo prikazano; FilterBranch => regularni izraz koji naziv grane mora da zadovoljava da bi polje bilo prikazano; FilterRelease => regularni izraz koji verzija izdanja mora da zadovoljava da bi polje bilo prikazano."
-
-#. SysConfig
-msgid "Recipients that will be informed by email in case of errors."
-msgstr ""
-
-#. SysConfig
-msgid "SSH Keys for Git Access"
-msgstr "SSH ključevi za Git pristup"
-
-#. SysConfig
-msgid "Send analysis file"
-msgstr ""
-
-#. SysConfig
-msgid "Sets the git clone address to be used in repository listings."
-msgstr "Definiše adresu za Git kloniranje koja će biti korišćena u prikazu repozitorija."
-
-#. SysConfig
-msgid "Sets the home directory for git repositories."
-msgstr "Definiše direktorijum za Git repozitorije."
-
-#. SysConfig
-msgid "Sets the path for the BugzillaAddComment post receive script location."
-msgstr "Definiše putanju do BugzillaAddComment skripta."
-
-#. SysConfig
-msgid "Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
-msgstr ""
-
-#. SysConfig
-msgid "Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
-msgstr "Definiše putanju do OTRSCodePolicy skripta. Preporučeno je da postoji poseban klon OTRSCodePolicy modula koji se redovno osvežava putem cron."
-
-#. SysConfig
-msgid "Show latest commits in git repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Shows a link in the menu to go create a unit test from the current ticket."
-msgstr ""
-
-#. SysConfig
-msgid "Synchronize OPMS tables with a remote database."
-msgstr "Sinhronizacija OPMS tabela sa udaljenom bazom."
-
-#. SysConfig
-msgid "The minimum version of the sphinx library."
-msgstr ""
-
-#. SysConfig
-msgid "The name of the sphinx theme to be used."
-msgstr ""
-
-#. SysConfig
-msgid "The path to the OTRS CSS file (relative below the static path)."
-msgstr ""
-
-#. SysConfig
-msgid "The path to the OTRS logo (relative below the static path)."
-msgstr ""
-
-#. SysConfig
-msgid "The path to the static folder, containing images and css files."
-msgstr ""
-
-#. SysConfig
-msgid "The path to the theme folder, containing the sphinx themes."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines all possible screens to enable or disable default columns."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines all possible screens to enable or disable dynamic fields."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines if only valids or all (invalids) dynamic fields should be shown."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It's still recommended to use only verified packages."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig 'Znuny4OTRSRepoType'."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration registers a Output post-filter to extend package verification."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration registers an output filter to hide online repository selection in package manager."
-msgstr ""
-
-#. SysConfig
-msgid "Tidy unprocessed release that not passed test pomules checks for a long time."
-msgstr ""
-
-#. SysConfig
-msgid "Users who have rw permissions in one of these groups are permitted to execute force pushes 'git push --force'."
-msgstr "Korisnici koji imaju rw dozvolu u jednoj od ovih grupa imaće mogućnost izvršavanja komande 'git push --force'."
-
-#. SysConfig
-msgid "Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management."
-msgstr "Korisnici koji imaju rw dozvolu u jednoj od ovih grupa imaće mogućnost upravljanja projektima. Dodatno pripadnici će imati administracione privilegije za Git upravljanje."
-
-#. SysConfig
-msgid "Defines the initial height for the rich text editor component in pixels."
-msgstr ""
-
-#. SysConfig
-msgid "Defines if parent-child translations for queues and services should be generated automatically."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the initial height in pixels for the rich text editor component for this screen."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr ""
+msgstr "јавно (јавно)"
 

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
-# This file is distributed under the same license as the OTOBO Installation Guide package.
+# Copyright (C) 2019–2026 Rother OSS GmbH, https://otobo.io
+# This file is distributed under the same license as the OTOBO Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
+"Project-Id-Version: OTOBO Documentation dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-22 04:18+0200\n"
+"POT-Creation-Date: 2026-04-20 08:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,1807 +16,1806 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../content/index.rst:20
-msgid "Sacrifice to Sphinx"
+#: ../content/index.rst:5
+msgid "Contents"
 msgstr ""
 
-#: ../../content/index.rst:23
+#: ../content/index.rst:10
 msgid "Description"
 msgstr ""
 
-#: ../../content/index.rst:24
+#: ../content/index.rst:11
 msgid "The FAQ/knowledge base."
 msgstr ""
 
-#: ../../content/index.rst:27
+#: ../content/index.rst:14
 msgid "System requirements"
 msgstr ""
 
-#: ../../content/index.rst:30
+#: ../content/index.rst:17
 msgid "Framework"
 msgstr ""
 
-#: ../../content/index.rst:31
+#: ../content/index.rst:18
 msgid "OTOBO 11.0.x"
 msgstr ""
 
-#: ../../content/index.rst:34
+#: ../content/index.rst:21
 msgid "Packages"
 msgstr ""
 
-#: ../../content/index.rst:35
-#: ../../content/index.rst:39
+#: ../content/index.rst:22
+#: ../content/index.rst:26
 msgid "\\-"
 msgstr ""
 
-#: ../../content/index.rst:38
+#: ../content/index.rst:25
 msgid "Third-party software"
 msgstr ""
 
-#: ../../content/index.rst:42
+#: ../content/index.rst:29
 msgid "Usage"
 msgstr ""
 
-#: ../../content/index.rst:45
+#: ../content/index.rst:32
 msgid "Setup"
 msgstr ""
 
-#: ../../content/index.rst:48
+#: ../content/index.rst:35
 msgid "Configuration Reference"
 msgstr ""
 
-#: ../../content/index.rst:51
+#: ../content/index.rst:38
 msgid "Core::DynamicFields::DriverRegistration"
 msgstr ""
 
-#: ../../content/index.rst:54
+#: ../content/index.rst:41
 msgid "DynamicFields::Driver###FAQ"
 msgstr ""
 
-#: ../../content/index.rst:55
-#: ../../content/index.rst:59
-#: ../../content/index.rst:63
+#: ../content/index.rst:42
+#: ../content/index.rst:46
+#: ../content/index.rst:50
 msgid "DynamicField backend registration."
 msgstr ""
 
-#: ../../content/index.rst:58
+#: ../content/index.rst:45
 msgid "DynamicFields::Driver###Lens"
 msgstr ""
 
-#: ../../content/index.rst:62
+#: ../content/index.rst:49
 msgid "DynamicFields::Driver###ScriptTemplateToolkit"
 msgstr ""
 
-#: ../../content/index.rst:66
+#: ../content/index.rst:53
 msgid "Core::DynamicFields::ObjectTypeRegistration"
 msgstr ""
 
-#: ../../content/index.rst:69
+#: ../content/index.rst:56
 msgid "DynamicFields::ObjectType###FAQ"
 msgstr ""
 
-#: ../../content/index.rst:70
+#: ../content/index.rst:57
 msgid "DynamicField object registration."
 msgstr ""
 
-#: ../../content/index.rst:73
+#: ../content/index.rst:60
 msgid "Core::FAQ"
 msgstr ""
 
-#: ../../content/index.rst:76
+#: ../content/index.rst:63
 msgid "FAQ::Default::RootCategoryComment"
 msgstr ""
 
-#: ../../content/index.rst:77
-#: ../../content/index.rst:81
+#: ../content/index.rst:64
+#: ../content/index.rst:68
 msgid "Default category name."
 msgstr ""
 
-#: ../../content/index.rst:80
+#: ../content/index.rst:67
 msgid "FAQ::Default::RootCategoryName"
 msgstr ""
 
-#: ../../content/index.rst:84
+#: ../content/index.rst:71
 msgid "FAQ::FAQHook"
 msgstr ""
 
-#: ../../content/index.rst:85
+#: ../content/index.rst:72
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
 msgstr ""
 
-#: ../../content/index.rst:88
+#: ../content/index.rst:75
 msgid "FAQ::TitleSize"
 msgstr ""
 
-#: ../../content/index.rst:89
+#: ../content/index.rst:76
 msgid "Default maximum size of the titles in a FAQ article to be shown."
 msgstr ""
 
-#: ../../content/index.rst:92
+#: ../content/index.rst:79
 msgid "FAQ::Default::State"
 msgstr ""
 
-#: ../../content/index.rst:93
+#: ../content/index.rst:80
 msgid "Default state for FAQ entry."
 msgstr ""
 
-#: ../../content/index.rst:96
+#: ../content/index.rst:83
 msgid "FAQ::MultiLanguage"
 msgstr ""
 
-#: ../../content/index.rst:97
+#: ../content/index.rst:84
 msgid "Enable multiple languages on FAQ module."
 msgstr ""
 
-#: ../../content/index.rst:100
+#: ../content/index.rst:87
 msgid "FAQ::Default::Language"
 msgstr ""
 
-#: ../../content/index.rst:101
+#: ../content/index.rst:88
 msgid "Default language for FAQ articles on single language mode."
 msgstr ""
 
-#: ../../content/index.rst:104
+#: ../content/index.rst:91
 msgid "FAQ::Voting"
 msgstr ""
 
-#: ../../content/index.rst:105
+#: ../content/index.rst:92
 msgid "Enable voting mechanism on FAQ module."
 msgstr ""
 
-#: ../../content/index.rst:108
+#: ../content/index.rst:95
 msgid "FAQ::CacheTTL"
 msgstr ""
 
-#: ../../content/index.rst:109
-msgid "Cache Time To Leave for FAQ items."
+#: ../content/index.rst:96
+msgid "Cache Time-To-Live for FAQ items."
 msgstr ""
 
-#: ../../content/index.rst:112
+#: ../content/index.rst:99
 msgid "Core::FAQ::Approval"
 msgstr ""
 
-#: ../../content/index.rst:115
+#: ../content/index.rst:102
 msgid "FAQ::ApprovalRequired"
 msgstr ""
 
-#: ../../content/index.rst:116
+#: ../content/index.rst:103
 msgid "New FAQ articles need approval before they get published."
 msgstr ""
 
-#: ../../content/index.rst:119
+#: ../content/index.rst:106
 msgid "FAQ::ApprovalGroup"
 msgstr ""
 
-#: ../../content/index.rst:120
+#: ../content/index.rst:107
 msgid "Group for the approval of FAQ articles."
 msgstr ""
 
-#: ../../content/index.rst:123
+#: ../content/index.rst:110
 msgid "FAQ::ApprovalQueue"
 msgstr ""
 
-#: ../../content/index.rst:124
+#: ../content/index.rst:111
 msgid "Queue for the approval of FAQ articles."
 msgstr ""
 
-#: ../../content/index.rst:127
+#: ../content/index.rst:114
 msgid "FAQ::ApprovalTicketSubject"
 msgstr ""
 
-#: ../../content/index.rst:128
+#: ../content/index.rst:115
 msgid "Ticket subject for approval of FAQ article."
 msgstr ""
 
-#: ../../content/index.rst:131
+#: ../content/index.rst:118
 msgid "FAQ::ApprovalTicketBody"
 msgstr ""
 
-#: ../../content/index.rst:132
+#: ../content/index.rst:119
 msgid "Ticket body for approval of FAQ article."
 msgstr ""
 
-#: ../../content/index.rst:135
+#: ../content/index.rst:122
 msgid "FAQ::ApprovalTicketPriority"
 msgstr ""
 
-#: ../../content/index.rst:136
+#: ../content/index.rst:123
 msgid "Default priority of tickets for the approval of FAQ articles."
 msgstr ""
 
-#: ../../content/index.rst:139
+#: ../content/index.rst:126
 msgid "FAQ::ApprovalTicketDefaultState"
 msgstr ""
 
-#: ../../content/index.rst:140
+#: ../content/index.rst:127
 msgid "Default state of tickets for the approval of FAQ articles."
 msgstr ""
 
-#: ../../content/index.rst:143
+#: ../content/index.rst:130
 msgid "FAQ::ApprovalTicketType"
 msgstr ""
 
-#: ../../content/index.rst:144
+#: ../content/index.rst:131
 msgid "Default type of tickets for the approval of FAQ articles."
 msgstr ""
 
-#: ../../content/index.rst:147
+#: ../content/index.rst:134
 msgid "Core::FAQ::Explorer"
 msgstr ""
 
-#: ../../content/index.rst:150
+#: ../content/index.rst:137
 msgid "FAQ::Explorer::Path::Show"
 msgstr ""
 
-#: ../../content/index.rst:151
+#: ../content/index.rst:138
 msgid "Show FAQ path yes/no."
 msgstr ""
 
-#: ../../content/index.rst:154
+#: ../content/index.rst:141
 msgid "FAQ::Explorer::ItemList::VotingResultColors"
 msgstr ""
 
-#: ../../content/index.rst:155
+#: ../content/index.rst:142
 msgid "CSS color for the voting result."
 msgstr ""
 
-#: ../../content/index.rst:158
+#: ../content/index.rst:145
 msgid "FAQ::Explorer::ItemList::VotingResultDecimalPlaces"
 msgstr ""
 
-#: ../../content/index.rst:159
+#: ../content/index.rst:146
 msgid "Decimal places of the voting result."
 msgstr ""
 
-#: ../../content/index.rst:162
+#: ../content/index.rst:149
 msgid "FAQ::Explorer::QuickSearch::Show"
 msgstr ""
 
-#: ../../content/index.rst:163
+#: ../content/index.rst:150
 msgid "Interfaces where the quick search should be shown."
 msgstr ""
 
-#: ../../content/index.rst:166
+#: ../content/index.rst:153
 msgid "FAQ::Explorer::LastChange::Show"
 msgstr ""
 
-#: ../../content/index.rst:167
+#: ../content/index.rst:154
 msgid "Show last change items in defined interfaces."
 msgstr ""
 
-#: ../../content/index.rst:170
+#: ../content/index.rst:157
 msgid "FAQ::Explorer::LastChange::Limit"
 msgstr ""
 
-#: ../../content/index.rst:171
+#: ../content/index.rst:158
 msgid "Number of shown items in last changes."
 msgstr ""
 
-#: ../../content/index.rst:174
+#: ../content/index.rst:161
 msgid "FAQ::Explorer::LastChange::ShowSubCategoryItems"
 msgstr ""
 
-#: ../../content/index.rst:175
-#: ../../content/index.rst:183
-#: ../../content/index.rst:199
+#: ../content/index.rst:162
+#: ../content/index.rst:170
+#: ../content/index.rst:186
 msgid "Show items of subcategories."
 msgstr ""
 
-#: ../../content/index.rst:178
+#: ../content/index.rst:165
 msgid "FAQ::Explorer::LastCreate::Show"
 msgstr ""
 
-#: ../../content/index.rst:179
+#: ../content/index.rst:166
 msgid "Show last created items in defined interfaces."
 msgstr ""
 
-#: ../../content/index.rst:182
+#: ../content/index.rst:169
 msgid "FAQ::Explorer::LastCreate::ShowSubCategoryItems"
 msgstr ""
 
-#: ../../content/index.rst:186
+#: ../content/index.rst:173
 msgid "FAQ::Explorer::LastCreate::Limit"
 msgstr ""
 
-#: ../../content/index.rst:187
+#: ../content/index.rst:174
 msgid "Number of shown items in last created."
 msgstr ""
 
-#: ../../content/index.rst:190
+#: ../content/index.rst:177
 msgid "FAQ::Explorer::Top10::Show"
 msgstr ""
 
-#: ../../content/index.rst:191
+#: ../content/index.rst:178
 msgid "Show top 10 items in defined interfaces."
 msgstr ""
 
-#: ../../content/index.rst:194
+#: ../content/index.rst:181
 msgid "FAQ::Explorer::Top10::Limit"
 msgstr ""
 
-#: ../../content/index.rst:195
+#: ../content/index.rst:182
 msgid "Number of shown items in the top 10 feature."
 msgstr ""
 
-#: ../../content/index.rst:198
+#: ../content/index.rst:185
 msgid "FAQ::Explorer::Top10::ShowSubCategoryItems"
 msgstr ""
 
-#: ../../content/index.rst:202
+#: ../content/index.rst:189
 msgid "Core::FAQ::Item"
 msgstr ""
 
-#: ../../content/index.rst:205
+#: ../content/index.rst:192
 msgid "FAQ::Item::Field1"
 msgstr ""
 
-#: ../../content/index.rst:206
-#: ../../content/index.rst:210
-#: ../../content/index.rst:214
-#: ../../content/index.rst:218
-#: ../../content/index.rst:222
-#: ../../content/index.rst:226
+#: ../content/index.rst:193
+#: ../content/index.rst:197
+#: ../content/index.rst:201
+#: ../content/index.rst:205
+#: ../content/index.rst:209
+#: ../content/index.rst:213
 msgid "Definition of FAQ item free text field."
 msgstr ""
 
-#: ../../content/index.rst:209
+#: ../content/index.rst:196
 msgid "FAQ::Item::Field2"
 msgstr ""
 
-#: ../../content/index.rst:213
+#: ../content/index.rst:200
 msgid "FAQ::Item::Field3"
 msgstr ""
 
-#: ../../content/index.rst:217
+#: ../content/index.rst:204
 msgid "FAQ::Item::Field4"
 msgstr ""
 
-#: ../../content/index.rst:221
+#: ../content/index.rst:208
 msgid "FAQ::Item::Field5"
 msgstr ""
 
-#: ../../content/index.rst:225
+#: ../content/index.rst:212
 msgid "FAQ::Item::Field6"
 msgstr ""
 
-#: ../../content/index.rst:229
+#: ../content/index.rst:216
 msgid "FAQ::Item::HTML"
 msgstr ""
 
-#: ../../content/index.rst:230
+#: ../content/index.rst:217
 msgid "Show FAQ Article with HTML."
 msgstr ""
 
-#: ../../content/index.rst:233
+#: ../content/index.rst:220
 msgid "Core::FAQ::Item::Voting"
 msgstr ""
 
-#: ../../content/index.rst:236
+#: ../content/index.rst:223
 msgid "FAQ::Item::Voting::Show"
 msgstr ""
 
-#: ../../content/index.rst:237
+#: ../content/index.rst:224
 msgid "Show voting in defined interfaces."
 msgstr ""
 
-#: ../../content/index.rst:240
+#: ../content/index.rst:227
 msgid "FAQ::Item::Voting::Rates"
 msgstr ""
 
-#: ../../content/index.rst:241
+#: ../content/index.rst:228
 msgid "Rates for voting. Key must be in percent."
 msgstr ""
 
-#: ../../content/index.rst:244
+#: ../content/index.rst:231
 msgid "Core::FAQ::RelatedArticles"
 msgstr ""
 
-#: ../../content/index.rst:247
+#: ../content/index.rst:234
 msgid "FAQ::Customer::RelatedArticles::Enabled"
 msgstr ""
 
-#: ../../content/index.rst:248
+#: ../content/index.rst:235
 msgid "Enable the related article feature for the customer frontend."
 msgstr ""
 
-#: ../../content/index.rst:251
+#: ../content/index.rst:238
 msgid "FAQ::Service"
 msgstr ""
 
-#: ../../content/index.rst:252
+#: ../content/index.rst:239
 msgid "Enable service assignment for FAQs."
 msgstr ""
 
-#: ../../content/index.rst:255
+#: ../content/index.rst:242
 msgid "FAQ::Customer::RelatedArticlesOnServiceOnly"
 msgstr ""
 
-#: ../../content/index.rst:256
+#: ../content/index.rst:243
 msgid "Show related articles on service change even with empty subject and body."
 msgstr ""
 
-#: ../../content/index.rst:259
+#: ../content/index.rst:246
 msgid "FAQ::KeywordArticeList::SearchLimit"
 msgstr ""
 
-#: ../../content/index.rst:260
+#: ../content/index.rst:247
 msgid "Limit for the search to build the keyword FAQ article list."
 msgstr ""
 
-#: ../../content/index.rst:263
+#: ../content/index.rst:250
 msgid "Core::FAQ::TicketCompose"
 msgstr ""
 
-#: ../../content/index.rst:266
+#: ../content/index.rst:253
 msgid "FAQ::TicketCompose###InsertMethod"
 msgstr ""
 
-#: ../../content/index.rst:267
+#: ../content/index.rst:254
 msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
 msgstr ""
 
-#: ../../content/index.rst:270
+#: ../content/index.rst:257
 msgid "FAQ::TicketCompose###IncludeInternal"
 msgstr ""
 
-#: ../../content/index.rst:271
+#: ../content/index.rst:258
 msgid "Include internal fields on a FAQ based Ticket."
 msgstr ""
 
-#: ../../content/index.rst:274
+#: ../content/index.rst:261
 msgid "FAQ::TicketCompose###ShowFieldNames"
 msgstr ""
 
-#: ../../content/index.rst:275
+#: ../content/index.rst:262
 msgid "Include the name of each field in a FAQ based Ticket."
 msgstr ""
 
-#: ../../content/index.rst:278
+#: ../content/index.rst:265
 msgid "FAQ::TicketCompose###ShowInsertTextButton"
 msgstr ""
 
-#: ../../content/index.rst:279
+#: ../content/index.rst:266
 msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
 msgstr ""
 
-#: ../../content/index.rst:282
+#: ../content/index.rst:269
 msgid "FAQ::TicketCompose###ShowInsertLinkButton"
 msgstr ""
 
-#: ../../content/index.rst:283
+#: ../content/index.rst:270
 msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
 
-#: ../../content/index.rst:286
+#: ../content/index.rst:273
 msgid "FAQ::TicketCompose###ShowInsertTextAndLinkButton"
 msgstr ""
 
-#: ../../content/index.rst:287
+#: ../content/index.rst:274
 msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
 
-#: ../../content/index.rst:290
+#: ../content/index.rst:277
 msgid "FAQ::TicketCompose###UpdateArticleSubject"
 msgstr ""
 
-#: ../../content/index.rst:291
+#: ../content/index.rst:278
 msgid "Define if the FAQ title should be concatenated to article subject."
 msgstr ""
 
-#: ../../content/index.rst:294
+#: ../content/index.rst:281
 msgid "Core::LinkObject"
 msgstr ""
 
-#: ../../content/index.rst:297
+#: ../content/index.rst:284
 msgid "LinkObject::PossibleLink###8301"
 msgstr ""
 
-#: ../../content/index.rst:298
+#: ../content/index.rst:285
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
 msgstr ""
 
-#: ../../content/index.rst:301
+#: ../content/index.rst:288
 msgid "LinkObject::PossibleLink###8302"
 msgstr ""
 
-#: ../../content/index.rst:302
+#: ../content/index.rst:289
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
 msgstr ""
 
-#: ../../content/index.rst:305
+#: ../content/index.rst:292
 msgid "LinkObject::PossibleLink###8303"
 msgstr ""
 
-#: ../../content/index.rst:306
+#: ../content/index.rst:293
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
 msgstr ""
 
-#: ../../content/index.rst:309
+#: ../content/index.rst:296
 msgid "LinkObject::PossibleLink###8304"
 msgstr ""
 
-#: ../../content/index.rst:310
+#: ../content/index.rst:297
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
 msgstr ""
 
-#: ../../content/index.rst:313
+#: ../content/index.rst:300
 msgid "Frontend::Agent"
 msgstr ""
 
-#: ../../content/index.rst:316
+#: ../content/index.rst:303
 msgid "FAQ::Agent::StateTypes"
 msgstr ""
 
-#: ../../content/index.rst:317
+#: ../content/index.rst:304
 msgid "List of state types which can be used in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:320
+#: ../content/index.rst:307
 msgid "Frontend::HeaderMetaModule###3-FAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:321
+#: ../content/index.rst:308
 msgid "Module to generate html OpenSearch profile for short FAQ search."
 msgstr ""
 
-#: ../../content/index.rst:324
+#: ../content/index.rst:311
 msgid "Frontend::Agent::FAQJournalOverview"
 msgstr ""
 
-#: ../../content/index.rst:327
+#: ../content/index.rst:314
 msgid "FAQ::Frontend::JournalOverview###Small"
 msgstr ""
 
-#: ../../content/index.rst:328
+#: ../content/index.rst:315
 msgid "Defines an overview module to show the small view of a FAQ journal."
 msgstr ""
 
-#: ../../content/index.rst:331
+#: ../content/index.rst:318
 msgid "Frontend::Agent::FAQOverview"
 msgstr ""
 
-#: ../../content/index.rst:334
+#: ../content/index.rst:321
 msgid "FAQ::Frontend::Overview###Small"
 msgstr ""
 
-#: ../../content/index.rst:335
+#: ../content/index.rst:322
 msgid "Defines an overview module to show the small view of a FAQ list."
 msgstr ""
 
-#: ../../content/index.rst:338
+#: ../content/index.rst:325
 msgid "FAQ::Frontend::OverviewSmall###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:339
+#: ../content/index.rst:326
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:342
+#: ../content/index.rst:329
 msgid "Frontend::Agent::LinkObject"
 msgstr ""
 
-#: ../../content/index.rst:345
+#: ../content/index.rst:332
 msgid "LinkObject::ComplexTable::SettingsVisibility###FAQ"
 msgstr ""
 
-#: ../../content/index.rst:346
+#: ../content/index.rst:333
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
 
-#: ../../content/index.rst:349
+#: ../content/index.rst:336
 msgid "LinkObject::ComplexTable###FAQ"
 msgstr ""
 
-#: ../../content/index.rst:350
+#: ../content/index.rst:337
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
 
-#: ../../content/index.rst:353
+#: ../content/index.rst:340
 msgid "Frontend::Agent::ModuleRegistration"
 msgstr ""
 
-#: ../../content/index.rst:356
+#: ../content/index.rst:343
 msgid "Frontend::Module###AgentFAQExplorer"
 msgstr ""
 
-#: ../../content/index.rst:357
-#: ../../content/index.rst:361
-#: ../../content/index.rst:365
-#: ../../content/index.rst:369
-#: ../../content/index.rst:373
-#: ../../content/index.rst:377
-#: ../../content/index.rst:381
-#: ../../content/index.rst:385
-#: ../../content/index.rst:389
-#: ../../content/index.rst:393
-#: ../../content/index.rst:397
-#: ../../content/index.rst:401
-#: ../../content/index.rst:405
+#: ../content/index.rst:344
+#: ../content/index.rst:348
+#: ../content/index.rst:352
+#: ../content/index.rst:356
+#: ../content/index.rst:360
+#: ../content/index.rst:364
+#: ../content/index.rst:368
+#: ../content/index.rst:372
+#: ../content/index.rst:376
+#: ../content/index.rst:380
+#: ../content/index.rst:384
+#: ../content/index.rst:388
+#: ../content/index.rst:392
 msgid "Frontend module registration for the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:360
+#: ../content/index.rst:347
 msgid "Frontend::Module###AgentFAQAdd"
 msgstr ""
 
-#: ../../content/index.rst:364
+#: ../content/index.rst:351
 msgid "Frontend::Module###AgentFAQEdit"
 msgstr ""
 
-#: ../../content/index.rst:368
+#: ../content/index.rst:355
 msgid "Frontend::Module###AgentFAQLanguage"
 msgstr ""
 
-#: ../../content/index.rst:372
+#: ../content/index.rst:359
 msgid "Frontend::Module###AgentFAQCategory"
 msgstr ""
 
-#: ../../content/index.rst:376
+#: ../content/index.rst:363
 msgid "Frontend::Module###AgentFAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:380
+#: ../content/index.rst:367
 msgid "Frontend::Module###AgentFAQSearchSmall"
 msgstr ""
 
-#: ../../content/index.rst:384
+#: ../content/index.rst:371
 msgid "Frontend::Module###AgentFAQZoom"
 msgstr ""
 
-#: ../../content/index.rst:388
+#: ../content/index.rst:375
 msgid "Frontend::Module###AgentFAQRichText"
 msgstr ""
 
-#: ../../content/index.rst:392
+#: ../content/index.rst:379
 msgid "Frontend::Module###AgentFAQPrint"
 msgstr ""
 
-#: ../../content/index.rst:396
+#: ../content/index.rst:383
 msgid "Frontend::Module###AgentFAQJournal"
 msgstr ""
 
-#: ../../content/index.rst:400
+#: ../content/index.rst:387
 msgid "Frontend::Module###AgentFAQHistory"
 msgstr ""
 
-#: ../../content/index.rst:404
+#: ../content/index.rst:391
 msgid "Frontend::Module###AgentFAQDelete"
 msgstr ""
 
-#: ../../content/index.rst:408
+#: ../content/index.rst:395
 msgid "Frontend::Agent::ModuleRegistration::Loader"
 msgstr ""
 
-#: ../../content/index.rst:411
+#: ../content/index.rst:398
 msgid "Loader::Module::AgentFAQExplorer###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:412
-#: ../../content/index.rst:416
-#: ../../content/index.rst:420
-#: ../../content/index.rst:424
-#: ../../content/index.rst:428
-#: ../../content/index.rst:432
-#: ../../content/index.rst:436
-#: ../../content/index.rst:440
-#: ../../content/index.rst:820
-#: ../../content/index.rst:824
-#: ../../content/index.rst:828
-#: ../../content/index.rst:832
+#: ../content/index.rst:399
+#: ../content/index.rst:403
+#: ../content/index.rst:407
+#: ../content/index.rst:411
+#: ../content/index.rst:415
+#: ../content/index.rst:419
+#: ../content/index.rst:423
+#: ../content/index.rst:427
+#: ../content/index.rst:807
+#: ../content/index.rst:811
+#: ../content/index.rst:815
+#: ../content/index.rst:819
 msgid "Loader module registration for the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:415
+#: ../content/index.rst:402
 msgid "Loader::Module::AgentFAQAdd###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:419
+#: ../content/index.rst:406
 msgid "Loader::Module::AgentFAQEdit###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:423
+#: ../content/index.rst:410
 msgid "Loader::Module::AgentFAQLanguage###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:427
+#: ../content/index.rst:414
 msgid "Loader::Module::AgentFAQCategory###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:431
+#: ../content/index.rst:418
 msgid "Loader::Module::AgentFAQSearch###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:435
+#: ../content/index.rst:422
 msgid "Loader::Module::AgentFAQZoom###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:439
+#: ../content/index.rst:426
 msgid "Loader::Module::AgentFAQJournal###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:443
+#: ../content/index.rst:430
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
 msgstr ""
 
-#: ../../content/index.rst:446
+#: ../content/index.rst:433
 msgid "Frontend::Navigation###AgentFAQExplorer###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:447
-#: ../../content/index.rst:451
-#: ../../content/index.rst:455
-#: ../../content/index.rst:459
-#: ../../content/index.rst:463
-#: ../../content/index.rst:467
-#: ../../content/index.rst:471
-#: ../../content/index.rst:839
-#: ../../content/index.rst:843
-#: ../../content/index.rst:956
-#: ../../content/index.rst:976
+#: ../content/index.rst:434
+#: ../content/index.rst:438
+#: ../content/index.rst:442
+#: ../content/index.rst:446
+#: ../content/index.rst:450
+#: ../content/index.rst:454
+#: ../content/index.rst:458
+#: ../content/index.rst:826
+#: ../content/index.rst:830
+#: ../content/index.rst:943
+#: ../content/index.rst:963
 msgid "Main menu item registration."
 msgstr ""
 
-#: ../../content/index.rst:450
+#: ../content/index.rst:437
 msgid "Frontend::Navigation###AgentFAQAdd###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:454
+#: ../content/index.rst:441
 msgid "Frontend::Navigation###AgentFAQLanguage###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:458
+#: ../content/index.rst:445
 msgid "Frontend::Navigation###AgentFAQCategory###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:462
+#: ../content/index.rst:449
 msgid "Frontend::Navigation###AgentFAQSearch###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:466
+#: ../content/index.rst:453
 msgid "Frontend::Navigation###AgentFAQSearchSmall###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:470
+#: ../content/index.rst:457
 msgid "Frontend::Navigation###AgentFAQJournal###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:474
+#: ../content/index.rst:461
 msgid "Frontend::Agent::ModuleRegistration::MainMenu::Search"
 msgstr ""
 
-#: ../../content/index.rst:477
+#: ../content/index.rst:464
 msgid "Frontend::Search###FAQ"
 msgstr ""
 
-#: ../../content/index.rst:478
+#: ../content/index.rst:465
 msgid "FAQ search backend router of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:481
+#: ../content/index.rst:468
 msgid "Frontend::Agent::ToolBar"
 msgstr ""
 
-#: ../../content/index.rst:484
+#: ../content/index.rst:471
 msgid "Frontend::ToolBarModule###90-FAQ::AgentFAQAdd"
 msgstr ""
 
-#: ../../content/index.rst:485
+#: ../content/index.rst:472
 msgid "Toolbar Item for a shortcut."
 msgstr ""
 
-#: ../../content/index.rst:488
+#: ../content/index.rst:475
 msgid "Frontend::Agent::View::Dashboard"
 msgstr ""
 
-#: ../../content/index.rst:491
+#: ../content/index.rst:478
 msgid "DashboardBackend###0398-FAQ-LastChange"
 msgstr ""
 
-#: ../../content/index.rst:492
-#: ../../content/index.rst:496
+#: ../content/index.rst:479
+#: ../content/index.rst:483
 msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
 msgstr ""
 
-#: ../../content/index.rst:495
+#: ../content/index.rst:482
 msgid "DashboardBackend###0399-FAQ-LastCreate"
 msgstr ""
 
-#: ../../content/index.rst:499
+#: ../content/index.rst:486
 msgid "Frontend::Agent::View::FAQAdd"
 msgstr ""
 
-#: ../../content/index.rst:502
+#: ../content/index.rst:489
 msgid "FAQ::Frontend::AgentFAQAdd###RichTextWidth"
 msgstr ""
 
-#: ../../content/index.rst:503
-#: ../../content/index.rst:518
+#: ../content/index.rst:490
+#: ../content/index.rst:505
 msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
 
-#: ../../content/index.rst:506
+#: ../content/index.rst:493
 msgid "FAQ::Frontend::AgentFAQAdd###RichTextHeight"
 msgstr ""
 
-#: ../../content/index.rst:507
-#: ../../content/index.rst:522
+#: ../content/index.rst:494
+#: ../content/index.rst:509
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
 
-#: ../../content/index.rst:510
+#: ../content/index.rst:497
 msgid "FAQ::Frontend::AgentFAQAdd###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:511
+#: ../content/index.rst:498
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:514
+#: ../content/index.rst:501
 msgid "Frontend::Agent::View::FAQEdit"
 msgstr ""
 
-#: ../../content/index.rst:517
+#: ../content/index.rst:504
 msgid "FAQ::Frontend::AgentFAQEdit###RichTextWidth"
 msgstr ""
 
-#: ../../content/index.rst:521
+#: ../content/index.rst:508
 msgid "FAQ::Frontend::AgentFAQEdit###RichTextHeight"
 msgstr ""
 
-#: ../../content/index.rst:525
+#: ../content/index.rst:512
 msgid "FAQ::Frontend::AgentFAQEdit###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:526
+#: ../content/index.rst:513
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:529
+#: ../content/index.rst:516
 msgid "Frontend::Agent::View::FAQExplorer"
 msgstr ""
 
-#: ../../content/index.rst:532
+#: ../content/index.rst:519
 msgid "FAQ::Frontend::AgentFAQExplorer###ShowColumns"
 msgstr ""
 
-#: ../../content/index.rst:533
+#: ../content/index.rst:520
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
 msgstr ""
 
-#: ../../content/index.rst:536
+#: ../content/index.rst:523
 msgid "FAQ::Frontend::AgentFAQExplorer###SortBy::Default"
 msgstr ""
 
-#: ../../content/index.rst:537
+#: ../content/index.rst:524
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:540
+#: ../content/index.rst:527
 msgid "FAQ::Frontend::AgentFAQExplorer###Order::Default"
 msgstr ""
 
-#: ../../content/index.rst:541
+#: ../content/index.rst:528
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
-#: ../../content/index.rst:544
+#: ../content/index.rst:531
 msgid "FAQ::Frontend::AgentFAQExplorer###SearchLimit"
 msgstr ""
 
-#: ../../content/index.rst:545
+#: ../content/index.rst:532
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:548
+#: ../content/index.rst:535
 msgid "FAQ::Frontend::AgentFAQExplorer###TitleSize"
 msgstr ""
 
-#: ../../content/index.rst:549
+#: ../content/index.rst:536
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:552
+#: ../content/index.rst:539
 msgid "FAQ::Frontend::AgentFAQExplorer###ShowInvalidFAQItems"
 msgstr ""
 
-#: ../../content/index.rst:553
+#: ../content/index.rst:540
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:556
+#: ../content/index.rst:543
 msgid "Frontend::Agent::View::FAQJournal"
 msgstr ""
 
-#: ../../content/index.rst:559
+#: ../content/index.rst:546
 msgid "FAQ::Frontend::AgentFAQJournal###ShowColumns"
 msgstr ""
 
-#: ../../content/index.rst:560
+#: ../content/index.rst:547
 msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
 msgstr ""
 
-#: ../../content/index.rst:563
+#: ../content/index.rst:550
 msgid "FAQ::Frontend::AgentFAQJournal###JournalLimit"
 msgstr ""
 
-#: ../../content/index.rst:564
+#: ../content/index.rst:551
 msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:567
+#: ../content/index.rst:554
 msgid "FAQ::Frontend::AgentFAQJournal###TitleSize"
 msgstr ""
 
-#: ../../content/index.rst:568
+#: ../content/index.rst:555
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:571
+#: ../content/index.rst:558
 msgid "Frontend::Agent::View::FAQPrint"
 msgstr ""
 
-#: ../../content/index.rst:574
+#: ../content/index.rst:561
 msgid "FAQ::Frontend::AgentFAQPrint###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:575
+#: ../content/index.rst:562
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:578
+#: ../content/index.rst:565
 msgid "Frontend::Agent::View::FAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:581
+#: ../content/index.rst:568
 msgid "FAQ::Frontend::AgentFAQSearch###ShowColumns"
 msgstr ""
 
-#: ../../content/index.rst:582
+#: ../content/index.rst:569
 msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
 msgstr ""
 
-#: ../../content/index.rst:585
+#: ../content/index.rst:572
 msgid "FAQ::Frontend::AgentFAQSearch###SortBy::Default"
 msgstr ""
 
-#: ../../content/index.rst:586
+#: ../content/index.rst:573
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:589
+#: ../content/index.rst:576
 msgid "FAQ::Frontend::AgentFAQSearch###Order::Default"
 msgstr ""
 
-#: ../../content/index.rst:590
+#: ../content/index.rst:577
 msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
-#: ../../content/index.rst:593
+#: ../content/index.rst:580
 msgid "FAQ::Frontend::AgentFAQSearch###SearchLimit"
 msgstr ""
 
-#: ../../content/index.rst:594
+#: ../content/index.rst:581
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:597
+#: ../content/index.rst:584
 msgid "FAQ::Frontend::AgentFAQSearch###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:598
+#: ../content/index.rst:585
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:601
+#: ../content/index.rst:588
 msgid "FAQ::Frontend::AgentFAQSearch###SearchCSVDynamicField"
 msgstr ""
 
-#: ../../content/index.rst:602
-#: ../../content/index.rst:900
-#: ../../content/index.rst:1049
+#: ../content/index.rst:589
+#: ../content/index.rst:887
+#: ../content/index.rst:1036
 msgid "Dynamic Fields used to export the search result in CSV format."
 msgstr ""
 
-#: ../../content/index.rst:605
+#: ../content/index.rst:592
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###Fulltext"
 msgstr ""
 
-#: ../../content/index.rst:606
-#: ../../content/index.rst:610
-#: ../../content/index.rst:614
-#: ../../content/index.rst:618
-#: ../../content/index.rst:622
-#: ../../content/index.rst:626
-#: ../../content/index.rst:630
-#: ../../content/index.rst:634
-#: ../../content/index.rst:638
-#: ../../content/index.rst:642
-#: ../../content/index.rst:646
-#: ../../content/index.rst:650
-#: ../../content/index.rst:654
-#: ../../content/index.rst:658
-#: ../../content/index.rst:662
-#: ../../content/index.rst:666
-#: ../../content/index.rst:670
+#: ../content/index.rst:593
+#: ../content/index.rst:597
+#: ../content/index.rst:601
+#: ../content/index.rst:605
+#: ../content/index.rst:609
+#: ../content/index.rst:613
+#: ../content/index.rst:617
+#: ../content/index.rst:621
+#: ../content/index.rst:625
+#: ../content/index.rst:629
+#: ../content/index.rst:633
+#: ../content/index.rst:637
+#: ../content/index.rst:641
+#: ../content/index.rst:645
+#: ../content/index.rst:649
+#: ../content/index.rst:653
+#: ../content/index.rst:657
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
 msgstr ""
 
-#: ../../content/index.rst:609
+#: ../content/index.rst:596
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###Number"
 msgstr ""
 
-#: ../../content/index.rst:613
+#: ../content/index.rst:600
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###Title"
 msgstr ""
 
-#: ../../content/index.rst:617
+#: ../content/index.rst:604
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###Keyword"
 msgstr ""
 
-#: ../../content/index.rst:621
+#: ../content/index.rst:608
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###LanguageIDs"
 msgstr ""
 
-#: ../../content/index.rst:625
+#: ../content/index.rst:612
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###CategoryIDs"
 msgstr ""
 
-#: ../../content/index.rst:629
+#: ../content/index.rst:616
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ValidIDs"
 msgstr ""
 
-#: ../../content/index.rst:633
+#: ../content/index.rst:620
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###StateIDs"
 msgstr ""
 
-#: ../../content/index.rst:637
+#: ../content/index.rst:624
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###VoteSearchType"
 msgstr ""
 
-#: ../../content/index.rst:641
+#: ../content/index.rst:628
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###RateSearchType"
 msgstr ""
 
-#: ../../content/index.rst:645
+#: ../content/index.rst:632
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ApprovedSearch"
 msgstr ""
 
-#: ../../content/index.rst:649
+#: ../content/index.rst:636
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###CreatedUserIDs"
 msgstr ""
 
-#: ../../content/index.rst:653
+#: ../content/index.rst:640
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###LastChangedUserIDs"
 msgstr ""
 
-#: ../../content/index.rst:657
+#: ../content/index.rst:644
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimePoint"
 msgstr ""
 
-#: ../../content/index.rst:661
+#: ../content/index.rst:648
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimeSlot"
 msgstr ""
 
-#: ../../content/index.rst:665
+#: ../content/index.rst:652
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ItemChangeTimePoint"
 msgstr ""
 
-#: ../../content/index.rst:669
+#: ../content/index.rst:656
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ItemChangeTimeSlot"
 msgstr ""
 
-#: ../../content/index.rst:673
+#: ../content/index.rst:660
 msgid "FAQ::Frontend::AgentFAQSearch###TitleSize"
 msgstr ""
 
-#: ../../content/index.rst:674
+#: ../content/index.rst:661
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:677
+#: ../content/index.rst:664
 msgid "Frontend::Agent::View::FAQZoom"
 msgstr ""
 
-#: ../../content/index.rst:680
+#: ../content/index.rst:667
 msgid "FAQ::Frontend::AgentHTMLFieldHeightDefault"
 msgstr ""
 
-#: ../../content/index.rst:681
+#: ../content/index.rst:668
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
 msgstr ""
 
-#: ../../content/index.rst:684
+#: ../content/index.rst:671
 msgid "FAQ::Frontend::AgentHTMLFieldHeightMax"
 msgstr ""
 
-#: ../../content/index.rst:685
+#: ../content/index.rst:672
 msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
 msgstr ""
 
-#: ../../content/index.rst:688
+#: ../content/index.rst:675
 msgid "FAQ::Frontend::AgentFAQZoom###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:689
+#: ../content/index.rst:676
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:692
+#: ../content/index.rst:679
 msgid "Frontend::Agent::View::FAQZoom::MenuModule"
 msgstr ""
 
-#: ../../content/index.rst:695
+#: ../content/index.rst:682
 msgid "FAQ::Frontend::MenuModule###000-Back"
 msgstr ""
 
-#: ../../content/index.rst:696
+#: ../content/index.rst:683
 msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:699
+#: ../content/index.rst:686
 msgid "FAQ::Frontend::MenuModule###010-Edit"
 msgstr ""
 
-#: ../../content/index.rst:700
+#: ../content/index.rst:687
 msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:703
+#: ../content/index.rst:690
 msgid "FAQ::Frontend::MenuModule###020-History"
 msgstr ""
 
-#: ../../content/index.rst:704
+#: ../content/index.rst:691
 msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:707
+#: ../content/index.rst:694
 msgid "FAQ::Frontend::MenuModule###030-Print"
 msgstr ""
 
-#: ../../content/index.rst:708
+#: ../content/index.rst:695
 msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:711
+#: ../content/index.rst:698
 msgid "FAQ::Frontend::MenuModule###040-Link"
 msgstr ""
 
-#: ../../content/index.rst:712
+#: ../content/index.rst:699
 msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:715
+#: ../content/index.rst:702
 msgid "FAQ::Frontend::MenuModule###050-Delete"
 msgstr ""
 
-#: ../../content/index.rst:716
+#: ../content/index.rst:703
 msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:719
+#: ../content/index.rst:706
 msgid "Frontend::Agent::View::Preferences"
 msgstr ""
 
-#: ../../content/index.rst:722
+#: ../content/index.rst:709
 msgid "PreferencesGroups###FAQOverviewSmallPageShown"
 msgstr ""
 
-#: ../../content/index.rst:723
+#: ../content/index.rst:710
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
 msgstr ""
 
-#: ../../content/index.rst:726
+#: ../content/index.rst:713
 msgid "PreferencesGroups###FAQJournalOverviewSmallPageShown"
 msgstr ""
 
-#: ../../content/index.rst:727
+#: ../content/index.rst:714
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
 msgstr ""
 
-#: ../../content/index.rst:730
+#: ../content/index.rst:717
 msgid "Frontend::Base::Loader"
 msgstr ""
 
-#: ../../content/index.rst:733
+#: ../content/index.rst:720
 msgid "Loader::Agent::CommonCSS###200-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:734
+#: ../content/index.rst:721
 msgid "List of CSS files to always be loaded for the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:737
+#: ../content/index.rst:724
 msgid "Loader::Agent::CommonJS###200-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:738
+#: ../content/index.rst:725
 msgid "List of JS files to always be loaded for the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:741
+#: ../content/index.rst:728
 msgid "Frontend::Base::OutputFilter"
 msgstr ""
 
-#: ../../content/index.rst:744
+#: ../content/index.rst:731
 msgid "Frontend::Output::FilterElementPost###FAQ"
 msgstr ""
 
-#: ../../content/index.rst:745
+#: ../content/index.rst:732
 msgid "Defines where the 'Insert FAQ' link will be displayed."
 msgstr ""
 
-#: ../../content/index.rst:748
+#: ../content/index.rst:735
 msgid "Frontend::Output::OutputFilterTextAutoLink###FAQ"
 msgstr ""
 
-#: ../../content/index.rst:749
+#: ../content/index.rst:736
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
 msgstr ""
 
-#: ../../content/index.rst:752
+#: ../content/index.rst:739
 msgid "Frontend::Output::FilterElementPost###OutputFilterPostFAQCustomerRelatedArticles"
 msgstr ""
 
-#: ../../content/index.rst:753
+#: ../content/index.rst:740
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
 msgstr ""
 
-#: ../../content/index.rst:756
+#: ../content/index.rst:743
 msgid "Frontend::Customer"
 msgstr ""
 
-#: ../../content/index.rst:759
+#: ../content/index.rst:746
 msgid "FAQ::Customer::StateTypes"
 msgstr ""
 
-#: ../../content/index.rst:760
+#: ../content/index.rst:747
 msgid "List of state types which can be used in the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:763
+#: ../content/index.rst:750
 msgid "CustomerFrontend::HeaderMetaModule###3-FAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:764
+#: ../content/index.rst:751
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:767
+#: ../content/index.rst:754
 msgid "Frontend::Customer::FAQOverview"
 msgstr ""
 
-#: ../../content/index.rst:770
+#: ../content/index.rst:757
 msgid "FAQ::Frontend::CustomerFAQOverview###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:771
+#: ../content/index.rst:758
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:774
+#: ../content/index.rst:761
 msgid "Frontend::Customer::FAQRelatedArticles"
 msgstr ""
 
-#: ../../content/index.rst:777
+#: ../content/index.rst:764
 msgid "FAQ::Frontend::CustomerFAQRelatedArticles###QueuesEnabled"
 msgstr ""
 
-#: ../../content/index.rst:778
+#: ../content/index.rst:765
 msgid "List of queue names for which the related article feature is enabled."
 msgstr ""
 
-#: ../../content/index.rst:781
+#: ../content/index.rst:768
 msgid "FAQ::Frontend::CustomerFAQRelatedArticles###DefaultLanguages"
 msgstr ""
 
-#: ../../content/index.rst:782
+#: ../content/index.rst:769
 msgid "The default languages for the related FAQ articles."
 msgstr ""
 
-#: ../../content/index.rst:785
+#: ../content/index.rst:772
 msgid "FAQ::Frontend::CustomerFAQRelatedArticles###ShowLimit"
 msgstr ""
 
-#: ../../content/index.rst:786
+#: ../content/index.rst:773
 msgid "Output limit for the related FAQ articles."
 msgstr ""
 
-#: ../../content/index.rst:789
+#: ../content/index.rst:776
 msgid "FAQ::Frontend::CustomerFAQRelatedArticles###VoteStarsVisible"
 msgstr ""
 
-#: ../../content/index.rst:790
+#: ../content/index.rst:777
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
 msgstr ""
 
-#: ../../content/index.rst:793
+#: ../content/index.rst:780
 msgid "Frontend::Customer::ModuleRegistration"
 msgstr ""
 
-#: ../../content/index.rst:796
+#: ../content/index.rst:783
 msgid "CustomerFrontend::Module###CustomerFAQExplorer"
 msgstr ""
 
-#: ../../content/index.rst:797
-#: ../../content/index.rst:801
-#: ../../content/index.rst:805
-#: ../../content/index.rst:809
-#: ../../content/index.rst:813
+#: ../content/index.rst:784
+#: ../content/index.rst:788
+#: ../content/index.rst:792
+#: ../content/index.rst:796
+#: ../content/index.rst:800
 msgid "Frontend module registration for the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:800
+#: ../content/index.rst:787
 msgid "CustomerFrontend::Module###CustomerFAQZoom"
 msgstr ""
 
-#: ../../content/index.rst:804
+#: ../content/index.rst:791
 msgid "CustomerFrontend::Module###CustomerFAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:808
+#: ../content/index.rst:795
 msgid "CustomerFrontend::Module###CustomerFAQPrint"
 msgstr ""
 
-#: ../../content/index.rst:812
+#: ../content/index.rst:799
 msgid "CustomerFrontend::Module###CustomerFAQRelatedArticles"
 msgstr ""
 
-#: ../../content/index.rst:816
+#: ../content/index.rst:803
 msgid "Frontend::Customer::ModuleRegistration::Loader"
 msgstr ""
 
-#: ../../content/index.rst:819
+#: ../content/index.rst:806
 msgid "Loader::Module::CustomerFAQExplorer###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:823
+#: ../content/index.rst:810
 msgid "Loader::Module::CustomerFAQZoom###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:827
+#: ../content/index.rst:814
 msgid "Loader::Module::CustomerFAQSearch###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:831
+#: ../content/index.rst:818
 msgid "Loader::Module::CustomerTicketMessage###003-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:835
+#: ../content/index.rst:822
 msgid "Frontend::Customer::ModuleRegistration::MainMenu"
 msgstr ""
 
-#: ../../content/index.rst:838
+#: ../content/index.rst:825
 msgid "CustomerFrontend::Navigation###CustomerFAQExplorer###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:842
+#: ../content/index.rst:829
 msgid "CustomerFrontend::Navigation###CustomerFAQSearch###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:846
+#: ../content/index.rst:833
 msgid "Frontend::Customer::View::FAQExplorer"
 msgstr ""
 
-#: ../../content/index.rst:849
+#: ../content/index.rst:836
 msgid "FAQ::Frontend::CustomerFAQExplorer###SearchLimit"
 msgstr ""
 
-#: ../../content/index.rst:850
+#: ../content/index.rst:837
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:853
+#: ../content/index.rst:840
 msgid "FAQ::Frontend::CustomerFAQExplorer###SearchPageShown"
 msgstr ""
 
-#: ../../content/index.rst:854
+#: ../content/index.rst:841
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:857
+#: ../content/index.rst:844
 msgid "FAQ::Frontend::CustomerFAQExplorer###SortBy::Default"
 msgstr ""
 
-#: ../../content/index.rst:858
+#: ../content/index.rst:845
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:861
+#: ../content/index.rst:848
 msgid "FAQ::Frontend::CustomerFAQExplorer###Order::Default"
 msgstr ""
 
-#: ../../content/index.rst:862
+#: ../content/index.rst:849
 msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
-#: ../../content/index.rst:865
+#: ../content/index.rst:852
 msgid "FAQ::Frontend::CustomerFAQExplorer###TitleSize"
 msgstr ""
 
-#: ../../content/index.rst:866
+#: ../content/index.rst:853
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:869
+#: ../content/index.rst:856
 msgid "Frontend::Customer::View::FAQPrint"
 msgstr ""
 
-#: ../../content/index.rst:872
+#: ../content/index.rst:859
 msgid "FAQ::Frontend::CustomerFAQPrint###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:873
+#: ../content/index.rst:860
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:876
+#: ../content/index.rst:863
 msgid "Frontend::Customer::View::FAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:879
+#: ../content/index.rst:866
 msgid "FAQ::Frontend::CustomerFAQSearch###SearchLimit"
 msgstr ""
 
-#: ../../content/index.rst:880
+#: ../content/index.rst:867
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:883
+#: ../content/index.rst:870
 msgid "FAQ::Frontend::CustomerFAQSearch###SearchPageShown"
 msgstr ""
 
-#: ../../content/index.rst:884
+#: ../content/index.rst:871
 msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:887
+#: ../content/index.rst:874
 msgid "FAQ::Frontend::CustomerFAQSearch###SortBy::Default"
 msgstr ""
 
-#: ../../content/index.rst:888
+#: ../content/index.rst:875
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:891
+#: ../content/index.rst:878
 msgid "FAQ::Frontend::CustomerFAQSearch###Order::Default"
 msgstr ""
 
-#: ../../content/index.rst:892
+#: ../content/index.rst:879
 msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
-#: ../../content/index.rst:895
+#: ../content/index.rst:882
 msgid "FAQ::Frontend::CustomerFAQSearch###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:896
+#: ../content/index.rst:883
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:899
+#: ../content/index.rst:886
 msgid "FAQ::Frontend::CustomerFAQSearch###SearchCSVDynamicField"
 msgstr ""
 
-#: ../../content/index.rst:903
+#: ../content/index.rst:890
 msgid "FAQ::Frontend::CustomerFAQSearch###TitleSize"
 msgstr ""
 
-#: ../../content/index.rst:904
+#: ../content/index.rst:891
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:907
+#: ../content/index.rst:894
 msgid "Frontend::Customer::View::FAQZoom"
 msgstr ""
 
-#: ../../content/index.rst:910
+#: ../content/index.rst:897
 msgid "FAQ::Frontend::CustomerHTMLFieldHeightDefault"
 msgstr ""
 
-#: ../../content/index.rst:911
+#: ../content/index.rst:898
 msgid "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
 msgstr ""
 
-#: ../../content/index.rst:914
+#: ../content/index.rst:901
 msgid "FAQ::Frontend::CustomerHTMLFieldHeightMax"
 msgstr ""
 
-#: ../../content/index.rst:915
+#: ../content/index.rst:902
 msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
 msgstr ""
 
-#: ../../content/index.rst:918
+#: ../content/index.rst:905
 msgid "FAQ::Frontend::CustomerFAQZoom###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:919
+#: ../content/index.rst:906
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
 msgstr ""
 
-#: ../../content/index.rst:922
+#: ../content/index.rst:909
 msgid "Frontend::Public"
 msgstr ""
 
-#: ../../content/index.rst:925
+#: ../content/index.rst:912
 msgid "FAQ::Public::StateTypes"
 msgstr ""
 
-#: ../../content/index.rst:926
+#: ../content/index.rst:913
 msgid "List of state types which can be used in the public interface."
 msgstr ""
 
-#: ../../content/index.rst:929
+#: ../content/index.rst:916
 msgid "PublicFrontend::CommonParam###Action"
 msgstr ""
 
-#: ../../content/index.rst:930
+#: ../content/index.rst:917
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
 msgstr ""
 
-#: ../../content/index.rst:933
+#: ../content/index.rst:920
 msgid "PublicFrontend::HeaderMetaModule###3-FAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:934
+#: ../content/index.rst:921
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
 msgstr ""
 
-#: ../../content/index.rst:937
+#: ../content/index.rst:924
 msgid "Frontend::Public::FAQOverview"
 msgstr ""
 
-#: ../../content/index.rst:940
+#: ../content/index.rst:927
 msgid "FAQ::Frontend::PublicFAQOverview###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:941
+#: ../content/index.rst:928
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
 
-#: ../../content/index.rst:944
+#: ../content/index.rst:931
 msgid "Frontend::Public::ModuleRegistration"
 msgstr ""
 
-#: ../../content/index.rst:947
+#: ../content/index.rst:934
 msgid "PublicFrontend::Module###PublicFAQExplorer"
 msgstr ""
 
-#: ../../content/index.rst:948
-#: ../../content/index.rst:960
-#: ../../content/index.rst:968
-#: ../../content/index.rst:980
-#: ../../content/index.rst:988
-#: ../../content/index.rst:992
+#: ../content/index.rst:935
+#: ../content/index.rst:947
+#: ../content/index.rst:955
+#: ../content/index.rst:967
+#: ../content/index.rst:975
+#: ../content/index.rst:979
 msgid "Frontend module registration for the public interface."
 msgstr ""
 
-#: ../../content/index.rst:951
+#: ../content/index.rst:938
 msgid "Loader::Module::PublicFAQExplorer###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:952
-#: ../../content/index.rst:964
-#: ../../content/index.rst:972
-#: ../../content/index.rst:984
+#: ../content/index.rst:939
+#: ../content/index.rst:951
+#: ../content/index.rst:959
+#: ../content/index.rst:971
 msgid "Loader module registration for the public interface."
 msgstr ""
 
-#: ../../content/index.rst:955
+#: ../content/index.rst:942
 msgid "PublicFrontend::Navigation###PublicFAQExplorer###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:959
+#: ../content/index.rst:946
 msgid "PublicFrontend::Module###PublicFAQRSS"
 msgstr ""
 
-#: ../../content/index.rst:963
+#: ../content/index.rst:950
 msgid "Loader::Module::PublicFAQRSS###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:967
+#: ../content/index.rst:954
 msgid "PublicFrontend::Module###PublicFAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:971
+#: ../content/index.rst:958
 msgid "Loader::Module::PublicFAQSearch###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:975
+#: ../content/index.rst:962
 msgid "PublicFrontend::Navigation###PublicFAQSearch###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:979
+#: ../content/index.rst:966
 msgid "PublicFrontend::Module###PublicFAQZoom"
 msgstr ""
 
-#: ../../content/index.rst:983
+#: ../content/index.rst:970
 msgid "Loader::Module::PublicFAQZoom###002-FAQ"
 msgstr ""
 
-#: ../../content/index.rst:987
+#: ../content/index.rst:974
 msgid "PublicFrontend::Module###PublicFAQ"
 msgstr ""
 
-#: ../../content/index.rst:991
+#: ../content/index.rst:978
 msgid "PublicFrontend::Module###PublicFAQPrint"
 msgstr ""
 
-#: ../../content/index.rst:995
+#: ../content/index.rst:982
 msgid "Frontend::Public::View::FAQExplorer"
 msgstr ""
 
-#: ../../content/index.rst:998
+#: ../content/index.rst:985
 msgid "FAQ::Frontend::PublicFAQExplorer###SearchLimit"
 msgstr ""
 
-#: ../../content/index.rst:999
+#: ../content/index.rst:986
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1002
+#: ../content/index.rst:989
 msgid "FAQ::Frontend::PublicFAQExplorer###SearchPageShown"
 msgstr ""
 
-#: ../../content/index.rst:1003
+#: ../content/index.rst:990
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1006
+#: ../content/index.rst:993
 msgid "FAQ::Frontend::PublicFAQExplorer###SortBy::Default"
 msgstr ""
 
-#: ../../content/index.rst:1007
+#: ../content/index.rst:994
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1010
+#: ../content/index.rst:997
 msgid "FAQ::Frontend::PublicFAQExplorer###Order::Default"
 msgstr ""
 
-#: ../../content/index.rst:1011
+#: ../content/index.rst:998
 msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
-#: ../../content/index.rst:1014
+#: ../content/index.rst:1001
 msgid "FAQ::Frontend::PublicFAQExplorer###TitleSize"
 msgstr ""
 
-#: ../../content/index.rst:1015
+#: ../content/index.rst:1002
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1018
+#: ../content/index.rst:1005
 msgid "Frontend::Public::View::FAQPrint"
 msgstr ""
 
-#: ../../content/index.rst:1021
+#: ../content/index.rst:1008
 msgid "FAQ::Frontend::PublicFAQPrint###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:1022
+#: ../content/index.rst:1009
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1025
+#: ../content/index.rst:1012
 msgid "Frontend::Public::View::FAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:1028
+#: ../content/index.rst:1015
 msgid "FAQ::Frontend::PublicFAQSearch###SearchLimit"
 msgstr ""
 
-#: ../../content/index.rst:1029
+#: ../content/index.rst:1016
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1032
+#: ../content/index.rst:1019
 msgid "FAQ::Frontend::PublicFAQSearch###SearchPageShown"
 msgstr ""
 
-#: ../../content/index.rst:1033
+#: ../content/index.rst:1020
 msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1036
+#: ../content/index.rst:1023
 msgid "FAQ::Frontend::PublicFAQSearch###SortBy::Default"
 msgstr ""
 
-#: ../../content/index.rst:1037
+#: ../content/index.rst:1024
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1040
+#: ../content/index.rst:1027
 msgid "FAQ::Frontend::PublicFAQSearch###Order::Default"
 msgstr ""
 
-#: ../../content/index.rst:1041
+#: ../content/index.rst:1028
 msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
 
-#: ../../content/index.rst:1044
+#: ../content/index.rst:1031
 msgid "FAQ::Frontend::PublicFAQSearch###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:1045
+#: ../content/index.rst:1032
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1048
+#: ../content/index.rst:1035
 msgid "FAQ::Frontend::PublicFAQSearch###SearchCSVDynamicField"
 msgstr ""
 
-#: ../../content/index.rst:1052
+#: ../content/index.rst:1039
 msgid "FAQ::Frontend::PublicFAQSearch###TitleSize"
 msgstr ""
 
-#: ../../content/index.rst:1053
+#: ../content/index.rst:1040
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1056
+#: ../content/index.rst:1043
 msgid "Frontend::Public::View::FAQZoom"
 msgstr ""
 
-#: ../../content/index.rst:1059
+#: ../content/index.rst:1046
 msgid "FAQ::Frontend::PublicFAQZoom###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:1060
+#: ../content/index.rst:1047
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
 msgstr ""
 
-#: ../../content/index.rst:1063
+#: ../content/index.rst:1050
 msgid "GenericInterface::Operation::ModuleRegistration"
 msgstr ""
 
-#: ../../content/index.rst:1066
+#: ../content/index.rst:1053
 msgid "GenericInterface::Operation::Module###FAQ::LanguageList"
 msgstr ""
 
-#: ../../content/index.rst:1067
-#: ../../content/index.rst:1071
-#: ../../content/index.rst:1075
-#: ../../content/index.rst:1079
+#: ../content/index.rst:1054
+#: ../content/index.rst:1058
+#: ../content/index.rst:1062
+#: ../content/index.rst:1066
 msgid "GenericInterface module registration for the operation layer."
 msgstr ""
 
-#: ../../content/index.rst:1070
+#: ../content/index.rst:1057
 msgid "GenericInterface::Operation::Module###FAQ::PublicCategoryList"
 msgstr ""
 
-#: ../../content/index.rst:1074
+#: ../content/index.rst:1061
 msgid "GenericInterface::Operation::Module###FAQ::PublicFAQGet"
 msgstr ""
 
-#: ../../content/index.rst:1078
+#: ../content/index.rst:1065
 msgid "GenericInterface::Operation::Module###FAQ::PublicFAQSearch"
 msgstr ""
 
-#: ../../content/index.rst:1082
+#: ../content/index.rst:1069
 msgid "About"
 msgstr ""
 
-#: ../../content/index.rst:1085
+#: ../content/index.rst:1072
 msgid "Contact"
 msgstr ""
 
-#: ../../content/index.rst:1086
+#: ../content/index.rst:1073
 msgid "Rother OSS GmbH"
 msgstr ""
 
-#: ../../content/index.rst:1087
+#: ../content/index.rst:1074
 msgid "Email: hello@otobo.de"
 msgstr ""
 
-#: ../../content/index.rst:1088
+#: ../content/index.rst:1075
 msgid "Web: https://otobo.de"
 msgstr ""
 
-#: ../../content/index.rst:1091
+#: ../content/index.rst:1078
 msgid "Version"
 msgstr ""
 
-#: ../../content/index.rst:1092
+#: ../content/index.rst:1079
 msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
 msgstr ""
-

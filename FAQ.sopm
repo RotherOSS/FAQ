@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otobo_package version="1.1">
     <Name>FAQ</Name>
-    <Version>11.1.0</Version>
+    <Version>0.0.0</Version>
     <Framework>11.1.x</Framework>
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.io/</URL>
@@ -177,6 +177,7 @@
         <File Permission="660" Location="scripts/test/Selenium/Output/HeaderMeta/CustomerFAQSearch.t" />
         <File Permission="660" Location="scripts/test/Selenium/Output/HeaderMeta/PublicFAQSearch.t" />
         <File Permission="660" Location="scripts/test/Selenium/Output/LinkObject/FAQ.t" />
+        <File Permission="660" Location="var/httpd/htdocs/js/Core.UI.RichTextEditor.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.FAQ.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.FAQZoom.js" />

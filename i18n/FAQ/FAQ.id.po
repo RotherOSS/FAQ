@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2024-05-16 07:29+0000\n"
+"POT-Creation-Date: 2026-02-26 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,27 +12,23 @@ msgstr ""
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
-msgstr ""
-
-#. Template: AgentFAQAdd
-msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Tambah Artikel FAQ"
 
 #. Template: AgentFAQAdd
 msgid "Keywords"
-msgstr ""
+msgstr "Katakunci"
 
 #. Template: AgentFAQAdd
 msgid "A category is required."
-msgstr ""
+msgstr "Sebuah kategori dibutuhkan."
 
 #. Template: AgentFAQAdd
 msgid "Approval"
-msgstr ""
+msgstr "Persetujuan"
 
 #. Template: AgentFAQCategory
 msgid "FAQ Category Management"
-msgstr ""
+msgstr "Manajemen Kategori FAQ"
 
 #. Template: AgentFAQCategory
 msgid "Add FAQ Category"
@@ -44,103 +40,103 @@ msgstr ""
 
 #. Template: AgentFAQCategory
 msgid "Add category"
-msgstr ""
+msgstr "Tambah kategori"
 
 #. Template: AgentFAQCategory
 msgid "Add Category"
-msgstr ""
+msgstr "Tambah Kategori"
 
 #. Template: AgentFAQCategory
 msgid "Edit Category"
-msgstr ""
+msgstr "Edit Kategori"
 
 #. Template: AgentFAQCategory
 msgid "Subcategory of"
-msgstr ""
+msgstr "Sub-kategori dari"
 
 #. Template: AgentFAQCategory
 msgid "Please select at least one permission group."
-msgstr ""
+msgstr "Silahkan pilih setidaknya satu izin grup"
 
 #. Template: AgentFAQCategory
 msgid "Agent groups that can access articles in this category."
-msgstr ""
+msgstr "Grup Agen yang dapat mengakses artikel dalam kategori ini"
 
 #. Template: AgentFAQCategory
 msgid "Will be shown as comment in Explorer."
-msgstr ""
+msgstr "Akan ditampilkan sebagai komentar di Explorer"
 
 #. Template: AgentFAQCategory
 msgid "Do you really want to delete this category?"
-msgstr ""
+msgstr "Anda yakin akan menghapus kategori ini?"
 
 #. Template: AgentFAQCategory
 msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
-msgstr ""
+msgstr "Anda tidak dapat menghapus kategori ini. Kategori ini dipakai pada setidaknya satu artikel FAQ dan/atau merupakan parent dari salah satu kategori"
 
 #. Template: AgentFAQCategory
 msgid "This category is used in the following FAQ article(s)"
-msgstr ""
+msgstr "Kategori ini digunakan dalam artikel FAQ berikut ini"
 
 #. Template: AgentFAQCategory
 msgid "This category is parent of the following subcategories"
-msgstr ""
+msgstr "Kategori ini merupakan parent dari subkategori berikut ini"
 
 #. Template: AgentFAQDelete
 msgid "Do you really want to delete this FAQ article?"
-msgstr ""
+msgstr "Anda yakin akan menghapus artikel FAQ ini?"
 
 #. Template: AgentFAQEdit
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Explorer"
-msgstr ""
+msgstr "Eksplorer FAQ"
 
 #. Template: AgentFAQExplorer
 msgid "Quick Search"
-msgstr ""
+msgstr "Pencarian Cepat"
 
 #. Template: AgentFAQExplorer
 msgid "Wildcards are allowed."
-msgstr ""
+msgstr "Karakter bebas diperkenankan"
 
 #. Template: AgentFAQExplorer
 msgid "Advanced Search"
-msgstr ""
+msgstr "Pencarian Lebih Lanjut"
 
 #. Template: AgentFAQExplorer
 msgid "Subcategories"
-msgstr ""
+msgstr "Subkategori"
 
 #. Template: AgentFAQExplorer
 msgid "FAQ Articles"
-msgstr ""
+msgstr "Artikel FAQ"
 
 #. Template: AgentFAQExplorer
 msgid "No subcategories found."
-msgstr ""
+msgstr "Subkategori tidak ditemukan"
 
 #. Template: AgentFAQHistory
 msgid "History of"
-msgstr ""
+msgstr "Riwayat dari"
 
 #. Template: AgentFAQHistory
 msgid "History Content"
-msgstr ""
+msgstr "Isi sejarah"
 
 #. Template: AgentFAQHistory
 msgid "Createtime"
-msgstr ""
+msgstr "BuatWaktu"
 
 #. Template: AgentFAQJournalOverviewSmall
 msgid "No FAQ Journal data found."
-msgstr ""
+msgstr "Data Jurnal FAQ tidak ditemukan."
 
 #. Template: AgentFAQLanguage
 msgid "FAQ Language Management"
-msgstr ""
+msgstr "Manajemen Bahasa FAQ"
 
 #. Template: AgentFAQLanguage
 msgid "Add FAQ Language"
@@ -156,199 +152,199 @@ msgstr ""
 
 #. Template: AgentFAQLanguage
 msgid "Add language"
-msgstr ""
+msgstr "Tambah bahasa"
 
 #. Template: AgentFAQLanguage
 msgid "Add Language"
-msgstr ""
+msgstr "Tambah Bahasa"
 
 #. Template: AgentFAQLanguage
 msgid "Edit Language"
-msgstr ""
+msgstr "Edit Bahasa"
 
 #. Template: AgentFAQLanguage
 msgid "You can not delete this language. It is used in at least one FAQ article!"
-msgstr ""
+msgstr "Anda tidak dapat menghapus bahasa ini. Bahasa ini digunakan pada salah satu artikel FAQ!"
 
 #. Template: AgentFAQLanguage
 msgid "This language is used in the following FAQ Article(s)"
-msgstr ""
+msgstr "Bahasa ini digunakan pada Artikel-artikel FAQ berikut"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "Context Settings"
-msgstr ""
+msgstr "Pengaturan Konteks"
 
 #. Template: AgentFAQOverviewNavBar
 msgid "FAQ articles per page"
-msgstr ""
+msgstr "Artikel FAQ per halaman"
 
 #. Template: AgentFAQOverviewSmall
 msgid "No FAQ data found."
-msgstr ""
+msgstr "Tidak ditemukan data FAQ."
 
 #. Template: AgentFAQRelatedArticles
 msgid "out of 5"
-msgstr ""
+msgstr "dari 5"
 
 #. Template: AgentFAQSearch
 msgid "Keyword"
-msgstr ""
+msgstr "Kata kunci"
 
 #. Template: AgentFAQSearch
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
-msgstr ""
+msgstr "Pilih (contoh: Sama Dengan 10 atau Lebih Besar dari 60)"
 
 #. Template: AgentFAQSearch
 msgid "Rate (e. g. Equals 25% or GreaterThan 75%)"
-msgstr ""
+msgstr "Peringkat (contoh: Sama dengan 25% atau Lebih Besar dari 75%)"
 
 #. Template: AgentFAQSearch
 msgid "Approved"
-msgstr ""
+msgstr "Disetujui"
 
 #. Template: AgentFAQSearch
 msgid "Last changed by"
-msgstr ""
+msgstr "Terakhir dirubah oleh"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (before/after)"
-msgstr ""
+msgstr "Waktu Pembuatan Artikel FAQ (sebelum/setelah)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Create Time (between)"
-msgstr ""
+msgstr "Waktu Pembuatan Artikel FAQ (antara)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Change Time (before/after)"
-msgstr ""
+msgstr "Waktu Perubahan Artikel FAQ (sebelum/setelah)"
 
 #. Template: AgentFAQSearch
 msgid "FAQ Article Change Time (between)"
-msgstr ""
+msgstr "Waktu Perubahan Artikel FAQ (antara)"
 
 #. Template: AgentFAQSearchOpenSearchDescriptionFulltext
 msgid "FAQFulltext"
-msgstr ""
+msgstr "FAQTekslengkap"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Search"
-msgstr ""
+msgstr "Pencarian FAQ"
 
 #. Template: AgentFAQSearchSmall
 msgid "Profile Selection"
-msgstr ""
+msgstr "Pemilihan Profil"
 
 #. Template: AgentFAQSearchSmall
 msgid "Vote"
-msgstr ""
+msgstr "Pilih"
 
 #. Template: AgentFAQSearchSmall
 msgid "No vote settings"
-msgstr ""
+msgstr "Tidak ada pengaturan pemilihan"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific votes"
-msgstr ""
+msgstr "Pemilihan khusus"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 10 or GreaterThan 60"
-msgstr ""
+msgstr "contoh: Sama Dengan 10 atau Lebih Besar dari 60"
 
 #. Template: AgentFAQSearchSmall
 msgid "Rate"
-msgstr ""
+msgstr "Peringkat"
 
 #. Template: AgentFAQSearchSmall
 msgid "No rate settings"
-msgstr ""
+msgstr "Tidak ada pengaturan peringkat"
 
 #. Template: AgentFAQSearchSmall
 msgid "Specific rate"
-msgstr ""
+msgstr "Peringkat khusus"
 
 #. Template: AgentFAQSearchSmall
 msgid "e. g. Equals 25% or GreaterThan 75%"
-msgstr ""
+msgstr "contoh: Sama dengan 25% atau Lebih Besar dari 75%"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Create Time"
-msgstr ""
+msgstr "Waktu Pembuatan Artikel FAQ"
 
 #. Template: AgentFAQSearchSmall
 msgid "FAQ Article Change Time"
-msgstr ""
+msgstr "Waktu Perubahan Artikel FAQ"
 
 #. Template: AgentFAQZoom
 msgid "FAQ Information"
-msgstr ""
+msgstr "Informasi FAQ"
 
 #. Template: AgentFAQZoom
 msgid "Rating"
-msgstr ""
+msgstr "Peringkat"
 
 #. Template: AgentFAQZoom
 msgid "Votes"
-msgstr ""
+msgstr "Pemilihan"
 
 #. Template: AgentFAQZoom
 msgid "No votes found!"
-msgstr ""
+msgstr "Ttdak ditemukan pemilihan!"
 
 #. Template: AgentFAQZoom
 msgid "No votes found! Be the first one to rate this FAQ article."
-msgstr ""
+msgstr "Belum ada Pemilihan! Jadilah yang pertama melakukan pemeringkatan artikel FAQ ini."
 
 #. Template: AgentFAQZoom
 msgid "Download Attachment"
-msgstr ""
+msgstr "Unduh Lampiran"
 
 #. Template: AgentFAQZoom
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
-msgstr ""
+msgstr "Untuk membuka tautan pada bagian deskripsi berikut, Anda harus menekan tombol Ctrl atau Cms atau Shift sambil menekan tautannya (tergantung pada Sistem Operasi dan Peramban)"
 
 #. Template: AgentFAQZoom
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
-msgstr ""
+msgstr "Seberapa besar artikel ini membantu? Mohon berikan peringkat Anda dan ikut membantu Database FAQ. Terima kasih!"
 
 #. Template: AgentFAQZoom
 msgid "not helpful"
-msgstr ""
+msgstr "tidak membantu"
 
 #. Template: AgentFAQZoom
 msgid "very helpful"
-msgstr ""
+msgstr "sangat membantu"
 
 #. Template: AgentFAQZoomSmall
 msgid "Add FAQ title to article subject"
-msgstr ""
+msgstr "Tambahkan judul FAQ pada subjek artikel"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text"
-msgstr ""
+msgstr "Masukkan Teks FAQ"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ"
-msgstr ""
+msgstr "Masukkan Seluruh FAQ"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Link"
-msgstr ""
+msgstr "Masukkan Tautan FAQ"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert FAQ Text & Link"
-msgstr ""
+msgstr "Masukan Teks dan Tautan FAQ"
 
 #. Template: AgentFAQZoomSmall
 msgid "Insert Full FAQ & Link"
-msgstr ""
+msgstr "Masukkan Seluruh Link dan FAQ"
 
 #. Template: CustomerFAQExplorer
 msgid "Latest updated FAQ articles"
-msgstr ""
+msgstr "Artikel FAQ paling baru"
 
 #. Template: CustomerFAQExplorer
 msgid "No FAQ articles found."
-msgstr ""
+msgstr "Tidak ditemukan artikel FAQ"
 
 #. Template: CustomerFAQRelatedArticles
 msgid "This might be helpful"
@@ -364,55 +360,55 @@ msgstr ""
 
 #. Template: CustomerFAQSearch
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
-msgstr ""
+msgstr "Pencarian Tekspenuh pada Artikel FAQ (contoh: \"John*n\" atau \"Will\")"
 
 #. Template: CustomerFAQSearch
 msgid "Vote restrictions"
-msgstr ""
+msgstr "Batasan Pemilihan"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with votes..."
-msgstr ""
+msgstr "Hanya artikel FAQ yang telah dipilih..."
 
 #. Template: CustomerFAQSearch
 msgid "Rate restrictions"
-msgstr ""
+msgstr "Batasan Peringkat"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles with rate..."
-msgstr ""
+msgstr "Hanya Artikel yang memiliki peringkat..."
 
 #. Template: CustomerFAQSearch
 msgid "Time restrictions"
-msgstr ""
+msgstr "Pembatasan waktu"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created"
-msgstr ""
+msgstr "Hanya artikel FAQ yang dibuat"
 
 #. Template: CustomerFAQSearch
 msgid "Only FAQ articles created between"
-msgstr ""
+msgstr "Hanya artikel FAQ yang dibuat pada "
 
 #. Template: CustomerFAQSearch
 msgid "Search-Profile as Template?"
-msgstr ""
+msgstr "Pencarian-Profil sebagai Template?"
 
 #. Template: CustomerFAQZoom
 msgid "Article Number"
-msgstr ""
+msgstr "Nomor Artikel"
 
 #. Template: CustomerFAQZoom
 msgid "Search for articles with keyword"
-msgstr ""
+msgstr "Cari artikel dengan kata kunci"
 
 #. Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
 msgid "Public"
-msgstr ""
+msgstr "Umum"
 
 #. Template: PublicFAQSearchResultShort
 msgid "Back to FAQ Explorer"
-msgstr ""
+msgstr "Kembali ke Eksplorer FAQ"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "You need rw permission!"
@@ -432,11 +428,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
-msgstr ""
+msgstr "Sebuah kategori harus memiliki nama!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists"
-msgstr ""
+msgstr "Kategori ini sudah ada"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
@@ -452,15 +448,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
-msgstr ""
+msgstr "Kategori FAQ diupdate!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category added!"
-msgstr ""
+msgstr "Kategori FAQ ditambahkan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Delete Category"
-msgstr ""
+msgstr "Hapus Kategori"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
@@ -488,7 +484,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
-msgstr ""
+msgstr "Jurnal FAQ"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
@@ -508,11 +504,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
-msgstr ""
+msgstr "Nama dibutuhkan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "This language already exists!"
-msgstr ""
+msgstr "Bahasa ini sudah ada!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
@@ -520,31 +516,31 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
-msgstr ""
+msgstr "Bahasa FAQ diperbarui!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language added!"
-msgstr ""
+msgstr "Bahasa FAQ ditambahkan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Delete Language %s"
-msgstr ""
+msgstr "Hapus Bahasa %s"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
-msgstr ""
+msgstr "Hasil"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
-msgstr ""
+msgstr "Perbaruan terakhir"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "FAQ Dynamic Fields"
-msgstr ""
+msgstr "Bidang dinamis FAQ"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "No %s is given!"
-msgstr ""
+msgstr "Tidak ada %s diberikan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "Can't load LanguageObject!"
@@ -552,11 +548,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
-msgstr ""
+msgstr "Tidak ada hasil!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Number"
-msgstr ""
+msgstr "Nomor FAQ"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
@@ -604,15 +600,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
-msgstr ""
+msgstr "Terima kasih atas pilihannya!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "You have already voted!"
-msgstr ""
+msgstr "Anda sudah pernah memilih!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "No rate selected!"
-msgstr ""
+msgstr "Tidak ada peringkat yang dipilih"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
@@ -624,7 +620,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
-msgstr ""
+msgstr "Cetak Artikel FAQ"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
@@ -636,15 +632,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
-msgstr ""
+msgstr "Artikel FAQ (terbaru)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (recently changed)"
-msgstr ""
+msgstr "Artikel FAQ (terakhir dirubah)"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (Top 10)"
-msgstr ""
+msgstr "Artikel FAQ (10 teratas)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
@@ -684,35 +680,39 @@ msgstr ""
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
-msgstr ""
+msgstr "Artikel ini kosong!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
-msgstr ""
+msgstr "Artikel FAQ terakhir dibuat"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Top 10 FAQ articles"
-msgstr ""
+msgstr "Artikel FAQ 10 teratas"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
 msgstr ""
 
+#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
+msgid "Select the attribute which FAQs will be searched by"
+msgstr ""
+
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
-msgstr ""
+msgstr "internal"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "external"
-msgstr ""
+msgstr "eksternal"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "public"
-msgstr ""
+msgstr "umum"
 
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image."
-msgstr ""
+msgstr "Sebuah filter untuk output HTML untuk menambahkan tautan terkait string yang ditentukan. Dua buah masukan diperkenankan untuk Elemen Gambar. Pertama nama dari gambar (contoh: faq.png). Pada kasus ini path gambar OTOBO yang digunakan. Kemungkinan kedua adalah memasukkan tautan ke dalam gambar."
 
 #. SysConfig
 msgid "Add FAQ article"
@@ -720,15 +720,15 @@ msgstr ""
 
 #. SysConfig
 msgid "CSS color for the voting result."
-msgstr ""
+msgstr "Warna CSS untuk hasil pemilihan."
 
 #. SysConfig
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "Waktu Cache Untuk Keluar dalam item FAQ"
 
 #. SysConfig
 msgid "Category Management"
-msgstr ""
+msgstr "Manajemen Kategori"
 
 #. SysConfig
 msgid "Category Management."
@@ -760,39 +760,39 @@ msgstr ""
 
 #. SysConfig
 msgid "Decimal places of the voting result."
-msgstr ""
+msgstr "Posisi desimal pada hasil pemilihan."
 
 #. SysConfig
 msgid "Default category name."
-msgstr ""
+msgstr "Nama kategori default."
 
 #. SysConfig
 msgid "Default language for FAQ articles on single language mode."
-msgstr ""
+msgstr "Bahasa default untuk artikel FAQ pada mode satu bahasa."
 
 #. SysConfig
 msgid "Default maximum size of the titles in a FAQ article to be shown."
-msgstr ""
+msgstr "Default ukuran maksimum judul dalam artikel FAQ yang akan ditampilkan."
 
 #. SysConfig
 msgid "Default priority of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Default priotitas dari tiket untuk persetujuan artikel FAQ."
 
 #. SysConfig
 msgid "Default state for FAQ entry."
-msgstr ""
+msgstr "Status default untuk entri FAQ"
 
 #. SysConfig
 msgid "Default state of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Status default tiket untuk persetujuan pada artikel FAQ"
 
 #. SysConfig
 msgid "Default type of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Tipe tiket default untuk persetujuan artikel FAQ"
 
 #. SysConfig
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
-msgstr ""
+msgstr "Nilai default untuk parameter Aksi untuk frontend umum. Parameter aksi digunakan pada skrip dari Sistem."
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
@@ -800,7 +800,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
-msgstr ""
+msgstr "Tentukan jika judul FAQ harus tersambung ke subjek artikel"
 
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
@@ -808,95 +808,99 @@ msgstr ""
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
-msgstr ""
+msgstr "Tentukan sebuah gambaran modul untuk menampilkan tampilan kecil dari sebuah jurnal FAQ"
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ list."
-msgstr ""
+msgstr "Tentukan sebuah gambaran modul untuk menampilkan tampilan kecil dari sebuah daftar FAQ."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
-msgstr ""
+msgstr "Tentukan atribut default FAQ untuk penyortiran FAQ dalam pencarian FAQ dari antarmuka agen"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
-msgstr ""
+msgstr "Tentukan atribut standar FAQ untuk penyortiran dalam Pencarian FAQ dari antarmuka pelanggan"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
-msgstr ""
+msgstr "Tentukan atribut standar FAQ untuk penyortiran dalam pencarian FAQ untuk antarmuka umum."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
-msgstr ""
+msgstr "Tentukan atribut standar FAQ untuk penyortiran FAQ dalam Eksplorer FAQ pada antarmuka agen"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "Tentukan atribut standar FAQ untuk penyortiran FAQ dalam Eksplorer FAQ pada antarmuka pelanggan"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
-msgstr ""
+msgstr "Tentukan atribut standar FAQ untuk penyortiran FAQ dalam Eksplorer FAQ pada antarmuka umum"
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Tentukan urutan standar FAQ dalam hasil Eksplorer FAQ pada antarmuka agen. Naik: Terlama di atas. Turun: Terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Tentukan urutan standar FAQ dalam hasil Eksplorer FAQ pada antarmuka pelanggan. Naik: Terlama di atas. Turun: Terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Tentukan urutan standar FAQ dalam hasil Eksplorer FAQ pada antarmuka umum. Naik: Terlama di atas. Turun: Terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Tentukan urutan standar FAQ dalam hasil pencarian pada antarmuka agen. Naik: Terlama di atas. Turun: Terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Tentukan urutan standar FAQ dalam hasil pencarian pada antarmuka pelanggan. Naik: Terlama di atas. Turun: Terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "Tentukan urutan standar FAQ dalam hasil pencarian pada antarmuka umum. Naik: Terlama di atas. Turun: Terbaru di atas."
 
 #. SysConfig
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
+msgstr "Tentukan atribut pencarian FAQ standar yang ditampilkan untuk layar pencarian FAQ"
+
+#. SysConfig
+msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
 
 #. SysConfig
 msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
-msgstr ""
+msgstr "Tentukan informasi yang akan di masukan ke dalam sebuah Tiket berdasar FAQ. \"FAQ lengkap\" berisi teks, lampiran, dan gambar di barisan."
 
 #. SysConfig
 msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
-msgstr ""
+msgstr "Tentukan parameter untuk backend dasbor. \"Limit\" menentukan jumlah entri yang di tampilkan secara default. \"Group\" di gunakan untuk membatasi akses ke plugin (misalnya Grup: admin;grup1;grup2;). \"Default\" mengindikasikanjika plugin diaktifkan secara default atau jika pengguna perlu mengaktifkannya secara manual."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
-msgstr ""
+msgstr "Tentukan kolom yang ditampilkan di Eksplorer FAQ. Pilihan ini tidak mempengaruhi posisi kolom."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
-msgstr ""
+msgstr "Tentukan kolom yang di tampilkan di jurnal FAQ. Pilihan ini tidak mempengaruhi posisi kolom."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
-msgstr ""
+msgstr "Tentukan kolom yang di tampilkan didalam pencarian FAQ. Pilihan ini tidak mempengaruhi posisi kolom."
 
 #. SysConfig
 msgid "Defines where the 'Insert FAQ' link will be displayed."
-msgstr ""
+msgstr "Tentukan dimana tautan 'Masukkan FAQ' akan ditampilkan."
 
 #. SysConfig
 msgid "Definition of FAQ item free text field."
-msgstr ""
+msgstr "Definisi dari item teks field bebas FAQ"
 
 #. SysConfig
 msgid "Delete this FAQ"
-msgstr ""
+msgstr "Hapus FAQ ini"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
@@ -956,11 +960,11 @@ msgstr ""
 
 #. SysConfig
 msgid "Edit this FAQ"
-msgstr ""
+msgstr "ubah FAQ ini."
 
 #. SysConfig
 msgid "Enable multiple languages on FAQ module."
-msgstr ""
+msgstr "Aktifkan multibahasa pada modul FAQ."
 
 #. SysConfig
 msgid "Enable service assignment for FAQs."
@@ -972,11 +976,11 @@ msgstr ""
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
-msgstr ""
+msgstr "Aktifkan mekanisme voting pada modul FA"
 
 #. SysConfig
 msgid "Explorer"
-msgstr ""
+msgstr "Eksplorer"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
@@ -1008,11 +1012,11 @@ msgstr ""
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
-msgstr ""
+msgstr "Jurnal gambaran batas \"kecil\"  FAQ"
 
 #. SysConfig
 msgid "FAQ Overview \"Small\" Limit"
-msgstr ""
+msgstr "Gambaran batas \"Kecil\""
 
 #. SysConfig
 msgid "FAQ Print."
@@ -1020,15 +1024,15 @@ msgstr ""
 
 #. SysConfig
 msgid "FAQ search backend router of the agent interface."
-msgstr ""
+msgstr "Pencarian penerus backend FAQ pada antarmuka agen"
 
 #. SysConfig
 msgid "Field4"
-msgstr ""
+msgstr "Field4"
 
 #. SysConfig
 msgid "Field5"
-msgstr ""
+msgstr "Field5"
 
 #. SysConfig
 msgid "Full FAQ"
@@ -1036,31 +1040,35 @@ msgstr ""
 
 #. SysConfig
 msgid "Group for the approval of FAQ articles."
-msgstr ""
+msgstr "Grup untuk persetujuan artikel FAQ"
 
 #. SysConfig
 msgid "History of this FAQ"
+msgstr "Sejarah dari FAQ ini"
+
+#. SysConfig
+msgid "If activated, FAQ articles of status type internal are also taken into account for the approval process."
 msgstr ""
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
-msgstr ""
+msgstr "Masukan bidang internal pada Tiket berdasar FAQ."
 
 #. SysConfig
 msgid "Include the name of each field in a FAQ based Ticket."
-msgstr ""
+msgstr "Masukan nama setiap bidang pada Tiket berdasar FAQ."
 
 #. SysConfig
 msgid "Interfaces where the quick search should be shown."
-msgstr ""
+msgstr "Antarmuka dimana pencarian cepat harus di tampilkan"
 
 #. SysConfig
 msgid "Journal"
-msgstr ""
+msgstr "Jurnal"
 
 #. SysConfig
 msgid "Language Management"
-msgstr ""
+msgstr "Manajemen Bahasa"
 
 #. SysConfig
 msgid "Language Management."
@@ -1072,7 +1080,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
-msgstr ""
+msgstr "Tautkan objek lainnya ke item FAQ ini"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
@@ -1080,15 +1088,15 @@ msgstr ""
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
-msgstr ""
+msgstr "Daftar jenis status yang dapat digunakan pada antarmuka agen."
 
 #. SysConfig
 msgid "List of state types which can be used in the customer interface."
-msgstr ""
+msgstr "Daftar jenis status yang dapat digunakan pada antarmuka pelanggan."
 
 #. SysConfig
 msgid "List of state types which can be used in the public interface."
-msgstr ""
+msgstr "Daftar jenis status yang dapat digunakan pada antarmuka umum."
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
@@ -1096,59 +1104,59 @@ msgstr ""
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ maksimal yang akan ditampilkan di dalam hasil Eksplorer FAQ di antarmuka agen."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ maksimal yang akan ditampilkan di dalam hasil Eksplorer FAQ di antarmuka pelanggan."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ maksimal yang akan ditampilkan di dalam hasil Eksplorer FAQ di antarmuka umum."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ maksimal yang akan ditampilkan di dalam hasil jurnal FAQ di antarmuka agen."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the agent interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ maksimal yang akan ditampilkan di dalam hasil pencarian di antarmuka agen."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the customer interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ maksimal yang akan ditampilkan di dalam hasil jurnal FAQ di antarmuka pelanggan."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the public interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ maksimal yang akan ditampilkan di dalam hasil jurnal FAQ di antarmuka umum."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
-msgstr ""
+msgstr "Ukuran maksimal Judul di dalam artikel FAQ yang akan di tampilkan di dalam Eksplorer FAQ pada antarmuka agen."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
-msgstr ""
+msgstr "Ukuran maksimal Judul di dalam artikel FAQ yang akan di tampilkan di dalam Eksplorer FAQ pada antarmuka pelanggan."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
-msgstr ""
+msgstr "Ukuran maksimal Judul di dalam artikel FAQ yang akan di tampilkan di dalam Eksplorer FAQ pada antarmuka umum."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
-msgstr ""
+msgstr "Ukuran maksimal Judul di dalam artikel FAQ yang akan di tampilkan di dalam Pencarian FAQ pada antarmuka agen."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
-msgstr ""
+msgstr "Ukuran maksimal Judul di dalam artikel FAQ yang akan di tampilkan di dalam Pencarian FAQ pada antarmuka pelanggan."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
-msgstr ""
+msgstr "Ukuran maksimal Judul di dalam artikel FAQ yang akan di tampilkan di dalam Pencarian FAQ pada antarmuka umum."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
-msgstr ""
+msgstr "Ukuran maksimal Judul di dalam artikel FAQ yang akan di tampilkan di dalam Journal FAQ pada antarmuka agen."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
@@ -1156,7 +1164,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
-msgstr ""
+msgstr "Modul untuk menghasilkan profil HTML PencarianTerbuka untuk Pencarian pendek FAQ di antarmuka umum."
 
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
@@ -1168,35 +1176,35 @@ msgstr ""
 
 #. SysConfig
 msgid "New FAQ articles need approval before they get published."
-msgstr ""
+msgstr "Artikel FAQ baru membutuhkan ersetujuan sebelum dipublikasikan."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ yang akan ditampilkan pada Eksplorer FAQ di antarmuka pelanggan."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ yang akan di tampilkan di Eksplorer FAQ pada antarmuka umum."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ yang akan di tampilkan pada setiap halaman dari hasil pencarian pada antarmuka pelanggan."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
-msgstr ""
+msgstr "Jumlah artikel FAQ yang akan di tampilkan pada setiap halaman dari hasil pencarian pada antarmuka umum."
 
 #. SysConfig
 msgid "Number of shown items in last changes."
-msgstr ""
+msgstr "Jumlah item yang ditampilkan dalam perubahan terakhir."
 
 #. SysConfig
 msgid "Number of shown items in last created."
-msgstr ""
+msgstr "Jumlah item yang di tampilkan dalam pembuatan terakhir."
 
 #. SysConfig
 msgid "Number of shown items in the top 10 feature."
-msgstr ""
+msgstr "Jumlah item yang ditampilkan dalam 10 fitur teratas."
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
@@ -1208,15 +1216,15 @@ msgstr ""
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
-msgstr ""
+msgstr "Parameter untuk halaman (dimana item FAQ di tampilkan) jurnal kecil gambaran FAQ."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
-msgstr ""
+msgstr "Parameter untuk halaman (dimana item FAQ di tampilkan) gambaran kecil FAQ."
 
 #. SysConfig
 msgid "Print this FAQ"
-msgstr ""
+msgstr "Cetak FAQ ini."
 
 #. SysConfig
 msgid "Public FAQ Print."
@@ -1236,11 +1244,11 @@ msgstr ""
 
 #. SysConfig
 msgid "Queue for the approval of FAQ articles."
-msgstr ""
+msgstr "Antrian untuk disetujuinya artikel FAQ"
 
 #. SysConfig
 msgid "Rates for voting. Key must be in percent."
-msgstr ""
+msgstr "Peringkatkan untuk memilih.  Kunci harus dalam persentase."
 
 #. SysConfig
 msgid "S"
@@ -1248,7 +1256,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Search FAQ"
-msgstr ""
+msgstr "Cari FAQ"
 
 #. SysConfig
 msgid "Search FAQ Small."
@@ -1268,39 +1276,39 @@ msgstr ""
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
+msgstr "Tentukan tinggi default (dalam piksel)  pada bidang sebaris HTML pada AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
-msgstr ""
+msgstr "Tentukan tinggi default (dalam piksel)  pada bidang sebaris HTML pada CustomerFAQZoom (dan PublicFAQZoom)."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
+msgstr "Tentukan tinggi maksimal (dalam piksel)  pada bidang sebaris HTML pada AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
-msgstr ""
+msgstr "Tentukan tinggi maksimal (dalam piksel)  pada bidang sebaris HTML pada CustomerFAQZoom (dan PublicFAQZoom)."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
-msgstr ""
+msgstr "Tampilkan tombol \"Masukan tautan FAQ\" pada AgentFAQZoomSmall untuk artikel FAQ umum"
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
-msgstr ""
+msgstr "Tamplikan tombol \"Masukan teks & tautan FAQ\" / \"Masukan FAQ & Tautan lengkap\" pada AgentFAQZoomSmall untuk artikel FAQ umum."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
-msgstr ""
+msgstr "Tampilkan tombol \"Masukan teks FAQ\" / \"Masukan FAQ lengkap\" pada AgentFAQZoomSmall."
 
 #. SysConfig
 msgid "Show FAQ Article with HTML."
-msgstr ""
+msgstr "Tampilkan artikel FAQ dengan HTML."
 
 #. SysConfig
 msgid "Show FAQ path yes/no."
-msgstr ""
+msgstr "Tampilkan Jalur FAQ iya/tidak."
 
 #. SysConfig
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
@@ -1308,15 +1316,15 @@ msgstr ""
 
 #. SysConfig
 msgid "Show items of subcategories."
-msgstr ""
+msgstr "Tampilkan item dari subkategori."
 
 #. SysConfig
 msgid "Show last change items in defined interfaces."
-msgstr ""
+msgstr "Tampilkan item terakhir yang di ubah pada antarmuka yang di tentukan."
 
 #. SysConfig
 msgid "Show last created items in defined interfaces."
-msgstr ""
+msgstr "Tampilkan item terakhir yang di ciptakan pada antarmuka yang di tentukan."
 
 #. SysConfig
 msgid "Show related articles on service change even with empty subject and body."
@@ -1328,43 +1336,43 @@ msgstr ""
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
-msgstr ""
+msgstr "Tampilkan 10 item teratas pada antarmuka yang di tentukan."
 
 #. SysConfig
 msgid "Show voting in defined interfaces."
-msgstr ""
+msgstr "Tampilkan pemilihan pada antarmuka yang di tentukan."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
-msgstr ""
+msgstr "Tampilkan tautan di menu yang mengizinkan hubungan FAQ dengan objek lain di tampilan zoom seperti FAQ pada antarmuka agen."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
-msgstr ""
+msgstr "Tampilkan tautan pada menu yang mengizinkan penghapusan FAQ pada tampilan zoom pada antarmuka agen."
 
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
-msgstr ""
+msgstr "Tampilkan tautan pada menu untuk mengakses sejarah FAQ pada tampilan zoomnya di antarmuka agen."
 
 #. SysConfig
 msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
-msgstr ""
+msgstr "Tampilkan tautan pada menu untuk mengubah FAQ pada tampilan zoomnya di antarmuka agen."
 
 #. SysConfig
 msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
-msgstr ""
+msgstr "Tampilkan tautan pada menu untuk kembali pada FAQ pada tampilan zoom di antarmuka agen."
 
 #. SysConfig
 msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
-msgstr ""
+msgstr "Tampilkan tautan pada menu untuk mencetak FAQ pada tampilan zoomnya di antarmuka agen."
 
 #. SysConfig
 msgid "Solution"
-msgstr ""
+msgstr "Solusi"
 
 #. SysConfig
 msgid "Symptom"
-msgstr ""
+msgstr "Gejala"
 
 #. SysConfig
 msgid "Text Only"
@@ -1376,457 +1384,49 @@ msgstr ""
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
-msgstr ""
+msgstr "Pengidentifikasi untuk FAQ, Misalnya FAQ#, KB#, MyFAQ#. Standarnya adalah FAQ#."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
-msgstr ""
+msgstr "Pengaturan ini mendefiniskan bahwa objek 'FAQ' dapat di hubungkan dengan objek 'FAQ' lain dengan menggunakan type tautan 'Normal'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
-msgstr ""
+msgstr "Pengaturan ini mendefiniskan bahwa objek 'FAQ' dapat di hubungkan dengan objek 'FAQ' lain dengan menggunakan type tautan 'ParentChild'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
-msgstr ""
+msgstr "Pengaturan ini mendefiniskan bahwa objek 'FAQ' dapat di hubungkan dengan objek 'Tiket' lain dengan menggunakan type tautan 'Normal'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
-msgstr ""
+msgstr "Pengaturan ini mendefiniskan bahwa objek 'FAQ' dapat di hubungkan dengan objek 'Ticket' lain dengan menggunakan type tautan 'ParentChild'."
 
 #. SysConfig
 msgid "Ticket body for approval of FAQ article."
-msgstr ""
+msgstr "Isi tiket untuk persetujuan artikel FAQ."
 
 #. SysConfig
-msgid "Ticket subject for approval of FAQ article."
+msgid "Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
-msgstr ""
+msgstr "Item toolbar untuk jalan pintas"
 
 #. SysConfig
 msgid "external (customer)"
-msgstr ""
+msgstr "eksternal (pelanggan)"
 
 #. SysConfig
 msgid "internal (agent)"
-msgstr ""
+msgstr "internal (agen)"
 
 #. SysConfig
 msgid "public (all)"
-msgstr ""
+msgstr "umum"
 
 #. SysConfig
 msgid "public (public)"
-msgstr ""
-
-#. Template: AgentFAQLanguage
-msgid "Do you really want to delete this language?"
-msgstr ""
-
-#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-msgid "Attribute which will be searched on autocomplete"
-msgstr ""
-
-#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-msgid "Select the attribute which tickets will be searched by"
-msgstr ""
-
-#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-msgid "Attribute which is displayed for values"
-msgstr ""
-
-#. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
-msgid "Select the type of display"
-msgstr ""
-
-#. JS File: FAQ.Agent.ConfirmationDialog
-msgid "Ok"
-msgstr ""
-
-#. SysConfig
-msgid "A precentage value of the minimal translation progress per language, to be usable for documentations."
-msgstr ""
-
-#. SysConfig
-msgid "Access repos via http or https."
-msgstr ""
-
-#. SysConfig
-msgid "Autoloading of Znuny4OTRSRepo extensions."
-msgstr ""
-
-#. SysConfig
-msgid "Backend module registration for the config conflict check module."
-msgstr ""
-
-#. SysConfig
-msgid "Backend module registration for the file conflict check module."
-msgstr ""
-
-#. SysConfig
-msgid "Backend module registration for the function redefine check module."
-msgstr ""
-
-#. SysConfig
-msgid "Backend module registration for the manual set module."
-msgstr ""
-
-#. SysConfig
-msgid "Block hooks to be created for BS ad removal."
-msgstr ""
-
-#. SysConfig
-msgid "Block hooks to be created for package manager output filter."
-msgstr ""
-
-#. SysConfig
-msgid "Branch View commit limit"
-msgstr ""
-
-#. SysConfig
-msgid "CodePolicy"
-msgstr ""
-
-#. SysConfig
-msgid "Commit limit per page for Branch view screen"
-msgstr ""
-
-#. SysConfig
-msgid "Create analysis file"
-msgstr ""
-
-#. SysConfig
-msgid "Creates a analysis file from this ticket and sends to Znuny."
-msgstr ""
-
-#. SysConfig
-msgid "Creates a analysis file from this ticket."
-msgstr ""
-
-#. SysConfig
-msgid "Define private addon repos."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the filter that processes the HTML templates."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the test module for checking code policy."
-msgstr ""
-
-#. SysConfig
-msgid "Definition of GIT clone/push URL Prefix."
-msgstr ""
-
-#. SysConfig
-msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr ""
-
-#. SysConfig
-msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr ""
-
-#. SysConfig
-msgid "Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date)."
-msgstr ""
-
-#. SysConfig
-msgid "Definition of mappings between public repository requests and internal OPMS repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Definition of package states."
-msgstr ""
-
-#. SysConfig
-msgid "Definition of renamed OPMS packages."
-msgstr ""
-
-#. SysConfig
-msgid "Directory, which is used by Git to cache repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Directory, which is used by Git to store temporary data."
-msgstr ""
-
-#. SysConfig
-msgid "Directory, which is used by Git to store working copies."
-msgstr ""
-
-#. SysConfig
-msgid "Disable online repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Do not log git ssh connection authorization results for these users. Useful for automated stuff."
-msgstr ""
-
-#. SysConfig
-msgid "Dynamic Fields Screens"
-msgstr ""
-
-#. SysConfig
-msgid "DynamicFieldScreen"
-msgstr ""
-
-#. SysConfig
-msgid "Export all available public keys to authorized_keys file."
-msgstr ""
-
-#. SysConfig
-msgid "Export all relevant releases to ftp server."
-msgstr ""
-
-#. SysConfig
-msgid "Frontend module registration for the OPMS object in the agent interface."
-msgstr ""
-
-#. SysConfig
-msgid "Frontend module registration for the PublicOPMSRepository object in the public interface."
-msgstr ""
-
-#. SysConfig
-msgid "Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface."
-msgstr ""
-
-#. SysConfig
-msgid "Frontend module registration for the PublicOPMSTestBuild object in the public interface."
-msgstr ""
-
-#. SysConfig
-msgid "Frontend module registration for the PublicPackageVerification object in the public interface."
-msgstr ""
-
-#. SysConfig
-msgid "Frontend module registration for the admin interface."
-msgstr ""
-
-#. SysConfig
-msgid "GIT Author registration."
-msgstr ""
-
-#. SysConfig
-msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
-msgstr ""
-
-#. SysConfig
-msgid "Generate documentations once per night."
-msgstr ""
-
-#. SysConfig
-msgid "Git"
-msgstr ""
-
-#. SysConfig
-msgid "Git Management"
-msgstr ""
-
-#. SysConfig
-msgid "Git Repository"
-msgstr ""
-
-#. SysConfig
-msgid "Group, whose members have delete admin permissions in OPMS."
-msgstr ""
-
-#. SysConfig
-msgid "Group, whose members have repository admin permissions in OPMS."
-msgstr ""
-
-#. SysConfig
-msgid "Group, whose members will see CI test result information in OPMS screens."
-msgstr ""
-
-#. SysConfig
-msgid "Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface."
-msgstr ""
-
-#. SysConfig
-msgid "Groups which will be set during git project creation processes while adding OPMS repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Manage dynamic field in screens."
-msgstr ""
-
-#. SysConfig
-msgid "Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key."
-msgstr ""
-
-#. SysConfig
-msgid "Module to generate statistics about the added code lines."
-msgstr ""
-
-#. SysConfig
-msgid "Module to generate statistics about the growth of code."
-msgstr ""
-
-#. SysConfig
-msgid "Module to generate statistics about the number of git commits."
-msgstr ""
-
-#. SysConfig
-msgid "Module to generate statistics about the removed code lines."
-msgstr ""
-
-#. SysConfig
-msgid "OPMS"
-msgstr ""
-
-#. SysConfig
-msgid "Only users who have rw permissions in one of these groups may access git."
-msgstr ""
-
-#. SysConfig
-msgid "Option to set a package compatibility manually."
-msgstr ""
-
-#. SysConfig
-msgid "Parameters for the pages in the BranchView screen."
-msgstr ""
-
-#. SysConfig
-msgid "Pre-Definition of the 'GITProjectName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr ""
-
-#. SysConfig
-msgid "Pre-Definition of the 'GITRepositoryName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr ""
-
-#. SysConfig
-msgid "Pre-Definition of the 'PackageDeprecated' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
-msgstr ""
-
-#. SysConfig
-msgid "Recipients that will be informed by email in case of errors."
-msgstr ""
-
-#. SysConfig
-msgid "SSH Keys for Git Access"
-msgstr ""
-
-#. SysConfig
-msgid "Send analysis file"
-msgstr ""
-
-#. SysConfig
-msgid "Sets the git clone address to be used in repository listings."
-msgstr ""
-
-#. SysConfig
-msgid "Sets the home directory for git repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Sets the path for the BugzillaAddComment post receive script location."
-msgstr ""
-
-#. SysConfig
-msgid "Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
-msgstr ""
-
-#. SysConfig
-msgid "Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
-msgstr ""
-
-#. SysConfig
-msgid "Show latest commits in git repositories."
-msgstr ""
-
-#. SysConfig
-msgid "Shows a link in the menu to go create a unit test from the current ticket."
-msgstr ""
-
-#. SysConfig
-msgid "Synchronize OPMS tables with a remote database."
-msgstr ""
-
-#. SysConfig
-msgid "The minimum version of the sphinx library."
-msgstr ""
-
-#. SysConfig
-msgid "The name of the sphinx theme to be used."
-msgstr ""
-
-#. SysConfig
-msgid "The path to the OTRS CSS file (relative below the static path)."
-msgstr ""
-
-#. SysConfig
-msgid "The path to the OTRS logo (relative below the static path)."
-msgstr ""
-
-#. SysConfig
-msgid "The path to the static folder, containing images and css files."
-msgstr ""
-
-#. SysConfig
-msgid "The path to the theme folder, containing the sphinx themes."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines all possible screens to enable or disable default columns."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines all possible screens to enable or disable dynamic fields."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines if only valids or all (invalids) dynamic fields should be shown."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It's still recommended to use only verified packages."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig 'Znuny4OTRSRepoType'."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration registers a Output post-filter to extend package verification."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements."
-msgstr ""
-
-#. SysConfig
-msgid "This configuration registers an output filter to hide online repository selection in package manager."
-msgstr ""
-
-#. SysConfig
-msgid "Tidy unprocessed release that not passed test pomules checks for a long time."
-msgstr ""
-
-#. SysConfig
-msgid "Users who have rw permissions in one of these groups are permitted to execute force pushes 'git push --force'."
-msgstr ""
-
-#. SysConfig
-msgid "Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the initial height for the rich text editor component in pixels."
-msgstr ""
-
-#. SysConfig
-msgid "Defines if parent-child translations for queues and services should be generated automatically."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the initial height in pixels for the rich text editor component for this screen."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
 

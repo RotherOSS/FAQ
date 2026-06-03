@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -706,13 +706,17 @@ sub _DynamicFieldsDelete {
 
     # get the list of FAQ dynamic fields (valid and invalid ones)
     my $DynamicFieldList = $DynamicFieldObject->DynamicFieldListGet(
-        Valid      => 0,
-        ObjectType => ['FAQ'],
+        Valid => 0,
     );
 
     # delete the dynamic fields
     DYNAMICFIELD:
     for my $DynamicField ( @{$DynamicFieldList} ) {
+
+        # check if field should be deleted
+        if ( $DynamicField->{ObjectType} ne 'FAQ' && $DynamicField->{FieldType} ne 'FAQ' ) {
+            next DYNAMICFIELD;
+        }
 
         # delete all field values
         my $ValuesDeleteSuccess = $DynamicFieldValueObject->AllValuesDelete(
