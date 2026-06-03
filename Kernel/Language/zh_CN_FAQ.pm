@@ -252,6 +252,8 @@ sub Data {
 
     # Perl Module: Kernel/Modules/CustomerFAQSearch.pm
     $Self->{Translation}->{'Created between'} = '在...之间创建';
+    $Self->{Translation}->{'Created within the last'} = '';
+    $Self->{Translation}->{'Created more than ... ago'} = '';
 
     # Perl Module: Kernel/Modules/CustomerFAQZoom.pm
     $Self->{Translation}->{'Need ItemID!'} = '需要ItemID！';
