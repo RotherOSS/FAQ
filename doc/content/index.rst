@@ -62,6 +62,14 @@ DynamicField object registration.
 Core::FAQ
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+FAQ::CacheTTL
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Cache Time To Leave for FAQ items.
+
+FAQ::Default::Language
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Default language for FAQ articles on single language mode.
+
 FAQ::Default::RootCategoryComment
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Default category name.
@@ -70,40 +78,32 @@ FAQ::Default::RootCategoryName
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Default category name.
 
-FAQ::FAQHook
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#.
-
-FAQ::TitleSize
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Default maximum size of the titles in a FAQ article to be shown.
-
 FAQ::Default::State
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Default state for FAQ entry.
+
+FAQ::FAQHook
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#.
 
 FAQ::MultiLanguage
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Enable multiple languages on FAQ module.
 
-FAQ::Default::Language
+FAQ::TitleSize
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Default language for FAQ articles on single language mode.
+Default maximum size of the titles in a FAQ article to be shown.
 
 FAQ::Voting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Enable voting mechanism on FAQ module.
 
-FAQ::CacheTTL
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Cache Time-To-Live for FAQ items.
-
 Core::FAQ::Approval
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FAQ::ApprovalRequired
+FAQ::Approval::IncludeInternal
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-New FAQ articles need approval before they get published.
+If activated, FAQ articles of status type internal are also taken into account for the approval process.
 
 FAQ::ApprovalGroup
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -113,21 +113,25 @@ FAQ::ApprovalQueue
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Queue for the approval of FAQ articles.
 
-FAQ::ApprovalTicketSubject
+FAQ::ApprovalRequired
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Ticket subject for approval of FAQ article.
+New FAQ articles need approval before they get published.
 
 FAQ::ApprovalTicketBody
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Ticket body for approval of FAQ article.
 
+FAQ::ApprovalTicketDefaultState
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Default state of tickets for the approval of FAQ articles.
+
 FAQ::ApprovalTicketPriority
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Default priority of tickets for the approval of FAQ articles.
 
-FAQ::ApprovalTicketDefaultState
+FAQ::ApprovalTicketSubject
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Default state of tickets for the approval of FAQ articles.
+Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.
 
 FAQ::ApprovalTicketType
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -135,10 +139,6 @@ Default type of tickets for the approval of FAQ articles.
 
 Core::FAQ::Explorer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-FAQ::Explorer::Path::Show
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Show FAQ path yes/no.
 
 FAQ::Explorer::ItemList::VotingResultColors
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -148,21 +148,21 @@ FAQ::Explorer::ItemList::VotingResultDecimalPlaces
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Decimal places of the voting result.
 
-FAQ::Explorer::QuickSearch::Show
+FAQ::Explorer::LastChange::Limit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Interfaces where the quick search should be shown.
+Number of shown items in last changes.
 
 FAQ::Explorer::LastChange::Show
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Show last change items in defined interfaces.
 
-FAQ::Explorer::LastChange::Limit
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Number of shown items in last changes.
-
 FAQ::Explorer::LastChange::ShowSubCategoryItems
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Show items of subcategories.
+
+FAQ::Explorer::LastCreate::Limit
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Number of shown items in last created.
 
 FAQ::Explorer::LastCreate::Show
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -172,17 +172,21 @@ FAQ::Explorer::LastCreate::ShowSubCategoryItems
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Show items of subcategories.
 
-FAQ::Explorer::LastCreate::Limit
+FAQ::Explorer::Path::Show
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Number of shown items in last created.
+Show FAQ path yes/no.
 
-FAQ::Explorer::Top10::Show
+FAQ::Explorer::QuickSearch::Show
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Show top 10 items in defined interfaces.
+Interfaces where the quick search should be shown.
 
 FAQ::Explorer::Top10::Limit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Number of shown items in the top 10 feature.
+
+FAQ::Explorer::Top10::Show
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Show top 10 items in defined interfaces.
 
 FAQ::Explorer::Top10::ShowSubCategoryItems
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -222,13 +226,13 @@ Show FAQ Article with HTML.
 Core::FAQ::Item::Voting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FAQ::Item::Voting::Show
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Show voting in defined interfaces.
-
 FAQ::Item::Voting::Rates
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Rates for voting. Key must be in percent.
+
+FAQ::Item::Voting::Show
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Show voting in defined interfaces.
 
 Core::FAQ::RelatedArticles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -236,10 +240,6 @@ Core::FAQ::RelatedArticles
 FAQ::Customer::RelatedArticles::Enabled
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Enable the related article feature for the customer frontend.
-
-FAQ::Service
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Enable service assignment for FAQs.
 
 FAQ::Customer::RelatedArticlesOnServiceOnly
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -249,24 +249,24 @@ FAQ::KeywordArticeList::SearchLimit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Limit for the search to build the keyword FAQ article list.
 
+FAQ::Service
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Enable service assignment for FAQs.
+
 Core::FAQ::TicketCompose
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-FAQ::TicketCompose###InsertMethod
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the information to be inserted in a FAQ based Ticket. "Full FAQ" includes text, attachments and inline images.
 
 FAQ::TicketCompose###IncludeInternal
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Include internal fields on a FAQ based Ticket.
 
+FAQ::TicketCompose###InsertMethod
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the information to be inserted in a FAQ based Ticket. "Full FAQ" includes text, attachments and inline images.
+
 FAQ::TicketCompose###ShowFieldNames
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Include the name of each field in a FAQ based Ticket.
-
-FAQ::TicketCompose###ShowInsertTextButton
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Show "Insert FAQ Text" / "Insert Full FAQ" Button in AgentFAQZoomSmall.
 
 FAQ::TicketCompose###ShowInsertLinkButton
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -275,6 +275,10 @@ Show "Insert FAQ Link" Button in AgentFAQZoomSmall for public FAQ Articles.
 FAQ::TicketCompose###ShowInsertTextAndLinkButton
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Show "Insert FAQ Text & Link" / "Insert Full FAQ & Link" Button in AgentFAQZoomSmall for public FAQ Articles.
+
+FAQ::TicketCompose###ShowInsertTextButton
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Show "Insert FAQ Text" / "Insert Full FAQ" Button in AgentFAQZoomSmall.
 
 FAQ::TicketCompose###UpdateArticleSubject
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -331,22 +335,26 @@ Dynamic fields shown in the FAQ small format overview screen of the agent interf
 Frontend::Agent::LinkObject
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-LinkObject::ComplexTable::SettingsVisibility###FAQ
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.
-
 LinkObject::ComplexTable###FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = "complex"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns.
 
+LinkObject::ComplexTable::SettingsVisibility###FAQ
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.
+
 Frontend::Agent::ModuleRegistration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Frontend::Module###AgentFAQExplorer
+Frontend::Module###AgentFAQAdd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the agent interface.
 
-Frontend::Module###AgentFAQAdd
+Frontend::Module###AgentFAQCategory
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the agent interface.
+
+Frontend::Module###AgentFAQDelete
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the agent interface.
 
@@ -354,11 +362,27 @@ Frontend::Module###AgentFAQEdit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the agent interface.
 
+Frontend::Module###AgentFAQExplorer
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the agent interface.
+
+Frontend::Module###AgentFAQHistory
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the agent interface.
+
+Frontend::Module###AgentFAQJournal
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the agent interface.
+
 Frontend::Module###AgentFAQLanguage
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the agent interface.
 
-Frontend::Module###AgentFAQCategory
+Frontend::Module###AgentFAQPrint
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the agent interface.
+
+Frontend::Module###AgentFAQRichText
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the agent interface.
 
@@ -374,34 +398,14 @@ Frontend::Module###AgentFAQZoom
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the agent interface.
 
-Frontend::Module###AgentFAQRichText
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the agent interface.
-
-Frontend::Module###AgentFAQPrint
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the agent interface.
-
-Frontend::Module###AgentFAQJournal
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the agent interface.
-
-Frontend::Module###AgentFAQHistory
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the agent interface.
-
-Frontend::Module###AgentFAQDelete
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the agent interface.
-
 Frontend::Agent::ModuleRegistration::Loader
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Loader::Module::AgentFAQExplorer###002-FAQ
+Loader::Module::AgentFAQAdd###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
-Loader::Module::AgentFAQAdd###002-FAQ
+Loader::Module::AgentFAQCategory###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
@@ -409,11 +413,15 @@ Loader::Module::AgentFAQEdit###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
-Loader::Module::AgentFAQLanguage###002-FAQ
+Loader::Module::AgentFAQExplorer###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
-Loader::Module::AgentFAQCategory###002-FAQ
+Loader::Module::AgentFAQJournal###002-FAQ
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Loader module registration for the agent interface.
+
+Loader::Module::AgentFAQLanguage###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
@@ -425,26 +433,26 @@ Loader::Module::AgentFAQZoom###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
-Loader::Module::AgentFAQJournal###002-FAQ
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Loader module registration for the agent interface.
-
 Frontend::Agent::ModuleRegistration::MainMenu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Frontend::Navigation###AgentFAQExplorer###002-FAQ
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Main menu item registration.
 
 Frontend::Navigation###AgentFAQAdd###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Main menu item registration.
 
-Frontend::Navigation###AgentFAQLanguage###002-FAQ
+Frontend::Navigation###AgentFAQCategory###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Main menu item registration.
 
-Frontend::Navigation###AgentFAQCategory###002-FAQ
+Frontend::Navigation###AgentFAQExplorer###002-FAQ
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Main menu item registration.
+
+Frontend::Navigation###AgentFAQJournal###002-FAQ
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Main menu item registration.
+
+Frontend::Navigation###AgentFAQLanguage###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Main menu item registration.
 
@@ -453,10 +461,6 @@ Frontend::Navigation###AgentFAQSearch###002-FAQ
 Main menu item registration.
 
 Frontend::Navigation###AgentFAQSearchSmall###002-FAQ
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Main menu item registration.
-
-Frontend::Navigation###AgentFAQJournal###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Main menu item registration.
 
@@ -488,43 +492,35 @@ Defines the parameters for the dashboard backend. "Limit" defines the number of 
 Frontend::Agent::View::FAQAdd
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FAQ::Frontend::AgentFAQAdd###RichTextWidth
+FAQ::Frontend::AgentFAQAdd###DynamicField
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).
+Dynamic fields shown in the FAQ add screen of the agent interface.
 
 FAQ::Frontend::AgentFAQAdd###RichTextHeight
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).
 
-FAQ::Frontend::AgentFAQAdd###DynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic fields shown in the FAQ add screen of the agent interface.
-
-Frontend::Agent::View::FAQEdit
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-FAQ::Frontend::AgentFAQEdit###RichTextWidth
+FAQ::Frontend::AgentFAQAdd###RichTextWidth
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).
 
-FAQ::Frontend::AgentFAQEdit###RichTextHeight
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).
+Frontend::Agent::View::FAQEdit
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 FAQ::Frontend::AgentFAQEdit###DynamicField
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Dynamic fields shown in the FAQ edit screen of the agent interface.
 
+FAQ::Frontend::AgentFAQEdit###RichTextHeight
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).
+
+FAQ::Frontend::AgentFAQEdit###RichTextWidth
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).
+
 Frontend::Agent::View::FAQExplorer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-FAQ::Frontend::AgentFAQExplorer###ShowColumns
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.
-
-FAQ::Frontend::AgentFAQExplorer###SortBy::Default
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface.
 
 FAQ::Frontend::AgentFAQExplorer###Order::Default
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -534,24 +530,32 @@ FAQ::Frontend::AgentFAQExplorer###SearchLimit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.
 
-FAQ::Frontend::AgentFAQExplorer###TitleSize
+FAQ::Frontend::AgentFAQExplorer###ShowColumns
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface.
+Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.
 
 FAQ::Frontend::AgentFAQExplorer###ShowInvalidFAQItems
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Show invalid items in the FAQ Explorer result of the agent interface.
 
+FAQ::Frontend::AgentFAQExplorer###SortBy::Default
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface.
+
+FAQ::Frontend::AgentFAQExplorer###TitleSize
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface.
+
 Frontend::Agent::View::FAQJournal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-FAQ::Frontend::AgentFAQJournal###ShowColumns
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.
 
 FAQ::Frontend::AgentFAQJournal###JournalLimit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface.
+
+FAQ::Frontend::AgentFAQJournal###ShowColumns
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.
 
 FAQ::Frontend::AgentFAQJournal###TitleSize
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -567,47 +571,7 @@ Dynamic fields shown in the FAQ print screen of the agent interface.
 Frontend::Agent::View::FAQSearch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FAQ::Frontend::AgentFAQSearch###ShowColumns
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the shown columns in the FAQ search. This option has no effect on the position of the column.
-
-FAQ::Frontend::AgentFAQSearch###SortBy::Default
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface.
-
-FAQ::Frontend::AgentFAQSearch###Order::Default
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top.
-
-FAQ::Frontend::AgentFAQSearch###SearchLimit
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Maximum number of FAQ articles to be displayed in the result of a search in the agent interface.
-
-FAQ::Frontend::AgentFAQSearch###DynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic fields shown in the FAQ search screen of the agent interface.
-
-FAQ::Frontend::AgentFAQSearch###SearchCSVDynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic Fields used to export the search result in CSV format.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###Fulltext
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###Number
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###Title
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###Keyword
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###LanguageIDs
+FAQ::Frontend::AgentFAQSearch###Defaults###ApprovedSearch
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default shown FAQ search attribute for FAQ search screen.
 
@@ -615,39 +579,11 @@ FAQ::Frontend::AgentFAQSearch###Defaults###CategoryIDs
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default shown FAQ search attribute for FAQ search screen.
 
-FAQ::Frontend::AgentFAQSearch###Defaults###ValidIDs
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###StateIDs
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###VoteSearchType
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###RateSearchType
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###ApprovedSearch
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
 FAQ::Frontend::AgentFAQSearch###Defaults###CreatedUserIDs
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default shown FAQ search attribute for FAQ search screen.
 
-FAQ::Frontend::AgentFAQSearch###Defaults###LastChangedUserIDs
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimePoint
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default shown FAQ search attribute for FAQ search screen.
-
-FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimeSlot
+FAQ::Frontend::AgentFAQSearch###Defaults###Fulltext
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default shown FAQ search attribute for FAQ search screen.
 
@@ -659,12 +595,84 @@ FAQ::Frontend::AgentFAQSearch###Defaults###ItemChangeTimeSlot
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default shown FAQ search attribute for FAQ search screen.
 
+FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimePoint
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimeSlot
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###Keyword
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###LanguageIDs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###LastChangedUserIDs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###Number
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###RateSearchType
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###StateIDs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###Title
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###ValidIDs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###Defaults###VoteSearchType
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default shown FAQ search attribute for FAQ search screen.
+
+FAQ::Frontend::AgentFAQSearch###DynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic fields shown in the FAQ search screen of the agent interface.
+
+FAQ::Frontend::AgentFAQSearch###Order::Default
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top.
+
+FAQ::Frontend::AgentFAQSearch###SearchCSVDynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic Fields used to export the search result in CSV format.
+
+FAQ::Frontend::AgentFAQSearch###SearchLimit
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Maximum number of FAQ articles to be displayed in the result of a search in the agent interface.
+
+FAQ::Frontend::AgentFAQSearch###ShowColumns
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the shown columns in the FAQ search. This option has no effect on the position of the column.
+
+FAQ::Frontend::AgentFAQSearch###SortBy::Default
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface.
+
 FAQ::Frontend::AgentFAQSearch###TitleSize
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface.
 
 Frontend::Agent::View::FAQZoom
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+FAQ::Frontend::AgentFAQZoom###DynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic fields shown in the FAQ zoom screen of the agent interface.
 
 FAQ::Frontend::AgentHTMLFieldHeightDefault
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -673,10 +681,6 @@ Set the default height (in pixels) of inline HTML fields in AgentFAQZoom.
 FAQ::Frontend::AgentHTMLFieldHeightMax
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom.
-
-FAQ::Frontend::AgentFAQZoom###DynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic fields shown in the FAQ zoom screen of the agent interface.
 
 Frontend::Agent::View::FAQZoom::MenuModule
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -708,13 +712,13 @@ Shows a link in the menu that allows to delete a FAQ in its zoom view in the age
 Frontend::Agent::View::Preferences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PreferencesGroups###FAQOverviewSmallPageShown
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.
-
 PreferencesGroups###FAQJournalOverviewSmallPageShown
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview.
+
+PreferencesGroups###FAQOverviewSmallPageShown
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.
 
 Frontend::Base::Loader
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -734,24 +738,24 @@ Frontend::Output::FilterElementPost###FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines where the 'Insert FAQ' link will be displayed.
 
-Frontend::Output::OutputFilterTextAutoLink###FAQ
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image.
-
 Frontend::Output::FilterElementPost###OutputFilterPostFAQCustomerRelatedArticles
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Output filter to add Java-script to CustomerTicketMessage screen.
 
+Frontend::Output::OutputFilterTextAutoLink###FAQ
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTOBO image path will be used. The second possibility is to insert the link to the image.
+
 Frontend::Customer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-FAQ::Customer::StateTypes
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-List of state types which can be used in the customer interface.
 
 CustomerFrontend::HeaderMetaModule###3-FAQSearch
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Module to generate HTML OpenSearch profile for short FAQ search in the customer interface.
+
+FAQ::Customer::StateTypes
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+List of state types which can be used in the customer interface.
 
 Frontend::Customer::FAQOverview
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -763,13 +767,13 @@ Dynamic fields shown in the FAQ overview screen of the customer interface.
 Frontend::Customer::FAQRelatedArticles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FAQ::Frontend::CustomerFAQRelatedArticles###QueuesEnabled
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-List of queue names for which the related article feature is enabled.
-
 FAQ::Frontend::CustomerFAQRelatedArticles###DefaultLanguages
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 The default languages for the related FAQ articles.
+
+FAQ::Frontend::CustomerFAQRelatedArticles###QueuesEnabled
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+List of queue names for which the related article feature is enabled.
 
 FAQ::Frontend::CustomerFAQRelatedArticles###ShowLimit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -786,7 +790,11 @@ CustomerFrontend::Module###CustomerFAQExplorer
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the customer interface.
 
-CustomerFrontend::Module###CustomerFAQZoom
+CustomerFrontend::Module###CustomerFAQPrint
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the customer interface.
+
+CustomerFrontend::Module###CustomerFAQRelatedArticles
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the customer interface.
 
@@ -794,11 +802,7 @@ CustomerFrontend::Module###CustomerFAQSearch
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the customer interface.
 
-CustomerFrontend::Module###CustomerFAQPrint
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the customer interface.
-
-CustomerFrontend::Module###CustomerFAQRelatedArticles
+CustomerFrontend::Module###CustomerFAQZoom
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the customer interface.
 
@@ -809,11 +813,11 @@ Loader::Module::CustomerFAQExplorer###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
-Loader::Module::CustomerFAQZoom###002-FAQ
+Loader::Module::CustomerFAQSearch###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
-Loader::Module::CustomerFAQSearch###002-FAQ
+Loader::Module::CustomerFAQZoom###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the agent interface.
 
@@ -835,6 +839,10 @@ Main menu item registration.
 Frontend::Customer::View::FAQExplorer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+FAQ::Frontend::CustomerFAQExplorer###Order::Default
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top.
+
 FAQ::Frontend::CustomerFAQExplorer###SearchLimit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.
@@ -846,10 +854,6 @@ Number of FAQ articles to be displayed in the FAQ Explorer of the customer inter
 FAQ::Frontend::CustomerFAQExplorer###SortBy::Default
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface.
-
-FAQ::Frontend::CustomerFAQExplorer###Order::Default
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top.
 
 FAQ::Frontend::CustomerFAQExplorer###TitleSize
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -865,6 +869,18 @@ Dynamic fields shown in the FAQ print screen of the customer interface.
 Frontend::Customer::View::FAQSearch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+FAQ::Frontend::CustomerFAQSearch###DynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic fields shown in the FAQ search screen of the customer interface.
+
+FAQ::Frontend::CustomerFAQSearch###Order::Default
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top.
+
+FAQ::Frontend::CustomerFAQSearch###SearchCSVDynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic Fields used to export the search result in CSV format.
+
 FAQ::Frontend::CustomerFAQSearch###SearchLimit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Maximum number of FAQ articles to be displayed in the result of a search in the customer interface.
@@ -877,24 +893,16 @@ FAQ::Frontend::CustomerFAQSearch###SortBy::Default
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface.
 
-FAQ::Frontend::CustomerFAQSearch###Order::Default
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top.
-
-FAQ::Frontend::CustomerFAQSearch###DynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic fields shown in the FAQ search screen of the customer interface.
-
-FAQ::Frontend::CustomerFAQSearch###SearchCSVDynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic Fields used to export the search result in CSV format.
-
 FAQ::Frontend::CustomerFAQSearch###TitleSize
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface.
 
 Frontend::Customer::View::FAQZoom
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+FAQ::Frontend::CustomerFAQZoom###DynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic fields shown in the FAQ zoom screen of the customer interface.
 
 FAQ::Frontend::CustomerHTMLFieldHeightDefault
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -903,10 +911,6 @@ Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and
 FAQ::Frontend::CustomerHTMLFieldHeightMax
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom).
-
-FAQ::Frontend::CustomerFAQZoom###DynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic fields shown in the FAQ zoom screen of the customer interface.
 
 Frontend::Public
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -933,41 +937,17 @@ Dynamic fields shown in the FAQ overview screen of the public interface.
 Frontend::Public::ModuleRegistration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PublicFrontend::Module###PublicFAQExplorer
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the public interface.
-
 Loader::Module::PublicFAQExplorer###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the public interface.
-
-PublicFrontend::Navigation###PublicFAQExplorer###002-FAQ
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Main menu item registration.
-
-PublicFrontend::Module###PublicFAQRSS
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the public interface.
 
 Loader::Module::PublicFAQRSS###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the public interface.
 
-PublicFrontend::Module###PublicFAQSearch
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the public interface.
-
 Loader::Module::PublicFAQSearch###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loader module registration for the public interface.
-
-PublicFrontend::Navigation###PublicFAQSearch###002-FAQ
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Main menu item registration.
-
-PublicFrontend::Module###PublicFAQZoom
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Frontend module registration for the public interface.
 
 Loader::Module::PublicFAQZoom###002-FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -977,12 +957,40 @@ PublicFrontend::Module###PublicFAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the public interface.
 
+PublicFrontend::Module###PublicFAQExplorer
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the public interface.
+
 PublicFrontend::Module###PublicFAQPrint
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Frontend module registration for the public interface.
 
+PublicFrontend::Module###PublicFAQRSS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the public interface.
+
+PublicFrontend::Module###PublicFAQSearch
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the public interface.
+
+PublicFrontend::Module###PublicFAQZoom
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Frontend module registration for the public interface.
+
+PublicFrontend::Navigation###PublicFAQExplorer###002-FAQ
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Main menu item registration.
+
+PublicFrontend::Navigation###PublicFAQSearch###002-FAQ
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Main menu item registration.
+
 Frontend::Public::View::FAQExplorer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+FAQ::Frontend::PublicFAQExplorer###Order::Default
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top.
 
 FAQ::Frontend::PublicFAQExplorer###SearchLimit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -995,10 +1003,6 @@ Number of FAQ articles to be displayed in the FAQ Explorer of the public interfa
 FAQ::Frontend::PublicFAQExplorer###SortBy::Default
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface.
-
-FAQ::Frontend::PublicFAQExplorer###Order::Default
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top.
 
 FAQ::Frontend::PublicFAQExplorer###TitleSize
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -1014,6 +1018,18 @@ Dynamic fields shown in the FAQ print screen of the public interface.
 Frontend::Public::View::FAQSearch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+FAQ::Frontend::PublicFAQSearch###DynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic fields shown in the FAQ search screen of the public interface.
+
+FAQ::Frontend::PublicFAQSearch###Order::Default
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top.
+
+FAQ::Frontend::PublicFAQSearch###SearchCSVDynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic Fields used to export the search result in CSV format.
+
 FAQ::Frontend::PublicFAQSearch###SearchLimit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Maximum number of FAQ articles to be displayed in the result of a search in the public interface.
@@ -1025,18 +1041,6 @@ Number of FAQ articles to be displayed on each page of a search result in the pu
 FAQ::Frontend::PublicFAQSearch###SortBy::Default
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface.
-
-FAQ::Frontend::PublicFAQSearch###Order::Default
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top.
-
-FAQ::Frontend::PublicFAQSearch###DynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic fields shown in the FAQ search screen of the public interface.
-
-FAQ::Frontend::PublicFAQSearch###SearchCSVDynamicField
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Dynamic Fields used to export the search result in CSV format.
 
 FAQ::Frontend::PublicFAQSearch###TitleSize
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -1074,8 +1078,8 @@ About
 Contact
 -------
 | Rother OSS GmbH
-| Email: hello@otobo.de
-| Web: https://otobo.de
+| Email: hello@otobo.io
+| Web: https://otobo.io
 
 Version
 -------
