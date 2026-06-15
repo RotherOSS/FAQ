@@ -5,7 +5,7 @@
 // Copyright (C) 2021-2024 Znuny GmbH, https://znuny.org/
 // Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
-// $origin: otobo - d579459dc68f1cf067d16e459d81c46ba95be493 - var/httpd/htdocs/js/Core.UI.RichTextEditor.js
+// $origin: otobo - ab56226f2da244b460bdf33c4018fa74e5f7fc72 - var/httpd/htdocs/js/Core.UI.RichTextEditor.js
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -558,7 +558,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
 
 // RotherOSS / FAQ
                 // make sure editor size is adjusted when window size changes
-                window.addEventListener('resize', adjustEditorSize);
+                window.addEventListener('resize', UpdateEditorSize);
 // EO FAQ
 
                 //Block pasting images for ToolbarWithoutImage
@@ -577,8 +577,12 @@ Core.UI.RichTextEditor = (function (TargetNS) {
 
                 if (!CustomerInterface) {
                     // set initial Editor height as defined by the System Configuration
-
-                    $domEditableElement.css("--initial-height", Core.Config.Get("RichText.Height", 320));
+                    let NewFormStructure = $domEditableElement.closest('fieldset.ModularForm').length > 0;
+                    if (NewFormStructure) {
+                        $domEditableElement.css("--initial-height", Core.Config.Get("RichText.Height", 320));
+                    } else {
+                        $domEditableElement.css("height", Core.Config.Get("RichText.Height", 320) + "px");
+                    }
                 }
 
                 Core.App.Publish('Event.UI.RichTextEditor.InstanceCreated', [editor]);
