@@ -5,7 +5,7 @@
 // Copyright (C) 2021-2024 Znuny GmbH, https://znuny.org/
 // Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
-// $origin: otobo - ab56226f2da244b460bdf33c4018fa74e5f7fc72 - var/httpd/htdocs/js/Core.UI.RichTextEditor.js
+// $origin: otobo - f7b1c5241bd50a1bceebb43841d47b3d60b2b7d5 - var/httpd/htdocs/js/Core.UI.RichTextEditor.js
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
