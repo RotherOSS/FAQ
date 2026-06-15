@@ -5,7 +5,7 @@
 // Copyright (C) 2021-2024 Znuny GmbH, https://znuny.org/
 // Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
-// $origin: otobo - da5c3de7f28bfb51e31d2cf453d286562f1f1a54 - var/httpd/htdocs/js/Core.UI.RichTextEditor.js
+// $origin: otobo - d579459dc68f1cf067d16e459d81c46ba95be493 - var/httpd/htdocs/js/Core.UI.RichTextEditor.js
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -110,13 +110,12 @@ Core.UI.RichTextEditor = (function (TargetNS) {
         }
 
         // Common editor label
-        const RichTextLabel = $('label[for="RichText"]');
+        //  use wildcard to include "RichText<ActivityDialogID>"
+        const $RichTextLabel = $EditorArea.closest('.Field').siblings('label[for^="RichText"]');
 
         var ToolbarConfig;
         if ( CustomerInterface ) {
-            ToolbarConfig = /*$EditorArea.width() < 454 ? Core.Config.Get('RichText.ToolbarMini') :
-                            $EditorArea.width() < 622 ? Core.Config.Get('RichText.ToolbarMidi') :*/
-                            CheckFormID($EditorArea).length ? Core.Config.Get('RichText.Toolbar') : Core.Config.Get('RichText.ToolbarWithoutImage');
+            ToolbarConfig = CheckFormID($EditorArea).length ? Core.Config.Get('RichText.Toolbar') : Core.Config.Get('RichText.ToolbarWithoutImage');
         }
         else {
             ToolbarConfig = CheckFormID($EditorArea).length ? Core.Config.Get('RichText.Toolbar') : Core.Config.Get('RichText.ToolbarWithoutImage');
@@ -146,11 +145,11 @@ Core.UI.RichTextEditor = (function (TargetNS) {
         var ClassicEditor = CKEditor5Wrapper.ClassicEditor;
         let EnabledPlugins = [];
         for (let pluginName of PluginList) {
-            let Plugin = CKEditor5Plugins[pluginName];
+            let Plugin = CKEditor5Wrapper[pluginName];
             if (Plugin) {
-                EnabledPlugins.push(CKEditor5Plugins[pluginName]);
+                EnabledPlugins.push(CKEditor5Wrapper[pluginName]);
             } else {
-                Core.Exception.ShowError('Couldnt find plugin: ' + pluginName, 'JavaScriptError');
+                Core.Exception.ShowError('Couldn\'t find plugin: ' + pluginName, 'JavaScriptError');
             }
         }
 
@@ -479,66 +478,61 @@ Core.UI.RichTextEditor = (function (TargetNS) {
 
                 $domEditableElement.resizable();
                 $domEditableElement.resizable("option", "handles", "s");
-                $(".ui-resizable-s", $domEditableElement).append("<i class='ooofo ooofo-more_h'></i>");
-
-                $domEditableElement.on('resize', function() {
-                    adjustEditorSize();
-                });
+                let $resizeHandle = $(".ui-resizable-s", $domEditableElement);
+                $resizeHandle.append("<i class='ooofo ooofo-more_h'></i>");
+                $resizeHandle.addClass("RichTextField_resizeHandle");
 
                 // Adjust Editor Size to match (resizable) container size
-                var adjustEditorSize = function() {
-                    let toolbarHeight = $domEditableElement.find('.ck-editor__top').outerHeight();
+                var UpdateEditorSize = function() {
+
                     let fieldPadding = parseFloat($domEditableElement.css("padding-top"))
-                        + parseFloat($domEditableElement.css("padding-bottom"));
+                                     + parseFloat($domEditableElement.css("padding-bottom"));
                     let newEditorSize = $domEditableElement.innerHeight() - fieldPadding;
-                    let $editingArea = $domEditableElement.find('.ck-content');
-                    if (sourceEditingActive) {
-                        $editingArea = $domEditableElement.find('.ck-source-editing-area');
-                    }
-                    let verticalPadding = parseFloat($editingArea.css("padding-top")) + parseFloat($editingArea.css("padding-bottom"));
-                    let borderWidth = parseFloat($editingArea.css("border-top")) + parseFloat($editingArea.css("border-bottom"));
-// RotherOSS / FAQ
-//                  let newSize = newEditorSize - (toolbarHeight + verticalPadding)
 
-                    let newSize = newEditorSize;
-
-                    // in mobile view, related articles are shown above the editor and reduce the available space
-                    let $FAQRelatedArticles = $domEditableElement.find('#FAQRelatedArticles');
-                    if (isMobileView && $FAQRelatedArticles.length > 0) {
-                        let relatedArticlesHeight = $FAQRelatedArticles.outerHeight();
-                        newSize -= relatedArticlesHeight;
-                    }
-
-                    newSize -= (toolbarHeight + verticalPadding);
-
-// EO FAQ
+                    let toolbarHeight = $domEditableElement.find('.ck-editor__top').outerHeight();
+                    let newEditingAreaSize = newEditorSize - toolbarHeight;
 
                     if (sourceEditingActive) {
-                        $editingArea.height(newSize);
+                        let $editingArea = $domEditableElement.find('.ck-source-editing-area');
+                        $editingArea.height(newEditingAreaSize);
                         editor.editing.view.forceRender();
                     } else {
-                        newSize -= borderWidth;
                         editor.editing.view.change(writer => {
-                            writer.setStyle('height', newSize + 'px', editor.editing.view.document.getRoot());
+                            writer.setStyle(
+                                'height',
+                                newEditingAreaSize + 'px',
+                                editor.editing.view.document.getRoot()
+                            );
                         });
                     }
                 };
 
-                //resize editor on mode change
+                UpdateEditorSize();
+
+                // resize editing area when editor is resized with the resizable handle
+                $domEditableElement.on('resize', function() {
+                    UpdateEditorSize();
+                });                
+
+                // resize editor on mode change
                 if ( editor.plugins.has( 'SourceEditing' ) ) {
                     const sourceEditing = editor.plugins.get( 'SourceEditing' );
 
                     editor.listenTo( sourceEditing, 'change:isSourceEditingMode', () => {
                         sourceEditingActive = sourceEditing.isSourceEditingMode;
-                        adjustEditorSize();
+                        UpdateEditorSize();
                     } );
                 }
 
-                // bind editor resize to container($domEditableElement) size change
                 const resizeObserver = new ResizeObserver(() => {
-                    adjustEditorSize();
+                    UpdateEditorSize();
                 });
-                resizeObserver.observe($domEditableElement.first().get(0));
+
+                // resize editor when resizable container changes size for any reason (e.g. window resize, sidebar toggle)
+                // currently this leads to the editor growing endlessly if activated for the customer interface
+                if (!CustomerInterface) {
+                    resizeObserver.observe($domEditableElement.first().get(0));
+                }
 
 // RotherOSS / FAQ
 
@@ -550,36 +544,22 @@ Core.UI.RichTextEditor = (function (TargetNS) {
 
 // EO FAQ
 
-                // set correct min-height for customer interface to prevent overlapping
-                if (CustomerInterface) {
-                    const toolbarResizeObserver = new ResizeObserver(() => {
-                        let toolbarHeight = $domEditableElement.find('.ck-editor__top').outerHeight();
-                            let MinHeight = toolbarHeight + 100;
-
-                            $domEditableElement.css('min-height', MinHeight + 'px');
-                    });
-                    toolbarResizeObserver.observe(editor.ui.view.toolbar.element);
-                }
-
-
-                //make sure editor size is adjusted whenever the toolbar changes size
-                //otherwise editor size can behave weirdly right after loading page
+                // set correct min-height when toolbar changes size, to avoid having no visible editing area in narrow richtext fields
+                const toolbarResizeObserver = new ResizeObserver(() => {
+                    let toolbarHeight = $domEditableElement.find('.ck-editor__top').outerHeight();
+                    let MinHeight = toolbarHeight + 150;
+                    $domEditableElement.css('min-height', MinHeight + 'px');
+                    UpdateEditorSize();
+                });
+                toolbarResizeObserver.observe(editor.ui.view.toolbar.element);
+                
+                //make sure editor size is adjusted as well whenever the toolbar changes size
                 resizeObserver.observe(editor.ui.view.toolbar.element);
 
 // RotherOSS / FAQ
                 // make sure editor size is adjusted when window size changes
                 window.addEventListener('resize', adjustEditorSize);
 // EO FAQ
-
-                if (CustomerInterface) {
-                    editor.editing.view.document.getRoot('main').placeholder = RichTextLabel[0].innerText;
-                    RichTextLabel.hide();
-
-                    /* Set editing area width for Customer */
-                    editor.editing.view.change(writer => {
-                        writer.setStyle('max-width', '100%', editor.editing.view.document.getRoot());
-                    });
-                }
 
                 //Block pasting images for ToolbarWithoutImage
                 editor.editing.view.document.on( 'clipboardInput', ( evt, data ) => {
@@ -596,16 +576,14 @@ Core.UI.RichTextEditor = (function (TargetNS) {
                 });
 
                 if (!CustomerInterface) {
-                    // set initial (maximum) Editor size as defined by System Configuration
-                    let EditorWidth = Number( Core.Config.Get("RichText.Width", 620) );
+                    // set initial Editor height as defined by the System Configuration
 
-                    $domEditableElement.css("height", Core.Config.Get("RichText.Height", 320));
-                    $domEditableElement.children().css("max-width", EditorWidth);
+                    $domEditableElement.css("--initial-height", Core.Config.Get("RichText.Height", 320));
                 }
 
                 Core.App.Publish('Event.UI.RichTextEditor.InstanceCreated', [editor]);
 
-                // workaround for ckeditor not using data filter correctly on prefilled content
+                // workaround for ckeditor not using data filter correctly on pre-filled content
                 if (editor.ElementId == 'RichText') {
                     editor.setData(editor.sourceElement.innerText);
                 }
@@ -623,7 +601,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
                     }, 500);
                 });
 
-                editor.ui.focusTracker.on('change:isFocused', (evt, name, isFocused) => {
+                editor.ui.focusTracker.on('change:isFocused', (_evt, _name, isFocused) => {
                     if (!isFocused) {
                         $("#" + $EditorArea.attr('id')).val(editor.getData());
 
@@ -712,7 +690,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
      * @name GetRTE
      * @memberof Core.UI.RichTextEditor
      * @function
-     * @returns {jQueryObject} jQuery object of the corresponsing RTE element.
+     * @returns {jQueryObject} jQuery object of the corresponding RTE element.
      * @param {jQueryObject} $EditorArea - The jQuery object of the element that is a rich text editor.
      * @description
      *      Get RTE jQuery element.
