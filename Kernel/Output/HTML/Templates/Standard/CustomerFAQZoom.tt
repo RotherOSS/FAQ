@@ -32,13 +32,13 @@
             </div>
         </div>
         <div id="oooSearchBox">
-            <form action="[% Env("CGIHandle") %]" method="post" name="compose">
+            <form action="[% Env("CGIHandle") %]" method="post" name="compose" role="search" aria-label="[% Translate('FAQ Search') | html %]">
                 <input type="hidden" name="Action" value="CustomerFAQExplorer"/>
                 <input type="hidden" name="Subaction" value="Search"/>
 
                 <h3 class='ooog'>
                     <i class="ooofo ooofo-search"></i>
-                    <input type="text" name="What" id="oooSearch" title="[% Translate('FAQ Search') | html %]"/>
+                    <input type="search" name="What" id="oooSearch" title="[% Translate('FAQ Search') | html %]" accesskey="f"/>
                     <span id='oooSearchLabel'>[% Translate('FAQ Search') | html %]</span>
                 </h3>
             </form>
