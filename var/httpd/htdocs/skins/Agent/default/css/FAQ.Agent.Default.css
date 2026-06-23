@@ -120,4 +120,12 @@ fieldset.TableSmall > div.FAQDivider {
     overflow: hidden;
 }
 
+/**
+ * @subsection TicketOptionLink
+ */
+
+fieldset.ModularForm .Field #OptionFAQ {
+    align-self: center;
+}
+
 }
