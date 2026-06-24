@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2026-05-26 12:31+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-06-24 13:00+0000\n"
+"Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
+"Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
+"faq/de/>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16\n"
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
@@ -724,15 +727,15 @@ msgstr "Inhaltstyp"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Select the attribute which FAQs will be searched by"
-msgstr ""
+msgstr "Wählen Sie das Attribut aus, nach dem die FAQs durchsucht werden"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "External-source key"
-msgstr ""
+msgstr "Schlüssel der externen Quelle"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Select the type of display"
-msgstr ""
+msgstr "Wählen Sie die Anzeigeart aus"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
@@ -871,6 +874,10 @@ msgid ""
 "(LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic "
 "fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Definiert, welche Spalten im Widget für die verknüpften FAQ-Artikel "
+"(LinkObject::ViewMode = \"complex\") angezeigt werden. Hinweis: Für "
+"DefaultColumns sind nur FAQ-Attribute und dynamische Felder "
+"(DynamicField_NameX) zulässig."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
@@ -991,6 +998,8 @@ msgid ""
 "Defines the height for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
+"Definiert die Höhe der RichText-Editor Komponente. Geben Sie einen Zahlen- "
+"(Pixel) oder Prozentwert (relativ) an."
 
 #. SysConfig
 msgid ""
@@ -1138,7 +1147,7 @@ msgstr "Multiple Sprachen im FAQ-Modul aktivieren."
 
 #. SysConfig
 msgid "Enable service assignment for FAQs."
-msgstr ""
+msgstr "Service-Zuordnung für FAQs aktivieren."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
@@ -1221,6 +1230,8 @@ msgid ""
 "If activated, FAQ articles of status type internal are also taken into "
 "account for the approval process."
 msgstr ""
+"Wenn aktiviert, werden auch FAQ-Artikel des Statustyps „intern“ in den "
+"Genehmigungsprozess einbezogen."
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
@@ -1630,6 +1641,8 @@ msgstr "Interfaces in denen das LastCreate Feature angezeigt werden soll."
 msgid ""
 "Show related articles on service change even with empty subject and body."
 msgstr ""
+"Zeige verwandte Artikel bei Änderungen des Service auch dann an, wenn "
+"Betreff und Text leer sind."
 
 #. SysConfig
 msgid ""
@@ -1760,6 +1773,9 @@ msgid ""
 "<OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> "
 "<OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
+"Ticketbetreff zur Genehmigung eines FAQ-Artikels. Zulässige Notification-"
+"Tags sind <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, "
+"<OTOBO_FAQ_TITLE> und <OTOBO_FAQ_STATEID>."
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
