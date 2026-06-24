@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-05-26 12:31+0000\n"
+"POT-Creation-Date: 2026-06-03 15:13+0000\n"
 "PO-Revision-Date: 2026-06-24 13:00+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
@@ -656,6 +656,16 @@ msgstr "FAQ-Artikel-Ausdruck"
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
 msgstr "Erstellt zwischen"
+
+#. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
+#, fuzzy
+#| msgid "Greater than equals"
+msgid "Created within the last"
+msgstr "ist größer/gleich"
+
+#. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
+msgid "Created more than ... ago"
+msgstr ""
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"

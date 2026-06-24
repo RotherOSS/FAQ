@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-05-26 12:31+0000\n"
+"POT-Creation-Date: 2026-06-03 15:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -639,6 +639,14 @@ msgstr "FAQ-artikel utskrift"
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
 msgstr "Skapat mellan"
+
+#. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
+msgid "Created within the last"
+msgstr ""
+
+#. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
+msgid "Created more than ... ago"
+msgstr ""
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
