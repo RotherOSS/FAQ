@@ -128,11 +128,14 @@ EOF
     my $OptionsTranslatable = $LayoutObject->{LanguageObject}->Translate('Options');
     my $Replace             = <<"END";
 <!-- OutputFilterHook_NoTicketOptionsFallback -->
-                    <label>$OptionsTranslatable:</label>
-                    <div class="Field">
-                        <a  href=\"#\" id=\"OptionFAQ\">[ $FAQTranslatable ]</a>
+                    <div class="Row">
+                        <div class="FieldCell">
+                            <label>$OptionsTranslatable:</label>
+                            <div class="Field">
+                                <a  href=\"#\" id=\"OptionFAQ\">[ $FAQTranslatable ]</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class=\"Clear\"></div>
 END
     ${ $Param{Data} } =~ s{ ($StartPattern) }{$Replace}ixms;
 
