@@ -2829,6 +2829,9 @@ Your OTOBO Notification Master
                 <Item Key="ConfigDialog">AdminDynamicFieldReference</Item>
                 <Item Key="ObjectTypes">
                     <Array>
+                        <Item>Article</Item>
+                        <Item>ITSMConfigItem</Item>
+                        <Item>Ticket</Item>
                     </Array>
                 </Item>
             </Hash>
