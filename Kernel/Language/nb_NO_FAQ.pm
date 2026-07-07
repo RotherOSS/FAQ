@@ -423,6 +423,10 @@ sub Data {
     $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = '';
     $Self->{Translation}->{'Field4'} = 'Felt 4';
     $Self->{Translation}->{'Field5'} = 'Felt 5';
+    $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
+        '';
+    $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
+        '';
     $Self->{Translation}->{'Full FAQ'} = '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Gruppe som skal godkjenne OSS-artikler.';
     $Self->{Translation}->{'History of this FAQ'} = 'Historikk over denne artikkelen';
@@ -489,15 +493,21 @@ sub Data {
         '';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         '';
+    $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
+        '';
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Antall objekter vist i siste endringer.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Antall viste objekter under sist opprettet.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Antall viste artikler i "Topp 10"-funksjonen';
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+        '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         '';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = '';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview.'} =
         '';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
+        '';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
         '';
     $Self->{Translation}->{'Print this FAQ'} = 'Skriv ut denne artikkelen';
     $Self->{Translation}->{'Public FAQ Print.'} = '';

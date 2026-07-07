@@ -423,6 +423,10 @@ sub Data {
     $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = 'Carian Soalan Lazim backend router muka ejen.';
     $Self->{Translation}->{'Field4'} = 'Medan4';
     $Self->{Translation}->{'Field5'} = 'Medan5';
+    $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
+        '';
+    $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
+        '';
     $Self->{Translation}->{'Full FAQ'} = 'FAQ penuh';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Kumpulan bagi kelulusan artikel FAQ.';
     $Self->{Translation}->{'History of this FAQ'} = 'Sejarah FAQ ini';
@@ -489,9 +493,13 @@ sub Data {
         'Bilangan artikel FAQ untuk dipaparkan pada setiap halaman hasil carian dalam antara muka pelanggan';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         'Bilangan artikel FAQ akan dipaparkan pada setiap halaman hasil carian dalam antara muka awam.';
+    $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
+        '';
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Bilangan item yang ditunjukkan dalam perubahan terakhir.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Bilangan item yang ditunjukkan dalam terakhir dicipta.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Bilangan item yang ditunjukkan dalam 10 teratas ciri.';
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+        '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         '';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = '';
@@ -499,6 +507,8 @@ sub Data {
         'Parameter untuk muka surat (di mana item FAQ ditunjukkan) gambaran kecil jurnal FAQ.';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Parameter untuk muka surat (di mana item FAQ ditunjukkan) gambaran keseluruhan FAQ kecil.';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        '';
     $Self->{Translation}->{'Print this FAQ'} = 'Cetak halaman FAQ ini';
     $Self->{Translation}->{'Public FAQ Print.'} = 'cetakan FAQ umum';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'zum FAQ umum';

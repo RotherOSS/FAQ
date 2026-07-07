@@ -423,6 +423,10 @@ sub Data {
     $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = 'Encaminador para la búsqueda de FAQ en la interfaz del agente.';
     $Self->{Translation}->{'Field4'} = 'Campo4';
     $Self->{Translation}->{'Field5'} = 'Campo5';
+    $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
+        '';
+    $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
+        '';
     $Self->{Translation}->{'Full FAQ'} = 'FAQ completas';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Grupo para la aprobación de los artículos FAQ.';
     $Self->{Translation}->{'History of this FAQ'} = 'Historia de este artículo FAQ';
@@ -489,9 +493,13 @@ sub Data {
         'Número de artículos FAQ a mostrar en cada página de los resultados de una búsqueda en la interfaz del cliente.';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         'Número de artículos FAQ a mostrar en cada página de los resultados de una búsqueda en la interfaz pública.';
+    $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
+        '';
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Número de elementos a mostrar en últimos cambios.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Número de elementos a mostrar en últimos creados.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Número de elementos a mostrar en el Top 10.';
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+        '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Filtro de salida para agregar Java-script  a la pantalla CustomerTicketMessage.';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = 'Límite de salida para artículos de preguntas frecuentes relacionados';
@@ -499,6 +507,8 @@ sub Data {
         'Parámetros de las páginas (en las que se muestran los elementos FAQ) de la vista general pequeña del Diario de las FAQ.';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Parámetros de las páginas (en las que se muestran los elementos FAQ) de la vista general de FAQ pequeña.';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        '';
     $Self->{Translation}->{'Print this FAQ'} = 'Imprimir esta FAQ';
     $Self->{Translation}->{'Public FAQ Print.'} = 'Imprimir FAQ publicas.';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'Vista detallada de las FAQ Publicas.';

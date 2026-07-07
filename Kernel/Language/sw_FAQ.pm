@@ -423,6 +423,10 @@ sub Data {
     $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = 'Maswali yanayoulizwa mara kwa mara tafuta backend ruta ya kiolesura cha wakala.';
     $Self->{Translation}->{'Field4'} = 'Sehemu4';
     $Self->{Translation}->{'Field5'} = 'Sehemu5';
+    $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
+        '';
+    $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
+        '';
     $Self->{Translation}->{'Full FAQ'} = '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Makundi ya idhini kwa maswali yaliyoulizwa mara kwa mara.';
     $Self->{Translation}->{'History of this FAQ'} = 'Historia ya maswali haya yaliyoulizwa mara kwa mara.';
@@ -489,9 +493,13 @@ sub Data {
         'Namba ya makala ya maswali yanayoulizwa mara kwa mara yatakayoonyeshwa katika kila ukurasa wa matokeo ya utafutaji ya kiolesura cha mteja.';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         'Namba ya makala ya maswali yanayoulizwa mara kwa mara yatakayoonyeshwa katika kila ukurasa wa matokeo ya utafutaji ya kiolesura cha umma.';
+    $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
+        '';
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Namba ya vitu vilivoonyweshwa katika mabadiliko ya mwisho.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Namba ya vitu vilivotengenezwa mwishoni.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Namba ya vitu vilivoonyweshwa katika vipengele 10 bora.';
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+        '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         '';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = '';
@@ -499,6 +507,8 @@ sub Data {
         'Parameta za kurasa (ambazo vipengee vya maswali yanayoulizwa mara kwa mara zimeonyeshwa) za mapitio madogo ya jarida la maswali yanayoulizwa mara kwa mara.';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Parameta za kurasa (ambazo vipengee vya maswali yanayoulizwa mara kwa mara zimeonyeshwa) za mapitio madogo ya  maswali yanayoulizwa mara kwa mara.';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        '';
     $Self->{Translation}->{'Print this FAQ'} = 'Chapisha maswali haya.';
     $Self->{Translation}->{'Public FAQ Print.'} = '';
     $Self->{Translation}->{'Public FAQ Zoom.'} = '';

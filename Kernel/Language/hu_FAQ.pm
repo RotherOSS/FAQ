@@ -423,6 +423,10 @@ sub Data {
     $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = 'Az ügyintézői felület GyIK keresési háttérprogram útválasztója.';
     $Self->{Translation}->{'Field4'} = '4. mező';
     $Self->{Translation}->{'Field5'} = '5. mező';
+    $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
+        '';
+    $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
+        '';
     $Self->{Translation}->{'Full FAQ'} = 'Teljes GyIK';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Csoport a GyIK bejegyzések jóváhagyáshoz.';
     $Self->{Translation}->{'History of this FAQ'} = 'A GyIK előzményei';
@@ -489,9 +493,13 @@ sub Data {
         'Egy keresési eredmény minden oldalán megjelenítendő GyIK bejegyzések száma az ügyfélfelületen.';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         'Egy keresési eredmény minden oldalán megjelenítendő GyIK bejegyzések száma a nyilvános felületen.';
+    $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
+        '';
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'A megjelenített elemek száma a legutóbb módosítottakban.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'A megjelenített elemek száma a legutóbb létrehozottakban.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'A megjelenített elemek száma a legjobb 10 szolgáltatásban.';
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+        '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Kimenetszűrő JavaScript hozzáadásához az ügyféljegy üzenet képernyőhöz.';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = 'Kimenetkorlát a kapcsolódó GyIK bejegyzésekhez.';
@@ -499,6 +507,8 @@ sub Data {
         'Paraméterek a kis GyIK napló áttekintő oldalaihoz (amelyekben a GyIK elemek megjelennek).';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Paraméterek a kis GyIK áttekintő oldalaihoz (amelyekben a GyIK elemek megjelennek).';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        '';
     $Self->{Translation}->{'Print this FAQ'} = 'A GyIK nyomtatása';
     $Self->{Translation}->{'Public FAQ Print.'} = 'Nyilvános GyIK nyomtatás.';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'Nyilvános GyIK nagyítás.';

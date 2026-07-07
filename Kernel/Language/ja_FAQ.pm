@@ -423,6 +423,10 @@ sub Data {
     $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = '担当者インターフェイスにおける、FAQ検索のバックエンドルータ';
     $Self->{Translation}->{'Field4'} = 'Field4';
     $Self->{Translation}->{'Field5'} = 'Field5';
+    $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
+        '';
+    $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
+        '';
     $Self->{Translation}->{'Full FAQ'} = 'FAQ全文';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'FAQの記事の承認のためのグループ';
     $Self->{Translation}->{'History of this FAQ'} = 'この記事の履歴';
@@ -489,9 +493,13 @@ sub Data {
         '顧客用インターフェイス 検索結果表示の各画面で表示される FAQ 項目の数';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         '公開インターフェイス の検索結果表示の各画面で表示される FAQ 項目の数';
+    $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
+        '';
     $Self->{Translation}->{'Number of shown items in last changes.'} = '「最近の変更」に何件まで表示するか';
     $Self->{Translation}->{'Number of shown items in last created.'} = '「最新の新規作成」に何件まで表示するか';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = '「トップ10記事」に何件まで表示するか';
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+        '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'CustomerTicketMessage 画面に Java スクリプトを追加するための出力フィルター。';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = '関連するFAQ記事の出力制限。';
@@ -499,6 +507,8 @@ sub Data {
         '簡易版FAQジャーナル一覧のページ指定用のパラメータ';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         '簡易版FAQ概要のページ指定用のパラメータ';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        '';
     $Self->{Translation}->{'Print this FAQ'} = 'この記事を印刷';
     $Self->{Translation}->{'Public FAQ Print.'} = '公開FAQの表示';
     $Self->{Translation}->{'Public FAQ Zoom.'} = '公開FAQの詳細を表示';

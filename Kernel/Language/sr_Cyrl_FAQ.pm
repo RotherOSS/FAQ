@@ -423,6 +423,10 @@ sub Data {
     $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = 'Модул рутера FAQ претраге у интерфејсу оператера.';
     $Self->{Translation}->{'Field4'} = 'Поље4';
     $Self->{Translation}->{'Field5'} = 'Поље5';
+    $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
+        '';
+    $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
+        '';
     $Self->{Translation}->{'Full FAQ'} = 'Kомплетан FAQ';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Група за одобравање FAQ чланака.';
     $Self->{Translation}->{'History of this FAQ'} = 'Историјат овог FAQ';
@@ -489,9 +493,13 @@ sub Data {
         'Број FAQ чланака који ће бити приказани на свакој страни резултата претраге у интерфејсу клијента.';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         'Број FAQ чланака који ће бити приказани на свакој страни резултата претраге у јавном интерфејсу.';
+    $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
+        '';
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Број приказаних ставки у последњим изменама.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Број приказаних ставки у последње креираним.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Број приказаних ставки у "првих 10" .';
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+        '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Излазни филтер за убацивање JavaScript у CustomerTicketMessage екран.';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = 'Ограничење броја приказаних сродних FAQ чланака.';
@@ -499,6 +507,8 @@ sub Data {
         'Параметри страница (на којима су FAQ ставке приказане) на малом приказу прегледа FAQ дневника.';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Параметри страница (на којима су видљиве FAQ ставке) смањеног прегледа FAQ.';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        '';
     $Self->{Translation}->{'Print this FAQ'} = 'Штампај овај FAQ';
     $Self->{Translation}->{'Public FAQ Print.'} = 'Штампање јавних FAQ.';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'Детаљи јавних FAQ.';

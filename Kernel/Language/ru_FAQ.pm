@@ -423,6 +423,10 @@ sub Data {
     $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = 'Включить и настроить модуль поиска FAQ для интерфейса агента.';
     $Self->{Translation}->{'Field4'} = 'Поле4';
     $Self->{Translation}->{'Field5'} = 'Поле5';
+    $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
+        '';
+    $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
+        '';
     $Self->{Translation}->{'Full FAQ'} = 'Полный FAQ';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Группа для одобрения статей FAQ.';
     $Self->{Translation}->{'History of this FAQ'} = 'История этого FAQ';
@@ -489,9 +493,13 @@ sub Data {
         'Количество статей, выводимых на каждой странице результата поиска в  интерфейсе клиента.';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         'Количество статей, выводимых на каждой странице результата поиска в общедоступном интерфейсе.';
+    $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
+        '';
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Количество отображаемых позиций в последних изменениях.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Количество отображаемых позиций в новых статьях.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Количество отображаемых позиций в функции Top 10.';
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+        '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Выходной фильтр для добавления Java-script для экрана CustomerTicketMessage.';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = 'Лимит для вывода связанных/контекстных статей FAQ.';
@@ -499,6 +507,8 @@ sub Data {
         'Параметры для страницы (на которой отображаются элементы FAQ) при обзоре журнала FAQ в small формате.';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Параметры для страницы (на которой отображаются элементы FAQ) при обзоре FAQ в small формате.';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        '';
     $Self->{Translation}->{'Print this FAQ'} = 'Печать этого FAQ';
     $Self->{Translation}->{'Public FAQ Print.'} = 'Печать публичной статьи FAQ.';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'Просмотр публичной статьи FAQ.';
