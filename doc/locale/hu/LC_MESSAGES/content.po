@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-07 13:33+0000\n"
-"PO-Revision-Date: 2026-07-13 12:00+0000\n"
+"PO-Revision-Date: 2026-07-13 16:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/faq-documentation/hu/>\n"
@@ -31,7 +31,7 @@ msgstr "Leírás"
 
 #: ../content/index.rst:11
 msgid "The FAQ/knowledge base."
-msgstr ""
+msgstr "A GyIK/tudásbázis csomag."
 
 #: ../content/index.rst:14
 msgid "System requirements"
@@ -42,10 +42,8 @@ msgid "Framework"
 msgstr "Keretrendszer"
 
 #: ../content/index.rst:18
-#, fuzzy
-#| msgid "OTOBO 11.0.x"
 msgid "OTOBO 11.1.x"
-msgstr "OTOBO 11.0.x"
+msgstr "OTOBO 11.1.x"
 
 #: ../content/index.rst:21
 msgid "Packages"
@@ -77,7 +75,7 @@ msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../content/index.rst:41
 msgid "DynamicFields::Driver###FAQ"
-msgstr ""
+msgstr "DynamicFields::Driver###FAQ"
 
 #: ../content/index.rst:42
 msgid "DynamicField backend registration."
@@ -85,23 +83,23 @@ msgstr "Dinamikus mező háttérprogram regisztráció."
 
 #: ../content/index.rst:45
 msgid "Core::DynamicFields::ObjectTypeRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::ObjectTypeRegistration"
 
 #: ../content/index.rst:48
 msgid "DynamicFields::ObjectType###FAQ"
-msgstr ""
+msgstr "DynamicFields::ObjectType###FAQ"
 
 #: ../content/index.rst:49
 msgid "DynamicField object registration."
-msgstr ""
+msgstr "Dinamikus mező objektum regisztráció."
 
 #: ../content/index.rst:52
 msgid "Core::Elasticsearch::Settings"
-msgstr ""
+msgstr "Core::Elasticsearch::Settings"
 
 #: ../content/index.rst:55
 msgid "Elasticsearch::FAQSearchFields"
-msgstr ""
+msgstr "Elasticsearch::FAQSearchFields"
 
 #: ../content/index.rst:56
 msgid ""
@@ -109,195 +107,214 @@ msgid ""
 "stored, but are not mandatory for the overall functionality. Inclusion of "
 "attachments can be disabled by setting the entry to 0 or deleting it."
 msgstr ""
+"A GyIK indexének mezői, amely a szabad-szavas kereséséhez van használva. A "
+"mezők is tárolásra kerülnek, de nem kötelezőek a teljes funkcionalitáshoz. A "
+"mellékletek felvétele letiltható a bejegyzés értékének 0-ra állításával vagy "
+"a bejegyzés törlésével."
 
 #: ../content/index.rst:59
 msgid "Elasticsearch::FAQStoreFields"
-msgstr ""
+msgstr "Elasticsearch::FAQStoreFields"
 
 #: ../content/index.rst:60
 msgid ""
 "Fields stored in the faq index which are used for other things besides "
 "fulltext searches. For the complete functionality all fields are mandatory."
 msgstr ""
+"A GyIK indexében tárolt mezők, amelyek a szabad-szavas kereséseken kívül más "
+"célokra is használva vannak. A teljes funkcionalitáshoz az összes mező "
+"kötelező."
 
 #: ../content/index.rst:63
 msgid "Elasticsearch::IndexSettings###FAQ"
-msgstr ""
+msgstr "Elasticsearch::IndexSettings###FAQ"
 
 #: ../content/index.rst:64
 msgid ""
 "Number of shards (NS), replicas (NR) and fields limit for the index 'faq'."
 msgstr ""
+"Töredékek száma (NS), replikák száma (NR) és mezők korlátai az „faq” "
+"indexhez."
 
 #: ../content/index.rst:67
 msgid "Elasticsearch::QuickSearchShow###FAQ"
-msgstr ""
+msgstr "Elasticsearch::QuickSearchShow###FAQ"
 
 #: ../content/index.rst:68
 msgid ""
 "Objects to search for, how many entries and which attributs to show. FAQ "
 "attributes have to explicitly be stored via Elasticsearch."
 msgstr ""
+"Keresendő objektumok, hány bejegyzés és mely attribútumok jelenjenek meg. A "
+"GyIK-attribútumokat egyértelműen el kell tárolni az Elasticsearch-"
+"kiszolgálón keresztül."
 
 #: ../content/index.rst:71
 msgid "ElasticsearchWidgetBackend###05-ElasticsearchFAQ"
-msgstr ""
+msgstr "ElasticsearchWidgetBackend###05-ElasticsearchFAQ"
 
 #: ../content/index.rst:72
 msgid "Defines the parameters for the elasticsearch widget backend."
 msgstr ""
+"Meghatározza az Elasticsearch felületi elem háttérprogramjának paramétereit."
 
 #: ../content/index.rst:75
 msgid "Core::Event::FAQ"
-msgstr ""
+msgstr "Core::Event::FAQ"
 
 #: ../content/index.rst:78
 msgid "FAQ::EventModulePost###9800-GenericInterface"
-msgstr ""
+msgstr "FAQ::EventModulePost###9800-GenericInterface"
 
 #: ../content/index.rst:79
 msgid ""
 "Performs the configured action for each event (as an Invoker) for each "
 "configured Webservice."
 msgstr ""
+"Végrehajtja a beállított műveletet minden eseménynél (mint egy meghívó) "
+"minden egyes beállított webszolgáltatáshoz."
 
 #: ../content/index.rst:82
 msgid "Core::FAQ"
-msgstr ""
+msgstr "Core::FAQ"
 
 #: ../content/index.rst:85
 msgid "FAQ::CacheTTL"
-msgstr ""
+msgstr "FAQ::CacheTTL"
 
 #: ../content/index.rst:86
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "Gyorsítótár idő a GyIK elemek elhagyásához."
 
 #: ../content/index.rst:89
 msgid "FAQ::Default::Language"
-msgstr ""
+msgstr "FAQ::Default::Language"
 
 #: ../content/index.rst:90
 msgid "Default language for FAQ articles on single language mode."
-msgstr ""
+msgstr "A GyIK bejegyzések alapértelmezett nyelve egynyelvű módban."
 
 #: ../content/index.rst:93
 msgid "FAQ::Default::RootCategoryComment"
-msgstr ""
+msgstr "FAQ::Default::RootCategoryComment"
 
 #: ../content/index.rst:94 ../content/index.rst:98
 msgid "Default category name."
-msgstr ""
+msgstr "Alapértelmezett kategórianév."
 
 #: ../content/index.rst:97
 msgid "FAQ::Default::RootCategoryName"
-msgstr ""
+msgstr "FAQ::Default::RootCategoryName"
 
 #: ../content/index.rst:101
 msgid "FAQ::Default::State"
-msgstr ""
+msgstr "FAQ::Default::State"
 
 #: ../content/index.rst:102
 msgid "Default state for FAQ entry."
-msgstr ""
+msgstr "A GyIK bejegyzés alapértelmezett állapota."
 
 #: ../content/index.rst:105
 msgid "FAQ::FAQHook"
-msgstr ""
+msgstr "FAQ::FAQHook"
 
 #: ../content/index.rst:106
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
 msgstr ""
+"Egy GyIK azonosítója, például FAQ#, TB#, GyIK#. Az alapértelmezett: FAQ#."
 
 #: ../content/index.rst:109
 msgid "FAQ::MultiLanguage"
-msgstr ""
+msgstr "FAQ::MultiLanguage"
 
 #: ../content/index.rst:110
 msgid "Enable multiple languages on FAQ module."
-msgstr ""
+msgstr "Több nyelv engedélyezése a GyIK modulban."
 
 #: ../content/index.rst:113
 msgid "FAQ::TitleSize"
-msgstr ""
+msgstr "FAQ::TitleSize"
 
 #: ../content/index.rst:114
 msgid "Default maximum size of the titles in a FAQ article to be shown."
 msgstr ""
+"Egy GyIK bejegyzésben megjelenítendő címek alapértelmezett legnagyobb mérete."
 
 #: ../content/index.rst:117
 msgid "FAQ::Voting"
-msgstr ""
+msgstr "FAQ::Voting"
 
 #: ../content/index.rst:118
 msgid "Enable voting mechanism on FAQ module."
-msgstr ""
+msgstr "Szavazási mechanizmus engedélyezése a GyIK modulban."
 
 #: ../content/index.rst:121
 msgid "Core::FAQ::Approval"
-msgstr ""
+msgstr "Core::FAQ::Approval"
 
 #: ../content/index.rst:124
 msgid "FAQ::Approval::IncludeInternal"
-msgstr ""
+msgstr "FAQ::Approval::IncludeInternal"
 
 #: ../content/index.rst:125
 msgid ""
 "If activated, FAQ articles of status type internal are also taken into "
 "account for the approval process."
 msgstr ""
+"Ha aktiválva van, akkor a belső állapottípusú GyIK bejegyzések is figyelembe "
+"lesznek véve a jóváhagyási folyamatnál."
 
 #: ../content/index.rst:128
 msgid "FAQ::ApprovalGroup"
-msgstr ""
+msgstr "FAQ::ApprovalGroup"
 
 #: ../content/index.rst:129
 msgid "Group for the approval of FAQ articles."
-msgstr ""
+msgstr "Csoport a GyIK bejegyzések jóváhagyáshoz."
 
 #: ../content/index.rst:132
 msgid "FAQ::ApprovalQueue"
-msgstr ""
+msgstr "FAQ::ApprovalQueue"
 
 #: ../content/index.rst:133
 msgid "Queue for the approval of FAQ articles."
-msgstr ""
+msgstr "Várólista a GyIK bejegyzések jóváhagyásához."
 
 #: ../content/index.rst:136
 msgid "FAQ::ApprovalRequired"
-msgstr ""
+msgstr "FAQ::ApprovalRequired"
 
 #: ../content/index.rst:137
 msgid "New FAQ articles need approval before they get published."
-msgstr ""
+msgstr "Az új GyIK bejegyzések jóváhagyása szükséges a közzétételük előtt."
 
 #: ../content/index.rst:140
 msgid "FAQ::ApprovalTicketBody"
-msgstr ""
+msgstr "FAQ::ApprovalTicketBody"
 
 #: ../content/index.rst:141
 msgid "Ticket body for approval of FAQ article."
-msgstr ""
+msgstr "Jegy törzse egy GyIK bejegyzés jóváhagyásához."
 
 #: ../content/index.rst:144
 msgid "FAQ::ApprovalTicketDefaultState"
-msgstr ""
+msgstr "FAQ::ApprovalTicketDefaultState"
 
 #: ../content/index.rst:145
 msgid "Default state of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "A jegyek alapértelmezett állapota a GyIK bejegyzések jóváhagyásánál."
 
 #: ../content/index.rst:148
 msgid "FAQ::ApprovalTicketPriority"
-msgstr ""
+msgstr "FAQ::ApprovalTicketPriority"
 
 #: ../content/index.rst:149
 msgid "Default priority of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "A jegyek alapértelmezett prioritása a GyIK bejegyzések jóváhagyásánál."
 
 #: ../content/index.rst:152
 msgid "FAQ::ApprovalTicketSubject"
-msgstr ""
+msgstr "FAQ::ApprovalTicketSubject"
 
 #: ../content/index.rst:153
 msgid ""
@@ -305,396 +322,430 @@ msgid ""
 "<OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> "
 "<OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
+"Jegy tárgya egy GyIK bejegyzés jóváhagyásához. A megengedett értesítési "
+"címkék a következők: <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, "
+"<OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> és <OTOBO_FAQ_STATEID>."
 
 #: ../content/index.rst:156
 msgid "FAQ::ApprovalTicketType"
-msgstr ""
+msgstr "FAQ::ApprovalTicketType"
 
 #: ../content/index.rst:157
 msgid "Default type of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "A jegyek alapértelmezett típusa a GyIK bejegyzések jóváhagyásánál."
 
 #: ../content/index.rst:160
 msgid "Core::FAQ::Explorer"
-msgstr ""
+msgstr "Core::FAQ::Explorer"
 
 #: ../content/index.rst:163
 msgid "FAQ::Explorer::ItemList::VotingResultColors"
-msgstr ""
+msgstr "FAQ::Explorer::ItemList::VotingResultColors"
 
 #: ../content/index.rst:164
 msgid "CSS color for the voting result."
-msgstr ""
+msgstr "CSS szín a szavazás eredményéhez."
 
 #: ../content/index.rst:167
 msgid "FAQ::Explorer::ItemList::VotingResultDecimalPlaces"
-msgstr ""
+msgstr "FAQ::Explorer::ItemList::VotingResultDecimalPlaces"
 
 #: ../content/index.rst:168
 msgid "Decimal places of the voting result."
-msgstr ""
+msgstr "A szavazási eredmény tizedesjegyeinek száma."
 
 #: ../content/index.rst:171
 msgid "FAQ::Explorer::LastChange::Limit"
-msgstr ""
+msgstr "FAQ::Explorer::LastChange::Limit"
 
 #: ../content/index.rst:172
 msgid "Number of shown items in last changes."
-msgstr ""
+msgstr "A megjelenített elemek száma a legutóbb módosítottakban."
 
 #: ../content/index.rst:175
 msgid "FAQ::Explorer::LastChange::Show"
-msgstr ""
+msgstr "FAQ::Explorer::LastChange::Show"
 
 #: ../content/index.rst:176
 msgid "Show last change items in defined interfaces."
 msgstr ""
+"Az utoljára módosított elemek megjelenítése a meghatározott felületeken."
 
 #: ../content/index.rst:179
 msgid "FAQ::Explorer::LastChange::ShowSubCategoryItems"
-msgstr ""
+msgstr "FAQ::Explorer::LastChange::ShowSubCategoryItems"
 
 #: ../content/index.rst:180 ../content/index.rst:192 ../content/index.rst:212
 msgid "Show items of subcategories."
-msgstr ""
+msgstr "Alkategóriák elemeinek megjelenítése."
 
 #: ../content/index.rst:183
 msgid "FAQ::Explorer::LastCreate::Limit"
-msgstr ""
+msgstr "FAQ::Explorer::LastCreate::Limit"
 
 #: ../content/index.rst:184
 msgid "Number of shown items in last created."
-msgstr ""
+msgstr "A megjelenített elemek száma a legutóbb létrehozottakban."
 
 #: ../content/index.rst:187
 msgid "FAQ::Explorer::LastCreate::Show"
-msgstr ""
+msgstr "FAQ::Explorer::LastCreate::Show"
 
 #: ../content/index.rst:188
 msgid "Show last created items in defined interfaces."
 msgstr ""
+"Az utoljára létrehozott elemek megjelenítése a meghatározott felületeken."
 
 #: ../content/index.rst:191
 msgid "FAQ::Explorer::LastCreate::ShowSubCategoryItems"
-msgstr ""
+msgstr "FAQ::Explorer::LastCreate::ShowSubCategoryItems"
 
 #: ../content/index.rst:195
 msgid "FAQ::Explorer::Path::Show"
-msgstr ""
+msgstr "FAQ::Explorer::Path::Show"
 
 #: ../content/index.rst:196
 msgid "Show FAQ path yes/no."
-msgstr ""
+msgstr "GyIK útvonal megjelenítése igen/nem."
 
 #: ../content/index.rst:199
 msgid "FAQ::Explorer::QuickSearch::Show"
-msgstr ""
+msgstr "FAQ::Explorer::QuickSearch::Show"
 
 #: ../content/index.rst:200
 msgid "Interfaces where the quick search should be shown."
-msgstr ""
+msgstr "Azok a felületek, ahol a gyors keresésnek meg kell jelennie."
 
 #: ../content/index.rst:203
 msgid "FAQ::Explorer::Top10::Limit"
-msgstr ""
+msgstr "FAQ::Explorer::Top10::Limit"
 
 #: ../content/index.rst:204
 msgid "Number of shown items in the top 10 feature."
-msgstr ""
+msgstr "A megjelenített elemek száma a legjobb 10 szolgáltatásban."
 
 #: ../content/index.rst:207
 msgid "FAQ::Explorer::Top10::Show"
-msgstr ""
+msgstr "FAQ::Explorer::Top10::Show"
 
 #: ../content/index.rst:208
 msgid "Show top 10 items in defined interfaces."
-msgstr ""
+msgstr "A legjobb 10 elem megjelenítése a meghatározott felületeken."
 
 #: ../content/index.rst:211
 msgid "FAQ::Explorer::Top10::ShowSubCategoryItems"
-msgstr ""
+msgstr "FAQ::Explorer::Top10::ShowSubCategoryItems"
 
 #: ../content/index.rst:215
 msgid "Core::FAQ::Item"
-msgstr ""
+msgstr "Core::FAQ::Item"
 
 #: ../content/index.rst:218
 msgid "FAQ::Item::Field1"
-msgstr ""
+msgstr "FAQ::Item::Field1"
 
 #: ../content/index.rst:219 ../content/index.rst:223 ../content/index.rst:227
 #: ../content/index.rst:231 ../content/index.rst:235 ../content/index.rst:239
 msgid "Definition of FAQ item free text field."
-msgstr ""
+msgstr "A GyIK elem szabad szöveges mezőjének meghatározása."
 
 #: ../content/index.rst:222
 msgid "FAQ::Item::Field2"
-msgstr ""
+msgstr "FAQ::Item::Field2"
 
 #: ../content/index.rst:226
 msgid "FAQ::Item::Field3"
-msgstr ""
+msgstr "FAQ::Item::Field3"
 
 #: ../content/index.rst:230
 msgid "FAQ::Item::Field4"
-msgstr ""
+msgstr "FAQ::Item::Field4"
 
 #: ../content/index.rst:234
 msgid "FAQ::Item::Field5"
-msgstr ""
+msgstr "FAQ::Item::Field5"
 
 #: ../content/index.rst:238
 msgid "FAQ::Item::Field6"
-msgstr ""
+msgstr "FAQ::Item::Field6"
 
 #: ../content/index.rst:242
 msgid "FAQ::Item::HTML"
-msgstr ""
+msgstr "FAQ::Item::HTML"
 
 #: ../content/index.rst:243
 msgid "Show FAQ Article with HTML."
-msgstr ""
+msgstr "GyIK bejegyzés megjelenítése HTML formázással."
 
 #: ../content/index.rst:246
 msgid "Core::FAQ::Item::Voting"
-msgstr ""
+msgstr "Core::FAQ::Item::Voting"
 
 #: ../content/index.rst:249
 msgid "FAQ::Item::Voting::Rates"
-msgstr ""
+msgstr "FAQ::Item::Voting::Rates"
 
 #: ../content/index.rst:250
 msgid "Rates for voting. Key must be in percent."
-msgstr ""
+msgstr "Értékelések a szavazáshoz. A kulcsnak százalékban kell lennie."
 
 #: ../content/index.rst:253
 msgid "FAQ::Item::Voting::Show"
-msgstr ""
+msgstr "FAQ::Item::Voting::Show"
 
 #: ../content/index.rst:254
 msgid "Show voting in defined interfaces."
-msgstr ""
+msgstr "Szavazás megjelenítése a meghatározott felületeken."
 
 #: ../content/index.rst:257
 msgid "Core::FAQ::RelatedArticles"
-msgstr ""
+msgstr "Core::FAQ::RelatedArticles"
 
 #: ../content/index.rst:260
 msgid "FAQ::Customer::RelatedArticles::Enabled"
-msgstr ""
+msgstr "FAQ::Customer::RelatedArticles::Enabled"
 
 #: ../content/index.rst:261
 msgid "Enable the related article feature for the customer frontend."
 msgstr ""
+"A kapcsolódó bejegyzések funkció engedélyezése az ügyfél előtétprogramhoz."
 
 #: ../content/index.rst:264
 msgid "FAQ::Customer::RelatedArticlesOnServiceOnly"
-msgstr ""
+msgstr "FAQ::Customer::RelatedArticlesOnServiceOnly"
 
 #: ../content/index.rst:265
 msgid ""
 "Show related articles on service change even with empty subject and body."
 msgstr ""
+"Kapcsolódó bejegyzések megjelenítése a szolgáltatás változtatásakor üres "
+"tárgy és törzs esetén is."
 
 #: ../content/index.rst:268
 msgid "FAQ::KeywordArticeList::SearchLimit"
-msgstr ""
+msgstr "FAQ::KeywordArticeList::SearchLimit"
 
 #: ../content/index.rst:269
 msgid "Limit for the search to build the keyword FAQ article list."
-msgstr ""
+msgstr "A keresés korlátozása a kulcsszó GyIK bejegyzéslista összeállításához."
 
 #: ../content/index.rst:272
 msgid "FAQ::Service"
-msgstr ""
+msgstr "FAQ::Service"
 
 #: ../content/index.rst:273
 msgid "Enable service assignment for FAQs."
-msgstr ""
+msgstr "Szolgáltatás-hozzárendelés engedélyezése a GyIK-bejegyzésekhez."
 
 #: ../content/index.rst:276
 msgid "Core::FAQ::TicketCompose"
-msgstr ""
+msgstr "Core::FAQ::TicketCompose"
 
 #: ../content/index.rst:279
 msgid "FAQ::TicketCompose###IncludeInternal"
-msgstr ""
+msgstr "FAQ::TicketCompose###IncludeInternal"
 
 #: ../content/index.rst:280
 msgid "Include internal fields on a FAQ based Ticket."
-msgstr ""
+msgstr "Belső mezők felvétele egy GyIK-alapú jegyen."
 
 #: ../content/index.rst:283
 msgid "FAQ::TicketCompose###InsertMethod"
-msgstr ""
+msgstr "FAQ::TicketCompose###InsertMethod"
 
 #: ../content/index.rst:284
 msgid ""
 "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" "
 "includes text, attachments and inline images."
 msgstr ""
+"Meghatározza egy GyIK-alapú jegybe beszúrandó információkat. A „Teljes GyIK” "
+"szöveget, mellékleteket és beágyazott képeket tartalmaz."
 
 #: ../content/index.rst:287
 msgid "FAQ::TicketCompose###ShowFieldNames"
-msgstr ""
+msgstr "FAQ::TicketCompose###ShowFieldNames"
 
 #: ../content/index.rst:288
 msgid "Include the name of each field in a FAQ based Ticket."
-msgstr ""
+msgstr "Minden mező nevének felvétele egy GyIK-alapú jegyben."
 
 #: ../content/index.rst:291
 msgid "FAQ::TicketCompose###ShowInsertLinkButton"
-msgstr ""
+msgstr "FAQ::TicketCompose###ShowInsertLinkButton"
 
 #: ../content/index.rst:292
 msgid ""
 "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
+"A „GyIK hivatkozás beszúrása” gomb megjelenítése az ügyintézői GyIK-nagyítás "
+"kis nézetében a nyilvános GyIK bejegyzéseknél."
 
 #: ../content/index.rst:295
 msgid "FAQ::TicketCompose###ShowInsertTextAndLinkButton"
-msgstr ""
+msgstr "FAQ::TicketCompose###ShowInsertTextAndLinkButton"
 
 #: ../content/index.rst:296
 msgid ""
 "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in "
 "AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
+"A „GyIK szöveg és hivatkozás beszúrása” / „Teljes GyIK és hivatkozás "
+"beszúrása” gomb megjelenítése az ügyintézői GyIK-nagyítás kis nézetében a "
+"nyilvános GyIK bejegyzéseknél."
 
 #: ../content/index.rst:299
 msgid "FAQ::TicketCompose###ShowInsertTextButton"
-msgstr ""
+msgstr "FAQ::TicketCompose###ShowInsertTextButton"
 
 #: ../content/index.rst:300
 msgid ""
 "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
 msgstr ""
+"A „GyIK szöveg beszúrása” / „Teljes GyIK beszúrása” gomb megjelenítése az "
+"ügyintézői GyIK-nagyítás kis nézetében."
 
 #: ../content/index.rst:303
 msgid "FAQ::TicketCompose###UpdateArticleSubject"
-msgstr ""
+msgstr "FAQ::TicketCompose###UpdateArticleSubject"
 
 #: ../content/index.rst:304
 msgid "Define if the FAQ title should be concatenated to article subject."
 msgstr ""
+"Meghatározza, hogy a GyIK címét össze kell-e fűzni a bejegyzés tárgyával."
 
 #: ../content/index.rst:307
 msgid "Core::LinkObject"
-msgstr ""
+msgstr "Core::LinkObject"
 
 #: ../content/index.rst:310
 msgid "LinkObject::PossibleLink###8301"
-msgstr ""
+msgstr "LinkObject::PossibleLink###8301"
 
 #: ../content/index.rst:311
 msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'FAQ' "
 "objects using the 'Normal' link type."
 msgstr ""
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
+"GyIK” objektumokkal a „Normál” hivatkozástípus használatával."
 
 #: ../content/index.rst:314
 msgid "LinkObject::PossibleLink###8302"
-msgstr ""
+msgstr "LinkObject::PossibleLink###8302"
 
 #: ../content/index.rst:315
 msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'FAQ' "
 "objects using the 'ParentChild' link type."
 msgstr ""
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
+"GyIK” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
 
 #: ../content/index.rst:318
 msgid "LinkObject::PossibleLink###8303"
-msgstr ""
+msgstr "LinkObject::PossibleLink###8303"
 
 #: ../content/index.rst:319
 msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'Ticket' "
 "objects using the 'Normal' link type."
 msgstr ""
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
+"Jegy” objektumokkal a „Normál” hivatkozástípus használatával."
 
 #: ../content/index.rst:322
 msgid "LinkObject::PossibleLink###8304"
-msgstr ""
+msgstr "LinkObject::PossibleLink###8304"
 
 #: ../content/index.rst:323
 msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'Ticket' "
 "objects using the 'ParentChild' link type."
 msgstr ""
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
+"Jegy” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
 
 #: ../content/index.rst:326
 msgid "Frontend::Admin"
-msgstr ""
+msgstr "Frontend::Admin"
 
 #: ../content/index.rst:329
 msgid "Events###FAQ"
-msgstr ""
+msgstr "Events###FAQ"
 
 #: ../content/index.rst:330
 msgid "List of all Package events to be displayed in the GUI."
 msgstr ""
+"Az összes csomagesemény listája, amelyek megjelennek a grafikus felületen."
 
 #: ../content/index.rst:333
 msgid "Frontend::Agent"
-msgstr ""
+msgstr "Frontend::Agent"
 
 #: ../content/index.rst:336
 msgid "FAQ::Agent::StateTypes"
-msgstr ""
+msgstr "FAQ::Agent::StateTypes"
 
 #: ../content/index.rst:337
 msgid "List of state types which can be used in the agent interface."
-msgstr ""
+msgstr "Állapottípusok listája, amelyek használhatók az ügyintézői felületen."
 
 #: ../content/index.rst:340
 msgid "Frontend::HeaderMetaModule###3-FAQSearch"
-msgstr ""
+msgstr "Frontend::HeaderMetaModule###3-FAQSearch"
 
 #: ../content/index.rst:341
 msgid "Module to generate html OpenSearch profile for short FAQ search."
 msgstr ""
+"Egy modul a gyors GyIK keresés HTML OpenSearch profiljának előállításához."
 
 #: ../content/index.rst:344
 msgid "Frontend::Agent::FAQJournalOverview"
-msgstr ""
+msgstr "Frontend::Agent::FAQJournalOverview"
 
 #: ../content/index.rst:347
 msgid "FAQ::Frontend::JournalOverview###Small"
-msgstr ""
+msgstr "FAQ::Frontend::JournalOverview###Small"
 
 #: ../content/index.rst:348
 msgid "Defines an overview module to show the small view of a FAQ journal."
 msgstr ""
+"Egy áttekintő modult határoz meg egy GyIK napló kis nézetének "
+"megjelenítéséhez."
 
 #: ../content/index.rst:351
 msgid "Frontend::Agent::FAQOverview"
-msgstr ""
+msgstr "Frontend::Agent::FAQOverview"
 
 #: ../content/index.rst:354
 msgid "FAQ::Frontend::Overview###Small"
-msgstr ""
+msgstr "FAQ::Frontend::Overview###Small"
 
 #: ../content/index.rst:355
 msgid "Defines an overview module to show the small view of a FAQ list."
 msgstr ""
+"Egy áttekintő modult határoz meg egy GyIK lista kis nézetének "
+"megjelenítéséhez."
 
 #: ../content/index.rst:358
 msgid "FAQ::Frontend::OverviewSmall###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::OverviewSmall###DynamicField"
 
 #: ../content/index.rst:359
 msgid ""
 "Dynamic fields shown in the FAQ small format overview screen of the agent "
 "interface."
 msgstr ""
+"Az ügyintézői felület GyIK kis formátum áttekintő képernyőjén megjelenített "
+"dinamikus mezők."
 
 #: ../content/index.rst:362
 msgid "Frontend::Agent::LinkObject"
-msgstr ""
+msgstr "Frontend::Agent::LinkObject"
 
 #: ../content/index.rst:365
 msgid "LinkObject::ComplexTable###FAQ"
-msgstr ""
+msgstr "LinkObject::ComplexTable###FAQ"
 
 #: ../content/index.rst:366
 msgid ""
@@ -702,10 +753,14 @@ msgid ""
 "(LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic "
 "fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Annak meghatározása, hogy mely oszlopok legyenek láthatók a kapcsolt GyIK-ok "
+"felületi elemen (LinkObject::ViewMode = „összetett”). Megjegyzés: csak GyIK "
+"attribútumok és dinamikus mezők (DynamicField_NévX) engedélyezettek a "
+"DefaultColumns értékeinél."
 
 #: ../content/index.rst:369
 msgid "LinkObject::ComplexTable::SettingsVisibility###FAQ"
-msgstr ""
+msgstr "LinkObject::ComplexTable::SettingsVisibility###FAQ"
 
 #: ../content/index.rst:370
 msgid ""
@@ -715,14 +770,20 @@ msgid ""
 "Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
 "Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"Műveletek meghatározása, ahol egy beállítások gomb érhető el a kapcsolt "
+"objektumok felületi elemen (LinkObject::ViewMode = „összetett”). Ne feledje, "
+"hogy ezeknek a műveleteknek rendelkezniük kell a következő JS és CSS fájlok "
+"regisztrálásával: Core.AllocationList.css, Core.UI.AllocationList.js, "
+"Core.UI.Table.Sort.js, Core.Agent.TableFilters.js és "
+"Core.Agent.LinkObject.js."
 
 #: ../content/index.rst:373
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../content/index.rst:376
 msgid "Frontend::Module###AgentFAQAdd"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQAdd"
 
 #: ../content/index.rst:377 ../content/index.rst:381 ../content/index.rst:385
 #: ../content/index.rst:389 ../content/index.rst:393 ../content/index.rst:397
@@ -734,59 +795,59 @@ msgstr "Előtétprogram-modul regisztráció az ügyintézői felülethez."
 
 #: ../content/index.rst:380
 msgid "Frontend::Module###AgentFAQCategory"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQCategory"
 
 #: ../content/index.rst:384
 msgid "Frontend::Module###AgentFAQDelete"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQDelete"
 
 #: ../content/index.rst:388
 msgid "Frontend::Module###AgentFAQEdit"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQEdit"
 
 #: ../content/index.rst:392
 msgid "Frontend::Module###AgentFAQExplorer"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQExplorer"
 
 #: ../content/index.rst:396
 msgid "Frontend::Module###AgentFAQHistory"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQHistory"
 
 #: ../content/index.rst:400
 msgid "Frontend::Module###AgentFAQJournal"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQJournal"
 
 #: ../content/index.rst:404
 msgid "Frontend::Module###AgentFAQLanguage"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQLanguage"
 
 #: ../content/index.rst:408
 msgid "Frontend::Module###AgentFAQPrint"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQPrint"
 
 #: ../content/index.rst:412
 msgid "Frontend::Module###AgentFAQRichText"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQRichText"
 
 #: ../content/index.rst:416
 msgid "Frontend::Module###AgentFAQSearch"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQSearch"
 
 #: ../content/index.rst:420
 msgid "Frontend::Module###AgentFAQSearchSmall"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQSearchSmall"
 
 #: ../content/index.rst:424
 msgid "Frontend::Module###AgentFAQZoom"
-msgstr ""
+msgstr "Frontend::Module###AgentFAQZoom"
 
 #: ../content/index.rst:428
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../content/index.rst:431
 msgid "Loader::Module::AgentFAQAdd###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::AgentFAQAdd###002-FAQ"
 
 #: ../content/index.rst:432 ../content/index.rst:436 ../content/index.rst:440
 #: ../content/index.rst:444 ../content/index.rst:448 ../content/index.rst:452
@@ -797,39 +858,39 @@ msgstr "Betöltőmodul regisztráció az ügyintézői felülethez."
 
 #: ../content/index.rst:435
 msgid "Loader::Module::AgentFAQCategory###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::AgentFAQCategory###002-FAQ"
 
 #: ../content/index.rst:439
 msgid "Loader::Module::AgentFAQEdit###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::AgentFAQEdit###002-FAQ"
 
 #: ../content/index.rst:443
 msgid "Loader::Module::AgentFAQExplorer###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::AgentFAQExplorer###002-FAQ"
 
 #: ../content/index.rst:447
 msgid "Loader::Module::AgentFAQJournal###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::AgentFAQJournal###002-FAQ"
 
 #: ../content/index.rst:451
 msgid "Loader::Module::AgentFAQLanguage###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::AgentFAQLanguage###002-FAQ"
 
 #: ../content/index.rst:455
 msgid "Loader::Module::AgentFAQSearch###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::AgentFAQSearch###002-FAQ"
 
 #: ../content/index.rst:459
 msgid "Loader::Module::AgentFAQZoom###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::AgentFAQZoom###002-FAQ"
 
 #: ../content/index.rst:463
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../content/index.rst:466
 msgid "Frontend::Navigation###AgentFAQAdd###002-FAQ"
-msgstr ""
+msgstr "Frontend::Navigation###AgentFAQAdd###002-FAQ"
 
 #: ../content/index.rst:467 ../content/index.rst:471 ../content/index.rst:475
 #: ../content/index.rst:479 ../content/index.rst:483 ../content/index.rst:487
@@ -840,59 +901,59 @@ msgstr "Főmenü elem regisztráció."
 
 #: ../content/index.rst:470
 msgid "Frontend::Navigation###AgentFAQCategory###002-FAQ"
-msgstr ""
+msgstr "Frontend::Navigation###AgentFAQCategory###002-FAQ"
 
 #: ../content/index.rst:474
 msgid "Frontend::Navigation###AgentFAQExplorer###002-FAQ"
-msgstr ""
+msgstr "Frontend::Navigation###AgentFAQExplorer###002-FAQ"
 
 #: ../content/index.rst:478
 msgid "Frontend::Navigation###AgentFAQJournal###002-FAQ"
-msgstr ""
+msgstr "Frontend::Navigation###AgentFAQJournal###002-FAQ"
 
 #: ../content/index.rst:482
 msgid "Frontend::Navigation###AgentFAQLanguage###002-FAQ"
-msgstr ""
+msgstr "Frontend::Navigation###AgentFAQLanguage###002-FAQ"
 
 #: ../content/index.rst:486
 msgid "Frontend::Navigation###AgentFAQSearch###002-FAQ"
-msgstr ""
+msgstr "Frontend::Navigation###AgentFAQSearch###002-FAQ"
 
 #: ../content/index.rst:490
 msgid "Frontend::Navigation###AgentFAQSearchSmall###002-FAQ"
-msgstr ""
+msgstr "Frontend::Navigation###AgentFAQSearchSmall###002-FAQ"
 
 #: ../content/index.rst:494
 msgid "Frontend::Agent::ModuleRegistration::MainMenu::Search"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu::Search"
 
 #: ../content/index.rst:497
 msgid "Frontend::Search###FAQ"
-msgstr ""
+msgstr "Frontend::Search###FAQ"
 
 #: ../content/index.rst:498
 msgid "FAQ search backend router of the agent interface."
-msgstr ""
+msgstr "Az ügyintézői felület GyIK keresési háttérprogram útválasztója."
 
 #: ../content/index.rst:501
 msgid "Frontend::Agent::ToolBar"
-msgstr ""
+msgstr "Frontend::Agent::ToolBar"
 
 #: ../content/index.rst:504
 msgid "Frontend::ToolBarModule###90-FAQ::AgentFAQAdd"
-msgstr ""
+msgstr "Frontend::ToolBarModule###90-FAQ::AgentFAQAdd"
 
 #: ../content/index.rst:505
 msgid "Toolbar Item for a shortcut."
-msgstr ""
+msgstr "Eszköztárelem egy gyorsbillentyűhöz."
 
 #: ../content/index.rst:508
 msgid "Frontend::Agent::View::Dashboard"
-msgstr ""
+msgstr "Frontend::Agent::View::Dashboard"
 
 #: ../content/index.rst:511
 msgid "DashboardBackend###0398-FAQ-LastChange"
-msgstr ""
+msgstr "DashboardBackend###0398-FAQ-LastChange"
 
 #: ../content/index.rst:512 ../content/index.rst:516
 msgid ""
@@ -901,178 +962,212 @@ msgid ""
 "to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if "
 "the plugin is enabled by default or if the user needs to enable it manually."
 msgstr ""
+"Meghatározza a vezérlőpult háttérprogram paramétereit. A „Limit” határozza "
+"meg az alapértelmezetten megjelenített bejegyzések számát. A „Group” "
+"használható a hozzáférés korlátozásához a bővítményre (például Group: "
+"admin;csoport1;csoport2;). A „Default” jelzi, hogy a bővítmény "
+"alapértelmezetten engedélyezve van, vagy hogy a felhasználónak kézzel kell "
+"engedélyeznie azt."
 
 #: ../content/index.rst:515
 msgid "DashboardBackend###0399-FAQ-LastCreate"
-msgstr ""
+msgstr "DashboardBackend###0399-FAQ-LastCreate"
 
 #: ../content/index.rst:519
 msgid "Frontend::Agent::View::FAQAdd"
-msgstr ""
+msgstr "Frontend::Agent::View::FAQAdd"
 
 #: ../content/index.rst:522
 msgid "FAQ::Frontend::AgentFAQAdd###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQAdd###DynamicField"
 
 #: ../content/index.rst:523
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület GyIK hozzáadása képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../content/index.rst:526
 msgid "FAQ::Frontend::AgentFAQAdd###RichTextHeight"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQAdd###RichTextHeight"
 
 #: ../content/index.rst:527 ../content/index.rst:542
 msgid ""
 "Defines the height for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
+"Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a "
+"képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
 #: ../content/index.rst:530
 msgid "FAQ::Frontend::AgentFAQAdd###RichTextWidth"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQAdd###RichTextWidth"
 
 #: ../content/index.rst:531 ../content/index.rst:546
 msgid ""
 "Defines the width for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
+"Meghatározza a Rich Text szerkesztő-összetevő szélességét ennél a "
+"képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
 #: ../content/index.rst:534
 msgid "Frontend::Agent::View::FAQEdit"
-msgstr ""
+msgstr "Frontend::Agent::View::FAQEdit"
 
 #: ../content/index.rst:537
 msgid "FAQ::Frontend::AgentFAQEdit###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQEdit###DynamicField"
 
 #: ../content/index.rst:538
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület GyIK szerkesztése képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../content/index.rst:541
 msgid "FAQ::Frontend::AgentFAQEdit###RichTextHeight"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQEdit###RichTextHeight"
 
 #: ../content/index.rst:545
 msgid "FAQ::Frontend::AgentFAQEdit###RichTextWidth"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQEdit###RichTextWidth"
 
 #: ../content/index.rst:549
 msgid "Frontend::Agent::View::FAQExplorer"
-msgstr ""
+msgstr "Frontend::Agent::View::FAQExplorer"
 
 #: ../content/index.rst:552
 msgid "FAQ::Frontend::AgentFAQExplorer###Order::Default"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQExplorer###Order::Default"
 
 #: ../content/index.rst:553
 msgid ""
 "Defines the default FAQ order in the FAQ Explorer result of the agent "
 "interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK sorrendet az ügyintézői felület GyIK "
+"böngészőjének eredményében. Fel: legrégebbi felülre. Le: legújabb felülre."
 
 #: ../content/index.rst:556
 msgid "FAQ::Frontend::AgentFAQExplorer###SearchLimit"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQExplorer###SearchLimit"
 
 #: ../content/index.rst:557
 msgid ""
 "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of "
 "the agent interface."
 msgstr ""
+"Az ügyintézői felület GyIK böngésző eredményében megjelenítendő GyIK "
+"bejegyzések legnagyobb száma."
 
 #: ../content/index.rst:560
 msgid "FAQ::Frontend::AgentFAQExplorer###ShowColumns"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQExplorer###ShowColumns"
 
 #: ../content/index.rst:561
 msgid ""
 "Defines the shown columns in the FAQ Explorer. This option has no effect on "
 "the position of the column."
 msgstr ""
+"Meghatározza a megjelenített oszlopokat a GyIK böngészőben. Ennek a "
+"beállításnak nincs hatása az oszlop helyzetére."
 
 #: ../content/index.rst:564
 msgid "FAQ::Frontend::AgentFAQExplorer###ShowInvalidFAQItems"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQExplorer###ShowInvalidFAQItems"
 
 #: ../content/index.rst:565
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
 msgstr ""
+"Érvénytelen elemek megjelenítése az ügyintézői felület GyIK böngészőjének "
+"eredményében."
 
 #: ../content/index.rst:568
 msgid "FAQ::Frontend::AgentFAQExplorer###SortBy::Default"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQExplorer###SortBy::Default"
 
 #: ../content/index.rst:569
 msgid ""
 "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the "
 "agent interface."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK attribútumot a GyIK rendezéshez az "
+"ügyintézői felület GyIK böngészőjében."
 
 #: ../content/index.rst:572
 msgid "FAQ::Frontend::AgentFAQExplorer###TitleSize"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQExplorer###TitleSize"
 
 #: ../content/index.rst:573
 msgid ""
 "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer "
 "in the agent interface."
 msgstr ""
+"A GyIK böngészőben megjelenítendő GyIK bejegyzésben lévő címek legnagyobb "
+"mérete az ügyintézői felületen."
 
 #: ../content/index.rst:576
 msgid "Frontend::Agent::View::FAQJournal"
-msgstr ""
+msgstr "Frontend::Agent::View::FAQJournal"
 
 #: ../content/index.rst:579
 msgid "FAQ::Frontend::AgentFAQJournal###JournalLimit"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQJournal###JournalLimit"
 
 #: ../content/index.rst:580
 msgid ""
 "Maximum number of FAQ articles to be displayed in the FAQ journal in the "
 "agent interface."
 msgstr ""
+"Az ügyintézői felületen lévő GyIK naplóban megjelenítendő GyIK bejegyzések "
+"legnagyobb száma."
 
 #: ../content/index.rst:583
 msgid "FAQ::Frontend::AgentFAQJournal###ShowColumns"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQJournal###ShowColumns"
 
 #: ../content/index.rst:584
 msgid ""
 "Defines the shown columns in the FAQ journal. This option has no effect on "
 "the position of the column."
 msgstr ""
+"Meghatározza a megjelenített oszlopokat a GyIK naplóban. Ennek a "
+"beállításnak nincs hatása az oszlop helyzetére."
 
 #: ../content/index.rst:587
 msgid "FAQ::Frontend::AgentFAQJournal###TitleSize"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQJournal###TitleSize"
 
 #: ../content/index.rst:588
 msgid ""
 "Maximum size of the titles in a FAQ article to be shown in the FAQ journal "
 "in the agent interface."
 msgstr ""
+"A GyIK naplóban megjelenítendő GyIK bejegyzésben lévő címek legnagyobb "
+"mérete az ügyintézői felületen."
 
 #: ../content/index.rst:591
 msgid "Frontend::Agent::View::FAQPrint"
-msgstr ""
+msgstr "Frontend::Agent::View::FAQPrint"
 
 #: ../content/index.rst:594
 msgid "FAQ::Frontend::AgentFAQPrint###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQPrint###DynamicField"
 
 #: ../content/index.rst:595
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület GyIK nyomtatása képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../content/index.rst:598
 msgid "Frontend::Agent::View::FAQSearch"
-msgstr ""
+msgstr "Frontend::Agent::View::FAQSearch"
 
 #: ../content/index.rst:601
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ApprovedSearch"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###ApprovedSearch"
 
 #: ../content/index.rst:602 ../content/index.rst:606 ../content/index.rst:610
 #: ../content/index.rst:614 ../content/index.rst:618 ../content/index.rst:622
@@ -1082,254 +1177,293 @@ msgstr ""
 #: ../content/index.rst:662 ../content/index.rst:666
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
 msgstr ""
+"Meghatározza az alapértelmezetten megjelenített GyIK keresési attribútumot a "
+"GyIK keresés képernyőnél."
 
 #: ../content/index.rst:605
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###CategoryIDs"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###CategoryIDs"
 
 #: ../content/index.rst:609
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###CreatedUserIDs"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###CreatedUserIDs"
 
 #: ../content/index.rst:613
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###Fulltext"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###Fulltext"
 
 #: ../content/index.rst:617
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ItemChangeTimePoint"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###ItemChangeTimePoint"
 
 #: ../content/index.rst:621
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ItemChangeTimeSlot"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###ItemChangeTimeSlot"
 
 #: ../content/index.rst:625
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimePoint"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimePoint"
 
 #: ../content/index.rst:629
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimeSlot"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###ItemCreateTimeSlot"
 
 #: ../content/index.rst:633
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###Keyword"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###Keyword"
 
 #: ../content/index.rst:637
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###LanguageIDs"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###LanguageIDs"
 
 #: ../content/index.rst:641
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###LastChangedUserIDs"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###LastChangedUserIDs"
 
 #: ../content/index.rst:645
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###Number"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###Number"
 
 #: ../content/index.rst:649
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###RateSearchType"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###RateSearchType"
 
 #: ../content/index.rst:653
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###StateIDs"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###StateIDs"
 
 #: ../content/index.rst:657
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###Title"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###Title"
 
 #: ../content/index.rst:661
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###ValidIDs"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###ValidIDs"
 
 #: ../content/index.rst:665
 msgid "FAQ::Frontend::AgentFAQSearch###Defaults###VoteSearchType"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Defaults###VoteSearchType"
 
 #: ../content/index.rst:669
 msgid "FAQ::Frontend::AgentFAQSearch###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###DynamicField"
 
 #: ../content/index.rst:670
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület GyIK keresése képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../content/index.rst:673
 msgid "FAQ::Frontend::AgentFAQSearch###Order::Default"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###Order::Default"
 
 #: ../content/index.rst:674
 msgid ""
 "Defines the default FAQ order of a search result in the agent interface. Up: "
 "oldest on top. Down: latest on top."
 msgstr ""
+"Meghatározza egy keresési eredmény alapértelmezett GyIK sorrendjét az "
+"ügyintézői felületen. Fel: legrégebbi felülre. Le: legújabb felülre."
 
 #: ../content/index.rst:677
 msgid "FAQ::Frontend::AgentFAQSearch###SearchCSVDynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###SearchCSVDynamicField"
 
 #: ../content/index.rst:678 ../content/index.rst:908 ../content/index.rst:1057
 msgid "Dynamic Fields used to export the search result in CSV format."
 msgstr ""
+"Dinamikus mezők, amelyek a keresési eredmények CSV formátumba való "
+"exportálásához használhatók."
 
 #: ../content/index.rst:681
 msgid "FAQ::Frontend::AgentFAQSearch###SearchLimit"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###SearchLimit"
 
 #: ../content/index.rst:682
 msgid ""
 "Maximum number of FAQ articles to be displayed in the result of a search in "
 "the agent interface."
 msgstr ""
+"Egy keresés eredményében megjelenítendő GyIK bejegyzések legnagyobb száma az "
+"ügyintézői felületen."
 
 #: ../content/index.rst:685
 msgid "FAQ::Frontend::AgentFAQSearch###ShowColumns"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###ShowColumns"
 
 #: ../content/index.rst:686
 msgid ""
 "Defines the shown columns in the FAQ search. This option has no effect on "
 "the position of the column."
 msgstr ""
+"Meghatározza a megjelenített oszlopokat a GyIK keresőben. Ennek a "
+"beállításnak nincs hatása az oszlop helyzetére."
 
 #: ../content/index.rst:689
 msgid "FAQ::Frontend::AgentFAQSearch###SortBy::Default"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###SortBy::Default"
 
 #: ../content/index.rst:690
 msgid ""
 "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the "
 "agent interface."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK attribútumot a GyIK rendezéshez az "
+"ügyintézői felület GyIK keresésében."
 
 #: ../content/index.rst:693
 msgid "FAQ::Frontend::AgentFAQSearch###TitleSize"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQSearch###TitleSize"
 
 #: ../content/index.rst:694
 msgid ""
 "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in "
 "the agent interface."
 msgstr ""
+"A GyIK keresőben megjelenítendő GyIK bejegyzésben lévő címek legnagyobb "
+"mérete az ügyintézői felületen."
 
 #: ../content/index.rst:697
 msgid "Frontend::Agent::View::FAQZoom"
-msgstr ""
+msgstr "Frontend::Agent::View::FAQZoom"
 
 #: ../content/index.rst:700
 msgid "FAQ::Frontend::AgentFAQZoom###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::AgentFAQZoom###DynamicField"
 
 #: ../content/index.rst:701
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület GyIK nagyítása képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../content/index.rst:704
 msgid "FAQ::Frontend::AgentHTMLFieldHeightDefault"
-msgstr ""
+msgstr "FAQ::Frontend::AgentHTMLFieldHeightDefault"
 
 #: ../content/index.rst:705
 msgid ""
 "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
 msgstr ""
+"A beágyazott HTML mezők alapértelmezett magasságának beállítása (képpontban) "
+"az ügyintézői GyIK-nagyítás nézeten."
 
 #: ../content/index.rst:708
 msgid "FAQ::Frontend::AgentHTMLFieldHeightMax"
-msgstr ""
+msgstr "FAQ::Frontend::AgentHTMLFieldHeightMax"
 
 #: ../content/index.rst:709
 msgid ""
 "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
 msgstr ""
+"A beágyazott HTML mezők legnagyobb magasságának beállítása (képpontban) az "
+"ügyintézői GyIK-nagyítás nézeten."
 
 #: ../content/index.rst:712
 msgid "Frontend::Agent::View::FAQZoom::MenuModule"
-msgstr ""
+msgstr "Frontend::Agent::View::FAQZoom::MenuModule"
 
 #: ../content/index.rst:715
 msgid "FAQ::Frontend::MenuModule###000-Back"
-msgstr ""
+msgstr "FAQ::Frontend::MenuModule###000-Back"
 
 #: ../content/index.rst:716
 msgid ""
 "Shows a link in the menu to go back in the FAQ zoom view of the agent "
 "interface."
 msgstr ""
+"Egy hivatkozást jelenít meg a menüben az ügyintézői felület GyIK nagyítási "
+"nézetébe való visszatéréshez."
 
 #: ../content/index.rst:719
 msgid "FAQ::Frontend::MenuModule###010-Edit"
-msgstr ""
+msgstr "FAQ::Frontend::MenuModule###010-Edit"
 
 #: ../content/index.rst:720
 msgid ""
 "Shows a link in the menu to edit a FAQ in the its zoom view of the agent "
 "interface."
 msgstr ""
+"Egy hivatkozást jelenít meg a menüben egy GyIK szerkesztéséhez az ügyintézői "
+"felületen az elem nagyítási nézetében."
 
 #: ../content/index.rst:723
 msgid "FAQ::Frontend::MenuModule###020-History"
-msgstr ""
+msgstr "FAQ::Frontend::MenuModule###020-History"
 
 #: ../content/index.rst:724
 msgid ""
 "Shows a link in the menu to access the history of a FAQ in its zoom view of "
 "the agent interface."
 msgstr ""
+"Egy hivatkozást jelenít meg a menüben egy GyIK előzményeinek eléréséhez az "
+"ügyintézői felületen az elem nagyítási nézetében."
 
 #: ../content/index.rst:727
 msgid "FAQ::Frontend::MenuModule###030-Print"
-msgstr ""
+msgstr "FAQ::Frontend::MenuModule###030-Print"
 
 #: ../content/index.rst:728
 msgid ""
 "Shows a link in the menu to print a FAQ in the its zoom view of the agent "
 "interface."
 msgstr ""
+"Egy hivatkozást jelenít meg a menüben egy GyIK nyomtatásához az ügyintézői "
+"felületen az elem nagyítási nézetében."
 
 #: ../content/index.rst:731
 msgid "FAQ::Frontend::MenuModule###040-Link"
-msgstr ""
+msgstr "FAQ::Frontend::MenuModule###040-Link"
 
 #: ../content/index.rst:732
 msgid ""
 "Shows a link in the menu that allows linking a FAQ with another object in "
 "the zoom view of such FAQ of the agent interface."
 msgstr ""
+"Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy GyIK "
+"hozzákapcsolását egy másik objektumhoz az ügyintézői felületnek az ilyen "
+"GyIK nagyítási nézetén."
 
 #: ../content/index.rst:735
 msgid "FAQ::Frontend::MenuModule###050-Delete"
-msgstr ""
+msgstr "FAQ::Frontend::MenuModule###050-Delete"
 
 #: ../content/index.rst:736
 msgid ""
 "Shows a link in the menu that allows to delete a FAQ in its zoom view in the "
 "agent interface."
 msgstr ""
+"Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy GyIK "
+"törlését annak nagyítási nézetén az ügyintézői felületen."
 
 #: ../content/index.rst:739
 msgid "Frontend::Agent::View::Preferences"
-msgstr ""
+msgstr "Frontend::Agent::View::Preferences"
 
 #: ../content/index.rst:742
 msgid "PreferencesGroups###FAQJournalOverviewSmallPageShown"
-msgstr ""
+msgstr "PreferencesGroups###FAQJournalOverviewSmallPageShown"
 
 #: ../content/index.rst:743
 msgid ""
 "Parameters for the pages (in which the FAQ items are shown) of the small FAQ "
 "journal overview."
 msgstr ""
+"Paraméterek a kis GyIK napló áttekintő oldalaihoz (amelyekben a GyIK elemek "
+"megjelennek)."
 
 #: ../content/index.rst:746
 msgid "PreferencesGroups###FAQOverviewSmallPageShown"
-msgstr ""
+msgstr "PreferencesGroups###FAQOverviewSmallPageShown"
 
 #: ../content/index.rst:747
 msgid ""
 "Parameters for the pages (in which the FAQ items are shown) of the small FAQ "
 "overview."
 msgstr ""
+"Paraméterek a kis GyIK áttekintő oldalaihoz (amelyekben a GyIK elemek "
+"megjelennek)."
 
 #: ../content/index.rst:750
 msgid "Frontend::Base::Loader"
@@ -1337,15 +1471,16 @@ msgstr "Frontend::Base::Loader"
 
 #: ../content/index.rst:753
 msgid "Loader::Agent::CommonCSS###200-FAQ"
-msgstr ""
+msgstr "Loader::Agent::CommonCSS###200-FAQ"
 
 #: ../content/index.rst:754
 msgid "List of CSS files to always be loaded for the agent interface."
 msgstr ""
+"CSS-fájlok listája, amelyek mindig betöltődnek az ügyintézői felületnél."
 
 #: ../content/index.rst:757
 msgid "Loader::Agent::CommonJS###200-FAQ"
-msgstr ""
+msgstr "Loader::Agent::CommonJS###200-FAQ"
 
 #: ../content/index.rst:758
 msgid "List of JS files to always be loaded for the agent interface."
@@ -1355,27 +1490,29 @@ msgstr ""
 
 #: ../content/index.rst:761
 msgid "Frontend::Base::OutputFilter"
-msgstr ""
+msgstr "Frontend::Base::OutputFilter"
 
 #: ../content/index.rst:764
 msgid "Frontend::Output::FilterElementPost###FAQ"
-msgstr ""
+msgstr "Frontend::Output::FilterElementPost###FAQ"
 
 #: ../content/index.rst:765
 msgid "Defines where the 'Insert FAQ' link will be displayed."
 msgstr ""
+"Meghatározza, hogy a „GyIK beszúrása” hivatkozás hol legyen megjelenítve."
 
 #: ../content/index.rst:768
 msgid "Frontend::Output::FilterElementPost###OutputFilterPostFAQCustomerRelatedArticles"
 msgstr ""
+"Frontend::Output::FilterElementPost###OutputFilterPostFAQCustomerRelatedArticles"
 
 #: ../content/index.rst:769
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
-msgstr ""
+msgstr "Kimenetszűrő JavaScript hozzáadásához az ügyféljegy üzenet képernyőhöz."
 
 #: ../content/index.rst:772
 msgid "Frontend::Output::OutputFilterTextAutoLink###FAQ"
-msgstr ""
+msgstr "Frontend::Output::OutputFilterTextAutoLink###FAQ"
 
 #: ../content/index.rst:773
 msgid ""
@@ -1384,595 +1521,659 @@ msgid ""
 "this case the OTOBO image path will be used. The second possibility is to "
 "insert the link to the image."
 msgstr ""
+"Egy szűrő a HTML kimenethez, hogy hivatkozásokat adjon egy meghatározott "
+"szöveg mögé. Az Image elem kétféle bemenetet fogad. Az első a kép neve "
+"(például faq.png). Ebben az esetben az OTOBO képek útvonala lesz "
+"felhasználva. A második lehetőség a képre mutató hivatkozás beszúrása."
 
 #: ../content/index.rst:776
 msgid "Frontend::Customer"
-msgstr ""
+msgstr "Frontend::Customer"
 
 #: ../content/index.rst:779
 msgid "CustomerFrontend::HeaderMetaModule###3-FAQSearch"
-msgstr ""
+msgstr "CustomerFrontend::HeaderMetaModule###3-FAQSearch"
 
 #: ../content/index.rst:780
 msgid ""
 "Module to generate HTML OpenSearch profile for short FAQ search in the "
 "customer interface."
 msgstr ""
+"Egy modul a HTML OpenSearch profil előállításához a rövid GyIK keresésnél az "
+"ügyfélfelületen."
 
 #: ../content/index.rst:783
 msgid "FAQ::Customer::StateTypes"
-msgstr ""
+msgstr "FAQ::Customer::StateTypes"
 
 #: ../content/index.rst:784
 msgid "List of state types which can be used in the customer interface."
-msgstr ""
+msgstr "Állapottípusok listája, amelyek használhatók az ügyfélfelületen."
 
 #: ../content/index.rst:787
 msgid "Frontend::Customer::FAQOverview"
-msgstr ""
+msgstr "Frontend::Customer::FAQOverview"
 
 #: ../content/index.rst:790
 msgid "FAQ::Frontend::CustomerFAQOverview###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQOverview###DynamicField"
 
 #: ../content/index.rst:791
 msgid ""
 "Dynamic fields shown in the FAQ overview screen of the customer interface."
 msgstr ""
+"Az ügyfélfelület GyIK áttekintő képernyőjén megjelenített dinamikus mezők."
 
 #: ../content/index.rst:794
 msgid "Frontend::Customer::FAQRelatedArticles"
-msgstr ""
+msgstr "Frontend::Customer::FAQRelatedArticles"
 
 #: ../content/index.rst:797
 msgid "FAQ::Frontend::CustomerFAQRelatedArticles###DefaultLanguages"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQRelatedArticles###DefaultLanguages"
 
 #: ../content/index.rst:798
 msgid "The default languages for the related FAQ articles."
-msgstr ""
+msgstr "Az alapértelmezett nyelvek a kapcsolódó GyIK bejegyzéseknél."
 
 #: ../content/index.rst:801
 msgid "FAQ::Frontend::CustomerFAQRelatedArticles###QueuesEnabled"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQRelatedArticles###QueuesEnabled"
 
 #: ../content/index.rst:802
 msgid "List of queue names for which the related article feature is enabled."
 msgstr ""
+"Azon várólistanevek listája, amelyeknél a kapcsolódó bejegyzés funkció "
+"engedélyezve van."
 
 #: ../content/index.rst:805
 msgid "FAQ::Frontend::CustomerFAQRelatedArticles###ShowLimit"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQRelatedArticles###ShowLimit"
 
 #: ../content/index.rst:806
 msgid "Output limit for the related FAQ articles."
-msgstr ""
+msgstr "Kimenetkorlát a kapcsolódó GyIK bejegyzésekhez."
 
 #: ../content/index.rst:809
 msgid "FAQ::Frontend::CustomerFAQRelatedArticles###VoteStarsVisible"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQRelatedArticles###VoteStarsVisible"
 
 #: ../content/index.rst:810
 msgid ""
 "Show the stars for the articles with a rating equal or greater like the "
 "defined value (set value '0' to deactivate the output)."
 msgstr ""
+"Csillagok megjelenítése a meghatározott értékkel egyenlő vagy annál jobb "
+"értékeléssel rendelkező bejegyzéseknél (állítsa az értéket „0”-ra a kimenet "
+"kikapcsolásához)."
 
 #: ../content/index.rst:813
 msgid "Frontend::Customer::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration"
 
 #: ../content/index.rst:816
 msgid "CustomerFrontend::Module###CustomerFAQExplorer"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerFAQExplorer"
 
 #: ../content/index.rst:817 ../content/index.rst:821 ../content/index.rst:825
 #: ../content/index.rst:829 ../content/index.rst:833
 msgid "Frontend module registration for the customer interface."
-msgstr ""
+msgstr "Előtétprogram-modul regisztráció az ügyfélfelülethez."
 
 #: ../content/index.rst:820
 msgid "CustomerFrontend::Module###CustomerFAQPrint"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerFAQPrint"
 
 #: ../content/index.rst:824
 msgid "CustomerFrontend::Module###CustomerFAQRelatedArticles"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerFAQRelatedArticles"
 
 #: ../content/index.rst:828
 msgid "CustomerFrontend::Module###CustomerFAQSearch"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerFAQSearch"
 
 #: ../content/index.rst:832
 msgid "CustomerFrontend::Module###CustomerFAQZoom"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerFAQZoom"
 
 #: ../content/index.rst:836
 msgid "Frontend::Customer::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::Loader"
 
 #: ../content/index.rst:839
 msgid "Loader::Module::CustomerFAQExplorer###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::CustomerFAQExplorer###002-FAQ"
 
 #: ../content/index.rst:843
 msgid "Loader::Module::CustomerFAQSearch###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::CustomerFAQSearch###002-FAQ"
 
 #: ../content/index.rst:847
 msgid "Loader::Module::CustomerFAQZoom###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::CustomerFAQZoom###002-FAQ"
 
 #: ../content/index.rst:851
 msgid "Loader::Module::CustomerTicketMessage###003-FAQ"
-msgstr ""
+msgstr "Loader::Module::CustomerTicketMessage###003-FAQ"
 
 #: ../content/index.rst:855
 msgid "Frontend::Customer::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::MainMenu"
 
 #: ../content/index.rst:858
 msgid "CustomerFrontend::Navigation###CustomerFAQExplorer###002-FAQ"
-msgstr ""
+msgstr "CustomerFrontend::Navigation###CustomerFAQExplorer###002-FAQ"
 
 #: ../content/index.rst:862
 msgid "CustomerFrontend::Navigation###CustomerFAQSearch###002-FAQ"
-msgstr ""
+msgstr "CustomerFrontend::Navigation###CustomerFAQSearch###002-FAQ"
 
 #: ../content/index.rst:866
 msgid "Frontend::Customer::View::FAQExplorer"
-msgstr ""
+msgstr "Frontend::Customer::View::FAQExplorer"
 
 #: ../content/index.rst:869
 msgid "FAQ::Frontend::CustomerFAQExplorer###Order::Default"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQExplorer###Order::Default"
 
 #: ../content/index.rst:870
 msgid ""
 "Defines the default FAQ order in the FAQ Explorer result of the customer "
 "interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK sorrendet az ügyfélfelület GyIK "
+"böngészőjének eredményében. Fel: legrégebbi felülre. Le: legújabb felülre."
 
 #: ../content/index.rst:873
 msgid "FAQ::Frontend::CustomerFAQExplorer###SearchLimit"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQExplorer###SearchLimit"
 
 #: ../content/index.rst:874
 msgid ""
 "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of "
 "the customer interface."
 msgstr ""
+"Az ügyfélfelület GyIK böngésző eredményében megjelenítendő GyIK bejegyzések "
+"legnagyobb száma."
 
 #: ../content/index.rst:877
 msgid "FAQ::Frontend::CustomerFAQExplorer###SearchPageShown"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQExplorer###SearchPageShown"
 
 #: ../content/index.rst:878
 msgid ""
 "Number of FAQ articles to be displayed in the FAQ Explorer of the customer "
 "interface."
 msgstr ""
+"Az ügyfélfelület GyIK böngészőjében megjelenítendő GyIK bejegyzések száma."
 
 #: ../content/index.rst:881
 msgid "FAQ::Frontend::CustomerFAQExplorer###SortBy::Default"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQExplorer###SortBy::Default"
 
 #: ../content/index.rst:882
 msgid ""
 "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the "
 "customer interface."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK attribútumot a GyIK rendezéshez az "
+"ügyfélfelület GyIK böngészőjében."
 
 #: ../content/index.rst:885
 msgid "FAQ::Frontend::CustomerFAQExplorer###TitleSize"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQExplorer###TitleSize"
 
 #: ../content/index.rst:886
 msgid ""
 "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer "
 "in the customer interface."
 msgstr ""
+"A GyIK böngészőben megjelenítendő GyIK bejegyzésben lévő címek legnagyobb "
+"mérete az ügyfélfelületen."
 
 #: ../content/index.rst:889
 msgid "Frontend::Customer::View::FAQPrint"
-msgstr ""
+msgstr "Frontend::Customer::View::FAQPrint"
 
 #: ../content/index.rst:892
 msgid "FAQ::Frontend::CustomerFAQPrint###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQPrint###DynamicField"
 
 #: ../content/index.rst:893
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
 msgstr ""
+"Az ügyfélfelület GyIK nyomtatása képernyőjén megjelenített dinamikus mezők."
 
 #: ../content/index.rst:896
 msgid "Frontend::Customer::View::FAQSearch"
-msgstr ""
+msgstr "Frontend::Customer::View::FAQSearch"
 
 #: ../content/index.rst:899
 msgid "FAQ::Frontend::CustomerFAQSearch###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQSearch###DynamicField"
 
 #: ../content/index.rst:900
 msgid ""
 "Dynamic fields shown in the FAQ search screen of the customer interface."
 msgstr ""
+"Az ügyfélfelület GyIK keresése képernyőjén megjelenített dinamikus mezők."
 
 #: ../content/index.rst:903
 msgid "FAQ::Frontend::CustomerFAQSearch###Order::Default"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQSearch###Order::Default"
 
 #: ../content/index.rst:904
 msgid ""
 "Defines the default FAQ order of a search result in the customer interface. "
 "Up: oldest on top. Down: latest on top."
 msgstr ""
+"Meghatározza egy keresési eredmény alapértelmezett GyIK sorrendjét az "
+"ügyfélfelületen. Fel: legrégebbi felülre. Le: legújabb felülre."
 
 #: ../content/index.rst:907
 msgid "FAQ::Frontend::CustomerFAQSearch###SearchCSVDynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQSearch###SearchCSVDynamicField"
 
 #: ../content/index.rst:911
 msgid "FAQ::Frontend::CustomerFAQSearch###SearchLimit"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQSearch###SearchLimit"
 
 #: ../content/index.rst:912
 msgid ""
 "Maximum number of FAQ articles to be displayed in the result of a search in "
 "the customer interface."
 msgstr ""
+"Egy keresés eredményében megjelenítendő GyIK bejegyzések legnagyobb száma az "
+"ügyfélfelületen."
 
 #: ../content/index.rst:915
 msgid "FAQ::Frontend::CustomerFAQSearch###SearchPageShown"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQSearch###SearchPageShown"
 
 #: ../content/index.rst:916
 msgid ""
 "Number of FAQ articles to be displayed on each page of a search result in "
 "the customer interface."
 msgstr ""
+"Egy keresési eredmény minden oldalán megjelenítendő GyIK bejegyzések száma "
+"az ügyfélfelületen."
 
 #: ../content/index.rst:919
 msgid "FAQ::Frontend::CustomerFAQSearch###SortBy::Default"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQSearch###SortBy::Default"
 
 #: ../content/index.rst:920
 msgid ""
 "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the "
 "customer interface."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK attribútumot a GyIK rendezéshez az "
+"ügyfélfelület GyIK keresésében."
 
 #: ../content/index.rst:923
 msgid "FAQ::Frontend::CustomerFAQSearch###TitleSize"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQSearch###TitleSize"
 
 #: ../content/index.rst:924
 msgid ""
 "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in "
 "the customer interface."
 msgstr ""
+"A GyIK keresőben megjelenítendő GyIK bejegyzésben lévő címek legnagyobb "
+"mérete az ügyfélfelületen."
 
 #: ../content/index.rst:927
 msgid "Frontend::Customer::View::FAQZoom"
-msgstr ""
+msgstr "Frontend::Customer::View::FAQZoom"
 
 #: ../content/index.rst:930
 msgid "FAQ::Frontend::CustomerFAQZoom###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerFAQZoom###DynamicField"
 
 #: ../content/index.rst:931
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
 msgstr ""
+"Az ügyfélfelület GyIK nagyítása képernyőjén megjelenített dinamikus mezők."
 
 #: ../content/index.rst:934
 msgid "FAQ::Frontend::CustomerHTMLFieldHeightDefault"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerHTMLFieldHeightDefault"
 
 #: ../content/index.rst:935
 msgid ""
 "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom "
 "(and PublicFAQZoom)."
 msgstr ""
+"A beágyazott HTML mezők alapértelmezett magasságának beállítása (képpontban) "
+"az ügyfél GyIK-nagyítás (és nyilvános GyIK-nagyítás) nézeten."
 
 #: ../content/index.rst:938
 msgid "FAQ::Frontend::CustomerHTMLFieldHeightMax"
-msgstr ""
+msgstr "FAQ::Frontend::CustomerHTMLFieldHeightMax"
 
 #: ../content/index.rst:939
 msgid ""
 "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom "
 "(and PublicFAQZoom)."
 msgstr ""
+"A beágyazott HTML mezők legnagyobb magasságának beállítása (képpontban) az "
+"ügyfél GyIK-nagyítás (és nyilvános GyIK-nagyítás) nézeten."
 
 #: ../content/index.rst:942
 msgid "Frontend::Public"
-msgstr ""
+msgstr "Frontend::Public"
 
 #: ../content/index.rst:945
 msgid "FAQ::Public::StateTypes"
-msgstr ""
+msgstr "FAQ::Public::StateTypes"
 
 #: ../content/index.rst:946
 msgid "List of state types which can be used in the public interface."
-msgstr ""
+msgstr "Állapottípusok listája, amelyek használhatók a nyilvános felületen."
 
 #: ../content/index.rst:949
 msgid "PublicFrontend::CommonParam###Action"
-msgstr ""
+msgstr "PublicFrontend::CommonParam###Action"
 
 #: ../content/index.rst:950
 msgid ""
 "Default value for the Action parameter for the public frontend. The Action "
 "parameter is used in the scripts of the system."
 msgstr ""
+"A művelet paraméter alapértelmezett értéke a nyilvános előtétprogramnál. A "
+"művelet paramétert a rendszer parancsfájljaiban használják."
 
 #: ../content/index.rst:953
 msgid "PublicFrontend::HeaderMetaModule###3-FAQSearch"
-msgstr ""
+msgstr "PublicFrontend::HeaderMetaModule###3-FAQSearch"
 
 #: ../content/index.rst:954
 msgid ""
 "Module to generate HTML OpenSearch profile for short FAQ search in the "
 "public interface."
 msgstr ""
+"Egy modul a HTML OpenSearch profil előállításához a rövid GyIK kereséshez a "
+"nyilvános felületen."
 
 #: ../content/index.rst:957
 msgid "Frontend::Public::FAQOverview"
-msgstr ""
+msgstr "Frontend::Public::FAQOverview"
 
 #: ../content/index.rst:960
 msgid "FAQ::Frontend::PublicFAQOverview###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQOverview###DynamicField"
 
 #: ../content/index.rst:961
 msgid ""
 "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
+"A nyilvános felület GyIK áttekintő képernyőjén megjelenített dinamikus mezők."
 
 #: ../content/index.rst:964
 msgid "Frontend::Public::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Public::ModuleRegistration"
 
 #: ../content/index.rst:967
 msgid "Loader::Module::PublicFAQExplorer###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::PublicFAQExplorer###002-FAQ"
 
 #: ../content/index.rst:968 ../content/index.rst:972 ../content/index.rst:976
 #: ../content/index.rst:980
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "Betöltőmodul regisztráció a nyilvános felülethez."
 
 #: ../content/index.rst:971
 msgid "Loader::Module::PublicFAQRSS###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::PublicFAQRSS###002-FAQ"
 
 #: ../content/index.rst:975
 msgid "Loader::Module::PublicFAQSearch###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::PublicFAQSearch###002-FAQ"
 
 #: ../content/index.rst:979
 msgid "Loader::Module::PublicFAQZoom###002-FAQ"
-msgstr ""
+msgstr "Loader::Module::PublicFAQZoom###002-FAQ"
 
 #: ../content/index.rst:983
 msgid "PublicFrontend::Module###PublicFAQ"
-msgstr ""
+msgstr "PublicFrontend::Module###PublicFAQ"
 
 #: ../content/index.rst:984 ../content/index.rst:988 ../content/index.rst:992
 #: ../content/index.rst:996 ../content/index.rst:1000 ../content/index.rst:1004
 msgid "Frontend module registration for the public interface."
-msgstr ""
+msgstr "Előtétprogram-modul regisztráció a nyilvános felülethez."
 
 #: ../content/index.rst:987
 msgid "PublicFrontend::Module###PublicFAQExplorer"
-msgstr ""
+msgstr "PublicFrontend::Module###PublicFAQExplorer"
 
 #: ../content/index.rst:991
 msgid "PublicFrontend::Module###PublicFAQPrint"
-msgstr ""
+msgstr "PublicFrontend::Module###PublicFAQPrint"
 
 #: ../content/index.rst:995
 msgid "PublicFrontend::Module###PublicFAQRSS"
-msgstr ""
+msgstr "PublicFrontend::Module###PublicFAQRSS"
 
 #: ../content/index.rst:999
 msgid "PublicFrontend::Module###PublicFAQSearch"
-msgstr ""
+msgstr "PublicFrontend::Module###PublicFAQSearch"
 
 #: ../content/index.rst:1003
 msgid "PublicFrontend::Module###PublicFAQZoom"
-msgstr ""
+msgstr "PublicFrontend::Module###PublicFAQZoom"
 
 #: ../content/index.rst:1007
 msgid "PublicFrontend::Navigation###PublicFAQExplorer###002-FAQ"
-msgstr ""
+msgstr "PublicFrontend::Navigation###PublicFAQExplorer###002-FAQ"
 
 #: ../content/index.rst:1011
 msgid "PublicFrontend::Navigation###PublicFAQSearch###002-FAQ"
-msgstr ""
+msgstr "PublicFrontend::Navigation###PublicFAQSearch###002-FAQ"
 
 #: ../content/index.rst:1015
 msgid "Frontend::Public::View::FAQExplorer"
-msgstr ""
+msgstr "Frontend::Public::View::FAQExplorer"
 
 #: ../content/index.rst:1018
 msgid "FAQ::Frontend::PublicFAQExplorer###Order::Default"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQExplorer###Order::Default"
 
 #: ../content/index.rst:1019
 msgid ""
 "Defines the default FAQ order in the FAQ Explorer result of the public "
 "interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK sorrendet a nyilvános felület GyIK "
+"böngészőjének eredményében. Fel: legrégebbi felülre. Le: legújabb felülre."
 
 #: ../content/index.rst:1022
 msgid "FAQ::Frontend::PublicFAQExplorer###SearchLimit"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQExplorer###SearchLimit"
 
 #: ../content/index.rst:1023
 msgid ""
 "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of "
 "the public interface."
 msgstr ""
+"A nyilvános felület GyIK böngésző eredményében megjelenítendő GyIK "
+"bejegyzések legnagyobb száma."
 
 #: ../content/index.rst:1026
 msgid "FAQ::Frontend::PublicFAQExplorer###SearchPageShown"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQExplorer###SearchPageShown"
 
 #: ../content/index.rst:1027
 msgid ""
 "Number of FAQ articles to be displayed in the FAQ Explorer of the public "
 "interface."
 msgstr ""
+"A nyilvános felület GyIK böngészőjében megjelenítendő GyIK bejegyzések száma."
 
 #: ../content/index.rst:1030
 msgid "FAQ::Frontend::PublicFAQExplorer###SortBy::Default"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQExplorer###SortBy::Default"
 
 #: ../content/index.rst:1031
 msgid ""
 "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the "
 "public interface."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK attribútumot a GyIK rendezéshez a "
+"nyilvános felület GyIK böngészőjében."
 
 #: ../content/index.rst:1034
 msgid "FAQ::Frontend::PublicFAQExplorer###TitleSize"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQExplorer###TitleSize"
 
 #: ../content/index.rst:1035
 msgid ""
 "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer "
 "in the public interface."
 msgstr ""
+"A GyIK böngészőben megjelenítendő GyIK bejegyzésben lévő címek legnagyobb "
+"mérete a nyilvános felületen."
 
 #: ../content/index.rst:1038
 msgid "Frontend::Public::View::FAQPrint"
-msgstr ""
+msgstr "Frontend::Public::View::FAQPrint"
 
 #: ../content/index.rst:1041
 msgid "FAQ::Frontend::PublicFAQPrint###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQPrint###DynamicField"
 
 #: ../content/index.rst:1042
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
 msgstr ""
+"A nyilvános felület GyIK nyomtatása képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../content/index.rst:1045
 msgid "Frontend::Public::View::FAQSearch"
-msgstr ""
+msgstr "Frontend::Public::View::FAQSearch"
 
 #: ../content/index.rst:1048
 msgid "FAQ::Frontend::PublicFAQSearch###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQSearch###DynamicField"
 
 #: ../content/index.rst:1049
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
 msgstr ""
+"A nyilvános felület GyIK keresése képernyőjén megjelenített dinamikus mezők."
 
 #: ../content/index.rst:1052
 msgid "FAQ::Frontend::PublicFAQSearch###Order::Default"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQSearch###Order::Default"
 
 #: ../content/index.rst:1053
 msgid ""
 "Defines the default FAQ order of a search result in the public interface. "
 "Up: oldest on top. Down: latest on top."
 msgstr ""
+"Meghatározza egy keresési eredmény alapértelmezett GyIK sorrendjét a "
+"nyilvános felületen. Fel: legrégebbi felülre. Le: legújabb felülre."
 
 #: ../content/index.rst:1056
 msgid "FAQ::Frontend::PublicFAQSearch###SearchCSVDynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQSearch###SearchCSVDynamicField"
 
 #: ../content/index.rst:1060
 msgid "FAQ::Frontend::PublicFAQSearch###SearchLimit"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQSearch###SearchLimit"
 
 #: ../content/index.rst:1061
 msgid ""
 "Maximum number of FAQ articles to be displayed in the result of a search in "
 "the public interface."
 msgstr ""
+"Egy keresés eredményében megjelenítendő GyIK bejegyzések legnagyobb száma a "
+"nyilvános felületen."
 
 #: ../content/index.rst:1064
 msgid "FAQ::Frontend::PublicFAQSearch###SearchPageShown"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQSearch###SearchPageShown"
 
 #: ../content/index.rst:1065
 msgid ""
 "Number of FAQ articles to be displayed on each page of a search result in "
 "the public interface."
 msgstr ""
+"Egy keresési eredmény minden oldalán megjelenítendő GyIK bejegyzések száma a "
+"nyilvános felületen."
 
 #: ../content/index.rst:1068
 msgid "FAQ::Frontend::PublicFAQSearch###SortBy::Default"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQSearch###SortBy::Default"
 
 #: ../content/index.rst:1069
 msgid ""
 "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the "
 "public interface."
 msgstr ""
+"Meghatározza az alapértelmezett GyIK attribútumot a GyIK rendezéshez a "
+"nyilvános felület GyIK keresésében."
 
 #: ../content/index.rst:1072
 msgid "FAQ::Frontend::PublicFAQSearch###TitleSize"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQSearch###TitleSize"
 
 #: ../content/index.rst:1073
 msgid ""
 "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in "
 "the public interface."
 msgstr ""
+"A GyIK keresőben megjelenítendő GyIK bejegyzésben lévő címek legnagyobb "
+"mérete a nyilvános felületen."
 
 #: ../content/index.rst:1076
 msgid "Frontend::Public::View::FAQZoom"
-msgstr ""
+msgstr "Frontend::Public::View::FAQZoom"
 
 #: ../content/index.rst:1079
 msgid "FAQ::Frontend::PublicFAQZoom###DynamicField"
-msgstr ""
+msgstr "FAQ::Frontend::PublicFAQZoom###DynamicField"
 
 #: ../content/index.rst:1080
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
 msgstr ""
+"A nyilvános felület GyIK nagyítása képernyőjén megjelenített dinamikus mezők."
 
 #: ../content/index.rst:1083
 msgid "GenericInterface::Invoker::ModuleRegistration"
-msgstr ""
+msgstr "GenericInterface::Invoker::ModuleRegistration"
 
 #: ../content/index.rst:1086
 msgid "GenericInterface::Invoker::Module###Elasticsearch::FAQManagement"
-msgstr ""
+msgstr "GenericInterface::Invoker::Module###Elasticsearch::FAQManagement"
 
 #: ../content/index.rst:1087
-#, fuzzy
-#| msgid "Frontend module registration for the agent interface."
 msgid "GenericInterface module registration for the invoker layer."
-msgstr "Előtétprogram-modul regisztráció az ügyintézői felülethez."
+msgstr "Általános felület modul regisztráció a meghívó réteghez."
 
 #: ../content/index.rst:1090
 msgid "GenericInterface::Operation::ModuleRegistration"
-msgstr ""
+msgstr "GenericInterface::Operation::ModuleRegistration"
 
 #: ../content/index.rst:1093
 msgid "GenericInterface::Operation::Module###FAQ::LanguageList"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###FAQ::LanguageList"
 
 #: ../content/index.rst:1094 ../content/index.rst:1098
 #: ../content/index.rst:1102 ../content/index.rst:1106
 msgid "GenericInterface module registration for the operation layer."
-msgstr ""
+msgstr "Általános felület modul regisztráció a műveleti réteghez."
 
 #: ../content/index.rst:1097
 msgid "GenericInterface::Operation::Module###FAQ::PublicCategoryList"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###FAQ::PublicCategoryList"
 
 #: ../content/index.rst:1101
 msgid "GenericInterface::Operation::Module###FAQ::PublicFAQGet"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###FAQ::PublicFAQGet"
 
 #: ../content/index.rst:1105
 msgid "GenericInterface::Operation::Module###FAQ::PublicFAQSearch"
-msgstr ""
+msgstr "GenericInterface::Operation::Module###FAQ::PublicFAQSearch"
 
 #: ../content/index.rst:1109
 msgid "About"
@@ -1988,11 +2189,11 @@ msgstr "Rother OSS GmbH"
 
 #: ../content/index.rst:1114
 msgid "Email: hello@otobo.io"
-msgstr ""
+msgstr "E-mail: hello@otobo.io"
 
 #: ../content/index.rst:1115
 msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Web: https://otobo.io"
 
 #: ../content/index.rst:1118
 msgid "Version"
