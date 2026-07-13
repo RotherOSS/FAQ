@@ -4,28 +4,30 @@
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-20 08:12+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-07-13 12:00+0000\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
+"Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
+"addons/manuals/faq-documentation/hu/>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../content/index.rst:5
 msgid "Contents"
-msgstr ""
+msgstr "Tartalom"
 
 #: ../content/index.rst:10
 msgid "Description"
-msgstr ""
+msgstr "Leírás"
 
 #: ../content/index.rst:11
 msgid "The FAQ/knowledge base."
@@ -33,43 +35,43 @@ msgstr ""
 
 #: ../content/index.rst:14
 msgid "System requirements"
-msgstr ""
+msgstr "Rendszerkövetelmények"
 
 #: ../content/index.rst:17
 msgid "Framework"
-msgstr ""
+msgstr "Keretrendszer"
 
 #: ../content/index.rst:18
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 11.0.x"
 
 #: ../content/index.rst:21
 msgid "Packages"
-msgstr ""
+msgstr "Csomagok"
 
 #: ../content/index.rst:22 ../content/index.rst:26
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../content/index.rst:25
 msgid "Third-party software"
-msgstr ""
+msgstr "Harmadik féltől származó szoftverek"
 
 #: ../content/index.rst:29
 msgid "Usage"
-msgstr ""
+msgstr "Használat"
 
 #: ../content/index.rst:32
 msgid "Setup"
-msgstr ""
+msgstr "Beállítás"
 
 #: ../content/index.rst:35
 msgid "Configuration Reference"
-msgstr ""
+msgstr "Beállítások hivatkozása"
 
 #: ../content/index.rst:38
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../content/index.rst:41
 msgid "DynamicFields::Driver###FAQ"
@@ -77,7 +79,7 @@ msgstr ""
 
 #: ../content/index.rst:42 ../content/index.rst:46 ../content/index.rst:50
 msgid "DynamicField backend registration."
-msgstr ""
+msgstr "Dinamikus mező háttérprogram regisztráció."
 
 #: ../content/index.rst:45
 msgid "DynamicFields::Driver###Lens"
@@ -643,7 +645,7 @@ msgstr ""
 #: ../content/index.rst:380 ../content/index.rst:384 ../content/index.rst:388
 #: ../content/index.rst:392
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "Előtétprogram-modul regisztráció az ügyintézői felülethez."
 
 #: ../content/index.rst:347
 msgid "Frontend::Module###AgentFAQAdd"
@@ -706,7 +708,7 @@ msgstr ""
 #: ../content/index.rst:423 ../content/index.rst:427 ../content/index.rst:807
 #: ../content/index.rst:811 ../content/index.rst:815 ../content/index.rst:819
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "Betöltőmodul regisztráció az ügyintézői felülethez."
 
 #: ../content/index.rst:402
 msgid "Loader::Module::AgentFAQAdd###002-FAQ"
@@ -749,7 +751,7 @@ msgstr ""
 #: ../content/index.rst:458 ../content/index.rst:826 ../content/index.rst:830
 #: ../content/index.rst:943 ../content/index.rst:963
 msgid "Main menu item registration."
-msgstr ""
+msgstr "Főmenü elem regisztráció."
 
 #: ../content/index.rst:437
 msgid "Frontend::Navigation###AgentFAQAdd###002-FAQ"
@@ -1246,7 +1248,7 @@ msgstr ""
 
 #: ../content/index.rst:717
 msgid "Frontend::Base::Loader"
-msgstr ""
+msgstr "Frontend::Base::Loader"
 
 #: ../content/index.rst:720
 msgid "Loader::Agent::CommonCSS###200-FAQ"
@@ -1263,6 +1265,8 @@ msgstr ""
 #: ../content/index.rst:725
 msgid "List of JS files to always be loaded for the agent interface."
 msgstr ""
+"JavaScript-fájlok listája, amelyek mindig betöltődnek az ügyintézői "
+"felületnél."
 
 #: ../content/index.rst:728
 msgid "Frontend::Base::OutputFilter"
@@ -1873,15 +1877,15 @@ msgstr ""
 
 #: ../content/index.rst:1069
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #: ../content/index.rst:1072
 msgid "Contact"
-msgstr ""
+msgstr "Kapcsolat"
 
 #: ../content/index.rst:1073
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../content/index.rst:1074
 msgid "Email: hello@otobo.de"
@@ -1893,10 +1897,11 @@ msgstr ""
 
 #: ../content/index.rst:1078
 msgid "Version"
-msgstr ""
+msgstr "Verzió"
 
 #: ../content/index.rst:1079
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
+"Szerző: |doc-vendor| / Verzió: |doc-version| / Kiadás dátuma: |doc-datestamp|"
