@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-06-03 15:13+0000\n"
+"POT-Creation-Date: 2026-07-07 13:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1118,6 +1118,19 @@ msgid "Field5"
 msgstr "欄位5"
 
 #. SysConfig
+msgid ""
+"Fields of the faq index, used for the fulltext search. Fields are also "
+"stored, but are not mandatory for the overall functionality. Inclusion of "
+"attachments can be disabled by setting the entry to 0 or deleting it."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Fields stored in the faq index which are used for other things besides "
+"fulltext searches. For the complete functionality all fields are mandatory."
+msgstr ""
+
+#. SysConfig
 msgid "Full FAQ"
 msgstr ""
 
@@ -1320,6 +1333,11 @@ msgid ""
 msgstr ""
 
 #. SysConfig
+msgid ""
+"Number of shards (NS), replicas (NR) and fields limit for the index 'faq'."
+msgstr ""
+
+#. SysConfig
 msgid "Number of shown items in last changes."
 msgstr "最近更新顯示項目數量"
 
@@ -1330,6 +1348,12 @@ msgstr "最近創建顯示項目數量"
 #. SysConfig
 msgid "Number of shown items in the top 10 feature."
 msgstr "首10篇功能顯示項目數量"
+
+#. SysConfig
+msgid ""
+"Objects to search for, how many entries and which attributs to show. FAQ "
+"attributes have to explicitly be stored via Elasticsearch."
+msgstr ""
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
@@ -1349,6 +1373,12 @@ msgstr ""
 msgid ""
 "Parameters for the pages (in which the FAQ items are shown) of the small FAQ "
 "overview."
+msgstr ""
+
+#. SysConfig
+msgid ""
+"Performs the configured action for each event (as an Invoker) for each "
+"configured Webservice."
 msgstr ""
 
 #. SysConfig
