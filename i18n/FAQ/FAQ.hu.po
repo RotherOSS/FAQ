@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2026-06-03 15:13+0000\n"
-"PO-Revision-Date: 2026-05-22 13:00+0000\n"
+"PO-Revision-Date: 2026-07-13 16:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
-"Language-Team: Hungarian <http://translate.otobo.org/projects/opm-packages/"
-"faq/hu/>\n"
+"Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
+"addons/faq/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -175,8 +175,7 @@ msgstr "Nyelv szerkesztése"
 #. Template: AgentFAQLanguage
 msgid ""
 "You can not delete this language. It is used in at least one FAQ article!"
-msgstr ""
-"Nem törölheti ezt a nyelvet. Legalább egy GyIK bejegyzésben használják!"
+msgstr "Nem törölheti ezt a nyelvet. Legalább egy GyIK bejegyzésben használják!"
 
 #. Template: AgentFAQLanguage
 msgid "This language is used in the following FAQ Article(s)"
@@ -659,14 +658,12 @@ msgid "Created between"
 msgstr "Létrehozva ezek között"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
-#, fuzzy
-#| msgid "Greater than equals"
 msgid "Created within the last"
-msgstr "Nagyobb mint vagy egyenlő"
+msgstr "Létrehozva az elmúlt … belül"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created more than ... ago"
-msgstr ""
+msgstr "Létrehozva több mint … ezelőtt"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
@@ -744,11 +741,11 @@ msgstr ""
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "External-source key"
-msgstr ""
+msgstr "Külső forrás kulcsa"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Select the type of display"
-msgstr ""
+msgstr "A megjelenítés típusának kiválasztása"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
@@ -1489,8 +1486,7 @@ msgstr "A megjelenített elemek száma a legjobb 10 szolgáltatásban."
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
-msgstr ""
-"Kimenetszűrő JavaScript hozzáadásához az ügyféljegy üzenet képernyőhöz."
+msgstr "Kimenetszűrő JavaScript hozzáadásához az ügyféljegy üzenet képernyőhöz."
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
@@ -1750,32 +1746,32 @@ msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'FAQ' "
 "objects using the 'Normal' link type."
 msgstr ""
-"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más "
-"„GyIK” objektumokkal a „Normál” hivatkozástípus használatával."
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
+"GyIK” objektumokkal a „Normál” hivatkozástípus használatával."
 
 #. SysConfig
 msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'FAQ' "
 "objects using the 'ParentChild' link type."
 msgstr ""
-"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más "
-"„GyIK” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
+"GyIK” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
 
 #. SysConfig
 msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'Ticket' "
 "objects using the 'Normal' link type."
 msgstr ""
-"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más "
-"„Jegy” objektumokkal a „Normál” hivatkozástípus használatával."
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
+"Jegy” objektumokkal a „Normál” hivatkozástípus használatával."
 
 #. SysConfig
 msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'Ticket' "
 "objects using the 'ParentChild' link type."
 msgstr ""
-"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más "
-"„Jegy” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
+"Jegy” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
 
 #. SysConfig
 msgid "Ticket body for approval of FAQ article."
