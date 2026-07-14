@@ -498,7 +498,7 @@ sub Data {
     $Self->{Translation}->{'Number of shown items in last changes.'} = '显示最近更改条目的数量。';
     $Self->{Translation}->{'Number of shown items in last created.'} = '显示最新创建条目的数量。';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = '按Top10格式显示的条目数。';
-    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         '添加Javascript到客户工单消息窗口的输出过滤器。';
@@ -507,8 +507,6 @@ sub Data {
         '显示FAQ条目的微型FAQ日志概览的页面参数。';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         '显示FAQ条目的FAQ概览简洁视图的页面参数。';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
-        '';
     $Self->{Translation}->{'Print this FAQ'} = '打印这篇FAQ';
     $Self->{Translation}->{'Public FAQ Print.'} = '公开FAQ打印。';
     $Self->{Translation}->{'Public FAQ Zoom.'} = '公开FAQ详情。';

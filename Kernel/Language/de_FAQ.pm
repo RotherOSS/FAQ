@@ -498,7 +498,7 @@ sub Data {
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Anzahl der zu anzeigenden Artikel in letzten Änderungen.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Anzahl der anzuzeigenden Artikel in zuletzt erstellte Artikel.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Anzahl der anzuzeigenden Artikel im Top 10 Feature.';
-    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Ausgabefilter zum Hinzufügen von JavaScript zur Kunden-Ticket-Ansicht.';
@@ -507,8 +507,6 @@ sub Data {
         'Parameter für die Seiten (in denen FAQ-Artikel angezeigt werden) für die Small-Ansicht des FAQ-Journals.';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Parameter für die Seiten (in denen FAQ-Artikel angezeigt werden) für die Small-Ansicht des FAQ-Overiews.';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
-        '';
     $Self->{Translation}->{'Print this FAQ'} = 'FAQ drucken';
     $Self->{Translation}->{'Public FAQ Print.'} = 'Öffentliches FAQ Drucken.';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'Öffentliche FAQ Detailansicht.';

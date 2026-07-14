@@ -498,7 +498,7 @@ sub Data {
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Количество отображаемых позиций в последних изменениях.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Количество отображаемых позиций в новых статьях.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Количество отображаемых позиций в функции Top 10.';
-    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Выходной фильтр для добавления Java-script для экрана CustomerTicketMessage.';
@@ -507,8 +507,6 @@ sub Data {
         'Параметры для страницы (на которой отображаются элементы FAQ) при обзоре журнала FAQ в small формате.';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Параметры для страницы (на которой отображаются элементы FAQ) при обзоре FAQ в small формате.';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
-        '';
     $Self->{Translation}->{'Print this FAQ'} = 'Печать этого FAQ';
     $Self->{Translation}->{'Public FAQ Print.'} = 'Печать публичной статьи FAQ.';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'Просмотр публичной статьи FAQ.';

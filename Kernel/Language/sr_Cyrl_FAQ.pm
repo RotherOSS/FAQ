@@ -498,7 +498,7 @@ sub Data {
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'Број приказаних ставки у последњим изменама.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'Број приказаних ставки у последње креираним.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'Број приказаних ставки у "првих 10" .';
-    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Излазни филтер за убацивање JavaScript у CustomerTicketMessage екран.';
@@ -507,8 +507,6 @@ sub Data {
         'Параметри страница (на којима су FAQ ставке приказане) на малом приказу прегледа FAQ дневника.';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Параметри страница (на којима су видљиве FAQ ставке) смањеног прегледа FAQ.';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
-        '';
     $Self->{Translation}->{'Print this FAQ'} = 'Штампај овај FAQ';
     $Self->{Translation}->{'Public FAQ Print.'} = 'Штампање јавних FAQ.';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'Детаљи јавних FAQ.';

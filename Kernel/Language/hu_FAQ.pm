@@ -252,8 +252,8 @@ sub Data {
 
     # Perl Module: Kernel/Modules/CustomerFAQSearch.pm
     $Self->{Translation}->{'Created between'} = 'Létrehozva ezek között';
-    $Self->{Translation}->{'Created within the last'} = '';
-    $Self->{Translation}->{'Created more than ... ago'} = '';
+    $Self->{Translation}->{'Created within the last'} = 'Létrehozva az elmúlt … belül';
+    $Self->{Translation}->{'Created more than ... ago'} = 'Létrehozva több mint … ezelőtt';
 
     # Perl Module: Kernel/Modules/CustomerFAQZoom.pm
     $Self->{Translation}->{'Need ItemID!'} = 'Elemazonosító szükséges!';
@@ -290,8 +290,8 @@ sub Data {
 
     # Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
     $Self->{Translation}->{'Select the attribute which FAQs will be searched by'} = 'Azon attribútum kiválasztása, amely alapján a GyIK bejegyzések keresve lesznek';
-    $Self->{Translation}->{'External-source key'} = '';
-    $Self->{Translation}->{'Select the type of display'} = '';
+    $Self->{Translation}->{'External-source key'} = 'Külső forrás kulcsa';
+    $Self->{Translation}->{'Select the type of display'} = 'A megjelenítés típusának kiválasztása';
 
     # Database XML / SOPM Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'belső';
@@ -498,7 +498,7 @@ sub Data {
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'A megjelenített elemek száma a legutóbb módosítottakban.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'A megjelenített elemek száma a legutóbb létrehozottakban.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'A megjelenített elemek száma a legjobb 10 szolgáltatásban.';
-    $Self->{Translation}->{'Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
+    $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
         '';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Kimenetszűrő JavaScript hozzáadásához az ügyféljegy üzenet képernyőhöz.';
@@ -507,8 +507,6 @@ sub Data {
         'Paraméterek a kis GyIK napló áttekintő oldalaihoz (amelyekben a GyIK elemek megjelennek).';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'Paraméterek a kis GyIK áttekintő oldalaihoz (amelyekben a GyIK elemek megjelennek).';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
-        '';
     $Self->{Translation}->{'Print this FAQ'} = 'A GyIK nyomtatása';
     $Self->{Translation}->{'Public FAQ Print.'} = 'Nyilvános GyIK nyomtatás.';
     $Self->{Translation}->{'Public FAQ Zoom.'} = 'Nyilvános GyIK nagyítás.';
