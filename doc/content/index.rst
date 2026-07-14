@@ -68,7 +68,7 @@ Number of shards (NS), replicas (NR) and fields limit for the index 'faq'.
 
 Elasticsearch::QuickSearchShow###FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Objects to search for, how many entries and which attributs to show. FAQ attributes have to explicitly be stored via Elasticsearch.
+Objects to search for, how many entries and which attributes to show. FAQ attributes have to explicitly be stored via Elasticsearch.
 
 ElasticsearchWidgetBackend###05-ElasticsearchFAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -79,7 +79,7 @@ Core::Event::FAQ
 
 FAQ::EventModulePost###9800-GenericInterface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Performs the configured action for each event (as an Invoker) for each configured Webservice.
+Performs the configured action for each event (as an Invoker) for each configured web service.
 
 Core::FAQ
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
