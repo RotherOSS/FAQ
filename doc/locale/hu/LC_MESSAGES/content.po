@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-07 13:33+0000\n"
+"POT-Creation-Date: 2026-07-14 05:33+0000\n"
 "PO-Revision-Date: 2026-07-15 17:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
@@ -141,8 +141,12 @@ msgid "Elasticsearch::QuickSearchShow###FAQ"
 msgstr "Elasticsearch::QuickSearchShow###FAQ"
 
 #: ../content/index.rst:68
+#, fuzzy
+#| msgid ""
+#| "Objects to search for, how many entries and which attributs to show. FAQ "
+#| "attributes have to explicitly be stored via Elasticsearch."
 msgid ""
-"Objects to search for, how many entries and which attributs to show. FAQ "
+"Objects to search for, how many entries and which attributes to show. FAQ "
 "attributes have to explicitly be stored via Elasticsearch."
 msgstr ""
 "Keresendő objektumok, hány bejegyzés és mely attribútumok jelenjenek meg. A "
@@ -167,9 +171,13 @@ msgid "FAQ::EventModulePost###9800-GenericInterface"
 msgstr "FAQ::EventModulePost###9800-GenericInterface"
 
 #: ../content/index.rst:79
+#, fuzzy
+#| msgid ""
+#| "Performs the configured action for each event (as an Invoker) for each "
+#| "configured Webservice."
 msgid ""
 "Performs the configured action for each event (as an Invoker) for each "
-"configured Webservice."
+"configured web service."
 msgstr ""
 "Végrehajtja a beállított műveletet minden eseménynél (mint egy meghívó) "
 "minden egyes beállított webszolgáltatáshoz."
@@ -626,8 +634,8 @@ msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'FAQ' "
 "objects using the 'Normal' link type."
 msgstr ""
-"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
-"GyIK” objektumokkal a „Normál” hivatkozástípus használatával."
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más "
+"„GyIK” objektumokkal a „Normál” hivatkozástípus használatával."
 
 #: ../content/index.rst:314
 msgid "LinkObject::PossibleLink###8302"
@@ -638,8 +646,8 @@ msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'FAQ' "
 "objects using the 'ParentChild' link type."
 msgstr ""
-"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
-"GyIK” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más "
+"„GyIK” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
 
 #: ../content/index.rst:318
 msgid "LinkObject::PossibleLink###8303"
@@ -650,8 +658,8 @@ msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'Ticket' "
 "objects using the 'Normal' link type."
 msgstr ""
-"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
-"Jegy” objektumokkal a „Normál” hivatkozástípus használatával."
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más "
+"„Jegy” objektumokkal a „Normál” hivatkozástípus használatával."
 
 #: ../content/index.rst:322
 msgid "LinkObject::PossibleLink###8304"
@@ -662,8 +670,8 @@ msgid ""
 "This setting defines that a 'FAQ' object can be linked with other 'Ticket' "
 "objects using the 'ParentChild' link type."
 msgstr ""
-"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „"
-"Jegy” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
+"Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más "
+"„Jegy” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával."
 
 #: ../content/index.rst:326
 msgid "Frontend::Admin"
@@ -1503,12 +1511,12 @@ msgstr ""
 
 #: ../content/index.rst:768
 msgid "Frontend::Output::FilterElementPost###OutputFilterPostFAQCustomerRelatedArticles"
-msgstr ""
-"Frontend::Output::FilterElementPost###OutputFilterPostFAQCustomerRelatedArticles"
+msgstr "Frontend::Output::FilterElementPost###OutputFilterPostFAQCustomerRelatedArticles"
 
 #: ../content/index.rst:769
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
-msgstr "Kimenetszűrő JavaScript hozzáadásához az ügyféljegy üzenet képernyőhöz."
+msgstr ""
+"Kimenetszűrő JavaScript hozzáadásához az ügyféljegy üzenet képernyőhöz."
 
 #: ../content/index.rst:772
 msgid "Frontend::Output::OutputFilterTextAutoLink###FAQ"

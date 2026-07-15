@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-07 13:33+0000\n"
+"POT-Creation-Date: 2026-07-14 05:33+0000\n"
 "PO-Revision-Date: 2026-06-24 13:52+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../content/index.rst:68
 msgid ""
-"Objects to search for, how many entries and which attributs to show. FAQ "
+"Objects to search for, how many entries and which attributes to show. FAQ "
 "attributes have to explicitly be stored via Elasticsearch."
 msgstr ""
 
@@ -160,7 +160,7 @@ msgstr ""
 #: ../content/index.rst:79
 msgid ""
 "Performs the configured action for each event (as an Invoker) for each "
-"configured Webservice."
+"configured web service."
 msgstr ""
 
 #: ../content/index.rst:82
