@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-06 07:02+0000\n"
-"PO-Revision-Date: 2026-07-13 14:46+0000\n"
+"PO-Revision-Date: 2026-07-15 15:35+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/manuals/faq-documentation/hu/>\n"
@@ -1382,7 +1382,7 @@ msgstr "Loader::Agent::CommonCSS###200-FAQ"
 #: ../content/index.rst:717
 msgid "List of CSS files to always be loaded for the agent interface."
 msgstr ""
-"CSS-fájlok listája, amelyek mindig betöltődnek az ügyintézői felületnél."
+"CSS fájlok listája, amelyek mindig betöltődnek az ügyintézői felületnél."
 
 #: ../content/index.rst:720
 msgid "Loader::Agent::CommonJS###200-FAQ"
