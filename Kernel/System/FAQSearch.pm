@@ -64,6 +64,11 @@ search in FAQ articles
 
         ServiceID => $ServiceID,                                      # (optional)
 
+        # Use FAQSearch as an FAQ filter on a single FAQ item,
+        # or a predefined FAQ item list
+        FAQID     => 1234,                                            # (optional)
+        FAQID     => [1234, 1235],                                    # (optional)
+
         # Approved
         #    Only available in internal interface (agent interface)
         Approved    => 1,                                             # (optional) 1 or 0,
@@ -429,6 +434,22 @@ sub FAQSearch {
             $Ext .= ' AND ';
         }
         $Ext .= " LOWER(i.f_subject) LIKE LOWER('" . $Param{Title} . "') $Self->{LikeEscapeString}";
+    }
+
+    # Limit the search to just one (or a list) FAQID (used by the otobo-ai package
+    #   to filter for events on single FAQ items with the job's FAQ filter).
+    if ( IsStringWithData( $Param{FAQID} ) || IsArrayRefWithData( $Param{FAQID} ) ) {
+
+        my $SQLQueryInCondition = $DBObject->QueryInCondition(
+            Key       => 'i.id',
+            Values    => ref $Param{FAQID} eq 'ARRAY' ? $Param{FAQID} : [ $Param{FAQID} ],
+            QuoteType => 'Integer',
+            BindMode  => 0,
+        );
+        if ($Ext) {
+            $Ext .= ' AND ';
+        }
+        $Ext .= ' ( ' . $SQLQueryInCondition . ' ) ';
     }
 
     # search for languages
