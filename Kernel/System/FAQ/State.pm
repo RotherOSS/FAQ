@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -144,7 +144,7 @@ get the state list as hash
 
 optional, get state list for some state types:
 
-    my %StateTypeHash = $FAQObject->StateTypeList(
+    my $StateTypeHashRef = $FAQObject->StateTypeList(
         Types  => [ 'public', 'internal'],
         UserID => 1,
     );
