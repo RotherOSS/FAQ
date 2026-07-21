@@ -66,7 +66,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     letter-spacing: 0.3px;
 }
     
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1279px) {
 
     #FAQRelatedArticles {
         position: relative;
@@ -96,7 +96,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
 
     #FAQRelatedArticles {
         --article-list-width: 240px;
