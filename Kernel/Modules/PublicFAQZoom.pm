@@ -164,15 +164,6 @@ sub Run {
             CustomerUIStyles    => 1,
         );
 
-        # build base URL for inline images
-        my $SessionID = '';
-        if ( $Self->{SessionID} && !$Self->{SessionIDCookie} ) {
-            $SessionID = ';' . $Self->{SessionName} . '=' . $Self->{SessionID};
-            $FieldContent =~ s{
-                (Action=PublicFAQZoom;Subaction=DownloadAttachment;ItemID=\d+;FileID=\d+)
-            }{$1$SessionID}gmsx;
-        }
-
         # return complete HTML as an attachment
         return $LayoutObject->Attachment(
             Type        => 'inline',

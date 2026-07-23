@@ -228,14 +228,9 @@ sub Run {
             # Extract the actual MIME type from the content type, which also contains the filename.
             my ($MimeType) = $Attachment{ContentType} =~ m{^(.+/.+); [ ] name=.+$}xms;
 
-            my $Session = '';
-            if ( $Self->{SessionID} && !$Self->{SessionIDCookie} ) {
-                $Session = '&' . $Self->{SessionName} . '=' . $Self->{SessionID};
-            }
-
             # Create the new inline image URL.
             my $InlineImage = $LayoutObject->{Baselink}
-                . "Action=PictureUpload;FormID=$FormID;ContentID=$ContentIDNew$Session";
+                . "Action=PictureUpload;FormID=$FormID;ContentID=$ContentIDNew";
 
             # Replace the image URL with the inline image.
             $FieldContent =~ s{\Q$URL\E}{$InlineImage}xms;
