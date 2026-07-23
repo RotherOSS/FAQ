@@ -165,15 +165,6 @@ sub Run {
             index[.]pl [?] Action=AgentFAQ [&](amp;)? Subaction=Download [&](amp;)?
         }{customer.pl?Action=CustomerFAQZoom;Subaction=DownloadAttachment;}gxms;
 
-        # build base URL for inline images
-        my $SessionID = '';
-        if ( $Self->{SessionID} && !$Self->{SessionIDCookie} ) {
-            $SessionID = ';' . $Self->{SessionName} . '=' . $Self->{SessionID};
-            $FieldContent =~ s{
-                (Action=CustomerFAQZoom;Subaction=DownloadAttachment;ItemID=\d+;FileID=\d+)
-            }{$1$SessionID}gmsx;
-        }
-
         my $HTMLUtilsObject = $Kernel::OM->Get('Kernel::System::HTMLUtils');
 
         # convert content to HTML if needed

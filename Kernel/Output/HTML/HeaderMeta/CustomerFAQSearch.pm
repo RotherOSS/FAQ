@@ -39,11 +39,6 @@ sub Run {
 
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 
-    my $Session = '';
-    if ( !$LayoutObject->{SessionIDCookie} ) {
-        $Session = ';' . $LayoutObject->{SessionName} . '=' . $LayoutObject->{SessionID};
-    }
-
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
     # build open search description for FAQ number
@@ -61,7 +56,7 @@ sub Run {
             Href  => $LayoutObject->{Baselink}
                 . 'Action='
                 . $Param{Config}->{Action}
-                . ';Subaction=OpenSearchDescriptionFAQNumber' . $Session,
+                . ';Subaction=OpenSearchDescriptionFAQNumber',
         },
     );
 
@@ -79,7 +74,7 @@ sub Run {
             Href  => $LayoutObject->{Baselink}
                 . 'Action='
                 . $Param{Config}->{Action}
-                . ';Subaction=OpenSearchDescriptionFulltext' . $Session,
+                . ';Subaction=OpenSearchDescriptionFulltext',
         },
     );
 
