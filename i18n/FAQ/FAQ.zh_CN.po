@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-07-07 13:20+0000\n"
+"POT-Creation-Date: 2026-07-14 13:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1378,7 +1378,7 @@ msgstr "按Top10格式显示的条目数。"
 
 #. SysConfig
 msgid ""
-"Objects to search for, how many entries and which attributs to show. FAQ "
+"Objects to search for, how many entries and which attributes to show. FAQ "
 "attributes have to explicitly be stored via Elasticsearch."
 msgstr ""
 
@@ -1401,12 +1401,6 @@ msgid ""
 "Parameters for the pages (in which the FAQ items are shown) of the small FAQ "
 "overview."
 msgstr "显示FAQ条目的FAQ概览简洁视图的页面参数。"
-
-#. SysConfig
-msgid ""
-"Performs the configured action for each event (as an Invoker) for each "
-"configured Webservice."
-msgstr ""
 
 #. SysConfig
 msgid "Print this FAQ"

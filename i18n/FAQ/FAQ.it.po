@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-07-07 13:20+0000\n"
+"POT-Creation-Date: 2026-07-14 13:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1389,7 +1389,7 @@ msgstr "Numero di elementi mostrati nella funzionalità principali 10."
 
 #. SysConfig
 msgid ""
-"Objects to search for, how many entries and which attributs to show. FAQ "
+"Objects to search for, how many entries and which attributes to show. FAQ "
 "attributes have to explicitly be stored via Elasticsearch."
 msgstr ""
 
@@ -1411,12 +1411,6 @@ msgstr ""
 msgid ""
 "Parameters for the pages (in which the FAQ items are shown) of the small FAQ "
 "overview."
-msgstr ""
-
-#. SysConfig
-msgid ""
-"Performs the configured action for each event (as an Invoker) for each "
-"configured Webservice."
 msgstr ""
 
 #. SysConfig
