@@ -366,6 +366,8 @@ sub Data {
         'กำหนดข้อมูลที่จะแทรกในFAQ ตาทตั๋ว "FAQ ฉบับเต็ม" จะรวมถึงข้อความและภาพที่แนบมาแบบอินไลน์';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'กำหนดพารามิเตอร์สำหรับแดชบอร์ดเบื้องหลัง  "จำกัด" คือกำหนดจำนวนของรายการที่แสดงโดยค่าเริ่มต้น "กลุ่ม" จะถูกนำมาใช้เพื่อจำกัดการเข้าถึงปลั๊กอิน (เช่นกลุ่ม: ผู้ดูแลระบบ; กลุ่ม 1; กลุ่ม2;) "เริ่มต้น" ระบุว่าถ้าปลั๊กอินถูกเปิดใช้งานโดยค่าเริ่มต้นหรือหากผู้ใช้ต้องการเพื่อเปิดใช้งานได้ด้วยตนเอง';
+    $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'กำหนดคอลัมน์ที่แสดงอยู่ใน FAQ Explorer  ซึ่งตัวเลือกนี้จะไม่มีผลต่อตำแหน่งของคอลัมน์';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =

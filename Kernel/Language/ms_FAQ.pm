@@ -366,6 +366,8 @@ sub Data {
         'Mentakrifkan maklumat yang akan dimasukkan dalam tiket berdasarkan FAQ. "FAQ Penuh" termasuk teks, lampiran dan imej sebaris.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Mentakrifkan parameter untuk backend papan pemuka. "Had" mentakrifkan bilangan penyertaan dipaparkan secara lalai. "Kumpulan" digunakan untuk menyekat akses kepada plugin (contoh: Kumpulan: admin; group1 ; group2 ;). "Default" menunjukkan jika plugin ini diaktifkan secara lalai atau jika pengguna perlu untuk membolehkan secara manual.';
+    $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Mentakrifkan lajur menunjukkan di Explorer FAQ. Pilihan ini tidak mempunyai kesan ke atas kedudukan tiang.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =

@@ -366,6 +366,8 @@ sub Data {
         'Define la información a ser insertada en un ticket basado en una FAQ. "FAQ Completa" incluye texto, archivos adjuntos e imágenes en linea.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Define los parametros para el backend del panel principal. "Limite" es el número de entrada mostradas por defecto. "Grupo" es usado para restringir el acceso al plugin (Ej. Grupo: admin;group1;group2;). "Defecto" determina si el plugin es habilitado por defecto o si el usuario necesita habilitarlo manualmente. ';
+    $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Define las columnas que se mostrarán en el Explorador de FAQ. Esta opción no tiene efectos en la posición de las columnas.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =

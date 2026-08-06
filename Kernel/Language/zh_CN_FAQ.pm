@@ -366,6 +366,8 @@ sub Data {
         '定义基于FAQ的工单中要插入的信息。“完整FAQ”包括文本、附件和内嵌图像。';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         '定义仪表板的后端参数。“限制”定义默认显示条目的数量。“组”用于控制能访问此模块的组（如：admin;group1;group2组）。“默认”表示此模块默认为可用或需要用户手动启用。';
+    $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         '定义在FAQ浏览器中要显示的列。这个选项不会影响列的位置。';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =

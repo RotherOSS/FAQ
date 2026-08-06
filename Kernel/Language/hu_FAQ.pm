@@ -366,6 +366,8 @@ sub Data {
         'Meghatározza egy GyIK-alapú jegybe beszúrandó információkat. A „Teljes GyIK” szöveget, mellékleteket és beágyazott képeket tartalmaz.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Meghatározza a vezérlőpult háttérprogram paramétereit. A „Limit” határozza meg az alapértelmezetten megjelenített bejegyzések számát. A „Group” használható a hozzáférés korlátozásához a bővítményre (például Group: admin;csoport1;csoport2;). A „Default” jelzi, hogy a bővítmény alapértelmezetten engedélyezve van, vagy hogy a felhasználónak kézzel kell engedélyeznie azt.';
+    $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Meghatározza a megjelenített oszlopokat a GyIK böngészőben. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -424,9 +426,9 @@ sub Data {
     $Self->{Translation}->{'Field4'} = '4. mező';
     $Self->{Translation}->{'Field5'} = '5. mező';
     $Self->{Translation}->{'Fields of the faq index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it.'} =
-        '';
+        'A GyIK indexének mezői, amely a szabad-szavas kereséséhez van használva. A mezők is tárolásra kerülnek, de nem kötelezőek a teljes funkcionalitáshoz. A mellékletek felvétele letiltható a bejegyzés értékének 0-ra állításával vagy a bejegyzés törlésével.';
     $Self->{Translation}->{'Fields stored in the faq index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory.'} =
-        '';
+        'A GyIK indexében tárolt mezők, amelyek a szabad-szavas kereséseken kívül más célokra is használva vannak. A teljes funkcionalitáshoz az összes mező kötelező.';
     $Self->{Translation}->{'Full FAQ'} = 'Teljes GyIK';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Csoport a GyIK bejegyzések jóváhagyáshoz.';
     $Self->{Translation}->{'History of this FAQ'} = 'A GyIK előzményei';
@@ -494,7 +496,7 @@ sub Data {
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         'Egy keresési eredmény minden oldalán megjelenítendő GyIK bejegyzések száma a nyilvános felületen.';
     $Self->{Translation}->{'Number of shards (NS), replicas (NR) and fields limit for the index \'faq\'.'} =
-        '';
+        'Töredékek száma (NS), replikák száma (NR) és mezők korlátai az „faq” indexhez.';
     $Self->{Translation}->{'Number of shown items in last changes.'} = 'A megjelenített elemek száma a legutóbb módosítottakban.';
     $Self->{Translation}->{'Number of shown items in last created.'} = 'A megjelenített elemek száma a legutóbb létrehozottakban.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'A megjelenített elemek száma a legjobb 10 szolgáltatásban.';

@@ -366,6 +366,8 @@ sub Data {
         'Određuje informacije koje će biti ubačene u FAQ bazirani tiket. "Kompletan FAQ" uključuje tekst, priloge i umetnute slike.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Definiše pozadinske parametre za kontrolnu tablu. "Limit" definiše broj podrezumevano prikazanih unosa. "Grupa" se koristi da ograniči pristup dodatku (npr. Grupa: admin;group1;group2;)."Podrazumevano" ukazuje na to da li je dodatak podrazumevano aktiviran ili da je potrebno da ga korisnik manuelno aktivira.';
+    $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Definiše prikazane kolone u FAQ pretraživaču. Ova opcija nema uticaj na pozicije kolona.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =

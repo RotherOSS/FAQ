@@ -366,6 +366,8 @@ sub Data {
         'Tentukan informasi yang akan di masukan ke dalam sebuah Tiket berdasar FAQ. "FAQ lengkap" berisi teks, lampiran, dan gambar di barisan.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Tentukan parameter untuk backend dasbor. "Limit" menentukan jumlah entri yang di tampilkan secara default. "Group" di gunakan untuk membatasi akses ke plugin (misalnya Grup: admin;grup1;grup2;). "Default" mengindikasikanjika plugin diaktifkan secara default atau jika pengguna perlu mengaktifkannya secara manual.';
+    $Self->{Translation}->{'Defines the parameters for the elasticsearch widget backend.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Tentukan kolom yang ditampilkan di Eksplorer FAQ. Pilihan ini tidak mempengaruhi posisi kolom.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
