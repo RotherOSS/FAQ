@@ -100,9 +100,9 @@ sub Run {
         Data         => {},
     );
 
-    my $Search = '(<textarea id="RichText")';
+    my $Search = '(<textarea id="RichText"[^>]*>.*?</textarea>)';
     ${ $Param{Data} }
-        =~ s{$Search}{<div id="FAQRelatedArticles" class="Hidden">$CustomerRelatedFAQArticlesHTMLString</div>$1}msg;
+        =~ s{$Search}{$1<div id="FAQRelatedArticlesStatus" class="FAQRelatedArticlesStatus" role="status" aria-atomic="true"></div><section id="FAQRelatedArticles" class="Hidden" aria-labelledby="FAQRelatedArticlesHeading">$CustomerRelatedFAQArticlesHTMLString</section>}msg;
 
     my $FrontendCustomerTicketMessageConfig      = $ConfigObject->Get("Ticket::Frontend::CustomerTicketMessage");
     my $FrontendCustomerFAQRelatedArticlesConfig = $ConfigObject->Get("FAQ::Frontend::CustomerFAQRelatedArticles");
