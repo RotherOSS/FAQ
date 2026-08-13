@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-07-14 13:44+0000\n"
+"POT-Creation-Date: 2026-08-06 10:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1009,6 +1009,10 @@ msgstr ""
 "menyekat akses kepada plugin (contoh: Kumpulan: admin; group1 ; group2 ;). "
 "\"Default\" menunjukkan jika plugin ini diaktifkan secara lalai atau jika "
 "pengguna perlu untuk membolehkan secara manual."
+
+#. SysConfig
+msgid "Defines the parameters for the elasticsearch widget backend."
+msgstr ""
 
 #. SysConfig
 msgid ""

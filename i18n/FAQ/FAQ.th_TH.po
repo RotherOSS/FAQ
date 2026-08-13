@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-07-14 13:44+0000\n"
+"POT-Creation-Date: 2026-08-06 10:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -983,6 +983,10 @@ msgstr ""
 "คือกำหนดจำนวนของรายการที่แสดงโดยค่าเริ่มต้น \"กลุ่ม\" จะถูกนำมาใช้เพื่อจำกัดการเข้าถึงปลั๊กอิน "
 "(เช่นกลุ่ม: ผู้ดูแลระบบ; กลุ่ม 1; กลุ่ม2;) \"เริ่มต้น\" "
 "ระบุว่าถ้าปลั๊กอินถูกเปิดใช้งานโดยค่าเริ่มต้นหรือหากผู้ใช้ต้องการเพื่อเปิดใช้งานได้ด้วยตนเอง"
+
+#. SysConfig
+msgid "Defines the parameters for the elasticsearch widget backend."
+msgstr ""
 
 #. SysConfig
 msgid ""

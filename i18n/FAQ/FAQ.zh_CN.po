@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-07-14 13:44+0000\n"
+"POT-Creation-Date: 2026-08-06 10:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -974,6 +974,10 @@ msgstr ""
 "定义仪表板的后端参数。“限制”定义默认显示条目的数量。“组”用于控制能访问此模块"
 "的组（如：admin;group1;group2组）。“默认”表示此模块默认为可用或需要用户手动启"
 "用。"
+
+#. SysConfig
+msgid "Defines the parameters for the elasticsearch widget backend."
+msgstr ""
 
 #. SysConfig
 msgid ""

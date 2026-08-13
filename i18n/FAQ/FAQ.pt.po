@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-07-14 13:44+0000\n"
+"POT-Creation-Date: 2026-08-06 10:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1006,6 +1006,10 @@ msgstr ""
 "de entradas exibidas por padrão. \"Grupo\" é usado para restringir o acesso "
 "ao plugin (ex.: Grupo: admin, grupo1, grupo2). \"Padrão\" indica se o plugin "
 "é habilitado por padrão ou se o usuário precisa habilitá-lo manualmente."
+
+#. SysConfig
+msgid "Defines the parameters for the elasticsearch widget backend."
+msgstr ""
 
 #. SysConfig
 msgid ""
