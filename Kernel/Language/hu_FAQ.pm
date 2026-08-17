@@ -501,7 +501,7 @@ sub Data {
     $Self->{Translation}->{'Number of shown items in last created.'} = 'A megjelenített elemek száma a legutóbb létrehozottakban.';
     $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'A megjelenített elemek száma a legjobb 10 szolgáltatásban.';
     $Self->{Translation}->{'Objects to search for, how many entries and which attributes to show. FAQ attributes have to explicitly be stored via Elasticsearch.'} =
-        '';
+        'Keresendő objektumok, hány bejegyzés és mely attribútumok jelenjenek meg. A GyIK-attribútumokat egyértelműen el kell tárolni az Elasticsearch-kiszolgálón keresztül.';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
         'Kimenetszűrő JavaScript hozzáadásához az ügyféljegy üzenet képernyőhöz.';
     $Self->{Translation}->{'Output limit for the related FAQ articles.'} = 'Kimenetkorlát a kapcsolódó GyIK bejegyzésekhez.';
