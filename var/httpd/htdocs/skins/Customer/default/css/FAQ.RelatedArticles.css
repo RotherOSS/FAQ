@@ -18,6 +18,21 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     display: none !important;
 }
 
+/* Keep live status updates available to assistive technology without adding
+ * another visible message to the related-article widget. */
+.FAQRelatedArticlesStatus {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
 #FAQRelatedArticles:before {
     position: relative;
     top: 5px;
@@ -48,7 +63,29 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 #FAQRelatedArticles .Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 8px;
+}
+
+#FAQRelatedArticles .Header h2 {
+    color: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+#FAQRelatedArticles .Header .AJAXLoader {
+    flex: 0 0 auto;
+}
+
+#FAQRelatedArticles li:focus-within {
+    border-bottom: 2px solid var(--colMainLight);
+}
+
+#FAQRelatedArticles li:hover {
+    border-bottom: 1px solid var(--colMainLight);
 }
 
 #FAQRelatedArticles li {
@@ -67,16 +104,18 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
     
 @media only screen and (max-width: 1279px) {
+    fieldset > .RichTextHolder:has(> #FAQRelatedArticles:not(.Hidden)) {
+        margin-bottom: 180px;
+    }
 
     #FAQRelatedArticles {
-        position: relative;
-        left: 8px;
-
-        display: inline-block;
-        vertical-align: top;
+        position: static;
+        display: block;
+        clear: both;
 
         box-sizing: border-box;
         width: 100%;
+        margin: 8px 0;
         padding: 8px;
     }
 
