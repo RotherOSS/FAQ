@@ -4,20 +4,22 @@
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-14 05:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-10-05 03:41+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
+"addons/manuals/faq-documentation/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #: ../content/index.rst:5
 msgid "Contents"
@@ -152,10 +154,13 @@ msgid "FAQ::EventModulePost###9800-GenericInterface"
 msgstr ""
 
 #: ../content/index.rst:79
+#, fuzzy
 msgid ""
 "Performs the configured action for each event (as an Invoker) for each "
 "configured web service."
 msgstr ""
+"設定された各 Web サービスについて、イベントごとに設定されたアクションを（"
+"Invoker として）実行します。"
 
 #: ../content/index.rst:82
 msgid "Core::FAQ"
@@ -627,8 +632,9 @@ msgid "Events###FAQ"
 msgstr ""
 
 #: ../content/index.rst:330
+#, fuzzy
 msgid "List of all Package events to be displayed in the GUI."
-msgstr ""
+msgstr "GUI に表示するすべての Package イベントの一覧。"
 
 #: ../content/index.rst:333
 msgid "Frontend::Agent"
@@ -831,8 +837,9 @@ msgstr ""
 #: ../content/index.rst:479 ../content/index.rst:483 ../content/index.rst:487
 #: ../content/index.rst:491 ../content/index.rst:859 ../content/index.rst:863
 #: ../content/index.rst:1008 ../content/index.rst:1012
+#, fuzzy
 msgid "Main menu item registration."
-msgstr ""
+msgstr "メインメニュー項目の登録。"
 
 #: ../content/index.rst:470
 msgid "Frontend::Navigation###AgentFAQCategory###002-FAQ"
@@ -929,10 +936,13 @@ msgid "FAQ::Frontend::AgentFAQAdd###RichTextWidth"
 msgstr ""
 
 #: ../content/index.rst:531 ../content/index.rst:546
+#, fuzzy
 msgid ""
 "Defines the width for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
+"この画面のリッチテキストエディターの幅を定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #: ../content/index.rst:534
 msgid "Frontend::Agent::View::FAQEdit"
@@ -1938,8 +1948,9 @@ msgid "GenericInterface::Invoker::Module###Elasticsearch::FAQManagement"
 msgstr ""
 
 #: ../content/index.rst:1087
+#, fuzzy
 msgid "GenericInterface module registration for the invoker layer."
-msgstr ""
+msgstr "Invoker レイヤー用の GenericInterface モジュール登録。"
 
 #: ../content/index.rst:1090
 msgid "GenericInterface::Operation::ModuleRegistration"
@@ -1951,8 +1962,9 @@ msgstr ""
 
 #: ../content/index.rst:1094 ../content/index.rst:1098
 #: ../content/index.rst:1102 ../content/index.rst:1106
+#, fuzzy
 msgid "GenericInterface module registration for the operation layer."
-msgstr ""
+msgstr "オペレーションレイヤー用の GenericInterface モジュール登録。"
 
 #: ../content/index.rst:1097
 msgid "GenericInterface::Operation::Module###FAQ::PublicCategoryList"
