@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2026-02-26 08:57+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-10-05 04:59+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-0/"
+"addons/faq/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
@@ -696,7 +699,7 @@ msgstr "コンテンツタイプ"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Select the attribute which FAQs will be searched by"
-msgstr ""
+msgstr "FAQ を検索する際の属性を選択してください"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
@@ -1052,6 +1055,8 @@ msgstr "この記事の履歴"
 #. SysConfig
 msgid "If activated, FAQ articles of status type internal are also taken into account for the approval process."
 msgstr ""
+"有効にすると、ステータスタイプが internal の FAQ 記事も承認プロセスの対象にな"
+"ります。"
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
@@ -1415,6 +1420,9 @@ msgstr "FAQ承認チケット用　チケット本文"
 #. SysConfig
 msgid "Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
+"FAQ 記事の承認用チケットの件名。使用できる通知タグは <OTOBO_FAQ_NUMBER>"
+"、<OTOBO_FAQ_CATEGORYID>、<OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE>"
+"、<OTOBO_FAQ_STATEID> です。"
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
@@ -1435,4 +1443,3 @@ msgstr "公開 (全員)"
 #. SysConfig
 msgid "public (public)"
 msgstr "公開　(パブリック)"
-
