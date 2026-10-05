@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-14 05:33+0000\n"
-"PO-Revision-Date: 2026-10-05 03:41+0000\n"
+"PO-Revision-Date: 2026-10-05 05:41+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/faq-documentation/ja/>\n"
@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../content/index.rst:5
 msgid "Contents"
-msgstr ""
+msgstr "目次"
 
 #: ../content/index.rst:10
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../content/index.rst:11
 msgid "The FAQ/knowledge base."
@@ -35,11 +35,11 @@ msgstr ""
 
 #: ../content/index.rst:14
 msgid "System requirements"
-msgstr ""
+msgstr "システム要件"
 
 #: ../content/index.rst:17
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: ../content/index.rst:18
 msgid "OTOBO 11.1.x"
@@ -47,31 +47,31 @@ msgstr ""
 
 #: ../content/index.rst:21
 msgid "Packages"
-msgstr ""
+msgstr "パッケージ"
 
 #: ../content/index.rst:22 ../content/index.rst:26
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../content/index.rst:25
 msgid "Third-party software"
-msgstr ""
+msgstr "サードパーティ製ソフトウェア"
 
 #: ../content/index.rst:29
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../content/index.rst:32
 msgid "Setup"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../content/index.rst:35
 msgid "Configuration Reference"
-msgstr ""
+msgstr "設定リファレンス"
 
 #: ../content/index.rst:38
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../content/index.rst:41
 msgid "DynamicFields::Driver###FAQ"
@@ -79,11 +79,11 @@ msgstr ""
 
 #: ../content/index.rst:42
 msgid "DynamicField backend registration."
-msgstr ""
+msgstr "ダイナミックフィールドのバックエンドの登録。"
 
 #: ../content/index.rst:45
 msgid "Core::DynamicFields::ObjectTypeRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::ObjectTypeRegistration"
 
 #: ../content/index.rst:48
 msgid "DynamicFields::ObjectType###FAQ"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../content/index.rst:49
 msgid "DynamicField object registration."
-msgstr ""
+msgstr "ダイナミックフィールドのオブジェクトの登録。"
 
 #: ../content/index.rst:52
 msgid "Core::Elasticsearch::Settings"
@@ -154,7 +154,6 @@ msgid "FAQ::EventModulePost###9800-GenericInterface"
 msgstr ""
 
 #: ../content/index.rst:79
-#, fuzzy
 msgid ""
 "Performs the configured action for each event (as an Invoker) for each "
 "configured web service."
@@ -581,7 +580,7 @@ msgstr ""
 
 #: ../content/index.rst:307
 msgid "Core::LinkObject"
-msgstr ""
+msgstr "Core::LinkObject"
 
 #: ../content/index.rst:310
 msgid "LinkObject::PossibleLink###8301"
@@ -632,13 +631,12 @@ msgid "Events###FAQ"
 msgstr ""
 
 #: ../content/index.rst:330
-#, fuzzy
 msgid "List of all Package events to be displayed in the GUI."
 msgstr "GUI に表示するすべての Package イベントの一覧。"
 
 #: ../content/index.rst:333
 msgid "Frontend::Agent"
-msgstr ""
+msgstr "Frontend::Agent"
 
 #: ../content/index.rst:336
 msgid "FAQ::Agent::StateTypes"
@@ -692,7 +690,7 @@ msgstr ""
 
 #: ../content/index.rst:362
 msgid "Frontend::Agent::LinkObject"
-msgstr ""
+msgstr "Frontend::Agent::LinkObject"
 
 #: ../content/index.rst:365
 msgid "LinkObject::ComplexTable###FAQ"
@@ -717,10 +715,15 @@ msgid ""
 "Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
 "Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"リンクオブジェクト・ウィジェット（LinkObject::ViewMode = \"complex\"）で設定"
+"ボタンを使用できるアクションを定義します。これらのアクションには、次の JS お"
+"よび CSS ファイルが登録されている必要があります: Core.AllocationList.css、"
+"Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js"
+"、Core.Agent.LinkObject.js。"
 
 #: ../content/index.rst:373
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../content/index.rst:376
 msgid "Frontend::Module###AgentFAQAdd"
@@ -732,7 +735,7 @@ msgstr ""
 #: ../content/index.rst:413 ../content/index.rst:417 ../content/index.rst:421
 #: ../content/index.rst:425
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../content/index.rst:380
 msgid "Frontend::Module###AgentFAQCategory"
@@ -784,7 +787,7 @@ msgstr ""
 
 #: ../content/index.rst:428
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../content/index.rst:431
 msgid "Loader::Module::AgentFAQAdd###002-FAQ"
@@ -795,7 +798,7 @@ msgstr ""
 #: ../content/index.rst:456 ../content/index.rst:460 ../content/index.rst:840
 #: ../content/index.rst:844 ../content/index.rst:848 ../content/index.rst:852
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のローダーモジュールの登録。"
 
 #: ../content/index.rst:435
 msgid "Loader::Module::AgentFAQCategory###002-FAQ"
@@ -827,7 +830,7 @@ msgstr ""
 
 #: ../content/index.rst:463
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../content/index.rst:466
 msgid "Frontend::Navigation###AgentFAQAdd###002-FAQ"
@@ -837,7 +840,6 @@ msgstr ""
 #: ../content/index.rst:479 ../content/index.rst:483 ../content/index.rst:487
 #: ../content/index.rst:491 ../content/index.rst:859 ../content/index.rst:863
 #: ../content/index.rst:1008 ../content/index.rst:1012
-#, fuzzy
 msgid "Main menu item registration."
 msgstr "メインメニュー項目の登録。"
 
@@ -891,7 +893,7 @@ msgstr ""
 
 #: ../content/index.rst:508
 msgid "Frontend::Agent::View::Dashboard"
-msgstr ""
+msgstr "Frontend::Agent::View::Dashboard"
 
 #: ../content/index.rst:511
 msgid "DashboardBackend###0398-FAQ-LastChange"
@@ -930,13 +932,14 @@ msgid ""
 "Defines the height for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
+"この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #: ../content/index.rst:530
 msgid "FAQ::Frontend::AgentFAQAdd###RichTextWidth"
 msgstr ""
 
 #: ../content/index.rst:531 ../content/index.rst:546
-#, fuzzy
 msgid ""
 "Defines the width for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
@@ -1315,7 +1318,7 @@ msgstr ""
 
 #: ../content/index.rst:739
 msgid "Frontend::Agent::View::Preferences"
-msgstr ""
+msgstr "Frontend::Agent::View::Preferences"
 
 #: ../content/index.rst:742
 msgid "PreferencesGroups###FAQJournalOverviewSmallPageShown"
@@ -1339,7 +1342,7 @@ msgstr ""
 
 #: ../content/index.rst:750
 msgid "Frontend::Base::Loader"
-msgstr ""
+msgstr "Frontend::Base::Loader"
 
 #: ../content/index.rst:753
 msgid "Loader::Agent::CommonCSS###200-FAQ"
@@ -1347,7 +1350,7 @@ msgstr ""
 
 #: ../content/index.rst:754
 msgid "List of CSS files to always be loaded for the agent interface."
-msgstr ""
+msgstr "担当者インタフェースで常に読み込む CSS ファイルの一覧。"
 
 #: ../content/index.rst:757
 msgid "Loader::Agent::CommonJS###200-FAQ"
@@ -1355,11 +1358,11 @@ msgstr ""
 
 #: ../content/index.rst:758
 msgid "List of JS files to always be loaded for the agent interface."
-msgstr ""
+msgstr "担当者インタフェースで常に読み込む JS ファイルの一覧。"
 
 #: ../content/index.rst:761
 msgid "Frontend::Base::OutputFilter"
-msgstr ""
+msgstr "Frontend::Base::OutputFilter"
 
 #: ../content/index.rst:764
 msgid "Frontend::Output::FilterElementPost###FAQ"
@@ -1464,7 +1467,7 @@ msgstr ""
 
 #: ../content/index.rst:813
 msgid "Frontend::Customer::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration"
 
 #: ../content/index.rst:816
 msgid "CustomerFrontend::Module###CustomerFAQExplorer"
@@ -1473,7 +1476,7 @@ msgstr ""
 #: ../content/index.rst:817 ../content/index.rst:821 ../content/index.rst:825
 #: ../content/index.rst:829 ../content/index.rst:833
 msgid "Frontend module registration for the customer interface."
-msgstr ""
+msgstr "顧客インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../content/index.rst:820
 msgid "CustomerFrontend::Module###CustomerFAQPrint"
@@ -1493,7 +1496,7 @@ msgstr ""
 
 #: ../content/index.rst:836
 msgid "Frontend::Customer::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::Loader"
 
 #: ../content/index.rst:839
 msgid "Loader::Module::CustomerFAQExplorer###002-FAQ"
@@ -1513,7 +1516,7 @@ msgstr ""
 
 #: ../content/index.rst:855
 msgid "Frontend::Customer::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::MainMenu"
 
 #: ../content/index.rst:858
 msgid "CustomerFrontend::Navigation###CustomerFAQExplorer###002-FAQ"
@@ -1735,7 +1738,7 @@ msgstr ""
 
 #: ../content/index.rst:964
 msgid "Frontend::Public::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Public::ModuleRegistration"
 
 #: ../content/index.rst:967
 msgid "Loader::Module::PublicFAQExplorer###002-FAQ"
@@ -1948,7 +1951,6 @@ msgid "GenericInterface::Invoker::Module###Elasticsearch::FAQManagement"
 msgstr ""
 
 #: ../content/index.rst:1087
-#, fuzzy
 msgid "GenericInterface module registration for the invoker layer."
 msgstr "Invoker レイヤー用の GenericInterface モジュール登録。"
 
@@ -1962,7 +1964,6 @@ msgstr ""
 
 #: ../content/index.rst:1094 ../content/index.rst:1098
 #: ../content/index.rst:1102 ../content/index.rst:1106
-#, fuzzy
 msgid "GenericInterface module registration for the operation layer."
 msgstr "オペレーションレイヤー用の GenericInterface モジュール登録。"
 
@@ -1980,30 +1981,32 @@ msgstr ""
 
 #: ../content/index.rst:1109
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: ../content/index.rst:1112
 msgid "Contact"
-msgstr ""
+msgstr "連絡先"
 
 #: ../content/index.rst:1113
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../content/index.rst:1114
 msgid "Email: hello@otobo.io"
-msgstr ""
+msgstr "メール: hello@otobo.io"
 
 #: ../content/index.rst:1115
 msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Web: https://otobo.io"
 
 #: ../content/index.rst:1118
 msgid "Version"
-msgstr ""
+msgstr "バージョン"
 
 #: ../content/index.rst:1119
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
+"作成者: |doc-vendor| / バージョン: |doc-version| / リリース日: |doc-"
+"datestamp|"
