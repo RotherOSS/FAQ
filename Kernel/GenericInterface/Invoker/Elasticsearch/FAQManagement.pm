@@ -28,7 +28,8 @@ use MIME::Base64 qw(encode_base64);
 # CPAN modules
 
 # OTOBO modules
-use Kernel::System::VariableCheck qw(:all);
+use Kernel::System::VariableCheck                                      qw(:all);
+use Kernel::GenericInterface::Invoker::Elasticsearch::ManagementCommon qw(RemoveESWeightedSearchBoostSuffix);
 
 our $ObjectManagerDisabled = 1;
 
@@ -338,8 +339,10 @@ sub PrepareRequest {
     my $API = $Param{Data}{Event} eq 'FAQCreate' ? '_doc' : '_update';
 
     # gather all fields which have to be stored
-    my $Store              = $ConfigObject->Get('Elasticsearch::FAQStoreFields');
-    my $Search             = $ConfigObject->Get('Elasticsearch::FAQSearchFields');
+    my $Store  = $ConfigObject->Get('Elasticsearch::FAQStoreFields');
+    my $Search = RemoveESWeightedSearchBoostSuffix(
+        Data => $ConfigObject->Get('Elasticsearch::FAQSearchFields')
+    );
     my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
     my %DataToStore;
     for my $Field ( @{ $Store->{Basic} }, @{ $Search->{Basic} } ) {
