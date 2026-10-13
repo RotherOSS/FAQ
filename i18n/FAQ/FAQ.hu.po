@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2026-08-06 10:08+0000\n"
-"PO-Revision-Date: 2026-08-13 11:10+0000\n"
+"PO-Revision-Date: 2026-10-13 14:41+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/faq/hu/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
@@ -1007,7 +1007,7 @@ msgid ""
 "Defines the height for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
-"Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a "
+"Meghatározza a Rich Text szerkesztő komponens magasságát ennél a "
 "képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
 #. SysConfig
@@ -1035,6 +1035,7 @@ msgstr ""
 #. SysConfig
 msgid "Defines the parameters for the elasticsearch widget backend."
 msgstr ""
+"Meghatározza az Elasticsearch felületi elem háttérprogramjának paramétereit."
 
 #. SysConfig
 msgid ""
