@@ -148,6 +148,9 @@ sub Data {
 
     # Template: CustomerFAQRelatedArticles
     $Self->{Translation}->{'This might be helpful'} = 'Hilfreiche Artikel';
+    $Self->{Translation}->{'One helpful faq article found.'} = 'Es wurde ein passender FAQ Artikel gefunden.';
+    $Self->{Translation}->{'%s helpful faq articles found.'} = 'Es wurden %s passende FAQ Artikel gefunden.';
+    $Self->{Translation}->{'Could not load helpful faq articles.'} = 'Die hilfreichen FAQ Artikel konnten nicht geladen werden.';
     $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = 'Leider wurden keine passenden Artikel gefunden.';
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = 'Nach dem Eintippen eines Betreffs oder Textes werden hier passende Artikel angezeigt.';
 

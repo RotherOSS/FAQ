@@ -14,12 +14,10 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 # --
 
-
-<div class="WidgetSimple">
+<div class="WidgetSimple"[% IF Data.RelatedFAQArticleList.size == 1 %] data-status-message="[% Translate("One helpful faq article found.") | html %]"[% ELSIF Data.RelatedFAQArticleList.size %] data-status-message="[% Translate("%s helpful faq articles found.", Data.RelatedFAQArticleList.size) | html %]"[% ELSIF Data.RelatedFAQArticleFoundNothing %] data-status-message="[% Translate("Found no helpful resources for the subject and text.") | html %]"[% END %]>
 
     <div class="Header">
-        <h3>[% Translate("This might be helpful") | html %]</h3>
-        <div class="Clear"></div>
+        <h2 id="FAQRelatedArticlesHeading">[% Translate("This might be helpful") | html %]</h2>
     </div>
 
     <div class="Content">
@@ -28,7 +26,7 @@
         [% FOREACH FAQArticle IN Data.RelatedFAQArticleList %]
             <li>
                 <hr>
-                <a class='RelatedFAQArticleList oool' href="[% Env("Baselink") %]Action=CustomerFAQZoom;ItemID=[% FAQArticle.ItemID | uri %]" target="_blank" title="[% FAQArticle.Title | html %] ([% FAQArticle.CategoryName | html %])">
+                <a class='RelatedFAQArticleList oool' href="[% Env("Baselink") %]Action=CustomerFAQZoom;ItemID=[% FAQArticle.ItemID | uri %]" target="_blank">
                     [% FAQArticle.Title | html %]
                 </a>
 #            [% IF FAQArticle.Votes && Data.VoteStarsVisible && FAQArticle.StarCounter >= Data.VoteStarsVisible %]
@@ -46,4 +44,3 @@
     [% END %]
     </div>
 </div>
-<div class="Clear"></div>
