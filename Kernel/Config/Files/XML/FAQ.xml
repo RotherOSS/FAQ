@@ -230,7 +230,7 @@
         </Value>
     </Setting>
     <Setting Name="FAQ::ApprovalTicketSubject" Required="1" Valid="1">
-        <Description Translatable="1">Ticket subject for approval of FAQ article. Permitted notification tags are &lt;OTOBO_FAQ_NUMBER&gt;, &lt;OTOBO_FAQ_CATEGORYID&gt;, &lt;OTOBO_FAQ_ITEMID>&gt; &lt;OTOBO_FAQ_TITLE&gt; and &lt;OTOBO_FAQ_STATEID&gt;.</Description>
+        <Description Translatable="1">Ticket subject for approval of FAQ article. Permitted notification tags are &lt;OTOBO_FAQ_NUMBER&gt;, &lt;OTOBO_FAQ_CATEGORYID&gt;, &lt;OTOBO_FAQ_ITEMID&gt;, &lt;OTOBO_FAQ_TITLE&gt; and &lt;OTOBO_FAQ_STATEID&gt;.</Description>
         <Navigation>Core::FAQ::Approval</Navigation>
         <Value>
             <Item ValueType="String">FAQ approval required for FAQ# &lt;OTOBO_FAQ_NUMBER&gt;</Item>
