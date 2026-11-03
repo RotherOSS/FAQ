@@ -2,21 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2024-05-16 07:28+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-11-03 14:38+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"Language-Team: English (United Kingdom) <http://translate.otobo.org/projects/"
+"otobo-10-1/addons/faq/en_GB/>\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. Template: AgentFAQAdd
 msgid "Add FAQ Article"
 msgstr "Add FAQ Article"
 
 #. Template: AgentFAQAdd
+#, fuzzy
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "All fields marked with an asterisk (*) are mandatory."
 
 #. Template: AgentFAQAdd
 msgid "Keywords"
@@ -419,16 +423,18 @@ msgid "You need rw permission!"
 msgstr "You need rw permission!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
+#, fuzzy
 msgid "No categories found where user has read/write permissions!"
-msgstr ""
+msgstr "No categories found where user has read/write permissions!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No default language found and can't create a new one."
 msgstr "No default language found and can't create a new one."
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
+#, fuzzy
 msgid "Need CategoryID!"
-msgstr ""
+msgstr "Need CategoryID!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
@@ -447,8 +453,9 @@ msgid "No CategoryID is given!"
 msgstr "No CategoryID is given!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
+#, fuzzy
 msgid "Was not able to delete the category %s!"
-msgstr ""
+msgstr "Was not able to delete the category %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
@@ -463,16 +470,19 @@ msgid "Delete Category"
 msgstr "Delete Category"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
+#, fuzzy
 msgid "No ItemID is given!"
-msgstr ""
+msgstr "No ItemID is given!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
+#, fuzzy
 msgid "You have no permission for this category!"
-msgstr ""
+msgstr "You have no permission for this category!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
+#, fuzzy
 msgid "Was not able to delete the FAQ article %s!"
-msgstr ""
+msgstr "Was not able to delete the FAQ article %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
@@ -491,20 +501,24 @@ msgid "FAQ Journal"
 msgstr "FAQ Journal"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
+#, fuzzy
 msgid "Need config option FAQ::Frontend::Overview"
-msgstr ""
+msgstr "Need config option FAQ::Frontend::Overview"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
+#, fuzzy
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
-msgstr ""
+msgstr "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
+#, fuzzy
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
+msgstr "No config option found for the view \"%s\"!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
+#, fuzzy
 msgid "No LanguageID is given!"
-msgstr ""
+msgstr "No LanguageID is given!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
@@ -515,8 +529,9 @@ msgid "This language already exists!"
 msgstr "This language already exists!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
+#, fuzzy
 msgid "Was not able to delete the language %s!"
-msgstr ""
+msgstr "Was not able to delete the language %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
@@ -547,8 +562,9 @@ msgid "No %s is given!"
 msgstr "No %s is given!"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
+#, fuzzy
 msgid "Can't load LanguageObject!"
-msgstr ""
+msgstr "Can't load LanguageObject!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
@@ -563,44 +579,54 @@ msgid "Last Changed by"
 msgstr "Last Changed by"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "FAQ Item Create Time (before/after)"
-msgstr ""
+msgstr "FAQ Item Create Time (before/after)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "FAQ Item Create Time (between)"
-msgstr ""
+msgstr "FAQ Item Create Time (between)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "FAQ Item Change Time (before/after)"
-msgstr ""
+msgstr "FAQ Item Change Time (before/after)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "FAQ Item Change Time (between)"
-msgstr ""
+msgstr "FAQ Item Change Time (between)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "Equals"
-msgstr ""
+msgstr "Equals"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "Greater than"
-msgstr ""
+msgstr "Greater than"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "Greater than equals"
-msgstr ""
+msgstr "Greater than equals"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "Smaller than"
-msgstr ""
+msgstr "Smaller than"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
+#, fuzzy
 msgid "Smaller than equals"
-msgstr ""
+msgstr "Smaller than equals"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
+#, fuzzy
 msgid "Need FileID!"
-msgstr ""
+msgstr "Need FileID!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
@@ -615,24 +641,28 @@ msgid "No rate selected!"
 msgstr "No rate selected!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
+#, fuzzy
 msgid "The voting mechanism is not enabled!"
-msgstr ""
+msgstr "The voting mechanism is not enabled!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
+#, fuzzy
 msgid "The vote rate is not defined!"
-msgstr ""
+msgstr "The vote rate is not defined!"
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
 msgstr "FAQ Article Print"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
+#, fuzzy
 msgid "Created between"
-msgstr ""
+msgstr "Created between"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
+#, fuzzy
 msgid "Need ItemID!"
-msgstr ""
+msgstr "Need ItemID!"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
@@ -647,16 +677,19 @@ msgid "FAQ Articles (Top 10)"
 msgstr "FAQ Articles (Top 10)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
+#, fuzzy
 msgid "No Type is given!"
-msgstr ""
+msgstr "No Type is given!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
+#, fuzzy
 msgid "Type must be either LastCreate or LastChange or Top10!"
-msgstr ""
+msgstr "Type must be either LastCreate or LastChange or Top10!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
+#, fuzzy
 msgid "Can't create RSS file!"
-msgstr ""
+msgstr "Can't create RSS file!"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
 msgid "%s (FAQFulltext)"
@@ -679,8 +712,9 @@ msgid "%s - Public (FAQFulltext)"
 msgstr "%s - Public (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
+#, fuzzy
 msgid "Need rate!"
-msgstr ""
+msgstr "Need rate!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
@@ -695,8 +729,9 @@ msgid "Top 10 FAQ articles"
 msgstr "Top 10 FAQ articles"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
+#, fuzzy
 msgid "Content Type"
-msgstr ""
+msgstr "Content Type"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
@@ -735,20 +770,23 @@ msgid "Category Management"
 msgstr "Category Management"
 
 #. SysConfig
+#, fuzzy
 msgid "Category Management."
-msgstr ""
+msgstr "Category Management."
 
 #. SysConfig
 msgid "Customer FAQ Print."
 msgstr "Customer FAQ Print."
 
 #. SysConfig
+#, fuzzy
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "Customer FAQ Related Articles"
 
 #. SysConfig
+#, fuzzy
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "Customer FAQ Related Articles."
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
@@ -799,16 +837,26 @@ msgid "Default value for the Action parameter for the public frontend. The Actio
 msgstr "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
 
 #. SysConfig
+#, fuzzy
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"Define Actions where a settings button is available in the linked objects "
+"widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions "
+"must have registered the following JS and CSS files: "
+"Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
+"Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
 msgstr "Define if the FAQ title should be concatenated to article subject."
 
 #. SysConfig
+#, fuzzy
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Define which columns are shown in the linked FAQs widget "
+"(LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic "
+"fields (DynamicField_NameX) are allowed for DefaultColumns."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
@@ -903,60 +951,79 @@ msgid "Delete this FAQ"
 msgstr "Delete this FAQ"
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ add screen of the agent interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ edit screen of the agent interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
 msgstr ""
+"Dynamic fields shown in the FAQ overview screen of the customer interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
+"Dynamic fields shown in the FAQ overview screen of the public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ print screen of the agent interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ print screen of the customer interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ print screen of the public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ search screen of the agent interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
 msgstr ""
+"Dynamic fields shown in the FAQ search screen of the customer interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ search screen of the public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
 msgstr ""
+"Dynamic fields shown in the FAQ small format overview screen of the agent "
+"interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ zoom screen of the agent interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ zoom screen of the customer interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
-msgstr ""
+msgstr "Dynamic fields shown in the FAQ zoom screen of the public interface."
 
 #. SysConfig
 msgid "Edit this FAQ"
@@ -967,12 +1034,14 @@ msgid "Enable multiple languages on FAQ module."
 msgstr "Enable multiple languages on FAQ module."
 
 #. SysConfig
+#, fuzzy
 msgid "Enable service assignment for FAQs."
-msgstr ""
+msgstr "Enable service assignment for FAQs."
 
 #. SysConfig
+#, fuzzy
 msgid "Enable the related article feature for the customer frontend."
-msgstr ""
+msgstr "Enable the related article feature for the customer frontend."
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
@@ -1007,8 +1076,9 @@ msgid "FAQ Edit."
 msgstr "FAQ Edit."
 
 #. SysConfig
+#, fuzzy
 msgid "FAQ History."
-msgstr ""
+msgstr "FAQ History."
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
@@ -1067,20 +1137,23 @@ msgid "Language Management"
 msgstr "Language Management"
 
 #. SysConfig
+#, fuzzy
 msgid "Language Management."
-msgstr ""
+msgstr "Language Management."
 
 #. SysConfig
+#, fuzzy
 msgid "Limit for the search to build the keyword FAQ article list."
-msgstr ""
+msgstr "Limit for the search to build the keyword FAQ article list."
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
 msgstr "Link another object to this FAQ item"
 
 #. SysConfig
+#, fuzzy
 msgid "List of queue names for which the related article feature is enabled."
-msgstr ""
+msgstr "List of queue names for which the related article feature is enabled."
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
@@ -1095,8 +1168,9 @@ msgid "List of state types which can be used in the public interface."
 msgstr "List of state types which can be used in the public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "Loader module registration for the public interface."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
@@ -1155,20 +1229,25 @@ msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journa
 msgstr "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
 msgstr ""
+"Module to generate HTML OpenSearch profile for short FAQ search in the "
+"customer interface."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
 msgstr "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Module to generate html OpenSearch profile for short FAQ search."
-msgstr ""
+msgstr "Module to generate html OpenSearch profile for short FAQ search."
 
 #. SysConfig
+#, fuzzy
 msgid "New FAQ Article."
-msgstr ""
+msgstr "New FAQ Article."
 
 #. SysConfig
 msgid "New FAQ articles need approval before they get published."
@@ -1203,12 +1282,14 @@ msgid "Number of shown items in the top 10 feature."
 msgstr "Number of shown items in the top 10 feature."
 
 #. SysConfig
+#, fuzzy
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
-msgstr ""
+msgstr "Output filter to add Java-script to CustomerTicketMessage screen."
 
 #. SysConfig
+#, fuzzy
 msgid "Output limit for the related FAQ articles."
-msgstr ""
+msgstr "Output limit for the related FAQ articles."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
@@ -1255,20 +1336,26 @@ msgid "Search FAQ"
 msgstr "Search FAQ"
 
 #. SysConfig
+#, fuzzy
 msgid "Search FAQ Small."
-msgstr ""
+msgstr "Search FAQ Small."
 
 #. SysConfig
+#, fuzzy
 msgid "Search FAQ."
-msgstr ""
+msgstr "Search FAQ."
 
 #. SysConfig
+#, fuzzy
 msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
 msgstr ""
+"Select how many items should be shown in Journal Overview \"Small\" by "
+"default."
 
 #. SysConfig
+#, fuzzy
 msgid "Select how many items should be shown in Overview \"Small\" by default."
-msgstr ""
+msgstr "Select how many items should be shown in Overview \"Small\" by default."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
@@ -1307,8 +1394,9 @@ msgid "Show FAQ path yes/no."
 msgstr "Show FAQ path yes/no."
 
 #. SysConfig
+#, fuzzy
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
-msgstr ""
+msgstr "Show invalid items in the FAQ Explorer result of the agent interface."
 
 #. SysConfig
 msgid "Show items of subcategories."
@@ -1323,12 +1411,17 @@ msgid "Show last created items in defined interfaces."
 msgstr "Show last created items in defined interfaces."
 
 #. SysConfig
+#, fuzzy
 msgid "Show related articles on service change even with empty subject and body."
 msgstr ""
+"Show related articles on service change even with empty subject and body."
 
 #. SysConfig
+#, fuzzy
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
 msgstr ""
+"Show the stars for the articles with a rating equal or greater like the "
+"defined value (set value '0' to deactivate the output)."
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
@@ -1375,8 +1468,9 @@ msgid "Text Only"
 msgstr "Text Only"
 
 #. SysConfig
+#, fuzzy
 msgid "The default languages for the related FAQ articles."
-msgstr ""
+msgstr "The default languages for the related FAQ articles."
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
@@ -1427,374 +1521,576 @@ msgid "public (public)"
 msgstr "public (public)"
 
 #. Template: AgentFAQLanguage
+#, fuzzy
 msgid "Do you really want to delete this language?"
-msgstr ""
+msgstr "Do you really want to delete this language?"
 
 #. SysConfig
+#, fuzzy
 msgid "A precentage value of the minimal translation progress per language, to be usable for documentations."
 msgstr ""
+"A precentage value of the minimal translation progress per language, to be "
+"usable for documentations."
 
 #. SysConfig
+#, fuzzy
 msgid "Access repos via http or https."
-msgstr ""
+msgstr "Access repos via http or https."
 
 #. SysConfig
+#, fuzzy
 msgid "Autoloading of Znuny4OTRSRepo extensions."
-msgstr ""
+msgstr "Autoloading of Znuny4OTRSRepo extensions."
 
 #. SysConfig
+#, fuzzy
 msgid "Backend module registration for the config conflict check module."
-msgstr ""
+msgstr "Backend module registration for the config conflict check module."
 
 #. SysConfig
+#, fuzzy
 msgid "Backend module registration for the file conflict check module."
-msgstr ""
+msgstr "Backend module registration for the file conflict check module."
 
 #. SysConfig
+#, fuzzy
 msgid "Backend module registration for the function redefine check module."
-msgstr ""
+msgstr "Backend module registration for the function redefine check module."
 
 #. SysConfig
+#, fuzzy
 msgid "Backend module registration for the manual set module."
-msgstr ""
+msgstr "Backend module registration for the manual set module."
 
 #. SysConfig
+#, fuzzy
 msgid "Block hooks to be created for BS ad removal."
-msgstr ""
+msgstr "Block hooks to be created for BS ad removal."
 
 #. SysConfig
+#, fuzzy
 msgid "Block hooks to be created for package manager output filter."
-msgstr ""
+msgstr "Block hooks to be created for package manager output filter."
 
 #. SysConfig
+#, fuzzy
 msgid "Branch View commit limit"
-msgstr ""
+msgstr "Branch View commit limit"
 
 #. SysConfig
+#, fuzzy
 msgid "CodePolicy"
-msgstr ""
+msgstr "CodePolicy"
 
 #. SysConfig
+#, fuzzy
 msgid "Commit limit per page for Branch view screen"
-msgstr ""
+msgstr "Commit limit per page for Branch view screen"
 
 #. SysConfig
+#, fuzzy
 msgid "Create analysis file"
-msgstr ""
+msgstr "Create analysis file"
 
 #. SysConfig
+#, fuzzy
 msgid "Creates a analysis file from this ticket and sends to Znuny."
-msgstr ""
+msgstr "Creates a analysis file from this ticket and sends to Znuny."
 
 #. SysConfig
+#, fuzzy
 msgid "Creates a analysis file from this ticket."
-msgstr ""
+msgstr "Creates a analysis file from this ticket."
 
 #. SysConfig
+#, fuzzy
 msgid "Define private addon repos."
-msgstr ""
+msgstr "Define private addon repos."
 
 #. SysConfig
+#, fuzzy
 msgid "Defines the filter that processes the HTML templates."
-msgstr ""
+msgstr "Defines the filter that processes the HTML templates."
 
 #. SysConfig
+#, fuzzy
 msgid "Defines the test module for checking code policy."
-msgstr ""
+msgstr "Defines the test module for checking code policy."
 
 #. SysConfig
+#, fuzzy
 msgid "Definition of GIT clone/push URL Prefix."
-msgstr ""
+msgstr "Definition of GIT clone/push URL Prefix."
 
 #. SysConfig
+#, fuzzy
 msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
 msgstr ""
+"Definition of a Dynamic Field: Group => Group with access to the Dynamic "
+"Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => "
+"Name of the Widgets; InformationAreaSize => Size and position of the widgets "
+"(Large|Small); Name => Name of the Dynamic Field which should be used; "
+"Priority => Order of the Dynamic Fields; State => State of the Fields (0 = "
+"disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the "
+"repository name has to match to be displayed, FilterPackage => Regex which "
+"the package name has to match to be displayed, FilterBranch => Regex which "
+"the branch name has to match to be displayed, FilterRelease => Regex which "
+"the repelase version string has to match to be displayed."
 
 #. SysConfig
+#, fuzzy
 msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
 msgstr ""
+"Definition of a Dynamic Field: Group => Group with access to the Dynamic "
+"Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => "
+"Name of the Widgets; InformationAreaSize => Size and position of the widgets "
+"(Large|Small); Name => Name of the Dynamic Field which should be used; "
+"Priority => Order of the Dynamic Fields; State => State of the Fields (0 = "
+"disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the "
+"repository name has to match to be displayed, FilterPackage => Regex which "
+"the package name has to match to be displayed, FilterBranch => Regex which "
+"the branch name has to match to be displayed, FilterRelease => Regex which "
+"the repelase version string has to match to be displayed."
 
 #. SysConfig
+#, fuzzy
 msgid "Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date)."
 msgstr ""
+"Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, "
+"Version, Date)."
 
 #. SysConfig
+#, fuzzy
 msgid "Definition of mappings between public repository requests and internal OPMS repositories."
 msgstr ""
+"Definition of mappings between public repository requests and internal OPMS "
+"repositories."
 
 #. SysConfig
+#, fuzzy
 msgid "Definition of package states."
-msgstr ""
+msgstr "Definition of package states."
 
 #. SysConfig
+#, fuzzy
 msgid "Definition of renamed OPMS packages."
-msgstr ""
+msgstr "Definition of renamed OPMS packages."
 
 #. SysConfig
+#, fuzzy
 msgid "Directory, which is used by Git to cache repositories."
-msgstr ""
+msgstr "Directory, which is used by Git to cache repositories."
 
 #. SysConfig
+#, fuzzy
 msgid "Directory, which is used by Git to store temporary data."
-msgstr ""
+msgstr "Directory, which is used by Git to store temporary data."
 
 #. SysConfig
+#, fuzzy
 msgid "Directory, which is used by Git to store working copies."
-msgstr ""
+msgstr "Directory, which is used by Git to store working copies."
 
 #. SysConfig
+#, fuzzy
 msgid "Disable online repositories."
-msgstr ""
+msgstr "Disable online repositories."
 
 #. SysConfig
+#, fuzzy
 msgid "Do not log git ssh connection authorization results for these users. Useful for automated stuff."
 msgstr ""
+"Do not log git ssh connection authorization results for these users. Useful "
+"for automated stuff."
 
 #. SysConfig
+#, fuzzy
 msgid "Dynamic Fields Screens"
-msgstr ""
+msgstr "Dynamic Fields Screens"
 
 #. SysConfig
+#, fuzzy
 msgid "DynamicFieldScreen"
-msgstr ""
+msgstr "DynamicFieldScreen"
 
 #. SysConfig
+#, fuzzy
 msgid "Export all available public keys to authorized_keys file."
-msgstr ""
+msgstr "Export all available public keys to authorized_keys file."
 
 #. SysConfig
+#, fuzzy
 msgid "Export all relevant releases to ftp server."
-msgstr ""
+msgstr "Export all relevant releases to ftp server."
 
 #. SysConfig
+#, fuzzy
 msgid "Frontend module registration for the OPMS object in the agent interface."
 msgstr ""
+"Frontend module registration for the OPMS object in the agent interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Frontend module registration for the PublicOPMSRepository object in the public interface."
 msgstr ""
+"Frontend module registration for the PublicOPMSRepository object in the "
+"public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface."
 msgstr ""
+"Frontend module registration for the PublicOPMSRepositoryLookup object in "
+"the public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Frontend module registration for the PublicOPMSTestBuild object in the public interface."
 msgstr ""
+"Frontend module registration for the PublicOPMSTestBuild object in the "
+"public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Frontend module registration for the PublicPackageVerification object in the public interface."
 msgstr ""
+"Frontend module registration for the PublicPackageVerification object in the "
+"public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Frontend module registration for the admin interface."
-msgstr ""
+msgstr "Frontend module registration for the admin interface."
 
 #. SysConfig
+#, fuzzy
 msgid "GIT Author registration."
-msgstr ""
+msgstr "GIT Author registration."
 
 #. SysConfig
+#, fuzzy
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Generate HTML comment hooks for the specified blocks so that filters can use "
+"them."
 
 #. SysConfig
+#, fuzzy
 msgid "Generate documentations once per night."
-msgstr ""
+msgstr "Generate documentations once per night."
 
 #. SysConfig
+#, fuzzy
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #. SysConfig
+#, fuzzy
 msgid "Git Management"
-msgstr ""
+msgstr "Git Management"
 
 #. SysConfig
+#, fuzzy
 msgid "Git Repository"
-msgstr ""
+msgstr "Git Repository"
 
 #. SysConfig
+#, fuzzy
 msgid "Group, whose members have delete admin permissions in OPMS."
-msgstr ""
+msgstr "Group, whose members have delete admin permissions in OPMS."
 
 #. SysConfig
+#, fuzzy
 msgid "Group, whose members have repository admin permissions in OPMS."
-msgstr ""
+msgstr "Group, whose members have repository admin permissions in OPMS."
 
 #. SysConfig
+#, fuzzy
 msgid "Group, whose members will see CI test result information in OPMS screens."
 msgstr ""
+"Group, whose members will see CI test result information in OPMS screens."
 
 #. SysConfig
+#, fuzzy
 msgid "Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface."
 msgstr ""
+"Groups an authenticated user (by user login and password) must be member of "
+"to build test packages via the public interface."
 
 #. SysConfig
+#, fuzzy
 msgid "Groups which will be set during git project creation processes while adding OPMS repositories."
 msgstr ""
+"Groups which will be set during git project creation processes while adding "
+"OPMS repositories."
 
 #. SysConfig
+#, fuzzy
 msgid "Manage dynamic field in screens."
-msgstr ""
+msgstr "Manage dynamic field in screens."
 
 #. SysConfig
+#, fuzzy
 msgid "Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key."
 msgstr ""
+"Manage your public SSH key(s) for Git access here. Make sure to save this "
+"preference when you add a new key."
 
 #. SysConfig
+#, fuzzy
 msgid "Module to generate statistics about the added code lines."
-msgstr ""
+msgstr "Module to generate statistics about the added code lines."
 
 #. SysConfig
+#, fuzzy
 msgid "Module to generate statistics about the growth of code."
-msgstr ""
+msgstr "Module to generate statistics about the growth of code."
 
 #. SysConfig
+#, fuzzy
 msgid "Module to generate statistics about the number of git commits."
-msgstr ""
+msgstr "Module to generate statistics about the number of git commits."
 
 #. SysConfig
+#, fuzzy
 msgid "Module to generate statistics about the removed code lines."
-msgstr ""
+msgstr "Module to generate statistics about the removed code lines."
 
 #. SysConfig
+#, fuzzy
 msgid "OPMS"
-msgstr ""
+msgstr "OPMS"
 
 #. SysConfig
+#, fuzzy
 msgid "Only users who have rw permissions in one of these groups may access git."
 msgstr ""
+"Only users who have rw permissions in one of these groups may access git."
 
 #. SysConfig
+#, fuzzy
 msgid "Option to set a package compatibility manually."
-msgstr ""
+msgstr "Option to set a package compatibility manually."
 
 #. SysConfig
+#, fuzzy
 msgid "Parameters for the pages in the BranchView screen."
-msgstr ""
+msgstr "Parameters for the pages in the BranchView screen."
 
 #. SysConfig
+#, fuzzy
 msgid "Pre-Definition of the 'GITProjectName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
 msgstr ""
+"Pre-Definition of the 'GITProjectName' Dynamic Field: Group => Group with "
+"access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); "
+"InformationAreaName => Name of the Widgets; InformationAreaSize => Size and "
+"position of the widgets (Large|Small); Name => Name of the Dynamic Field "
+"which should be used; Priority => Order of the Dynamic Fields; State => "
+"State of the Fields (0 = disabled, 1 = active, 2 = mandatory), "
+"FilterRepository => Regex which the repository name has to match to be "
+"displayed, FilterPackage => Regex which the package name has to match to be "
+"displayed, FilterBranch => Regex which the branch name has to match to be "
+"displayed, FilterRelease => Regex which the repelase version string has to "
+"match to be displayed."
 
 #. SysConfig
+#, fuzzy
 msgid "Pre-Definition of the 'GITRepositoryName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
 msgstr ""
+"Pre-Definition of the 'GITRepositoryName' Dynamic Field: Group => Group with "
+"access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); "
+"InformationAreaName => Name of the Widgets; InformationAreaSize => Size and "
+"position of the widgets (Large|Small); Name => Name of the Dynamic Field "
+"which should be used; Priority => Order of the Dynamic Fields; State => "
+"State of the Fields (0 = disabled, 1 = active, 2 = mandatory), "
+"FilterRepository => Regex which the repository name has to match to be "
+"displayed, FilterPackage => Regex which the package name has to match to be "
+"displayed, FilterBranch => Regex which the branch name has to match to be "
+"displayed, FilterRelease => Regex which the repelase version string has to "
+"match to be displayed."
 
 #. SysConfig
+#, fuzzy
 msgid "Pre-Definition of the 'PackageDeprecated' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
 msgstr ""
+"Pre-Definition of the 'PackageDeprecated' Dynamic Field: Group => Group with "
+"access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); "
+"InformationAreaName => Name of the Widgets; InformationAreaSize => Size and "
+"position of the widgets (Large|Small); Name => Name of the Dynamic Field "
+"which should be used; Priority => Order of the Dynamic Fields; State => "
+"State of the Fields (0 = disabled, 1 = active, 2 = mandatory), "
+"FilterRepository => Regex which the repository name has to match to be "
+"displayed, FilterPackage => Regex which the package name has to match to be "
+"displayed, FilterBranch => Regex which the branch name has to match to be "
+"displayed, FilterRelease => Regex which the repelase version string has to "
+"match to be displayed."
 
 #. SysConfig
+#, fuzzy
 msgid "Recipients that will be informed by email in case of errors."
-msgstr ""
+msgstr "Recipients that will be informed by email in case of errors."
 
 #. SysConfig
+#, fuzzy
 msgid "SSH Keys for Git Access"
-msgstr ""
+msgstr "SSH Keys for Git Access"
 
 #. SysConfig
+#, fuzzy
 msgid "Send analysis file"
-msgstr ""
+msgstr "Send analysis file"
 
 #. SysConfig
+#, fuzzy
 msgid "Sets the git clone address to be used in repository listings."
-msgstr ""
+msgstr "Sets the git clone address to be used in repository listings."
 
 #. SysConfig
+#, fuzzy
 msgid "Sets the home directory for git repositories."
-msgstr ""
+msgstr "Sets the home directory for git repositories."
 
 #. SysConfig
+#, fuzzy
 msgid "Sets the path for the BugzillaAddComment post receive script location."
-msgstr ""
+msgstr "Sets the path for the BugzillaAddComment post receive script location."
 
 #. SysConfig
+#, fuzzy
 msgid "Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
 msgstr ""
+"Sets the path for the OTRSCodePolicy  script location. It is recommended to "
+"have a separate clone of the OTRSCodePolicy module that is updated via cron."
 
 #. SysConfig
+#, fuzzy
 msgid "Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
 msgstr ""
+"Sets the path for the OTRSCodePolicy pre receive script location. It is "
+"recommended to have a separate clone of the OTRSCodePolicy module that is "
+"updated via cron."
 
 #. SysConfig
+#, fuzzy
 msgid "Show latest commits in git repositories."
-msgstr ""
+msgstr "Show latest commits in git repositories."
 
 #. SysConfig
+#, fuzzy
 msgid "Shows a link in the menu to go create a unit test from the current ticket."
 msgstr ""
+"Shows a link in the menu to go create a unit test from the current ticket."
 
 #. SysConfig
+#, fuzzy
 msgid "Synchronize OPMS tables with a remote database."
-msgstr ""
+msgstr "Synchronize OPMS tables with a remote database."
 
 #. SysConfig
+#, fuzzy
 msgid "The minimum version of the sphinx library."
-msgstr ""
+msgstr "The minimum version of the sphinx library."
 
 #. SysConfig
+#, fuzzy
 msgid "The name of the sphinx theme to be used."
-msgstr ""
+msgstr "The name of the sphinx theme to be used."
 
 #. SysConfig
+#, fuzzy
 msgid "The path to the OTRS CSS file (relative below the static path)."
-msgstr ""
+msgstr "The path to the OTRS CSS file (relative below the static path)."
 
 #. SysConfig
+#, fuzzy
 msgid "The path to the OTRS logo (relative below the static path)."
-msgstr ""
+msgstr "The path to the OTRS logo (relative below the static path)."
 
 #. SysConfig
+#, fuzzy
 msgid "The path to the static folder, containing images and css files."
-msgstr ""
+msgstr "The path to the static folder, containing images and css files."
 
 #. SysConfig
+#, fuzzy
 msgid "The path to the theme folder, containing the sphinx themes."
-msgstr ""
+msgstr "The path to the theme folder, containing the sphinx themes."
 
 #. SysConfig
+#, fuzzy
 msgid "This configuration defines all possible screens to enable or disable default columns."
 msgstr ""
+"This configuration defines all possible screens to enable or disable default "
+"columns."
 
 #. SysConfig
+#, fuzzy
 msgid "This configuration defines all possible screens to enable or disable dynamic fields."
 msgstr ""
+"This configuration defines all possible screens to enable or disable dynamic "
+"fields."
 
 #. SysConfig
+#, fuzzy
 msgid "This configuration defines if only valids or all (invalids) dynamic fields should be shown."
 msgstr ""
+"This configuration defines if only valids or all (invalids) dynamic fields "
+"should be shown."
 
 #. SysConfig
+#, fuzzy
 msgid "This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It's still recommended to use only verified packages."
 msgstr ""
+"This configuration defines if the OTRS package verification should be active "
+"or disabled. If disabled all packages are shown as verified. It's still "
+"recommended to use only verified packages."
 
 #. SysConfig
+#, fuzzy
 msgid "This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig 'Znuny4OTRSRepoType'."
 msgstr ""
+"This configuration defines the URL to the OTRS CloudService Proxy service. "
+"The http or https prefix will be added, depending on selection SysConfig "
+"'Znuny4OTRSRepoType'."
 
 #. SysConfig
+#, fuzzy
 msgid "This configuration registers a Output post-filter to extend package verification."
 msgstr ""
+"This configuration registers a Output post-filter to extend package "
+"verification."
 
 #. SysConfig
+#, fuzzy
 msgid "This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements."
 msgstr ""
+"This configuration registers an OutputFilter module that removes OTRS "
+"Business Solution TM advertisements."
 
 #. SysConfig
+#, fuzzy
 msgid "This configuration registers an output filter to hide online repository selection in package manager."
 msgstr ""
+"This configuration registers an output filter to hide online repository "
+"selection in package manager."
 
 #. SysConfig
+#, fuzzy
 msgid "Tidy unprocessed release that not passed test pomules checks for a long time."
 msgstr ""
+"Tidy unprocessed release that not passed test pomules checks for a long time."
 
 #. SysConfig
+#, fuzzy
 msgid "Users who have rw permissions in one of these groups are permitted to execute force pushes 'git push --force'."
 msgstr ""
+"Users who have rw permissions in one of these groups are permitted to "
+"execute force pushes 'git push --force'."
 
 #. SysConfig
+#, fuzzy
 msgid "Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management."
 msgstr ""
-
+"Users who have rw permissions in one of these groups are permitted to manage "
+"projects. Additionally the members have administration permissions to the "
+"git management."
