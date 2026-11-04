@@ -31,7 +31,7 @@
         </Value>
     </Setting>
     <Setting Name="FAQ::Default::RootCategoryName" Required="1" Valid="1">
-        <Description Translatable="1">Default category name..</Description>
+        <Description Translatable="1">Default category name.</Description>
         <Navigation>Core::FAQ</Navigation>
         <Value>
             <Item ValueType="String">FAQ</Item>
