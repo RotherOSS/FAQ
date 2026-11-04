@@ -25,7 +25,7 @@ sub Data {
 
     # Template: AgentFAQAdd
     $Self->{Translation}->{'Add FAQ Article'} = 'GyIK bejegyzés hozzáadása';
-    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = 'A csillaggal (*) megjelölt összes mező kötelező.';
     $Self->{Translation}->{'Keywords'} = 'Kulcsszavak';
     $Self->{Translation}->{'A category is required.'} = 'Egy kategória kötelező.';
     $Self->{Translation}->{'Approval'} = 'Jóváhagyás';
@@ -97,7 +97,7 @@ sub Data {
     $Self->{Translation}->{'Keyword'} = 'Kulcsszó';
     $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = 'Szavazás (például Egyenlő 10 vagy Nagyobb mint 60)';
     $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = 'Értékelés (például Egyenlő 25% vagy Nagyobb mint 75%)';
-    $Self->{Translation}->{'Approved'} = 'Jóváhagyott';
+    $Self->{Translation}->{'Approved'} = 'Jóváhagyva';
     $Self->{Translation}->{'Last changed by'} = 'Utoljára módosította';
     $Self->{Translation}->{'FAQ Article Create Time (before/after)'} = 'GyIK bejegyzés létrehozási ideje (előtt/után)';
     $Self->{Translation}->{'FAQ Article Create Time (between)'} = 'GyIK bejegyzés létrehozási ideje (között)';
@@ -229,7 +229,7 @@ sub Data {
     # Perl Module: Kernel/Modules/AgentFAQSearch.pm
     $Self->{Translation}->{'No Result!'} = 'Nincs találat!';
     $Self->{Translation}->{'FAQ Number'} = 'GyIK szám';
-    $Self->{Translation}->{'Last Changed by'} = 'Utoljára módosította:';
+    $Self->{Translation}->{'Last Changed by'} = 'Utoljára módosította';
     $Self->{Translation}->{'FAQ Item Create Time (before/after)'} = 'GyIK elem létrehozási ideje (előtt/után)';
     $Self->{Translation}->{'FAQ Item Create Time (between)'} = 'GyIK elem létrehozási ideje (között)';
     $Self->{Translation}->{'FAQ Item Change Time (before/after)'} = 'GyIK elem módosítási ideje (előtt/után)';
@@ -326,7 +326,7 @@ sub Data {
     $Self->{Translation}->{'Define if the FAQ title should be concatenated to article subject.'} =
         'Meghatározza, hogy a GyIK címét össze kell-e fűzni a bejegyzés tárgyával.';
     $Self->{Translation}->{'Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = "complex"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns.'} =
-        '';
+        'Annak meghatározása, hogy mely oszlopok legyenek láthatók a kapcsolt GyIK-ok felületi elemen (LinkObject::ViewMode = „összetett”). Megjegyzés: csak GyIK attribútumok és dinamikus mezők (DynamicField_NévX) engedélyezettek a DefaultColumns értékeinél.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ journal.'} =
         'Egy áttekintő modult határoz meg egy GyIK napló kis nézetének megjelenítéséhez.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ list.'} =
@@ -400,7 +400,7 @@ sub Data {
         'A nyilvános felület GyIK nagyítása képernyőjén megjelenített dinamikus mezők.';
     $Self->{Translation}->{'Edit this FAQ'} = 'A GyIK szerkesztése';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Több nyelv engedélyezése a GyIK modulban.';
-    $Self->{Translation}->{'Enable service assignment for FAQs.'} = '';
+    $Self->{Translation}->{'Enable service assignment for FAQs.'} = 'Szolgáltatás-hozzárendelés engedélyezése a GyIK-bejegyzésekhez.';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'A kapcsolódó bejegyzések funkció engedélyezése az ügyfél előtétprogramhoz.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Szavazási mechanizmus engedélyezése a GyIK modulban.';
@@ -529,7 +529,7 @@ sub Data {
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Az utoljára módosított elemek megjelenítése a meghatározott felületeken.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Az utoljára létrehozott elemek megjelenítése a meghatározott felületeken.';
     $Self->{Translation}->{'Show related articles on service change even with empty subject and body.'} =
-        '';
+        'Kapcsolódó bejegyzések megjelenítése a szolgáltatás változtatásakor üres tárgy és törzs esetén is.';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Csillagok megjelenítése a meghatározott értékkel egyenlő vagy annál jobb értékeléssel rendelkező bejegyzéseknél (állítsa az értéket „0”-ra a kimenet kikapcsolásához).';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'A legjobb 10 elem megjelenítése a meghatározott felületeken.';
