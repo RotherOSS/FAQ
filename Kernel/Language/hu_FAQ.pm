@@ -311,6 +311,7 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ.'} = 'Ügyfél GyIK.';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'A szavazási eredmény tizedesjegyeinek száma.';
     $Self->{Translation}->{'Default category name.'} = 'Alapértelmezett kategórianév.';
+    $Self->{Translation}->{'Default category name..'} = '';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'A GyIK bejegyzések alapértelmezett nyelve egynyelvű módban.';
     $Self->{Translation}->{'Default maximum size of the titles in a FAQ article to be shown.'} =
         'Egy GyIK bejegyzésben megjelenítendő címek alapértelmezett legnagyobb mérete.';
