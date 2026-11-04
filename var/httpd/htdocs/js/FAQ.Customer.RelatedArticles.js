@@ -27,10 +27,28 @@ FAQ.Customer = FAQ.Customer || {};
 FAQ.Customer.RelatedArticles = (function (TargetNS) {
 
     var QueuesEnabled = $('#QueuesEnabled').val(),
+        SearchDelay = 400,
+        SearchTimer,
         LastData;
 
+    function UpdateStatus(Message) {
+        $('#FAQRelatedArticlesStatus').text(Message || '');
+    }
+
     if (typeof QueuesEnabled != 'undefined') {
-        Core.App.Subscribe('Event.UI.RichTextEditor.InstanceCreated', function() {
+        Core.App.Subscribe('Event.UI.RichTextEditor.InstanceCreated', function(Editor) {
+            // CKEditor 5 updates its model after input events such as keydown.
+            // Defer the subject change so getData() reads the updated editor content.
+            var TriggerSubjectChange = function () {
+                window.setTimeout(function () {
+                    $('#Subject').trigger('change');
+                }, 0);
+            };
+
+            if (!Editor || Editor.ElementId !== 'RichText') {
+                return;
+            }
+
             $('#Dest').on('change.RelatedFAQArticle', function () {
                 var SelectedQueue = $(this).val(),
                     SelectedQueueName = SelectedQueue.replace(/\d*\|\|-?/, '');
@@ -53,18 +71,22 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
             });
 
             // FAQ Service
-            $('#ServiceID').on('change', function () {
+            $('#ServiceID').on('change', function (Event) {
                 $('#Subject').trigger('change');
             });
             // eo FAQ Service
 
-            $('#Subject').on('change', function () {
+            $('#Subject').on('change', function (Event) {
+                window.clearTimeout(SearchTimer);
+
+                SearchTimer = window.setTimeout(function () {
                 var SelectedQueue = $('#Dest').val(),
                     SelectedQueueName,
+                        RelatedArticlesXHR,
                     Data;
 
                 if (SelectedQueue) {
-                    SelectedQueue.replace(/\d*\|\|-?/, '')
+                        SelectedQueueName = SelectedQueue.replace(/\d*\|\|-?/, '');
                 }
 
                 if ( !QueuesEnabled.length || !SelectedQueueName || $.inArray(SelectedQueueName, QueuesEnabled) > -1 ) {
@@ -78,11 +100,13 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
 
                     if ( !LastData || LastData.Subject != Data.Subject || LastData.Body != Data.Body || LastData.ServiceID != Data.ServiceID ) {
 
+                            UpdateStatus(Core.Config.Get('LoadingMsg'));
+
                         if (!$('.FAQMiniList').length) {
                             $('#FAQRelatedArticles .Content').html('<div class="Center"><span class="AJAXLoader" title="' + Core.Config.Get('LoadingMsg') + '"></span></div>');
                         }
                         else if (!$('#FAQRelatedArticles .Header .AJAXLoader').length) {
-                            $('#FAQRelatedArticles .Header h3').after('<span class="AJAXLoader" style="float: right; margin: 0;" title="' + Core.Config.Get('LoadingMsg') + '"></span>');
+                                $('#FAQRelatedArticles .Header h2').after('<span class="AJAXLoader" title="' + Core.Config.Get('LoadingMsg') + '"></span>');
                         }
 
                         if ($('#Subject').data('RelatedFAQArticlesXHR')) {
@@ -91,7 +115,7 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
                             $('#Subject').removeData('RelatedFAQArticlesXHR');
                         }
 
-                        $('#Subject').data('RelatedFAQArticlesXHR', Core.AJAX.FunctionCall(Core.Config.Get('Baselink'), Data, function (Response) {
+                            RelatedArticlesXHR = Core.AJAX.FunctionCall(Core.Config.Get('Baselink'), Data, function (Response) {
 
                             $('#Subject').removeData('RelatedFAQArticlesXHR');
 
@@ -103,6 +127,7 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
                                 $('#FAQRelatedArticles').html(Response.CustomerRelatedFAQArticlesHTMLString);
                                 $('#FAQRelatedArticles').removeClass('Hidden'); // XXX handle class
                                 $('#FAQRelatedArticles:not(.Hidden)').show();
+                                    UpdateStatus($('#FAQRelatedArticles > .WidgetSimple').attr('data-status-message'));
                             }
 
                             if ( $('#FAQRelatedArticles .Content > .FAQMiniList').length == 0 ) {
@@ -110,44 +135,54 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
                                 // XXX: is hidden necessary at all?
                                 // $('#FAQRelatedArticles').addClass('Hidden');
                             }
-                        }));
+                            });
+
+                            RelatedArticlesXHR.fail(function (XHRObject, Status) {
+                                if (Status !== 'abort') {
+                                    UpdateStatus(Core.Language.Translate('Could not load helpful articles.'));
                     }
+                            });
+
+                            $('#Subject').data('RelatedFAQArticlesXHR', RelatedArticlesXHR);
                 }
+                    }
+                }, SearchDelay);
             });
 
             $('#Subject').on('paste keydown', function (Event) {
                 var Value = $('#Subject').val();
 
                 // trigger only the change event for the subject, if space or enter was pressed
-                if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 ) && ( Value.length > 10 || CKEditorInstances['RichText'].getData())) || Event.type !== 'keydown') {
+                if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 ) ) || Event.type !== 'keydown') {
                     $('#Subject').trigger('change');
                 }
             });
 
-            // The "change" event is fired whenever a change is made in the editor.
-            CKEditorInstances['RichText'].editing.view.document.on( 'keydown', function (_Event, data) {
-
+            // The "keydown" event is fired whenever a key is pressed in the editor.
+            Editor.editing.view.document.on('keydown', function (Event, Data) {
                 // trigger only the change event for the subject, if space or enter was pressed
-                if ( data.keyCode == 32 || data.keyCode == 13) {
-                    $('#Subject').trigger('change');
+                if (Data.keyCode == 32 || Data.keyCode == 13) {
+                    TriggerSubjectChange();
                 }
             });
 
             // The "paste" event is fired whenever a paste is made in the editor.
-            CKEditorInstances['RichText'].editing.view.document.on( 'paste', function () {
-
+            Editor.editing.view.document.on('clipboardInput', function () {
                 // trigger only the change event for the subject
-                $('#Subject').trigger('change');
+                TriggerSubjectChange();
             });
 
             // The "blur" event is fired whenever a blur is made in the editor.
-            CKEditorInstances['RichText'].editing.view.document.on( 'blur', function () {
+            Editor.ui.focusTracker.on('change:isFocused', function (Event, Name, IsFocused) {
+                if (IsFocused) {
+                    return;
+                }
 
                 // trigger only the change event for the subject
-                $('#Subject').trigger('change');
+                TriggerSubjectChange();
             });
 
-            // Trigger the 'RelatedFAQArticle' change event to hide/show the related faq article widget for the case
+            // Trigger the 'RelatedFAQArticle' change event to hide/show the relatd faq article widget for the case
             //  that the queue is already selected at the page load or show the widget always if the queue selection is disabled.
             if ( !$('#Dest').length ) {
                 $('#FAQRelatedArticles').removeClass('Hidden');
