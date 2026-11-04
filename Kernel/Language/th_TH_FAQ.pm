@@ -311,7 +311,6 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ.'} = '';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'ตำแหน่งทศนิยมของผลการนับคะแนน';
     $Self->{Translation}->{'Default category name.'} = 'ชื่อหมวดหมู่เริ่มต้น';
-    $Self->{Translation}->{'Default category name..'} = '';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'ภาษาเริ่มต้นสำหรับ FAQ ในโหมดภาษาเดียว';
     $Self->{Translation}->{'Default maximum size of the titles in a FAQ article to be shown.'} =
         'ขนาดเริ่มต้นที่สูงสุดของหัวข้อในบทความ FAQ ที่จะแสดง';

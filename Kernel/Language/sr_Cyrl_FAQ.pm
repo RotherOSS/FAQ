@@ -311,7 +311,6 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ.'} = 'Клијентски FAQ.';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'Број децимала у резултату гласања.';
     $Self->{Translation}->{'Default category name.'} = 'Назив подразумеване категорије.';
-    $Self->{Translation}->{'Default category name..'} = '';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'Подразумевани језик FAQ чланака у једнојезичком начину рада.';
     $Self->{Translation}->{'Default maximum size of the titles in a FAQ article to be shown.'} =
         'Подразумевана максимална дужина наслова FAQ чланка која ће бити приказана.';

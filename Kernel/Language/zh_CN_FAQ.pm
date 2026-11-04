@@ -311,7 +311,6 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ.'} = '客户FAQ。';
     $Self->{Translation}->{'Decimal places of the voting result.'} = '以十分制显示评分结果。';
     $Self->{Translation}->{'Default category name.'} = '默认的目录名称。';
-    $Self->{Translation}->{'Default category name..'} = '';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = '单语言模式下FAQ文章的默认语言。';
     $Self->{Translation}->{'Default maximum size of the titles in a FAQ article to be shown.'} =
         'FAQ文章默认显示标题的最大字符数。';
