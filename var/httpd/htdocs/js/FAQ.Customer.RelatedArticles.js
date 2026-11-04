@@ -30,7 +30,19 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
         LastData;
 
     if (typeof QueuesEnabled != 'undefined') {
-        Core.App.Subscribe('Event.UI.RichTextEditor.InstanceCreated', function() {
+        Core.App.Subscribe('Event.UI.RichTextEditor.InstanceCreated', function(Editor) {
+            // CKEditor 5 updates its model after input events such as keydown.
+            // Defer the subject change so getData() reads the updated editor content.
+            var TriggerSubjectChange = function () {
+                window.setTimeout(function () {
+                    $('#Subject').trigger('change');
+                }, 0);
+            };
+
+            if (!Editor || Editor.ElementId !== 'RichText') {
+                return;
+            }
+
             $('#Dest').on('change.RelatedFAQArticle', function () {
                 var SelectedQueue = $(this).val(),
                     SelectedQueueName = SelectedQueue.replace(/\d*\|\|-?/, '');
@@ -119,35 +131,36 @@ FAQ.Customer.RelatedArticles = (function (TargetNS) {
                 var Value = $('#Subject').val();
 
                 // trigger only the change event for the subject, if space or enter was pressed
-                if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 ) && ( Value.length > 10 || CKEditorInstances['RichText'].getData())) || Event.type !== 'keydown') {
+                if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 ) ) || Event.type !== 'keydown') {
                     $('#Subject').trigger('change');
                 }
             });
 
-            // The "change" event is fired whenever a change is made in the editor.
-            CKEditorInstances['RichText'].editing.view.document.on( 'keydown', function (_Event, data) {
-
+            // The "keydown" event is fired whenever a key is pressed in the editor.
+            Editor.editing.view.document.on('keydown', function (Event, Data) {
                 // trigger only the change event for the subject, if space or enter was pressed
-                if ( data.keyCode == 32 || data.keyCode == 13) {
-                    $('#Subject').trigger('change');
+                if (Data.keyCode == 32 || Data.keyCode == 13) {
+                    TriggerSubjectChange();
                 }
             });
 
             // The "paste" event is fired whenever a paste is made in the editor.
-            CKEditorInstances['RichText'].editing.view.document.on( 'paste', function () {
-
+            Editor.editing.view.document.on('clipboardInput', function () {
                 // trigger only the change event for the subject
-                $('#Subject').trigger('change');
+                TriggerSubjectChange();
             });
 
             // The "blur" event is fired whenever a blur is made in the editor.
-            CKEditorInstances['RichText'].editing.view.document.on( 'blur', function () {
+            Editor.ui.focusTracker.on('change:isFocused', function (Event, Name, IsFocused) {
+                if (IsFocused) {
+                    return;
+                }
 
                 // trigger only the change event for the subject
-                $('#Subject').trigger('change');
+                TriggerSubjectChange();
             });
 
-            // Trigger the 'RelatedFAQArticle' change event to hide/show the related faq article widget for the case
+            // Trigger the 'RelatedFAQArticle' change event to hide/show the relatd faq article widget for the case
             //  that the queue is already selected at the page load or show the widget always if the queue selection is disabled.
             if ( !$('#Dest').length ) {
                 $('#FAQRelatedArticles').removeClass('Hidden');
