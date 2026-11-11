@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-14 05:33+0000\n"
-"PO-Revision-Date: 2026-11-11 09:00+0000\n"
+"PO-Revision-Date: 2026-11-11 11:00+0000\n"
 "Last-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "manuals/faq-documentation/de/>\n"
@@ -73,23 +73,23 @@ msgstr "Konfigurations-Referenz"
 
 #: ../content/index.rst:38
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../content/index.rst:41
 msgid "DynamicFields::Driver###FAQ"
-msgstr ""
+msgstr "DynamicFields::Driver###FAQ"
 
 #: ../content/index.rst:42
 msgid "DynamicField backend registration."
-msgstr ""
+msgstr "Backend-Registrierung der dynamischen Felder."
 
 #: ../content/index.rst:45
 msgid "Core::DynamicFields::ObjectTypeRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::ObjectTypeRegistration"
 
 #: ../content/index.rst:48
 msgid "DynamicFields::ObjectType###FAQ"
-msgstr ""
+msgstr "DynamicFields::ObjectType###FAQ"
 
 #: ../content/index.rst:49
 msgid "DynamicField object registration."
@@ -97,11 +97,11 @@ msgstr "Dynamische Felder Objektregistrierung."
 
 #: ../content/index.rst:52
 msgid "Core::Elasticsearch::Settings"
-msgstr ""
+msgstr "Core::Elasticsearch::Settings"
 
 #: ../content/index.rst:55
 msgid "Elasticsearch::FAQSearchFields"
-msgstr ""
+msgstr "Elasticsearch::FAQSearchFields"
 
 #: ../content/index.rst:56
 msgid ""
@@ -109,73 +109,86 @@ msgid ""
 "stored, but are not mandatory for the overall functionality. Inclusion of "
 "attachments can be disabled by setting the entry to 0 or deleting it."
 msgstr ""
+"Felder des FAQ-Index, die für die Volltextsuche verwendet werden. Felder "
+"werden ebenfalls gespeichert, sind aber für die Gesamtfunktionalität nicht "
+"zwingend erforderlich. Das Einbeziehen von Anhängen kann deaktiviert werden, "
+"indem der Eintrag auf 0 gesetzt oder gelöscht wird."
 
 #: ../content/index.rst:59
 msgid "Elasticsearch::FAQStoreFields"
-msgstr ""
+msgstr "Elasticsearch::FAQStoreFields"
 
 #: ../content/index.rst:60
 msgid ""
 "Fields stored in the faq index which are used for other things besides "
 "fulltext searches. For the complete functionality all fields are mandatory."
 msgstr ""
+"Felder, die im FAQ-Index gespeichert werden und neben Volltextsuchen auch "
+"für andere Dinge verwendet werden. Für die vollständige Funktionalität sind "
+"alle Felder zwingend erforderlich."
 
 #: ../content/index.rst:63
 msgid "Elasticsearch::IndexSettings###FAQ"
-msgstr ""
+msgstr "Elasticsearch::IndexSettings###FAQ"
 
 #: ../content/index.rst:64
 msgid ""
 "Number of shards (NS), replicas (NR) and fields limit for the index 'faq'."
 msgstr ""
+"Anzahl der Shards (NS), Replikate (NR) und Feldlimit für den Index 'faq'."
 
 #: ../content/index.rst:67
 msgid "Elasticsearch::QuickSearchShow###FAQ"
-msgstr ""
+msgstr "Elasticsearch::QuickSearchShow###FAQ"
 
 #: ../content/index.rst:68
 msgid ""
 "Objects to search for, how many entries and which attributes to show. FAQ "
 "attributes have to explicitly be stored via Elasticsearch."
 msgstr ""
+"Objekte, nach denen gesucht werden soll, wie viele Einträge und welche "
+"Attribute angezeigt werden sollen. FAQ-Attribute müssen explizit über "
+"Elasticsearch gespeichert werden."
 
 #: ../content/index.rst:71
 msgid "ElasticsearchWidgetBackend###05-ElasticsearchFAQ"
-msgstr ""
+msgstr "ElasticsearchWidgetBackend###05-ElasticsearchFAQ"
 
 #: ../content/index.rst:72
 msgid "Defines the parameters for the elasticsearch widget backend."
-msgstr ""
+msgstr "Definiert die Parameter für das Elasticsearch-Widget-Backend."
 
 #: ../content/index.rst:75
 msgid "Core::Event::FAQ"
-msgstr ""
+msgstr "Core::Event::FAQ"
 
 #: ../content/index.rst:78
 msgid "FAQ::EventModulePost###9800-GenericInterface"
-msgstr ""
+msgstr "FAQ::EventModulePost###9800-GenericInterface"
 
 #: ../content/index.rst:79
 msgid ""
 "Performs the configured action for each event (as an Invoker) for each "
 "configured web service."
 msgstr ""
+"Führt die konfigurierte Aktion für jedes Ereignis (als Invoker) für jeden "
+"konfigurierten Webservice aus."
 
 #: ../content/index.rst:82
 msgid "Core::FAQ"
-msgstr ""
+msgstr "Core::FAQ"
 
 #: ../content/index.rst:85
 msgid "FAQ::CacheTTL"
-msgstr ""
+msgstr "FAQ::CacheTTL"
 
 #: ../content/index.rst:86
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "Cache-TTL für FAQ-Einträge."
 
 #: ../content/index.rst:89
 msgid "FAQ::Default::Language"
-msgstr ""
+msgstr "FAQ::Default::Language"
 
 #: ../content/index.rst:90
 msgid "Default language for FAQ articles on single language mode."
@@ -183,7 +196,7 @@ msgstr "Standardsprache für FAQ-Artikel im Ein-Sprachen-Modus."
 
 #: ../content/index.rst:93
 msgid "FAQ::Default::RootCategoryComment"
-msgstr ""
+msgstr "FAQ::Default::RootCategoryComment"
 
 #: ../content/index.rst:94 ../content/index.rst:98
 msgid "Default category name."
@@ -191,11 +204,11 @@ msgstr "Standard-Kategorienname."
 
 #: ../content/index.rst:97
 msgid "FAQ::Default::RootCategoryName"
-msgstr ""
+msgstr "FAQ::Default::RootCategoryName"
 
 #: ../content/index.rst:101
 msgid "FAQ::Default::State"
-msgstr ""
+msgstr "FAQ::Default::State"
 
 #: ../content/index.rst:102
 msgid "Default state for FAQ entry."
@@ -203,7 +216,7 @@ msgstr "Standard-Status für einen FAQ-Eintrag."
 
 #: ../content/index.rst:105
 msgid "FAQ::FAQHook"
-msgstr ""
+msgstr "FAQ::FAQHook"
 
 #: ../content/index.rst:106
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
@@ -213,7 +226,7 @@ msgstr ""
 
 #: ../content/index.rst:109
 msgid "FAQ::MultiLanguage"
-msgstr ""
+msgstr "FAQ::MultiLanguage"
 
 #: ../content/index.rst:110
 msgid "Enable multiple languages on FAQ module."
@@ -221,7 +234,7 @@ msgstr "Mehrere Sprachen für das FAQ-Modul aktivieren."
 
 #: ../content/index.rst:113
 msgid "FAQ::TitleSize"
-msgstr ""
+msgstr "FAQ::TitleSize"
 
 #: ../content/index.rst:114
 msgid "Default maximum size of the titles in a FAQ article to be shown."
@@ -229,7 +242,7 @@ msgstr "Standard Maximalgröße der Titel, die im FAQ-Artikel angezeigt werden."
 
 #: ../content/index.rst:117
 msgid "FAQ::Voting"
-msgstr ""
+msgstr "FAQ::Voting"
 
 #: ../content/index.rst:118
 msgid "Enable voting mechanism on FAQ module."
@@ -237,21 +250,23 @@ msgstr "Abstimmungs-Mechnismus im FAQ-Modul aktivieren."
 
 #: ../content/index.rst:121
 msgid "Core::FAQ::Approval"
-msgstr ""
+msgstr "Core::FAQ::Approval"
 
 #: ../content/index.rst:124
 msgid "FAQ::Approval::IncludeInternal"
-msgstr ""
+msgstr "FAQ::Approval::IncludeInternal"
 
 #: ../content/index.rst:125
 msgid ""
 "If activated, FAQ articles of status type internal are also taken into "
 "account for the approval process."
 msgstr ""
+"Wenn aktiviert, werden FAQ-Artikel mit dem Status-Typ 'intern' auch für den "
+"Freigabeprozess berücksichtigt."
 
 #: ../content/index.rst:128
 msgid "FAQ::ApprovalGroup"
-msgstr ""
+msgstr "FAQ::ApprovalGroup"
 
 #: ../content/index.rst:129
 msgid "Group for the approval of FAQ articles."
@@ -259,7 +274,7 @@ msgstr "Gruppe für die Freigabe von FAQ-Artikeln."
 
 #: ../content/index.rst:132
 msgid "FAQ::ApprovalQueue"
-msgstr ""
+msgstr "FAQ::ApprovalQueue"
 
 #: ../content/index.rst:133
 msgid "Queue for the approval of FAQ articles."
@@ -267,7 +282,7 @@ msgstr "Queue für die Freigabe von FAQ-Artikeln."
 
 #: ../content/index.rst:136
 msgid "FAQ::ApprovalRequired"
-msgstr ""
+msgstr "FAQ::ApprovalRequired"
 
 #: ../content/index.rst:137
 msgid "New FAQ articles need approval before they get published."
@@ -276,7 +291,7 @@ msgstr ""
 
 #: ../content/index.rst:140
 msgid "FAQ::ApprovalTicketBody"
-msgstr ""
+msgstr "FAQ::ApprovalTicketBody"
 
 #: ../content/index.rst:141
 msgid "Ticket body for approval of FAQ article."
@@ -284,7 +299,7 @@ msgstr "Ticket-Text für die Freigabe von FAQ-Artikeln."
 
 #: ../content/index.rst:144
 msgid "FAQ::ApprovalTicketDefaultState"
-msgstr ""
+msgstr "FAQ::ApprovalTicketDefaultState"
 
 #: ../content/index.rst:145
 msgid "Default state of tickets for the approval of FAQ articles."
@@ -292,7 +307,7 @@ msgstr "Standard-Status von Tickets für die Freigabe von FAQ-Artikeln."
 
 #: ../content/index.rst:148
 msgid "FAQ::ApprovalTicketPriority"
-msgstr ""
+msgstr "FAQ::ApprovalTicketPriority"
 
 #: ../content/index.rst:149
 msgid "Default priority of tickets for the approval of FAQ articles."
@@ -300,7 +315,7 @@ msgstr "Standard-Priorität der Tickets für die Freigabe von FAQ-Artikeln."
 
 #: ../content/index.rst:152
 msgid "FAQ::ApprovalTicketSubject"
-msgstr ""
+msgstr "FAQ::ApprovalTicketSubject"
 
 #: ../content/index.rst:153
 msgid ""
@@ -308,10 +323,13 @@ msgid ""
 "<OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> "
 "<OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
+"Ticketbetreff für die Freigabe eines FAQ-Artikels. Zulässige "
+"Benachrichtigungs-Tags sind <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, "
+"<OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> und <OTOBO_FAQ_STATEID>."
 
 #: ../content/index.rst:156
 msgid "FAQ::ApprovalTicketType"
-msgstr ""
+msgstr "FAQ::ApprovalTicketType"
 
 #: ../content/index.rst:157
 msgid "Default type of tickets for the approval of FAQ articles."
@@ -319,11 +337,11 @@ msgstr "Standard-Typ von Tickets für die Freigabe von FAQ-Artikeln."
 
 #: ../content/index.rst:160
 msgid "Core::FAQ::Explorer"
-msgstr ""
+msgstr "Core::FAQ::Explorer"
 
 #: ../content/index.rst:163
 msgid "FAQ::Explorer::ItemList::VotingResultColors"
-msgstr ""
+msgstr "FAQ::Explorer::ItemList::VotingResultColors"
 
 #: ../content/index.rst:164
 msgid "CSS color for the voting result."
@@ -331,15 +349,15 @@ msgstr "CSS-Farbe für das Abstimmungsergebnis."
 
 #: ../content/index.rst:167
 msgid "FAQ::Explorer::ItemList::VotingResultDecimalPlaces"
-msgstr ""
+msgstr "FAQ::Explorer::ItemList::VotingResultDecimalPlaces"
 
 #: ../content/index.rst:168
 msgid "Decimal places of the voting result."
-msgstr ""
+msgstr "Dezimalstellen des Abstimmungsergebnisses."
 
 #: ../content/index.rst:171
 msgid "FAQ::Explorer::LastChange::Limit"
-msgstr ""
+msgstr "FAQ::Explorer::LastChange::Limit"
 
 #: ../content/index.rst:172
 msgid "Number of shown items in last changes."
@@ -347,7 +365,7 @@ msgstr "Anzahl der gezeigten Objekte in den letzten Änderungen."
 
 #: ../content/index.rst:175
 msgid "FAQ::Explorer::LastChange::Show"
-msgstr ""
+msgstr "FAQ::Explorer::LastChange::Show"
 
 #: ../content/index.rst:176
 msgid "Show last change items in defined interfaces."
@@ -355,7 +373,7 @@ msgstr "Zeige zuletzt geänderte Objekte in definierten Oberflächen."
 
 #: ../content/index.rst:179
 msgid "FAQ::Explorer::LastChange::ShowSubCategoryItems"
-msgstr ""
+msgstr "FAQ::Explorer::LastChange::ShowSubCategoryItems"
 
 #: ../content/index.rst:180 ../content/index.rst:192 ../content/index.rst:212
 msgid "Show items of subcategories."
@@ -363,7 +381,7 @@ msgstr "Zeige Objekte der Unter-Kategorien."
 
 #: ../content/index.rst:183
 msgid "FAQ::Explorer::LastCreate::Limit"
-msgstr ""
+msgstr "FAQ::Explorer::LastCreate::Limit"
 
 #: ../content/index.rst:184
 msgid "Number of shown items in last created."
@@ -371,7 +389,7 @@ msgstr "Anzahl der angezeigten Objekte in Zuletzt erstellt."
 
 #: ../content/index.rst:187
 msgid "FAQ::Explorer::LastCreate::Show"
-msgstr ""
+msgstr "FAQ::Explorer::LastCreate::Show"
 
 #: ../content/index.rst:188
 msgid "Show last created items in defined interfaces."
@@ -379,7 +397,7 @@ msgstr "Zeige zuletzt erstellte Objekte in definierten Oberflächen."
 
 #: ../content/index.rst:191
 msgid "FAQ::Explorer::LastCreate::ShowSubCategoryItems"
-msgstr ""
+msgstr "FAQ::Explorer::LastCreate::ShowSubCategoryItems"
 
 #: ../content/index.rst:195
 msgid "FAQ::Explorer::Path::Show"
@@ -737,7 +755,7 @@ msgstr ""
 
 #: ../content/index.rst:373
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../content/index.rst:376
 msgid "Frontend::Module###AgentFAQAdd"
@@ -749,7 +767,7 @@ msgstr ""
 #: ../content/index.rst:413 ../content/index.rst:417 ../content/index.rst:421
 #: ../content/index.rst:425
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "Registrierung des Frontend-Moduls für die Agentenoberfläche."
 
 #: ../content/index.rst:380
 msgid "Frontend::Module###AgentFAQCategory"
@@ -801,7 +819,7 @@ msgstr ""
 
 #: ../content/index.rst:428
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../content/index.rst:431
 msgid "Loader::Module::AgentFAQAdd###002-FAQ"
@@ -812,7 +830,7 @@ msgstr ""
 #: ../content/index.rst:456 ../content/index.rst:460 ../content/index.rst:840
 #: ../content/index.rst:844 ../content/index.rst:848 ../content/index.rst:852
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "Registrierung des Loader-Moduls für die Agentenoberfläche."
 
 #: ../content/index.rst:435
 msgid "Loader::Module::AgentFAQCategory###002-FAQ"
@@ -1356,7 +1374,7 @@ msgstr ""
 
 #: ../content/index.rst:750
 msgid "Frontend::Base::Loader"
-msgstr ""
+msgstr "Frontend::Base::Loader"
 
 #: ../content/index.rst:753
 msgid "Loader::Agent::CommonCSS###200-FAQ"
@@ -1373,6 +1391,8 @@ msgstr ""
 #: ../content/index.rst:758
 msgid "List of JS files to always be loaded for the agent interface."
 msgstr ""
+"Liste der JS-Dateien, die für die Agentenoberfläche immer geladen werden "
+"sollen."
 
 #: ../content/index.rst:761
 msgid "Frontend::Base::OutputFilter"
@@ -1481,7 +1501,7 @@ msgstr ""
 
 #: ../content/index.rst:813
 msgid "Frontend::Customer::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration"
 
 #: ../content/index.rst:816
 msgid "CustomerFrontend::Module###CustomerFAQExplorer"
@@ -1490,7 +1510,7 @@ msgstr ""
 #: ../content/index.rst:817 ../content/index.rst:821 ../content/index.rst:825
 #: ../content/index.rst:829 ../content/index.rst:833
 msgid "Frontend module registration for the customer interface."
-msgstr ""
+msgstr "Registrierung des Frontend-Moduls für die Kundenoberfläche."
 
 #: ../content/index.rst:820
 msgid "CustomerFrontend::Module###CustomerFAQPrint"
