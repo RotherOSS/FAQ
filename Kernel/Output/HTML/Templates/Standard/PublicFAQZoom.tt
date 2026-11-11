@@ -154,7 +154,6 @@ function CheckIFrameHeight(IFrameID) {
                         </span>
 [% RenderBlockEnd("Keywords") %]
                     </li>
-                    <li><span class="Key">[% Translate("State") | html %]:</span> <span title="[% Translate(Data.State) | html %]">[% Translate(Data.State) | html %]</span></li>
 [% RenderBlockStart("Language") %]
                     <li><span class="Key">[% Translate("Language") | html %]:</span> <span title="[% Translate(Data.Language) | html %]">[% Translate(Data.Language) | html %]</span></li>
 [% RenderBlockEnd("Language") %]
