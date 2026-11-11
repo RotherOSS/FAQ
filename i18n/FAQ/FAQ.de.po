@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2026-08-06 10:08+0000\n"
-"PO-Revision-Date: 2026-11-03 16:59+0000\n"
-"Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
+"PO-Revision-Date: 2026-11-11 12:00+0000\n"
+"Last-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "faq/de/>\n"
 "Language: de\n"
@@ -665,7 +665,7 @@ msgstr "ist größer/gleich"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created more than ... ago"
-msgstr ""
+msgstr "Erstellt vor mehr als ..."
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
@@ -783,7 +783,7 @@ msgstr "CSS-Farbe für das Bewertungs-Ergebnis."
 
 #. SysConfig
 msgid "Cache Time To Leave for FAQ items."
-msgstr "Cachezeit für FAQ-Artikel."
+msgstr "Cache-TTL für FAQ-Einträge."
 
 #. SysConfig
 msgid "Category Management"
@@ -819,7 +819,7 @@ msgstr "Kunden-FAQ."
 
 #. SysConfig
 msgid "Decimal places of the voting result."
-msgstr "Dezimalstellen des Ergebnisses der Artikelbewertung."
+msgstr "Dezimalstellen des Abstimmungsergebnisses."
 
 #. SysConfig
 msgid "Default category name."
@@ -1034,7 +1034,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Defines the parameters for the elasticsearch widget backend."
-msgstr ""
+msgstr "Definiert die Parameter für das Elasticsearch-Widget-Backend."
 
 #. SysConfig
 msgid ""
@@ -1165,7 +1165,7 @@ msgstr "Service-Zuordnung für FAQs aktivieren."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
-msgstr "Aktivieren Sie die zugehörige Artikelfunktion für das Kunden-Frontend."
+msgstr "Aktiviert die Funktion für verwandte Artikel im Kunden-Frontend."
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
@@ -1233,12 +1233,19 @@ msgid ""
 "stored, but are not mandatory for the overall functionality. Inclusion of "
 "attachments can be disabled by setting the entry to 0 or deleting it."
 msgstr ""
+"Felder des FAQ-Index, die für die Volltextsuche verwendet werden. Felder "
+"werden ebenfalls gespeichert, sind aber für die Gesamtfunktionalität nicht "
+"zwingend erforderlich. Das Einbeziehen von Anhängen kann deaktiviert werden, "
+"indem der Eintrag auf 0 gesetzt oder gelöscht wird."
 
 #. SysConfig
 msgid ""
 "Fields stored in the faq index which are used for other things besides "
 "fulltext searches. For the complete functionality all fields are mandatory."
 msgstr ""
+"Felder, die im FAQ-Index gespeichert werden und neben Volltextsuchen auch "
+"für andere Dinge verwendet werden. Für die vollständige Funktionalität sind "
+"alle Felder zwingend erforderlich."
 
 #. SysConfig
 msgid "Full FAQ"
@@ -1257,8 +1264,8 @@ msgid ""
 "If activated, FAQ articles of status type internal are also taken into "
 "account for the approval process."
 msgstr ""
-"Wenn aktiviert, werden auch FAQ-Artikel des Statustyps „intern“ in den "
-"Genehmigungsprozess einbezogen."
+"Wenn aktiviert, werden FAQ-Artikel mit dem Status-Typ 'intern' auch für den "
+"Freigabeprozess berücksichtigt."
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
@@ -1498,6 +1505,7 @@ msgstr ""
 msgid ""
 "Number of shards (NS), replicas (NR) and fields limit for the index 'faq'."
 msgstr ""
+"Anzahl der Shards (NS), Replikate (NR) und Feldlimit für den Index 'faq'."
 
 #. SysConfig
 msgid "Number of shown items in last changes."
@@ -1516,6 +1524,9 @@ msgid ""
 "Objects to search for, how many entries and which attributes to show. FAQ "
 "attributes have to explicitly be stored via Elasticsearch."
 msgstr ""
+"Objekte, nach denen gesucht werden soll, wie viele Einträge und welche "
+"Attribute angezeigt werden sollen. FAQ-Attribute müssen explizit über "
+"Elasticsearch gespeichert werden."
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
@@ -1811,9 +1822,9 @@ msgid ""
 "<OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> "
 "<OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
-"Ticketbetreff zur Genehmigung eines FAQ-Artikels. Zulässige Notification-"
-"Tags sind <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, "
-"<OTOBO_FAQ_TITLE> und <OTOBO_FAQ_STATEID>."
+"Ticketbetreff für die Freigabe eines FAQ-Artikels. Zulässige "
+"Benachrichtigungs-Tags sind <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, "
+"<OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> und <OTOBO_FAQ_STATEID>."
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
