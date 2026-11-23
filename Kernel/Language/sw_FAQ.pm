@@ -578,7 +578,7 @@ sub Data {
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         'Mpangilio huu unafafanua kwamba kipengele cha maswali yanayoulizwa mara kwa mara kinaweza kuunganishwa na kipengele kingine cha tiketi kwa kutumia aina ya kiunganishi kizazi.';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'Kiini cha tiketi kwa Idhini ya makala ya maswali yanayoulizwa mara kwa mara.';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
         '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = 'Kipengele cha mwambaa zana kwa ajili ya mkato.';
     $Self->{Translation}->{'external (customer)'} = 'nje (mteja)';
