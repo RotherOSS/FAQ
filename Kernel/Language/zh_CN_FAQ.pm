@@ -566,7 +566,7 @@ sub Data {
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         '该设置定义了一个能通过“父子（ParentChild）”的链接类型与其他工单对象连接的FAQ对象。';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'FAQ 文章审批请求的工单正文。';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
         '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = '快捷键的工具栏条目。';
     $Self->{Translation}->{'external (customer)'} = '外部(用户)';

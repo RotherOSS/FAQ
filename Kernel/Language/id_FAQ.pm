@@ -566,7 +566,7 @@ sub Data {
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         'Pengaturan ini mendefiniskan bahwa objek \'FAQ\' dapat di hubungkan dengan objek \'Ticket\' lain dengan menggunakan type tautan \'ParentChild\'.';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'Isi tiket untuk persetujuan artikel FAQ.';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
         '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = 'Item toolbar untuk jalan pintas';
     $Self->{Translation}->{'external (customer)'} = 'eksternal (pelanggan)';

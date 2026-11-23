@@ -566,7 +566,7 @@ sub Data {
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         'Этот параметр задает возможность связать объект \'FAQ\' с другими объектами типа "Заявка" используя тип связи \'ParentChild\'.';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'Тело заявки на одобрение статьи FAQ.';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
         '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = 'Описание ярлыка(иконки) для навигационной панели.';
     $Self->{Translation}->{'external (customer)'} = 'открытое (клиентам)';

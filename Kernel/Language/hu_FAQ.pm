@@ -566,8 +566,8 @@ sub Data {
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         'Ez a beállítás határozza meg, hogy egy „GyIK” objektum összeköthető-e más „Jegy” objektumokkal a „Szülő-gyermek” hivatkozástípus használatával.';
     $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'Jegy törzse egy GyIK bejegyzés jóváhagyásához.';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
-        'Jegy tárgya egy GyIK bejegyzés jóváhagyásához. A megengedett értesítési címkék a következők: <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> és <OTOBO_FAQ_STATEID>.';
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article. Permitted notification tags are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, <OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>.'} =
+        '';
     $Self->{Translation}->{'Toolbar Item for a shortcut.'} = 'Eszköztárelem egy gyorsbillentyűhöz.';
     $Self->{Translation}->{'external (customer)'} = 'külső (ügyfél)';
     $Self->{Translation}->{'internal (agent)'} = 'belső (ügyintéző)';
