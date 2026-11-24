@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2026-11-04 13:57+0000\n"
-"PO-Revision-Date: 2026-11-03 14:38+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-11-24 15:07+0000\n"
+"Last-Translator: Stefan Eisenmann <stefane2741@gmail.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-10-1/addons/"
 "faq/de/>\n"
 "Language: de\n"
@@ -1135,9 +1135,8 @@ msgid "Enable multiple languages on FAQ module."
 msgstr "Multiple Sprachen im FAQ-Modul aktivieren."
 
 #. SysConfig
-#, fuzzy
 msgid "Enable service assignment for FAQs."
-msgstr "Enable service assignment for FAQs."
+msgstr "Aktiviert die Service-Zuweisung für FAQs."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
