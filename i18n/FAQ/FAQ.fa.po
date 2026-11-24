@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-08-06 10:08+0000\n"
+"POT-Creation-Date: 2026-11-23 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1599,7 +1599,7 @@ msgstr ""
 #. SysConfig
 msgid ""
 "Ticket subject for approval of FAQ article. Permitted notification tags are "
-"<OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> "
+"<OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, "
 "<OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgstr ""
 
