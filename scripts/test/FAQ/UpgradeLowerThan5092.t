@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -14,13 +14,16 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 # --
 
+## nofilter(TidyAll::Plugin::OTOBO::Perl::UnitTestConfigChanges)
+
 use strict;
 use warnings;
 
 use List::Util qw();
-use var::packagesetup::FAQ;
 
+use Kernel::System::UnitTest::RegisterDriver;
 our $Self;
+use var::packagesetup::FAQ;
 
 my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
@@ -300,5 +303,7 @@ $Self->True(
     $Success,
     'Restored default configuration'
 );
+
+$Self->DoneTesting();
 
 1;

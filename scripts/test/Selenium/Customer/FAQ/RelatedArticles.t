@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -20,10 +20,10 @@ use utf8;
 
 # Set up the test driver $Self when we are running as a standalone script.
 use Kernel::System::UnitTest::RegisterDriver;
-
 our $Self;
 
-my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
+use Kernel::System::UnitTest::Selenium;
+my $Selenium = Kernel::System::UnitTest::Selenium->new( LogExecuteCommandActive => 1 );
 
 $Selenium->RunTest(
     sub {
@@ -147,6 +147,7 @@ $Selenium->RunTest(
             $Selenium->find_element("//a[\@title='$FAQArticles[1]->{Title}']"),
             "Related FAQ article for body '$FAQArticles[1]->{Keyword}' is found - $FAQArticles[1]->{Title}"
         );
+
         $Self->True(
             $Selenium->find_element("//a[contains(\@href, 'Action=CustomerFAQZoom;ItemID=$FAQArticles[1]->{ID}')]"),
             "Link for related FAQ article is found - $FAQArticles[0]->{Title}"
@@ -154,7 +155,7 @@ $Selenium->RunTest(
 
         # Change the body, to have a text which should not return some related faq article.
         sleep 1;
-        $Selenium->execute_script('CKEditorInstances.RichText.setData();');
+        $Selenium->execute_script('CKEditorInstances.RichText.setData("");');
         $Selenium->find_element( "#Subject", 'css' )->send_keys('Nothing');
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");
         $Selenium->find_element( "#Subject", 'css' )->send_keys("\N{U+E004}");

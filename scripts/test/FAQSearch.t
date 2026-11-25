@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -17,6 +17,8 @@
 use strict;
 use warnings;
 
+use Kernel::System::UnitTest::MockTime qw(:all);
+use Kernel::System::UnitTest::RegisterDriver;
 our $Self;
 
 # get helper object
@@ -64,7 +66,7 @@ my %FAQAddTemplate = (
 );
 
 # freeze time
-$Helper->FixedTimeSet();
+FixedTimeSet();
 
 # get FAQ object
 my $FAQObject = $Kernel::OM->Get('Kernel::System::FAQ');
@@ -84,7 +86,7 @@ for my $Counter ( 1 .. 2 ) {
     push @AddedFAQs, $ItemID;
 
     # add 1 minute to frozen time
-    $Helper->FixedTimeAddSeconds(60);
+    FixedTimeAddSeconds(60);
 }
 
 # add some votes
@@ -560,7 +562,7 @@ my %FAQUpdateTemplate = (
 );
 
 # add 1 minute to frozen time
-$Helper->FixedTimeAddSeconds(60);
+FixedTimeAddSeconds(60);
 
 my $Success = $FAQObject->FAQUpdate(
     %FAQUpdateTemplate,
@@ -573,7 +575,7 @@ $Self->True(
     "FAQUpdate() ItemID:'$AddedFAQs[0]' for FAQSearch()",
 );
 
-$Helper->FixedTimeAddSeconds(60);
+FixedTimeAddSeconds(60);
 
 $Success = $FAQObject->FAQUpdate(
     %FAQUpdateTemplate,
@@ -587,7 +589,7 @@ $Self->True(
 );
 
 # add 2 minutes to frozen time
-$Helper->FixedTimeAddSeconds(120);
+FixedTimeAddSeconds(120);
 
 my $DateTime = $Kernel::OM->Create('Kernel::System::DateTime');
 
@@ -904,7 +906,7 @@ $Self->True(
     );
 
     # add 1 minute to frozen time
-    $Helper->FixedTimeAddSeconds(60);
+    FixedTimeAddSeconds(60);
 
     my $ItemID2 = $FAQObject->FAQAdd(
         Title       => 'Title' . $RandomID,
@@ -923,7 +925,7 @@ $Self->True(
     );
 
     # add 1 minute to frozen time
-    $Helper->FixedTimeAddSeconds(60);
+    FixedTimeAddSeconds(60);
 
     my %Keywords = (
         Keyword1 => "some1$RandomID",
@@ -948,7 +950,7 @@ $Self->True(
     );
 
     # add 1 minute to frozen time
-    $Helper->FixedTimeAddSeconds(60);
+    FixedTimeAddSeconds(60);
 
     my $ItemID4 = $FAQObject->FAQAdd(
         Title      => 'Test FAQ-4',
@@ -967,7 +969,7 @@ $Self->True(
     );
 
     # add 1 minute to frozen time
-    $Helper->FixedTimeAddSeconds(60);
+    FixedTimeAddSeconds(60);
 
     my $ItemID5 = $FAQObject->FAQAdd(
         Title      => 'Test FAQ-5',
@@ -986,7 +988,7 @@ $Self->True(
     );
 
     # restore time
-    $Helper->FixedTimeUnset();
+    FixedTimeUnset();
 
     @Tests = (
         {
@@ -1183,5 +1185,7 @@ $Self->True(
 }
 
 # cleanup is done by restore database
+
+$Self->DoneTesting();
 
 1;
