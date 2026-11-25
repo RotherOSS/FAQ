@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
 "POT-Creation-Date: 2026-11-23 16:26+0000\n"
-"PO-Revision-Date: 2026-10-29 19:41+0000\n"
+"PO-Revision-Date: 2026-11-25 22:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/faq/hu/>\n"
@@ -734,11 +734,11 @@ msgstr ""
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "External-source key"
-msgstr ""
+msgstr "Külső forrás kulcsa"
 
 #. Perl Module: Kernel/System/DynamicField/Driver/FAQ.pm
 msgid "Select the type of display"
-msgstr ""
+msgstr "A megjelenítés típusának kiválasztása"
 
 #. Database XML / SOPM Definition: FAQ.sopm
 msgid "internal"
@@ -1772,11 +1772,6 @@ msgid "Ticket body for approval of FAQ article."
 msgstr "Jegy törzse egy GyIK bejegyzés jóváhagyásához."
 
 #. SysConfig
-#, fuzzy
-#| msgid ""
-#| "Ticket subject for approval of FAQ article. Permitted notification tags "
-#| "are <OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>> "
-#| "<OTOBO_FAQ_TITLE> and <OTOBO_FAQ_STATEID>."
 msgid ""
 "Ticket subject for approval of FAQ article. Permitted notification tags are "
 "<OTOBO_FAQ_NUMBER>, <OTOBO_FAQ_CATEGORYID>, <OTOBO_FAQ_ITEMID>, "
