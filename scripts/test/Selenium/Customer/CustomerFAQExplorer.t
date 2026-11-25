@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -14,17 +14,16 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 # --
 
-## no critic (Modules::RequireExplicitPackage)
 use strict;
 use warnings;
 use utf8;
 
 # Set up the test driver $Self when we are running as a standalone script.
 use Kernel::System::UnitTest::RegisterDriver;
-
 use vars (qw($Self));
 
-my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
+use Kernel::System::UnitTest::Selenium;
+my $Selenium = Kernel::System::UnitTest::Selenium->new( LogExecuteCommandActive => 1 );
 
 $Selenium->RunTest(
     sub {
@@ -118,19 +117,16 @@ $Selenium->RunTest(
         # Navigate to CustomerFAQExplorer screen of created test FAQ.
         $Selenium->VerifiedGet("${ScriptAlias}customer.pl?Action=CustomerFAQExplorer");
 
-        # Check CustomerFAQExplorer screen.
-        $Selenium->find_element( "table",             'css' );
-        $Selenium->find_element( "table thead tr th", 'css' );
-        $Selenium->find_element( "table tbody tr td", 'css' );
-
         # Test data for explorer screen.
         my @Tests = (
             {
                 ScreenData => 'FAQ Explorer',
             },
-            {
-                ScreenData => 'Latest created FAQ articles',
-            },
+
+            # obsoleted
+            #            {
+            #                ScreenData => 'Latest created FAQ articles',
+            #            },
             {
                 ScreenData => 'Latest updated FAQ articles',
             },
@@ -143,8 +139,10 @@ $Selenium->RunTest(
             );
         }
 
+        my $Element = $Selenium->find_element( 'a[href*="CategoryID=' . $CategoryID . '"]', 'css' );
+
         # Click on test created category, go to subcategory screen.
-        $Selenium->find_element( "$CategoryName", 'link_text' )->VerifiedClick();
+        $Element->VerifiedClick();
 
         # Order FAQ item per FAQID by Down.
         $Selenium->VerifiedGet(
@@ -154,9 +152,10 @@ $Selenium->RunTest(
         # Check test created FAQs.
         my $Index = 0;
         for my $Test (@Items) {
+
             $Self->Is(
                 $Selenium->execute_script(
-                    "return \$('h3:contains(\"FAQ Articles\")').closest('.WidgetSimple').find('tbody tr:eq($Index) td:eq(1)').text().trim();"
+                    "return \$('h3[title=\"$Test->{FAQTitle}\"]').text();"
                 ),
                 $Test->{FAQTitle},
                 "FAQ Article '$Test->{FAQTitle}' is found"
@@ -188,7 +187,7 @@ $Selenium->RunTest(
 
             $Self->Is(
                 $Selenium->execute_script(
-                    "return \$('h3:contains(\"FAQ Articles\")').closest('.WidgetSimple').find('td a[href*=\"Action=CustomerFAQZoom;ItemID=$Item->{ItemID}\"]').length;"
+                    "return \$('h3[title=\"$Item->{FAQTitle}\"]').length;"
                 ),
                 $Length,
                 "Page 1 - FAQ Article '$Item->{FAQTitle}' $IsFound"
@@ -205,7 +204,7 @@ $Selenium->RunTest(
 
             $Self->Is(
                 $Selenium->execute_script(
-                    "return \$('h3:contains(\"FAQ Articles\")').closest('.WidgetSimple').find('td a[href*=\"Action=CustomerFAQZoom;ItemID=$Item->{ItemID}\"]').length;"
+                    "return \$('h3[title=\"$Item->{FAQTitle}\"]').length;"
                 ),
                 $Length,
                 "Page 2 - FAQ Article '$Item->{FAQTitle}' $IsFound"
@@ -265,12 +264,12 @@ $Selenium->RunTest(
             "SubCategoryID $SubCategoryID in not found."
         );
 
-        $Selenium->find_element( "$CategoryName", 'link_text' )->VerifiedClick();
+        $Selenium->find_element( 'a[href*="CategoryID=' . $CategoryID . '"]', 'css' )->VerifiedClick();
 
         # Check if Subcategory is present.
         $Self->Is(
             $Selenium->execute_script(
-                "return \$(\"a[href*='Action=CustomerFAQExplorer;CategoryID=$SubCategoryID']\").text().trim()"
+                "return \$(\"a[href*='Action=CustomerFAQExplorer;CategoryID=$SubCategoryID'] h3\").text().trim()"
             ),
             "$SubCategoryName",
             "Subcategory $SubCategoryName is found."
@@ -292,7 +291,7 @@ $Selenium->RunTest(
         # Delete FAQs.
         push @Items,
             {
-            ItemID => $SubItemID,
+                ItemID => $SubItemID,
             };
         for my $FAQ (@Items) {
             my $Success = $FAQObject->FAQDelete(
