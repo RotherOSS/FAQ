@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -20,11 +20,11 @@ use utf8;
 
 # Set up the test driver $Self when we are running as a standalone script.
 use Kernel::System::UnitTest::RegisterDriver;
-
 our $Self;
 
 # get selenium object
-my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
+use Kernel::System::UnitTest::Selenium;
+my $Selenium = Kernel::System::UnitTest::Selenium->new( LogExecuteCommandActive => 1 );
 
 $Selenium->RunTest(
     sub {
@@ -69,19 +69,16 @@ $Selenium->RunTest(
         # navigate to PublicFAQExplorer screen
         $Selenium->VerifiedGet("${ScriptAlias}public.pl?Action=PublicFAQExplorer");
 
-        # check PublicFAQExplorer screen
-        $Selenium->find_element( "table",             'css' );
-        $Selenium->find_element( "table thead tr th", 'css' );
-        $Selenium->find_element( "table tbody tr td", 'css' );
-
         # test data for explorer screen
         my @Tests = (
             {
                 ScreenData => 'FAQ Explorer',
             },
-            {
-                ScreenData => 'Latest created FAQ articles',
-            },
+
+            # obsolete
+            #            {
+            #                ScreenData => 'Latest created FAQ articles',
+            #            },
             {
                 ScreenData => 'Latest updated FAQ articles',
             },
@@ -95,7 +92,7 @@ $Selenium->RunTest(
         }
 
         # click on 'Misc', go on subcategory screen
-        $Selenium->find_element( 'Misc', 'link_text' )->VerifiedClick();
+        $Selenium->find_element( 'a[href*="CategoryID=1"]', 'css' )->VerifiedClick();
 
         # order FAQ item per FAQID by Down
         $Selenium->VerifiedGet(

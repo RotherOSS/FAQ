@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -18,6 +18,8 @@ use strict;
 use warnings;
 use utf8;
 
+use HTTP::Request::Common qw(GET);
+use Kernel::System::UnitTest::RegisterDriver;
 our $Self;
 
 # Get helper object
@@ -63,7 +65,7 @@ my @Tests = (
     {
         Name    => 'No Params',
         Config  => {},
-        Request => "Action=someaction;Subaction=somesubaction;ItemID=$ItemID",
+        Request => "http://localhost/otobo/index.pl?Action=someaction;Subaction=somesubaction;ItemID=$ItemID",
         Success => 0,
     },
     {
@@ -71,7 +73,7 @@ my @Tests = (
         Config => {
             DynamicFieldConfig => $DynamicFieldConfig,
         },
-        Request => "Action=someaction;Subaction=somesubaction;ItemID=$ItemID",
+        Request => "http://localhost/otobo/index.pl?Action=someaction;Subaction=somesubaction;ItemID=$ItemID",
         Success => 0,
     },
     {
@@ -79,7 +81,7 @@ my @Tests = (
         Config => {
             UserID => 1,
         },
-        Request => "Action=someaction;Subaction=somesubaction;ItemID=$ItemID",
+        Request => "http://localhost/otobo/index.pl?Action=someaction;Subaction=somesubaction;ItemID=$ItemID",
         Success => 0,
     },
     {
@@ -88,7 +90,7 @@ my @Tests = (
             DynamicFieldConfig => $DynamicFieldConfig,
             UserID             => 1,
         },
-        Request => "Action=someaction;Subaction=somesubaction;",
+        Request => "http://localhost/otobo/index.pl?Action=someaction;Subaction=somesubaction;",
         Success => 0,
     },
     {
@@ -97,7 +99,7 @@ my @Tests = (
             DynamicFieldConfig => $DynamicFieldConfig,
             UserID             => 1,
         },
-        Request       => "Action=someaction;Subaction=somesubaction;ItemID=-1",
+        Request       => "http://localhost/otobo/index.pl?Action=someaction;Subaction=somesubaction;ItemID=-1",
         Success       => 1,
         ExectedResult => {
             ObjectID => -1,
@@ -110,7 +112,7 @@ my @Tests = (
             DynamicFieldConfig => $DynamicFieldConfig,
             UserID             => 1,
         },
-        Request       => "Action=someaction;Subaction=somesubaction;ItemID=$ItemID",
+        Request       => "http://localhost/otobo/index.pl?Action=someaction;Subaction=somesubaction;ItemID=$ItemID",
         Success       => 1,
         ExectedResult => {
             ObjectID => $ItemID,
@@ -125,13 +127,15 @@ my $ObjectHandlerObject = $Kernel::OM->Get('Kernel::System::DynamicField::Object
 TEST:
 for my $Test (@Tests) {
 
-    local %ENV = (
-        REQUEST_METHOD => 'GET',
-        QUERY_STRING   => $Test->{Request} // '',
+    $Kernel::OM->ObjectsDiscard(
+        Objects => ['Kernel::System::Web::Request'],
     );
 
-    CGI->initialize_globals();
-    my $Request = Kernel::System::Web::Request->new();
+    $Kernel::OM->ObjectParamAdd(
+        'Kernel::System::Web::Request' => {
+            HTTPRequest => GET( $Test->{Request}, Host => 'localhost' ),
+        }
+    );
 
     my %ObjectData = $ObjectHandlerObject->ObjectDataGet( %{ $Test->{Config} } );
 
@@ -157,5 +161,7 @@ continue {
 }
 
 # cleanup is done by RestoreDatabase
+
+$Self->DoneTesting();
 
 1;

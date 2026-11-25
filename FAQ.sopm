@@ -148,6 +148,7 @@
         <File Permission="660" Location="scripts/test/sample/FAQ.csv" />
         <File Permission="660" Location="scripts/test/sample/GenericInterface/FAQ/GI-FAQ-Test-utf8-1.bin" />
         <File Permission="660" Location="scripts/test/sample/GenericInterface/FAQ/GI-FAQ-Test-utf8-1.txt" />
+        <File Permission="660" Location="scripts/test/sample/WebUploadCache/WebUploadCache-Test1.png" />
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentFAQAdd.t" />
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentFAQCategory.t" />
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentFAQDelete.t" />

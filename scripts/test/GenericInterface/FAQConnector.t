@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -18,6 +18,9 @@ use strict;
 use warnings;
 use utf8;
 
+use Kernel::System::UnitTest::RegisterDriver;
+our $Self;
+
 use Socket;
 use YAML;
 use MIME::Base64;
@@ -26,8 +29,6 @@ use Kernel::GenericInterface::Operation::FAQ::LanguageList;
 use Kernel::GenericInterface::Operation::FAQ::PublicCategoryList;
 use Kernel::GenericInterface::Operation::FAQ::PublicFAQSearch;
 use Kernel::GenericInterface::Operation::FAQ::PublicFAQGet;
-
-our $Self;
 
 # get helper object
 my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
@@ -351,7 +352,7 @@ if ( !$Host ) {
 
 # prepare web service config
 my $RemoteSystem =
-    $ConfigObject->Get('HttpType')
+    'http'    #$ConfigObject->Get('HttpType')
     . '://'
     . $Host
     . '/'
@@ -917,5 +918,7 @@ $Self->True(
     $CategoryDelete,
     "CategoryDelete() - Category: $CategoryIDOne",
 );
+
+$Self->DoneTesting();
 
 1;
