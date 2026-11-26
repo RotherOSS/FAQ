@@ -115,19 +115,20 @@ $Selenium->RunTest(
             $Selenium->switch_to_frame();
         }
 
-        sleep 1;
+        my $Source = $Selenium->get_page_source();
+        print STDERR "----\n$Source\n----\n";
 
         $Self->True(
-            index( $Selenium->get_page_source(), 'SeleniumKeywords' ) > -1,
+            index( $Source, 'SeleniumKeywords' ) > -1,
             "FAQ 'SeleniumKeywords' value is found",
         );
         $Self->True(
-            index( $Selenium->get_page_source(), 'external (customer)' ) > -1,
+            index( $Source, 'external (customer)' ) > -1,
             "FAQ state value is found",
         );
       
         $Self->True(
-            index( $Selenium->get_page_source(), '0 out of 5' ) > -1,
+            index( $Source, '0 out of 5' ) > -1,
             "FAQ default vote value is found",
         );
 
@@ -140,11 +141,11 @@ $Selenium->RunTest(
 
         # Check vote message.
         $Self->True(
-            index( $Selenium->get_page_source(), 'Thanks for your vote!' ) > -1,
+            index( $Source, 'Thanks for your vote!' ) > -1,
             "FAQ vote message is found",
         );
         $Self->True(
-            index( $Selenium->get_page_source(), '5 out of 5' ) > -1,
+            index( $Source, '5 out of 5' ) > -1,
             "FAQ vote value is found",
         );
 
