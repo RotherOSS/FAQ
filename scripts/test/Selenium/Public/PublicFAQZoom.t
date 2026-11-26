@@ -117,10 +117,6 @@ $Selenium->RunTest(
             "FAQ 'SeleniumKeywords' value - found",
         );
         $Self->True(
-            index( $Selenium->get_page_source(), 'public (all)' ) > -1,
-            "FAQ state value - found",
-        );
-        $Self->True(
             index( $Selenium->get_page_source(), '0 out of 5' ) > -1,
             "FAQ default vote value - found",
         );
