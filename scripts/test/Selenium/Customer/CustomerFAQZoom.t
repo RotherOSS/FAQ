@@ -115,6 +115,8 @@ $Selenium->RunTest(
             $Selenium->switch_to_frame();
         }
 
+        sleep 1;
+
         $Self->True(
             index( $Selenium->get_page_source(), 'SeleniumKeywords' ) > -1,
             "FAQ 'SeleniumKeywords' value is found",
@@ -123,6 +125,7 @@ $Selenium->RunTest(
             index( $Selenium->get_page_source(), 'external (customer)' ) > -1,
             "FAQ state value is found",
         );
+      
         $Self->True(
             index( $Selenium->get_page_source(), '0 out of 5' ) > -1,
             "FAQ default vote value is found",

@@ -112,6 +112,8 @@ $Selenium->RunTest(
             $Selenium->switch_to_frame();
         }
 
+        sleep 1;
+
         $Self->True(
             index( $Selenium->get_page_source(), 'SeleniumKeywords' ) > -1,
             "FAQ 'SeleniumKeywords' value - found",
